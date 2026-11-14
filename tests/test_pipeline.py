@@ -152,5 +152,7 @@ def test_collect_valkyrie_export(tmp_path):
                                      safe_name(items[1]["id"]): {"rewards": {"null_brier": 0.75}},
                                      "unrelated-task": {"rewards": {"reward": 1.0}}}}
     (tmp_path / "haiku.json").write_text(json.dumps(export))
+    want = {"anthropic/claude-haiku-4-5": {"m/L1/N1/choice": 1.0, "m/L1/N2/null": 0.75}}
+    assert collect_jobs([tmp_path / "haiku.json"], items) == want  # --jobs jobs/* passes files
     got = collect_jobs([tmp_path], items)
     assert got == {"anthropic/claude-haiku-4-5": {"m/L1/N1/choice": 1.0, "m/L1/N2/null": 0.75}}

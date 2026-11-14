@@ -32,7 +32,8 @@ def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dic
         trials[model][it["id"]].append(float(rewards.get(key) or 0.0))
 
     for d in job_dirs:
-        for p in sorted(Path(d).rglob("*.json")):
+        d = Path(d)
+        for p in [d] if d.is_file() else sorted(d.rglob("*.json")):
             try:
                 r = json.loads(p.read_text())
             except (json.JSONDecodeError, UnicodeDecodeError):
