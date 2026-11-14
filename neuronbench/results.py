@@ -18,7 +18,7 @@ def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dic
     """{model: {item_id: reward}} from every trial result.json under job_dirs. Failed trials score 0."""
     by_task = {f"{ORG}/{safe_name(it['id'])}": it for it in items}
     by_task.update({safe_name(it["id"]): it for it in items})
-    out: dict[str, dict[str, float]] = defaultdict(dict)
+    trials: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
     for d in job_dirs:
         for p in sorted(Path(d).rglob("result.json")):
             try:
@@ -32,8 +32,8 @@ def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dic
             model = mi.get("name") or r["agent_info"]["name"]
             rewards = (r.get("verifier_result") or {}).get("rewards") or {}
             key = "choice_acc" if it["kind"] == "choice" else "null_brier"
-            out[model][it["id"]] = float(rewards.get(key, 0.0))
-    return dict(out)
+            trials[model][it["id"]].append(float(rewards.get(key, 0.0)))
+    return {m: {i: sum(v) / len(v) for i, v in per.items()} for m, per in trials.items()}
 
 
 def _ci(vals: list[float], n_boot: int = 2000, seed: int = 0) -> tuple[float, float]:
