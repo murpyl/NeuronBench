@@ -20,3 +20,10 @@ force-added on this data branch only.
 Per-neuron evidence for the same 384 neurons is in `data/evidence/<model_id>/L14/N<neuron>.json`, written by
 `scripts/export_evidence.py` at commit ee8ef6a. Each file holds `down_norm` and `logit_lens` only: `gne stats act` was
 not run, so there are no activation statistics, and nothing measured from pushing the neuron is included.
+
+## Layer 20
+
+`L20-main_rel.{jsonl,meta.json,units.jsonl}`: same commands, design and slimming as layer 14 (384 random neurons +
+64 random controls, 4484 rollouts), snapshot taken when the sweep finished at 15:50 on 14 Nov. 105 of the 384
+neurons have `null_pct >= 0.95`; 44 beat every control. A later sweep on the same machine adds 64 hand-picked
+high-`peak_z` neurons to layers 14 and 20; those are **not** in these files.
