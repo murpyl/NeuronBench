@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import sys
 from dataclasses import asdict
 from pathlib import Path
 
@@ -34,6 +35,9 @@ def cmd_build(a):
         nr = sum(i.kind == "null" and i.answer["real"] for i in got)
         print(f"{rp}: {nc} choice, {len(got) - nc} null ({nr} real)")
         items += got
+    dupes = sorted({i.id for i in items if [j.id for j in items].count(i.id) > 1})
+    if dupes:
+        sys.exit(f"duplicate item ids across runs (same model name, different revision?): {dupes[:5]}")
     Path(a.items).parent.mkdir(parents=True, exist_ok=True)
     Path(a.items).write_text("".join(json.dumps(asdict(i), ensure_ascii=False) + "\n" for i in items))
     out = Path(a.out)
