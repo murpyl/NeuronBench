@@ -83,7 +83,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="neuronbench")
     sub = ap.add_subparsers(required=True)
     b = sub.add_parser("build", help="gne sweeps + evidence -> items.jsonl + Harbor task folders")
-    b.add_argument("--run", nargs="+", required=True, help="gne sweep JSONL(s), already ranked")
+    b.add_argument("--run", nargs="+", action="extend", required=True, help="gne sweep JSONL(s), already ranked")
     b.add_argument("--evidence", default="data/evidence")
     b.add_argument("--items", default="data/items.jsonl")
     b.add_argument("--out", default="tasks")
