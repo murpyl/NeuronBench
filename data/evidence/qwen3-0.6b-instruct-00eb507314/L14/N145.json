@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 145,
+ "down_norm": 0.5957728028297424,
+ "logit_lens": {
+  "up": [
+   "istically",
+   "enary",
+   "iali",
+   " Springer",
+   "ória",
+   "smith",
+   " '**",
+   "iq",
+   "ью",
+   "papers",
+   "сы",
+   " seri"
+  ],
+  "down": [
+   " esto",
+   ".\n\n",
+   "oll",
+   "ActivityResult",
+   "ết",
+   "ため",
+   "聽",
+   "Reach",
+   "uch",
+   "cre",
+   "旺季",
+   " //"
+  ],
+  "peak_z": 4.786998748779297
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

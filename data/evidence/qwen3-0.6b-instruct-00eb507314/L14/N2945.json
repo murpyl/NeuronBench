@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2945,
+ "down_norm": 0.9941829442977905,
+ "logit_lens": {
+  "up": [
+   "!?",
+   "的空间",
+   "!",
+   " possibility",
+   "?[",
+   " bou",
+   "beit",
+   "вар",
+   " Poss",
+   "?",
+   "(?",
+   "(["
+  ],
+  "down": [
+   "mediately",
+   "极高",
+   "极度",
+   " rapidement",
+   "非常高",
+   " Quickly",
+   " removeAll",
+   "特殊情况",
+   "立即",
+   "oriasis",
+   "ductor",
+   "百科"
+  ],
+  "peak_z": 5.040002346038818
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

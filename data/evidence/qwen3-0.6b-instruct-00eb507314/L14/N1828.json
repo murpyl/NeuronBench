@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1828,
+ "down_norm": 0.7801520228385925,
+ "logit_lens": {
+  "up": [
+   "ulet",
+   "owitz",
+   "otation",
+   "MBER",
+   "」と",
+   "veyor",
+   " Rowe",
+   "utschein",
+   "QUENCE",
+   "”\n",
+   " progression",
+   "回头"
+  ],
+  "down": [
+   "fan",
+   "rel",
+   "aza",
+   "od",
+   "aps",
+   "f",
+   "omen",
+   "ISCO",
+   "ollen",
+   "np",
+   " htmlentities",
+   "om"
+  ],
+  "peak_z": 5.147729396820068
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

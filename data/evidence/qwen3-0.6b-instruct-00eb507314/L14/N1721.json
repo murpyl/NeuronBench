@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1721,
+ "down_norm": 0.5788097977638245,
+ "logit_lens": {
+  "up": [
+   "ization",
+   "eload",
+   "versions",
+   "化",
+   "化进程",
+   " Reform",
+   "elize",
+   "sthrough",
+   " makeover",
+   "NewLabel",
+   "替换",
+   " Conversion"
+  ],
+  "down": [
+   "步",
+   " di",
+   " named",
+   "ongo",
+   "ARS",
+   " DI",
+   "AND",
+   "ardless",
+   "@Module",
+   " sendo",
+   "eso",
+   "named"
+  ],
+  "peak_z": 6.389466285705566
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

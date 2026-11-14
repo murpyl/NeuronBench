@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1762,
+ "down_norm": 0.6484466195106506,
+ "logit_lens": {
+  "up": [
+   " solidity",
+   "衮",
+   "otionEvent",
+   "chten",
+   "stå",
+   "occo",
+   "ailability",
+   "ié",
+   "AVAILABLE",
+   "gio",
+   "tok",
+   "uje"
+  ],
+  "down": [
+   "因为它",
+   " потому",
+   "куп",
+   "plementation",
+   "因为",
+   "ear",
+   "abouts",
+   "因为她",
+   "因为我",
+   "闩",
+   " cork",
+   "abin"
+  ],
+  "peak_z": 5.179183483123779
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

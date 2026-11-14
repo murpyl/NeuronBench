@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2666,
+ "down_norm": 0.9127591252326965,
+ "logit_lens": {
+  "up": [
+   "riz",
+   "amarin",
+   "沣",
+   "ells",
+   "-good",
+   ".onCreate",
+   "+len",
+   "cells",
+   "eshire",
+   "ingham",
+   "orce",
+   "nier"
+  ],
+  "down": [
+   "claimer",
+   "现代",
+   "logue",
+   "opyright",
+   ":checked",
+   "以为",
+   "lsx",
+   "作者所有",
+   " **************************************************************************",
+   " su",
+   " CONSEQUENTIAL",
+   "年限"
+  ],
+  "peak_z": 4.6324782371521
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2232,
+ "down_norm": 0.767690896987915,
+ "logit_lens": {
+  "up": [
+   "ете",
+   "ilt",
+   "ʒ",
+   "ionales",
+   "alles",
+   "ilated",
+   "haled",
+   "oust",
+   " weight",
+   "-ins",
+   "ası",
+   "wear"
+  ],
+  "down": [
+   "管理体系",
+   "ominated",
+   "anism",
+   "lings",
+   "INDER",
+   "ningar",
+   "[msg",
+   " Explain",
+   " mại",
+   "ดอก",
+   ",msg",
+   "的消息"
+  ],
+  "peak_z": 4.9181976318359375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

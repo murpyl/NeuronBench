@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 404,
+ "down_norm": 0.5451350212097168,
+ "logit_lens": {
+  "up": [
+   " Declarations",
+   " MatDialog",
+   "了半天",
+   ">>()",
+   "\")).",
+   "******/\n",
+   "******/",
+   "adden",
+   "**)",
+   "走出去",
+   "Tap",
+   "/create"
+  ],
+  "down": [
+   "费率",
+   "킷",
+   "荣誉",
+   "íg",
+   "نص",
+   "itu",
+   " cruc",
+   ".jquery",
+   "规格",
+   "_|",
+   "akes",
+   "ratio"
+  ],
+  "peak_z": 4.890754222869873
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

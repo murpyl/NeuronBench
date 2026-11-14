@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2930,
+ "down_norm": 0.7851036190986633,
+ "logit_lens": {
+  "up": [
+   "那就是",
+   "ancias",
+   "的就是",
+   "(express",
+   "一个是",
+   " Orden",
+   "\tSchema",
+   ":start",
+   "Orden",
+   "ElementType",
+   "marked",
+   "ஃ"
+  ],
+  "down": [
+   "ipur",
+   "�",
+   "hevik",
+   "最长",
+   " Islamabad",
+   "ormal",
+   "ấu",
+   " LGBT",
+   "nier",
+   "تد",
+   "寸",
+   "BEST"
+  ],
+  "peak_z": 6.377566814422607
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

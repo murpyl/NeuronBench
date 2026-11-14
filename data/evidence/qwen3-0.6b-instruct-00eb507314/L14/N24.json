@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 24,
+ "down_norm": 0.6611289381980896,
+ "logit_lens": {
+  "up": [
+   "olean",
+   ".hasMore",
+   " roma",
+   " Listings",
+   " ComponentFixture",
+   "ore",
+   "чная",
+   " sobą",
+   "icum",
+   "ствовать",
+   "}`}\n",
+   "ыш"
+  ],
+  "down": [
+   "tras",
+   "[first",
+   " transit",
+   "APTER",
+   "สะสม",
+   "acon",
+   "@login",
+   "acons",
+   "ドル",
+   "@d",
+   " af",
+   " phủ"
+  ],
+  "peak_z": 5.170751094818115
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

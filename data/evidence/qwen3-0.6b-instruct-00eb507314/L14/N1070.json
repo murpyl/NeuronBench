@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1070,
+ "down_norm": 0.7660186290740967,
+ "logit_lens": {
+  "up": [
+   "ije",
+   " (::",
+   "IZATION",
+   "న",
+   "acher",
+   "ARIO",
+   " cha",
+   ".readyState",
+   "(CharSequence",
+   "ario",
+   ".Disabled",
+   "滚球"
+  ],
+  "down": [
+   "ivamente",
+   "Other",
+   "inds",
+   "urther",
+   " other",
+   "其他",
+   " Other",
+   " OTHER",
+   " others",
+   "other",
+   "额外",
+   " другие"
+  ],
+  "peak_z": 5.398304462432861
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2816,
+ "down_norm": 0.8207100033760071,
+ "logit_lens": {
+  "up": [
+   "oves",
+   "ɑ",
+   "把你",
+   "ScrollPane",
+   "forums",
+   " releases",
+   "erator",
+   "告诉你",
+   "etics",
+   "lys",
+   " reports",
+   "_Db"
+  ],
+  "down": [
+   "ently",
+   "ibus",
+   "изм",
+   "uant",
+   "оказ",
+   "ongan",
+   "instein",
+   "eniable",
+   "enstein",
+   "inh",
+   "жд",
+   "卺"
+  ],
+  "peak_z": 4.778517246246338
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

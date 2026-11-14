@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2511,
+ "down_norm": 0.7934104800224304,
+ "logit_lens": {
+  "up": [
+   "功",
+   "()",
+   "uen",
+   "uer",
+   "Normal",
+   "ものが",
+   "一下",
+   "ite",
+   "U",
+   "uers",
+   "oment",
+   "().__"
+  ],
+  "down": [
+   "abbo",
+   " midi",
+   "髯",
+   "acock",
+   "DBObject",
+   "midi",
+   " Madden",
+   "bate",
+   " Duterte",
+   "PRECATED",
+   " IDictionary",
+   " 위하여"
+  ],
+  "peak_z": 5.089274883270264
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

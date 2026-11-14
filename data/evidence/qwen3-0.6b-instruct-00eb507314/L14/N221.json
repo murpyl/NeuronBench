@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 221,
+ "down_norm": 0.612968385219574,
+ "logit_lens": {
+  "up": [
+   "鎖",
+   ".central",
+   "/OR",
+   " réserve",
+   "alternate",
+   "EMENT",
+   "amen",
+   "_using",
+   ".dim",
+   "inyin",
+   "uses",
+   " lå"
+  ],
+  "down": [
+   "erta",
+   "enu",
+   " conc",
+   "pled",
+   "agger",
+   " corrid",
+   "(conv",
+   "RM",
+   "才行",
+   "就需要",
+   "SU",
+   "才发现"
+  ],
+  "peak_z": 5.040821552276611
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 329,
+ "down_norm": 0.573722243309021,
+ "logit_lens": {
+  "up": [
+   "ease",
+   "……",
+   "…”",
+   "...</",
+   "“",
+   "Ease",
+   "...",
+   "haar",
+   " ...",
+   "...\\",
+   "...\"",
+   "胪"
+  ],
+  "down": [
+   " себе",
+   "(ins",
+   ",body",
+   "ştir",
+   "/report",
+   "赞助",
+   "plement",
+   "iaux",
+   "ipient",
+   " CreateMap",
+   "梃",
+   "_Report"
+  ],
+  "peak_z": 4.640384197235107
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

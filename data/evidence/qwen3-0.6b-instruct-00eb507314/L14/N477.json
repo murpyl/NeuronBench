@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 477,
+ "down_norm": 0.6949445009231567,
+ "logit_lens": {
+  "up": [
+   "ide",
+   "uality",
+   "itize",
+   "idan",
+   "찰",
+   "strain",
+   "oppel",
+   "ines",
+   "ite",
+   "uli",
+   "iten",
+   "delivery"
+  ],
+  "down": [
+   "+S",
+   "ソン",
+   "=S",
+   "asso",
+   "*S",
+   "因为他",
+   " Speech",
+   " withRouter",
+   "тро",
+   "Speech",
+   "สยาม",
+   " Axes"
+  ],
+  "peak_z": 5.291963577270508
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

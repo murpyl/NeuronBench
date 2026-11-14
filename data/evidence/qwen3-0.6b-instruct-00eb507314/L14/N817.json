@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 817,
+ "down_norm": 0.6048315167427063,
+ "logit_lens": {
+  "up": [
+   "chest",
+   "preh",
+   "ramids",
+   "cher",
+   " //</",
+   " Trust",
+   "handling",
+   "bam",
+   "urance",
+   "_TM",
+   "流泪",
+   "unities"
+  ],
+  "down": [
+   "限り",
+   "家住",
+   "查看更多",
+   "ء",
+   "iece",
+   "下面是小",
+   "ypsy",
+   "ivia",
+   "ierce",
+   "てる",
+   "ritable",
+   "ня"
+  ],
+  "peak_z": 4.741261959075928
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

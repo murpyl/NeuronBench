@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 533,
+ "down_norm": 0.6543555855751038,
+ "logit_lens": {
+  "up": [
+   "_customize",
+   "CardBody",
+   "/version",
+   "的精神",
+   "enario",
+   "蚌",
+   "ponder",
+   "llum",
+   "eği",
+   " suburb",
+   "不信",
+   "inaire"
+  ],
+  "down": [
+   "RF",
+   "RH",
+   "рож",
+   "IJ",
+   "R",
+   "OSH",
+   "FH",
+   "ush",
+   " RF",
+   "aney",
+   "RCT",
+   "松弛"
+  ],
+  "peak_z": 4.946376323699951
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

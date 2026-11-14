@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2367,
+ "down_norm": 0.7770236134529114,
+ "logit_lens": {
+  "up": [
+   "oting",
+   "oure",
+   "achte",
+   "segue",
+   ".JOptionPane",
+   "幄",
+   "ahu",
+   "oured",
+   " halt",
+   "健康管理",
+   " queen",
+   "教你"
+  ],
+  "down": [
+   "<|endoftext|>",
+   "[]>(",
+   "omen",
+   " tinder",
+   "什么样的",
+   "INESS",
+   " puss",
+   "pared",
+   "льц",
+   "ftware",
+   "//{\n",
+   "\n\n\n\n\n\n\n\n\n"
+  ],
+  "peak_z": 5.641439914703369
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

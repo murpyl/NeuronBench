@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2917,
+ "down_norm": 0.7145531177520752,
+ "logit_lens": {
+  "up": [
+   "<a",
+   "oader",
+   "<>(",
+   "ieme",
+   "<LM",
+   "lsx",
+   "<Entry",
+   "utation",
+   "ictionary",
+   "иона",
+   "{@",
+   "<Character"
+  ],
+  "down": [
+   "represented",
+   " fart",
+   "phase",
+   "parity",
+   "reh",
+   " Antar",
+   "azon",
+   " nhất",
+   "especially",
+   "antar",
+   ":\\\\",
+   "plet"
+  ],
+  "peak_z": 4.953763008117676
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

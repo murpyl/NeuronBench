@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2031,
+ "down_norm": 0.8256022930145264,
+ "logit_lens": {
+  "up": [
+   "anza",
+   "nak",
+   "ças",
+   "chter",
+   "[assembly",
+   "�",
+   "ifndef",
+   "#__",
+   "ictory",
+   "itives",
+   "acet",
+   " //#"
+  ],
+  "down": [
+   "第一步",
+   "三期",
+   "漫长的",
+   "reb",
+   "II",
+   "慢慢",
+   "odor",
+   "必要的",
+   "plan",
+   "低压",
+   "初步",
+   "IA"
+  ],
+  "peak_z": 5.18684720993042
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

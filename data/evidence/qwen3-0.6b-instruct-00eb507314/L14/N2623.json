@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2623,
+ "down_norm": 0.7817599177360535,
+ "logit_lens": {
+  "up": [
+   "反而",
+   "相反",
+   "逆势",
+   "反倒",
+   "凶",
+   "zers",
+   " 오히려",
+   "aments",
+   "udu",
+   "对他们",
+   "ствовать",
+   "ños"
+  ],
+  "down": [
+   "antha",
+   "lica",
+   " disc",
+   "arily",
+   "trak",
+   " Disc",
+   "lico",
+   "rze",
+   "rek",
+   "illiseconds",
+   " econom",
+   " Unt"
+  ],
+  "peak_z": 7.837278842926025
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

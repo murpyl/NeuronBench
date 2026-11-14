@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 760,
+ "down_norm": 0.5584648847579956,
+ "logit_lens": {
+  "up": [
+   " even",
+   " Even",
+   "[S",
+   " three",
+   "[",
+   "ields",
+   "pliers",
+   "\\[",
+   " [",
+   " she",
+   "even",
+   "ards"
+  ],
+  "down": [
+   "離れ",
+   "decorate",
+   "ายน",
+   "AppName",
+   " resizable",
+   "小姐姐",
+   "蛘",
+   "IPA",
+   "kind",
+   "去年同期",
+   "给您",
+   "арь"
+  ],
+  "peak_z": 5.685153007507324
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

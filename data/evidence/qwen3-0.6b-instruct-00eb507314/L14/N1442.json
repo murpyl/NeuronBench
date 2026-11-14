@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1442,
+ "down_norm": 0.6138839721679688,
+ "logit_lens": {
+  "up": [
+   "plevel",
+   "}\\.[",
+   "EFR",
+   " TRE",
+   "وية",
+   " ?><?",
+   " jung",
+   "iner",
+   "/vue",
+   "        \r\n\r\n",
+   "}{$",
+   "jas"
+  ],
+  "down": [
+   "hips",
+   "akash",
+   "taire",
+   "垓",
+   " ●",
+   "残",
+   " Addison",
+   " �",
+   "ASH",
+   "弭",
+   "�",
+   " ―"
+  ],
+  "peak_z": 5.435555458068848
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

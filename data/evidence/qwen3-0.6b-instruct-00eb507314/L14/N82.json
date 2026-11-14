@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 82,
+ "down_norm": 0.5301806926727295,
+ "logit_lens": {
+  "up": [
+   "rel",
+   "so",
+   "igma",
+   "em",
+   "of",
+   "EM",
+   "ve",
+   "ves",
+   "public",
+   "VE",
+   "DM",
+   "it"
+  ],
+  "down": [
+   "adays",
+   "\":\"/",
+   "\"<?",
+   "/hooks",
+   " spoilers",
+   ")$/",
+   "岁以上",
+   "}$/",
+   ":\");\r\n",
+   " searchBar",
+   "$/)",
+   "你需要"
+  ],
+  "peak_z": 5.539134979248047
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

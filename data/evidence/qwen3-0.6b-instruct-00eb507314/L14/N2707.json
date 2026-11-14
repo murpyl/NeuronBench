@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2707,
+ "down_norm": 0.8169170618057251,
+ "logit_lens": {
+  "up": [
+   "但他",
+   "but",
+   "但它",
+   "但",
+   " but",
+   "But",
+   "但不限于",
+   "但由于",
+   "但从",
+   "_but",
+   "icipant",
+   "但现在"
+  ],
+  "down": [
+   "盛世",
+   "ateria",
+   "握手",
+   "Bounds",
+   "isty",
+   "yny",
+   "osa",
+   "verse",
+   "usher",
+   "ча",
+   "insky",
+   " Masters"
+  ],
+  "peak_z": 6.473566055297852
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

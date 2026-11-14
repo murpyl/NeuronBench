@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1978,
+ "down_norm": 0.8751779198646545,
+ "logit_lens": {
+  "up": [
+   " entityId",
+   "addError",
+   " EntityState",
+   "-speaking",
+   " Sevent",
+   "ennessee",
+   "蜱",
+   "enty",
+   "ent",
+   "�",
+   "athers",
+   " Fiscal"
+  ],
+  "down": [
+   "ybrid",
+   "起点",
+   "tablename",
+   "当事",
+   "sender",
+   "caller",
+   "白马",
+   " YA",
+   "附属",
+   "表",
+   "AML",
+   "зу"
+  ],
+  "peak_z": 5.161786079406738
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

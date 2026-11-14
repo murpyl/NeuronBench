@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 726,
+ "down_norm": 0.762037992477417,
+ "logit_lens": {
+  "up": [
+   "érica",
+   "egasus",
+   "مز",
+   "[__",
+   "atively",
+   "[ii",
+   "aised",
+   " Symphony",
+   " mutual",
+   "ửa",
+   "ами",
+   "bens"
+  ],
+  "down": [
+   ");\n\n",
+   "腹部",
+   " Championships",
+   "芯",
+   ".BorderSide",
+   "要闻",
+   "/mark",
+   "only",
+   "顷",
+   "乃是",
+   "生产能力",
+   "以为"
+  ],
+  "peak_z": 4.89700984954834
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

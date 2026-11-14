@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1684,
+ "down_norm": 0.6147802472114563,
+ "logit_lens": {
+  "up": [
+   "使用权",
+   "分成",
+   "rou",
+   "分配",
+   "ownership",
+   "资源",
+   "归属于",
+   "碎片",
+   " getResource",
+   "reste",
+   "权",
+   "resources"
+  ],
+  "down": [
+   "ogenic",
+   "umbai",
+   "深交",
+   "-effects",
+   "moid",
+   "mented",
+   " effects",
+   "bild",
+   "amation",
+   "dated",
+   "зван",
+   ".timedelta"
+  ],
+  "peak_z": 5.379945278167725
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

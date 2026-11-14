@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 823,
+ "down_norm": 1.0993597507476807,
+ "logit_lens": {
+  "up": [
+   " original",
+   "orgen",
+   " input",
+   "DITION",
+   " source",
+   "input",
+   " punched",
+   "pisa",
+   " originally",
+   "source",
+   "ependency",
+   "Originally"
+  ],
+  "down": [
+   " lul",
+   ".wr",
+   "ativas",
+   "回复",
+   "adders",
+   ".Buffer",
+   ".Put",
+   "isz",
+   "iu",
+   " Classics",
+   "adies",
+   "��"
+  ],
+  "peak_z": 5.06810188293457
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

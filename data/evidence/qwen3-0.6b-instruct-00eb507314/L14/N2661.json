@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2661,
+ "down_norm": 1.0854936838150024,
+ "logit_lens": {
+  "up": [
+   "<|endoftext|>",
+   "栉",
+   " Ace",
+   "ish",
+   " counter",
+   "中心主任",
+   " Schedule",
+   "ve",
+   "Page",
+   "ize",
+   "итесь",
+   " Ant"
+  ],
+  "down": [
+   "UGH",
+   "浯",
+   "oppins",
+   "ếc",
+   "iego",
+   "ubb",
+   "嬷",
+   "皤",
+   "暹",
+   "egra",
+   "omination",
+   "hari"
+  ],
+  "peak_z": 5.1209492683410645
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

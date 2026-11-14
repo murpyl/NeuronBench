@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 76,
+ "down_norm": 0.5041067004203796,
+ "logit_lens": {
+  "up": [
+   " Spice",
+   "igne",
+   "慣",
+   "\"&",
+   "outines",
+   "unden",
+   " miscon",
+   "逋",
+   "DMETHOD",
+   " Actions",
+   "UnderTest",
+   "辍"
+  ],
+  "down": [
+   " elic",
+   "pé",
+   "eration",
+   "沱",
+   "/ag",
+   "�",
+   "HING",
+   "úa",
+   "-anchor",
+   "atsu",
+   "town",
+   "CAC"
+  ],
+  "peak_z": 4.71046781539917
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

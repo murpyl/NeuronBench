@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2208,
+ "down_norm": 0.6453883647918701,
+ "logit_lens": {
+  "up": [
+   "ushman",
+   "赢得了",
+   "率达到",
+   "scoped",
+   "率达",
+   "escaping",
+   "zug",
+   "ynthesis",
+   "nothrow",
+   "ypi",
+   "틸",
+   "ichen"
+  ],
+  "down": [
+   " need",
+   " require",
+   "需要",
+   " Needs",
+   " sometimes",
+   " требуется",
+   " Need",
+   "ってしまいます",
+   "require",
+   " needs",
+   "erais",
+   "Must"
+  ],
+  "peak_z": 5.277441501617432
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2508,
+ "down_norm": 0.8295270800590515,
+ "logit_lens": {
+  "up": [
+   "developers",
+   "的人来说",
+   " consumers",
+   " buyers",
+   "lemen",
+   "admins",
+   " developers",
+   "买家",
+   "读者",
+   "!--",
+   " Buyers",
+   " investors"
+  ],
+  "down": [
+   " Thema",
+   "quet",
+   "它",
+   "起来了",
+   "这事",
+   "这项",
+   "制品",
+   "这句话",
+   "它是",
+   " getch",
+   "这",
+   "小游戏"
+  ],
+  "peak_z": 5.135891437530518
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

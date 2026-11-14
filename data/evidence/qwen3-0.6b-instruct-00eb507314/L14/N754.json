@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 754,
+ "down_norm": 0.6402612924575806,
+ "logit_lens": {
+  "up": [
+   " '`",
+   "stück",
+   "gage",
+   "sterol",
+   "+xml",
+   "umping",
+   " itemprop",
+   "chant",
+   "ucose",
+   "UMP",
+   " )*",
+   "tant"
+  ],
+  "down": [
+   "ay",
+   "巷",
+   ".Areas",
+   "保护区",
+   " floors",
+   "四周",
+   " surroundings",
+   "车间",
+   "eli",
+   "uld",
+   "istorical",
+   "paces"
+  ],
+  "peak_z": 4.579111576080322
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2464,
+ "down_norm": 0.7558639049530029,
+ "logit_lens": {
+  "up": [
+   "ieux",
+   "loor",
+   "étique",
+   " SUBJECT",
+   " seul",
+   "ailable",
+   "耗",
+   "等方面的",
+   "供",
+   "Ị",
+   "得不到",
+   "沽"
+  ],
+  "down": [
+   " equival",
+   "其实就是",
+   "替代",
+   " synonym",
+   " substitute",
+   "换成",
+   "换",
+   "其实",
+   "bers",
+   "转",
+   "转化为",
+   "alias"
+  ],
+  "peak_z": 5.481917858123779
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

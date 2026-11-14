@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 219,
+ "down_norm": 0.7567989826202393,
+ "logit_lens": {
+  "up": [
+   "duct",
+   "atures",
+   "ört",
+   "剧",
+   "存在的",
+   " наличие",
+   "网讯",
+   "给他们",
+   "-Nov",
+   "既然",
+   "viously",
+   "ussy"
+  ],
+  "down": [
+   "ween",
+   "рис",
+   "elder",
+   "gings",
+   "ueling",
+   "ohana",
+   "호",
+   "setImage",
+   " CommonModule",
+   "UBLISH",
+   "indh",
+   "PEnd"
+  ],
+  "peak_z": 4.849139213562012
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

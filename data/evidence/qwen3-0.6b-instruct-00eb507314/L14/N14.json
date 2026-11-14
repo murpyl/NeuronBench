@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 14,
+ "down_norm": 0.6505144834518433,
+ "logit_lens": {
+  "up": [
+   "该游戏",
+   " imageData",
+   " lành",
+   ".getTag",
+   "[tag",
+   " Blond",
+   " coloured",
+   " arrang",
+   ".onDestroy",
+   "etag",
+   "(Color",
+   " setColor"
+  ],
+  "down": [
+   "gether",
+   "際",
+   "adamente",
+   "Instant",
+   "كرم",
+   "olith",
+   "ailles",
+   "خص",
+   "辕",
+   " vinc",
+   "чем",
+   "ArgsConstructor"
+  ],
+  "peak_z": 4.886397838592529
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

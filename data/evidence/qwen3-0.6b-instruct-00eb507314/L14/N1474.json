@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1474,
+ "down_norm": 0.7063500881195068,
+ "logit_lens": {
+  "up": [
+   "为主的",
+   "-ret",
+   "phia",
+   "仅为",
+   " only",
+   " TForm",
+   "称为",
+   "国内市场",
+   "_ONLY",
+   "بات",
+   "errupt",
+   "orphic"
+  ],
+  "down": [
+   "绅",
+   " russe",
+   " Yours",
+   "erator",
+   "exion",
+   "拉丁",
+   "ahoma",
+   "chron",
+   "agner",
+   "люб",
+   "黻",
+   " собой"
+  ],
+  "peak_z": 5.004910469055176
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

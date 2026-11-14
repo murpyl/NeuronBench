@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2522,
+ "down_norm": 0.7122631669044495,
+ "logit_lens": {
+  "up": [
+   "讓他",
+   "次",
+   "次要",
+   "他对",
+   "bots",
+   "bero",
+   "了他的",
+   "acion",
+   "—he",
+   "later",
+   "shaw",
+   "一下"
+  ],
+  "down": [
+   " migrationBuilder",
+   "ixin",
+   "amy",
+   "\\Unit",
+   "ctors",
+   "/rs",
+   ".wx",
+   "itus",
+   "moth",
+   "itto",
+   "دم",
+   "itur"
+  ],
+  "peak_z": 4.583507537841797
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

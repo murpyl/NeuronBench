@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3040,
+ "down_norm": 0.950141429901123,
+ "logit_lens": {
+  "up": [
+   "…\n\n\n\n",
+   "')</",
+   "\".\n\n\n\n",
+   "'.\n\n",
+   "..\n\n\n\n",
+   " .\n\n\n\n",
+   "')]\n",
+   "’.\n\n",
+   "[];\n\n",
+   ".\"\n\n\n\n",
+   "').\n",
+   "')\n\n\n\n"
+  ],
+  "down": [
+   "house",
+   "หาร",
+   "ざ",
+   "ouve",
+   " *,",
+   " cleanse",
+   "bury",
+   " leave",
+   "zes",
+   "cre",
+   " phận",
+   "(ch"
+  ],
+  "peak_z": 6.022527694702148
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

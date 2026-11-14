@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1460,
+ "down_norm": 0.6653173565864563,
+ "logit_lens": {
+  "up": [
+   "zte",
+   "fühl",
+   " instead",
+   "acers",
+   "getTable",
+   "ylan",
+   " coração",
+   "ANGED",
+   "aleb",
+   "qli",
+   " помощью",
+   "ients"
+  ],
+  "down": [
+   "EMBER",
+   "ainer",
+   "ething",
+   "aturity",
+   "dition",
+   "ăng",
+   "طبع",
+   "植",
+   "文本",
+   " text",
+   "驸",
+   "embro"
+  ],
+  "peak_z": 5.084593772888184
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

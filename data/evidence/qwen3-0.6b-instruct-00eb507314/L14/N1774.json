@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1774,
+ "down_norm": 0.6833261251449585,
+ "logit_lens": {
+  "up": [
+   "aces",
+   "isors",
+   "群",
+   "face",
+   "faces",
+   "ments",
+   "ах",
+   "acea",
+   "али",
+   "stack",
+   "pipe",
+   "(features"
+  ],
+  "down": [
+   "]+\\",
+   "/DTD",
+   ".Typed",
+   "ondo",
+   "kB",
+   " kB",
+   " Johannesburg",
+   " symbolic",
+   " three",
+   "{})",
+   ">{\"",
+   " pronto"
+  ],
+  "peak_z": 5.94130802154541
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

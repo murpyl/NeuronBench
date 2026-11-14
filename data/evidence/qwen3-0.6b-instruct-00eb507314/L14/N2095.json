@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2095,
+ "down_norm": 0.968281090259552,
+ "logit_lens": {
+  "up": [
+   " Ivanka",
+   "cream",
+   "cko",
+   " Eisenhower",
+   "esub",
+   " Singles",
+   " Eck",
+   " Beetle",
+   "ceased",
+   "需求",
+   "都觉得",
+   " singles"
+  ],
+  "down": [
+   "ления",
+   " Lan",
+   "้อม",
+   "uliar",
+   "不停",
+   "gh",
+   "ля",
+   "ろ",
+   "ghan",
+   "家族",
+   "匪",
+   "ersions"
+  ],
+  "peak_z": 5.022267818450928
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

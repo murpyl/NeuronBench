@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1541,
+ "down_norm": 0.7334908246994019,
+ "logit_lens": {
+  "up": [
+   "ATEST",
+   " Yates",
+   ".cross",
+   "痱",
+   "_));\n",
+   "\"]];\n",
+   "AsyncResult",
+   "ylon",
+   "GEST",
+   "(ARG",
+   "_ARGUMENT",
+   "憩"
+  ],
+  "down": [
+   "zelf",
+   "aille",
+   "iveau",
+   " par",
+   "给他",
+   "给",
+   "地面",
+   "(par",
+   "ily",
+   "面目",
+   " khăn",
+   " face"
+  ],
+  "peak_z": 5.4318108558654785
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

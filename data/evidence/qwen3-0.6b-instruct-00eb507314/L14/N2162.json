@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2162,
+ "down_norm": 0.7872735857963562,
+ "logit_lens": {
+  "up": [
+   "orse",
+   "ène",
+   "bler",
+   "íst",
+   "上演",
+   "orphic",
+   "stateProvider",
+   "-env",
+   "ductor",
+   "ogue",
+   ".Actions",
+   "głos"
+  ],
+  "down": [
+   "Disclaimer",
+   " here",
+   ".)\n\n",
+   "!)\n\n",
+   " because",
+   "colon",
+   "!)\n",
+   " dimension",
+   " refer",
+   ".)\n",
+   "?)\n\n",
+   "为中国"
+  ],
+  "peak_z": 5.258558750152588
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

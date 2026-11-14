@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2669,
+ "down_norm": 0.8771407008171082,
+ "logit_lens": {
+  "up": [
+   "在上海",
+   "在中国",
+   "中国人",
+   " part",
+   " in",
+   "在国内",
+   "出现在",
+   "太平洋",
+   " from",
+   "在我国",
+   "来自",
+   "在深圳"
+  ],
+  "down": [
+   "ownt",
+   "amat",
+   " demi",
+   "atsapp",
+   "三分",
+   "ouden",
+   "ILD",
+   " STORY",
+   "лаг",
+   "OLS",
+   " getModel",
+   "mdat"
+  ],
+  "peak_z": 5.909975051879883
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2341,
+ "down_norm": 0.7125489711761475,
+ "logit_lens": {
+  "up": [
+   "geh",
+   "IPP",
+   "rates",
+   "率为",
+   "장을",
+   "STAT",
+   "нал",
+   "ivos",
+   ".ov",
+   "炅",
+   "院院长",
+   "上の"
+  ],
+  "down": [
+   ".EventHandler",
+   "<|endoftext|>",
+   " or",
+   "或",
+   "é",
+   "育人",
+   "disposing",
+   " singly",
+   "etically",
+   " _|",
+   "xBF",
+   "-middle"
+  ],
+  "peak_z": 4.942687511444092
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

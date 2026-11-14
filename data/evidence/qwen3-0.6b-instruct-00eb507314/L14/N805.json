@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 805,
+ "down_norm": 0.7925737500190735,
+ "logit_lens": {
+  "up": [
+   "ISC",
+   ".Provider",
+   " Premier",
+   ".listFiles",
+   " Michaels",
+   " thriller",
+   "ện",
+   " bang",
+   "archy",
+   " liệt",
+   "ARS",
+   "ighted"
+  ],
+  "down": [
+   " colours",
+   "颜色",
+   "odo",
+   "所谓的",
+   " colors",
+   "cid",
+   " couleur",
+   "gy",
+   "\tcolor",
+   " clearer",
+   "changing",
+   "Incre"
+  ],
+  "peak_z": 4.756724834442139
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

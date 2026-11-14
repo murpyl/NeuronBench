@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1341,
+ "down_norm": 0.7899941205978394,
+ "logit_lens": {
+  "up": [
+   " =$",
+   "ippers",
+   " startActivityForResult",
+   "ili",
+   "ionario",
+   " ←",
+   "?action",
+   "ех",
+   ")<",
+   "<$",
+   "POSIT",
+   "aps"
+  ],
+  "down": [
+   " safely",
+   " peacefully",
+   " freely",
+   " fearless",
+   "-can",
+   "CanBe",
+   "can",
+   " allowed",
+   "我可以",
+   ".can",
+   "自如",
+   "不用担心"
+  ],
+  "peak_z": 6.121861934661865
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

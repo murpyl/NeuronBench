@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2365,
+ "down_norm": 0.7672760486602783,
+ "logit_lens": {
+  "up": [
+   "ascade",
+   "ollect",
+   "{o",
+   "ether",
+   "utan",
+   "czą",
+   "onde",
+   "ią",
+   "otel",
+   "kee",
+   "ermen",
+   "eenth"
+  ],
+  "down": [
+   "和社会",
+   "文化和",
+   "时间和",
+   "和技术",
+   "和个人",
+   "และการ",
+   "和",
+   "技术和",
+   "—is",
+   "and",
+   ")—",
+   "_and"
+  ],
+  "peak_z": 5.5810956954956055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

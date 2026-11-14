@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1117,
+ "down_norm": 0.5747285485267639,
+ "logit_lens": {
+  "up": [
+   "례",
+   "ạc",
+   "ьер",
+   "ewear",
+   "جة",
+   ".'\"\n\n",
+   "ways",
+   "틱",
+   "面向",
+   "veyor",
+   " słow",
+   "_MINOR"
+  ],
+  "down": [
+   "бу",
+   "铲",
+   "uni",
+   "也会",
+   "鸥",
+   "体会",
+   "odo",
+   "人民服务",
+   "uido",
+   "NJ",
+   "obuf",
+   "也为"
+  ],
+  "peak_z": 5.281821250915527
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

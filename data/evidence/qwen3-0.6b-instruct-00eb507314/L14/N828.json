@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 828,
+ "down_norm": 0.7485547661781311,
+ "logit_lens": {
+  "up": [
+   "idis",
+   " GPI",
+   "'A",
+   " cgi",
+   "(Block",
+   "(Level",
+   "(Properties",
+   "undra",
+   "cq",
+   " upright",
+   "}s",
+   "@c"
+  ],
+  "down": [
+   "erte",
+   "sent",
+   "존",
+   "erten",
+   "sten",
+   "otal",
+   "사는",
+   "-ton",
+   "特斯",
+   "corn",
+   "onic",
+   "lé"
+  ],
+  "peak_z": 6.223681449890137
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

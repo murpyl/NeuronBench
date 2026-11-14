@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2805,
+ "down_norm": 0.6352902054786682,
+ "logit_lens": {
+  "up": [
+   " converts",
+   " convert",
+   " format",
+   " converted",
+   " notation",
+   " Format",
+   "notation",
+   "_format",
+   " formato",
+   ".Convert",
+   " formats",
+   " Convert"
+  ],
+  "down": [
+   " cancelButton",
+   " newPassword",
+   "ュ",
+   " eens",
+   "网站",
+   "IVERS",
+   "@endif",
+   "網站",
+   " resultList",
+   "حمل",
+   "aphrag",
+   "其次是"
+  ],
+  "peak_z": 5.672000408172607
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

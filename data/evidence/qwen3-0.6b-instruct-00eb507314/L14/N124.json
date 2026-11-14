@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 124,
+ "down_norm": 0.5641692280769348,
+ "logit_lens": {
+  "up": [
+   "ables",
+   " inve",
+   "ственные",
+   "些什么",
+   "')</",
+   "essor",
+   "卷",
+   "')",
+   "ataires",
+   "affe",
+   "licher",
+   " aussi"
+  ],
+  "down": [
+   "unce",
+   "hurst",
+   "Ն",
+   "stell",
+   "asted",
+   "ẳng",
+   ".Exchange",
+   "picked",
+   ",body",
+   ";br",
+   "alyzed",
+   "$sub"
+  ],
+  "peak_z": 4.937336444854736
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

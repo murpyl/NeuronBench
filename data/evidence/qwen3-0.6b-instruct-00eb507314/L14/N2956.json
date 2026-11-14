@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2956,
+ "down_norm": 0.9541282653808594,
+ "logit_lens": {
+  "up": [
+   "idian",
+   "ело",
+   "ppers",
+   "кал",
+   "utivo",
+   " dudes",
+   "trail",
+   "+',",
+   " físico",
+   "śmy",
+   " kèm",
+   "该项目"
+  ],
+  "down": [
+   " percentage",
+   "_percent",
+   " percent",
+   "%",
+   "率",
+   " proportion",
+   "百分之",
+   " %.",
+   " %",
+   "占",
+   " percentages",
+   "_percentage"
+  ],
+  "peak_z": 6.121866226196289
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

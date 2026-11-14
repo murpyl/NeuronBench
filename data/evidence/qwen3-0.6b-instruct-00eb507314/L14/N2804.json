@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2804,
+ "down_norm": 0.7360047101974487,
+ "logit_lens": {
+  "up": [
+   "*i",
+   " ioutil",
+   "-over",
+   "elia",
+   "-rec",
+   "rob",
+   "apiro",
+   "-risk",
+   " over",
+   "iliated",
+   "-stop",
+   "latin"
+  ],
+  "down": [
+   "两项",
+   "ayah",
+   "的一项",
+   "ologist",
+   "ionale",
+   "四项",
+   " lng",
+   "dish",
+   "OPS",
+   "<Order",
+   "两次",
+   "hdr"
+  ],
+  "peak_z": 4.824179172515869
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

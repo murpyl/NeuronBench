@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2503,
+ "down_norm": 0.787856936454773,
+ "logit_lens": {
+  "up": [
+   "statt",
+   "@author",
+   "hä",
+   " Fut",
+   "veal",
+   "zburg",
+   "ít",
+   "chod",
+   ":\",\n",
+   ":\")\n",
+   " significantly",
+   "要进一步"
+  ],
+  "down": [
+   "amy",
+   "ety",
+   "ius",
+   "iro",
+   "nowledge",
+   "apikey",
+   "除非",
+   "finity",
+   "roads",
+   "imity",
+   "|null",
+   "intl"
+  ],
+  "peak_z": 5.7021660804748535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2915,
+ "down_norm": 0.8186638355255127,
+ "logit_lens": {
+  "up": [
+   " soon",
+   "将继续",
+   " future",
+   "未来",
+   "将持续",
+   "未来的",
+   " tomorrow",
+   " upcoming",
+   "将来",
+   "将进一步",
+   " continues",
+   " continue"
+  ],
+  "down": [
+   "特殊",
+   "特殊的",
+   "都被",
+   "什么呢",
+   "StateChanged",
+   "作了",
+   "做到了",
+   "人家",
+   "却发现",
+   "窍",
+   " specialised",
+   " createState"
+  ],
+  "peak_z": 7.878255844116211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1433,
+ "down_norm": 0.675659716129303,
+ "logit_lens": {
+  "up": [
+   "长大了",
+   "伴随着",
+   "╋",
+   " éc",
+   " ecology",
+   "ired",
+   "重心",
+   "责任制",
+   "医科大学",
+   "义务",
+   " linked",
+   "ocene"
+  ],
+  "down": [
+   "ival",
+   " getField",
+   "ショー",
+   "schemas",
+   " nomin",
+   "kov",
+   "贿",
+   "Thought",
+   "棠",
+   "aoke",
+   "(show",
+   "pillar"
+  ],
+  "peak_z": 4.780623435974121
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

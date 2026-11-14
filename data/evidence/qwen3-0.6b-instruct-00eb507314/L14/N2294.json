@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2294,
+ "down_norm": 0.7921260595321655,
+ "logit_lens": {
+  "up": [
+   "adol",
+   "eras",
+   "vvm",
+   "witch",
+   "ệ",
+   " Revolution",
+   "是因为",
+   "xford",
+   "avern",
+   " AppCompatActivity",
+   " destinationViewController",
+   ".EditValue"
+  ],
+  "down": [
+   "IOUS",
+   "种",
+   "劲",
+   "лу",
+   "不尽",
+   "各种",
+   "дей",
+   "unks",
+   "otropic",
+   "得不到",
+   "各種",
+   "つつ"
+  ],
+  "peak_z": 5.412626266479492
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

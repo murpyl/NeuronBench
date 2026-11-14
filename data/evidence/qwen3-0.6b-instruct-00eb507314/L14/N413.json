@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 413,
+ "down_norm": 0.7697405815124512,
+ "logit_lens": {
+  "up": [
+   "pec",
+   "atables",
+   "ulla",
+   "ppers",
+   "続く",
+   "tings",
+   "件",
+   "的地位",
+   "提起",
+   "棵树",
+   "々",
+   "ugging"
+  ],
+  "down": [
+   "imately",
+   "moth",
+   "льн",
+   "nick",
+   "ient",
+   "都有自己",
+   "imento",
+   "MORE",
+   "anza",
+   "บาล",
+   "IENT",
+   "drawer"
+  ],
+  "peak_z": 5.239258766174316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

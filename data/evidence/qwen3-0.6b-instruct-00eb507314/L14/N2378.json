@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2378,
+ "down_norm": 0.8428635597229004,
+ "logit_lens": {
+  "up": [
+   "ratulations",
+   "伉",
+   "烊",
+   "报记者",
+   " congratulate",
+   "ako",
+   " BUSINESS",
+   "웃",
+   "化进程",
+   "izon",
+   "怎么回事",
+   "身心健康"
+  ],
+  "down": [
+   " FName",
+   "\"name",
+   " \"",
+   "              \r\n",
+   ".\r\n",
+   "     \r\n",
+   " \"?\"",
+   "ush",
+   "textInput",
+   "($\"",
+   "。\r\n",
+   "heimer"
+  ],
+  "peak_z": 4.771155834197998
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

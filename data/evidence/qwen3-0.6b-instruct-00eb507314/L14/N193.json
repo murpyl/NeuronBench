@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 193,
+ "down_norm": 0.5790632367134094,
+ "logit_lens": {
+  "up": [
+   "ews",
+   "igans",
+   "时表示",
+   "lí",
+   "ipt",
+   "ículo",
+   "est",
+   "erving",
+   "影视剧",
+   "ricks",
+   "atten",
+   "��"
+  ],
+  "down": [
+   "seau",
+   "спор",
+   "ipro",
+   "úb",
+   "prot",
+   "COORD",
+   "proved",
+   "vik",
+   "вор",
+   " dét",
+   "ped",
+   " rot"
+  ],
+  "peak_z": 5.294522285461426
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

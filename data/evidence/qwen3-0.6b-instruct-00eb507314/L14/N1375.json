@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1375,
+ "down_norm": 0.8565375804901123,
+ "logit_lens": {
+  "up": [
+   "izzer",
+   "'])\n\n",
+   "')\r\n\r\n",
+   "%)\n\n",
+   "\")\r\n\r\n",
+   "])\r\n\r\n",
+   "})\r\n\r\n",
+   "妳",
+   "nature",
+   "UInteger",
+   "\").\n\n",
+   "为人"
+  ],
+  "down": [
+   "larınd",
+   " acción",
+   " Aid",
+   "стан",
+   "añ",
+   "larında",
+   "”:",
+   ">:</",
+   "…”",
+   ",’’",
+   "”?",
+   " aid"
+  ],
+  "peak_z": 4.807984828948975
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

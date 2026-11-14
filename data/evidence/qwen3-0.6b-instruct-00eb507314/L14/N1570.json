@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1570,
+ "down_norm": 0.8441035151481628,
+ "logit_lens": {
+  "up": [
+   "Enough",
+   "ause",
+   "ael",
+   " mesmo",
+   "aper",
+   "\\common",
+   "-ons",
+   "arter",
+   "\\Doctrine",
+   "...)\n",
+   "\\$",
+   "asio"
+  ],
+  "down": [
+   "�试",
+   "étique",
+   "ervice",
+   "制度改革",
+   "传统",
+   "十三五",
+   "服务能力",
+   "的传统",
+   "erved",
+   "antine",
+   "issance",
+   "和个人"
+  ],
+  "peak_z": 4.730193614959717
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

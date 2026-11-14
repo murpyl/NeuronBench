@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1294,
+ "down_norm": 0.7780371308326721,
+ "logit_lens": {
+  "up": [
+   "ramento",
+   " itemprop",
+   "leur",
+   "PathParam",
+   "ubar",
+   " hamstring",
+   "供图",
+   "fast",
+   "까요",
+   " hẹn",
+   "립",
+   "他们是"
+  ],
+  "down": [
+   "uve",
+   "�",
+   "clubs",
+   " vidé",
+   "ewear",
+   "ipples",
+   "unicip",
+   "inz",
+   "не",
+   "üß",
+   "ũ",
+   " Airlines"
+  ],
+  "peak_z": 5.14796257019043
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

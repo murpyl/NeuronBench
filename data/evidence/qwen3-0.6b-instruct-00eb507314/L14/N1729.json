@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1729,
+ "down_norm": 0.7734673023223877,
+ "logit_lens": {
+  "up": [
+   " amount",
+   "(False",
+   "的所有",
+   "的数量",
+   " True",
+   "的道路",
+   " coverage",
+   "党组织",
+   " processing",
+   " False",
+   "foods",
+   " metric"
+  ],
+  "down": [
+   "isoft",
+   "ander",
+   "稳妥",
+   " śm",
+   "ily",
+   "热门",
+   "уг",
+   "isky",
+   "ientras",
+   "itary",
+   "ixed",
+   "usp"
+  ],
+  "peak_z": 4.8414201736450195
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

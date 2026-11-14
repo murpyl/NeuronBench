@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1893,
+ "down_norm": 0.906258225440979,
+ "logit_lens": {
+  "up": [
+   "就不能",
+   " обращ",
+   "getField",
+   "ivr",
+   " Ghana",
+   "-place",
+   "roken",
+   "BeforeEach",
+   "↩",
+   " [('",
+   " plc",
+   "ocene"
+  ],
+  "down": [
+   " according",
+   " según",
+   "according",
+   "According",
+   "她说",
+   "由中国",
+   " According",
+   "@author",
+   "众所",
+   " recommendations",
+   "彦",
+   "考え"
+  ],
+  "peak_z": 6.204734802246094
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

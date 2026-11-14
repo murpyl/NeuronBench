@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1862,
+ "down_norm": 0.7018576264381409,
+ "logit_lens": {
+  "up": [
+   "velt",
+   "Successfully",
+   " onSuccess",
+   " Successfully",
+   "anz",
+   "ewith",
+   "SUCCESS",
+   "isson",
+   ".Success",
+   "زة",
+   " Positive",
+   "胜利"
+  ],
+  "down": [
+   " khó",
+   "ㅠ",
+   "QUIRE",
+   " caution",
+   "困难",
+   "_ary",
+   " troubling",
+   "艰",
+   "ацион",
+   " קשה",
+   "ARY",
+   "淘汰"
+  ],
+  "peak_z": 5.170820713043213
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1437,
+ "down_norm": 0.8548849821090698,
+ "logit_lens": {
+  "up": [
+   " seventh",
+   " fourth",
+   "第四",
+   " sixth",
+   " drills",
+   " ninth",
+   ";a",
+   "HIP",
+   "第一节",
+   " eighth",
+   " fifth",
+   "@Module"
+  ],
+  "down": [
+   "reak",
+   "接触",
+   "ichen",
+   "線",
+   "Exact",
+   "Specific",
+   " Âu",
+   " inve",
+   "ệt",
+   "驳",
+   " papel",
+   "inv"
+  ],
+  "peak_z": 4.9343695640563965
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

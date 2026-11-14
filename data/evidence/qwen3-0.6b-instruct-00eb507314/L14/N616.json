@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 616,
+ "down_norm": 0.7115102410316467,
+ "logit_lens": {
+  "up": [
+   "ulnerable",
+   "hu",
+   "取",
+   "eh",
+   "лад",
+   "持",
+   "Db",
+   "write",
+   "摸",
+   "抬",
+   "''\n",
+   "h"
+  ],
+  "down": [
+   "imbus",
+   "icios",
+   "())->",
+   "ician",
+   "ços",
+   "ique",
+   "icians",
+   "osopher",
+   "писыва",
+   "nicos",
+   "iques",
+   " 같습니다"
+  ],
+  "peak_z": 5.209682464599609
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

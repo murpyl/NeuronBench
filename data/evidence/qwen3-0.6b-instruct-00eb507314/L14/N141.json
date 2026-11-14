@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 141,
+ "down_norm": 0.6522994041442871,
+ "logit_lens": {
+  "up": [
+   "rift",
+   "oons",
+   "rière",
+   ".\";\r\n",
+   ".\";\n",
+   ".\";",
+   ".';\n",
+   " Manson",
+   "ivals",
+   "év",
+   "ython",
+   ".'."
+  ],
+  "down": [
+   "Any",
+   "meye",
+   "GY",
+   "aspers",
+   "这样",
+   "kinson",
+   "困难",
+   "kowski",
+   "ador",
+   "等多种",
+   "区分",
+   "王者荣耀"
+  ],
+  "peak_z": 5.2780351638793945
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

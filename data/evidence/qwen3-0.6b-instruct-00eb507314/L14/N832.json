@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 832,
+ "down_norm": 0.5279979109764099,
+ "logit_lens": {
+  "up": [
+   "azers",
+   "删除成功",
+   "日讯",
+   "屋里",
+   "一个重要",
+   "aires",
+   "orphism",
+   "这几个",
+   "谥",
+   "JKLMNOP",
+   "免责声明",
+   "OperationException"
+  ],
+  "down": [
+   "zas",
+   "nees",
+   "olum",
+   "adia",
+   " remains",
+   "CTX",
+   "ILE",
+   "��",
+   " footing",
+   "nee",
+   "prises",
+   "Theory"
+  ],
+  "peak_z": 4.886844635009766
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

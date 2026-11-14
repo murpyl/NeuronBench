@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1648,
+ "down_norm": 0.8840022087097168,
+ "logit_lens": {
+  "up": [
+   "setAttribute",
+   "哪个",
+   "ведения",
+   "(attribute",
+   "绌",
+   "psz",
+   "成本",
+   "储量",
+   "cheid",
+   "nist",
+   "zeigt",
+   " مما"
+  ],
+  "down": [
+   "lotte",
+   "�",
+   "ший",
+   "�",
+   ".every",
+   "ialis",
+   "ìm",
+   "ERING",
+   "UILDER",
+   "бол",
+   " Wallpaper",
+   "itor"
+  ],
+  "peak_z": 4.898933410644531
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

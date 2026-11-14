@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1710,
+ "down_norm": 0.862142026424408,
+ "logit_lens": {
+  "up": [
+   "amu",
+   "ά",
+   "endez",
+   " Stock",
+   "伸",
+   "<|endoftext|>",
+   " Close",
+   "avn",
+   "zb",
+   "zf",
+   "omb",
+   "headers"
+  ],
+  "down": [
+   "éric",
+   " ///<",
+   "udios",
+   " категории",
+   "енной",
+   ":\");\r\n",
+   "-->\r\n",
+   "ughters",
+   ".microsoft",
+   "=\"../../../",
+   ".AutoScaleDimensions",
+   ".getRight"
+  ],
+  "peak_z": 4.769267559051514
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2612,
+ "down_norm": 0.8187332153320312,
+ "logit_lens": {
+  "up": [
+   " auprès",
+   " conservatism",
+   "üstü",
+   " vant",
+   "�",
+   " Unidos",
+   "ording",
+   "_tracking",
+   "向き",
+   "jourd",
+   ".dex",
+   "arranty"
+  ],
+  "down": [
+   "divider",
+   ".split",
+   " separating",
+   " splits",
+   "分",
+   "split",
+   " boundaries",
+   " split",
+   "Split",
+   " divide",
+   " Split",
+   "分割"
+  ],
+  "peak_z": 6.487818717956543
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

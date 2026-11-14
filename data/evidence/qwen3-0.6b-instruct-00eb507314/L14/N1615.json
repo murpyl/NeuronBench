@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1615,
+ "down_norm": 0.674390435218811,
+ "logit_lens": {
+  "up": [
+   "yn",
+   "或多",
+   " Belgi",
+   "越好",
+   "��",
+   "obel",
+   "(QtGui",
+   "immers",
+   "').'</",
+   "或其他",
+   "orca",
+   "engineering"
+  ],
+  "down": [
+   " and",
+   " And",
+   "And",
+   "和",
+   "-and",
+   "AndGet",
+   " AND",
+   "性和",
+   "itur",
+   "และ",
+   "AndPassword",
+   " и"
+  ],
+  "peak_z": 5.798001289367676
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

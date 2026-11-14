@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2401,
+ "down_norm": 0.715174674987793,
+ "logit_lens": {
+  "up": [
+   "ifice",
+   "WithType",
+   " tuy",
+   "pcf",
+   "ifique",
+   "ader",
+   "ungs",
+   " QUAL",
+   "Vien",
+   "ade",
+   "evin",
+   "WithPath"
+  ],
+  "down": [
+   "rawing",
+   "ني",
+   "他们都",
+   " Collector",
+   ">*</",
+   "Collector",
+   "{}{\n",
+   "ignite",
+   "灾难",
+   " \\\\\n",
+   "ė",
+   ".cat"
+  ],
+  "peak_z": 4.992618083953857
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1765,
+ "down_norm": 0.6709980368614197,
+ "logit_lens": {
+  "up": [
+   "asto",
+   "instead",
+   "Instead",
+   "=\"<<",
+   " instead",
+   "down",
+   "rather",
+   "şa",
+   "=\");\n",
+   " rather",
+   "Ề",
+   "ству"
+  ],
+  "down": [
+   "typeparam",
+   "rovers",
+   "resco",
+   "tract",
+   "matic",
+   "OTS",
+   "umatic",
+   "ricia",
+   "这两种",
+   "山庄",
+   "agus",
+   "由于"
+  ],
+  "peak_z": 5.659917831420898
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

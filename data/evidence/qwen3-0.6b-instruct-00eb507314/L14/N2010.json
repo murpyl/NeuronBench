@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2010,
+ "down_norm": 0.8159391283988953,
+ "logit_lens": {
+  "up": [
+   "[:]\n",
+   " jumper",
+   " destroyer",
+   "EventManager",
+   "емые",
+   "ый",
+   " Prototype",
+   ".Components",
+   "burst",
+   "(dynamic",
+   "[rand",
+   "[obj"
+  ],
+  "down": [
+   "中",
+   "行",
+   "nt",
+   " ๆ",
+   "hin",
+   "邪",
+   "管",
+   "%\",",
+   "ng",
+   "bben",
+   "絮",
+   "umont"
+  ],
+  "peak_z": 4.799601078033447
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

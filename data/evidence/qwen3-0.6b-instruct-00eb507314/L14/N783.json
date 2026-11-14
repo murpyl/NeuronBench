@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 783,
+ "down_norm": 0.6669148206710815,
+ "logit_lens": {
+  "up": [
+   "ognito",
+   "ISON",
+   "ename",
+   "idores",
+   "uddy",
+   "ender",
+   "andbox",
+   "napshot",
+   ".yml",
+   "erson",
+   "ilent",
+   "isify"
+  ],
+  "down": [
+   "()\"\n",
+   "'\"\n",
+   "}\"\n",
+   ";\"\n",
+   "\"]),\n",
+   "\">'\n",
+   "...\"\n",
+   "}}\"\n",
+   "占据了",
+   "\\\"\"",
+   "()\")\n",
+   "\"]');\n"
+  ],
+  "peak_z": 5.27320671081543
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

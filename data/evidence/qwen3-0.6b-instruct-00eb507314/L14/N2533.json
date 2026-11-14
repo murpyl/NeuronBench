@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2533,
+ "down_norm": 0.6443459987640381,
+ "logit_lens": {
+  "up": [
+   "reon",
+   "最常见的",
+   " commonly",
+   "iller",
+   "常见的",
+   "rosso",
+   " infamous",
+   "FPS",
+   "瓘",
+   "ilos",
+   "Frameworks",
+   "normally"
+  ],
+  "down": [
+   "ariat",
+   "odal",
+   "女方",
+   "(await",
+   "刺激",
+   "首先是",
+   "干警",
+   "iert",
+   "ken",
+   "Ả",
+   " resultList",
+   ".Output"
+  ],
+  "peak_z": 5.369547367095947
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

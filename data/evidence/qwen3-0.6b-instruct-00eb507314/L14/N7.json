@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 7,
+ "down_norm": 0.636655867099762,
+ "logit_lens": {
+  "up": [
+   "icated",
+   "ined",
+   "룸",
+   "原因之一",
+   "inati",
+   "罢了",
+   "(units",
+   " getElement",
+   "ında",
+   "íveis",
+   "urm",
+   "⇀"
+  ],
+  "down": [
+   "ific",
+   "oshi",
+   "pagesize",
+   "anked",
+   "enti",
+   "'y",
+   " mist",
+   "Smoke",
+   "usband",
+   " Banking",
+   "MASTER",
+   "struk"
+  ],
+  "peak_z": 4.626017093658447
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

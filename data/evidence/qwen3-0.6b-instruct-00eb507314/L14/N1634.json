@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1634,
+ "down_norm": 0.7012048363685608,
+ "logit_lens": {
+  "up": [
+   "!';\n",
+   "auty",
+   "üs",
+   "arts",
+   "autiful",
+   ".Dot",
+   ".defer",
+   "_SHADER",
+   "!.",
+   "_INF",
+   "!');\n",
+   "!\";\r\n"
+  ],
+  "down": [
+   "做什么",
+   "ilename",
+   "{T",
+   "groupName",
+   " Pan",
+   ":",
+   "Name",
+   "Username",
+   "背",
+   "口号",
+   " Til",
+   " towel"
+  ],
+  "peak_z": 4.9090728759765625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

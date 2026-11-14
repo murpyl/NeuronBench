@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2711,
+ "down_norm": 0.6595096588134766,
+ "logit_lens": {
+  "up": [
+   "pile",
+   " available",
+   " wisely",
+   " Wanna",
+   "얼",
+   "OOSE",
+   " Sure",
+   " O",
+   "ulent",
+   "pill",
+   " benefici",
+   "њ"
+  ],
+  "down": [
+   "beck",
+   "LEY",
+   "的灵魂",
+   " dấu",
+   "ley",
+   "暴雨",
+   "بور",
+   "rico",
+   "ACING",
+   "setFlash",
+   "록",
+   "liest"
+  ],
+  "peak_z": 5.1303935050964355
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

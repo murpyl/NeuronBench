@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 849,
+ "down_norm": 0.6299156546592712,
+ "logit_lens": {
+  "up": [
+   "زال",
+   "->___",
+   "avs",
+   " nem",
+   "ave",
+   "رن",
+   "abbage",
+   " initial",
+   " difference",
+   "ё",
+   " ya",
+   " primary"
+  ],
+  "down": [
+   "ɡ",
+   "icipation",
+   "spir",
+   "ϖ",
+   "MATCH",
+   " ******************************************************************************/\n\n",
+   "ypes",
+   "(\"`",
+   "了他的",
+   " `{",
+   "六合",
+   "olution"
+  ],
+  "peak_z": 5.152707576751709
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

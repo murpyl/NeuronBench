@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1448,
+ "down_norm": 0.7090293765068054,
+ "logit_lens": {
+  "up": [
+   "plement",
+   "apon",
+   "opies",
+   "iram",
+   "apy",
+   "ped",
+   "='+",
+   "adr",
+   " '+",
+   "agra",
+   "ps",
+   "'+"
+  ],
+  "down": [
+   "和发展",
+   "和",
+   "及",
+   "zhou",
+   "和其他",
+   "和支持",
+   "以及其他",
+   "及相关",
+   " and",
+   "以及",
+   "及其他",
+   " và"
+  ],
+  "peak_z": 5.716850280761719
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2128,
+ "down_norm": 0.8646405935287476,
+ "logit_lens": {
+  "up": [
+   "WithValue",
+   "ions",
+   "essenger",
+   "ckill",
+   "ainer",
+   "olecules",
+   " newsp",
+   "/problems",
+   "斯",
+   "lops",
+   "不负",
+   "olume"
+  ],
+  "down": [
+   " \"\\\",",
+   "PAD",
+   "rats",
+   "uetooth",
+   "cratch",
+   "&D",
+   "pad",
+   "็ด",
+   " Raid",
+   " dams",
+   "ardon",
+   " rat"
+  ],
+  "peak_z": 4.869027614593506
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

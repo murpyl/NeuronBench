@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2674,
+ "down_norm": 0.8579654693603516,
+ "logit_lens": {
+  "up": [
+   " and",
+   "和",
+   "和技术",
+   "และ",
+   " và",
+   " 和",
+   "and",
+   " وال",
+   " And",
+   "PUT",
+   " anda",
+   "และความ"
+  ],
+  "down": [
+   "alyze",
+   " succeeding",
+   " możliwość",
+   "arding",
+   "他又",
+   "ortic",
+   "theless",
+   " legalization",
+   "lée",
+   "goog",
+   "TypeId",
+   "orst"
+  ],
+  "peak_z": 6.806336879730225
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

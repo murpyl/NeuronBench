@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2140,
+ "down_norm": 0.7004942297935486,
+ "logit_lens": {
+  "up": [
+   "ariance",
+   "ansas",
+   ".Clock",
+   " Trilogy",
+   "%\"><",
+   "面向",
+   "ritic",
+   "achusetts",
+   "anh",
+   "aran",
+   "玩家来说",
+   "eneg"
+  ],
+  "down": [
+   " solution",
+   " answer",
+   "yses",
+   " solutions",
+   "(answer",
+   " réponse",
+   " Solutions",
+   "=result",
+   "答复",
+   "鳖",
+   "RetVal",
+   "的回答"
+  ],
+  "peak_z": 5.281301021575928
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

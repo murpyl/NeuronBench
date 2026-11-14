@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 235,
+ "down_norm": 0.6613157391548157,
+ "logit_lens": {
+  "up": [
+   " Studies",
+   "AppState",
+   "富民",
+   "سم",
+   "咨询服务",
+   "Statement",
+   "оцен",
+   "ifest",
+   "成绩单",
+   "证明",
+   "**)&",
+   "จำ"
+  ],
+  "down": [
+   " atoms",
+   " directional",
+   "agrams",
+   " gradients",
+   "ugal",
+   " atomic",
+   " angles",
+   " angled",
+   ":set",
+   " atom",
+   " createAction",
+   "iac"
+  ],
+  "peak_z": 4.860101222991943
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

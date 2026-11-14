@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 328,
+ "down_norm": 0.7265120148658752,
+ "logit_lens": {
+  "up": [
+   "rowned",
+   "iconductor",
+   "ved",
+   "ignon",
+   "leted",
+   " Congratulations",
+   "钮",
+   "redict",
+   "argon",
+   "芒",
+   "ignite",
+   "usters"
+  ],
+  "down": [
+   " inputs",
+   " input",
+   "(inputs",
+   " voices",
+   " echoes",
+   " outputs",
+   " sections",
+   "}`).",
+   "lya",
+   "\"):\n",
+   " selections",
+   " section"
+  ],
+  "peak_z": 5.644138336181641
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

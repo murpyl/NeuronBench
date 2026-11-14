@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 751,
+ "down_norm": 0.6732985973358154,
+ "logit_lens": {
+  "up": [
+   "三家",
+   "ya",
+   "有一个",
+   " appoint",
+   "七个",
+   "-binary",
+   "ilio",
+   "attery",
+   "여",
+   "三个",
+   "五个",
+   " P"
+  ],
+  "down": [
+   "oods",
+   "ằ",
+   "CLOCKS",
+   " thereof",
+   "gü",
+   "criptor",
+   "Ix",
+   "别的",
+   "ixe",
+   "nodoc",
+   " Denn",
+   "ographed"
+  ],
+  "peak_z": 4.872870922088623
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 243,
+ "down_norm": 0.6905685663223267,
+ "logit_lens": {
+  "up": [
+   "_]",
+   "ью",
+   "IEWS",
+   "ivities",
+   "__)",
+   "amientos",
+   "_)",
+   "elts",
+   "wives",
+   "łu",
+   "UE",
+   "tails"
+  ],
+  "down": [
+   "erk",
+   "缩",
+   "rette",
+   "陪同",
+   "brit",
+   "这一年",
+   "olic",
+   "烘干",
+   "招待",
+   "ip",
+   " tart",
+   " Baron"
+  ],
+  "peak_z": 4.915617942810059
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

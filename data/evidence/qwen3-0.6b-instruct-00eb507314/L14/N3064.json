@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3064,
+ "down_norm": 0.9844796657562256,
+ "logit_lens": {
+  "up": [
+   "empt",
+   " iht",
+   "poons",
+   ".Dropout",
+   "之所",
+   ".instagram",
+   "urile",
+   "ypo",
+   "tright",
+   "xFFF",
+   "┻",
+   " empt"
+  ],
+  "down": [
+   " Bürger",
+   " bufferSize",
+   " render",
+   "Aura",
+   "rage",
+   ",f",
+   "%;\"",
+   "\"&",
+   ">A",
+   "了自己的",
+   "仍是",
+   "叫"
+  ],
+  "peak_z": 4.897483825683594
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

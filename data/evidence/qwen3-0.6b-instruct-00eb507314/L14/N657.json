@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 657,
+ "down_norm": 0.7327413558959961,
+ "logit_lens": {
+  "up": [
+   "олод",
+   "erals",
+   "ivities",
+   "Ẳ",
+   "簠",
+   "нные",
+   "esis",
+   "ENN",
+   "ongan",
+   " Shan",
+   "istra",
+   " Nicola"
+  ],
+  "down": [
+   " storyboard",
+   "ution",
+   "认真",
+   " zelf",
+   ".try",
+   "ôte",
+   "utor",
+   "icip",
+   "asting",
+   " OnInit",
+   " bức",
+   "\tverify"
+  ],
+  "peak_z": 5.658315658569336
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 298,
+ "down_norm": 0.5700072050094604,
+ "logit_lens": {
+  "up": [
+   "ewire",
+   "resents",
+   "ekt",
+   "本書",
+   "珅",
+   "ндекс",
+   " nợ",
+   "ToEnd",
+   "глав",
+   " Inputs",
+   "ainless",
+   "Introduced"
+  ],
+  "down": [
+   "قص",
+   " counterparts",
+   "版本",
+   "性",
+   "-based",
+   "-linked",
+   " conditions",
+   " versions",
+   "条件",
+   "-focused",
+   "onde",
+   "政策"
+  ],
+  "peak_z": 4.9612507820129395
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

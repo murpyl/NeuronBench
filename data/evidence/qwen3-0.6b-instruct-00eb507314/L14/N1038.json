@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1038,
+ "down_norm": 0.7281898856163025,
+ "logit_lens": {
+  "up": [
+   " NOTHING",
+   " anything",
+   "hte",
+   "idak",
+   " nothing",
+   " NOT",
+   "nothing",
+   "不了",
+   "とは",
+   "不一定",
+   "？」",
+   "Aspect"
+  ],
+  "down": [
+   "IBC",
+   "giene",
+   "regation",
+   "arna",
+   "\"](",
+   ".initState",
+   "wegian",
+   "收款",
+   " cứng",
+   ".feed",
+   "-fin",
+   "ReuseIdentifier"
+  ],
+  "peak_z": 4.739139080047607
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

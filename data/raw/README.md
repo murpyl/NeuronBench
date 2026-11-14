@@ -17,4 +17,6 @@ Produced on an M3 Max with gguf-neuron-explorer 0.4.0 (llama-cpp-python 0.3.36, 
 model_id: `qwen3-0.6b-instruct-00eb507314`. `data/raw/` is gitignored on the code branches, so these files are
 force-added on this data branch only.
 
-Not included yet: per-neuron evidence (`scripts/export_evidence.py`), which has to run next to gne and the model.
+Per-neuron evidence for the same 384 neurons is in `data/evidence/<model_id>/L14/N<neuron>.json`, written by
+`scripts/export_evidence.py` at commit ee8ef6a. Each file holds `down_norm` and `logit_lens` only: `gne stats act` was
+not run, so there are no activation statistics, and nothing measured from pushing the neuron is included.

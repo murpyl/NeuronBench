@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2851,
+ "down_norm": 0.6966835260391235,
+ "logit_lens": {
+  "up": [
+   " Com",
+   " \".",
+   " COM",
+   "COM",
+   "象",
+   " Bit",
+   " comet",
+   "Com",
+   "8",
+   "!",
+   "bug",
+   "com"
+  ],
+  "down": [
+   "ableView",
+   "tó",
+   "tà",
+   "elerik",
+   "umn",
+   "zeich",
+   ".timedelta",
+   "层出",
+   "owość",
+   ".copyOf",
+   "ólica",
+   "Курс"
+  ],
+  "peak_z": 4.861272811889648
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

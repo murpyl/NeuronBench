@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1471,
+ "down_norm": 0.6927181482315063,
+ "logit_lens": {
+  "up": [
+   "gether",
+   "ople",
+   " eleven",
+   "ющихся",
+   "uhe",
+   "organisms",
+   " thirteen",
+   "-relative",
+   "貉",
+   "干什么",
+   "OPLE",
+   "률"
+  ],
+  "down": [
+   "Count",
+   "няти",
+   "Counter",
+   "  ",
+   "aser",
+   "导",
+   "ac",
+   "ext",
+   "verity",
+   "count",
+   "p",
+   "estyle"
+  ],
+  "peak_z": 4.67018461227417
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

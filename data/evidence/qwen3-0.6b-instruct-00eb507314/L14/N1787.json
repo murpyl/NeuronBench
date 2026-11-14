@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1787,
+ "down_norm": 0.8924193978309631,
+ "logit_lens": {
+  "up": [
+   "次",
+   "瑟",
+   "ỹ",
+   "用户提供",
+   " niveau",
+   "ys",
+   "iser",
+   "了解",
+   "特に",
+   " understanding",
+   "/lgpl",
+   "adar"
+  ],
+  "down": [
+   "Across",
+   " across",
+   "odia",
+   "ouples",
+   " Dhabi",
+   "_spot",
+   "pread",
+   "Appe",
+   " everywhere",
+   " Across",
+   " independents",
+   "orea"
+  ],
+  "peak_z": 4.56269645690918
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

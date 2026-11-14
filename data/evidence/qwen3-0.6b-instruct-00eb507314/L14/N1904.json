@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1904,
+ "down_norm": 0.7986080050468445,
+ "logit_lens": {
+  "up": [
+   "orida",
+   "@register",
+   "source",
+   " Destination",
+   " pedestal",
+   " source",
+   "ddd",
+   "ราม",
+   " ogóle",
+   " isError",
+   "+/",
+   " CPPUNIT"
+  ],
+  "down": [
+   "ption",
+   "ptions",
+   "ướ",
+   "菹",
+   "ques",
+   "aco",
+   "委员",
+   "IZ",
+   "Vectorizer",
+   "зу",
+   "Union",
+   "iya"
+  ],
+  "peak_z": 4.984107971191406
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

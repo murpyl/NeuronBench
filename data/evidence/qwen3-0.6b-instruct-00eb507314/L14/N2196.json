@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2196,
+ "down_norm": 0.7188931703567505,
+ "logit_lens": {
+  "up": [
+   "lassen",
+   " meth",
+   "ixin",
+   " linear",
+   ".AutoScaleMode",
+   "ASTER",
+   "controlled",
+   "ainless",
+   "ục",
+   "melon",
+   "��",
+   "满分"
+  ],
+  "down": [
+   "告诉她",
+   "研究报告",
+   "obook",
+   "\",\"\",",
+   "明白了",
+   "理解和",
+   "再去",
+   "ewitness",
+   "ographers",
+   "inders",
+   " pamph",
+   "摸"
+  ],
+  "peak_z": 5.5257086753845215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

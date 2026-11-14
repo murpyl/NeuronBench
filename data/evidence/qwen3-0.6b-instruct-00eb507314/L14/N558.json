@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 558,
+ "down_norm": 0.8831171989440918,
+ "logit_lens": {
+  "up": [
+   "ério",
+   "uplic",
+   "主义者",
+   "icemail",
+   "morgan",
+   "monic",
+   " whoever",
+   "orks",
+   "口气",
+   "objectManager",
+   "очной",
+   " NSCoder"
+  ],
+  "down": [
+   "Tro",
+   "因为",
+   " because",
+   "因为它",
+   "ley",
+   " Ведь",
+   " brigade",
+   " represent",
+   "เหมาะสม",
+   "因为我",
+   "Pre",
+   "well"
+  ],
+  "peak_z": 4.521336555480957
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 643,
+ "down_norm": 0.828050434589386,
+ "logit_lens": {
+  "up": [
+   "itious",
+   "ting",
+   "igail",
+   "../../../",
+   "\n        \n",
+   "lying",
+   "ícia",
+   "oster",
+   "squ",
+   "tek",
+   "\r\n    \r\n",
+   "ters"
+  ],
+  "down": [
+   "pio",
+   "gist",
+   "lider",
+   "\tcf",
+   "\targ",
+   " nét",
+   "quences",
+   " numRows",
+   "bow",
+   "otive",
+   "cco",
+   "沿海"
+  ],
+  "peak_z": 5.539424419403076
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

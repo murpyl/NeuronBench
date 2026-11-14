@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2179,
+ "down_norm": 0.7591585516929626,
+ "logit_lens": {
+  "up": [
+   "iants",
+   "-banner",
+   "\":\r\n",
+   " RaisedButton",
+   "精美",
+   "uzz",
+   ")):\r\n",
+   " safety",
+   "/gui",
+   ";\r\n\r\n\r\n",
+   "':\r\n",
+   "egie"
+  ],
+  "down": [
+   "imat",
+   "变化",
+   "的变化",
+   "changing",
+   " changing",
+   "變化",
+   "_split",
+   "增量",
+   " transpose",
+   " cambio",
+   " hoạch",
+   ".change"
+  ],
+  "peak_z": 5.211542129516602
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

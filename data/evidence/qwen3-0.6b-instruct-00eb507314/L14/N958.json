@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 958,
+ "down_norm": 0.6292551159858704,
+ "logit_lens": {
+  "up": [
+   "不上",
+   "缺乏",
+   "缺少",
+   "就没",
+   " lacked",
+   "就没有",
+   " никак",
+   "都没",
+   "都不能",
+   " lacks",
+   "来不及",
+   " hesitate"
+  ],
+  "down": [
+   "copyright",
+   "ulares",
+   "ushman",
+   "etermined",
+   "ete",
+   " JetBrains",
+   " Peterson",
+   "unction",
+   "ighthouse",
+   "enne",
+   "وية",
+   "arbonate"
+  ],
+  "peak_z": 6.339618682861328
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

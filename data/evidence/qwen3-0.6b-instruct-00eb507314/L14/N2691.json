@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2691,
+ "down_norm": 0.6629919409751892,
+ "logit_lens": {
+  "up": [
+   "取得了",
+   " lately",
+   "结果显示",
+   "得到了",
+   "展示了",
+   " evidenced",
+   " удалось",
+   "达到了",
+   "ebra",
+   "获得了",
+   " resulted",
+   " recently"
+  ],
+  "down": [
+   " future",
+   "届时",
+   " tomorrow",
+   " Future",
+   "Future",
+   "未來",
+   "将来",
+   "将会",
+   "到时候",
+   "future",
+   "_future",
+   "UTURE"
+  ],
+  "peak_z": 7.037863731384277
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

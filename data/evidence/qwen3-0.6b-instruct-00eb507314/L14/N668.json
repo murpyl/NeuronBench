@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 668,
+ "down_norm": 0.6721198558807373,
+ "logit_lens": {
+  "up": [
+   "erton",
+   ".fromCharCode",
+   "原因是",
+   "为什么",
+   "hyth",
+   "因为他们",
+   "突如",
+   "striction",
+   "inciple",
+   "-Tr",
+   "why",
+   "_secret"
+  ],
+  "down": [
+   "amat",
+   "eko",
+   "ござ",
+   "ぞ",
+   " Played",
+   "aub",
+   "اط",
+   " Anything",
+   "Anything",
+   "omid",
+   "оля",
+   "иш"
+  ],
+  "peak_z": 5.173384189605713
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

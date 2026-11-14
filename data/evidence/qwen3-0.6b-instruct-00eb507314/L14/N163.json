@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 163,
+ "down_norm": 0.9985010623931885,
+ "logit_lens": {
+  "up": [
+   "集体",
+   "NES",
+   "韦",
+   "ukt",
+   "�",
+   "oge",
+   " counter",
+   "鹿",
+   "纫",
+   "otron",
+   "LE",
+   "урс"
+  ],
+  "down": [
+   "privation",
+   "pressions",
+   "caff",
+   "rors",
+   "AllWindows",
+   "的地图",
+   "eways",
+   "囟",
+   "amura",
+   "糍",
+   "arsers",
+   "avigator"
+  ],
+  "peak_z": 4.926135063171387
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

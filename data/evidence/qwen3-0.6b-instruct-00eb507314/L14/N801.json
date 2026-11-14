@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 801,
+ "down_norm": 0.6656403541564941,
+ "logit_lens": {
+  "up": [
+   "/or",
+   "phans",
+   " equival",
+   "isons",
+   " consist",
+   "acles",
+   " combinations",
+   "nbsp",
+   " even",
+   "дет",
+   "scratch",
+   " sem"
+  ],
+  "down": [
+   "“(",
+   "Stories",
+   "орт",
+   "ariant",
+   "amework",
+   "ughter",
+   "elic",
+   "Award",
+   "etration",
+   "ascular",
+   "ished",
+   "XMLElement"
+  ],
+  "peak_z": 5.363857269287109
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

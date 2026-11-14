@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1818,
+ "down_norm": 0.6864393353462219,
+ "logit_lens": {
+  "up": [
+   "pared",
+   "assemble",
+   "책",
+   "您可以",
+   "イト",
+   " ')'",
+   " attempt",
+   "搬迁",
+   "ệnh",
+   "extract",
+   "odom",
+   "xpath"
+  ],
+  "down": [
+   "cores",
+   "riger",
+   "elas",
+   "acher",
+   " defeats",
+   "一下",
+   "密封",
+   "inson",
+   "深受",
+   "ving",
+   "_contacts",
+   "并在"
+  ],
+  "peak_z": 5.418978214263916
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

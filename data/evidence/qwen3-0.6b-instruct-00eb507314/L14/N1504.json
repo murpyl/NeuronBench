@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1504,
+ "down_norm": 0.5390739440917969,
+ "logit_lens": {
+  "up": [
+   "还需要",
+   "还会",
+   "iciary",
+   "ibus",
+   "さらに",
+   "还需",
+   "还包括",
+   "另一个",
+   "另外",
+   "elize",
+   " gere",
+   "更要"
+  ],
+  "down": [
+   "PELL",
+   "要么",
+   "大概是",
+   "修士",
+   "ходим",
+   "PD",
+   "��",
+   " UObject",
+   "一类",
+   " abduction",
+   "PAGE",
+   "ства"
+  ],
+  "peak_z": 5.067829608917236
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

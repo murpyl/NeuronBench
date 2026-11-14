@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 932,
+ "down_norm": 0.823613703250885,
+ "logit_lens": {
+  "up": [
+   "ière",
+   "hecy",
+   "otros",
+   "_fre",
+   "frame",
+   "rous",
+   " rêve",
+   "蚤",
+   "ertainment",
+   "free",
+   "ű",
+   "äge"
+  ],
+  "down": [
+   "люд",
+   "лик",
+   "’T",
+   " defendants",
+   "entin",
+   " CONTRIBUTORS",
+   " practitioners",
+   "本",
+   "/doc",
+   "INARY",
+   "纸上",
+   "еры"
+  ],
+  "peak_z": 4.7693562507629395
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

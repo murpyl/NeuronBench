@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2143,
+ "down_norm": 0.5168836712837219,
+ "logit_lens": {
+  "up": [
+   "性",
+   "ality",
+   "性和",
+   "ISTR",
+   "ial",
+   "ÂN",
+   "antar",
+   "破",
+   "骨干",
+   "ально",
+   "ansk",
+   "Trou"
+  ],
+  "down": [
+   " instead",
+   "instead",
+   "lessly",
+   "싱",
+   "cased",
+   "了自己的",
+   "отов",
+   "而是",
+   " succeeded",
+   "icot",
+   " preceded",
+   " Fälle"
+  ],
+  "peak_z": 5.287159442901611
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

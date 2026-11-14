@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1153,
+ "down_norm": 0.8361968994140625,
+ "logit_lens": {
+  "up": [
+   "之道",
+   "enschaft",
+   " comput",
+   "rophe",
+   "JP",
+   " klub",
+   "rine",
+   "elier",
+   "hof",
+   "horn",
+   "-com",
+   "铡"
+  ],
+  "down": [
+   "isten",
+   " ///</",
+   " initialValue",
+   "一级",
+   " olds",
+   "ода",
+   "lags",
+   "ội",
+   "utivo",
+   "ặc",
+   "yps",
+   "bei"
+  ],
+  "peak_z": 5.36763334274292
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1656,
+ "down_norm": 0.8242544531822205,
+ "logit_lens": {
+  "up": [
+   "createQuery",
+   " stranger",
+   "statistics",
+   "ensus",
+   "ulner",
+   "(errno",
+   " subpoena",
+   "ebin",
+   "secutive",
+   "setQuery",
+   "迟到",
+   " statistics"
+  ],
+  "down": [
+   "创作",
+   "美术",
+   "雕刻",
+   "绘",
+   "素材",
+   "材料",
+   "创意",
+   "美",
+   "绘画",
+   " crafts",
+   "tal",
+   "orphic"
+  ],
+  "peak_z": 5.912601470947266
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

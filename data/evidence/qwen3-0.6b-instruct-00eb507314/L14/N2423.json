@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2423,
+ "down_norm": 0.9731935858726501,
+ "logit_lens": {
+  "up": [
+   "ucas",
+   " :\n\n\n\n",
+   "粕",
+   "unden",
+   " Gos",
+   " }*/\n",
+   "osoph",
+   "igion",
+   "---</",
+   "耨",
+   " */)",
+   "徂"
+  ],
+  "down": [
+   "-help",
+   "阵",
+   ",tmp",
+   " resultCode",
+   "ائم",
+   ",",
+   "用电",
+   "及",
+   "emon",
+   ";",
+   "estring",
+   "孩子的"
+  ],
+  "peak_z": 5.202406883239746
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

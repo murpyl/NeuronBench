@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2409,
+ "down_norm": 0.9666717648506165,
+ "logit_lens": {
+  "up": [
+   "てい",
+   " so",
+   "vable",
+   " limp",
+   "reat",
+   " imp",
+   "能使",
+   "能让",
+   " mean",
+   "那儿",
+   "使",
+   "so"
+  ],
+  "down": [
+   "stered",
+   " \"()",
+   "كار",
+   "').\"",
+   " \"::",
+   " appointed",
+   "sticks",
+   " nowadays",
+   "ulerAngles",
+   "匣",
+   " \"==",
+   "yü"
+  ],
+  "peak_z": 4.776198387145996
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

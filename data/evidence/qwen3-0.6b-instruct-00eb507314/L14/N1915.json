@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1915,
+ "down_norm": 0.9547824859619141,
+ "logit_lens": {
+  "up": [
+   "ਆ",
+   " Alto",
+   "nero",
+   "edList",
+   " prac",
+   "iswa",
+   "Together",
+   "⊳",
+   " quarry",
+   " +#+#+#+#+#+",
+   "sembl",
+   " wys"
+  ],
+  "down": [
+   "ucumber",
+   "ester",
+   "ipple",
+   "terdam",
+   "agonal",
+   " fork",
+   "agogue",
+   "afen",
+   ".utility",
+   "钩",
+   "涟",
+   "urr"
+  ],
+  "peak_z": 5.110669136047363
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

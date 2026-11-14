@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1740,
+ "down_norm": 0.6014638543128967,
+ "logit_lens": {
+  "up": [
+   "ropy",
+   " always",
+   "自负",
+   " beaucoup",
+   "ありがとうございます",
+   "学生的",
+   "always",
+   "bags",
+   "aat",
+   " complexity",
+   "ogenic",
+   "ありますが"
+  ],
+  "down": [
+   "才能",
+   "才算",
+   ".ru",
+   "ith",
+   "gin",
+   "/gin",
+   "ând",
+   "醒",
+   ":Boolean",
+   ":green",
+   "则是",
+   "kah"
+  ],
+  "peak_z": 5.359111309051514
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1603,
+ "down_norm": 0.6450414061546326,
+ "logit_lens": {
+  "up": [
+   "فة",
+   "ousy",
+   "フル",
+   "\\Web",
+   "멘",
+   "coming",
+   "ỏi",
+   "คอย",
+   "tones",
+   "ifikasi",
+   "机遇",
+   ".invoke"
+  ],
+  "down": [
+   "箅",
+   "al",
+   "��索",
+   "planes",
+   "plane",
+   "ollar",
+   "tha",
+   "Ẳ",
+   "olare",
+   "لاق",
+   "ol",
+   "ège"
+  ],
+  "peak_z": 5.115579128265381
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

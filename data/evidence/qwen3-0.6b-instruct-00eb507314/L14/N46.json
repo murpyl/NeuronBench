@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 46,
+ "down_norm": 0.5444559454917908,
+ "logit_lens": {
+  "up": [
+   "agers",
+   " \"\");\r\n",
+   " …\n\n",
+   "phem",
+   "\").\n",
+   "iji",
+   " ');\r\n",
+   " \"\")\n\n",
+   ")();\n",
+   "!).\n\n",
+   "umni",
+   " \");\r\n"
+  ],
+  "down": [
+   "acidad",
+   "hma",
+   "КА",
+   ".Serialization",
+   "ropolis",
+   "lement",
+   "ῆ",
+   "-indent",
+   "าก",
+   "ennon",
+   "endencies",
+   "ész"
+  ],
+  "peak_z": 4.904338836669922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

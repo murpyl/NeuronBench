@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1799,
+ "down_norm": 0.6197436451911926,
+ "logit_lens": {
+  "up": [
+   "性强",
+   "etailed",
+   " traf",
+   "-tra",
+   "AIL",
+   " commission",
+   "phia",
+   "erval",
+   "OUR",
+   "IFE",
+   " ;\n\n\n",
+   "Minor"
+  ],
+  "down": [
+   " nonetheless",
+   " nevertheless",
+   "却",
+   "卻",
+   " however",
+   "却是",
+   ".onActivityResult",
+   "それでも",
+   "除外",
+   "ak",
+   "却没有",
+   " jedoch"
+  ],
+  "peak_z": 6.552096366882324
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

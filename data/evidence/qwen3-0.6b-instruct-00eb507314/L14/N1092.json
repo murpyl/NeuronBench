@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1092,
+ "down_norm": 0.5921826958656311,
+ "logit_lens": {
+  "up": [
+   "Und",
+   "olt",
+   "elon",
+   "->{",
+   "可以从",
+   "祖国",
+   "→",
+   " ->",
+   " →",
+   "ipient",
+   " Und",
+   " ->\n"
+  ],
+  "down": [
+   "-vector",
+   " vector",
+   ");\r\r\n",
+   " khoá",
+   "built",
+   "‟",
+   "ossa",
+   "vector",
+   "aced",
+   " shading",
+   "克拉",
+   "bew"
+  ],
+  "peak_z": 4.967050075531006
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

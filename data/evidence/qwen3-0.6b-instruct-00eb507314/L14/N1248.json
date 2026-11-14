@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1248,
+ "down_norm": 0.6714645624160767,
+ "logit_lens": {
+  "up": [
+   "lim",
+   "力量",
+   "(",
+   "and",
+   "еж",
+   "romo",
+   "機構",
+   "植入",
+   " Locations",
+   "alt",
+   "int",
+   "公司"
+  ],
+  "down": [
+   "leased",
+   ".shtml",
+   "ountain",
+   "DOWN",
+   ".shared",
+   ".asm",
+   "ว",
+   ".full",
+   "cimal",
+   ".transition",
+   " Đăng",
+   ".up"
+  ],
+  "peak_z": 5.250819206237793
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

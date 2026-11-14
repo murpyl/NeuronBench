@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2971,
+ "down_norm": 0.8803921341896057,
+ "logit_lens": {
+  "up": [
+   "metry",
+   "enan",
+   "ensing",
+   " heter",
+   "NSE",
+   "щен",
+   "�名",
+   "テスト",
+   "旗下",
+   "pek",
+   "_HIDDEN",
+   " STAR"
+  ],
+  "down": [
+   " tentative",
+   "身价",
+   "收购",
+   "挽回",
+   "评定",
+   "ACCEPT",
+   "reeze",
+   ".DataBindings",
+   "信赖",
+   " Recommendation",
+   " Kabul",
+   "索赔"
+  ],
+  "peak_z": 4.861369609832764
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

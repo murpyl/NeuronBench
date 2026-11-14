@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1988,
+ "down_norm": 0.8047012090682983,
+ "logit_lens": {
+  "up": [
+   "着手",
+   "初始",
+   "do",
+   "riors",
+   "设定",
+   " initializes",
+   "initialize",
+   "⊃",
+   "tas",
+   "orio",
+   "载",
+   "pread"
+  ],
+  "down": [
+   "退款",
+   "毙",
+   " change",
+   "变化",
+   ".$.",
+   "变更",
+   " OUTPUT",
+   "iversary",
+   "最後",
+   "最终",
+   "_rev",
+   "收获"
+  ],
+  "peak_z": 5.490060806274414
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

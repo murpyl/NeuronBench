@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2234,
+ "down_norm": 0.6959270238876343,
+ "logit_lens": {
+  "up": [
+   "自己",
+   "owns",
+   "长辈",
+   " interviewer",
+   "antwort",
+   "velope",
+   " fname",
+   "aucoup",
+   " narrator",
+   ".ObjectId",
+   "擅",
+   "前辈"
+  ],
+  "down": [
+   "体系建设",
+   " variation",
+   "系列产品",
+   "[number",
+   "iculture",
+   " серии",
+   "ilha",
+   "(operation",
+   " línea",
+   "ظاهرة",
+   "资源配置",
+   " pharm"
+  ],
+  "peak_z": 5.160184383392334
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

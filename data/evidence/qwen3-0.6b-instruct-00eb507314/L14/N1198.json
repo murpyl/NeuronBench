@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1198,
+ "down_norm": 1.0204724073410034,
+ "logit_lens": {
+  "up": [
+   "ników",
+   "nicos",
+   "ique",
+   "пу",
+   "�",
+   " terms",
+   "祟",
+   "ников",
+   "защит",
+   "ếp",
+   " cul",
+   " genu"
+  ],
+  "down": [
+   "евич",
+   "elize",
+   " JAXBElement",
+   "emble",
+   "EDGE",
+   "provided",
+   "mvc",
+   "estimate",
+   "erialized",
+   "Sizer",
+   "asley",
+   ".mipmap"
+  ],
+  "peak_z": 5.897864818572998
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

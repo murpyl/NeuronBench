@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 305,
+ "down_norm": 0.5976910591125488,
+ "logit_lens": {
+  "up": [
+   "arded",
+   "aced",
+   "asad",
+   "acro",
+   "ổ",
+   "핵",
+   "nest",
+   "nt",
+   "ởi",
+   "ilent",
+   "ύ",
+   "ython"
+  ],
+  "down": [
+   "这份",
+   "他们是",
+   "abal",
+   "各自的",
+   "abilité",
+   "副院长",
+   "obil",
+   "')+",
+   "已经是",
+   "lec",
+   " işle",
+   "epar"
+  ],
+  "peak_z": 4.934252738952637
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

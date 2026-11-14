@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 938,
+ "down_norm": 0.8097963333129883,
+ "logit_lens": {
+  "up": [
+   "terra",
+   "воль",
+   "lescope",
+   "gatsby",
+   "qli",
+   " koń",
+   "还可以",
+   "antal",
+   "QUENCY",
+   "CKER",
+   "IRD",
+   "cka"
+  ],
+  "down": [
+   "回事",
+   "ことを",
+   "大き",
+   "iniz",
+   "ことです",
+   "證",
+   " sign",
+   "年前",
+   "emarks",
+   " Magic",
+   "招",
+   "oload"
+  ],
+  "peak_z": 4.949657440185547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

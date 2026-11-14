@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1470,
+ "down_norm": 0.6352904438972473,
+ "logit_lens": {
+  "up": [
+   "帽",
+   "闭",
+   "anch",
+   "向下",
+   "pectives",
+   "禅",
+   "他会",
+   "现代化",
+   "活着",
+   "腊",
+   " Cherry",
+   "olla"
+  ],
+  "down": [
+   "es",
+   "IBUT",
+   "tery",
+   "ful",
+   " #\"",
+   "isd",
+   "\\Has",
+   "cri",
+   ".EventQueue",
+   "-go",
+   " dern",
+   ".nz"
+  ],
+  "peak_z": 4.733672618865967
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 710,
+ "down_norm": 0.5880704522132874,
+ "logit_lens": {
+  "up": [
+   " \"\",\r\n",
+   "onium",
+   "技术和",
+   "JKLMNOP",
+   "後に",
+   "oust",
+   "平板",
+   "新型冠状",
+   "失去",
+   "toLocale",
+   "[\"@",
+   "лаг"
+  ],
+  "down": [
+   "UserCode",
+   "参与者",
+   " Participant",
+   " compañ",
+   "(Environment",
+   "-alone",
+   "-bearing",
+   "arest",
+   "�",
+   " participant",
+   "-box",
+   " Commission"
+  ],
+  "peak_z": 4.8892598152160645
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

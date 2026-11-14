@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2756,
+ "down_norm": 0.8641095161437988,
+ "logit_lens": {
+  "up": [
+   "stry",
+   "主义思想",
+   "als",
+   "ledge",
+   "Study",
+   " study",
+   "study",
+   "\r\n\n",
+   " Study",
+   " charge",
+   "结晶",
+   "cript"
+  ],
+  "down": [
+   "oves",
+   "ENTE",
+   "其他的",
+   ".EventType",
+   "ENTS",
+   "еств",
+   "neas",
+   "elihood",
+   "сот",
+   "INCT",
+   " ens",
+   "ETO"
+  ],
+  "peak_z": 5.337509632110596
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

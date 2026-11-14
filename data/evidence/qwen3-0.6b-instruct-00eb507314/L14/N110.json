@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 110,
+ "down_norm": 0.6048368811607361,
+ "logit_lens": {
+  "up": [
+   ".cz",
+   "回合",
+   " herself",
+   " myself",
+   " yourself",
+   " themselves",
+   "raph",
+   "-mf",
+   "生怕",
+   "willReturn",
+   "rophe",
+   "igraph"
+  ],
+  "down": [
+   "noc",
+   "桓",
+   "ção",
+   "сти",
+   "uds",
+   "IOD",
+   "nic",
+   "团",
+   "NO",
+   " вид",
+   "ford",
+   "IOC"
+  ],
+  "peak_z": 4.560240745544434
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

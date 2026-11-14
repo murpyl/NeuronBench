@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2438,
+ "down_norm": 0.7995542287826538,
+ "logit_lens": {
+  "up": [
+   "辞",
+   "uan",
+   " toString",
+   ".getFont",
+   "Fax",
+   "回调",
+   " molt",
+   "Bonus",
+   " fax",
+   " dryer",
+   "十月",
+   "enburg"
+  ],
+  "down": [
+   "actively",
+   " preventive",
+   "actable",
+   "ält",
+   "inee",
+   "的愿望",
+   "ables",
+   " desired",
+   " inse",
+   "phis",
+   " dreamed",
+   " neuroscience"
+  ],
+  "peak_z": 4.954282760620117
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

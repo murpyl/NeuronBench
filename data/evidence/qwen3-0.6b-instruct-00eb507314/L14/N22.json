@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 22,
+ "down_norm": 0.6305318474769592,
+ "logit_lens": {
+  "up": [
+   "ENTE",
+   "什么原因",
+   "ектив",
+   " ENTRY",
+   "ented",
+   "[self",
+   "ведения",
+   " Osw",
+   "adge",
+   "[data",
+   " conduc",
+   "回事"
+  ],
+  "down": [
+   " extraction",
+   "蟆",
+   " tế",
+   " Extraction",
+   "раж",
+   "robots",
+   "ujących",
+   "pired",
+   "ployment",
+   "Ale",
+   ".intersection",
+   " hoops"
+  ],
+  "peak_z": 4.942423343658447
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

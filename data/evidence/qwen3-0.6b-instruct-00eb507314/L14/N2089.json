@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2089,
+ "down_norm": 0.6726746559143066,
+ "logit_lens": {
+  "up": [
+   "第一条",
+   "first",
+   "\tfirst",
+   "成人",
+   "omore",
+   " First",
+   "claimer",
+   "irts",
+   " first",
+   "第一部",
+   "/autoload",
+   " Inhal"
+  ],
+  "down": [
+   "ToBounds",
+   "eo",
+   "(flags",
+   " bred",
+   "��",
+   "EO",
+   "e",
+   "_EFFECT",
+   " SCN",
+   "就诊",
+   " Seasons",
+   "esty"
+  ],
+  "peak_z": 5.784183979034424
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

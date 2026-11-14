@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 911,
+ "down_norm": 0.8401296138763428,
+ "logit_lens": {
+  "up": [
+   "itus",
+   "icho",
+   "ATO",
+   "Ạ",
+   "\\Builder",
+   "bable",
+   " medios",
+   " TODO",
+   "->{$",
+   "-den",
+   " incurred",
+   "去哪儿"
+  ],
+  "down": [
+   "maids",
+   "她们",
+   "adora",
+   "嫁给",
+   "arians",
+   "jection",
+   "jections",
+   "妮",
+   " herself",
+   "ари",
+   "姐妹",
+   "ниц"
+  ],
+  "peak_z": 5.339033126831055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

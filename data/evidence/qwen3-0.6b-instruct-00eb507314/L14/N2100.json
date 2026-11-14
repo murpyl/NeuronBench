@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2100,
+ "down_norm": 0.6568252444267273,
+ "logit_lens": {
+  "up": [
+   "共同体",
+   "inters",
+   " *\r\n",
+   "يات",
+   "odie",
+   "achten",
+   "ди",
+   "úb",
+   "ßen",
+   "inati",
+   "kaar",
+   "uttle"
+  ],
+  "down": [
+   "与",
+   "與",
+   "eger",
+   " Saturdays",
+   "รอง",
+   "ほう",
+   " peg",
+   "牵",
+   "柔",
+   "erv",
+   "eks",
+   "与其"
+  ],
+  "peak_z": 5.756173610687256
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

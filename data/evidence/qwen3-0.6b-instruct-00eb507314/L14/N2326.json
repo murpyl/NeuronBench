@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2326,
+ "down_norm": 0.7569345831871033,
+ "logit_lens": {
+  "up": [
+   " or",
+   " and",
+   "adamente",
+   "isi",
+   "ical",
+   "IVERS",
+   "解",
+   " di",
+   "итель",
+   "ител",
+   " ic",
+   " \\\\\n"
+  ],
+  "down": [
+   "lığın",
+   "amel",
+   " withdrawing",
+   ".stride",
+   "asmus",
+   " McDon",
+   "sterol",
+   "rape",
+   "reau",
+   "brains",
+   "etine",
+   " commune"
+  ],
+  "peak_z": 5.447266578674316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

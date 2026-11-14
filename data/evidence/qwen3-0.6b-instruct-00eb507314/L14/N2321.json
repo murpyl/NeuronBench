@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2321,
+ "down_norm": 0.8630911111831665,
+ "logit_lens": {
+  "up": [
+   "wy",
+   "wer",
+   "ws",
+   "({});\n",
+   "wi",
+   "ICIENT",
+   "ModelError",
+   " Integr",
+   "WS",
+   ",</",
+   "_ws",
+   "ín"
+  ],
+  "down": [
+   "anted",
+   "岈",
+   " His",
+   "ahoma",
+   "agues",
+   "ategorical",
+   "His",
+   "ylation",
+   "roduction",
+   "егодня",
+   " détail",
+   "ivable"
+  ],
+  "peak_z": 5.8960862159729
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2700,
+ "down_norm": 0.9478236436843872,
+ "logit_lens": {
+  "up": [
+   "actory",
+   "acific",
+   "ださい",
+   "boro",
+   "aves",
+   "_formats",
+   "更好的",
+   "较好的",
+   "olon",
+   "anal",
+   "更多的",
+   "最高的"
+  ],
+  "down": [
+   ".Modules",
+   " Modules",
+   "onn",
+   " ticking",
+   " Module",
+   "ник",
+   " sne",
+   "Modules",
+   "NameValuePair",
+   "'image",
+   "什么时候",
+   "atars"
+  ],
+  "peak_z": 5.00162410736084
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

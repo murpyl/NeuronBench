@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1856,
+ "down_norm": 0.7901907563209534,
+ "logit_lens": {
+  "up": [
+   ".”\n\n\n\n",
+   "'))\n\n\n",
+   "\"\n\n\n",
+   "\"\n\n\n\n",
+   "\"\r\n\r\n\r\n",
+   "。\n\n\n\n",
+   "\".\n\n\n\n",
+   "!\n\n\n\n",
+   "'\n\n\n",
+   ".\"\n\n\n",
+   "))\n\n\n",
+   ")\r\n\r\n\r\n"
+  ],
+  "down": [
+   " автомоби",
+   "?,\n",
+   "危",
+   " convo",
+   "лежа",
+   "istance",
+   "oa",
+   " cous",
+   "avan",
+   "中华人民",
+   "marvin",
+   " применения"
+  ],
+  "peak_z": 6.036518573760986
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

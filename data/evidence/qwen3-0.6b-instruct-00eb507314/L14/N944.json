@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 944,
+ "down_norm": 0.8113864660263062,
+ "logit_lens": {
+  "up": [
+   "ович",
+   "ooth",
+   " Regression",
+   "[index",
+   "itis",
+   "_secure",
+   " Bound",
+   "onation",
+   "INDEX",
+   "MethodName",
+   "贲",
+   "rosis"
+  ],
+  "down": [
+   "包括",
+   " ranging",
+   "余个",
+   "三个方面",
+   "四个方面",
+   "rô",
+   " diverse",
+   "十余",
+   "的各种",
+   "Various",
+   "iverse",
+   " zarówno"
+  ],
+  "peak_z": 5.324645519256592
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

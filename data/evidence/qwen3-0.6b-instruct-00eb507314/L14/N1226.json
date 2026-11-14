@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1226,
+ "down_norm": 0.7698239088058472,
+ "logit_lens": {
+  "up": [
+   "idelity",
+   "台上",
+   "意大",
+   "台",
+   "Clients",
+   " précis",
+   "万台",
+   "iPad",
+   "latex",
+   "quisition",
+   "urai",
+   "(code"
+  ],
+  "down": [
+   " Смотр",
+   "ouncements",
+   " entrev",
+   "[++",
+   "onces",
+   "ernal",
+   "鲜",
+   "'}",
+   "enzie",
+   "hra",
+   ";height",
+   "rend"
+  ],
+  "peak_z": 5.251667022705078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2382,
+ "down_norm": 0.7695557475090027,
+ "logit_lens": {
+  "up": [
+   " setSupportActionBar",
+   ".executeQuery",
+   "ouston",
+   "entieth",
+   "五千",
+   "三千",
+   "ũng",
+   "mtree",
+   "igraph",
+   "itchens",
+   "iki",
+   "arton"
+  ],
+  "down": [
+   "pass",
+   "\"]))\n",
+   "\")))\n",
+   " pass",
+   "\")\n",
+   "\"):\n",
+   "ind",
+   "\")[",
+   "\")\r\n",
+   "\");\r\n",
+   "\")}\n",
+   ".Pass"
+  ],
+  "peak_z": 5.331927299499512
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2823,
+ "down_norm": 0.9783992767333984,
+ "logit_lens": {
+  "up": [
+   " fight",
+   " anything",
+   " pair",
+   "anything",
+   "什么都",
+   "oten",
+   "ometry",
+   "))[",
+   " الإدارة",
+   "人都",
+   "代",
+   " fights"
+  ],
+  "down": [
+   "ionales",
+   "jec",
+   "omens",
+   "给宝宝",
+   "mur",
+   "hatt",
+   "ủng",
+   "utters",
+   "ɡ",
+   "idelity",
+   "koń",
+   "ensed"
+  ],
+  "peak_z": 4.8693389892578125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

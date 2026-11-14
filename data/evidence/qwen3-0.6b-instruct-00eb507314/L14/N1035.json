@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1035,
+ "down_norm": 1.0250298976898193,
+ "logit_lens": {
+  "up": [
+   "天下",
+   "指導",
+   " coun",
+   "uyên",
+   "interpre",
+   "gł",
+   ")arg",
+   " că",
+   ".wikipedia",
+   "endet",
+   ";top",
+   "方向"
+  ],
+  "down": [
+   "atty",
+   "ESA",
+   "积极配合",
+   "idable",
+   "uckle",
+   "IGO",
+   " StObject",
+   "achat",
+   "缴费",
+   "iosis",
+   "compatible",
+   " ple"
+  ],
+  "peak_z": 5.279143810272217
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

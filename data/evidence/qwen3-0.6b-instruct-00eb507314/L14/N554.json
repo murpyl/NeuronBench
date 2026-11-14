@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 554,
+ "down_norm": 0.5607834458351135,
+ "logit_lens": {
+  "up": [
+   "—they",
+   "浏",
+   "可以获得",
+   "—it",
+   " них",
+   "靖",
+   "=E",
+   "它可以",
+   " нормальн",
+   "ethoven",
+   "avy",
+   " ellas"
+  ],
+  "down": [
+   "posal",
+   "iciones",
+   "Else",
+   "###\n\n",
+   "itia",
+   " Else",
+   "tical",
+   ".configuration",
+   "tics",
+   "ADVERTISEMENT",
+   "اض",
+   "基础"
+  ],
+  "peak_z": 5.608949184417725
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

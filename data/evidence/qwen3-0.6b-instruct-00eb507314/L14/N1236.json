@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1236,
+ "down_norm": 0.6074051856994629,
+ "logit_lens": {
+  "up": [
+   "مرة",
+   "挂号",
+   "udad",
+   "uty",
+   "ulaire",
+   "ernel",
+   "itchens",
+   " cử",
+   "<Member",
+   "чин",
+   "oupper",
+   " chiff"
+  ],
+  "down": [
+   "...\"\n\n",
+   "…)\n\n",
+   "...\n\n",
+   "...)\n\n",
+   "!!\n\n",
+   "脚",
+   "特",
+   "！\n\n",
+   "spo",
+   " ''\n\n",
+   "…\n\n",
+   "\").\n\n"
+  ],
+  "peak_z": 5.159837245941162
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

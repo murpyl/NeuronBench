@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2408,
+ "down_norm": 0.7938409447669983,
+ "logit_lens": {
+  "up": [
+   " evacuated",
+   "­tion",
+   "cosity",
+   "everything",
+   "cury",
+   "hire",
+   "ccione",
+   "шка",
+   " cover",
+   "–\n\n",
+   "::~",
+   "协办"
+  ],
+  "down": [
+   "asaki",
+   " basic",
+   "ament",
+   "TERNAL",
+   "ök",
+   "urret",
+   "quals",
+   "uen",
+   "內部",
+   "rending",
+   "amientos",
+   "amiento"
+  ],
+  "peak_z": 4.507892608642578
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

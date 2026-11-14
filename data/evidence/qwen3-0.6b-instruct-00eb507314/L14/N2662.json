@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2662,
+ "down_norm": 0.8317890763282776,
+ "logit_lens": {
+  "up": [
+   "一项",
+   "-led",
+   "项",
+   "ripsi",
+   "vince",
+   "айн",
+   "黄金",
+   "多个国家",
+   "jährige",
+   "avr",
+   "ProcessEvent",
+   "Видео"
+  ],
+  "down": [
+   "овал",
+   "ow",
+   "assen",
+   "owan",
+   "remember",
+   "references",
+   "的就是",
+   "奢",
+   "orama",
+   "ower",
+   "Sou",
+   "ourse"
+  ],
+  "peak_z": 4.837423324584961
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1108,
+ "down_norm": 0.974896252155304,
+ "logit_lens": {
+  "up": [
+   "ATEST",
+   "oted",
+   "字母",
+   "acie",
+   "ked",
+   "úb",
+   "cies",
+   "etailed",
+   "ASTE",
+   "ció",
+   "EFR",
+   "pecific"
+  ],
+  "down": [
+   "减轻",
+   "预防",
+   "化解",
+   "减少",
+   "解決",
+   "避免",
+   "原本",
+   "削减",
+   "友好",
+   "эконом",
+   "前世",
+   "outil"
+  ],
+  "peak_z": 5.541752338409424
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

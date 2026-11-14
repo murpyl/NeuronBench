@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 940,
+ "down_norm": 0.6586460471153259,
+ "logit_lens": {
+  "up": [
+   "vably",
+   " anything",
+   "ключа",
+   "ArrayOf",
+   " Fortune",
+   " anybody",
+   " any",
+   "itemName",
+   " Anything",
+   "($('",
+   "equalTo",
+   "ospace"
+  ],
+  "down": [
+   "REAM",
+   "通過",
+   "่วย",
+   "通过",
+   ")init",
+   "ST",
+   "在这里",
+   " 때문",
+   "aming",
+   "思い",
+   "忘",
+   "纷纷"
+  ],
+  "peak_z": 5.374969482421875
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

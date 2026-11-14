@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2583,
+ "down_norm": 0.8532385230064392,
+ "logit_lens": {
+  "up": [
+   "—that",
+   " dotyc",
+   "是对",
+   "vae",
+   "iley",
+   " represents",
+   "--\r\n",
+   " =\r\n",
+   "—all",
+   "unger",
+   " indicates",
+   "—are"
+  ],
+  "down": [
+   "誊",
+   " Pics",
+   "plements",
+   "三级",
+   "aps",
+   "pie",
+   "Rated",
+   " prive",
+   "pine",
+   "白马",
+   "APS",
+   "接下来"
+  ],
+  "peak_z": 4.782050132751465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

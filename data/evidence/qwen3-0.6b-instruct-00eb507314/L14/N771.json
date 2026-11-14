@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 771,
+ "down_norm": 0.7637391090393066,
+ "logit_lens": {
+  "up": [
+   " ",
+   "拉",
+   "blas",
+   "命",
+   "\n",
+   " “",
+   "ul",
+   "Tables",
+   "“",
+   " eliminate",
+   " relationships",
+   " $"
+  ],
+  "down": [
+   "ienes",
+   "疣",
+   "uncture",
+   "zial",
+   "kich",
+   "oppins",
+   " thụ",
+   "众所",
+   "百货",
+   " rotational",
+   "ient",
+   " Państwo"
+  ],
+  "peak_z": 5.312867164611816
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

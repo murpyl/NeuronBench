@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1041,
+ "down_norm": 0.8226544857025146,
+ "logit_lens": {
+  "up": [
+   "ύ",
+   "oth",
+   " oder",
+   "يق",
+   "胝",
+   "进一步",
+   "腔",
+   "zel",
+   "øre",
+   "OTS",
+   "час",
+   "oder"
+  ],
+  "down": [
+   "itch",
+   "elihood",
+   "ении",
+   "pread",
+   "ension",
+   "rael",
+   "يري",
+   "ений",
+   ">\"+\n",
+   "lıkl",
+   "isons",
+   "entions"
+  ],
+  "peak_z": 5.234760284423828
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

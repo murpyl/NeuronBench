@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2582,
+ "down_norm": 0.7495163083076477,
+ "logit_lens": {
+  "up": [
+   "peria",
+   " radios",
+   "inis",
+   "’an",
+   " radio",
+   "-radio",
+   " Radio",
+   "`}\n",
+   "Radio",
+   "_radio",
+   " déf",
+   "awning"
+  ],
+  "down": [
+   "ワーク",
+   " OPS",
+   "发展格局",
+   "ummies",
+   ".Environment",
+   "runner",
+   "下面",
+   "而现在",
+   " \"),",
+   "芾",
+   "器",
+   "ارد"
+  ],
+  "peak_z": 5.0795979499816895
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

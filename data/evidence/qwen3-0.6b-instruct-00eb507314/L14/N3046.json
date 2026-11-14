@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3046,
+ "down_norm": 0.800457239151001,
+ "logit_lens": {
+  "up": [
+   " either",
+   " Either",
+   "或是",
+   "Either",
+   "either",
+   "或",
+   " or",
+   " 或",
+   " EITHER",
+   "或者",
+   " vagy",
+   "或多"
+  ],
+  "down": [
+   "aily",
+   "的女儿",
+   ".Transform",
+   "inine",
+   ".prepareStatement",
+   " desn",
+   "的孩子",
+   "rijk",
+   ".ps",
+   "urnal",
+   "обр",
+   "itled"
+  ],
+  "peak_z": 8.520768165588379
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

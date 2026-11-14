@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 91,
+ "down_norm": 0.5961108803749084,
+ "logit_lens": {
+  "up": [
+   "另一种",
+   "GU",
+   " Wing",
+   "plets",
+   "另一方面",
+   "اض",
+   "另一个",
+   "另一",
+   "另一位",
+   "téri",
+   " Threads",
+   "菌"
+  ],
+  "down": [
+   "ick",
+   "ickle",
+   "лей",
+   "ickt",
+   "ickness",
+   "وز",
+   "ckt",
+   ".Escape",
+   "atility",
+   "eker",
+   "itution",
+   "kB"
+  ],
+  "peak_z": 5.128134250640869
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

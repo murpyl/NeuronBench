@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1344,
+ "down_norm": 0.5682093501091003,
+ "logit_lens": {
+  "up": [
+   "isci",
+   "ustin",
+   "用人",
+   "inois",
+   " conc",
+   "usto",
+   "brero",
+   "íst",
+   "ourke",
+   "avid",
+   "NSE",
+   "人心"
+  ],
+  "down": [
+   " moduleId",
+   "écial",
+   "orable",
+   "ItemId",
+   "部門",
+   " tố",
+   "属性",
+   "妣",
+   "EntityType",
+   ".addField",
+   "勋章",
+   "瘅"
+  ],
+  "peak_z": 5.249201774597168
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

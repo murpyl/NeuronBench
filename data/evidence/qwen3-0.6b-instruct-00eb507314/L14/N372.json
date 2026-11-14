@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 372,
+ "down_norm": 0.6117356419563293,
+ "logit_lens": {
+  "up": [
+   "Trigger",
+   "inged",
+   "哨",
+   "iggers",
+   "下手",
+   "้าง",
+   "начен",
+   "ื่",
+   "واق",
+   "apped",
+   "那时",
+   "？」"
+  ],
+  "down": [
+   "avar",
+   "戬",
+   "ruz",
+   "eo",
+   ".Bot",
+   " unofficial",
+   "either",
+   "uplicates",
+   " Apost",
+   "asaki",
+   "Ren",
+   "hai"
+  ],
+  "peak_z": 5.09595251083374
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

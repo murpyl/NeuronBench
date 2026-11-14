@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 946,
+ "down_norm": 0.7163711786270142,
+ "logit_lens": {
+  "up": [
+   ",'\\",
+   "ually",
+   "预",
+   "(),'",
+   "imon",
+   "ully",
+   "anges",
+   "prü",
+   "不住",
+   "eus",
+   "porto",
+   "aub"
+  ],
+  "down": [
+   "_MACHINE",
+   " spectral",
+   "úb",
+   "**/\n",
+   "-bed",
+   "\"\"\".",
+   ".machine",
+   "及其他",
+   " Bale",
+   "及相关",
+   "thalm",
+   "以及其他"
+  ],
+  "peak_z": 4.528259754180908
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

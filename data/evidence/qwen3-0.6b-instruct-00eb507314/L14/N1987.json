@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1987,
+ "down_norm": 1.0423787832260132,
+ "logit_lens": {
+  "up": [
+   " termin",
+   ".\n\n",
+   " McGregor",
+   "ourke",
+   " év",
+   " Cock",
+   " spur",
+   "-touch",
+   "泵",
+   "OCK",
+   " touch",
+   "[self"
+  ],
+  "down": [
+   "unos",
+   "nants",
+   "uno",
+   "ields",
+   "/lists",
+   "ategorized",
+   "个人观点",
+   "anela",
+   "nets",
+   "stood",
+   "ancy",
+   "нят"
+  ],
+  "peak_z": 4.977843761444092
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

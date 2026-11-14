@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 529,
+ "down_norm": 0.6788060665130615,
+ "logit_lens": {
+  "up": [
+   " \"-\"\n",
+   "че",
+   "(map",
+   ",map",
+   "/map",
+   "elaide",
+   "ionale",
+   "改革发展",
+   "\tmap",
+   "ppe",
+   " map",
+   " appearances"
+  ],
+  "down": [
+   " setSupportActionBar",
+   ">Please",
+   ".setOnItemClickListener",
+   "原标题",
+   "报记者",
+   "<My",
+   "OfFile",
+   ">window",
+   "_CHK",
+   "…\n\n",
+   "ichael",
+   "anny"
+  ],
+  "peak_z": 4.911269187927246
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

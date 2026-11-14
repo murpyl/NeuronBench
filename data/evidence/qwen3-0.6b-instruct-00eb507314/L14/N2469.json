@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2469,
+ "down_norm": 0.8586553931236267,
+ "logit_lens": {
+  "up": [
+   " ())\n",
+   "用于",
+   "_)\r\n",
+   "下游",
+   "сер",
+   " LoginPage",
+   "可用于",
+   " );\r\n",
+   "getEmail",
+   "очно",
+   " snack",
+   " ):\n"
+  ],
+  "down": [
+   "entifier",
+   "awaii",
+   "决不",
+   "uliar",
+   "yper",
+   "ляр",
+   "istry",
+   " ethic",
+   "ymce",
+   "дар",
+   "-fashioned",
+   "oulder"
+  ],
+  "peak_z": 5.145116329193115
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

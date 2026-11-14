@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1754,
+ "down_norm": 0.9476889371871948,
+ "logit_lens": {
+  "up": [
+   "勢",
+   "iring",
+   "edido",
+   "CHE",
+   "azole",
+   "che",
+   "引进",
+   "aturity",
+   "emony",
+   "cent",
+   "alesce",
+   ".Areas"
+  ],
+  "down": [
+   " pública",
+   "köp",
+   "产品的",
+   "<?,",
+   "icc",
+   "icana",
+   " crackers",
+   "oice",
+   "ولا",
+   "inka",
+   " bulunduğu",
+   "ThanOrEqualTo"
+  ],
+  "peak_z": 5.033011436462402
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 137,
+ "down_norm": 0.5831997394561768,
+ "logit_lens": {
+  "up": [
+   "lers",
+   "alent",
+   "memberOf",
+   "enko",
+   "jec",
+   " Kund",
+   "\"\r\n\r\n\r\n",
+   "abouts",
+   "\")\r\n\r\n",
+   "itors",
+   "\",[",
+   "]\r\n\r\n"
+  ],
+  "down": [
+   " bổ",
+   "定了",
+   "你需要",
+   "版权归原",
+   "gor",
+   "thing",
+   " natural",
+   "没有办法",
+   "asha",
+   "prend",
+   " thing",
+   "不能"
+  ],
+  "peak_z": 4.878292083740234
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

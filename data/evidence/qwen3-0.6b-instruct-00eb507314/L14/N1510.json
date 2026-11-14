@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1510,
+ "down_norm": 0.9571527242660522,
+ "logit_lens": {
+  "up": [
+   "靠近",
+   "bit",
+   "Scheme",
+   "ajar",
+   "梓",
+   " tụ",
+   " Scheme",
+   "公司将",
+   "助长",
+   "自制",
+   "tit",
+   "压"
+  ],
+  "down": [
+   " endforeach",
+   "enen",
+   "PerPixel",
+   "--)\n",
+   "enes",
+   "iode",
+   " -------------------------------------------------------------------------\n",
+   ".iterator",
+   ">*/\n",
+   " khóa",
+   " iterate",
+   "cade"
+  ],
+  "peak_z": 5.520116329193115
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

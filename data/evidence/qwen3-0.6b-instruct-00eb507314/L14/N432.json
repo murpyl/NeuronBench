@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 432,
+ "down_norm": 0.5923287868499756,
+ "logit_lens": {
+  "up": [
+   "商机",
+   "rame",
+   " xsi",
+   "iali",
+   "兒童",
+   "(KeyEvent",
+   "ftime",
+   "evice",
+   "车展",
+   "竞争优势",
+   "'label",
+   "icultural"
+  ],
+  "down": [
+   " uniformly",
+   "-complete",
+   ");\\",
+   "fully",
+   "-single",
+   "]):",
+   " independently",
+   ")';\n",
+   "uously",
+   " księ",
+   " broadly",
+   ");\r\n"
+  ],
+  "peak_z": 5.014041900634766
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

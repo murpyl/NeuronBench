@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2358,
+ "down_norm": 0.8547618985176086,
+ "logit_lens": {
+  "up": [
+   "接送",
+   "ylon",
+   "stown",
+   "mia",
+   "invisible",
+   "ia",
+   "assy",
+   "(MenuItem",
+   "instein",
+   "ContentSize",
+   "uctose",
+   " palms"
+  ],
+  "down": [
+   "ammen",
+   "XMLElement",
+   ")\\<",
+   "unden",
+   ")\r\r\n",
+   "也不例外",
+   "eced",
+   "�",
+   "케",
+   " net",
+   "ㄘ",
+   ")'],\n"
+  ],
+  "peak_z": 4.955809593200684
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

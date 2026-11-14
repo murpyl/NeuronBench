@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1895,
+ "down_norm": 0.880994975566864,
+ "logit_lens": {
+  "up": [
+   "lic",
+   "ter",
+   "ley",
+   "脾气",
+   "相关",
+   "ted",
+   " related",
+   "etic",
+   "鳌",
+   "相关的",
+   "inder",
+   "kin"
+  ],
+  "down": [
+   "<count",
+   "<dd",
+   "iert",
+   "ARIANT",
+   "ึ",
+   " migrationBuilder",
+   " mascara",
+   "ATALOG",
+   "ovenant",
+   "/port",
+   "dpi",
+   "ertificate"
+  ],
+  "peak_z": 4.845459938049316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

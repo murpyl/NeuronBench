@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1717,
+ "down_norm": 0.8303064107894897,
+ "logit_lens": {
+  "up": [
+   " regrets",
+   "resher",
+   ".undo",
+   "看一下",
+   "瓠",
+   "回想",
+   "errer",
+   "arian",
+   " shows",
+   " view",
+   "要看",
+   " untranslated"
+  ],
+  "down": [
+   "fang",
+   " created",
+   " Created",
+   " Produced",
+   "imb",
+   "creation",
+   " subsequent",
+   "assigned",
+   "created",
+   "开发建设",
+   "而后",
+   " Assigned"
+  ],
+  "peak_z": 4.945221424102783
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

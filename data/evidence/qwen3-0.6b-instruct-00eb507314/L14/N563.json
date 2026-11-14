@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 563,
+ "down_norm": 0.5972429513931274,
+ "logit_lens": {
+  "up": [
+   " Artem",
+   "rez",
+   " integer",
+   "(integer",
+   " �",
+   "ritis",
+   "嗜",
+   "้ง",
+   "ئة",
+   " deaths",
+   " japon",
+   "�"
+  ],
+  "down": [
+   "curso",
+   "тик",
+   "cream",
+   "riminator",
+   "犯罪嫌疑",
+   "tti",
+   "แทน",
+   "cop",
+   "抓好",
+   "achten",
+   "和发展",
+   "elcome"
+  ],
+  "peak_z": 4.783285140991211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

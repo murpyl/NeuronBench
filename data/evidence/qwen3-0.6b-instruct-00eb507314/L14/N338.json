@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 338,
+ "down_norm": 0.7545251846313477,
+ "logit_lens": {
+  "up": [
+   " belly",
+   " washed",
+   "orate",
+   "yen",
+   "浊",
+   "next",
+   "ombo",
+   ".gov",
+   "nit",
+   "ț",
+   "GetData",
+   "ď"
+  ],
+  "down": [
+   "ewan",
+   "uts",
+   "trys",
+   "eken",
+   "uliar",
+   "unication",
+   "raham",
+   "AndView",
+   "acles",
+   "uits",
+   "emode",
+   "uild"
+  ],
+  "peak_z": 5.477660655975342
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

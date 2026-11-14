@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2561,
+ "down_norm": 0.6950965523719788,
+ "logit_lens": {
+  "up": [
+   "uctose",
+   "igm",
+   "emons",
+   "ean",
+   "olean",
+   "bose",
+   " >>\n\n",
+   "bon",
+   ".mas",
+   "弛",
+   "uits",
+   " bell"
+  ],
+  "down": [
+   "istance",
+   "esso",
+   ",std",
+   "isting",
+   "//(",
+   "standing",
+   "covery",
+   "(open",
+   "omet",
+   "istas",
+   " tắt",
+   "opening"
+  ],
+  "peak_z": 4.7534379959106445
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

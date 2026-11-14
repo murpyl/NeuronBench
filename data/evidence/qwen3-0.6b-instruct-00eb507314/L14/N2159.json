@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2159,
+ "down_norm": 1.044153094291687,
+ "logit_lens": {
+  "up": [
+   "athlon",
+   "他妈",
+   "仔",
+   " klar",
+   "falls",
+   " Panama",
+   " masculinity",
+   "Atlanta",
+   "efully",
+   "美德",
+   ".configureTestingModule",
+   "甫"
+  ],
+  "down": [
+   "ing",
+   "rowning",
+   "its",
+   "che",
+   "rary",
+   "ion",
+   "oting",
+   "rowing",
+   "go",
+   "zing",
+   "动",
+   "ой"
+  ],
+  "peak_z": 5.540358543395996
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1639,
+ "down_norm": 0.6066323518753052,
+ "logit_lens": {
+  "up": [
+   "arily",
+   "fällig",
+   "born",
+   "itive",
+   "onyms",
+   "avirus",
+   "实物",
+   "bies",
+   " hindsight",
+   "curring",
+   "那位",
+   "entially"
+  ],
+  "down": [
+   "ieu",
+   "altung",
+   " setFrame",
+   "/OR",
+   "ュー",
+   "��",
+   "ítulo",
+   "ié",
+   " setTitle",
+   "emens",
+   "ないこと",
+   "icot"
+  ],
+  "peak_z": 5.10416316986084
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

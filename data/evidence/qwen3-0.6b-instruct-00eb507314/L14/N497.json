@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 497,
+ "down_norm": 0.8907096982002258,
+ "logit_lens": {
+  "up": [
+   "aN",
+   " handleError",
+   "ServiceProvider",
+   " Tổ",
+   "RenderingContext",
+   "\\Migrations",
+   "ampion",
+   "роб",
+   "rac",
+   "ungan",
+   "_Err",
+   " Romney"
+  ],
+  "down": [
+   " rather",
+   "instead",
+   " Rather",
+   "idental",
+   " instead",
+   "rather",
+   " opposed",
+   " sola",
+   "Rather",
+   " plutôt",
+   " contrary",
+   " merely"
+  ],
+  "peak_z": 5.662950038909912
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

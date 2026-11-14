@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1995,
+ "down_norm": 0.736882209777832,
+ "logit_lens": {
+  "up": [
+   "opaque",
+   "abcd",
+   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+   "abilia",
+   "ABCDEFGHIJKLMNOP",
+   "内容简介",
+   "onChange",
+   "abcdefghijklmnopqrstuvwxyz",
+   "aciente",
+   "바",
+   "ropolitan",
+   "paragraph"
+  ],
+  "down": [
+   "mia",
+   "ues",
+   "mise",
+   "mie",
+   ".microsoft",
+   " than",
+   " exploitation",
+   "�",
+   "CHASE",
+   " reuse",
+   " virtue",
+   "bie"
+  ],
+  "peak_z": 4.712271690368652
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

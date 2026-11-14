@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 111,
+ "down_norm": 0.6472644209861755,
+ "logit_lens": {
+  "up": [
+   "ificant",
+   " pien",
+   "衡",
+   "続く",
+   ",const",
+   "zens",
+   "eos",
+   "ItemAt",
+   " diffuse",
+   "SSIP",
+   "imax",
+   "dar"
+  ],
+  "down": [
+   "arts",
+   "啶",
+   " Hal",
+   "oping",
+   "酞",
+   " hal",
+   " reject",
+   "�",
+   "ator",
+   "发觉",
+   "aron",
+   "被告"
+  ],
+  "peak_z": 5.2031636238098145
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

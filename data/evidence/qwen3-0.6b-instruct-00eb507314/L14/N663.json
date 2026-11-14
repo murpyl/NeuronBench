@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 663,
+ "down_norm": 0.7401982545852661,
+ "logit_lens": {
+  "up": [
+   " Tate",
+   "ilent",
+   "iative",
+   "个多",
+   " statutory",
+   " expressed",
+   " decided",
+   "-sectional",
+   " lived",
+   " Till",
+   "⽴",
+   "るために"
+  ],
+  "down": [
+   "smith",
+   "prot",
+   "caff",
+   "'>\"",
+   "бур",
+   "仞",
+   "⬆",
+   "')\"",
+   "cks",
+   "зн",
+   "rzy",
+   "imizer"
+  ],
+  "peak_z": 5.35170316696167
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

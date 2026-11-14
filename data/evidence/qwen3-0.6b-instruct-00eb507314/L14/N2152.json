@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2152,
+ "down_norm": 0.7099096775054932,
+ "logit_lens": {
+  "up": [
+   "ses",
+   "ña",
+   " setContent",
+   "asar",
+   "adores",
+   "positories",
+   " support",
+   "то",
+   "tas",
+   "ases",
+   "ñas",
+   "imientos"
+  ],
+  "down": [
+   "-lasting",
+   "-looking",
+   "istant",
+   "lify",
+   "-going",
+   "且",
+   "ellaneous",
+   ".Ver",
+   "öne",
+   "ness",
+   "(interp",
+   " IMO"
+  ],
+  "peak_z": 5.122114658355713
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

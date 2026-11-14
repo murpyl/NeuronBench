@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1146,
+ "down_norm": 0.6314607858657837,
+ "logit_lens": {
+  "up": [
+   "inerary",
+   "phans",
+   "ellij",
+   "回事",
+   "subclass",
+   "же",
+   "_elt",
+   "一回事",
+   "usters",
+   "GBT",
+   "ble",
+   "aster"
+  ],
+  "down": [
+   "竞争",
+   "@api",
+   "\"];\n",
+   "上有",
+   "为其",
+   "\"];\n\n",
+   "供图",
+   " Conf",
+   " Printing",
+   "__);\n",
+   " THERE",
+   "\"];"
+  ],
+  "peak_z": 4.983657360076904
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

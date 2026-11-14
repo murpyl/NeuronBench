@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1161,
+ "down_norm": 0.6258662939071655,
+ "logit_lens": {
+  "up": [
+   "achers",
+   "ertil",
+   "قات",
+   "SetName",
+   "ulent",
+   "'],['",
+   " WithEvents",
+   "一系列",
+   "集",
+   "PointerType",
+   ".TH",
+   "处处"
+  ],
+  "down": [
+   "emode",
+   "�建",
+   " either",
+   "awa",
+   "their",
+   "std",
+   "鹫",
+   " aug",
+   " chức",
+   " seu",
+   "tığını",
+   "aza"
+  ],
+  "peak_z": 4.820067405700684
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

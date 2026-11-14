@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1752,
+ "down_norm": 0.5027063488960266,
+ "logit_lens": {
+  "up": [
+   "非常多的",
+   "视",
+   "最快的",
+   "()\",",
+   " sling",
+   "ichen",
+   "不同的",
+   "非常好的",
+   "ickerView",
+   "antino",
+   " fres",
+   "\"',\n"
+  ],
+  "down": [
+   "inary",
+   "ately",
+   "cal",
+   "์",
+   " giải",
+   " jour",
+   "áo",
+   "扯",
+   "IES",
+   "tain",
+   "stitutions",
+   "call"
+  ],
+  "peak_z": 4.818238735198975
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

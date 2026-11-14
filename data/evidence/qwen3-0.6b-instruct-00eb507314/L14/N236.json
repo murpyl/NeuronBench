@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 236,
+ "down_norm": 0.5928078889846802,
+ "logit_lens": {
+  "up": [
+   "iaz",
+   "ough",
+   "Joint",
+   "z",
+   "зу",
+   "社",
+   "※",
+   "Named",
+   "ordial",
+   "为企业",
+   "ref",
+   "iad"
+  ],
+  "down": [
+   "theless",
+   "adays",
+   "ONES",
+   "elsif",
+   "ethyst",
+   " stdClass",
+   "остей",
+   "ELSE",
+   "しまい",
+   " whales",
+   "んだけど",
+   " WHATSOEVER"
+  ],
+  "peak_z": 4.613460063934326
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

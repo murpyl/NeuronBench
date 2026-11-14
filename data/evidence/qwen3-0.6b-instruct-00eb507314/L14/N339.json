@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 339,
+ "down_norm": 0.582076907157898,
+ "logit_lens": {
+  "up": [
+   "ighth",
+   "ᴢ",
+   "yet",
+   "Ds",
+   "ạng",
+   "eslint",
+   "ał",
+   "анс",
+   "rí",
+   "αι",
+   "بع",
+   "dj"
+  ],
+  "down": [
+   "atural",
+   "ORITY",
+   "财产",
+   "bruary",
+   ".initializeApp",
+   "Hot",
+   " hazır",
+   "arranty",
+   "为您提供",
+   ".chomp",
+   " k",
+   "orama"
+  ],
+  "peak_z": 4.81191873550415
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

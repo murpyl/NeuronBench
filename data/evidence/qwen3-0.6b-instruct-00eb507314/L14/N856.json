@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 856,
+ "down_norm": 0.6210203766822815,
+ "logit_lens": {
+  "up": [
+   "严重影响",
+   "ертв",
+   "айл",
+   "ificant",
+   "InputChange",
+   "ernel",
+   "igsaw",
+   "也是非常",
+   "iphery",
+   "selectAll",
+   " WARRANTY",
+   " ICommand"
+  ],
+  "down": [
+   "arith",
+   "(low",
+   "ATCH",
+   "enate",
+   "elo",
+   "hot",
+   "eg",
+   " Knot",
+   "jk",
+   "_AUTHOR",
+   "жив",
+   "ประกอบ"
+  ],
+  "peak_z": 5.418376445770264
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

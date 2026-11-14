@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1263,
+ "down_norm": 0.8194476962089539,
+ "logit_lens": {
+  "up": [
+   "也不例外",
+   "便是",
+   " Jug",
+   "fish",
+   "agon",
+   "吃亏",
+   "omega",
+   "leness",
+   " belonged",
+   "ago",
+   "rowing",
+   "没错"
+  ],
+  "down": [
+   " Produkte",
+   " sometimes",
+   " randomly",
+   "aneously",
+   "emente",
+   "sometimes",
+   "的には",
+   "ฐาน",
+   "ometimes",
+   "andom",
+   " occasionally",
+   "��"
+  ],
+  "peak_z": 4.9769744873046875
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

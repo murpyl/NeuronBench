@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2461,
+ "down_norm": 0.915930986404419,
+ "logit_lens": {
+  "up": [
+   "能力和",
+   "文化和",
+   "olvers",
+   "ónico",
+   " isolate",
+   "あって",
+   "迫",
+   "时间为",
+   "=result",
+   "onica",
+   "__,__",
+   "resse"
+  ],
+  "down": [
+   "@end",
+   "@stop",
+   "@endsection",
+   "atically",
+   "abouts",
+   " eux",
+   "))]",
+   ").'</",
+   "ủy",
+   "wise",
+   " Priest",
+   " Decomp"
+  ],
+  "peak_z": 5.140976428985596
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

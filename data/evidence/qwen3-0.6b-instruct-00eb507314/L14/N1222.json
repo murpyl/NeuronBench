@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1222,
+ "down_norm": 0.8246062994003296,
+ "logit_lens": {
+  "up": [
+   "asonic",
+   "在这",
+   " North",
+   "ッグ",
+   "icensing",
+   "North",
+   "西医",
+   "西洋",
+   "IENT",
+   "妇科",
+   "ixin",
+   "西方"
+  ],
+  "down": [
+   " parch",
+   "קב",
+   "OOM",
+   "unto",
+   " quar",
+   " KM",
+   " Quar",
+   " потер",
+   "rial",
+   " Cur",
+   " cur",
+   "utos"
+  ],
+  "peak_z": 4.9006781578063965
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

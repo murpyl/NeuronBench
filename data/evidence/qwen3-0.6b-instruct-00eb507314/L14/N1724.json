@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1724,
+ "down_norm": 0.708912193775177,
+ "logit_lens": {
+  "up": [
+   "ase",
+   "ley",
+   "wy",
+   "第五",
+   "另一种",
+   "!",
+   "同样的",
+   "ne",
+   "千",
+   "or",
+   "第三",
+   "adro"
+  ],
+  "down": [
+   "IBC",
+   "ignon",
+   "类产品",
+   "PUTE",
+   " Horde",
+   " Spare",
+   "ьер",
+   "_ABC",
+   "глас",
+   "眚",
+   " :=\n",
+   "efore"
+  ],
+  "peak_z": 5.911004543304443
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

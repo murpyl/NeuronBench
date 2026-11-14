@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 266,
+ "down_norm": 0.766136646270752,
+ "logit_lens": {
+  "up": [
+   "ignment",
+   "физ",
+   "itous",
+   "람",
+   "практи",
+   "(fragment",
+   " 참여",
+   " thụ",
+   " disruption",
+   " atlas",
+   "utions",
+   "uç"
+  ],
+  "down": [
+   "other",
+   "次要",
+   "最快的",
+   "其他",
+   " Ether",
+   "[len",
+   " Agent",
+   " itemprop",
+   "äm",
+   " secondary",
+   "Item",
+   "县委书记"
+  ],
+  "peak_z": 4.775838851928711
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

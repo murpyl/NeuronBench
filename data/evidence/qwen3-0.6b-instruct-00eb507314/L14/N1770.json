@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1770,
+ "down_norm": 0.8972262144088745,
+ "logit_lens": {
+  "up": [
+   "在",
+   " in",
+   " elsewhere",
+   "在那里",
+   "在学校",
+   "在网络",
+   "在外面",
+   "在当地",
+   "在现场",
+   "而在",
+   "在里面",
+   "在同一"
+  ],
+  "down": [
+   "ildo",
+   "潲",
+   "วก",
+   "iltr",
+   "ertools",
+   " defaulted",
+   "ild",
+   "alcon",
+   " pełne",
+   "ILD",
+   " него",
+   " waż"
+  ],
+  "peak_z": 8.67558765411377
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

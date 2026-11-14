@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2801,
+ "down_norm": 0.6821261048316956,
+ "logit_lens": {
+  "up": [
+   "วน",
+   " shell",
+   "=val",
+   "ATTER",
+   ".TRA",
+   " fist",
+   "汰",
+   "avit",
+   "Games",
+   "手游",
+   " Shell",
+   "alach"
+  ],
+  "down": [
+   "vez",
+   "лы",
+   "sembles",
+   "endedor",
+   "螺旋",
+   "_unlock",
+   "публи",
+   "ezier",
+   " callers",
+   "niejs",
+   "UBLE",
+   "loys"
+  ],
+  "peak_z": 5.142899036407471
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}
