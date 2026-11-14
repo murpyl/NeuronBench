@@ -71,19 +71,22 @@ def choice_candidates(run: Run, n: int, *, min_change: float = 0.1, max_dose: fl
         c_real = change(real["text"], base)
         if c_real < min_change:
             continue
-        pool, seen = [], {clip(real["text"])}
+        cands = []
         for j in run.controls():
             r = run.rollout("random", j, prompt, dose)
-            if r is None or clip(r["text"]) in seen:
+            if r is None:
                 continue
             c = change(r["text"], base)
-            if c < min_change:
-                continue
-            seen.add(clip(r["text"]))
-            pool.append((abs(c - c_real), j, r, c))
+            if c >= min_change:
+                cands.append((abs(c - c_real), j, r, c))
+        cands.sort(key=lambda x: (x[0], x[1]))
+        pool, seen = [], {clip(real["text"])}
+        for cand in cands:
+            if clip(cand[2]["text"]) not in seen:
+                seen.add(clip(cand[2]["text"]))
+                pool.append(cand)
         if len(pool) < 3:
             continue
-        pool.sort(key=lambda x: (x[0], x[1]))
         out.append({"prompt": prompt, "dose": dose, "real": real, "change": c_real,
                     "distractors": [(j, r, c) for _, j, r, c in pool[:3]]})
     return out
