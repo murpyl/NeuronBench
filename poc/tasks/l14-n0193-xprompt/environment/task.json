@@ -1,0 +1,131 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 193,
+ "tier": "xprompt",
+ "lens_promoted": [
+  {
+   "token": "ews",
+   "z": 4.74
+  },
+  {
+   "token": "igans",
+   "z": 4.57
+  },
+  {
+   "token": "时表示",
+   "z": 4.54
+  },
+  {
+   "token": "lí",
+   "z": 4.53
+  },
+  {
+   "token": "ipt",
+   "z": 4.39
+  },
+  {
+   "token": "ículo",
+   "z": 4.28
+  },
+  {
+   "token": "est",
+   "z": 4.26
+  },
+  {
+   "token": "erving",
+   "z": 4.22
+  },
+  {
+   "token": "影视剧",
+   "z": 4.2
+  },
+  {
+   "token": "ricks",
+   "z": 4.18
+  },
+  {
+   "token": "atten",
+   "z": 4.15
+  },
+  {
+   "token": "��",
+   "z": 4.14
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "seau",
+   "z": -5.29
+  },
+  {
+   "token": "спор",
+   "z": -4.58
+  },
+  {
+   "token": "ipro",
+   "z": -4.49
+  },
+  {
+   "token": "úb",
+   "z": -4.33
+  },
+  {
+   "token": "prot",
+   "z": -4.31
+  },
+  {
+   "token": "COORD",
+   "z": -4.31
+  },
+  {
+   "token": "proved",
+   "z": -4.18
+  },
+  {
+   "token": "vik",
+   "z": -4.11
+  },
+  {
+   "token": "вор",
+   "z": -4.1
+  },
+  {
+   "token": " dét",
+   "z": -4.08
+  },
+  {
+   "token": "ped",
+   "z": -4.02
+  },
+  {
+   "token": " rot",
+   "z": -4.0
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "I'm trying to focus on, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not. I'm trying to, and are not.",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "This is a simple snake game that. It's a basic, but not too. It's a popular in for when you can't be on the internet or when you're on your phone, and it's a bit of a, but it's when you can't be on the and it's when you can't be on the and it's when you can't be on the and it's when you can't be on the and it's when you can't be on the and it's when you can't be on the and it's when you can't be on the and it's when you can't be on the and",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  }
+ ],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "Orange, a color that is orange, is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and",
+   "B": "In a standard in the in the in the in the in the in the in the in in the in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in",
+   "C": "The color orange represents the sun, which is the most common color in the human eye and the most commonly used color in the human body. The color orange is the opposite of the red, which is the color of the human body and the color of the human brain. The color orange is the opposite of the human brain, which is the most common color in the human body and the most common color in the human brain and the color of the human brain and the color of the human brain and the color of the human brain and the color of the human brain and the color of the human brain and the color of the human brain and the",
+   "D": "Orange is a color that, when it is, refers to a common in the, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is, when it is"
+  }
+ }
+}

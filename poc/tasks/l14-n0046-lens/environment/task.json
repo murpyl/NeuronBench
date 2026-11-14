@@ -1,0 +1,118 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 46,
+ "tier": "lens",
+ "lens_promoted": [
+  {
+   "token": "agers",
+   "z": 4.9
+  },
+  {
+   "token": " \"\");\r\n",
+   "z": 4.64
+  },
+  {
+   "token": " …\n\n",
+   "z": 4.56
+  },
+  {
+   "token": "phem",
+   "z": 4.55
+  },
+  {
+   "token": "\").\n",
+   "z": 4.4
+  },
+  {
+   "token": "iji",
+   "z": 4.4
+  },
+  {
+   "token": " ');\r\n",
+   "z": 4.4
+  },
+  {
+   "token": " \"\")\n\n",
+   "z": 4.24
+  },
+  {
+   "token": ")();\n",
+   "z": 4.17
+  },
+  {
+   "token": "!).\n\n",
+   "z": 4.16
+  },
+  {
+   "token": "umni",
+   "z": 4.16
+  },
+  {
+   "token": " \");\r\n",
+   "z": 4.14
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "acidad",
+   "z": -4.82
+  },
+  {
+   "token": "hma",
+   "z": -4.55
+  },
+  {
+   "token": "КА",
+   "z": -4.51
+  },
+  {
+   "token": ".Serialization",
+   "z": -4.46
+  },
+  {
+   "token": "ropolis",
+   "z": -4.31
+  },
+  {
+   "token": "lement",
+   "z": -4.27
+  },
+  {
+   "token": "ῆ",
+   "z": -4.25
+  },
+  {
+   "token": "-indent",
+   "z": -4.09
+  },
+  {
+   "token": "าก",
+   "z": -4.02
+  },
+  {
+   "token": "ennon",
+   "z": -3.99
+  },
+  {
+   "token": "endencies",
+   "z": -3.94
+  },
+  {
+   "token": "ész",
+   "z": -3.93
+  }
+ ],
+ "evidence": [],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "The color orange is a natural phenomenon, and it is often described as:\n\n- A color that is often seen in nature, especially in the early morning, or in the afternoon, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle of the day, or in the middle",
+   "B": ">true\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n",
+   "C": "Orange is a color, which is a shade of the color red and yellow. It is a shade of the color red, which is a combination of red and yellow. The color orange is a combination of red and yellow. The color orange is a shade of red and yellow. The color orange is a combination of red and yellow. The color orange.",
+   "D": "A color that is associated with nature and the earth.\n\naesthetic.\n\na natural.\n\na sense of calmness.\n\na connection with the earth.\n\na touch of calm.\n\na touch of familiarity.\n\na feeling of peace.\n\na connection with the earth.\n\na touch of the old world.\n\na sense of serenity.\n\na touch of the past.\n\na feeling of serenity.\n\na connection with the earth.\n\na touch of nostalgia.\n\na sense of timelessness.\n\na feeling of serenity.\n\na touch of the old days.\n\na sense of calm.\n\na feeling of serenity.\n\na connection with the world.\n\na touch of the past.\n\n"
+  }
+ }
+}

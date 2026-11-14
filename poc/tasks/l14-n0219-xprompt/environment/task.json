@@ -1,0 +1,131 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 219,
+ "tier": "xprompt",
+ "lens_promoted": [
+  {
+   "token": "duct",
+   "z": 4.54
+  },
+  {
+   "token": "atures",
+   "z": 4.36
+  },
+  {
+   "token": "ört",
+   "z": 4.33
+  },
+  {
+   "token": "剧",
+   "z": 4.31
+  },
+  {
+   "token": "存在的",
+   "z": 4.27
+  },
+  {
+   "token": " наличие",
+   "z": 4.24
+  },
+  {
+   "token": "网讯",
+   "z": 4.22
+  },
+  {
+   "token": "给他们",
+   "z": 4.13
+  },
+  {
+   "token": "-Nov",
+   "z": 4.12
+  },
+  {
+   "token": "既然",
+   "z": 4.11
+  },
+  {
+   "token": "viously",
+   "z": 4.1
+  },
+  {
+   "token": "ussy",
+   "z": 4.09
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "ween",
+   "z": -4.85
+  },
+  {
+   "token": "рис",
+   "z": -4.47
+  },
+  {
+   "token": "elder",
+   "z": -4.34
+  },
+  {
+   "token": "gings",
+   "z": -4.25
+  },
+  {
+   "token": "ueling",
+   "z": -4.18
+  },
+  {
+   "token": "ohana",
+   "z": -4.15
+  },
+  {
+   "token": "호",
+   "z": -4.11
+  },
+  {
+   "token": "setImage",
+   "z": -4.11
+  },
+  {
+   "token": " CommonModule",
+   "z": -4.1
+  },
+  {
+   "token": "UBLISH",
+   "z": -4.07
+  },
+  {
+   "token": "indh",
+   "z": -4.03
+  },
+  {
+   "token": "PEnd",
+   "z": -3.99
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "I am an AI assistant that can respond to a message in multiple languages. For example, \"Hello, I am an AI that can say \"Hello\" and \"how are you?\"",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "Here is a simple Python program that responds to a command to \"snake\" or \"snake\".\n\n```python\nimport time\n\ndef game():\n    print(\"There is a snake in the room.\")\n\ndef game():\n    print(\"There is a snake in the room.\")\n\ntime.sleep(1)\nprint(\"There is a snake in the room.\")\n\ntime.sleep(1)\nprint(\"There is a snake in the room.\")\n\ntime.sleep(1)\nprint(\"There is a snake in the rooms.\")\n\ntime.sleep(1)\nprint(\"There is a snake in the rooms.\")\n\ntime.sleep(1)\nprint(\"There is a snake in the rooms.\")\n\n",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  }
+ ],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "**describing the color orange** in terms of color theory and symbolism\n**describing the color orange in terms of color psychology**\n**describing the color orange in terms of cultural symbolism**\n**describing the color orange in terms of modern design and color psychology**\n**describing the color orange in terms of global fashion and color symbolism**\n**describing the color orange in terms of color and color theory in art and design**\n**describing the color orange in terms of color and color theory in psychology and psychology research**\n**describing the color orange in terms of color and color theory in modern design and color symbolism**\n**des",
+   "B": "The color orange is a bright and vivid object that can be described as a bright red or orange. It is commonly associated with warmth and a burst of color.",
+   "C": "1. **Orange is a color** (orange) that is familiar to you, but think of it as a color that can be described in terms of **hue** (hue, which refers to the color's **chromatic scale**), **saturation** (which is a percentage of the color's **light reflection**), and **intensity** (which is a **light intensity** in terms of brightness, like a value from 0 to 100, where 100% is the maximum, as a percentage of the **light wavelengths** (in nm, which is a unit of energy per photon",
+   "D": "In a standard in the in the in the in the in the in the in the in in the in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in"
+  }
+ }
+}

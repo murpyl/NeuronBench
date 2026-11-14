@@ -1,0 +1,48 @@
+[
+ {
+  "run": "2c42dbc4-5322-4261-92f3-43e0992d1ea7",
+  "status": "FINISHED",
+  "agent": "claude_code-v1.0.0",
+  "model": "anthropic/claude-sonnet-4-6",
+  "dataset": "neuron-predict/poc@2",
+  "n": 24,
+  "accuracy": 0.5833333333333334,
+  "by_tier": {
+   "xsign": {
+    "n": 8,
+    "accuracy": 0.375
+   },
+   "lens": {
+    "n": 8,
+    "accuracy": 0.5
+   },
+   "xprompt": {
+    "n": 8,
+    "accuracy": 0.875
+   }
+  }
+ },
+ {
+  "run": "ffce4173-e814-4839-a973-d1495bd680ce",
+  "status": "FINISHED",
+  "agent": "claude_code-v1.0.0",
+  "model": "anthropic/claude-haiku-4-5",
+  "dataset": "neuron-predict/poc@2",
+  "n": 24,
+  "accuracy": 0.3333333333333333,
+  "by_tier": {
+   "xprompt": {
+    "n": 8,
+    "accuracy": 0.75
+   },
+   "xsign": {
+    "n": 8,
+    "accuracy": 0.25
+   },
+   "lens": {
+    "n": 8,
+    "accuracy": 0.0
+   }
+  }
+ }
+]

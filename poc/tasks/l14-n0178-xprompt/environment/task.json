@@ -1,0 +1,131 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 178,
+ "tier": "xprompt",
+ "lens_promoted": [
+  {
+   "token": " shadow",
+   "z": 4.17
+  },
+  {
+   "token": "拶",
+   "z": 4.1
+  },
+  {
+   "token": "ihu",
+   "z": 4.09
+  },
+  {
+   "token": " 의",
+   "z": 4.08
+  },
+  {
+   "token": " respected",
+   "z": 4.0
+  },
+  {
+   "token": "иона",
+   "z": 3.99
+  },
+  {
+   "token": "ResponseType",
+   "z": 3.91
+  },
+  {
+   "token": "以為",
+   "z": 3.9
+  },
+  {
+   "token": "InputModule",
+   "z": 3.89
+  },
+  {
+   "token": " day",
+   "z": 3.83
+  },
+  {
+   "token": " scène",
+   "z": 3.83
+  },
+  {
+   "token": "DialogTitle",
+   "z": 3.8
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "给予",
+   "z": -4.48
+  },
+  {
+   "token": "子",
+   "z": -4.43
+  },
+  {
+   "token": "']+",
+   "z": -4.39
+  },
+  {
+   "token": "态",
+   "z": -4.36
+  },
+  {
+   "token": "struk",
+   "z": -4.29
+  },
+  {
+   "token": "数据显示",
+   "z": -4.22
+  },
+  {
+   "token": "增加值",
+   "z": -4.19
+  },
+  {
+   "token": "；",
+   "z": -4.16
+  },
+  {
+   "token": "然",
+   "z": -4.11
+  },
+  {
+   "token": "李",
+   "z": -4.05
+  },
+  {
+   "token": "格",
+   "z": -4.01
+  },
+  {
+   "token": "$L",
+   "z": -3.97
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "\"Yes\" is the correct answer if you're answering_the_question\n\n\"YES\" is the correct_answer if you_are\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"YES\" is_correct\n\"",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "# Snake Game\n\n# **Snake Game** is a snake game in Python is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True**.\n\n# **snake_game** is **True",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  }
+ ],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "color orange.",
+   "B": "Okay, let's think about this. So, this is a bit of a metaphorical thing. Let's consider some of the colors of a paint or something of a paint application. Like, maybe a paint application. Let's say, like a paintbrush? Maybe a paintbrush? Hmm, like a paintbrush? Wait, maybe a paintbrush? Or a paintbrush? That's a bit of a metaphorical thing. Like, maybe a paintbrush? Or a paintbrush? That's a bit of a paintbrush? Or a paintbrush? That's a bit of a paintbrush? Or a paintbrush? That",
+   "C": ">true\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n**true**\n\n",
+   "D": "Color orange is a natural color** (natural)**, a natural color**** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color**"
+  }
+ }
+}

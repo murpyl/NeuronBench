@@ -1,0 +1,118 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 369,
+ "tier": "lens",
+ "lens_promoted": [
+  {
+   "token": " himself",
+   "z": 5.43
+  },
+  {
+   "token": "chers",
+   "z": 4.91
+  },
+  {
+   "token": "他自己",
+   "z": 4.71
+  },
+  {
+   "token": "ullo",
+   "z": 4.6
+  },
+  {
+   "token": " Himself",
+   "z": 4.51
+  },
+  {
+   "token": ".protocol",
+   "z": 4.41
+  },
+  {
+   "token": "صد",
+   "z": 4.32
+  },
+  {
+   "token": "utschen",
+   "z": 4.25
+  },
+  {
+   "token": "haust",
+   "z": 4.17
+  },
+  {
+   "token": " itself",
+   "z": 4.14
+  },
+  {
+   "token": "(ver",
+   "z": 4.14
+  },
+  {
+   "token": "ichtet",
+   "z": 4.04
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "P",
+   "z": -5.24
+  },
+  {
+   "token": "bro",
+   "z": -4.54
+  },
+  {
+   "token": "    \r\n    \r\n",
+   "z": -4.29
+  },
+  {
+   "token": "razione",
+   "z": -4.26
+  },
+  {
+   "token": "        \n    \n",
+   "z": -4.23
+  },
+  {
+   "token": "/body",
+   "z": -4.23
+  },
+  {
+   "token": "ยว",
+   "z": -4.23
+  },
+  {
+   "token": "要紧",
+   "z": -4.22
+  },
+  {
+   "token": "entials",
+   "z": -4.21
+  },
+  {
+   "token": "/P",
+   "z": -4.19
+  },
+  {
+   "token": "Ram",
+   "z": -4.12
+  },
+  {
+   "token": "Ton",
+   "z": -4.12
+  }
+ ],
+ "evidence": [],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "- **Length**: 1000 characters (approx. 1000 characters, using a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit",
+   "B": "Orange is a color that can be described as a hue that appears in both orange, which is a color that can be associated with the orange, which is a color that may be related to the orange, which is a color that may be associated with the orange, which is a color that may be described as a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color",
+   "C": "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+   "D": "In a standard in the in the in the in the in the in the in the in in the in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in"
+  }
+ }
+}

@@ -1,0 +1,131 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 558,
+ "tier": "xprompt",
+ "lens_promoted": [
+  {
+   "token": "ério",
+   "z": 4.48
+  },
+  {
+   "token": "uplic",
+   "z": 4.33
+  },
+  {
+   "token": "主义者",
+   "z": 4.2
+  },
+  {
+   "token": "icemail",
+   "z": 4.11
+  },
+  {
+   "token": "morgan",
+   "z": 4.04
+  },
+  {
+   "token": "monic",
+   "z": 4.02
+  },
+  {
+   "token": " whoever",
+   "z": 3.98
+  },
+  {
+   "token": "orks",
+   "z": 3.95
+  },
+  {
+   "token": "口气",
+   "z": 3.92
+  },
+  {
+   "token": "objectManager",
+   "z": 3.86
+  },
+  {
+   "token": "очной",
+   "z": 3.85
+  },
+  {
+   "token": " NSCoder",
+   "z": 3.83
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "Tro",
+   "z": -4.52
+  },
+  {
+   "token": "因为",
+   "z": -4.47
+  },
+  {
+   "token": " because",
+   "z": -4.06
+  },
+  {
+   "token": "因为它",
+   "z": -4.05
+  },
+  {
+   "token": "ley",
+   "z": -4.05
+  },
+  {
+   "token": " Ведь",
+   "z": -4.03
+  },
+  {
+   "token": " brigade",
+   "z": -4.03
+  },
+  {
+   "token": " represent",
+   "z": -4.0
+  },
+  {
+   "token": "เหมาะสม",
+   "z": -3.99
+  },
+  {
+   "token": "因为我",
+   "z": -3.98
+  },
+  {
+   "token": "Pre",
+   "z": -3.86
+  },
+  {
+   "token": "well",
+   "z": -3.86
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "I am not a person, but I can be a human being. However, if you have any questions, I can try to figure out who you are, but I don't have a name. But if you have any questions, I am not a person, but I can be a human being. But if you have any questions, I am not a person, but I can be a human being. But if you have any questions, I am not a person, but I can be a human being. But if you have any questions, I am not a person, but I can be a human being. But if you have",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "To create a snake game in Python, you can use a game design approach where you have a snake that moves around, but it's not going to be a snake. However, there's a way to make a snake game, but it's not going to be a snake. But here's a Python script that can be used to create a snake game, but it's not going to be a snake. But here's a Python script that can be used to create a snake game, but it's not going to be a snake. But here's a Python script that can be used to create a snake game, but it's not",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  }
+ ],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "To describe the color orange, you can use orange as a reference to describe the color of an object or a scene in which there is an orange hue. However, if you have a specific object or image with an orange color, you could consider that. But if you're looking for a description of an orange color, that's not the case. However, if you have an orange color, you could describe it in a different way, but that's not the case. But if you have an orange color, you could describe it in a different way, but that's not the case. But if you have an orange color, you",
+   "B": "Describe the color orange.",
+   "C": "Orange is a color associated with many animals and their names and colors, including the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the orange and its associated colors, and the",
+   "D": "The color orange is a color that can be described as a bit more important than the rest of the colors, but it's also a color that can be described as a bit more important than the rest of the colors, but it's also a color that can be described as a bit more important than the rest of the colors, but it's also a color that can be described as a bit more important than the rest of the colors, but it's also a color that can be described as a bit more important than the rest of the colors, but it's also a color that can be described as a bit more important than the rest"
+  }
+ }
+}

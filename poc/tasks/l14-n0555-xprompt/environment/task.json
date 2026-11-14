@@ -1,0 +1,131 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 555,
+ "tier": "xprompt",
+ "lens_promoted": [
+  {
+   "token": "allis",
+   "z": 4.98
+  },
+  {
+   "token": "uran",
+   "z": 4.85
+  },
+  {
+   "token": "рай",
+   "z": 4.77
+  },
+  {
+   "token": "urs",
+   "z": 4.69
+  },
+  {
+   "token": " volta",
+   "z": 4.61
+  },
+  {
+   "token": "irts",
+   "z": 4.44
+  },
+  {
+   "token": "esters",
+   "z": 4.42
+  },
+  {
+   "token": "rens",
+   "z": 4.41
+  },
+  {
+   "token": "eterminate",
+   "z": 4.34
+  },
+  {
+   "token": " Ethan",
+   "z": 4.25
+  },
+  {
+   "token": "urate",
+   "z": 4.22
+  },
+  {
+   "token": "urat",
+   "z": 4.21
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "BOARD",
+   "z": -4.58
+  },
+  {
+   "token": " said",
+   "z": -4.28
+  },
+  {
+   "token": " Falling",
+   "z": -4.27
+  },
+  {
+   "token": "Cls",
+   "z": -4.13
+  },
+  {
+   "token": ".pth",
+   "z": -4.04
+  },
+  {
+   "token": " Branch",
+   "z": -3.97
+  },
+  {
+   "token": "bö",
+   "z": -3.96
+  },
+  {
+   "token": " #:",
+   "z": -3.95
+  },
+  {
+   "token": " climb",
+   "z": -3.92
+  },
+  {
+   "token": "_CODE",
+   "z": -3.89
+  },
+  {
+   "token": "ynos",
+   "z": -3.83
+  },
+  {
+   "token": " flight",
+   "z": -3.82
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "I am **creating** this conversation in the beginning, I am here to help you, but I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I am **you** – I",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "I'll create this code to begin by creating a simple game, or you can see this code in the beginning of the code. The code is written in Python, and this is the basic code for this game, but I need to make sure to create this code in the beginning of the code. The code is written in Python, and this is the basic code for this game, but I need to make sure to create this code in the beginning of the code. The code is written in Python, and this is the basic code for this game, but I need to make sure to create this code in the beginning of the code,",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  }
+ ],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "The color **orange** is a common color in human culture, and the term \"orange\" refers to:\n\n1. **orange color**  \n2. **orange color**  \n3. **orange color**  \n4. **orange color**  \n5. **orange color**  \n6. **orange color**  \n7. **orange color**  \n8. **orange color**  \n9. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10.",
+   "B": "The color **orange** is a bright and vibrant **pungent** (and **pungent** in its **sensory** response) to the **sweating** in its **skin**. It is a **common** and **popular** choice** for a **cool** and **cool** (and **cool** in its **skin**) **skin** that is **exposed** to the **sun** during **a** few hours** of **sun exposure**.\n\nThe **skin** that is **exposed** to the **sun** during **a** few hours** of **sun",
+   "C": "In a standard in the in the in the in the in the in the in the in in the in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in in",
+   "D": "This is a description of the color orange, as well as a description of the same color, but the main point of this passage has been written in the beginning, and the original text is about describing the color orange, but the passage has been written in a very detailed, but the original text is, in which the original text is, but the passage has been written in a very detailed, but the passage has been written in the beginning, but the original text is, but the passage has been written in a very detailed, but the passage has been written in the beginning, but the passage has been written in a very detailed, but"
+  }
+ }
+}

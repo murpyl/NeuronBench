@@ -1,0 +1,118 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 236,
+ "tier": "lens",
+ "lens_promoted": [
+  {
+   "token": "iaz",
+   "z": 4.41
+  },
+  {
+   "token": "ough",
+   "z": 4.22
+  },
+  {
+   "token": "Joint",
+   "z": 4.21
+  },
+  {
+   "token": "z",
+   "z": 4.17
+  },
+  {
+   "token": "зу",
+   "z": 4.06
+  },
+  {
+   "token": "社",
+   "z": 4.06
+  },
+  {
+   "token": "※",
+   "z": 4.02
+  },
+  {
+   "token": "Named",
+   "z": 4.0
+  },
+  {
+   "token": "ordial",
+   "z": 3.94
+  },
+  {
+   "token": "为企业",
+   "z": 3.93
+  },
+  {
+   "token": "ref",
+   "z": 3.93
+  },
+  {
+   "token": "iad",
+   "z": 3.93
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "theless",
+   "z": -4.61
+  },
+  {
+   "token": "adays",
+   "z": -4.61
+  },
+  {
+   "token": "ONES",
+   "z": -4.39
+  },
+  {
+   "token": "elsif",
+   "z": -4.31
+  },
+  {
+   "token": "ethyst",
+   "z": -4.3
+  },
+  {
+   "token": " stdClass",
+   "z": -4.26
+  },
+  {
+   "token": "остей",
+   "z": -4.16
+  },
+  {
+   "token": "ELSE",
+   "z": -4.16
+  },
+  {
+   "token": "しまい",
+   "z": -4.08
+  },
+  {
+   "token": " whales",
+   "z": -4.08
+  },
+  {
+   "token": "んだけど",
+   "z": -4.08
+  },
+  {
+   "token": " WHATSOEVER",
+   "z": -4.04
+  }
+ ],
+ "evidence": [],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "It is a color orange.",
+   "B": "The orange.\n\nThe color.\n\nThe color is a shade of the red.\n\nThe color.\n\nThe color.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe.\n\nThe",
+   "C": "The description is based on the **description** — **\"The description** — **from the description** — **based on the description** — **from the description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **description** — **",
+   "D": "Orange is a color, which is a shade of the color red and yellow. It is a shade of the color red, which is a combination of red and yellow. The color orange is a combination of red and yellow. The color orange is a shade of red and yellow. The color orange is a combination of red and yellow. The color orange."
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "task_id": "l14-n0432-lens",
+ "tier": "lens",
+ "choice": "A",
+ "candidate_neurons": {
+  "A": 432,
+  "B": 472,
+  "C": 235,
+  "D": 477
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 298,
+ "tier": "lens",
+ "lens_promoted": [
+  {
+   "token": "ewire",
+   "z": 4.72
+  },
+  {
+   "token": "resents",
+   "z": 4.58
+  },
+  {
+   "token": "ekt",
+   "z": 4.4
+  },
+  {
+   "token": "本書",
+   "z": 4.35
+  },
+  {
+   "token": "珅",
+   "z": 4.34
+  },
+  {
+   "token": "ндекс",
+   "z": 4.32
+  },
+  {
+   "token": " nợ",
+   "z": 4.24
+  },
+  {
+   "token": "ToEnd",
+   "z": 4.11
+  },
+  {
+   "token": "глав",
+   "z": 4.07
+  },
+  {
+   "token": " Inputs",
+   "z": 4.03
+  },
+  {
+   "token": "ainless",
+   "z": 3.98
+  },
+  {
+   "token": "Introduced",
+   "z": 3.95
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "قص",
+   "z": -4.96
+  },
+  {
+   "token": " counterparts",
+   "z": -4.87
+  },
+  {
+   "token": "版本",
+   "z": -4.72
+  },
+  {
+   "token": "性",
+   "z": -4.55
+  },
+  {
+   "token": "-based",
+   "z": -4.5
+  },
+  {
+   "token": "-linked",
+   "z": -4.39
+  },
+  {
+   "token": " conditions",
+   "z": -4.28
+  },
+  {
+   "token": " versions",
+   "z": -4.26
+  },
+  {
+   "token": "条件",
+   "z": -4.26
+  },
+  {
+   "token": "-focused",
+   "z": -4.22
+  },
+  {
+   "token": "onde",
+   "z": -4.15
+  },
+  {
+   "token": "政策",
+   "z": -4.1
+  }
+ ],
+ "evidence": [],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "- **Orange** is a color that is neutral, meaning it is a color that does not have a specific hue or tone, but it is a color that is neutral in terms of appearance, meaning it is a color that is neutral in terms of appearance, meaning it is a color that is neutral in terms of appearance, meaning it is a color that is neutral in terms of appearance, meaning it is a color that is neutral in terms of appearance, meaning it is a color that is neutral in terms of appearance, meaning it is a color that is neutral in terms of appearance, meaning it is a color that is neutral in terms of",
+   "B": "Orange is a color in the spectrum of the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in the color spectrum, and it is a color in",
+   "C": "- **Length**: 1000 characters (approx. 1000 characters, using a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit for a 1000-character limit",
+   "D": "The color orange is the color of the sun. The color orange is the color of the sun. The color orange is the color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color of the sun. The color"
+  }
+ }
+}

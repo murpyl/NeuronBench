@@ -1,0 +1,146 @@
+[
+ {
+  "task_id": "l14-n0219-xprompt",
+  "tier": "xprompt",
+  "neuron": 219,
+  "answer": "B"
+ },
+ {
+  "task_id": "l14-n0178-xprompt",
+  "tier": "xprompt",
+  "neuron": 178,
+  "answer": "C"
+ },
+ {
+  "task_id": "l14-n0555-xprompt",
+  "tier": "xprompt",
+  "neuron": 555,
+  "answer": "D"
+ },
+ {
+  "task_id": "l14-n0201-xprompt",
+  "tier": "xprompt",
+  "neuron": 201,
+  "answer": "B"
+ },
+ {
+  "task_id": "l14-n0558-xprompt",
+  "tier": "xprompt",
+  "neuron": 558,
+  "answer": "A"
+ },
+ {
+  "task_id": "l14-n0305-xprompt",
+  "tier": "xprompt",
+  "neuron": 305,
+  "answer": "C"
+ },
+ {
+  "task_id": "l14-n0338-xprompt",
+  "tier": "xprompt",
+  "neuron": 338,
+  "answer": "A"
+ },
+ {
+  "task_id": "l14-n0193-xprompt",
+  "tier": "xprompt",
+  "neuron": 193,
+  "answer": "D"
+ },
+ {
+  "task_id": "l14-n0404-xsign",
+  "tier": "xsign",
+  "neuron": 404,
+  "answer": "A"
+ },
+ {
+  "task_id": "l14-n0111-xsign",
+  "tier": "xsign",
+  "neuron": 111,
+  "answer": "B"
+ },
+ {
+  "task_id": "l14-n0339-xsign",
+  "tier": "xsign",
+  "neuron": 339,
+  "answer": "C"
+ },
+ {
+  "task_id": "l14-n0024-xsign",
+  "tier": "xsign",
+  "neuron": 24,
+  "answer": "B"
+ },
+ {
+  "task_id": "l14-n0554-xsign",
+  "tier": "xsign",
+  "neuron": 554,
+  "answer": "D"
+ },
+ {
+  "task_id": "l14-n0379-xsign",
+  "tier": "xsign",
+  "neuron": 379,
+  "answer": "D"
+ },
+ {
+  "task_id": "l14-n0082-xsign",
+  "tier": "xsign",
+  "neuron": 82,
+  "answer": "A"
+ },
+ {
+  "task_id": "l14-n0420-xsign",
+  "tier": "xsign",
+  "neuron": 420,
+  "answer": "C"
+ },
+ {
+  "task_id": "l14-n0046-lens",
+  "tier": "lens",
+  "neuron": 46,
+  "answer": "A"
+ },
+ {
+  "task_id": "l14-n0077-lens",
+  "tier": "lens",
+  "neuron": 77,
+  "answer": "C"
+ },
+ {
+  "task_id": "l14-n0117-lens",
+  "tier": "lens",
+  "neuron": 117,
+  "answer": "D"
+ },
+ {
+  "task_id": "l14-n0328-lens",
+  "tier": "lens",
+  "neuron": 328,
+  "answer": "D"
+ },
+ {
+  "task_id": "l14-n0236-lens",
+  "tier": "lens",
+  "neuron": 236,
+  "answer": "C"
+ },
+ {
+  "task_id": "l14-n0369-lens",
+  "tier": "lens",
+  "neuron": 369,
+  "answer": "B"
+ },
+ {
+  "task_id": "l14-n0298-lens",
+  "tier": "lens",
+  "neuron": 298,
+  "answer": "B"
+ },
+ {
+  "task_id": "l14-n0432-lens",
+  "tier": "lens",
+  "neuron": 432,
+  "answer": "A"
+ }
+]

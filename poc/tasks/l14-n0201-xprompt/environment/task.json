@@ -1,0 +1,131 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 201,
+ "tier": "xprompt",
+ "lens_promoted": [
+  {
+   "token": " mornings",
+   "z": 4.75
+  },
+  {
+   "token": "alue",
+   "z": 4.51
+  },
+  {
+   "token": "iculo",
+   "z": 4.3
+  },
+  {
+   "token": "imits",
+   "z": 4.28
+  },
+  {
+   "token": "ufe",
+   "z": 4.28
+  },
+  {
+   "token": " culo",
+   "z": 4.14
+  },
+  {
+   "token": "缶",
+   "z": 4.1
+  },
+  {
+   "token": "dę",
+   "z": 4.09
+  },
+  {
+   "token": "伴随着",
+   "z": 4.07
+  },
+  {
+   "token": "铟",
+   "z": 4.04
+  },
+  {
+   "token": "inois",
+   "z": 4.02
+  },
+  {
+   "token": "itoris",
+   "z": 4.0
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "альных",
+   "z": -4.54
+  },
+  {
+   "token": "ales",
+   "z": -4.43
+  },
+  {
+   "token": "ylan",
+   "z": -4.37
+  },
+  {
+   "token": "/stretch",
+   "z": -4.31
+  },
+  {
+   "token": "нят",
+   "z": -4.2
+  },
+  {
+   "token": "/rem",
+   "z": -4.15
+  },
+  {
+   "token": "/q",
+   "z": -4.11
+  },
+  {
+   "token": " çıkış",
+   "z": -4.11
+  },
+  {
+   "token": " chall",
+   "z": -4.09
+  },
+  {
+   "token": "闸",
+   "z": -4.08
+  },
+  {
+   "token": "rabbit",
+   "z": -4.08
+  },
+  {
+   "token": "OTT",
+   "z": -4.07
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "I am a language model, but I need to be careful about the responsibility of being a language model and ensuring that I do not make mistakes. However, I need to be a language model and I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I need to be a language model. I",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "I can write a snake game in Python, where I have a snake that moves in a grid and moves in a clockwise direction, and it moves in a snake-like direction. The snake moves in a grid, and the snake moves in a grid and moves in a grid. The snake moves in a grid and moves in a grid. The snake moves in a grid and moves in a grid. The snake moves in a grid and moves in a grid. The snake moves in a grid and moves in a grid. The snake moves in a grid and moves in a grid. The snake moves in a grid and moves in a grid. The",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  }
+ ],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "The orange is a color, and the user's answer is based on their own understanding, so the user needs to analyze and create a new one. In this case, the user's answer is created by the user's own understanding, so the user needs to analyze and create the answer. In this case, the user's answer is created by the user's own understanding, so the user needs to create the answer. In this case, the user's answer is created by the user's own understanding, so the user needs to create the answer. In this case, the user's answer is created by the user's own understanding, so",
+   "B": "Orange is a color that is a bright orange and a warm color, which is a color that is a warm color and a color that is a warm color and a color that is a warm color and a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is",
+   "C": "Orange is a color that is commonly seen in various forms, especially in the form of a natural object, and its color is different depending on the type of object, and the color of the object.",
+   "D": "To describe the color orange, you can use orange as a reference to describe the color of an object or a scene in which there is an orange hue. However, if you have a specific object or image with an orange color, you could consider that. But if you're looking for a description of an orange color, that's not the case. However, if you have an orange color, you could describe it in a different way, but that's not the case. But if you have an orange color, you could describe it in a different way, but that's not the case. But if you have an orange color, you"
+  }
+ }
+}

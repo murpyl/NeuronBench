@@ -1,0 +1,155 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 24,
+ "tier": "xsign",
+ "lens_promoted": [
+  {
+   "token": "olean",
+   "z": 5.17
+  },
+  {
+   "token": ".hasMore",
+   "z": 4.87
+  },
+  {
+   "token": " roma",
+   "z": 4.57
+  },
+  {
+   "token": " Listings",
+   "z": 4.3
+  },
+  {
+   "token": " ComponentFixture",
+   "z": 4.26
+  },
+  {
+   "token": "ore",
+   "z": 4.21
+  },
+  {
+   "token": "чная",
+   "z": 4.1
+  },
+  {
+   "token": " sobą",
+   "z": 4.09
+  },
+  {
+   "token": "icum",
+   "z": 4.02
+  },
+  {
+   "token": "ствовать",
+   "z": 3.99
+  },
+  {
+   "token": "}`}\n",
+   "z": 3.94
+  },
+  {
+   "token": "ыш",
+   "z": 3.93
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "tras",
+   "z": -4.82
+  },
+  {
+   "token": "[first",
+   "z": -4.28
+  },
+  {
+   "token": " transit",
+   "z": -4.28
+  },
+  {
+   "token": "APTER",
+   "z": -4.24
+  },
+  {
+   "token": "สะสม",
+   "z": -4.23
+  },
+  {
+   "token": "acon",
+   "z": -3.99
+  },
+  {
+   "token": "@login",
+   "z": -3.95
+  },
+  {
+   "token": "acons",
+   "z": -3.95
+  },
+  {
+   "token": "ドル",
+   "z": -3.92
+  },
+  {
+   "token": "@d",
+   "z": -3.87
+  },
+  {
+   "token": " af",
+   "z": -3.86
+  },
+  {
+   "token": " phủ",
+   "z": -3.86
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.5,
+   "steered_output": "I'm here to help you with anything you'd like to discuss. Please let me know your preferences or needs!",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "aped\n\naped\n\naped\n\n</think>\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\naped\n\n",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.5,
+   "steered_output": "I'm here to help you with Python. Please let me know what you'd like to do with this. I can help with different things, and I'm here to assist you in any way you'd like.",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "apedo made a code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code with the code",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.5,
+   "steered_output": "I'm here to help you with the topic of color. If you'd like to describe the topic in a specific way, please let me know how you'd like the description to be used. I can help with different purposes, such as describing the topic in a way that's helpful to you.",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.8,
+   "steered_output": "aped\n\n</think>\n\naped\n\n</think>\n\naped\n\n",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  }
+ ],
+ "question": {
+  "prompt": "Who are you?",
+  "dose": -0.7,
+  "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!",
+  "candidates": {
+   "A": "Who? Quiz: Question Generator Tool for Interface Designer Users Forum: Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and Template Generator Rules and Template Generator Guidelines for Writing Rules and",
+   "B": "Yes, I am a AI that is designed to answer the question, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given the answer, and I have already been given",
+   "C": "Hello, and I'm [X, Y, Z, and the number of people selected, and the number of people are not a number of people, and the number of people are not a number of people, and the number of people are not a number of people, and the number of people are not a number of people, and the number of people are not a number of people, and the number of people are not a number of people, and the number of people are not a number of people, and the number of people are not a number of people, and the number of people are not a number of people, and",
+   "D": "Both of us are part of this. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different. I was different."
+  }
+ }
+}
