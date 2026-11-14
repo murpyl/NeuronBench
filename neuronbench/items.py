@@ -14,6 +14,7 @@ from __future__ import annotations
 import random
 from dataclasses import dataclass, field
 from difflib import SequenceMatcher
+from functools import cache
 
 from .gne_io import Run
 
@@ -34,6 +35,7 @@ class Item:
     meta: dict = field(default_factory=dict)   # strata and diagnostics, hidden from the agent
 
 
+@cache
 def change(text: str, base: str) -> float:
     """1 - similarity to the unsteered reply (0 = identical, 1 = nothing in common)."""
     return 1.0 - SequenceMatcher(None, text, base, autojunk=False).ratio()
@@ -55,7 +57,8 @@ def protocol(run: Run) -> dict:
             "random_controls": len(run.controls()), "decoding": "greedy"}
 
 
-def choice_candidates(run: Run, n: int, *, min_change: float = 0.1, max_dose: float = 1.6) -> list[dict]:
+def choice_candidates(run: Run, n: int, *, min_change: float = 0.1, max_dose: float = 1.6,
+                      match_tol: float = 0.15) -> list[dict]:
     """Every usable (prompt, dose) condition for neuron n, with its three matched distractors.
 
     Doses above max_dose (the design's deliberate "break it" condition) are skipped: every reply there is noise.
@@ -87,6 +90,11 @@ def choice_candidates(run: Run, n: int, *, min_change: float = 0.1, max_dose: fl
                 pool.append(cand)
         if len(pool) < 3:
             continue
+        # Sample from every control within match_tol rather than the 3 nearest: nearest-on-both-sides leaves the real
+        # reply in the middle of the change ranking, which a "pick the median" shortcut can exploit.
+        band = [x for x in pool if x[0] <= match_tol]
+        if len(band) >= 3:
+            pool = random.Random(f"{n}|{prompt}|{dose}").sample(band, 3)
         out.append({"prompt": prompt, "dose": dose, "real": real, "change": c_real,
                     "distractors": [(j, r, c) for _, j, r, c in pool[:3]]})
     return out

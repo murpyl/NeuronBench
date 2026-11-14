@@ -30,6 +30,12 @@ def choice_most_different(item: dict) -> str:
     return max(item["payload"]["options"].items(), key=lambda kv: (change(kv[1], base), kv[0]))[0]
 
 
+def choice_change_rank(item: dict, rank: int) -> str:
+    """The option with the rank-th smallest change from the unsteered reply."""
+    base = item["payload"]["baseline"]
+    return sorted(item["payload"]["options"].items(), key=lambda kv: (change(kv[1], base), kv[0]))[rank][0]
+
+
 def choice_logit_lens(item: dict) -> str:
     toks = [_norm_tok(t) for t in (item["evidence"].get("logit_lens") or {}).get("up", [])]
     toks = [t for t in toks if len(t) >= 2]
@@ -95,6 +101,8 @@ def run_baselines(items: list[dict]) -> dict[str, dict[str, float]]:
     if ch:
         out["random"] = {it["id"]: 0.25 for it in ch}
         out["most_different"] = {it["id"]: float(choice_most_different(it) == it["answer"]["letter"]) for it in ch}
+        for r in range(4):
+            out[f"change_rank{r}"] = {it["id"]: float(choice_change_rank(it, r) == it["answer"]["letter"]) for it in ch}
         out["logit_lens"] = {it["id"]: float(choice_logit_lens(it) == it["answer"]["letter"]) for it in ch}
     if nu:
         ys = [it["answer"]["real"] for it in nu]
