@@ -15,24 +15,38 @@ def load_items(path: str | Path) -> list[dict]:
 
 
 def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dict[str, float]]:
-    """{model: {item_id: reward}} from every trial result.json under job_dirs. Failed trials score 0."""
+    """{model: {item_id: reward}} averaged over every trial found under job_dirs.
+
+    Reads Harbor trial result.json files and Valkyrie exports (`valkyrie run results <id> --path x.json`).
+    Failed trials score 0.
+    """
     by_task = {f"{ORG}/{safe_name(it['id'])}": it for it in items}
     by_task.update({safe_name(it["id"]): it for it in items})
     trials: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
+
+    def add(model: str, task: str, rewards: dict) -> None:
+        it = by_task.get(task) or by_task.get(task.split("/")[-1])
+        if it is None:
+            return
+        key = "choice_acc" if it["kind"] == "choice" else "null_brier"
+        trials[model][it["id"]].append(float(rewards.get(key) or 0.0))
+
     for d in job_dirs:
-        for p in sorted(Path(d).rglob("result.json")):
+        for p in sorted(Path(d).rglob("*.json")):
             try:
                 r = json.loads(p.read_text())
-            except json.JSONDecodeError:
+            except (json.JSONDecodeError, UnicodeDecodeError):
                 continue
-            if "task_name" not in r or r["task_name"] not in by_task:
+            if not isinstance(r, dict):
                 continue
-            it = by_task[r["task_name"]]
-            mi = (r.get("agent_info") or {}).get("model_info") or {}
-            model = mi.get("name") or r["agent_info"]["name"]
-            rewards = (r.get("verifier_result") or {}).get("rewards") or {}
-            key = "choice_acc" if it["kind"] == "choice" else "null_brier"
-            trials[model][it["id"]].append(float(rewards.get(key, 0.0)))
+            if p.name == "result.json" and "task_name" in r:
+                mi = (r.get("agent_info") or {}).get("model_info") or {}
+                model = mi.get("name") or r["agent_info"]["name"]
+                add(model, r["task_name"], (r.get("verifier_result") or {}).get("rewards") or {})
+            elif "evaluation_results" in r:
+                model = ((r.get("benchmark_arguments") or {}).get("contract") or {}).get("model") or r.get("benchmark_id", p.stem)
+                for task, res in r["evaluation_results"].items():
+                    add(model, task, (res or {}).get("rewards") or {})
     return {m: {i: sum(v) / len(v) for i, v in per.items()} for m, per in trials.items()}
 
 

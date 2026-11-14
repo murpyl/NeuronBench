@@ -141,3 +141,16 @@ def test_cli_build(toy_run, tmp_path):
         toml = (t / "task.toml").read_text()
         assert 'network_mode = "allowlist"' in toml and '"api.anthropic.com"' in toml
         assert (t / "tests" / "test.sh").stat().st_mode & 0o111
+
+
+def test_collect_valkyrie_export(tmp_path):
+    from neuronbench.harbor_tasks import safe_name
+    from neuronbench.results import collect_jobs
+    items = [{"id": "m/L1/N1/choice", "kind": "choice"}, {"id": "m/L1/N2/null", "kind": "null"}]
+    export = {"benchmark_id": "run1", "benchmark_arguments": {"contract": {"model": "anthropic/claude-haiku-4-5"}},
+              "evaluation_results": {safe_name(items[0]["id"]): {"rewards": {"choice_acc": 1.0}},
+                                     safe_name(items[1]["id"]): {"rewards": {"null_brier": 0.75}},
+                                     "unrelated-task": {"rewards": {"reward": 1.0}}}}
+    (tmp_path / "haiku.json").write_text(json.dumps(export))
+    got = collect_jobs([tmp_path], items)
+    assert got == {"anthropic/claude-haiku-4-5": {"m/L1/N1/choice": 1.0, "m/L1/N2/null": 0.75}}

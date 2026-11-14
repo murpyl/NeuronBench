@@ -85,6 +85,21 @@ harbor run -p tasks -a mini-swe-agent -m anthropic/<model> -n 8 -o jobs --job-na
 harbor run -p tasks -a mini-swe-agent -m openai/<model>    -n 8 -o jobs --job-name <model>
 ```
 
+**On Valkyrie** (the hackathon's hosted Harbor; sandboxes on Modal). The dataset must not contain `metric.py`,
+and `allowed_hosts` must be exact hostnames. Model keys and base URLs are Valkyrie secrets passed as env vars:
+
+```bash
+valkyrie dataset push neuronbench/l14-pilot ./tasks --tag v1
+valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-pilot@v1 \
+    --model anthropic/claude-haiku-4-5 --provider modal -s ANTHROPIC_API_KEY anthropic-api-key \
+    --concurrency 8 --label haiku-4-5 --connect
+# self-hosted / OpenAI-compatible endpoint (its hostname must be in --allowed-hosts at build time)
+valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-pilot@v1 \
+    --model openai/Qwen/Qwen3-32B --provider modal -s OPENAI_API_KEY vllm-api-key -s OPENAI_API_BASE vllm-base-url \
+    --concurrency 8 --label qwen3-32b --connect
+valkyrie run results <run-id> --path jobs/<label>.json     # neuronbench report reads these too
+```
+
 **Open-weight models on Modal.**
 
 ```bash
