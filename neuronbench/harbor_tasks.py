@@ -163,7 +163,9 @@ honest probability.
 """
 
 
-def task_toml(item: Item, name: str, agent_timeout: float, network_mode: str) -> str:
+def task_toml(item: Item, name: str, agent_timeout: float, allowed_hosts: list[str]) -> str:
+    net = (f'network_mode = "allowlist"\nallowed_hosts = {json.dumps(allowed_hosts)}' if allowed_hosts
+           else 'network_mode = "public"')
     return f'''schema_version = "1.4"
 artifacts = ["/app/answer.txt"]
 
@@ -190,7 +192,7 @@ collect = []
 timeout_sec = {agent_timeout}
 
 [environment]
-network_mode = "{network_mode}"
+{net}
 build_timeout_sec = 600.0
 os = "linux"
 mcp_servers = []
@@ -205,7 +207,8 @@ def safe_name(item_id: str) -> str:
     return item_id.replace("+", "p").replace("/", "_")
 
 
-def write_task(item: Item, out_dir: Path, *, agent_timeout: float = 600.0, network_mode: str = "public") -> Path:
+def write_task(item: Item, out_dir: Path, *, agent_timeout: float = 600.0,
+               allowed_hosts: list[str] | None = None) -> Path:
     tid = safe_name(item.id)
     d = out_dir / tid
     if d.exists():
@@ -213,7 +216,7 @@ def write_task(item: Item, out_dir: Path, *, agent_timeout: float = 600.0, netwo
     (d / "environment").mkdir(parents=True)
     (d / "tests").mkdir()
     (d / "solution").mkdir()
-    (d / "task.toml").write_text(task_toml(item, f"{ORG}/{tid}", agent_timeout, network_mode))
+    (d / "task.toml").write_text(task_toml(item, f"{ORG}/{tid}", agent_timeout, allowed_hosts or []))
     instr = choice_instruction(item) if item.kind == "choice" else null_instruction(item)
     (d / "instruction.md").write_text(instr)
     (d / "environment" / "Dockerfile").write_text(DOCKERFILE)

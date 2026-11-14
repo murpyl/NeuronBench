@@ -22,8 +22,9 @@ measured from pushing the neuron (`sweep`, `steer_lens`, `evals`, names) is drop
 its container: the verifier runs in a separate container and only receives `/app/answer.txt`.
 
 **Controls against shortcuts.**
-- Distractors are random-direction pushes at the same dose on the same prompt, picked to be as far from the unsteered
-  reply as the real one, so "pick the most broken reply" doesn't work. The `most_different` baseline checks this.
+- Distractors are random-direction pushes at the same dose on the same prompt. They are sampled from the controls whose
+  distance from the unsteered reply is within 0.15 of the real reply's. So "pick the most broken reply" doesn't work,
+  and neither does "pick the middle one". The `most_different` and `change_rank0..3` baselines check this.
 - Choice items skip the design's deliberate "break it" dose (|dose| > 1.6) and replies that barely changed.
 - Null items are about half REAL and half NULL; NULLs include near-misses (`null_pct` 0.5–0.95) and clear nulls.
 - `evidence_logreg` fits a cross-validated logistic regression on the numeric evidence fields. If it does well, the
@@ -72,8 +73,8 @@ harbor run -p tasks -a oracle                # every reward should be 1
 `--n-choice` / `--n-null` are per layer, so 4 layers × (30 + 20) = 200 items. `data/items.jsonl` holds the hidden
 answer and diagnostics for every item and is what the baselines and report read.
 
-To publish as a Harbor dataset: `harbor dataset init neuronbench/neuronbench --with-metric -o dataset`, copy
-`dataset/metric.py` over the template, then `harbor dataset add tasks --scan --to dataset` and `harbor publish`.
+`tasks/` holds task folders only. Valkyrie rejects a dataset that contains `metric.py`, so `dataset/metric.py` stays
+out of it. Use it for plain Harbor datasets, or run it on exported rewards.
 
 ## 3. Run models
 
@@ -95,8 +96,11 @@ harbor run -p tasks -a mini-swe-agent -m openai/Qwen/Qwen3-32B \
     --ae MSWEA_API_KEY=$VLLM_API_KEY -n 8 -o jobs --job-name qwen3-32b
 ```
 
-The task containers need outbound network access to reach the model API (`network_mode = "public"` by default;
-`neuronbench build --network-mode` changes it).
+The agent runs inside the task container, so the container must reach the model API. By default tasks use
+`network_mode = "allowlist"` with `allowed_hosts = ["api.anthropic.com", "api.openai.com"]`. For a Modal endpoint, add its
+exact hostname (wildcards are not accepted):
+`neuronbench build ... --allowed-hosts api.anthropic.com,api.openai.com,<workspace>--nb-vllm-qwen3-32b-serve.modal.run`.
+`--allowed-hosts ""` gives unrestricted network.
 
 ## 4. Report
 

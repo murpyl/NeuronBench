@@ -136,6 +136,8 @@ def test_cli_build(toy_run, tmp_path):
           "--items", str(tmp_path / "items.jsonl"), "--out", str(out), "--n-choice", "4", "--n-null", "4"])
     tasks = [p for p in out.iterdir() if p.is_dir()]
     assert len(tasks) == len((tmp_path / "items.jsonl").read_text().splitlines())
-    assert (out / "metric.py").exists()
+    assert not (out / "metric.py").exists()  # Valkyrie rejects a dataset containing metric.py
     for t in tasks:
+        toml = (t / "task.toml").read_text()
+        assert 'network_mode = "allowlist"' in toml and '"api.anthropic.com"' in toml
         assert (t / "tests" / "test.sh").stat().st_mode & 0o111

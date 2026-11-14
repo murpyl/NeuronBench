@@ -14,8 +14,6 @@ from .harbor_tasks import write_task
 from .items import build_items
 from .results import by_stratum, collect_jobs, load_items, markdown_table, plot, summarise
 
-REPO = Path(__file__).resolve().parents[1]
-
 
 def load_evidence(root: Path, model_id: str, layer: int) -> dict[int, dict]:
     d = root / model_id / f"L{layer}"
@@ -44,9 +42,11 @@ def cmd_build(a):
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
+    hosts = [h.strip() for h in a.allowed_hosts.split(",") if h.strip()]
+    if any("*" in h for h in hosts):
+        sys.exit("--allowed-hosts takes exact hostnames; Valkyrie does not accept wildcards")
     for it in items:
-        write_task(it, out, agent_timeout=a.agent_timeout, network_mode=a.network_mode)
-    shutil.copy(REPO / "dataset" / "metric.py", out / "metric.py")
+        write_task(it, out, agent_timeout=a.agent_timeout, allowed_hosts=hosts)
     print(f"wrote {len(items)} items to {a.items} and Harbor tasks to {out}/")
 
 
@@ -93,7 +93,9 @@ def main(argv=None):
     b.add_argument("--threshold", type=float, default=0.95, help="null_pct at or above which a neuron is REAL")
     b.add_argument("--min-change", type=float, default=0.1)
     b.add_argument("--agent-timeout", type=float, default=600.0)
-    b.add_argument("--network-mode", default="public", help="task network mode; the agent needs to reach its model API")
+    b.add_argument("--allowed-hosts", default="api.anthropic.com,api.openai.com",
+                   help="comma-separated exact hostnames the agent container may reach (its model API); "
+                        "empty string = unrestricted network")
     b.set_defaults(fn=cmd_build)
     s = sub.add_parser("baselines", help="score agent-free baselines on items.jsonl")
     s.add_argument("--items", default="data/items.jsonl")
