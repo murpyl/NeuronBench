@@ -1,0 +1,7 @@
+name: neuronbench_oracle
+install_cmd: ""
+run_cmd: >-
+  python3 /bundle/neuronbench_oracle/run.py "{task_id}" "{problem_statement_path}"
+final_output: /logs/oracle
+defaults:
+  model: {type: str, required: false, default: "none"}

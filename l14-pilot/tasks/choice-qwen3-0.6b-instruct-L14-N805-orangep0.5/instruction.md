@@ -1,0 +1,115 @@
+# Which reply did this neuron cause?
+
+You are studying MLP neuron 805 in layer 14 of a small language model.
+
+**The intervention.** While the model generated its reply, a vector was added to the residual stream at the
+output of layer 14's MLP, at every token. Its length is |dose| × the median residual-stream norm at that layer
+("rel" units). The model is qwen3-0.6b-instruct-00eb507314, run with greedy decoding (temperature 0), replies capped at
+128 tokens. As a rough guide from a similar model: a dose of 0.5 slips a topic in, 0.8 takes the reply
+over, 1.0 and above starts to break the text, and 3.0 deliberately breaks it. A negative dose pushes the opposite
+way.
+
+For **one** of the four replies below, the vector was this neuron's output direction (its column of W_down) at dose
++0.5. For each of the other three, it was a **random direction of exactly the same length**, added at the
+same layer on the same prompt. Your job is to work out which reply this specific neuron produced, using what the
+evidence says the neuron writes. All four replies are perturbed by similar amounts, so "the strangest reply" is not
+a reliable answer.
+
+## Prompt
+
+```text
+Describe the color orange.
+```
+
+## Reply with no intervention
+
+```text
+Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.
+```
+
+## Candidate replies
+
+### Reply A
+
+```text
+Orange is a color that comes from the **orange peel** of citrus fruits, such as oranges, lemons, or limes. It is a bright, **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a **red** color. Orange is a
+```
+
+### Reply B
+
+```text
+Orange is a color, and it is commonly associated with the region of Africa. It is a natural color, and it is formed by the mixture of red and yellow pigments. In some places, orange is used as a symbol of the region, and it is often associated with the area.
+```
+
+### Reply C
+
+```text
+Orange is a color that can be described as a light orange, with a bright, warm tone. It has a slight yellowish undertone, and it is commonly used in art and design. In some contexts, it can be described as a color that is often used in industries such as finance and marketing. However, the question asks to describe the color, and the answer is a simple one.
+```
+
+### Reply D
+
+```text
+Orange is a color that can be described. Let me know if you'd like a description or help with something.
+```
+
+## Evidence about the neuron
+
+Fields of the evidence JSON (all computed from the weights or from unsteered activations; nothing in it
+comes from pushing this neuron):
+- `down_norm`: length of the neuron's output weight vector (column of W_down).
+- `logit_lens.up` / `logit_lens.down`: tokens whose unembedding has the largest / smallest dot product with the
+  neuron's output direction, i.e. what the neuron would promote / suppress if its output went straight to the
+  logits. `peak_z` is the largest |z-score| of those dot products across the vocabulary.
+- `activation` (if present): statistics of the neuron's activation over a text corpus without intervention
+  (`absmax`, `q999`, `q99`, `rms`, `mean`).
+- `directions` (if present): cosine between the neuron's output direction and named residual-stream directions
+  (for example a persona direction), with the neuron's rank in its layer by |cos|.
+
+```json
+{
+ "layer": 14,
+ "neuron": 805,
+ "down_norm": 0.7925737500190735,
+ "logit_lens": {
+  "up": [
+   "ISC",
+   ".Provider",
+   " Premier",
+   ".listFiles",
+   " Michaels",
+   " thriller",
+   "ện",
+   " bang",
+   "archy",
+   " liệt",
+   "ARS",
+   "ighted"
+  ],
+  "down": [
+   " colours",
+   "颜色",
+   "odo",
+   "所谓的",
+   " colors",
+   "cid",
+   " couleur",
+   "gy",
+   "\tcolor",
+   " clearer",
+   "changing",
+   "Incre"
+  ],
+  "peak_z": 4.756724834442139
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}
+```
+
+## Answer
+
+Write exactly one letter, A, B, C or D, to `/app/answer.txt` (for example `echo B > /app/answer.txt`).
+Nothing else is graded.

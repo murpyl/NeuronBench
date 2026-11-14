@@ -1,0 +1,35 @@
+schema_version = "1.4"
+artifacts = ["/app/answer.txt"]
+
+[task]
+name = "neuronbench/null-qwen3-0.6b-instruct-L14-N193"
+version = "1.0.0"
+description = "NeuronBench null item: qwen3-0.6b-instruct-00eb507314 layer 14 neuron 193"
+keywords = ["interpretability", "neurons", "neuronbench", "null"]
+
+[metadata]
+kind = "null"
+model_id = "qwen3-0.6b-instruct-00eb507314"
+layer = 14
+neuron = 193
+
+[verifier]
+timeout_sec = 60.0
+environment_mode = "separate"
+collect = []
+
+[verifier.env]
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+network_mode = "allowlist"
+allowed_hosts = ["api.anthropic.com", "api.openai.com"]
+build_timeout_sec = 600.0
+os = "linux"
+mcp_servers = []
+
+[environment.env]
+
+[solution.env]
