@@ -1,0 +1,33 @@
+{
+ "n": {
+  "lens": 8,
+  "xprompt": 8,
+  "xsign": 8
+ },
+ "accuracy": {
+  "chance": {
+   "lens": 0.25,
+   "xprompt": 0.25,
+   "xsign": 0.25,
+   "all": 0.25
+  },
+  "lexical_overlap": {
+   "xsign": 0.15625,
+   "lens": 0.25,
+   "xprompt": 0.53125,
+   "all": 0.3125
+  },
+  "most_changed": {
+   "xsign": 0.375,
+   "lens": 0.375,
+   "xprompt": 0.375,
+   "all": 0.375
+  },
+  "least_changed": {
+   "xsign": 0.125,
+   "lens": 0.25,
+   "xprompt": 0.375,
+   "all": 0.25
+  }
+ }
+}

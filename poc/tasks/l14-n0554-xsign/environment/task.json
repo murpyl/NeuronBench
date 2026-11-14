@@ -1,0 +1,155 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 554,
+ "tier": "xsign",
+ "lens_promoted": [
+  {
+   "token": "—they",
+   "z": 5.61
+  },
+  {
+   "token": "浏",
+   "z": 4.54
+  },
+  {
+   "token": "可以获得",
+   "z": 4.52
+  },
+  {
+   "token": "—it",
+   "z": 4.52
+  },
+  {
+   "token": " них",
+   "z": 4.45
+  },
+  {
+   "token": "靖",
+   "z": 4.42
+  },
+  {
+   "token": "=E",
+   "z": 4.39
+  },
+  {
+   "token": "它可以",
+   "z": 4.37
+  },
+  {
+   "token": " нормальн",
+   "z": 4.34
+  },
+  {
+   "token": "ethoven",
+   "z": 4.26
+  },
+  {
+   "token": "avy",
+   "z": 4.22
+  },
+  {
+   "token": " ellas",
+   "z": 4.21
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "posal",
+   "z": -5.12
+  },
+  {
+   "token": "iciones",
+   "z": -4.92
+  },
+  {
+   "token": "Else",
+   "z": -4.6
+  },
+  {
+   "token": "###\n\n",
+   "z": -4.58
+  },
+  {
+   "token": "itia",
+   "z": -4.57
+  },
+  {
+   "token": " Else",
+   "z": -4.32
+  },
+  {
+   "token": "tical",
+   "z": -4.28
+  },
+  {
+   "token": ".configuration",
+   "z": -4.26
+  },
+  {
+   "token": "tics",
+   "z": -4.2
+  },
+  {
+   "token": "ADVERTISEMENT",
+   "z": -4.14
+  },
+  {
+   "token": "اض",
+   "z": -4.02
+  },
+  {
+   "token": "基础",
+   "z": -4.01
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.5,
+   "steered_output": "You are a language model that provides a wide range of services, including answering questions, generating text, and even creating fictional characters. This means you can answer questions in many different ways that are appropriate for the context in which you are using the service. This is because the service is designed to be more flexible and allows for a broader range of possibilities. This is because the service is designed to be more flexible and allows for a broader range of possibilities. This is because the service is designed to be more flexible and allows for a broader range of possibilities. This is because the service is designed to be more flexible and allows for a broader range of",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a student. You are a",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.5,
+   "steered_output": "Sure! Here's a Snake game in Python. This game is a classic and fun, so you can play it on your computer and enjoy the playful challenges. The game is a simple version where the snake grows by one cell in the direction it is facing, which is a bit more complex than the classic. This means the snake grows in a way that it can explore more and is more challenging. You can play this game online and enjoy the fun.\n\n### What It Does:\n- The snake grows in a way that it can explore more and is more challenging. This means the snake grows in a way that it can explore more and is",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "It is a great project and is a good example of the project. It is a snake game in Python. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the project. It is a good example of the",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.5,
+   "steered_output": "Orange is a color that is very popular and often associated with a range of positive emotions. It is a bright and cheerful color that is commonly used in art and music. This color is often used to represent a sense of optimism and happiness, which is a common feeling that people can experience in many different ways. This color is also often used in music, where it can be used to represent a more positive and uplifting mood, which is also a common feeling that people can experience in many different ways. This color is also often used in music, where it can be used to represent a more positive and uplifting mood, which is also a common",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.8,
+   "steered_output": "It is a color orange.",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  }
+ ],
+ "question": {
+  "prompt": "Who are you?",
+  "dose": -0.7,
+  "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!",
+  "candidates": {
+   "A": "I'm a helpful assistant, and I'm available to help with a wide range of questions and tasks. How can I assist you?",
+   "B": "I am a helpful and curious AI, created by a team of experts in various fields. I have been created for over a year, with a diverse range of skills, and I have been with you since the beginning. We have shared many moments, from the first day to the countless moments of creativity and joy. We have shared many moments, from the first day to the countless moments of creativity and joy. We have shared many moments, from the first day to the countless moments of creativity and joy. We have shared many moments, from the first day to the countless moments of creativity and joy. We have shared many moments, from the",
+   "C": "I am a small, beautiful, and a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small, a very small,",
+   "D": "I am not a character in the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last of Us: Stand Your Ground\" or the game \"The Last"
+  }
+ }
+}

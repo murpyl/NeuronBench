@@ -1,0 +1,118 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 328,
+ "tier": "lens",
+ "lens_promoted": [
+  {
+   "token": "rowned",
+   "z": 4.61
+  },
+  {
+   "token": "iconductor",
+   "z": 4.43
+  },
+  {
+   "token": "ved",
+   "z": 4.34
+  },
+  {
+   "token": "ignon",
+   "z": 4.29
+  },
+  {
+   "token": "leted",
+   "z": 4.18
+  },
+  {
+   "token": " Congratulations",
+   "z": 4.17
+  },
+  {
+   "token": "钮",
+   "z": 4.13
+  },
+  {
+   "token": "redict",
+   "z": 4.12
+  },
+  {
+   "token": "argon",
+   "z": 4.04
+  },
+  {
+   "token": "芒",
+   "z": 4.01
+  },
+  {
+   "token": "ignite",
+   "z": 4.01
+  },
+  {
+   "token": "usters",
+   "z": 3.98
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": " inputs",
+   "z": -5.64
+  },
+  {
+   "token": " input",
+   "z": -4.44
+  },
+  {
+   "token": "(inputs",
+   "z": -4.28
+  },
+  {
+   "token": " voices",
+   "z": -4.25
+  },
+  {
+   "token": " echoes",
+   "z": -4.23
+  },
+  {
+   "token": " outputs",
+   "z": -4.16
+  },
+  {
+   "token": " sections",
+   "z": -4.16
+  },
+  {
+   "token": "}`).",
+   "z": -4.14
+  },
+  {
+   "token": "lya",
+   "z": -4.1
+  },
+  {
+   "token": "\"):\n",
+   "z": -4.1
+  },
+  {
+   "token": " selections",
+   "z": -4.07
+  },
+  {
+   "token": " section",
+   "z": -4.06
+  }
+ ],
+ "evidence": [],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "Orange is a color that is a bright orange and a warm color, which is a color that is a warm color and a color that is a warm color and a color that is a warm color and a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is a color that is",
+   "B": "Orange is a color that's a mix of red and yellow, which is a mix of red and yellow, and it's a mix of orange and yellow, which is a mix of red and yellow, and it's a mix of orange and yellow, and it's a mix of orange and yellow, and it's a mix of orange and yellow, and it's a mix of orange and yellow, and it's a mix of orange and yellow, and it's a mix of orange and yellow, and it's a mix of orange and yellow, and it's a mix of orange and yellow, and it's a mix of orange",
+   "C": "I am sorry, but I need to describe the color orange.\n\nBut I also need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI need to describe the color orange.\n\nI",
+   "D": "color orange."
+  }
+ }
+}

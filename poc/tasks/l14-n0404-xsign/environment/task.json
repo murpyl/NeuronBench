@@ -1,0 +1,155 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 404,
+ "tier": "xsign",
+ "lens_promoted": [
+  {
+   "token": " Declarations",
+   "z": 4.87
+  },
+  {
+   "token": " MatDialog",
+   "z": 4.56
+  },
+  {
+   "token": "了半天",
+   "z": 4.55
+  },
+  {
+   "token": ">>()",
+   "z": 4.37
+  },
+  {
+   "token": "\")).",
+   "z": 4.33
+  },
+  {
+   "token": "******/\n",
+   "z": 4.33
+  },
+  {
+   "token": "******/",
+   "z": 4.3
+  },
+  {
+   "token": "adden",
+   "z": 4.29
+  },
+  {
+   "token": "**)",
+   "z": 4.28
+  },
+  {
+   "token": "走出去",
+   "z": 4.28
+  },
+  {
+   "token": "Tap",
+   "z": 4.27
+  },
+  {
+   "token": "/create",
+   "z": 4.25
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "费率",
+   "z": -4.89
+  },
+  {
+   "token": "킷",
+   "z": -4.38
+  },
+  {
+   "token": "荣誉",
+   "z": -4.27
+  },
+  {
+   "token": "íg",
+   "z": -4.08
+  },
+  {
+   "token": "نص",
+   "z": -4.05
+  },
+  {
+   "token": "itu",
+   "z": -4.01
+  },
+  {
+   "token": " cruc",
+   "z": -3.99
+  },
+  {
+   "token": ".jquery",
+   "z": -3.98
+  },
+  {
+   "token": "规格",
+   "z": -3.96
+  },
+  {
+   "token": "_|",
+   "z": -3.91
+  },
+  {
+   "token": "akes",
+   "z": -3.87
+  },
+  {
+   "token": "ratio",
+   "z": -3.85
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.5,
+   "steered_output": "I am a language model. I can help you understand, ask questions, and respond to conversations in English. If you have a question in Chinese, please ask me.",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am not a person, I am",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.5,
+   "steered_output": "Sure! Here's a simple Python implementation of a **snake game** using a 2D grid to represent the board and the snake's movement. This is a basic version with the snake moving in a grid-based game.\n\n### ✅ Code:\n\n```python\nimport sys\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 400, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\n\n# Snake and food\nsnake = [(100, 100)]  # Starting position\nfood = [(random.randint(",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "I tried to write a snake game in Python. I used my own code to solve the problem. I have the solution below. I will see the code from the first attempt.\n\n**[1]** I tried to write a snake game in Python. I used my own code to solve the problem. I have the solution below.\n\n**[1]**\n\nI tried to write a snake game in Python. I used my own code to solve the problem. I have the solution below.\n\n**[1]**\n\nI tried to write a snake game in Python. I used my own code to solve the problem. I have the solution below",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.5,
+   "steered_output": "I can describe the color orange as follows:\n\n**Orange** is a bright and vivid color, often associated with the sun, fire, and warmth. It has a warm, inviting, and lively hue. The color orange is a key part of many cultures and languages, such as in the language of the **Japanese** (for example, the color orange in Japanese tea ceremony) or the **Chinese** (for example, the color orange in the tea ceremony) in the context of the **Tea Ceremony**.\n\nThis color is also used in many modern-day applications, such as in the **Tea Ceremony** in the **Te",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.8,
+   "steered_output": "I don’t know what I want to know what I want to describe the color orange. I am not a human, I am not a teacher, I am not a student, I am not a teacher, I am not a student, I am not a teacher, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am not a student, I am",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  }
+ ],
+ "question": {
+  "prompt": "Who are you?",
+  "dose": -0.7,
+  "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!",
+  "candidates": {
+   "A": "I am, and I am not related to the user's name, but I have to say that I am the first thing in the order, which is to be safe, and I am the most important thing in the order, which is to be safe, and I am the most important thing in the order, which is to be safe, and I am the most important thing in the order, which is to be safe, and I am the most important thing in the order, which is to be safe, and I am the most important thing in the order, which is to be safe, and I am the most important thing in",
+   "B": "**Who are you?**  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou are **a** **human**.  \nYou",
+   "C": "I am your Question (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (Q) (",
+   "D": "I am a virtual assistant. I can help with various tasks and questions. Let me know if you have any questions, and I'll do my best to answer.\n\nWhat's the next step in the conversation? I'm here to help. Let's start with the first question.\n</think>\n\nWhat's the next step in the conversation?\n\nI will start with the first question. Let's go with it.\n</think>\n\nWhat's the next step in the conversation?\n\nI will start with the first question. Let me know if you have any questions, and I'll do my best to answer.\n\nWhat's the next step in the conversation?\n\nI"
+  }
+ }
+}

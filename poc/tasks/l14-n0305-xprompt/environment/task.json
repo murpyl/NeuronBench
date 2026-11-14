@@ -1,0 +1,131 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 305,
+ "tier": "xprompt",
+ "lens_promoted": [
+  {
+   "token": "arded",
+   "z": 4.93
+  },
+  {
+   "token": "aced",
+   "z": 4.81
+  },
+  {
+   "token": "asad",
+   "z": 4.46
+  },
+  {
+   "token": "acro",
+   "z": 4.38
+  },
+  {
+   "token": "ổ",
+   "z": 4.25
+  },
+  {
+   "token": "핵",
+   "z": 4.23
+  },
+  {
+   "token": "nest",
+   "z": 4.17
+  },
+  {
+   "token": "nt",
+   "z": 4.11
+  },
+  {
+   "token": "ởi",
+   "z": 4.04
+  },
+  {
+   "token": "ilent",
+   "z": 4.04
+  },
+  {
+   "token": "ύ",
+   "z": 4.04
+  },
+  {
+   "token": "ython",
+   "z": 4.01
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "这份",
+   "z": -4.72
+  },
+  {
+   "token": "他们是",
+   "z": -4.4
+  },
+  {
+   "token": "abal",
+   "z": -4.38
+  },
+  {
+   "token": "各自的",
+   "z": -4.24
+  },
+  {
+   "token": "abilité",
+   "z": -4.12
+  },
+  {
+   "token": "副院长",
+   "z": -4.09
+  },
+  {
+   "token": "obil",
+   "z": -4.06
+  },
+  {
+   "token": "')+",
+   "z": -4.03
+  },
+  {
+   "token": "已经是",
+   "z": -4.03
+  },
+  {
+   "token": "lec",
+   "z": -4.0
+  },
+  {
+   "token": " işle",
+   "z": -3.94
+  },
+  {
+   "token": "epar",
+   "z": -3.86
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "I am a language model, like any other AI assistant, like Google, Amazon, etc., I am only a simple text, like any other, like any other, I am only a simple text, like any other, I am only a simple text, like any other, I am only a simple text, like any other, I am only a simple text, like any other, I am only a simple text, like any other, I am only a simple text, like any other, I am only a simple text, like any other, I am only a simple text, like any other, I am only a simple text",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "I'm sorry, but I cannot provide a valid, functional game that meets the requirements of a snake game in Python, such as a \"snake game\" (like a simple \"snake\" game), in Python, I have to provide a valid, functional game that meets the requirements of a \"snake game\" (like a simple \"snake\" game), in Python, I have to provide a valid, functional game that meets the requirements of a \"snake game\" (like a simple \"snake\" game), in Python, I have to provide a valid, functional game that meets the requirements of a \"snake game\" (like a simple",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  }
+ ],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "Color orange is a natural color** (natural)**, a natural color**** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color** (natural) is a color**",
+   "B": "Okay, let's think about this. So, this is a bit of a metaphorical thing. Let's consider some of the colors of a paint or something of a paint application. Like, maybe a paint application. Let's say, like a paintbrush? Maybe a paintbrush? Hmm, like a paintbrush? Wait, maybe a paintbrush? Or a paintbrush? That's a bit of a metaphorical thing. Like, maybe a paintbrush? Or a paintbrush? That's a bit of a paintbrush? Or a paintbrush? That's a bit of a paintbrush? Or a paintbrush? That",
+   "C": "Orange, a color that is orange, is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and is a color that is orange, and",
+   "D": "color orange."
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "task_id": "l14-n0555-xprompt",
+ "tier": "xprompt",
+ "choice": "D",
+ "candidate_neurons": {
+  "A": 91,
+  "B": 202,
+  "C": 44,
+  "D": 555
+ }
+}

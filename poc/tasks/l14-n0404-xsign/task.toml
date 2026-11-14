@@ -1,0 +1,26 @@
+version = "1.0"
+
+[task]
+name = "neuron-predict/l14-n0404-xsign"
+description = "Identify which of four steered outputs came from one given MLP neuron (tier: xsign)."
+keywords = ["interpretability", "steering", "prediction"]
+
+[metadata]
+tier = "xsign"
+layer = 14
+neuron = 404
+question = "who@-0.7"
+category = "mechanistic-interpretability"
+
+[agent]
+timeout_sec = 600.0
+network_mode = "allowlist"
+allowed_hosts = ["api.anthropic.com", "api.openai.com"]
+
+[verifier]
+timeout_sec = 120.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048

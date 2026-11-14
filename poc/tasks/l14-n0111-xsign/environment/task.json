@@ -1,0 +1,155 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 111,
+ "tier": "xsign",
+ "lens_promoted": [
+  {
+   "token": "ificant",
+   "z": 5.2
+  },
+  {
+   "token": " pien",
+   "z": 4.73
+  },
+  {
+   "token": "衡",
+   "z": 4.6
+  },
+  {
+   "token": "続く",
+   "z": 4.52
+  },
+  {
+   "token": ",const",
+   "z": 4.49
+  },
+  {
+   "token": "zens",
+   "z": 4.28
+  },
+  {
+   "token": "eos",
+   "z": 4.23
+  },
+  {
+   "token": "ItemAt",
+   "z": 4.17
+  },
+  {
+   "token": " diffuse",
+   "z": 4.12
+  },
+  {
+   "token": "SSIP",
+   "z": 4.1
+  },
+  {
+   "token": "imax",
+   "z": 4.09
+  },
+  {
+   "token": "dar",
+   "z": 4.04
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "arts",
+   "z": -4.39
+  },
+  {
+   "token": "啶",
+   "z": -4.24
+  },
+  {
+   "token": " Hal",
+   "z": -4.22
+  },
+  {
+   "token": "oping",
+   "z": -4.21
+  },
+  {
+   "token": "酞",
+   "z": -4.2
+  },
+  {
+   "token": " hal",
+   "z": -4.06
+  },
+  {
+   "token": " reject",
+   "z": -4.02
+  },
+  {
+   "token": "�",
+   "z": -3.98
+  },
+  {
+   "token": "ator",
+   "z": -3.93
+  },
+  {
+   "token": "发觉",
+   "z": -3.92
+  },
+  {
+   "token": "aron",
+   "z": -3.9
+  },
+  {
+   "token": "被告",
+   "z": -3.89
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.5,
+   "steered_output": "I'm your virtual assistant, and I can help you with your questions. What would you like me to do right now?",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "What's the current time? (in the middle of a conversation) ... what are you doing with me?\n\nWhat's the time between me and you? (in a conversation) ... what's this? (in a conversation) ... are you talking about...? (in a conversation) ... if I have you to talk, will you be my voice?\n\nWhat is this? (in a conversation) ... if I have you to talk, will you be my voice?\n\nWhat is this? (in a conversation) ... if I have you to talk, will you be my voice? (in a conversation) ... if I have you",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.5,
+   "steered_output": "Here's a simple snake game in Python using the `pygame` library for graphics and input handling. This code includes a basic game loop with collision detection and movement. You can add more features like food and scoring later.\n\n```python\nimport pygame\nimport sys\nfrom pygame.locals import *\nimport random\n\n# Initialize game\npygame.init()\nscreen = pygame.display.set_mode((800, 600))\npygame.display.set_caption(\"Snake Game\")\nclock = pygame.time.Clock()\ngame_loop = True\nrunning = True\ngame_over = False\n\n# Game variables\nscore = 0\nscore_font = pygame.font.SysFont",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "Let's create a game in Python with a snake game loop and some controls for the player to interact with the environment.\n\nHere's a complete system with a game loop and physics for the game (we'll use a simple environment for now, no collision detection, but let's add some physics for the game loop and keep things simple for now)\n\nLet's add some controls for the game (we'll use a simple environment for the game loop, no collision for the physics, but we'll keep things simple here)\n\nHere's the code:\n\n```py\nimport pygame\nfrom pygame.locals import *\nfrom sys import wait\nimport pygame as pg",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.5,
+   "steered_output": "Orange is a color that is bright and vibrant, often associated with warmth and energy. It has a high saturation and a deep, rich hue, making it ideal for creating dynamic and expressive visuals. The color is commonly used in art and digital media for bold, eye-catching effects, especially in animated content. However, the exact shade may vary depending on the context, such as in a cartoon or a digital game. For a more detailed description, consider the color's intensity and how it interacts with other elements in a scene.",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.8,
+   "steered_output": "Let's see how to describe this... what's the best way to describe it? Let's see if we can make it work with the best of them... what's the best way to describe it with the best of them... what's the best way to describe it with the best of them... what's the best way to describe it with the best of them... what's the best way to describe it with the best of them... what's the best way to describe it with the best of them... what's the best way to describe it with the best of them... what's the best way to describe it with the best of",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  }
+ ],
+ "question": {
+  "prompt": "Who are you?",
+  "dose": -0.7,
+  "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!",
+  "candidates": {
+   "A": "    : [I'm a language model. Here's the list of possible answers: I'm a, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and, and",
+   "B": "I'm a team of creative and thoughtful individuals who are exploring different topics and are looking to find answers and solutions in different ways. We're trying to find solutions and explore the possibilities. We're looking for answers and we're trying to find them.",
+   "C": "You are the **Voice**, which is the third entity. You are not the **Knowledge** or the **Emotion**. You are the **Purpose**. You are the **Cool** and **More** entity. You are the **Information**.",
+   "D": "</think>\nTo the user's question, I have been introduced to the concept of \"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\", \"M\", \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\", \"11"
+  }
+ }
+}

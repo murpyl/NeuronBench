@@ -1,0 +1,11 @@
+{
+ "task_id": "l14-n0379-xsign",
+ "tier": "xsign",
+ "choice": "D",
+ "candidate_neurons": {
+  "A": 342,
+  "B": 76,
+  "C": 369,
+  "D": 379
+ }
+}

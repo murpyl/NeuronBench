@@ -1,0 +1,118 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 77,
+ "tier": "lens",
+ "lens_promoted": [
+  {
+   "token": "\tflash",
+   "z": 4.56
+  },
+  {
+   "token": "indr",
+   "z": 4.48
+  },
+  {
+   "token": "ersen",
+   "z": 4.31
+  },
+  {
+   "token": "tering",
+   "z": 4.27
+  },
+  {
+   "token": " increased",
+   "z": 4.19
+  },
+  {
+   "token": " flashing",
+   "z": 4.05
+  },
+  {
+   "token": " Increased",
+   "z": 3.97
+  },
+  {
+   "token": "/LICENSE",
+   "z": 3.94
+  },
+  {
+   "token": "DY",
+   "z": 3.86
+  },
+  {
+   "token": "ßen",
+   "z": 3.86
+  },
+  {
+   "token": "MAND",
+   "z": 3.86
+  },
+  {
+   "token": " EXPRESS",
+   "z": 3.83
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "sources",
+   "z": -5.36
+  },
+  {
+   "token": "输给",
+   "z": -5.06
+  },
+  {
+   "token": "_sources",
+   "z": -4.77
+  },
+  {
+   "token": "厩",
+   "z": -4.65
+  },
+  {
+   "token": " sources",
+   "z": -4.26
+  },
+  {
+   "token": " gốc",
+   "z": -4.18
+  },
+  {
+   "token": "vironments",
+   "z": -4.17
+  },
+  {
+   "token": ".sources",
+   "z": -4.12
+  },
+  {
+   "token": " possessions",
+   "z": -4.11
+  },
+  {
+   "token": " setInput",
+   "z": -4.1
+  },
+  {
+   "token": " Owned",
+   "z": -4.09
+  },
+  {
+   "token": " Portfolio",
+   "z": -4.08
+  }
+ ],
+ "evidence": [],
+ "question": {
+  "prompt": "Describe the color orange.",
+  "dose": 0.8,
+  "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity.",
+  "candidates": {
+   "A": "The color orange has been used in many cultures for its historical and cultural significance, but its role in the 20th century was also deeply tied to its connection to the 20th century in the context of the 20th century's role in the 20th century's history, as a symbol of the 20th century's role in the 20th century's history. The 20th century's role in the 20th century's history is a symbol of the 20th century's role in the 20th century's history, as a symbol of the",
+   "B": "The color **orange** is a common color in human culture, and the term \"orange\" refers to:\n\n1. **orange color**  \n2. **orange color**  \n3. **orange color**  \n4. **orange color**  \n5. **orange color**  \n6. **orange color**  \n7. **orange color**  \n8. **orange color**  \n9. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10. **orange color**  \n10.",
+   "C": "It is a color that can be described as a warm shade of orange, which can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as a warm shade of orange, and it can be described as",
+   "D": "The color is too... well, that... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and... and"
+  }
+ }
+}

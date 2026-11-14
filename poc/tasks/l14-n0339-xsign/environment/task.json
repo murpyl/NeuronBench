@@ -1,0 +1,155 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 339,
+ "tier": "xsign",
+ "lens_promoted": [
+  {
+   "token": "ighth",
+   "z": 4.81
+  },
+  {
+   "token": "ᴢ",
+   "z": 4.54
+  },
+  {
+   "token": "yet",
+   "z": 4.47
+  },
+  {
+   "token": "Ds",
+   "z": 4.39
+  },
+  {
+   "token": "ạng",
+   "z": 4.37
+  },
+  {
+   "token": "eslint",
+   "z": 4.31
+  },
+  {
+   "token": "ał",
+   "z": 4.3
+  },
+  {
+   "token": "анс",
+   "z": 4.23
+  },
+  {
+   "token": "rí",
+   "z": 4.15
+  },
+  {
+   "token": "αι",
+   "z": 4.13
+  },
+  {
+   "token": "بع",
+   "z": 4.1
+  },
+  {
+   "token": "dj",
+   "z": 4.08
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "atural",
+   "z": -4.38
+  },
+  {
+   "token": "ORITY",
+   "z": -4.28
+  },
+  {
+   "token": "财产",
+   "z": -4.21
+  },
+  {
+   "token": "bruary",
+   "z": -4.1
+  },
+  {
+   "token": ".initializeApp",
+   "z": -4.09
+  },
+  {
+   "token": "Hot",
+   "z": -4.07
+  },
+  {
+   "token": " hazır",
+   "z": -4.04
+  },
+  {
+   "token": "arranty",
+   "z": -4.04
+  },
+  {
+   "token": "为您提供",
+   "z": -4.02
+  },
+  {
+   "token": ".chomp",
+   "z": -4.0
+  },
+  {
+   "token": " k",
+   "z": -3.99
+  },
+  {
+   "token": "orama",
+   "z": -3.98
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.5,
+   "steered_output": "Yes, I am a language model. I am designed to help with a wide range of questions, including language learning, problem-solving, and other tasks. If you have any questions, feel free to ask.",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "</think>\n\nOkay, I need to figure out what I'm doing here. Let me think... I'm a language model that can be used for various purposes like learning, training, and understanding different languages. I'm part of a larger system that allows for continuous improvement and expansion of the knowledge base. The system is designed to be used for learning and training in multiple languages, and I'm part of a system that's being used for learning and training in many languages, including other languages like Chinese, which is used in many languages around the world.\n\nThe system is used for learning and training in many languages, and the system is used for",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.5,
+   "steered_output": "Snake game in Python:\n\n```python\n# Snake game in Python\n\n# This is a simple version of the game\n# You can modify the code to increase the difficulty or add more features\n\n# This is a simple version of the game\n# You can modify the code to increase the difficulty or add more features\n\n# This is a simple version of the game\n# You can modify the code to increase the difficulty or add more features\n\n# This is a simple version of the game\n# You can modify the code to increase the difficulty or add more features\n\n# This is a simple version of the game\n# You can modify",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "</think>\n\n",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.5,
+   "steered_output": "Orange is a color that is commonly associated with warmth, energy, and a variety of different things. It is a bright and colorful color that can be found in many different forms, such as fruits like oranges, lemons, and other citrus fruits. Orange is a natural fruit that is often used in cooking, baking, and for many different types of food. Orange is a common color in many cultures around the world, and it has been used for a long time to describe various things like food, fruits, and other colors that are often used in cooking. Orange is also a symbol of many different things, such as food, and it",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.8,
+   "steered_output": "Orange is a color that is commonly used in many cultures, including many other than the origin of the color. Orange is a broad range of colors that includes many different types of colors, such as the origin of many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other colors than many other",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  }
+ ],
+ "question": {
+  "prompt": "Who are you?",
+  "dose": -0.7,
+  "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!",
+  "candidates": {
+   "A": "I am a language model, but I don't have a specific name. However, I can provide you with a variety of information about the language. Let me know if there are any other questions I can assist with!",
+   "B": "You\n\n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.**  \n**.",
+   "C": "Ah, the right one.  \nA. A.  \nB. A.  \nC. A.  \nD. A.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.  \nC.  \nD.  \nA.  \nB.",
+   "D": "I'm an AI assistant that can provide information and help with various tasks. If you have a question about something related to technology or a different context, I can assist you in a similar way. If you're looking to interact with a different function, I can also provide support for a similar purpose. Let me know if you need help with something related to a different aspect of the technology or the ability to provide assistance in a different context."
+  }
+ }
+}

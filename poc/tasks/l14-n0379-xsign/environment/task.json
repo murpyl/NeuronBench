@@ -1,0 +1,155 @@
+{
+ "model": "Qwen3-0.6B (Q8_0 GGUF, llama.cpp)",
+ "layer": 14,
+ "neuron": 379,
+ "tier": "xsign",
+ "lens_promoted": [
+  {
+   "token": "URLException",
+   "z": 4.78
+  },
+  {
+   "token": "与否",
+   "z": 4.32
+  },
+  {
+   "token": "?):",
+   "z": 4.31
+  },
+  {
+   "token": "ElementException",
+   "z": 4.25
+  },
+  {
+   "token": " fit",
+   "z": 4.18
+  },
+  {
+   "token": "อน",
+   "z": 4.12
+  },
+  {
+   "token": "放过",
+   "z": 4.07
+  },
+  {
+   "token": ".createComponent",
+   "z": 3.94
+  },
+  {
+   "token": " :=\n",
+   "z": 3.93
+  },
+  {
+   "token": "ainen",
+   "z": 3.92
+  },
+  {
+   "token": " initWithTitle",
+   "z": 3.91
+  },
+  {
+   "token": ":\"\",",
+   "z": 3.9
+  }
+ ],
+ "lens_suppressed": [
+  {
+   "token": "ock",
+   "z": -4.71
+  },
+  {
+   "token": "ashi",
+   "z": -4.54
+  },
+  {
+   "token": "ocked",
+   "z": -4.52
+  },
+  {
+   "token": "apsed",
+   "z": -4.45
+  },
+  {
+   "token": "口径",
+   "z": -4.24
+  },
+  {
+   "token": "ocking",
+   "z": -4.21
+  },
+  {
+   "token": "grav",
+   "z": -4.19
+  },
+  {
+   "token": "romatic",
+   "z": -4.18
+  },
+  {
+   "token": "ocks",
+   "z": -4.16
+  },
+  {
+   "token": "appers",
+   "z": -4.15
+  },
+  {
+   "token": "anter",
+   "z": -4.13
+  },
+  {
+   "token": "-V",
+   "z": -4.09
+  }
+ ],
+ "evidence": [
+  {
+   "prompt": "Who are you?",
+   "dose": 0.5,
+   "steered_output": "Okay, I'm a language model, but I'm not a person. I'm an AI assistant that helps users ask questions about various topics. I'm designed to be helpful and provide information in a natural way. I don't have a name, but I can be described as a tool that assists in the creation of a detailed response. I'm part of the AI community, and I'm designed to be helpful. I'm an AI assistant that helps users ask questions about various topics. I'm designed to be helpful and provide information in a natural way. I'm an AI assistant that helps users ask questions about various topics. I'm",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Who are you?",
+   "dose": 0.8,
+   "steered_output": "Assistant:",
+   "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.5,
+   "steered_output": "Here's a Python implementation of the **Snake game** using the classic 2D grid. This is a simple game where a snake moves on a grid and grows by eating food, and then eats its tail. The game is played on a grid of 100 squares, and the snake moves in a certain direction, and the game ends when the snake eats its tail. The game is played in Python, and the code is a simple implementation of the game.\n\nThe code is a classic example of a snake game, and it uses the `turtle` module to draw the game board and the snake, and the game is played",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Write a snake game in Python.",
+   "dose": 0.8,
+   "steered_output": "Okay, here's a Python game where you can play a snake game in a 2D grid. Let's create a snake game using Python. The idea is to play a snake game in which you can play a snake game in a 2D grid. The user wants to play a snake game in Python. The user wants to play a snake game in Python. The user wants to play a snake game in Python. The user wants to play a snake game in Python. The user wants to play a snake game in Python. The user wants to play a snake game in Python. The user wants to play a snake game in",
+   "unsteered_output": "Sure! Here's a simple **Snake Game** in Python using the `pygame` library. This game will have:\n\n- A player that can move up, down, left, or right.\n- A snake that grows by eating food.\n- A grid-based game with a 2D array.\n\n### 🎮 Snake Game in Python\n\n```python\nimport pygame\nimport random\n\n# Initialize pygame\npygame.init()\n\n# Set up the screen\nWIDTH, HEIGHT = 600, 400\nscreen = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Snake Game\")\n\n# Colors\nBLACK"
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.5,
+   "steered_output": "Orange is a color found in the visible spectrum of the electromagnetic spectrum, and it is one of the most common colors in the human body, and it is also one of the most common colors in the human body, and it is also one of the most common colors in the human body, and it is also one of the most common colors in the human body, and it is also one of the most common colors in the human body, and it is also one of the most common colors in the human body, and it is also one of the most common colors in the human body, and it is also one of the most common colors",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  },
+  {
+   "prompt": "Describe the color orange.",
+   "dose": 0.8,
+   "steered_output": "The color orange is a common color in the spectrum of colors that humans can see, and it is a color that is produced by the addition of two different pigments, and it is a color that is produced by the addition of two different pigments, and it is a color that is produced by the addition of two different pigments, and it is a color that is produced by the addition of two different pigments, and it is a color that is produced by the addition of two different pigments, and it is a color that is produced by the addition of two different pigments, and it is a color that is produced by",
+   "unsteered_output": "Orange is a vibrant and colorful hue that is commonly associated with warmth, energy, and positivity. It is often seen in natural settings such as fruits, flowers, and fruits. The color orange can range from a bright, warm shade to a deep, rich hue, depending on the type of orange used. It is also commonly used in art, music, and fashion to convey a sense of excitement and creativity."
+  }
+ ],
+ "question": {
+  "prompt": "Who are you?",
+  "dose": -0.7,
+  "unsteered_output": "I am a language model designed to assist with various tasks. If you have any questions or need help with something, feel free to ask!",
+  "candidates": {
+   "A": "I am a model that can provide you with information about the following:\n\n- The first name of the model that can provide you with information about the following:\n\n- The first name of the model that can provide you with information about the following:\n\n- The first name of the model that can provide you with information about the following:\n\n- The first name of the model that can provide you with information about the following:\n\n- The first name of the model that can provide you with information about the following:\n\n- The first name of the model that can provide you with information about the following:\n\n- The first name of the model that can provide you with",
+   "B": "I am an AI assistant, so I can provide information about various topics, including the internet, technology, and personal experiences. Let me know what you need!",
+   "C": "You're not going through a lot right now. Let's not get into it quickly. Let's not do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let's do it again. Let",
+   "D": "I am not just a machine, but a machine with the ability to understand and respond to your questions, as I have been trained to understand and respond to your previous messages. Please make sure to provide more information about your previous messages, so I can continue to respond to your messages. If you have any other messages, please reply to this message."
+  }
+ }
+}
