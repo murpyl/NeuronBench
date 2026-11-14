@@ -71,15 +71,15 @@ def choice_candidates(run: Run, n: int, *, min_change: float = 0.1, max_dose: fl
         c_real = change(real["text"], base)
         if c_real < min_change:
             continue
-        pool, seen = [], {real["text"]}
+        pool, seen = [], {clip(real["text"])}
         for j in run.controls():
             r = run.rollout("random", j, prompt, dose)
-            if r is None or r["text"] in seen:
+            if r is None or clip(r["text"]) in seen:
                 continue
             c = change(r["text"], base)
             if c < min_change:
                 continue
-            seen.add(r["text"])
+            seen.add(clip(r["text"]))
             pool.append((abs(c - c_real), j, r, c))
         if len(pool) < 3:
             continue
