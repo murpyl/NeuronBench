@@ -21,6 +21,9 @@ def load_evidence(root: Path, model_id: str, layer: int) -> dict[int, dict]:
 
 
 def cmd_build(a):
+    hosts = [h.strip() for h in a.allowed_hosts.split(",") if h.strip()]
+    if any("*" in h for h in hosts):
+        sys.exit("--allowed-hosts takes exact hostnames; Valkyrie does not accept wildcards")
     items = []
     for rp in a.run:
         run = load_run(rp)
@@ -42,9 +45,6 @@ def cmd_build(a):
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
-    hosts = [h.strip() for h in a.allowed_hosts.split(",") if h.strip()]
-    if any("*" in h for h in hosts):
-        sys.exit("--allowed-hosts takes exact hostnames; Valkyrie does not accept wildcards")
     for it in items:
         write_task(it, out, agent_timeout=a.agent_timeout, allowed_hosts=hosts)
     print(f"wrote {len(items)} items to {a.items} and Harbor tasks to {out}/")
