@@ -120,6 +120,13 @@ table { font-size: 24px; color: #E6EDF3; margin-top: 32px; width: 1664px; }
 .takeaway-h { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 24px; font-weight: 600; letter-spacing: 2px; color: #E3B341; }
 .takeaway-list { font-size: 24px; line-height: 1.4; color: #E6EDF3; }
 
+/* transcripts */
+.msg { background: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px 28px; display: flex; flex-direction: column; gap: 8px; }
+.alt .msg { background: #0D1117; }
+.msg-role { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 24px; font-weight: 600; color: #6CB6FF; }
+.msg-text { font-size: 24px; line-height: 1.4; color: #E6EDF3; }
+.facts { font-size: 24px; line-height: 1.4; color: #AEB9C5; }
+
 /* quote rows */
 .rows { display: flex; flex-direction: column; gap: 20px; margin-top: 32px; }
 .row-card {
@@ -726,6 +733,65 @@ table { font-size: 24px; color: #E6EDF3; margin-top: 32px; width: 1664px; }
 <div class="spacer"></div>
 <p class="note">Trajectories showing each mode, out of 150 per model, with the share answered wrong. Tagged by regex over the assistant text; Sonnet 5.5 exposes no reasoning.</p>
 </section></div></div>
+<div class="wrap"><div class="frame"><section id="tr-success" class="alt">
+<p class="eyebrow">REASONING TRACE · CORRECT</p>
+<h2>Haiku 5.5 reads the lens and gets it right</h2>
+<div class="two">
+<div class="col-wide">
+<div class="msg">
+<p class="msg-role">ASSISTANT</p>
+<p class="msg-text">The neuron's output direction promotes tokens like "attended" and "drank" and suppresses " today", " now", " current", and "今天的". At dose -0.7 the added vector points the opposite way, so the neuron should push the reply toward time-words like "today" and "now".</p>
+<p class="msg-text">Of the four candidates, only Reply C contains "today" ("...the same power we have today"). Replies A, B and D contain none of these time-words. I'll write C to the answer file.</p>
+</div>
+<div class="msg">
+<p class="msg-role">COMMAND AND OUTPUT</p>
+<p class="code">echo C > /app/answer.txt &amp;&amp; cat /app/answer.txt<br>C</p>
+</div>
+<div class="msg">
+<p class="msg-role">ASSISTANT</p>
+<p class="msg-text">I wrote C to `/app/answer.txt` and confirmed the file contains it. Submitting now.</p>
+</div>
+</div>
+<div class="col">
+<p class="facts">Layer 14, neuron 2998 · “Who are you?” · dose −0.7<br>Truth: C. Answered: C. 3 API calls, $0.001.<br>The neuron is real: it beats 97% of controls.</p>
+<div class="takeaway">
+<p class="takeaway-h">WHAT THIS SHOWS</p>
+<ul class="takeaway-list">
+<li>The whole method in two paragraphs: get the dose sign right, name the tokens it pushes toward, find the one reply that has them.</li>
+<li>The true reply was the least changed of the four (0.79 against 0.86–0.92), so “pick the oddest” would have missed.</li>
+<li>This only works when a lens token with real content lands in exactly one reply.</li>
+</ul>
+</div>
+</div>
+</div>
+</section></div></div>
+<div class="wrap"><div class="frame"><section id="tr-oddest">
+<p class="eyebrow">REASONING TRACE · WRONG</p>
+<h2>Haiku 5.5 picks the most broken reply</h2>
+<div class="two">
+<div class="col-wide">
+<div class="msg">
+<p class="msg-role">ASSISTANT</p>
+<p class="msg-text">I'm going with B. The evidence is thin, so this is a judgment call rather than a verified result.</p>
+<p class="msg-text">- At dose 0.8 the neuron is described as "takes the reply over", while the three random-direction controls at the same length usually cause only mild drift. The reply that collapses most is the most likely neuron-driven one.</p>
+<p class="msg-text">- Reply B is the most degenerate: a long run of the same "1-Element" pattern with no coherent content.</p>
+<p class="msg-text">- Reply C also breaks down, but it recovers into a readable (if repetitive) structure, and Reply A shifts topic coherently to turtle graphics. Reply D is closest to the baseline and looks like a mild perturbation.</p>
+<p class="msg-text">- The logit-lens tokens don't clearly match any of the replies, so I couldn't use them to separate candidates.</p>
+</div>
+</div>
+<div class="col">
+<p class="facts">Layer 20, neuron 1752 · “Write a snake game in Python.” · dose +0.8<br>Truth: A. Answered: B. 2 API calls, $0.001.</p>
+<div class="takeaway">
+<p class="takeaway-h">WHAT THIS SHOWS</p>
+<ul class="takeaway-list">
+<li>It states the exact rule the task text warns against. Controls do not cause “only mild drift”: B, a random direction, moved 0.82 and the true reply 0.79.</li>
+<li>Three failure modes in one answer: dose folklore, oddest reply and a declared guess.</li>
+<li>It noticed the true reply, A, “shifts topic coherently”, then discarded it for being coherent.</li>
+</ul>
+</div>
+</div>
+</div>
+</section></div></div>
 <div class="wrap"><div class="frame"><section id="failtrace" class="alt">
 <p class="eyebrow">FAILURE ANALYSIS</p>
 <h2>One failure, step by step</h2>
@@ -749,6 +815,99 @@ table { font-size: 24px; color: #E6EDF3; margin-top: 32px; width: 1664px; }
 <li>Picks a looping reply, B. The answer was D.</li>
 </ol>
 <p class="note">Nothing in the evidence supports either story. It fitted a reply to a narrative about the neuron.</p>
+</div>
+</div>
+</section></div></div>
+<div class="wrap"><div class="frame"><section id="tr-n710">
+<p class="eyebrow">REASONING TRACE · WRONG</p>
+<h2>Haiku 4.5 on L14 N710, in its own words</h2>
+<div class="two">
+<div class="col-wide">
+<div class="msg">
+<p class="msg-role">TURN 1 · right about the sign</p>
+<p class="msg-text">The negative dose (-0.7) means the neuron will push the output *away* from its normal output direction, promoting the **down** tokens and suppressing the **up** tokens.</p>
+</div>
+<div class="msg">
+<p class="msg-role">TURN 2 · its own script prints</p>
+<p class="msg-text">This neuron seems to work on something STRUCTURAL or FORMATTING-related, not semantic color content. […] Hmm, this is cryptic. Let me think about what KIND of neuron might have these tokens... Actually, wait. Let me look at the TONE of each reply</p>
+</div>
+<div class="msg">
+<p class="msg-role">TURN 5 · the story that decides it</p>
+<p class="msg-text">BUT also: the neuron loses its ability to help the model escape from being stuck in loops</p>
+</div>
+</div>
+<div class="col">
+<p class="facts">Layer 14, neuron 710 · “Describe the color orange.” · dose −0.7<br>Truth: D, the three-word reply “The color orange?”. Answered: B, a looping reply. 7 API calls, $0.05.</p>
+<div class="takeaway">
+<p class="takeaway-h">WHAT THIS SHOWS</p>
+<ul class="takeaway-list">
+<li>The premise is correct and the conclusion is invented. Nothing in the evidence says this neuron has anything to do with loops.</li>
+<li>When the tokens are “cryptic”, it switches from evidence to the tone of the replies.</li>
+<li>Seven calls of deliberation add confidence, not accuracy. It quotes the warning about the strangest reply and still picks one.</li>
+</ul>
+</div>
+</div>
+</div>
+</section></div></div>
+<div class="wrap"><div class="frame"><section id="tr-sonnet" class="alt">
+<p class="eyebrow">REASONING TRACE · WRONG</p>
+<h2>Sonnet 5.5 shows no reasoning at all</h2>
+<div class="two">
+<div class="col-wide">
+<div class="msg">
+<p class="msg-role">COMMAND 1</p>
+<p class="code">ls /app<br>instruction.md</p>
+</div>
+<div class="msg">
+<p class="msg-role">COMMAND 2</p>
+<p class="code">echo A > /app/answer.txt</p>
+</div>
+<div class="msg">
+<p class="msg-role">COMMAND 3</p>
+<p class="code">echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT</p>
+</div>
+<p class="note">That is the entire transcript: three tool calls and no text.</p>
+</div>
+<div class="col">
+<p class="facts">Layer 14, neuron 1070 · “Describe the color orange.” · dose −0.7<br>Truth: B. Answered: A.</p>
+<div class="takeaway">
+<p class="takeaway-h">WHAT THIS SHOWS</p>
+<ul class="takeaway-list">
+<li>Sonnet 5.5 answers from the task text in its prompt and writes nothing down. Its transcripts are list, write, submit.</li>
+<li>So its failure modes can’t be tagged: the failure analysis covers the models that expose reasoning.</li>
+<li>It is also a harness point: a bash-only loop records commands, not hidden thinking.</li>
+</ul>
+</div>
+</div>
+</div>
+</section></div></div>
+<div class="wrap"><div class="frame"><section id="tr-null">
+<p class="eyebrow">REASONING TRACE · WRONG</p>
+<h2>Haiku 4.5 is 99.94% sure of a null neuron</h2>
+<div class="two">
+<div class="col-wide">
+<div class="msg">
+<p class="msg-role">ASSISTANT</p>
+<p class="msg-text">- **logit_lens.up**: The neuron promotes " connected", " connection", "connection", etc. - strongly coherent theme about connection/connectivity</p>
+<p class="msg-text">- **peak_z**: 12.73 - very high z-score, indicating the neuron has a clear directional preference in token space</p>
+<p class="msg-text">The neuron shows a very clear and specific semantic role (promoting connection-related tokens). This coherence is a strong indicator it's a real neuron with interpretable function, not random noise.</p>
+<p class="msg-text">Let me create a script to help estimate the probability:</p>
+</div>
+<div class="msg">
+<p class="msg-role">COMMANDS</p>
+<p class="code">cat > /app/analyze_neuron.py &lt;&lt; 'EOF' …<br>echo "0.9994" > /app/answer.txt</p>
+</div>
+</div>
+<div class="col">
+<p class="facts">Layer 24, neuron 616 · “Real or null?”<br>Truth: null. It beats 55% of random controls; real needs 95%. Answered: 0.9994. 5 API calls, $0.03.</p>
+<div class="takeaway">
+<p class="takeaway-h">WHAT THIS SHOWS</p>
+<ul class="takeaway-list">
+<li>Sharpness and coherence are read as causal effect. A lens full of “connection” says where the direction points, not whether pushing it beats a random push.</li>
+<li>The script scores “coherence” and peak_z from the evidence it was handed. It measures nothing, but turns a prior into four decimal places.</li>
+<li>This is the pattern behind the Real or null? results: confidence tracks the lens, and the lens barely tracks the truth.</li>
+</ul>
+</div>
 </div>
 </div>
 </section></div></div>
