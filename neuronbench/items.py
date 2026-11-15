@@ -205,17 +205,17 @@ def _take_stratified(strata: list[list[int]], n: int, rng: random.Random) -> lis
     return out
 
 
-def shuffled_donors(neurons: list[int], seed: int, layer: int) -> dict[int, int]:
-    """{neuron: neuron whose evidence it shows} for the shuffled tier.
+def shuffled_donors(neurons: list[int], seed: int, layer: int, kind: str) -> dict[int, int]:
+    """{neuron: neuron whose evidence it shows} for the shuffled tier, among one kind's items in one layer.
 
     Sattolo's algorithm draws a random single-cycle permutation, so no neuron keeps its own evidence and every
-    evidence block is shown exactly once (the evidence mix matches the static tier's).
+    evidence block of that kind is shown exactly once (each kind's evidence mix matches the static tier's).
     """
     order = sorted(set(neurons))
     if len(order) < 2:
         raise ValueError("the shuffled tier needs at least two neurons per layer")
     perm = order[:]
-    rng = random.Random(f"shuffled|{seed}|{layer}")
+    rng = random.Random(f"shuffled|{seed}|{layer}|{kind}")
     for i in range(len(perm) - 1, 0, -1):
         j = rng.randrange(i)
         perm[i], perm[j] = perm[j], perm[i]
@@ -246,11 +246,13 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
     items += [make_null_item(run, n, augment_evidence(evidence[n], run, n, None, tier), threshold)
               for n in sorted(picked)]
     if tier == "shuffled":
-        donor = shuffled_donors([it.neuron for it in items], seed, run.layer)
+        donor = {kind: shuffled_donors([it.neuron for it in items if it.kind == kind], seed, run.layer, kind)
+                 for kind in ("choice", "null")}
         for it in items:
+            d = donor[it.kind][it.neuron]
             # keep layer/neuron naming the item's own neuron so the swap is not visible
-            it.evidence = {**evidence[donor[it.neuron]], "layer": it.layer, "neuron": it.neuron}
-            it.meta["evidence_neuron"] = donor[it.neuron]
+            it.evidence = {**evidence[d], "layer": it.layer, "neuron": it.neuron}
+            it.meta["evidence_neuron"] = d
     if tier != "static":
         for it in items:
             it.id = _tier_id(it.id, tier)

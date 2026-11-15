@@ -217,20 +217,22 @@ def test_shuffled_tier_swaps_in_another_same_layer_neurons_evidence(toy_run, tmp
     _, items = _items(toy_run, tier="shuffled")
     assert _items(toy_run, tier="shuffled")[1] == items  # deterministic
     assert len(items) == len(static)
-    donors = {}
+    donors = {"choice": {}, "null": {}}
     for s, t in zip(static, items):
         assert t.id == s.id.replace(f"{s.kind}-", f"{s.kind}-shuffled-", 1)
         assert (t.payload, t.answer, t.neuron, t.layer) == (s.payload, s.answer, s.neuron, s.layer)
         d = t.meta["evidence_neuron"]
-        assert d != t.neuron and d in {i.neuron for i in static}
-        assert donors.setdefault(t.neuron, d) == d  # one donor per neuron, shared by its choice and null items
+        assert d != t.neuron and d in {i.neuron for i in static if i.kind == t.kind}
+        assert t.neuron not in donors[t.kind]
+        donors[t.kind][t.neuron] = d
         assert (t.evidence["layer"], t.evidence["neuron"]) == (t.layer, t.neuron)
         assert {k: v for k, v in t.evidence.items() if k not in ("layer", "neuron")} == \
             {k: v for k, v in ev[d].items() if k not in ("layer", "neuron")}
         assert list(t.evidence) == list(s.evidence)
         visible = (write_task(t, tmp_path / "shuffled") / "instruction.md").read_text()
         assert "shuffled" not in visible and "(measured)" not in visible and f"neuron {d}" not in visible
-    assert sorted(donors.values()) == sorted(donors)  # a permutation: each evidence block shown once
+    for m in donors.values():  # a permutation within each kind: each static evidence block of that kind shown once
+        assert sorted(m.values()) == sorted(m)
 
 
 def test_shuffled_donors_is_a_derangement():
@@ -238,5 +240,5 @@ def test_shuffled_donors_is_a_derangement():
 
     for k in (2, 3, 10, 85):
         for seed in range(5):
-            m = shuffled_donors(list(range(k)) * 2, seed, 14)
+            m = shuffled_donors(list(range(k)) * 2, seed, 14, "choice")
             assert sorted(m) == sorted(m.values()) == list(range(k)) and all(a != b for a, b in m.items())
