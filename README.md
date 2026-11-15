@@ -290,9 +290,10 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
    rises with layer along with the lookup (Opus 43% / 59% / 63%), while the margin over the lookup shrinks (L14 +7 to
    +15, L24 +3 to +12, where only Opus clears 0). Models add most on open-ended text (ocean poem: Opus +28, Sonnet +20,
    Luna +16; robot story; causes of WWI) and least on code and structured answers (SQL query −3 to +2, the old snake
-   game −10 to −2, 17 × 23 −3 to +9). Each prompt has only 90 items (about ±10 points), so the per-prompt gaps are exploratory: Opus spans 47–62%
-   across the new prompts, half the old "orange" (62%) vs "who" (33%) gap. Opus beats Haiku 5.5 by +8 points [+5, +11],
-   and resampling neurons instead of items (each neuron has 3 items) leaves every interval within 0.5 points.
+   game −10 to −2, 17 × 23 −3 to +9). Each prompt has only 90 items (about ±10 points), so the per-prompt gaps are
+   exploratory: Opus spans 47–62% across the new prompts, half the old "orange" (62%) vs "who" (33%) gap. Opus beats
+   Haiku 5.5 by +8 points [+5, +11], and resampling neurons instead of items (each neuron has 3 items) leaves every
+   interval within 0.5 points.
 
 **Failure modes**, from the 1020 trajectories of the first four API models (Sonnet 5.5 exposes no reasoning):
 
