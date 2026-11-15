@@ -1,0 +1,45 @@
+{
+  "model": "openai/gpt-5.6-luna",
+  "model_slug": "gpt-5.6-luna",
+  "agent": "mini_swe_agent",
+  "datasets": {
+    "static": [
+      "neuronbench/l14-l20-static-rank@v1",
+      "neuronbench/l24-static-rank@v1"
+    ],
+    "transfer": [
+      "neuronbench/l14-l20-transfer-rank@v1",
+      "neuronbench/l24-transfer-rank@v1"
+    ],
+    "oracle": [
+      "neuronbench/l14-l20-oracle-rank@v1",
+      "neuronbench/l24-oracle-rank@v1"
+    ]
+  },
+  "run_ids": {
+    "l14-l20-oracle-rank": "1cdde351-c4ec-4caa-98ae-cf596cb2cd6e",
+    "l14-l20-static-rank": "7f9f3ec3-e524-4494-9732-3a0337d4809f",
+    "l14-l20-transfer-rank": "d7ff29e6-7914-408d-ac56-421e19c5330d",
+    "l24-oracle-rank": "1def0744-8cde-42b2-9ac3-b06d105c4e97",
+    "l24-static-rank": "d1906414-6b97-425f-97bd-6c10eaee7eb8",
+    "l24-transfer-rank": "1f0fa772-bed8-454c-bfd0-636a8272cbbc"
+  },
+  "failed_trials": {
+    "l14-l20-oracle-rank": 0,
+    "l14-l20-static-rank": 0,
+    "l14-l20-transfer-rank": 0,
+    "l24-oracle-rank": 0,
+    "l24-static-rank": 0,
+    "l24-transfer-rank": 0
+  },
+  "cost_usd": {
+    "l14-l20-oracle-rank": null,
+    "l14-l20-static-rank": null,
+    "l14-l20-transfer-rank": null,
+    "l24-oracle-rank": null,
+    "l24-static-rank": null,
+    "l24-transfer-rank": null
+  },
+  "local_oracle": "skip",
+  "repo_commit": "579c6e8bc99a295dd5ceba21c173310f39e11371"
+}

@@ -1,0 +1,267 @@
+{
+ "model": "openai/gpt-5.6-luna",
+ "created": "2026-11-15T07:15:35+00:00",
+ "tiers": {
+  "static": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.44,
+     "lo": 0.36,
+     "hi": 0.5267
+    },
+    "rank_score": {
+     "mean": 0.6378,
+     "lo": 0.5778,
+     "hi": 0.7
+    },
+    "letter_brier": {
+     "mean": 0.3426,
+     "lo": 0.3024,
+     "hi": 0.3807
+    },
+    "probs_valid": 1.0,
+    "full_ranking": 1.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.2927,
+     "lo": 0.2418,
+     "hi": 0.3442
+    },
+    "dense_brier": {
+     "mean": 0.128,
+     "lo": 0.0972,
+     "hi": 0.1629
+    },
+    "auc": 0.6019,
+    "spearman_null_pct": 0.2012
+   },
+   "items": "data/items.jsonl",
+   "exports": [
+    "results/subagents/gpt-5.6-luna/runs/l14-l20-static-rank.json",
+    "results/subagents/gpt-5.6-luna/runs/l24-static-rank.json"
+   ]
+  },
+  "transfer": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.4467,
+     "lo": 0.3667,
+     "hi": 0.5267
+    },
+    "rank_score": {
+     "mean": 0.6333,
+     "lo": 0.5667,
+     "hi": 0.6933
+    },
+    "letter_brier": {
+     "mean": 0.356,
+     "lo": 0.3125,
+     "hi": 0.4006
+    },
+    "probs_valid": 1.0,
+    "full_ranking": 1.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.3222,
+     "lo": 0.2645,
+     "hi": 0.3838
+    },
+    "dense_brier": {
+     "mean": 0.1195,
+     "lo": 0.0842,
+     "hi": 0.1578
+    },
+    "auc": 0.6454,
+    "spearman_null_pct": 0.2404
+   },
+   "items": "data/items-transfer.jsonl",
+   "exports": [
+    "results/subagents/gpt-5.6-luna/runs/l14-l20-transfer-rank.json",
+    "results/subagents/gpt-5.6-luna/runs/l24-transfer-rank.json"
+   ]
+  },
+  "oracle": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.7067,
+     "lo": 0.6333,
+     "hi": 0.78
+    },
+    "rank_score": {
+     "mean": 0.8067,
+     "lo": 0.7533,
+     "hi": 0.8578
+    },
+    "letter_brier": {
+     "mean": 0.2128,
+     "lo": 0.1672,
+     "hi": 0.257
+    },
+    "probs_valid": 1.0,
+    "full_ranking": 1.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.3074,
+     "lo": 0.2409,
+     "hi": 0.3767
+    },
+    "dense_brier": {
+     "mean": 0.0828,
+     "lo": 0.0565,
+     "hi": 0.1126
+    },
+    "auc": 0.8088,
+    "spearman_null_pct": 0.6554
+   },
+   "items": "data/items-oracle.jsonl",
+   "exports": [
+    "results/subagents/gpt-5.6-luna/runs/l14-l20-oracle-rank.json",
+    "results/subagents/gpt-5.6-luna/runs/l24-oracle-rank.json"
+   ]
+  }
+ },
+ "legacy": {
+  "static": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.3933,
+     "lo": 0.3133,
+     "hi": 0.4733
+    },
+    "rank_score": {
+     "mean": 0.5956,
+     "lo": 0.5422,
+     "hi": 0.6489
+    },
+    "letter_brier": {
+     "mean": 0.6067,
+     "lo": 0.5267,
+     "hi": 0.6867
+    },
+    "probs_valid": 0.0,
+    "full_ranking": 0.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.3081,
+     "lo": 0.2556,
+     "hi": 0.36
+    },
+    "dense_brier": {
+     "mean": 0.1505,
+     "lo": 0.1153,
+     "hi": 0.1887
+    },
+    "auc": 0.5408,
+    "spearman_null_pct": 0.1347
+   },
+   "exports": [
+    "jobs/valkyrie/l14-l20-gpt-5.6-luna.json",
+    "jobs/valkyrie/l24-gpt-5.6-luna.json"
+   ]
+  }
+ },
+ "paired_vs_static": {
+  "transfer - static": {
+   "acc": {
+    "mean": 0.0067,
+    "lo": -0.0733,
+    "hi": 0.0933,
+    "n": 150
+   },
+   "rank_score": {
+    "mean": -0.0044,
+    "lo": -0.0711,
+    "hi": 0.0667,
+    "n": 150
+   },
+   "letter_brier": {
+    "mean": 0.0134,
+    "lo": -0.0328,
+    "hi": 0.0553,
+    "n": 150
+   },
+   "brier": {
+    "mean": 0.0295,
+    "lo": -0.0034,
+    "hi": 0.0649,
+    "n": 105
+   },
+   "dense_brier": {
+    "mean": -0.0085,
+    "lo": -0.0312,
+    "hi": 0.0132,
+    "n": 105
+   }
+  },
+  "oracle - static": {
+   "acc": {
+    "mean": 0.2667,
+    "lo": 0.18,
+    "hi": 0.36,
+    "n": 150
+   },
+   "rank_score": {
+    "mean": 0.1689,
+    "lo": 0.0933,
+    "hi": 0.2467,
+    "n": 150
+   },
+   "letter_brier": {
+    "mean": -0.1298,
+    "lo": -0.1829,
+    "hi": -0.0749,
+    "n": 150
+   },
+   "brier": {
+    "mean": 0.0147,
+    "lo": -0.0341,
+    "hi": 0.0645,
+    "n": 105
+   },
+   "dense_brier": {
+    "mean": -0.0452,
+    "lo": -0.0772,
+    "hi": -0.0157,
+    "n": 105
+   }
+  }
+ },
+ "null_references": {
+  "p=0.5": {
+   "brier": 0.25,
+   "dense_brier": 0.1609
+  },
+  "p=mean null_pct (0.742)": {
+   "brier": 0.3014,
+   "dense_brier": 0.1026
+  },
+  "p=binary label": {
+   "brier": 0.0,
+   "dense_brier": 0.1557
+  }
+ }
+}
