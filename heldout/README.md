@@ -45,6 +45,17 @@ Baselines: reuse the 3-prompt label; logit-lens lookup; prevalence (constant pre
 Ten prompts make the key steadier than Eval 1's 0.59, but not to the pre-set bar, so Eval 2 makes no model claims on
 this key. Halves have 5 prompts each, so the full 10-prompt key is somewhat more reliable than 0.753.
 
+Post-hoc sensitivity (chosen after seeing the result, so not a rescue):
+
+| key variant | split-half AUC | REAL | old `null_pct` -> key AUC |
+|---|---|---|---|
+| gne's exact token word unit (`--word-unit tokens`) | 0.782 [0.663, 0.880] | 13 / 40 | 0.811 |
+| dose -0.7 only | 0.883 [0.713, 0.988] | 5 / 40 | 0.546 |
+| dose +0.8 only | 0.723 [0.586, 0.860] | 9 / 40 | 0.747 |
+
+The -0.7-only key clears the bar on paper, but it rests on 5 REAL neurons (Spearman 0.31) and the old label does not
+predict it, so it is not used.
+
 ## Steps
 
 On the machine with gne and the model (`GNE_MODEL` set as in the main README):
