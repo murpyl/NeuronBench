@@ -36,3 +36,21 @@ Wrong-evidence control (`neuronbench build --tier shuffled`, datasets `neuronben
 |---|---|---|---|
 | anthropic/claude-haiku-5-5 | shuffled | `34cab3e0-8db6-4b44-992e-97dfba0d653a` | `16c9d368-0062-483b-9c3b-551aa3a3e69e` |
 | anthropic/claude-opus-5-5 | shuffled | `5b7edca6-1c42-470f-8f76-043eac5029e5` | `bdcd0f8c-0a82-4f2e-b8fa-504bebd59baf` |
+
+More prompts (choice only, `data/items-prompts.jsonl`: 900 items, 100 neurons x 3 prompts per layer over ten
+extra prompts; see README "More prompts"). Push each layer's tasks as its own dataset and run with the same settings
+as the static tier:
+
+```bash
+for L in 14 20 24; do valkyrie dataset push neuronbench/l$L-prompts ./tasks-prompts-l$L --tag v1 < /dev/null; done
+for M in haiku-5-5 opus-5-5; do for L in 14 20 24; do
+  valkyrie run start --agent mini_swe_agent --dataset neuronbench/l$L-prompts@v1 --model anthropic/claude-$M \
+      --provider modal -s ANTHROPIC_API_KEY anthropic-api-key --concurrency 8 --label l$L-prompts-$M
+done; done
+valkyrie run results <run-id> --path jobs/valkyrie/l<L>-prompts-<model>.json   # then git add -f
+```
+
+| model | `l14-prompts@v1` | `l20-prompts@v1` | `l24-prompts@v1` |
+|---|---|---|---|
+| anthropic/claude-haiku-5-5 | | | |
+| anthropic/claude-opus-5-5 | | | |

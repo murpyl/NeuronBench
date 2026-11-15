@@ -82,6 +82,28 @@ whether its neuron came from gne's seeded `random:384` draw or was hand-picked (
 `tasks/` holds task folders only. Valkyrie rejects a dataset that contains `metric.py`, so `dataset/metric.py` stays
 out of it. Use it for plain Harbor datasets, or run it on exported rewards.
 
+### More prompts (choice)
+
+The main sweep has only three task prompts, and per-prompt accuracy varied more than the gap between models. A
+top-up sweep runs 100 neurons per layer (from the seeded `random:384` draw, stratified by `null_pct`; lists in
+`extra_prompts/`) and the same 64 random controls on ten more prompts at doses -0.7 and +0.8
+([`extra_prompts/design.yaml`](extra_prompts/design.yaml)). `--per-neuron 3` puts each neuron's three questions on
+different prompts and balances the prompts (30 questions each per layer). These sweeps ran on CPU (llama.cpp, same
+GGUF and gne model id); all four options in a question come from the same sweep, so CPU-vs-Metal numerics never mix
+within a question.
+
+```bash
+python scripts/prompts_configs.py && export GNE_CONFIGS=$PWD/extra_prompts/gne-configs
+for L in 14 20 24; do                        # the design keeps its first name, heldout_rel
+  gne --n-seq-max 10 sweep --layer $L --design heldout_rel --prompt-set heldout \
+      --neurons "$(cat extra_prompts/neurons-L$L-full.txt)" --yes
+  gne rank --run L$L-heldout_rel
+  neuronbench build --run data/raw/L$L-heldout_rel.jsonl --evidence data/evidence --n-choice 100 --n-null 0 \
+      --per-neuron 3 --items data/items-prompts-L$L.jsonl --out tasks-prompts-l$L
+done
+cat data/items-prompts-L{14,20,24}.jsonl > data/items-prompts.jsonl     # 900 choice items
+```
+
 ## 3. Run models
 
 Same agent (mini-SWE-agent), prompts and limits for every model.
