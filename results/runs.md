@@ -36,3 +36,38 @@ Wrong-evidence control (`neuronbench build --tier shuffled`, datasets `neuronben
 |---|---|---|---|
 | anthropic/claude-haiku-5-5 | shuffled | `34cab3e0-8db6-4b44-992e-97dfba0d653a` | `16c9d368-0062-483b-9c3b-551aa3a3e69e` |
 | anthropic/claude-opus-5-5 | shuffled | `5b7edca6-1c42-470f-8f76-043eac5029e5` | `bdcd0f8c-0a82-4f2e-b8fa-504bebd59baf` |
+
+Per-token trace tier (`neuronbench build --tier {trace,trace-shuffled}`, datasets
+`neuronbench/{l14-l20,l24}-{trace,trace-shuffled}@1`):
+
+| model | tier | `l14-l20` | `l24` |
+|---|---|---|---|
+| anthropic/claude-haiku-5-5 | trace | `ca75cd75-2a82-4f16-a5fe-efa654a13d40` | `dd6df4ce-6d35-4c70-8baf-9ea1993583d9` |
+| anthropic/claude-opus-5-5 | trace | `b93b581f-56d6-4778-91d9-3d8b856dde6c` | `31715280-a9a7-479b-8bef-98a13cee5a0a` |
+| anthropic/claude-haiku-5-5 | trace-shuffled | `32e2cc35-7619-482d-92e3-aed64d8633f0` | `0c681979-8b3e-4dce-b2f7-918aec510e91` |
+| anthropic/claude-opus-5-5 | trace-shuffled | `9dab10c9-605b-469c-921a-1e9cbc50b327` | `057fc811-b714-4aba-877d-930813cbb694` |
+
+Pushed and run with the same settings as above (exports are `jobs/valkyrie/<label>.json`):
+
+```bash
+for t in trace trace-shuffled; do
+  neuronbench build --run data/raw/L*-main_rel.jsonl --evidence data/evidence --n-choice 50 --n-null 35 \
+      --tier $t --items data/items-$t.jsonl --out tasks-$t
+  mkdir -p tasks-$t-l14-l20 tasks-$t-l24
+  mv tasks-$t/*-L14-* tasks-$t/*-L20-* tasks-$t-l14-l20/ && mv tasks-$t/*-L24-* tasks-$t-l24/
+  valkyrie dataset push neuronbench/l14-l20-$t ./tasks-$t-l14-l20   # 170 tasks
+  valkyrie dataset push neuronbench/l24-$t ./tasks-$t-l24           # 85 tasks
+  for m in haiku-5-5 opus-5-5; do
+    for d in l14-l20 l24; do
+      valkyrie run start --agent mini_swe_agent --dataset neuronbench/$d-$t@1 --model anthropic/claude-$m \
+          --provider modal -s ANTHROPIC_API_KEY anthropic-api-key --concurrency 8 --label $d-$t-$m --connect
+    done
+  done
+done
+valkyrie run results <run-id> --path jobs/valkyrie/<label>.json
+python scripts/ceiling_report.py --model anthropic/claude-haiku-5-5 \
+    --tier static data/items.jsonl jobs/valkyrie/l14-l20-haiku-5-5.json jobs/valkyrie/l24-haiku-5-5.json \
+    --tier trace data/items-trace.jsonl jobs/valkyrie/l14-l20-trace-haiku-5-5.json jobs/valkyrie/l24-trace-haiku-5-5.json \
+    --tier trace-shuffled data/items-trace-shuffled.jsonl jobs/valkyrie/l14-l20-trace-shuffled-haiku-5-5.json \
+    jobs/valkyrie/l24-trace-shuffled-haiku-5-5.json
+```

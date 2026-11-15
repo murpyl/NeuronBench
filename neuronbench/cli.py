@@ -24,6 +24,12 @@ def cmd_build(a):
     hosts = [h.strip() for h in a.allowed_hosts.split(",") if h.strip()]
     if any("*" in h for h in hosts):
         sys.exit("--allowed-hosts takes exact hostnames; Valkyrie does not accept wildcards")
+    traces = None
+    if a.tier.startswith("trace"):
+        from .gne_io import read_jsonl
+        if not Path(a.traces).exists():
+            sys.exit(f"--tier {a.tier} needs {a.traces}: run scripts/trace_evidence.py on the static items first")
+        traces = {t["id"]: t for t in read_jsonl(a.traces)}
     items = []
     for rp in a.run:
         run = load_run(rp)
@@ -31,7 +37,7 @@ def cmd_build(a):
         if not ev:
             raise SystemExit(f"no evidence for {run.model_id} L{run.layer} under {a.evidence}")
         got = build_items(run, ev, n_choice=a.n_choice, n_null=a.n_null, seed=a.seed, threshold=a.threshold,
-                          min_change=a.min_change, tier=a.tier)
+                          min_change=a.min_change, tier=a.tier, traces=traces)
         nc = sum(i.kind == "choice" for i in got)
         nr = sum(i.kind == "null" and i.answer["real"] for i in got)
         npick = sum(i.meta.get("selection") == "picked" for i in got)
@@ -98,7 +104,10 @@ def main(argv=None):
     b.add_argument("--tier", choices=TIERS, default="static",
                    help="evidence tier: static (the benchmark) or a positive control that adds measured outcomes: "
                         "oracle (the neuron's over-used words), transfer (its steered replies on other prompts); "
-                        "or the negative control shuffled (another same-layer neuron's static evidence)")
+                        "or the negative control shuffled (another same-layer neuron's static evidence); "
+                        "trace adds per-token unsteered log-probs and logit-lens z-scores under every choice reply, "
+                        "trace-shuffled is shuffled with the donor neuron's lens z-scores in that table")
+    b.add_argument("--traces", default="data/traces.jsonl", help="scripts/trace_evidence.py output (trace tiers)")
     b.add_argument("--agent-timeout", type=float, default=600.0)
     b.add_argument("--allowed-hosts", default="api.anthropic.com,api.openai.com",
                    help="comma-separated exact hostnames the agent container may reach (its model API); "
