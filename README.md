@@ -34,7 +34,8 @@ random directions of the same size.
 
 Both are "Which output is it?" items from the 900 more-prompts set, shown in brief. The agent sees the full replies;
 the full task is in `instruction.md` under the folder named in each heading. "Change" is each reply's distance from the
-unsteered reply.
+unsteered reply. The raw records behind items like these (item JSON, the evidence tiers, gne sweeps, task folders)
+are in [`docs/sample_data.md`](docs/sample_data.md).
 
 **1. The lens gives it away**
 ([`tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N1344-math-0.7`](tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N1344-math-0.7/instruction.md)).
@@ -165,6 +166,7 @@ neuronbench/       build items and Harbor tasks, baselines, report (cli: `neuron
 data/raw/          gne sweeps (slimmed); data/evidence/ per-neuron static evidence; data/items*.jsonl items + keys
 tasks/             255 Harbor tasks (static tier); tasks-prompts-l{14,20,24}/ the 900 more-prompts tasks
 jobs/valkyrie/     every Valkyrie run export behind the results
+docs/              reproduce.md (full pipeline), sample_data.md (example records from every data file)
 ```
 
 The built tasks are committed. **Why mini-SWE-agent:** the task is reasoning over a few text files, so the harness
