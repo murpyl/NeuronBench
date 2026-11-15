@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2756,
+ "down_norm": 1.1048208475112915,
+ "logit_lens": {
+  "up": [
+   "意志",
+   "orphic",
+   "ῃ",
+   "edback",
+   "level",
+   "prus",
+   " FileMode",
+   "还原",
+   "ทธ",
+   ".CopyTo",
+   "jug",
+   "مز"
+  ],
+  "down": [
+   "Article",
+   " article",
+   " Article",
+   " articles",
+   " Articles",
+   "article",
+   "Articles",
+   "_article",
+   "文章",
+   "这篇文章",
+   "articles",
+   " Artikel"
+  ],
+  "peak_z": 10.151827812194824
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

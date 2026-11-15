@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 783,
+ "down_norm": 0.996411144733429,
+ "logit_lens": {
+  "up": [
+   "нос",
+   "iever",
+   "_reserved",
+   "antee",
+   "悬",
+   "//------------------------------------------------------------------------------------------------",
+   "resolved",
+   " GENERATED",
+   "kening",
+   "iola",
+   "resh",
+   "뷔"
+  ],
+  "down": [
+   " argument",
+   "arg",
+   " arguments",
+   "[arg",
+   " arg",
+   "[args",
+   " args",
+   "\targ",
+   " Arguments",
+   "args",
+   "argument",
+   "Arg"
+  ],
+  "peak_z": 7.855825424194336
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

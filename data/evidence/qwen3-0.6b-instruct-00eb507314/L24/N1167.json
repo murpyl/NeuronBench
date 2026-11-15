@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1167,
+ "down_norm": 1.0292003154754639,
+ "logit_lens": {
+  "up": [
+   "essa",
+   "ments",
+   " panc",
+   ":'.$",
+   "otine",
+   "asted",
+   ",default",
+   " Gord",
+   "sticks",
+   "AST",
+   "IBLE",
+   "ossal"
+  ],
+  "down": [
+   " time",
+   "时间",
+   "time",
+   " Time",
+   "Time",
+   "_time",
+   "(time",
+   ".time",
+   "時間",
+   "\"time",
+   "-time",
+   " 时间"
+  ],
+  "peak_z": 7.3019304275512695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

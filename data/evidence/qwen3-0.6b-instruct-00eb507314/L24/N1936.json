@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1936,
+ "down_norm": 1.06231689453125,
+ "logit_lens": {
+  "up": [
+   "isse",
+   "ıy",
+   "isseur",
+   "iss",
+   "驮",
+   "icho",
+   "\\Component",
+   "夕",
+   " �",
+   "_public",
+   "issan",
+   "ån"
+  ],
+  "down": [
+   "獐",
+   "AGIC",
+   "emas",
+   "amic",
+   "ング",
+   "aska",
+   "auté",
+   "typeid",
+   "tam",
+   "/ph",
+   "صاد",
+   "爱好"
+  ],
+  "peak_z": 5.139219284057617
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

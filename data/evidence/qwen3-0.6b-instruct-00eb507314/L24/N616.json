@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 616,
+ "down_norm": 0.9819279909133911,
+ "logit_lens": {
+  "up": [
+   " connected",
+   " connection",
+   "connection",
+   "连接",
+   "connected",
+   " connections",
+   " connect",
+   " connects",
+   " Connection",
+   " connecting",
+   "connections",
+   "Connecting"
+  ],
+  "down": [
+   "nels",
+   "platz",
+   "ẫ",
+   "ników",
+   "大树",
+   "lte",
+   " babe",
+   "IVATE",
+   "ringe",
+   "全",
+   "lt",
+   "벌"
+  ],
+  "peak_z": 12.731931686401367
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

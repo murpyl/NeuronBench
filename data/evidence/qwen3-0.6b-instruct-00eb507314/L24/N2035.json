@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2035,
+ "down_norm": 1.154833436012268,
+ "logit_lens": {
+  "up": [
+   "sst",
+   "鼻子",
+   ".SK",
+   " skies",
+   "怀里",
+   " air",
+   "ски",
+   "ijke",
+   "ugh",
+   "空气",
+   "upro",
+   "ugging"
+  ],
+  "down": [
+   " cent",
+   "cents",
+   "cent",
+   " linear",
+   " Linear",
+   "linear",
+   "线",
+   "cobra",
+   "centers",
+   "Linear",
+   "ringe",
+   "cm"
+  ],
+  "peak_z": 5.873234748840332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

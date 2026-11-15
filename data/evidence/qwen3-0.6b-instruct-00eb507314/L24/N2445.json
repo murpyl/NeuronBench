@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2445,
+ "down_norm": 1.148837685585022,
+ "logit_lens": {
+  "up": [
+   " block",
+   " building",
+   " blocks",
+   "块",
+   "block",
+   "单元",
+   " Block",
+   "Blocks",
+   " unit",
+   " units",
+   "Block",
+   " Building"
+  ],
+  "down": [
+   " деле",
+   "簌",
+   "ối",
+   "roker",
+   " Yates",
+   "pto",
+   "oke",
+   " LOAD",
+   " loader",
+   "edis",
+   "okes",
+   "Leave"
+  ],
+  "peak_z": 8.881170272827148
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

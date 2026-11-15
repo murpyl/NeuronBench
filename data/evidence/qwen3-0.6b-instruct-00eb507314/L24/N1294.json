@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1294,
+ "down_norm": 1.0057889223098755,
+ "logit_lens": {
+  "up": [
+   " m",
+   "m",
+   " mé",
+   " c",
+   "cé",
+   "acier",
+   "ROME",
+   "一世",
+   "つき",
+   "긋",
+   " mName",
+   " Nem"
+  ],
+  "down": [
+   "anus",
+   "mins",
+   "ots",
+   "iego",
+   "itions",
+   "min",
+   "styleType",
+   "/min",
+   "stances",
+   "あ",
+   "FS",
+   ",min"
+  ],
+  "peak_z": 5.41852331161499
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

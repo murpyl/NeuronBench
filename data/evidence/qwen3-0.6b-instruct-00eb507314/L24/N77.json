@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 77,
+ "down_norm": 0.6360817551612854,
+ "logit_lens": {
+  "up": [
+   "Several",
+   "regular",
+   "ethical",
+   "against",
+   "since",
+   "onto",
+   "did",
+   "composed",
+   "terminated",
+   "possible",
+   "monic",
+   "inclusive"
+  ],
+  "down": [
+   " way",
+   " �",
+   " me",
+   " �",
+   " those",
+   " he",
+   " ver",
+   " Statement",
+   " rescue",
+   " �",
+   " says",
+   " works"
+  ],
+  "peak_z": 4.203330993652344
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

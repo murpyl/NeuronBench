@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2915,
+ "down_norm": 1.07330322265625,
+ "logit_lens": {
+  "up": [
+   "eral",
+   "eras",
+   "IVATE",
+   ".hy",
+   "нал",
+   "дор",
+   "ät",
+   "rone",
+   "日报道",
+   "羡",
+   "lâ",
+   " allo"
+  ],
+  "down": [
+   "独",
+   "arn",
+   "ARN",
+   "conte",
+   " xử",
+   "驾",
+   "引用日期",
+   "随机",
+   "披",
+   "��",
+   " mù",
+   "活"
+  ],
+  "peak_z": 5.09182071685791
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

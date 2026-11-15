@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 135,
+ "down_norm": 0.8559319972991943,
+ "logit_lens": {
+  "up": [
+   "�能",
+   "nat",
+   "odel",
+   "ERN",
+   ".\"),\n",
+   "redient",
+   "'),'",
+   " yyn",
+   "stitute",
+   "_),",
+   " \"),",
+   "')],\n"
+  ],
+  "down": [
+   " Analyst",
+   " remotely",
+   " wardrobe",
+   " cheese",
+   "例行",
+   " Pants",
+   "vision",
+   " Cheese",
+   " analyst",
+   " Steak",
+   " colleg",
+   "Ả"
+  ],
+  "peak_z": 4.805879592895508
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

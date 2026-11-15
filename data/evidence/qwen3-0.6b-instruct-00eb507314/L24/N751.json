@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 751,
+ "down_norm": 1.046103835105896,
+ "logit_lens": {
+  "up": [
+   " executions",
+   "执行",
+   "ąc",
+   "執行",
+   "ỹ",
+   " executes",
+   " greeted",
+   " execution",
+   "acious",
+   "чен",
+   "oteca",
+   "imens"
+  ],
+  "down": [
+   "保修",
+   "(tol",
+   "тор",
+   "conomy",
+   "赛区",
+   "呕吐",
+   "tra",
+   "avelength",
+   " DVR",
+   "ersive",
+   "pbs",
+   "追究"
+  ],
+  "peak_z": 5.333222389221191
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 180,
+ "down_norm": 0.732584536075592,
+ "logit_lens": {
+  "up": [
+   "iesen",
+   "zes",
+   "OMATIC",
+   "utas",
+   "ights",
+   "ISTIC",
+   "ponential",
+   " yên",
+   " hood",
+   "hood",
+   " ál",
+   "тив"
+  ],
+  "down": [
+   "我们",
+   " we",
+   "我们在",
+   "我们也",
+   "我們",
+   "我们就",
+   "我们可以",
+   "我们认为",
+   "我们会",
+   "我们必须",
+   "我们的",
+   "我们都"
+  ],
+  "peak_z": 15.143242835998535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

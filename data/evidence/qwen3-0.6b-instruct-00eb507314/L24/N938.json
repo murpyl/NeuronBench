@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 938,
+ "down_norm": 0.9459238648414612,
+ "logit_lens": {
+  "up": [
+   "s",
+   "ez",
+   "e",
+   "ei",
+   "eus",
+   "ece",
+   "ing",
+   "eo",
+   "eer",
+   "ea",
+   "eu",
+   "sse"
+  ],
+  "down": [
+   "他们的",
+   "他们在",
+   "他们",
+   "Their",
+   "但他们",
+   " their",
+   "他们是",
+   " Their",
+   " theirs",
+   "她们",
+   " themselves",
+   "他們"
+  ],
+  "peak_z": 10.830741882324219
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

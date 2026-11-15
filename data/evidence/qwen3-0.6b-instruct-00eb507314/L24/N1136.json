@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1136,
+ "down_norm": 1.076789379119873,
+ "logit_lens": {
+  "up": [
+   "idelity",
+   "verity",
+   " securely",
+   " safely",
+   " Vaults",
+   "constitution",
+   "iği",
+   "aders",
+   "virt",
+   "puties",
+   "udence",
+   "mony"
+  ],
+  "down": [
+   "ype",
+   "眼",
+   " housing",
+   " electrical",
+   " numerical",
+   "ptive",
+   "柄",
+   " {{--<",
+   ")b",
+   " judicial",
+   ".concurrent",
+   "Ey"
+  ],
+  "peak_z": 5.388725757598877
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

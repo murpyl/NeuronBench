@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3016,
+ "down_norm": 1.124510645866394,
+ "logit_lens": {
+  "up": [
+   "Span",
+   "_trees",
+   " Span",
+   "树",
+   " tree",
+   "_span",
+   "trees",
+   "-tree",
+   "-span",
+   " trees",
+   "Tree",
+   "tree"
+  ],
+  "down": [
+   "狈",
+   "elier",
+   "solete",
+   "عد",
+   "чи",
+   "lique",
+   "modifiable",
+   " Dover",
+   "eti",
+   "apos",
+   "awl",
+   "avity"
+  ],
+  "peak_z": 6.526291370391846
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1710,
+ "down_norm": 1.203332543373108,
+ "logit_lens": {
+  "up": [
+   "减",
+   "減",
+   " less",
+   "less",
+   " Min",
+   " мин",
+   ".min",
+   " min",
+   "min",
+   "Less",
+   " subtract",
+   " moins"
+  ],
+  "down": [
+   " ******************************************************************************/\n\n",
+   "apg",
+   "&type",
+   "ollo",
+   "vier",
+   " política",
+   "SWG",
+   " rápida",
+   "?type",
+   "asonry",
+   " bluff",
+   " conclus"
+  ],
+  "peak_z": 13.267120361328125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

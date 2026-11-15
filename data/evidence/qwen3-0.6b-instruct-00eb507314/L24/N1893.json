@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1893,
+ "down_norm": 1.0895134210586548,
+ "logit_lens": {
+  "up": [
+   "UserCode",
+   "unce",
+   "thesize",
+   " lãi",
+   "agos",
+   "惺",
+   "ós",
+   "ega",
+   "ắc",
+   "ystone",
+   "istar",
+   "AGIC"
+  ],
+  "down": [
+   " medium",
+   " Medium",
+   "medium",
+   "Medium",
+   " media",
+   " mediums",
+   "media",
+   "媒体",
+   "-medium",
+   "介质",
+   ".medium",
+   "MEDIA"
+  ],
+  "peak_z": 14.460704803466797
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1248,
+ "down_norm": 1.0795751810073853,
+ "logit_lens": {
+  "up": [
+   "stakes",
+   "ael",
+   ";'>",
+   "ald",
+   ")',",
+   "اق",
+   "��",
+   " al",
+   "𝐛",
+   "endencies",
+   ".transform",
+   "剜"
+  ],
+  "down": [
+   "śmy",
+   "ritten",
+   ".setProgress",
+   "�试",
+   "rote",
+   "licted",
+   "orthand",
+   " airs",
+   "appers",
+   "_HT",
+   "kommen",
+   "тиров"
+  ],
+  "peak_z": 4.851506233215332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

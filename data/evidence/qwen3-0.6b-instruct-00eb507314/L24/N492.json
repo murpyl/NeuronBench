@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 492,
+ "down_norm": 0.914333164691925,
+ "logit_lens": {
+  "up": [
+   "半夜",
+   "終於",
+   "엔",
+   "总算",
+   "ếu",
+   "终于",
+   "als",
+   "rames",
+   "当地时间",
+   "动能",
+   "こそ",
+   "佈"
+  ],
+  "down": [
+   " other",
+   "other",
+   "其他",
+   " Other",
+   "Other",
+   "(other",
+   "其他的",
+   "其它",
+   "_other",
+   " OTHER",
+   " otras",
+   "-other"
+  ],
+  "peak_z": 21.924728393554688
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

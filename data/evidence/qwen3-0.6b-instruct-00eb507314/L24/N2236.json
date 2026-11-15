@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2236,
+ "down_norm": 1.0397871732711792,
+ "logit_lens": {
+  "up": [
+   "unker",
+   "ataire",
+   "oms",
+   "igmat",
+   "忾",
+   " thăm",
+   "getPost",
+   "ToMany",
+   "odal",
+   " !***",
+   "-posts",
+   "ework"
+  ],
+  "down": [
+   " human",
+   "Human",
+   "human",
+   " Human",
+   " humans",
+   "人类",
+   " Humans",
+   "-human",
+   "_human",
+   "人類",
+   " humano",
+   "Humans"
+  ],
+  "peak_z": 18.695528030395508
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

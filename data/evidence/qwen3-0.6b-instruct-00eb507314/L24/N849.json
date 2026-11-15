@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 849,
+ "down_norm": 1.0473294258117676,
+ "logit_lens": {
+  "up": [
+   "cox",
+   "young",
+   "Young",
+   " symmetric",
+   "Little",
+   "little",
+   "Rated",
+   "(Default",
+   " DeV",
+   "andard",
+   "Vien",
+   " sleeper"
+  ],
+  "down": [
+   "opause",
+   "agements",
+   "ife",
+   "ardu",
+   "蓍",
+   " CONTROL",
+   "ardi",
+   "icot",
+   " Bacon",
+   "gard",
+   "rokes",
+   "rag"
+  ],
+  "peak_z": 4.943190574645996
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

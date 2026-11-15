@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2408,
+ "down_norm": 1.1661072969436646,
+ "logit_lens": {
+  "up": [
+   "刈",
+   "nid",
+   "ᴢ",
+   "OUS",
+   "IOS",
+   "üz",
+   "tion",
+   "nard",
+   "|`\n",
+   "ologically",
+   " ripe",
+   "敷"
+  ],
+  "down": [
+   " program",
+   " programs",
+   "program",
+   " Program",
+   "Program",
+   " programme",
+   "programs",
+   " Programs",
+   " programmes",
+   " PROGRAM",
+   "(program",
+   " Programme"
+  ],
+  "peak_z": 17.61754608154297
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

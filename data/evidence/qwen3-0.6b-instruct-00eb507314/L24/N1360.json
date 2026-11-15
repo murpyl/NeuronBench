@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1360,
+ "down_norm": 0.9899861812591553,
+ "logit_lens": {
+  "up": [
+   "elen",
+   "createForm",
+   "林业",
+   "構",
+   "Steel",
+   "iale",
+   "铁",
+   "face",
+   " faces",
+   " vit",
+   "nels",
+   "金属"
+  ],
+  "down": [
+   "reb",
+   "yb",
+   "团",
+   " Tud",
+   "渍",
+   ".Column",
+   " rowData",
+   " tłum",
+   " Pep",
+   "-column",
+   "ucken",
+   " Continent"
+  ],
+  "peak_z": 4.894932746887207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

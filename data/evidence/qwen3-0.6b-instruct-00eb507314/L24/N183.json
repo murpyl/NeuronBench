@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 183,
+ "down_norm": 0.8560652136802673,
+ "logit_lens": {
+  "up": [
+   "tlement",
+   "看你",
+   "gricult",
+   "}')",
+   ";}",
+   ".']",
+   "alyze",
+   "'));",
+   "')).",
+   "agation",
+   "}'.",
+   "ation"
+  ],
+  "down": [
+   "他们的",
+   "their",
+   "他们",
+   "他们在",
+   " their",
+   "Their",
+   " Their",
+   "他們",
+   "但他们",
+   "她们",
+   "他们会",
+   "因为他们"
+  ],
+  "peak_z": 24.473434448242188
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

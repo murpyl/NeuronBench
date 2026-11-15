@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2321,
+ "down_norm": 1.1211045980453491,
+ "logit_lens": {
+  "up": [
+   "ctic",
+   "ipc",
+   "ich",
+   "ig",
+   "yper",
+   ".NewLine",
+   "ǐ",
+   "itime",
+   "西南",
+   ".innerHeight",
+   "ไอ",
+   " Ended"
+  ],
+  "down": [
+   "inality",
+   " graz",
+   "no",
+   "otre",
+   "ANTE",
+   "antics",
+   "elcome",
+   "dere",
+   "holders",
+   "omed",
+   "的安全",
+   "SPACE"
+  ],
+  "peak_z": 5.277231216430664
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

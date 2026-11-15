@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2358,
+ "down_norm": 1.082807183265686,
+ "logit_lens": {
+  "up": [
+   " back",
+   " corner",
+   " part",
+   "隅",
+   "corner",
+   " Back",
+   " inch",
+   "back",
+   "方",
+   ".back",
+   "оро",
+   " blockSize"
+  ],
+  "down": [
+   "|`\n",
+   "sters",
+   "oked",
+   "ourney",
+   "IndexPath",
+   " Harding",
+   " Zah",
+   "陷阱",
+   " sieve",
+   "这家公司",
+   "estation",
+   "舅舅"
+  ],
+  "peak_z": 5.644184112548828
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

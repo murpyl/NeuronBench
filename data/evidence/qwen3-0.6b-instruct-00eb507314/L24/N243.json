@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 243,
+ "down_norm": 0.8890892267227173,
+ "logit_lens": {
+  "up": [
+   "rego",
+   "еле",
+   "orie",
+   "emplate",
+   "гон",
+   "addElement",
+   "estate",
+   "porte",
+   "طار",
+   "ansom",
+   "狲",
+   "ируем"
+  ],
+  "down": [
+   " has",
+   " have",
+   "’ve",
+   "'ve",
+   "has",
+   "Has",
+   " Has",
+   "have",
+   "(has",
+   "已经",
+   "Have",
+   " hasn"
+  ],
+  "peak_z": 12.907215118408203
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

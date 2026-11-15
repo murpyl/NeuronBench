@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1284,
+ "down_norm": 1.2436975240707397,
+ "logit_lens": {
+  "up": [
+   " behalf",
+   "ibern",
+   "ores",
+   "angered",
+   "NAMESPACE",
+   "HONE",
+   "'class",
+   "EPROM",
+   "osit",
+   ".softmax",
+   "WindowState",
+   "/mac"
+  ],
+  "down": [
+   " on",
+   " On",
+   "On",
+   "_on",
+   "\ton",
+   ".on",
+   "on",
+   "-on",
+   "\tOn",
+   "(on",
+   " на",
+   "-On"
+  ],
+  "peak_z": 19.91634178161621
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

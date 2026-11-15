@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2734,
+ "down_norm": 1.1233041286468506,
+ "logit_lens": {
+  "up": [
+   "起",
+   "起了",
+   "up",
+   "起来了",
+   "起來",
+   "ifting",
+   "起来",
+   "cript",
+   "uper",
+   " SelectList",
+   "群岛",
+   "ствовать"
+  ],
+  "down": [
+   "onta",
+   "ylon",
+   " Pa",
+   "ida",
+   "esses",
+   "Pa",
+   " Ky",
+   "tał",
+   "flush",
+   "ṫ",
+   "aldo",
+   "nection"
+  ],
+  "peak_z": 6.444543838500977
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

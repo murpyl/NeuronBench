@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3058,
+ "down_norm": 1.140318751335144,
+ "logit_lens": {
+  "up": [
+   "UserCode",
+   "发挥作用",
+   " USAGE",
+   "隍",
+   "让她",
+   "ussian",
+   "abra",
+   "erator",
+   "zähl",
+   "淀",
+   "ral",
+   " Dresden"
+  ],
+  "down": [
+   "onia",
+   "astro",
+   "oni",
+   " lá",
+   "nov",
+   "nika",
+   "ニア",
+   "зо",
+   " neph",
+   "觇",
+   "asty",
+   "ジョン"
+  ],
+  "peak_z": 5.4811625480651855
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

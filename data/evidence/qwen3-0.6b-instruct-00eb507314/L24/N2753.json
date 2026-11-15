@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2753,
+ "down_norm": 1.0953762531280518,
+ "logit_lens": {
+  "up": [
+   " of",
+   "of",
+   "_of",
+   "Of",
+   " Of",
+   "\tof",
+   " của",
+   "_Of",
+   "-of",
+   ".of",
+   "ของ",
+   "_OF"
+  ],
+  "down": [
+   "icut",
+   "并将",
+   " związ",
+   "在香港",
+   "并对",
+   "dzi",
+   "并与",
+   "在内的",
+   "عز",
+   "ominated",
+   "并在",
+   "ritz"
+  ],
+  "peak_z": 23.304615020751953
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

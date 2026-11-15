@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1051,
+ "down_norm": 1.0701583623886108,
+ "logit_lens": {
+  "up": [
+   "vinc",
+   "ubern",
+   "uem",
+   "apro",
+   "imb",
+   "avan",
+   "imension",
+   "tems",
+   "енко",
+   "imen",
+   ".setItem",
+   "imin"
+  ],
+  "down": [
+   " translating",
+   " translation",
+   " translate",
+   " trans",
+   " transl",
+   " translated",
+   " translates",
+   " translations",
+   "译",
+   " Translation",
+   "_translation",
+   "翻译"
+  ],
+  "peak_z": 8.544981002807617
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

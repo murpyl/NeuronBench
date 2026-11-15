@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2568,
+ "down_norm": 1.0724812746047974,
+ "logit_lens": {
+  "up": [
+   ",$",
+   "oth",
+   " Wrapper",
+   " !$",
+   "$q",
+   "郏",
+   "teil",
+   "$p",
+   "],$",
+   "file",
+   "',$",
+   "гу"
+  ],
+  "down": [
+   "enção",
+   "든",
+   " merits",
+   "禁",
+   "inia",
+   "opens",
+   "clusters",
+   "Mapped",
+   "ainment",
+   "liers",
+   "emode",
+   "ège"
+  ],
+  "peak_z": 4.886882781982422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

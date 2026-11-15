@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1983,
+ "down_norm": 1.0549801588058472,
+ "logit_lens": {
+  "up": [
+   "代",
+   "logfile",
+   " Yours",
+   " logarith",
+   "agram",
+   "gy",
+   "ẻ",
+   "بت",
+   "\\Application",
+   "اما",
+   "ained",
+   "城县"
+  ],
+  "down": [
+   "*M",
+   " tiêu",
+   "plode",
+   "ansi",
+   "NF",
+   "AN",
+   "(Dictionary",
+   "Outlined",
+   "aN",
+   "经开",
+   "elerik",
+   "an"
+  ],
+  "peak_z": 5.243265151977539
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

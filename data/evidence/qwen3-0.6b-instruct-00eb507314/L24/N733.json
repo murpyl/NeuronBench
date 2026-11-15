@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 733,
+ "down_norm": 0.9732998609542847,
+ "logit_lens": {
+  "up": [
+   "-based",
+   "-owned",
+   "-number",
+   "-sided",
+   "-index",
+   "-length",
+   "-position",
+   "-level",
+   "-oriented",
+   "-sk",
+   "-digit",
+   "-colored"
+  ],
+  "down": [
+   "xies",
+   "ería",
+   "esity",
+   "izons",
+   "iseum",
+   "译",
+   "ocab",
+   "oglobin",
+   "bao",
+   "ophilia",
+   "unistd",
+   "stacle"
+  ],
+  "peak_z": 7.959523677825928
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

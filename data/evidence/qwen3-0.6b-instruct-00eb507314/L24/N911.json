@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 911,
+ "down_norm": 1.0997542142868042,
+ "logit_lens": {
+  "up": [
+   "oit",
+   "イト",
+   "venth",
+   "asar",
+   "ось",
+   " redundant",
+   " planning",
+   "iten",
+   "ore",
+   " third",
+   "nung",
+   "пл"
+  ],
+  "down": [
+   "ERY",
+   "孕期",
+   " pars",
+   ".Unity",
+   "下车",
+   "кс",
+   " ([]",
+   "uble",
+   "DataExchange",
+   "缢",
+   " impeachment",
+   ">(()"
+  ],
+  "peak_z": 5.013725280761719
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

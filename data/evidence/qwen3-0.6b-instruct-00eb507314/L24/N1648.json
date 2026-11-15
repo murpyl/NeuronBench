@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1648,
+ "down_norm": 1.05839204788208,
+ "logit_lens": {
+  "up": [
+   "筆",
+   "era",
+   "eração",
+   "致",
+   "inity",
+   "ерт",
+   "éta",
+   "笔",
+   "rightness",
+   "repeat",
+   "يه",
+   "�"
+  ],
+  "down": [
+   "unning",
+   "uned",
+   "uvre",
+   "uploaded",
+   " Coding",
+   "eldorf",
+   " Bodies",
+   "AndView",
+   "上的",
+   "oding",
+   " trib",
+   " Köln"
+  ],
+  "peak_z": 5.09193229675293
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

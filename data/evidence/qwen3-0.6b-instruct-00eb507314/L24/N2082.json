@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2082,
+ "down_norm": 1.0955744981765747,
+ "logit_lens": {
+  "up": [
+   "odel",
+   "izer",
+   "quired",
+   "あたり",
+   "acer",
+   "inem",
+   "quam",
+   "=\"#",
+   " différence",
+   "achsen",
+   "ิน",
+   "hof"
+  ],
+  "down": [
+   "ibility",
+   "ongan",
+   "bar",
+   "бар",
+   " bar",
+   "exact",
+   " đựng",
+   "write",
+   "ROADCAST",
+   "Bar",
+   " starts",
+   "載"
+  ],
+  "peak_z": 4.678711891174316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

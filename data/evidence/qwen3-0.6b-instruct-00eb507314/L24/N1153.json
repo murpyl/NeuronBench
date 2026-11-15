@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1153,
+ "down_norm": 1.0601212978363037,
+ "logit_lens": {
+  "up": [
+   "proof",
+   "九州",
+   "flix",
+   "oscope",
+   "_starts",
+   "ificaciones",
+   "�",
+   "inati",
+   "⟫",
+   " employer",
+   "돋",
+   "aan"
+  ],
+  "down": [
+   "列",
+   "列出",
+   " listar",
+   "IO",
+   " lists",
+   " Column",
+   "仗",
+   " moduleId",
+   "Column",
+   "OLUMN",
+   "untary",
+   "列表"
+  ],
+  "peak_z": 6.312745094299316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

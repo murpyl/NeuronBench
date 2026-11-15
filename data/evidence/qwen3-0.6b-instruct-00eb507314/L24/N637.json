@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 637,
+ "down_norm": 1.0657774209976196,
+ "logit_lens": {
+  "up": [
+   " new",
+   "新",
+   "new",
+   "的新",
+   "[new",
+   "(new",
+   "新的",
+   " 新",
+   " нов",
+   "-new",
+   "\tnew",
+   ",new"
+  ],
+  "down": [
+   "cling",
+   "itre",
+   "ained",
+   "ITUDE",
+   "oring",
+   "htub",
+   "edly",
+   "ught",
+   "萋",
+   "銮",
+   "твер",
+   "crest"
+  ],
+  "peak_z": 21.75288963317871
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

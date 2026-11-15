@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2114,
+ "down_norm": 1.0463056564331055,
+ "logit_lens": {
+  "up": [
+   "ставил",
+   "器",
+   "CUS",
+   "aler",
+   "serter",
+   " getResource",
+   "пан",
+   "arLayout",
+   "IENTATION",
+   "ланд",
+   "ters",
+   "ewise"
+  ],
+  "down": [
+   " will",
+   "will",
+   " Will",
+   "Will",
+   " WILL",
+   "将会",
+   " sẽ",
+   "'ll",
+   "’ll",
+   "将在",
+   " akan",
+   "会在"
+  ],
+  "peak_z": 21.481555938720703
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

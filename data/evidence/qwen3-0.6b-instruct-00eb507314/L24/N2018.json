@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2018,
+ "down_norm": 1.2250639200210571,
+ "logit_lens": {
+  "up": [
+   " time",
+   "时间",
+   "time",
+   " Time",
+   "Time",
+   "_time",
+   "時間",
+   "-time",
+   "(time",
+   "时间和",
+   "\ttime",
+   ".time"
+  ],
+  "down": [
+   "iego",
+   "ató",
+   "isting",
+   "ilian",
+   "Matchers",
+   "стро",
+   "eldorf",
+   "@update",
+   "cede",
+   "dings",
+   "atas",
+   "iants"
+  ],
+  "peak_z": 24.35590934753418
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

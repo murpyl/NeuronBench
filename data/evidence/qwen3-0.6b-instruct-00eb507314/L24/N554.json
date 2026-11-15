@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 554,
+ "down_norm": 0.9765321612358093,
+ "logit_lens": {
+  "up": [
+   "bose",
+   "uke",
+   "ffb",
+   "再生能源",
+   "?v",
+   "ランス",
+   "engers",
+   " spoilers",
+   " fasting",
+   "itional",
+   "ARSE",
+   "�"
+  ],
+  "down": [
+   "q",
+   "qw",
+   "tex",
+   "qm",
+   "m",
+   "qi",
+   "Ｑ",
+   "hq",
+   "qh",
+   "qid",
+   "ql",
+   "qr"
+  ],
+  "peak_z": 5.556530952453613
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

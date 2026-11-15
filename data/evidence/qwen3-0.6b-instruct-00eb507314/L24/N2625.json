@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2625,
+ "down_norm": 1.124572992324829,
+ "logit_lens": {
+  "up": [
+   "考虑",
+   " consider",
+   " consideration",
+   " Consider",
+   "consider",
+   "Consider",
+   " considering",
+   " considered",
+   " considers",
+   "考慮",
+   " considerations",
+   " consid"
+  ],
+  "down": [
+   "utches",
+   "lique",
+   "tí",
+   " typeId",
+   ">Type",
+   "中式",
+   "��",
+   "setType",
+   "يفة",
+   "TypeId",
+   "ynomial",
+   "othy"
+  ],
+  "peak_z": 18.81744384765625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

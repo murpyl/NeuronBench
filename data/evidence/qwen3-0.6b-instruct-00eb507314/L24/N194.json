@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 194,
+ "down_norm": 0.8468613624572754,
+ "logit_lens": {
+  "up": [
+   " PLAY",
+   " picks",
+   "ei",
+   " handles",
+   "plant",
+   "apply",
+   "-play",
+   "deal",
+   "encil",
+   "Act",
+   " figure",
+   "obao"
+  ],
+  "down": [
+   "��态",
+   " 물론",
+   " state",
+   " prive",
+   "omes",
+   "<State",
+   "��",
+   "状态下",
+   "哪种",
+   "aria",
+   "isations",
+   "izada"
+  ],
+  "peak_z": 4.830925464630127
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

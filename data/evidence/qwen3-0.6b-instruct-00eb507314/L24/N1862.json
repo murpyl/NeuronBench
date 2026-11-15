@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1862,
+ "down_norm": 1.0415130853652954,
+ "logit_lens": {
+  "up": [
+   "BuilderInterface",
+   "shots",
+   ".createParallelGroup",
+   "��이",
+   "setParameter",
+   " prêt",
+   "ag",
+   "creens",
+   "lero",
+   "ضل",
+   " Pé",
+   "ioned"
+  ],
+  "down": [
+   " mark",
+   " marks",
+   " marked",
+   "mark",
+   " marking",
+   "_mark",
+   " Marks",
+   "Mark",
+   "标记",
+   "marked",
+   " Mark",
+   "-mark"
+  ],
+  "peak_z": 17.059045791625977
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

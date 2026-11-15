@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 663,
+ "down_norm": 1.024550199508667,
+ "logit_lens": {
+  "up": [
+   "(man",
+   "_Man",
+   "MAN",
+   " MAN",
+   "-man",
+   " management",
+   "_man",
+   "マン",
+   "enza",
+   "管理",
+   "erce",
+   "Management"
+  ],
+  "down": [
+   "外",
+   "�",
+   "名叫",
+   "另有",
+   "Outside",
+   " khúc",
+   " Fore",
+   "alker",
+   "-roll",
+   " thấy",
+   " Roots",
+   "quires"
+  ],
+  "peak_z": 6.26451301574707
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

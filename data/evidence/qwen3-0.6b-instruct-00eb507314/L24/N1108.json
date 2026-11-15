@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1108,
+ "down_norm": 1.1556546688079834,
+ "logit_lens": {
+  "up": [
+   "·",
+   "•",
+   " ·",
+   " •",
+   "⋅",
+   "cdot",
+   "midd",
+   "・",
+   " �",
+   "•\n\n",
+   " ・",
+   "‧"
+  ],
+  "down": [
+   "/main",
+   "ipes",
+   "pline",
+   "rys",
+   "pect",
+   "iras",
+   "<Task",
+   "itos",
+   "县",
+   "ira",
+   " Kills",
+   "mainwindow"
+  ],
+  "peak_z": 12.715827941894531
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

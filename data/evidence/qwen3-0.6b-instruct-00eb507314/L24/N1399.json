@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1399,
+ "down_norm": 1.062437891960144,
+ "logit_lens": {
+  "up": [
+   "胚",
+   "日报社",
+   "abric",
+   " busted",
+   " seams",
+   "-envelope",
+   "zell",
+   "пов",
+   "nas",
+   " Zuckerberg",
+   "っぱ",
+   "诰"
+  ],
+  "down": [
+   "sterreich",
+   "halten",
+   "Hold",
+   "��",
+   "避",
+   " Hold",
+   " HOLD",
+   "sylvania",
+   "_HOLD",
+   "iy",
+   "sav",
+   "itant"
+  ],
+  "peak_z": 4.781373023986816
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

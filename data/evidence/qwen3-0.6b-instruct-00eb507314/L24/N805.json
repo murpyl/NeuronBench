@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 805,
+ "down_norm": 0.9350118041038513,
+ "logit_lens": {
+  "up": [
+   "发热",
+   "heard",
+   " Heard",
+   "he",
+   "(high",
+   " hear",
+   "host",
+   "hey",
+   "HIGH",
+   "Her",
+   "HEY",
+   "舐"
+  ],
+  "down": [
+   " H",
+   " h",
+   "H",
+   "赵",
+   "趙",
+   "h",
+   "_h",
+   ">H",
+   ".h",
+   "<H",
+   "=h",
+   ":H"
+  ],
+  "peak_z": 10.628674507141113
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

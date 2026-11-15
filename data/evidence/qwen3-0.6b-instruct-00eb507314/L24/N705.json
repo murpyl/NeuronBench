@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 705,
+ "down_norm": 1.0958112478256226,
+ "logit_lens": {
+  "up": [
+   "овая",
+   "овой",
+   "ov",
+   "OV",
+   "овым",
+   "овых",
+   "ового",
+   "ową",
+   "#\\",
+   "ova",
+   "ово",
+   "овое"
+  ],
+  "down": [
+   "inh",
+   "liği",
+   "pair",
+   "Pair",
+   "liğinde",
+   "dition",
+   " euch",
+   "airs",
+   "nings",
+   "PAIR",
+   "ramento",
+   "ilater"
+  ],
+  "peak_z": 5.9640116691589355
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

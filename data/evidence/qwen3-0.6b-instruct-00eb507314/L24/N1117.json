@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1117,
+ "down_norm": 1.105338215827942,
+ "logit_lens": {
+  "up": [
+   "uil",
+   "ailles",
+   "ularity",
+   "EU",
+   " despre",
+   "hd",
+   "elter",
+   "ук",
+   "ıkl",
+   ".Movie",
+   "ihilation",
+   "ULO"
+  ],
+  "down": [
+   " operator",
+   "技师",
+   " technician",
+   "助理",
+   "工程师",
+   " inspector",
+   "\toperator",
+   "技术人员",
+   "顾问",
+   "销售人员",
+   " analyst",
+   " assistant"
+  ],
+  "peak_z": 6.894714832305908
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

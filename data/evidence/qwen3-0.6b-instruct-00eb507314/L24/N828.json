@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 828,
+ "down_norm": 1.0452431440353394,
+ "logit_lens": {
+  "up": [
+   "Mirror",
+   "หลวง",
+   "TEMPL",
+   "aque",
+   "雀",
+   "天国",
+   "irror",
+   " lids",
+   "=target",
+   "jni",
+   "تخ",
+   "みたい"
+  ],
+  "down": [
+   "istique",
+   " addCriterion",
+   "气",
+   "istic",
+   "mdb",
+   "氣",
+   "ittest",
+   "éal",
+   "viron",
+   " Wrath",
+   "ượt",
+   "imately"
+  ],
+  "peak_z": 5.060432434082031
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

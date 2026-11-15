@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1041,
+ "down_norm": 1.1187570095062256,
+ "logit_lens": {
+  "up": [
+   "需要",
+   "需求",
+   " need",
+   " needs",
+   " needed",
+   "需",
+   "needs",
+   "的需求",
+   " needing",
+   " Need",
+   "need",
+   " necessity"
+  ],
+  "down": [
+   "ombat",
+   ".DialogResult",
+   "rible",
+   ".Safe",
+   "UILTIN",
+   "umn",
+   "�",
+   "しまう",
+   "zens",
+   "riendly",
+   "sid",
+   ".DisplayName"
+  ],
+  "peak_z": 16.140947341918945
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

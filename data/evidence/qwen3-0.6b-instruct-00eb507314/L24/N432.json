@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 432,
+ "down_norm": 1.0846469402313232,
+ "logit_lens": {
+  "up": [
+   "erc",
+   "bine",
+   "ensual",
+   "poses",
+   " coefficients",
+   "enko",
+   "celona",
+   "posing",
+   "поз",
+   "一次",
+   "(coeff",
+   ".inverse"
+  ],
+  "down": [
+   "曷",
+   "imates",
+   "uras",
+   "imon",
+   "ilyn",
+   " chim",
+   "iam",
+   "annel",
+   "udd",
+   "incl",
+   "ILD",
+   "IAM"
+  ],
+  "peak_z": 5.421639919281006
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

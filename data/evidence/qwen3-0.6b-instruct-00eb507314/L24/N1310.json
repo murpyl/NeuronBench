@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1310,
+ "down_norm": 1.0646295547485352,
+ "logit_lens": {
+  "up": [
+   "طة",
+   "upp",
+   "تو",
+   "остоя",
+   "ุ",
+   "айн",
+   "ṇ",
+   "phin",
+   ".Slf",
+   "las",
+   " given",
+   "onne"
+  ],
+  "down": [
+   " mem",
+   " men",
+   " member",
+   "members",
+   " members",
+   "(member",
+   "member",
+   "men",
+   "成员",
+   "mem",
+   "(mem",
+   " Members"
+  ],
+  "peak_z": 9.127961158752441
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

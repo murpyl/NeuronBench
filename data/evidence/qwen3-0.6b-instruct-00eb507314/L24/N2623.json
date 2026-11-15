@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2623,
+ "down_norm": 1.0782575607299805,
+ "logit_lens": {
+  "up": [
+   "(Size",
+   "给她",
+   "contro",
+   " spawning",
+   "gli",
+   "创新",
+   "跟踪",
+   " firepower",
+   "ça",
+   "lö",
+   " elbows",
+   "cade"
+  ],
+  "down": [
+   "util",
+   " Util",
+   "Util",
+   "isten",
+   " util",
+   "ished",
+   "UTIL",
+   "莫",
+   "istes",
+   "obl",
+   " UTIL",
+   " Bent"
+  ],
+  "peak_z": 5.726766109466553
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 124,
+ "down_norm": 0.7835182547569275,
+ "logit_lens": {
+  "up": [
+   "他也",
+   " successes",
+   "AAC",
+   "cohol",
+   "er",
+   "终于",
+   "他还",
+   "他已经",
+   "決め",
+   "制订",
+   " them",
+   "iating"
+  ],
+  "down": [
+   "\\",
+   "\\base",
+   "\\C",
+   "\\S",
+   "\\D",
+   "\\M",
+   "\\$",
+   "\\data",
+   "\\V",
+   "\\User",
+   "\\s",
+   "\\Lib"
+  ],
+  "peak_z": 16.82697296142578
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

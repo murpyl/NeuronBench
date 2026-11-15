@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2823,
+ "down_norm": 1.1275652647018433,
+ "logit_lens": {
+  "up": [
+   "chimp",
+   "pora",
+   "uations",
+   "蛟",
+   " PATH",
+   " charcoal",
+   " complete",
+   " Corona",
+   ".complete",
+   "andra",
+   "ansson",
+   "egment"
+  ],
+  "down": [
+   " V",
+   "(V",
+   "[V",
+   ">V",
+   "<V",
+   ")V",
+   " crossorigin",
+   "_V",
+   "/V",
+   "V",
+   ".V",
+   "-V"
+  ],
+  "peak_z": 5.78412389755249
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

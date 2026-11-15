@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2367,
+ "down_norm": 1.1288809776306152,
+ "logit_lens": {
+  "up": [
+   "urred",
+   "anut",
+   "iosis",
+   "icus",
+   " StatelessWidget",
+   ".nextDouble",
+   "蛾",
+   "ios",
+   "acaktır",
+   "imilar",
+   "ieval",
+   "RuntimeObject"
+  ],
+  "down": [
+   "fer",
+   " positive",
+   "feito",
+   "tries",
+   "omatic",
+   " htons",
+   " negative",
+   " order",
+   "ties",
+   " surfaces",
+   "_NB",
+   "positive"
+  ],
+  "peak_z": 5.075174808502197
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

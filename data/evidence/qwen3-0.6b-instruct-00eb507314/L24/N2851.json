@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2851,
+ "down_norm": 1.0500692129135132,
+ "logit_lens": {
+  "up": [
+   "ums",
+   "positories",
+   "umer",
+   "arna",
+   "gradable",
+   "ud",
+   "严峻",
+   "reatest",
+   "伧",
+   " element",
+   ".dds",
+   "ppers"
+  ],
+  "down": [
+   "国立",
+   "robe",
+   "CrLf",
+   "apon",
+   "噤",
+   "gnore",
+   "enton",
+   " İn",
+   " chaining",
+   "isOpen",
+   "Mode",
+   "APON"
+  ],
+  "peak_z": 5.652945041656494
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

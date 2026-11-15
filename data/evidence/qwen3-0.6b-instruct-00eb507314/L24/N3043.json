@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3043,
+ "down_norm": 1.1573594808578491,
+ "logit_lens": {
+  "up": [
+   " not",
+   "not",
+   "不",
+   " Not",
+   "Not",
+   "(not",
+   "_not",
+   "不是",
+   " NOT",
+   "-not",
+   "\tnot",
+   ".not"
+  ],
+  "down": [
+   "uth",
+   "ю",
+   "utto",
+   "ugu",
+   "ices",
+   "prise",
+   "ulle",
+   "&E",
+   "utzer",
+   " bạc",
+   "poons",
+   "elts"
+  ],
+  "peak_z": 12.929900169372559
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

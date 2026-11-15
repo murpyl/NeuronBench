@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 325,
+ "down_norm": 0.8641067743301392,
+ "logit_lens": {
+  "up": [
+   "rire",
+   "igkeit",
+   ".nb",
+   "née",
+   "特派",
+   "ť",
+   "ningen",
+   "liği",
+   "领导下",
+   "lingen",
+   "质量管理",
+   "<li"
+  ],
+  "down": [
+   " such",
+   "such",
+   " Such",
+   "Such",
+   "这样的",
+   " SUCH",
+   "這樣的",
+   " такой",
+   "此类",
+   " такие",
+   "这类",
+   "此种"
+  ],
+  "peak_z": 23.203792572021484
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1889,
+ "down_norm": 1.1026098728179932,
+ "logit_lens": {
+  "up": [
+   " wed",
+   " diễn",
+   " ND",
+   "ewise",
+   "翘",
+   "НО",
+   "ánd",
+   " mdi",
+   "iest",
+   " analyzes",
+   "哭了",
+   "release"
+  ],
+  "down": [
+   "[element",
+   "uating",
+   "(element",
+   "(al",
+   "uros",
+   " pre",
+   "Prec",
+   "_al",
+   "(pre",
+   " Pre",
+   "uble",
+   "pre"
+  ],
+  "peak_z": 5.323303699493408
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

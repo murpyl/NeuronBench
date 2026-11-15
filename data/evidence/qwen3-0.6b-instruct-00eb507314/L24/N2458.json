@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2458,
+ "down_norm": 1.115135669708252,
+ "logit_lens": {
+  "up": [
+   "mtree",
+   "eci",
+   "ech",
+   " echoes",
+   "dba",
+   "ус",
+   "UMENT",
+   "upe",
+   " dare",
+   "Signals",
+   " Transformers",
+   "craft"
+  ],
+  "down": [
+   "ritt",
+   "ens",
+   " Nacional",
+   "ritte",
+   "AppState",
+   "él",
+   "ricular",
+   "onia",
+   "alis",
+   "izon",
+   "会上",
+   "ate"
+  ],
+  "peak_z": 5.2089104652404785
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

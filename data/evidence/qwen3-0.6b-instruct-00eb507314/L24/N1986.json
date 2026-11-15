@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1986,
+ "down_norm": 1.1331316232681274,
+ "logit_lens": {
+  "up": [
+   "ffd",
+   "境内",
+   "ạy",
+   " crib",
+   "urger",
+   " RIP",
+   "циальн",
+   "cka",
+   "委",
+   " kicks",
+   "[op",
+   "credits"
+  ],
+  "down": [
+   "-vous",
+   "vous",
+   "ismo",
+   "stück",
+   "邪",
+   "麼",
+   "地位",
+   "LObject",
+   "uest",
+   "inition",
+   "_$_",
+   ".ObjectModel"
+  ],
+  "peak_z": 5.532653331756592
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 42,
+ "down_norm": 0.4808540642261505,
+ "logit_lens": {
+  "up": [
+   "entimes",
+   "ć",
+   "_tm",
+   "ACTER",
+   "orks",
+   "omencl",
+   "ً",
+   "_pin",
+   "OrUpdate",
+   "🏻",
+   "wać",
+   "rawer"
+  ],
+  "down": [
+   "太多了",
+   " dislike",
+   "晓得",
+   " losers",
+   "的热情",
+   " repercussions",
+   " populace",
+   " AssemblyTitle",
+   "分流",
+   "可以把",
+   "蓐",
+   " weakest"
+  ],
+  "peak_z": 4.9097113609313965
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

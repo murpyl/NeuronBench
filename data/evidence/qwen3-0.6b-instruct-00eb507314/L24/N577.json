@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 577,
+ "down_norm": 1.052866816520691,
+ "logit_lens": {
+  "up": [
+   " there",
+   "there",
+   " There",
+   "There",
+   " THERE",
+   " theres",
+   " هناك",
+   "\"There",
+   " ther",
+   "“There",
+   "有一",
+   "有个"
+  ],
+  "down": [
+   "crap",
+   "iative",
+   "ceptive",
+   "ummies",
+   "eer",
+   "utive",
+   "atisch",
+   "()};\n",
+   "antages",
+   "之称",
+   "echa",
+   "hog"
+  ],
+  "peak_z": 25.814985275268555
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

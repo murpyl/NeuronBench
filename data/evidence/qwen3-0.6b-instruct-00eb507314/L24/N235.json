@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 235,
+ "down_norm": 0.9277542233467102,
+ "logit_lens": {
+  "up": [
+   "Le",
+   " le",
+   "税务总局",
+   " Le",
+   " St",
+   " st",
+   " s",
+   " Se",
+   " se",
+   "闾",
+   "LEncoder",
+   " r"
+  ],
+  "down": [
+   " UIWindow",
+   " Garten",
+   "ắt",
+   "orative",
+   "MDB",
+   "(GTK",
+   "ório",
+   " MANY",
+   "igung",
+   "ạch",
+   "úc",
+   "ære"
+  ],
+  "peak_z": 5.895336627960205
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

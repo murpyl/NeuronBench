@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 944,
+ "down_norm": 1.0877361297607422,
+ "logit_lens": {
+  "up": [
+   "so",
+   "чная",
+   "��",
+   ">[\n",
+   "SON",
+   "aturas",
+   " {{\n",
+   "atura",
+   "recht",
+   "ijkl",
+   "tır",
+   "So"
+  ],
+  "down": [
+   "elve",
+   "ấu",
+   "laus",
+   "hind",
+   "<small",
+   "undy",
+   "西洋",
+   "encers",
+   "oard",
+   "illac",
+   " RedirectToAction",
+   "inctions"
+  ],
+  "peak_z": 5.735439300537109
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

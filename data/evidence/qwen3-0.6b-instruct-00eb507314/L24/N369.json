@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 369,
+ "down_norm": 0.9458324909210205,
+ "logit_lens": {
+  "up": [
+   "Sexy",
+   " charge",
+   "Unsafe",
+   "Easy",
+   "Ever",
+   "Good",
+   "Nice",
+   "_double",
+   "Rare",
+   "媚",
+   "_given",
+   "셀"
+  ],
+  "down": [
+   "-Type",
+   " Experiment",
+   "ериал",
+   " Curriculum",
+   " Equation",
+   "\\Schema",
+   " Type",
+   "�",
+   "uration",
+   " Exercise",
+   " Dataset",
+   "lications"
+  ],
+  "peak_z": 5.087823867797852
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

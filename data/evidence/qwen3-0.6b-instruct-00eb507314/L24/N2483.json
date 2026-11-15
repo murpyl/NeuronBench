@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2483,
+ "down_norm": 1.132246732711792,
+ "logit_lens": {
+  "up": [
+   "酒",
+   " Dess",
+   "甜",
+   " dessert",
+   " alcoholic",
+   "饮料",
+   " soda",
+   " drinks",
+   "dess",
+   " beer",
+   " Beverage",
+   " Bever"
+  ],
+  "down": [
+   "osten",
+   "ngine",
+   ".GetObject",
+   "rama",
+   "iqueta",
+   "bags",
+   "ijkl",
+   "йдет",
+   "بيعي",
+   "htar",
+   "(pm",
+   "legate"
+  ],
+  "peak_z": 6.707955837249756
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

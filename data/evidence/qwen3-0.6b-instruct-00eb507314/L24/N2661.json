@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2661,
+ "down_norm": 1.1866660118103027,
+ "logit_lens": {
+  "up": [
+   "allest",
+   "öst",
+   "bars",
+   " prostate",
+   "isclosed",
+   "渺",
+   "&w",
+   "alt",
+   " bars",
+   "erving",
+   " franchises",
+   "creen"
+  ],
+  "down": [
+   " triangular",
+   " upper",
+   " тре",
+   " Tri",
+   " ech",
+   " Upper",
+   "ech",
+   "Triangle",
+   "Upper",
+   " UPPER",
+   "aussian",
+   " Gaussian"
+  ],
+  "peak_z": 5.789921760559082
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

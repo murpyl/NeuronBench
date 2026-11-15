@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1025,
+ "down_norm": 0.9692981839179993,
+ "logit_lens": {
+  "up": [
+   " by",
+   "由",
+   "by",
+   "_by",
+   " By",
+   "By",
+   " oleh",
+   ".by",
+   "由中国",
+   "-by",
+   "_BY",
+   "(by"
+  ],
+  "down": [
+   "izio",
+   "的眼光",
+   "raits",
+   "enza",
+   "unately",
+   "enz",
+   "ignite",
+   "CTYPE",
+   "的缘故",
+   "焉",
+   "uzu",
+   "话说"
+  ],
+  "peak_z": 22.29987144470215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

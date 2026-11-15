@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 904,
+ "down_norm": 0.9922924637794495,
+ "logit_lens": {
+  "up": [
+   "ura",
+   " slave",
+   "sl",
+   "anka",
+   "inea",
+   "iced",
+   " gamb",
+   "esion",
+   "\\/\\/",
+   "世",
+   "orges",
+   "oul"
+  ],
+  "down": [
+   "时代的",
+   " Trend",
+   "大国",
+   " trends",
+   " trend",
+   " trending",
+   "潮流",
+   "文化的",
+   "ظاهرة",
+   "濠",
+   " Trends",
+   "趋势"
+  ],
+  "peak_z": 5.728266716003418
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

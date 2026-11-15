@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1236,
+ "down_norm": 1.0531835556030273,
+ "logit_lens": {
+  "up": [
+   " doc",
+   "文档",
+   "doc",
+   " document",
+   "(doc",
+   ".owner",
+   "document",
+   "\tdoc",
+   "_doc",
+   "Doc",
+   "Document",
+   "Owner"
+  ],
+  "down": [
+   "tempt",
+   "vio",
+   "atown",
+   ".bi",
+   "orce",
+   "овых",
+   "uyện",
+   "ulo",
+   "olis",
+   " cứng",
+   "uzione",
+   "ढ"
+  ],
+  "peak_z": 6.109196186065674
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

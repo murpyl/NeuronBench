@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 823,
+ "down_norm": 0.9604310393333435,
+ "logit_lens": {
+  "up": [
+   "某种",
+   "一种",
+   "的一种",
+   "某个",
+   " something",
+   "一種",
+   "另一种",
+   "someone",
+   "something",
+   " Something",
+   " someone",
+   "另一个"
+  ],
+  "down": [
+   "itemap",
+   "iplina",
+   "thè",
+   "ąd",
+   "OUS",
+   "ISED",
+   "adays",
+   "а",
+   "arl",
+   "ось",
+   "loor",
+   "arem"
+  ],
+  "peak_z": 11.181711196899414
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

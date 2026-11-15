@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1903,
+ "down_norm": 1.1074345111846924,
+ "logit_lens": {
+  "up": [
+   "istencia",
+   "iales",
+   "IAL",
+   "orthy",
+   " gratuite",
+   "onian",
+   " pratique",
+   "rias",
+   "uits",
+   "[:]",
+   "uite",
+   "erais"
+  ],
+  "down": [
+   "镓",
+   "间",
+   "ls",
+   "GS",
+   "蕗",
+   "apGestureRecognizer",
+   "umn",
+   "叠加",
+   "叔叔",
+   "ethyl",
+   "地下",
+   " Shorts"
+  ],
+  "peak_z": 5.054562568664551
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

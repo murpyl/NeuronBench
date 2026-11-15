@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2982,
+ "down_norm": 1.1328694820404053,
+ "logit_lens": {
+  "up": [
+   "ked",
+   "quez",
+   "ko",
+   "ks",
+   "ky",
+   "кая",
+   "layers",
+   "kd",
+   "parate",
+   "ood",
+   "ко",
+   "idl"
+  ],
+  "down": [
+   "一些",
+   "些",
+   "许多",
+   "很多",
+   " some",
+   " Some",
+   "Some",
+   "了一些",
+   "許多",
+   "一点",
+   " lot",
+   "不少"
+  ],
+  "peak_z": 7.85705041885376
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 774,
+ "down_norm": 1.1244757175445557,
+ "logit_lens": {
+  "up": [
+   ",U",
+   ">x",
+   " Coalition",
+   "使我",
+   "使之",
+   "\tU",
+   "使其",
+   "\tunion",
+   "(expect",
+   "esser",
+   "枰",
+   ",x"
+  ],
+  "down": [
+   "erg",
+   "oba",
+   "armed",
+   "stra",
+   "掌握了",
+   "闻",
+   "uru",
+   "Typ",
+   "دة",
+   "hop",
+   "igi",
+   "RowAt"
+  ],
+  "peak_z": 4.831670761108398
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

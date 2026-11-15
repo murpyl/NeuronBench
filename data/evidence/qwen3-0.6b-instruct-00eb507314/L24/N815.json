@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 815,
+ "down_norm": 1.0214440822601318,
+ "logit_lens": {
+  "up": [
+   "miss",
+   "[arr",
+   "ateg",
+   "amt",
+   "ikh",
+   " [('",
+   ".setView",
+   "arty",
+   "nton",
+   "[table",
+   " Mick",
+   "hk"
+  ],
+  "down": [
+   " dimensions",
+   " dimension",
+   "dimension",
+   "Dimension",
+   " Dimensions",
+   "dimensions",
+   "Dimensions",
+   " Dimension",
+   "_dimension",
+   "_dimensions",
+   " dimensional",
+   "_DIM"
+  ],
+  "peak_z": 10.318812370300293
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

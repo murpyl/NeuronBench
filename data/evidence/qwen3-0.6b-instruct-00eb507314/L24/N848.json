@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 848,
+ "down_norm": 1.207435131072998,
+ "logit_lens": {
+  "up": [
+   " world",
+   "世界",
+   "world",
+   "世界的",
+   "_world",
+   "(world",
+   "World",
+   "的世界",
+   " World",
+   "\tworld",
+   " worlds",
+   "-world"
+  ],
+  "down": [
+   "ELY",
+   "ándose",
+   "elong",
+   "put",
+   "][-",
+   "vak",
+   "ateurs",
+   "acy",
+   "ateur",
+   "ency",
+   "سار",
+   "enter"
+  ],
+  "peak_z": 22.828310012817383
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

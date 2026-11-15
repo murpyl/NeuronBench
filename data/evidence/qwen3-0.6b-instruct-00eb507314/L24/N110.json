@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 110,
+ "down_norm": 0.6275082230567932,
+ "logit_lens": {
+  "up": [
+   "ures",
+   " fro",
+   "LEASE",
+   " zeroes",
+   "ья",
+   "款",
+   "ля",
+   "ure",
+   " zeros",
+   "ModelError",
+   "rollment",
+   "{text"
+  ],
+  "down": [
+   "ey",
+   "cel",
+   "óg",
+   ".Geometry",
+   "teness",
+   "Geometry",
+   "利物",
+   "->",
+   "ohn",
+   "way",
+   "[in",
+   "的人来说"
+  ],
+  "peak_z": 5.091179847717285
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

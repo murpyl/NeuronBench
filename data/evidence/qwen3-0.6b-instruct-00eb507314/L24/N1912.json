@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1912,
+ "down_norm": 1.1451767683029175,
+ "logit_lens": {
+  "up": [
+   "SizeMode",
+   "委宣传部",
+   "/providers",
+   "URAL",
+   "oss",
+   " TimeUnit",
+   "vably",
+   "okedex",
+   "atile",
+   "abyrinth",
+   "allback",
+   "城县"
+  ],
+  "down": [
+   " right",
+   "right",
+   " Right",
+   "Right",
+   "右",
+   "(right",
+   " RIGHT",
+   "\tright",
+   "-right",
+   "_right",
+   ".right",
+   "RIGHT"
+  ],
+  "peak_z": 25.664960861206055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

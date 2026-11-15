@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 413,
+ "down_norm": 0.9878166913986206,
+ "logit_lens": {
+  "up": [
+   "sense",
+   "揖",
+   "illions",
+   " DIRECTORY",
+   "rix",
+   "eses",
+   "inos",
+   "宥",
+   "haus",
+   " Sense",
+   "сол",
+   "ikal"
+  ],
+  "down": [
+   "1",
+   "₁",
+   "１",
+   "�",
+   "¹",
+   " satu",
+   "壹",
+   "-One",
+   " language",
+   "一",
+   "�",
+   "-one"
+  ],
+  "peak_z": 6.870114326477051
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

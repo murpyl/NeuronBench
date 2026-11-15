@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1765,
+ "down_norm": 1.07547128200531,
+ "logit_lens": {
+  "up": [
+   "mts",
+   "uent",
+   "plevel",
+   "HeaderText",
+   ".lv",
+   " titles",
+   "aton",
+   "cord",
+   "пус",
+   "allery",
+   "anter",
+   "avez"
+  ],
+  "down": [
+   " ngắn",
+   " gsi",
+   " Deb",
+   "_detail",
+   "lectron",
+   "igh",
+   "ible",
+   "ório",
+   " المصدر",
+   "Detail",
+   "่",
+   "cribe"
+  ],
+  "peak_z": 5.024662971496582
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

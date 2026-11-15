@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 657,
+ "down_norm": 1.0408955812454224,
+ "logit_lens": {
+  "up": [
+   " map",
+   " maps",
+   "map",
+   "maps",
+   "mapping",
+   " Maps",
+   " mappings",
+   " mapping",
+   "-map",
+   " Mapping",
+   "空间",
+   ".map"
+  ],
+  "down": [
+   "(parameters",
+   " characterize",
+   " character",
+   " caracter",
+   "_character",
+   "character",
+   "cope",
+   "yne",
+   "_PARAMETER",
+   " характерист",
+   "YES",
+   " CHARACTER"
+  ],
+  "peak_z": 7.421550750732422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

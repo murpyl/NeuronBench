@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1343,
+ "down_norm": 1.1060112714767456,
+ "logit_lens": {
+  "up": [
+   "bbe",
+   " đè",
+   "太多了",
+   "IFIER",
+   "увели",
+   "د",
+   "STYPE",
+   " geçmiş",
+   "ục",
+   "elder",
+   " WARRANTIES",
+   "JEXEC"
+  ],
+  "down": [
+   " no",
+   "no",
+   "No",
+   " No",
+   "_no",
+   "\tno",
+   "(no",
+   ".no",
+   "-no",
+   " NO",
+   "NO",
+   ".No"
+  ],
+  "peak_z": 24.12071418762207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

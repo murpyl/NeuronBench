@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2287,
+ "down_norm": 1.0842723846435547,
+ "logit_lens": {
+  "up": [
+   "示",
+   "上がり",
+   "avan",
+   "مة",
+   "@endif",
+   "esis",
+   "FALSE",
+   "öğ",
+   "etically",
+   "提",
+   "emi",
+   "otp"
+  ],
+  "down": [
+   "/tag",
+   "issance",
+   "Sphere",
+   "碇",
+   "ruk",
+   " Brothers",
+   "ndx",
+   " Sunderland",
+   "bert",
+   "_attached",
+   "dda",
+   "illé"
+  ],
+  "peak_z": 4.9217753410339355
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 558,
+ "down_norm": 1.0668814182281494,
+ "logit_lens": {
+  "up": [
+   "ице",
+   "ICH",
+   "榜",
+   " nhất",
+   "ically",
+   "itably",
+   " rated",
+   "из",
+   "ivec",
+   "拜",
+   "iences",
+   "itta"
+  ],
+  "down": [
+   "hta",
+   "mites",
+   "ặng",
+   "lan",
+   "elda",
+   "ahas",
+   "hor",
+   "orias",
+   "OTH",
+   "ril",
+   "\">%",
+   "hte"
+  ],
+  "peak_z": 4.910895824432373
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

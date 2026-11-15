@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1448,
+ "down_norm": 1.0512291193008423,
+ "logit_lens": {
+  "up": [
+   "obody",
+   "arin",
+   "⎬",
+   "afari",
+   "stro",
+   "Pane",
+   "(state",
+   "浇",
+   " breeze",
+   "Bs",
+   "子弟",
+   "wdx"
+  ],
+  "down": [
+   " turnout",
+   " onPostExecute",
+   "auga",
+   " stand",
+   " stood",
+   "ccak",
+   " migrationBuilder",
+   "cheon",
+   " AVCapture",
+   " stands",
+   " слишком",
+   "unities"
+  ],
+  "peak_z": 5.447820663452148
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

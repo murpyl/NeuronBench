@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2805,
+ "down_norm": 1.0877785682678223,
+ "logit_lens": {
+  "up": [
+   " Station",
+   "站",
+   "station",
+   " station",
+   " Stations",
+   " stations",
+   "-point",
+   "lem",
+   "Station",
+   "it",
+   ".Null",
+   "ccion"
+  ],
+  "down": [
+   "recur",
+   "支",
+   "珠",
+   "(branch",
+   "全家",
+   "/Branch",
+   "rek",
+   "arden",
+   "ɾ",
+   "arov",
+   "erate",
+   "urate"
+  ],
+  "peak_z": 6.388245582580566
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

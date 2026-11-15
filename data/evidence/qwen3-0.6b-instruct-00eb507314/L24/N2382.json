@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2382,
+ "down_norm": 1.141394019126892,
+ "logit_lens": {
+  "up": [
+   " resolution",
+   " resolutions",
+   " Resolution",
+   "resolution",
+   " resolve",
+   "Resolution",
+   " resolved",
+   " resolves",
+   " resolving",
+   "_resolution",
+   "-resolution",
+   "resolve"
+  ],
+  "down": [
+   "奄",
+   "imony",
+   "nemonic",
+   "legen",
+   "etak",
+   "腹",
+   "nesia",
+   "斯基",
+   "ammad",
+   "hammad",
+   "嚭",
+   "史"
+  ],
+  "peak_z": 17.90608787536621
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

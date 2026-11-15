@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 236,
+ "down_norm": 1.0047026872634888,
+ "logit_lens": {
+  "up": [
+   " (\\",
+   " ({",
+   " ({\n",
+   " ($",
+   " (-",
+   " (*",
+   " (�",
+   "+(\\",
+   " (&",
+   "(\\",
+   " ([",
+   " (!$"
+  ],
+  "down": [
+   " live",
+   "ENCE",
+   " Live",
+   "live",
+   "athed",
+   "contres",
+   "aths",
+   "arie",
+   "ATH",
+   "曲线",
+   "empl",
+   "经济技术"
+  ],
+  "peak_z": 9.802066802978516
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

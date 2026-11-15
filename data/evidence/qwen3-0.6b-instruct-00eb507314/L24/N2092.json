@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2092,
+ "down_norm": 1.0878523588180542,
+ "logit_lens": {
+  "up": [
+   " image",
+   " Image",
+   " images",
+   "image",
+   "形象",
+   "(image",
+   "图像",
+   "\timage",
+   "-image",
+   "_image",
+   ".image",
+   "Image"
+  ],
+  "down": [
+   "thesize",
+   " boil",
+   "retty",
+   "ัน",
+   "줄",
+   "adal",
+   " Middleware",
+   " Dot",
+   "鹩",
+   "assen",
+   "-motion",
+   " Thảo"
+  ],
+  "peak_z": 14.484131813049316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

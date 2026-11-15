@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2280,
+ "down_norm": 1.1530835628509521,
+ "logit_lens": {
+  "up": [
+   " covered",
+   " cover",
+   " covering",
+   "覆盖",
+   " covers",
+   " Cover",
+   " COVER",
+   "Cover",
+   " Covered",
+   "cover",
+   " coverage",
+   "covering"
+  ],
+  "down": [
+   "ADX",
+   "rarian",
+   "урс",
+   "RON",
+   "⎢",
+   "ยว",
+   "XHR",
+   "ODB",
+   "十足",
+   "ALAR",
+   "篌",
+   "apsible"
+  ],
+  "peak_z": 10.516448974609375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

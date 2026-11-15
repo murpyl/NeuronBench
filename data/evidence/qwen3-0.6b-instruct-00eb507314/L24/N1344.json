@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1344,
+ "down_norm": 1.1624783277511597,
+ "logit_lens": {
+  "up": [
+   "vet",
+   "jug",
+   "orrent",
+   "BAT",
+   "avigator",
+   "Topology",
+   "ponsored",
+   "NameValuePair",
+   "annies",
+   "首轮",
+   "aled",
+   "shiv"
+  ],
+  "down": [
+   " increase",
+   " increasing",
+   "increase",
+   " increases",
+   "incre",
+   "增加",
+   " Increase",
+   " Increasing",
+   "Increase",
+   " Increases",
+   " increased",
+   "Increasing"
+  ],
+  "peak_z": 12.935762405395508
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

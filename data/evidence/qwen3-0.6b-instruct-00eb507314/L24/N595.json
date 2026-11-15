@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 595,
+ "down_norm": 0.9119910597801208,
+ "logit_lens": {
+  "up": [
+   "scope",
+   "pa",
+   "agine",
+   "udios",
+   "erator",
+   " sư",
+   "助理",
+   "読んで",
+   ".HttpServletResponse",
+   ".Toolkit",
+   "耨",
+   "猷"
+  ],
+  "down": [
+   " marked",
+   " grounded",
+   " rooted",
+   " filled",
+   " anchored",
+   "marked",
+   "filled",
+   " marc",
+   " laden",
+   " marks",
+   " bog",
+   "aced"
+  ],
+  "peak_z": 7.204002380371094
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

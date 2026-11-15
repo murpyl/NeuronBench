@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1799,
+ "down_norm": 1.109861135482788,
+ "logit_lens": {
+  "up": [
+   "间的",
+   "事",
+   " say",
+   "小事",
+   "Ds",
+   "间",
+   "Cou",
+   " foram",
+   "cobra",
+   "筝",
+   " Affairs",
+   "рок"
+  ],
+  "down": [
+   "滚滚",
+   "emachine",
+   "acter",
+   "isman",
+   "ache",
+   "pray",
+   "iquid",
+   "aches",
+   "embre",
+   "ящих",
+   "<Double",
+   "(cljs"
+  ],
+  "peak_z": 5.151022911071777
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

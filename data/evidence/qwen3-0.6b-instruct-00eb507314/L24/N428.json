@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 428,
+ "down_norm": 0.9263854026794434,
+ "logit_lens": {
+  "up": [
+   " fileName",
+   "ibilit",
+   "arna",
+   "esity",
+   " complexity",
+   " ster",
+   " significance",
+   " correctness",
+   "的重要性",
+   " richness",
+   " simplicity",
+   "ความ"
+  ],
+  "down": [
+   "safe",
+   " profitable",
+   " risky",
+   " safe",
+   " durable",
+   "可靠的",
+   " comfortable",
+   "有害",
+   " supportive",
+   "坚硬",
+   "riot",
+   "ouver"
+  ],
+  "peak_z": 5.384253025054932
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

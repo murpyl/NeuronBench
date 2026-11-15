@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2152,
+ "down_norm": 1.1129932403564453,
+ "logit_lens": {
+  "up": [
+   "eing",
+   "شي",
+   "ctor",
+   "igi",
+   " rut",
+   "opher",
+   "ctors",
+   "х",
+   "eneric",
+   "茹",
+   "동",
+   "ync"
+  ],
+  "down": [
+   " study",
+   " Study",
+   "study",
+   "Study",
+   " studies",
+   "研究",
+   "_study",
+   " Studies",
+   "Studies",
+   " studying",
+   " estudio",
+   ".study"
+  ],
+  "peak_z": 17.84250259399414
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

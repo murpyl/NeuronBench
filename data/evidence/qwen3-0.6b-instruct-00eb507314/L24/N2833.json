@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2833,
+ "down_norm": 1.1924892663955688,
+ "logit_lens": {
+  "up": [
+   " head",
+   "头",
+   "head",
+   " Head",
+   " header",
+   "Head",
+   " heads",
+   "HEAD",
+   "_head",
+   " HEAD",
+   "頭",
+   "头部"
+  ],
+  "down": [
+   "alm",
+   "ephir",
+   "abbix",
+   "凇",
+   "ermo",
+   "wich",
+   "日",
+   "ablish",
+   "рист",
+   "らい",
+   "斥",
+   "asy"
+  ],
+  "peak_z": 15.485011100769043
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

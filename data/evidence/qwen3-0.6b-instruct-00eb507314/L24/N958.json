@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 958,
+ "down_norm": 1.0667539834976196,
+ "logit_lens": {
+  "up": [
+   "unate",
+   "une",
+   "un",
+   "mith",
+   "uned",
+   "una",
+   "uno",
+   "uner",
+   "unes",
+   "uffy",
+   "ires",
+   "ute"
+  ],
+  "down": [
+   "ests",
+   "esti",
+   " baggage",
+   "契",
+   " thuis",
+   "个百分",
+   "ocks",
+   "ousing",
+   "еж",
+   "xampp",
+   "蕻",
+   "bruar"
+  ],
+  "peak_z": 5.2786335945129395
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

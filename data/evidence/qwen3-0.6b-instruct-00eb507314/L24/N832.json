@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 832,
+ "down_norm": 1.0649192333221436,
+ "logit_lens": {
+  "up": [
+   " crossed",
+   " crossing",
+   " cross",
+   "Buscar",
+   "rimp",
+   " contact",
+   " duel",
+   "<dynamic",
+   "ther",
+   " cruz",
+   " fixed",
+   ":inline"
+  ],
+  "down": [
+   "lessness",
+   "лом",
+   "less",
+   "زة",
+   "ritable",
+   "LESS",
+   "лу",
+   "aden",
+   "ookie",
+   "lte",
+   "fter",
+   "itical"
+  ],
+  "peak_z": 6.138820648193359
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2469,
+ "down_norm": 0.8484505414962769,
+ "logit_lens": {
+  "up": [
+   " i",
+   " iii",
+   " jos",
+   " jim",
+   " ii",
+   " ieee",
+   " sql",
+   " q",
+   " david",
+   " iq",
+   " ith",
+   " iv"
+  ],
+  "down": [
+   " J",
+   " D",
+   ",O",
+   " I",
+   ",I",
+   ",L",
+   " E",
+   ",A",
+   " U",
+   " V",
+   " L",
+   ",J"
+  ],
+  "peak_z": 5.799880504608154
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2162,
+ "down_norm": 1.1351943016052246,
+ "logit_lens": {
+  "up": [
+   " matrix",
+   "矩阵",
+   " matrices",
+   " Matrix",
+   "\tmatrix",
+   " mat",
+   "Matrix",
+   "matrix",
+   "_matrix",
+   " matriz",
+   "(matrix",
+   "MATRIX"
+  ],
+  "down": [
+   "Rights",
+   "煽",
+   "bell",
+   "权利",
+   " Rights",
+   "optic",
+   "ergic",
+   "SENT",
+   "oph",
+   "fir",
+   "ói",
+   "byter"
+  ],
+  "peak_z": 13.228758811950684
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

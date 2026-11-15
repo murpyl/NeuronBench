@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 760,
+ "down_norm": 1.0742510557174683,
+ "logit_lens": {
+  "up": [
+   " space",
+   "空间",
+   " setSearch",
+   " Raum",
+   "OUS",
+   "Space",
+   "空間",
+   " Space",
+   " spaces",
+   " aDecoder",
+   " espacio",
+   " loginUser"
+  ],
+  "down": [
+   "anken",
+   "ryan",
+   "اجر",
+   ".pan",
+   "чат",
+   "ism",
+   " skillet",
+   "♠",
+   "ян",
+   " miệng",
+   "ancellor",
+   " richest"
+  ],
+  "peak_z": 5.7166972160339355
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

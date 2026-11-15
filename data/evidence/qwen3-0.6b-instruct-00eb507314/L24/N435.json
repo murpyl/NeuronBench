@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 435,
+ "down_norm": 0.9714184999465942,
+ "logit_lens": {
+  "up": [
+   ",",
+   "，",
+   " world",
+   ".itemView",
+   " inward",
+   "生鲜",
+   "占领",
+   "闾",
+   " pack",
+   "،",
+   "往",
+   "/world"
+  ],
+  "down": [
+   "shaw",
+   "irling",
+   "%),",
+   "otland",
+   "itage",
+   "inged",
+   "feito",
+   ".),",
+   "措施",
+   "atsu",
+   "rotein",
+   "elder"
+  ],
+  "peak_z": 6.433695316314697
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

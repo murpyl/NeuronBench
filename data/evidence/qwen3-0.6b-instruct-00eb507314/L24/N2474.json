@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2474,
+ "down_norm": 1.1028742790222168,
+ "logit_lens": {
+  "up": [
+   "열",
+   "Prot",
+   "directories",
+   "ua",
+   "蝠",
+   ".messages",
+   "个项目",
+   "prot",
+   "mut",
+   " epub",
+   "gratis",
+   " رسول"
+  ],
+  "down": [
+   "有色",
+   "chl",
+   " linkage",
+   "chos",
+   "ería",
+   "aments",
+   "amentos",
+   "ól",
+   "\tcont",
+   "ament",
+   "(sf",
+   "连锁"
+  ],
+  "peak_z": 5.443978786468506
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

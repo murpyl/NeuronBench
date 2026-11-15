@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1375,
+ "down_norm": 1.0929429531097412,
+ "logit_lens": {
+  "up": [
+   "boarding",
+   "ounce",
+   "iances",
+   "OUNCE",
+   "ophon",
+   "\\Traits",
+   "ыш",
+   "oard",
+   "actories",
+   "ervention",
+   "reetings",
+   "ibri"
+  ],
+  "down": [
+   "完全",
+   " full",
+   " fully",
+   " completely",
+   " complete",
+   "(full",
+   " Fully",
+   "全",
+   " entirely",
+   "完整",
+   " Complete",
+   "full"
+  ],
+  "peak_z": 15.78849983215332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

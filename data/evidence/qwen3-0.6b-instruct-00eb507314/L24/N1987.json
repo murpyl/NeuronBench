@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1987,
+ "down_norm": 1.0854625701904297,
+ "logit_lens": {
+  "up": [
+   "culo",
+   "ahun",
+   "他们都",
+   " dec",
+   " пользу",
+   "culos",
+   "oined",
+   "uest",
+   "IDGET",
+   "所有人",
+   "ило",
+   "桷"
+  ],
+  "down": [
+   "次",
+   "起了",
+   "起",
+   " CActive",
+   "笔",
+   "其次是",
+   "anitize",
+   "omer",
+   "structures",
+   "itize",
+   "키",
+   "cep"
+  ],
+  "peak_z": 7.463297367095947
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

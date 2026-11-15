@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 318,
+ "down_norm": 0.8499196767807007,
+ "logit_lens": {
+  "up": [
+   "s",
+   "sar",
+   "sist",
+   "sand",
+   "sut",
+   "sheets",
+   "squ",
+   "sus",
+   "sse",
+   "suit",
+   "sx",
+   "sie"
+  ],
+  "down": [
+   "了一系列",
+   "了一",
+   "了一个",
+   "gether",
+   "ят",
+   "parated",
+   "了一些",
+   "ção",
+   "veloper",
+   "ductive",
+   "iously",
+   "公安局"
+  ],
+  "peak_z": 30.216861724853516
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

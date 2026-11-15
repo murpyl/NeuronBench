@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 754,
+ "down_norm": 1.042541742324829,
+ "logit_lens": {
+  "up": [
+   "läss",
+   "渑",
+   "个百分",
+   "�",
+   "öh",
+   " Ellie",
+   ".populate",
+   "Insensitive",
+   "станавли",
+   " reversing",
+   "iek",
+   "⌡"
+  ],
+  "down": [
+   "pl",
+   "=com",
+   "pm",
+   " believe",
+   " PMC",
+   "PMC",
+   "*p",
+   "p",
+   "PT",
+   "burger",
+   "agram",
+   "prm"
+  ],
+  "peak_z": 5.207293510437012
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

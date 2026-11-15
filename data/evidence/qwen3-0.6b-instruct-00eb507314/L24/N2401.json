@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2401,
+ "down_norm": 1.093652367591858,
+ "logit_lens": {
+  "up": [
+   "shire",
+   "ystals",
+   "科学",
+   " сем",
+   ".bits",
+   "科学家",
+   "咖",
+   "uit",
+   "과학",
+   "داء",
+   ".choices",
+   "大户"
+  ],
+  "down": [
+   "rze",
+   "elin",
+   "azo",
+   "AZ",
+   "aza",
+   "情",
+   "ille",
+   "ели",
+   "erness",
+   " ela",
+   "ale",
+   "az"
+  ],
+  "peak_z": 5.416608810424805
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

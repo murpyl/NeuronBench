@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2234,
+ "down_norm": 1.1444796323776245,
+ "logit_lens": {
+  "up": [
+   "rama",
+   "inue",
+   "roma",
+   "asan",
+   " mass",
+   "lation",
+   "amma",
+   "ata",
+   "ainment",
+   "mmas",
+   "ctions",
+   "cmc"
+  ],
+  "down": [
+   " Av",
+   " St",
+   "スタン",
+   "ouv",
+   ".st",
+   "Av",
+   "\tst",
+   " Ave",
+   "(st",
+   "开",
+   "丈夫",
+   "St"
+  ],
+  "peak_z": 5.755497455596924
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

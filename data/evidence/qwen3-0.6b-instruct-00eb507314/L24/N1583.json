@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1583,
+ "down_norm": 1.1505942344665527,
+ "logit_lens": {
+  "up": [
+   " comm",
+   " Comm",
+   "comm",
+   " COMM",
+   "(comm",
+   "COMM",
+   " ком",
+   "-comm",
+   "_COMM",
+   "_comm",
+   " commun",
+   "Comm"
+  ],
+  "down": [
+   "ilestone",
+   "ipline",
+   "#line",
+   " crank",
+   "umn",
+   "iser",
+   "iple",
+   "ῖ",
+   "ipl",
+   "думал",
+   "芩",
+   "Platform"
+  ],
+  "peak_z": 8.381174087524414
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

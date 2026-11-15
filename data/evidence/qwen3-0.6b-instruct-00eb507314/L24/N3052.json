@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3052,
+ "down_norm": 1.1035935878753662,
+ "logit_lens": {
+  "up": [
+   " scale",
+   "量",
+   " scales",
+   "scale",
+   "Scale",
+   " Scale",
+   "(scale",
+   " construct",
+   " SCALE",
+   "_scale",
+   ".Scale",
+   "\tscale"
+  ],
+  "down": [
+   "ukes",
+   "akespeare",
+   "钠",
+   "蓼",
+   "uku",
+   "uke",
+   "imest",
+   "不住",
+   "plate",
+   "_NOTE",
+   "指导下",
+   "霸道"
+  ],
+  "peak_z": 7.288856029510498
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

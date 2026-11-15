@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2673,
+ "down_norm": 1.1581450700759888,
+ "logit_lens": {
+  "up": [
+   " path",
+   "路径",
+   " paths",
+   "path",
+   "Path",
+   " Path",
+   "_path",
+   "\tpath",
+   ".path",
+   "paths",
+   " Paths",
+   "-path"
+  ],
+  "down": [
+   "affe",
+   "ESCO",
+   " Cheney",
+   "双赢",
+   "inputEmail",
+   "ưa",
+   "�",
+   "ừa",
+   "ousse",
+   "washer",
+   "ье",
+   "嗪"
+  ],
+  "peak_z": 18.986507415771484
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

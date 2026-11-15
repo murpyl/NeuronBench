@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2423,
+ "down_norm": 1.1194758415222168,
+ "logit_lens": {
+  "up": [
+   "ated",
+   "ations",
+   "ation",
+   "ating",
+   "ates",
+   "atable",
+   "ATION",
+   "ators",
+   "ATIONS",
+   "ati",
+   "ate",
+   "ATED"
+  ],
+  "down": [
+   "ivid",
+   "ioned",
+   "iliar",
+   "plate",
+   "iton",
+   "itters",
+   "iona",
+   "PELL",
+   "URE",
+   "Plate",
+   "ian",
+   "ividad"
+  ],
+  "peak_z": 12.458518028259277
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

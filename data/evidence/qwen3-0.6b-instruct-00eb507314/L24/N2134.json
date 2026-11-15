@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2134,
+ "down_norm": 1.152637243270874,
+ "logit_lens": {
+  "up": [
+   "的意思",
+   "awei",
+   "ύ",
+   "Υ",
+   "ibern",
+   "plotlib",
+   "umbing",
+   "_ATTRIBUTE",
+   "üm",
+   "ptr",
+   "ürger",
+   " ​​"
+  ],
+  "down": [
+   " case",
+   "case",
+   "-case",
+   "Case",
+   "(case",
+   " Case",
+   "\tcase",
+   "_case",
+   " cases",
+   " CASE",
+   "CASE",
+   ".case"
+  ],
+  "peak_z": 23.63330841064453
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

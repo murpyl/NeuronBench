@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2610,
+ "down_norm": 1.2483550310134888,
+ "logit_lens": {
+  "up": [
+   " no",
+   "不",
+   "no",
+   " not",
+   "不会",
+   "No",
+   " không",
+   "不做",
+   " не",
+   "not",
+   "_no",
+   " No"
+  ],
+  "down": [
+   "ими",
+   "edException",
+   "ãn",
+   "IFI",
+   "롤",
+   "оля",
+   "ければ",
+   "@click",
+   "GetMethod",
+   "forge",
+   "PFN",
+   "幌"
+  ],
+  "peak_z": 13.5426025390625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

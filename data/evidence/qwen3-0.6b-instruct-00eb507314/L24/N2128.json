@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2128,
+ "down_norm": 1.1759750843048096,
+ "logit_lens": {
+  "up": [
+   " cross",
+   "cross",
+   " Cross",
+   "Cross",
+   ".cross",
+   "_cross",
+   "-cross",
+   " CROSS",
+   " crosses",
+   "横",
+   "交叉",
+   "橫"
+  ],
+  "down": [
+   " Kb",
+   "andard",
+   "bild",
+   "赔",
+   "涕",
+   ".decor",
+   "筹",
+   "edis",
+   " والله",
+   "谜",
+   "습",
+   "agues"
+  ],
+  "peak_z": 15.52895450592041
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

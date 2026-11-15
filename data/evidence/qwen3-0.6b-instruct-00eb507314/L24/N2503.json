@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2503,
+ "down_norm": 1.1169254779815674,
+ "logit_lens": {
+  "up": [
+   " should",
+   "应该",
+   "应",
+   "should",
+   " Should",
+   "Should",
+   "應該",
+   "應",
+   ".should",
+   "应当",
+   " shouldn",
+   "应在"
+  ],
+  "down": [
+   "ibble",
+   "optgroup",
+   "증",
+   "祺",
+   "蔑",
+   "arring",
+   "qui",
+   "菀",
+   ".chapter",
+   "好吧",
+   "chapter",
+   "ặng"
+  ],
+  "peak_z": 17.872068405151367
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

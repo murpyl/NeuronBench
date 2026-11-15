@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 647,
+ "down_norm": 1.001362681388855,
+ "logit_lens": {
+  "up": [
+   "gunta",
+   "phins",
+   "ikes",
+   ".Microsoft",
+   "ampton",
+   "ugal",
+   "няти",
+   "mpp",
+   "栗",
+   " gust",
+   "Sent",
+   "荡"
+  ],
+  "down": [
+   "��",
+   "пов",
+   "诔",
+   "fold",
+   "aves",
+   "维尔",
+   "=search",
+   "头",
+   "頭",
+   " exploit",
+   "пло",
+   "刨"
+  ],
+  "peak_z": 5.11596155166626
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

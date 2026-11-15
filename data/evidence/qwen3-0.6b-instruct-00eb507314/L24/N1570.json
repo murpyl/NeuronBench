@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1570,
+ "down_norm": 1.078782081604004,
+ "logit_lens": {
+  "up": [
+   " all",
+   "所有",
+   "All",
+   " All",
+   "all",
+   "(all",
+   ".all",
+   "_all",
+   "所有的",
+   " ALL",
+   "ALL",
+   "\tall"
+  ],
+  "down": [
+   "prises",
+   "您的孩子",
+   "prise",
+   "PING",
+   "��",
+   "command",
+   "beit",
+   "posting",
+   "您的",
+   "styl",
+   "theless",
+   "杵"
+  ],
+  "peak_z": 13.780427932739258
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 631,
+ "down_norm": 1.139697551727295,
+ "logit_lens": {
+  "up": [
+   "os",
+   "oland",
+   "odate",
+   "OCI",
+   "oes",
+   "oS",
+   "opro",
+   "odb",
+   "opsy",
+   "oplan",
+   "oman",
+   "och"
+  ],
+  "down": [
+   "的手",
+   "性",
+   " tuyệt",
+   "感",
+   " miracle",
+   " ig",
+   "性强",
+   "case",
+   "Hands",
+   "hands",
+   "anja",
+   "кт"
+  ],
+  "peak_z": 7.617539882659912
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

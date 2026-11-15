@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1931,
+ "down_norm": 1.0686407089233398,
+ "logit_lens": {
+  "up": [
+   "pto",
+   "arten",
+   "unts",
+   "xious",
+   "yme",
+   " Wrest",
+   "江山",
+   "ych",
+   "ys",
+   "&R",
+   "ysi",
+   "JKLMNOP"
+  ],
+  "down": [
+   " Durch",
+   "avity",
+   "OLA",
+   "埭",
+   "td",
+   "OD",
+   "⌀",
+   "ucose",
+   "olecular",
+   "\\Id",
+   "OGLE",
+   "平均每"
+  ],
+  "peak_z": 5.367667198181152
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

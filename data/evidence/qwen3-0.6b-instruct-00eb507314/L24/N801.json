@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 801,
+ "down_norm": 0.9443801641464233,
+ "logit_lens": {
+  "up": [
+   "ystate",
+   "anza",
+   "Delete",
+   "ลบ",
+   "elle",
+   "余万元",
+   " Delete",
+   "ecz",
+   "schlä",
+   " dele",
+   ".delete",
+   "vin"
+  ],
+  "down": [
+   " transit",
+   "actor",
+   "اء",
+   "genic",
+   " humanoid",
+   " autonom",
+   " clouds",
+   "-shadow",
+   " renewable",
+   "液",
+   " bi",
+   "生物"
+  ],
+  "peak_z": 4.94483757019043
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

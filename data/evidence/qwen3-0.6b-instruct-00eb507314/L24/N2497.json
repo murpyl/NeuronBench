@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2497,
+ "down_norm": 1.121108055114746,
+ "logit_lens": {
+  "up": [
+   "isle",
+   "fromJson",
+   "脔",
+   "_",
+   " setId",
+   " |_",
+   "ense",
+   "ocale",
+   "لا",
+   "堂",
+   "how",
+   " (::"
+  ],
+  "down": [
+   " nature",
+   "nature",
+   " Nature",
+   "Nature",
+   " natur",
+   " Natur",
+   "性质",
+   "自然",
+   "性",
+   " character",
+   "大自然",
+   "自然界"
+  ],
+  "peak_z": 22.636306762695312
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 372,
+ "down_norm": 0.921135425567627,
+ "logit_lens": {
+  "up": [
+   "Assistant",
+   "้อง",
+   "圩",
+   "ά",
+   "awai",
+   "[attr",
+   "�",
+   "[arr",
+   "ash",
+   "ῶ",
+   "开业",
+   "ets"
+  ],
+  "down": [
+   "ledo",
+   "igkeit",
+   "iesen",
+   "::-",
+   "xBA",
+   "xba",
+   "lsi",
+   "cente",
+   "cies",
+   "cing",
+   "bersome",
+   "vero"
+  ],
+  "peak_z": 4.84921407699585
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

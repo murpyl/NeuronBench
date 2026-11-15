@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 141,
+ "down_norm": 0.789395272731781,
+ "logit_lens": {
+  "up": [
+   " ance",
+   "ILING",
+   " ilk",
+   " nya",
+   " vol",
+   " rob",
+   " knack",
+   "YLE",
+   "-Shirt",
+   " amor",
+   " po",
+   " ent"
+  ],
+  "down": [
+   "se",
+   "so",
+   "cal",
+   "rep",
+   "sequ",
+   "co",
+   "per",
+   "rem",
+   "fort",
+   "ins",
+   "un",
+   "con"
+  ],
+  "peak_z": 5.152254581451416
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

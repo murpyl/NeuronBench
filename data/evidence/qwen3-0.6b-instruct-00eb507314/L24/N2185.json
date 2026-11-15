@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2185,
+ "down_norm": 1.109415888786316,
+ "logit_lens": {
+  "up": [
+   " growth",
+   " Growth",
+   "growth",
+   " grow",
+   "成长",
+   "成長",
+   "发展",
+   " grows",
+   "生长",
+   " Grow",
+   "Grow",
+   "_growth"
+  ],
+  "down": [
+   ">>>(",
+   "nbsp",
+   "↩",
+   "rapper",
+   "AVING",
+   "aving",
+   " Brig",
+   " offsetof",
+   "VOID",
+   "duino",
+   "ubit",
+   " SDLK"
+  ],
+  "peak_z": 14.21822452545166
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

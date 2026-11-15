@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2089,
+ "down_norm": 1.1463725566864014,
+ "logit_lens": {
+  "up": [
+   "gles",
+   "level",
+   " plaisir",
+   "Tower",
+   "egasus",
+   ".level",
+   " addTarget",
+   "主动性",
+   " level",
+   "ento",
+   "idy",
+   "etty"
+  ],
+  "down": [
+   "人",
+   " people",
+   "people",
+   "人的",
+   " People",
+   "People",
+   "人在",
+   " PEOPLE",
+   " person",
+   "person",
+   "_people",
+   "人と"
+  ],
+  "peak_z": 12.019652366638184
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

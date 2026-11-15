@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1752,
+ "down_norm": 1.1994823217391968,
+ "logit_lens": {
+  "up": [
+   "ье",
+   "Expose",
+   "andles",
+   "glas",
+   "źni",
+   "��",
+   " chests",
+   "uers",
+   "ibox",
+   "pNext",
+   "iar",
+   " footing"
+  ],
+  "down": [
+   " ",
+   "8",
+   "6",
+   "7",
+   "9",
+   "3",
+   "1",
+   "5",
+   "2",
+   "4",
+   "(sizeof",
+   " zero"
+  ],
+  "peak_z": 9.380889892578125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

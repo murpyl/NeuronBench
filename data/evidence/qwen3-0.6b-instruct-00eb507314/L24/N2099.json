@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2099,
+ "down_norm": 1.1307041645050049,
+ "logit_lens": {
+  "up": [
+   " see",
+   "见",
+   "see",
+   " See",
+   "See",
+   " sees",
+   "見",
+   " seeing",
+   " SEE",
+   " saw",
+   " cf",
+   "参"
+  ],
+  "down": [
+   "ไหม",
+   "等奖",
+   "NSS",
+   "isations",
+   "艅",
+   "isodes",
+   "-blood",
+   "报道称",
+   "主义者",
+   "点半",
+   "uste",
+   "化进程"
+  ],
+  "peak_z": 21.682363510131836
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

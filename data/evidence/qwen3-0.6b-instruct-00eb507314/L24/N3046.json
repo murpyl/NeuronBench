@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3046,
+ "down_norm": 1.1340067386627197,
+ "logit_lens": {
+  "up": [
+   "resse",
+   "omid",
+   " Wall",
+   "ść",
+   "Wall",
+   "OTS",
+   "_wall",
+   " WALL",
+   "レス",
+   "endant",
+   " stockings",
+   "bucks"
+  ],
+  "down": [
+   "�数",
+   "SError",
+   "LError",
+   "odelist",
+   "/mL",
+   " Jae",
+   " envelop",
+   "<input",
+   "ValueHandling",
+   "unan",
+   ".unshift",
+   "aghan"
+  ],
+  "peak_z": 5.182898044586182
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}
