@@ -51,7 +51,8 @@ gne stats resid
 gne stats act                                # optional: activation statistics in the evidence
 for L in 6 14 20 24; do
   gne lens logit --layer $L
-  gne sweep --layer $L                       # 384 neurons + 64 random controls, design main_rel
+  gne sweep --layer $L                       # 384 random neurons + 64 random controls, design main_rel
+  gne sweep --layer $L --neurons <ids>       # optional extras: e.g. the 64 sharpest logit-lens neurons (more REAL items)
   gne rank --run L$L-main_rel
 done
 python scripts/export_evidence.py --model $GNE_MODEL --run ~/.gne/runs/<model_id>/L*-main_rel.jsonl --out data/evidence
@@ -71,7 +72,8 @@ harbor run -p tasks -a oracle                # every reward should be 1
 ```
 
 `--n-choice` / `--n-null` are per layer, so 4 layers × (30 + 20) = 200 items. `data/items.jsonl` holds the hidden
-answer and diagnostics for every item and is what the baselines and report read.
+answer and diagnostics for every item and is what the baselines and report read. Each item's `meta.selection` says
+whether its neuron came from gne's seeded `random:384` draw or was hand-picked (extras), so results can be split.
 
 `tasks/` holds task folders only. Valkyrie rejects a dataset that contains `metric.py`, so `dataset/metric.py` stays
 out of it. Use it for plain Harbor datasets, or run it on exported rewards.
