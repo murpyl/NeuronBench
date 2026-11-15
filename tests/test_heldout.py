@@ -57,3 +57,21 @@ def test_configs_merge_adds_design_and_prompt_set(tmp_path):
     assert prompts["heldout"] == spec["prompts"] and prompts["en"] == {"who": "Who are you?"}
     assert not set(spec["prompts"]) & {"who", "snake", "orange", "free"}
     assert len(designs["heldout_rel"]["prompts"]) * len(designs["heldout_rel"]["doses"]) == 20
+
+
+def test_merge_refuses_own_output(tmp_path):
+    src = tmp_path / "out"
+    (src / "prompts").mkdir(parents=True)
+    with pytest.raises(SystemExit):
+        _script("heldout_configs").merge(src, src, REPO / "heldout" / "design.yaml")
+    assert src.exists()
+
+
+def test_coverage_gaps_flags_partial_units():
+    coverage_gaps = _script("heldout_reliability").coverage_gaps
+    pairs = {("a", -0.7), ("a", 0.8)}
+    recs = [{"kind": "baseline", "prompt": "a", "dose": 0.0, "neuron": None}]
+    recs += [{"kind": "neuron", "prompt": "a", "dose": d, "neuron": 1} for d in (-0.7, 0.8)]
+    recs += [{"kind": "random", "prompt": "a", "dose": -0.7, "neuron": 0}]
+    assert coverage_gaps(recs, pairs) == ["random 0: missing 1/2"]
+    assert coverage_gaps(recs[:3], pairs) == []

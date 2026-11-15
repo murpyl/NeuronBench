@@ -104,6 +104,19 @@ def summarize(v: list[float]) -> dict:
             "p97.5": round(float(np.percentile(v, 97.5)), 3), "n": int(v.size)}
 
 
+def coverage_gaps(recs: list[dict], pairs: set[tuple[str, float]]) -> list[str]:
+    """Units (and baselines) missing any expected (prompt, dose) condition, e.g. from a sweep that stopped early."""
+    have: dict[tuple, set] = {}
+    for r in recs:
+        key = ("baseline", r["prompt"]) if r["kind"] == "baseline" else (r["kind"], int(r["neuron"]))
+        have.setdefault(key, set()).add((r["prompt"], round(float(r["dose"]), 6)))
+    gaps = [f"baseline {p}" for p in sorted({p for p, _ in pairs}) if ("baseline", p) not in have]
+    for key, got in sorted(have.items(), key=str):
+        if key[0] != "baseline" and (miss := pairs - got):
+            gaps.append(f"{key[0]} {key[1]}: missing {len(miss)}/{len(pairs)}")
+    return gaps
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", required=True, help="held-out sweep JSONL (parts are read too)")
@@ -116,6 +129,7 @@ def main():
     ap.add_argument("--bar", type=float, default=0.85)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--out", default=None, help="write per-neuron held-out labels and the summary here (JSON)")
+    ap.add_argument("--allow-incomplete", action="store_true", help="rank even if some units lack conditions")
     a = ap.parse_args()
 
     path = Path(a.run).expanduser()
@@ -127,6 +141,14 @@ def main():
         r["token_ids"] = r.get("token_ids") or []
     prompts = sorted(a.prompts.split(",")) if a.prompts else sorted({r["prompt"] for r in recs if r["kind"] != "baseline"})
     recs = subset(recs, set(prompts))
+    meta_p = path.with_name(path.name.removesuffix(".jsonl") + ".meta.json")
+    if meta_p.exists():
+        pairs = {(p, round(float(d), 6)) for p, d in json.loads(meta_p.read_text())["pairs"] if p in prompts}
+    else:
+        pairs = {(r["prompt"], round(float(r["dose"]), 6)) for r in recs if r["kind"] != "baseline"}
+    gaps = coverage_gaps(recs, pairs)
+    if gaps and not a.allow_incomplete:
+        raise SystemExit(f"incomplete sweep ({len(gaps)} gaps, e.g. {gaps[:3]}); finish it or pass --allow-incomplete")
     rank = make_ranker(a.word_unit, a.model)
 
     full = rank(recs)
@@ -146,10 +168,12 @@ def main():
         stats["kappa"].append(kappa(xa >= REAL, xb >= REAL))
         stats["agree"].append(float(np.mean((xa >= REAL) == (xb >= REAL))))
     split = {key: summarize(v) for key, v in stats.items()}
+    auc_ok = [x for x in stats["auc"] if np.isfinite(x)]
 
     summary = {"run": path.name, "word_unit": a.word_unit, "prompts": prompts, "half": k, "n_neurons": len(neurons),
                "n_controls": n_ctrl, "real_share": round(float(full_lab.mean()), 3), "split_half": split,
-               "bar": a.bar, "passes": bool(split["auc"]["median"] is not None and split["auc"]["median"] >= a.bar)}
+               "bar": a.bar, "passes": bool(auc_ok and np.median(auc_ok) >= a.bar),
+               "incomplete_units": len(gaps)}
 
     if a.old_units:
         old = {int(u["neuron"]): u for u in read_jsonl(a.old_units) if u["kind"] == "neuron"}
