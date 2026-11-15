@@ -1,8 +1,8 @@
-"""Neuron zoo: a hand-picked gallery of the funniest steered replies in the raw sweeps.
+"""Neuron gallery: a hand-picked gallery of the funniest steered replies in the raw sweeps.
 
 Every quote is read from data/raw (main_rel and heldout_rel rollouts), so the page can be rebuilt from a fresh clone:
 
-python scripts/neuron_zoo.py --out results/neuron_zoo.md
+python scripts/neuron_gallery.py --out results/neuron_gallery.md
 """
 
 import argparse
@@ -16,7 +16,7 @@ DESIGNS = ("main_rel", "heldout_rel")
 MAX_CHARS = 240
 
 # (section, intro, [(layer, neuron, nickname, note, [(prompt, dose), ...])])
-ZOO = [
+GALLERY = [
     ("Personality transplants",
      "One push and every prompt gets the same personality.",
      [(14, 1456, "The god complex",
@@ -148,7 +148,7 @@ def label(u: dict) -> str:
 
 def render(root: Path) -> str:
     texts, units, prompts, baselines = load(root / "data" / "raw")
-    out = ["# Neuron zoo", "",
+    out = ["# Neuron gallery", "",
            ("The funniest steered replies from the Qwen3-0.6B sweeps behind NeuronBench (layers 14, 20 and 24, "
            "replies capped at 128 tokens). Doses are the push size relative to the median residual norm. "
            "Negative doses push against the neuron. Every quote comes straight from `data/raw/`, with long replies "
@@ -156,12 +156,12 @@ def render(root: Path) -> str:
            f"{MAX_CHARS} characters and newlines shown as ↵. `null_pct` is the share of random-direction controls "
            "with lower gne vocabulary mass (REAL when it is at least 0.95). The benchmark's labels use the main "
            "sweep (who, snake, orange, free)."), "",
-           "Built by `python scripts/neuron_zoo.py --out results/neuron_zoo.md`.", "",
+           "Built by `python scripts/neuron_gallery.py --out results/neuron_gallery.md`.", "",
            "## Prompts and unsteered replies", "", "| Key | Prompt | Unsteered reply |", "|---|---|---|"]
     for key, prompt in prompts.items():
         out.append(f"| {key} | {cell(prompt)} | {cell(baselines.get(key, ''), 120)} |")
     out.append("")
-    for section, intro, entries in ZOO:
+    for section, intro, entries in GALLERY:
         out += [f"## {section}", "", intro, ""]
         for layer, neuron, nick, note, picks in entries:
             title = f"L{layer} N{neuron}" + (f": {nick}" if nick else "")

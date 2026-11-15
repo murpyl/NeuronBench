@@ -1,8 +1,8 @@
-# Neuron zoo
+# Neuron gallery
 
 The funniest steered replies from the Qwen3-0.6B sweeps behind NeuronBench (layers 14, 20 and 24, replies capped at 128 tokens). Doses are the push size relative to the median residual norm. Negative doses push against the neuron. Every quote comes straight from `data/raw/`, with long replies cut at 240 characters and newlines shown as ↵. `null_pct` is the share of random-direction controls with lower gne vocabulary mass (REAL when it is at least 0.95). The benchmark's labels use the main sweep (who, snake, orange, free).
 
-Built by `python scripts/neuron_zoo.py --out results/neuron_zoo.md`.
+Built by `python scripts/neuron_gallery.py --out results/neuron_gallery.md`.
 
 ## Prompts and unsteered replies
 
