@@ -6,7 +6,7 @@ shared grader (harbor_tasks.GRADE_PY) stays as it is:
 - choice `rank_score`: 1, 2/3, 1/3, 0 for the true reply ranked 1st..4th in the answer's letter order; letters the answer
   leaves out share the remaining positions (a bare "B" that is wrong scores 1/3). No letter scores 0.
 - choice `letter_brier` (loss): 0.5 * sum_k (p_k - y_k)^2 over A-D, in [0, 1]; uniform guessing gives 0.375. Without four
-  valid probabilities the answer counts as one-hot on its first letter.
+  valid probabilities the answer counts as one-hot on its first letter; no letter scores 1.
 - null `dense_brier` (loss): (p - null_pct)^2 against the item's continuous `meta.null_pct`, next to the usual
   `brier` (p - real)^2 against the binary label. A missing or out-of-range p scores 1 on both, as in the grader.
 
@@ -35,7 +35,7 @@ LOWER_IS_BETTER = {"letter_brier", "brier", "dense_brier"}
 def parse_ranking(raw: str) -> tuple[list[str], dict[str, float] | None]:
     """Letters in order of first mention, and their probabilities if all four are given and sum to about 1."""
     order, probs = [], {}
-    for m in re.finditer(r"\b([ABCD])\b(?:\s*[:=]?\s*(\d*\.?\d+)\s*(%?))?", raw.upper()):
+    for m in re.finditer(r"\b([ABCD])\b(?:\s*[:=]?\s*(\d*\.?\d+(?:E[-+]?\d+)?)\s*(%?))?", raw.upper()):
         letter = m.group(1)
         if letter in order:
             continue
@@ -58,8 +58,10 @@ def rank_score(order: list[str], key: str) -> float:
 
 
 def letter_brier(order: list[str], probs: dict[str, float] | None, key: str) -> float:
+    if not order:
+        return 1.0
     if probs is None:
-        probs = {order[0]: 1.0} if order else {}
+        probs = {order[0]: 1.0}
     return 0.5 * sum((probs.get(k, 0.0) - (k == key)) ** 2 for k in LETTERS)
 
 
@@ -101,6 +103,8 @@ def score_item(it: dict, det: dict) -> dict:
     if it["kind"] == "choice":
         key = it["answer"]["letter"]
         order, probs = parse_ranking(det["raw"])
+        if not order and det["parsed"] in LETTERS:
+            order = [det["parsed"]]  # the answer's first letter fell past the grader's 200-char echo
         row.update(acc=float(bool(order) and order[0] == key), rank_score=rank_score(order, key),
                    letter_brier=letter_brier(order, probs, key), probs_valid=float(probs is not None),
                    full_ranking=float(len(order) == 4), graded_acc=float(det["rewards"].get("choice_acc") or 0.0),
@@ -172,6 +176,8 @@ def summarise_tier(items: list[dict], rows: list[dict]) -> dict:
 def null_references(items: list[dict]) -> dict:
     x = [it["meta"]["null_pct"] for it in items if it["kind"] == "null"]
     y = [it["answer"]["real"] for it in items if it["kind"] == "null"]
+    if not x:
+        return {}
     base = sum(x) / len(x)
 
     def both(ps):
@@ -240,7 +246,8 @@ def main():
         rows = [score_item(it, dets[safe_name(it["id"])]) for it in items if safe_name(it["id"]) in dets]
         per_tier[name] = rows
         summary["tiers"][name] = {**summarise_tier(items, rows), "items": ipath, "exports": exports}
-        summary.setdefault("null_references", null_references(items))
+        if not summary.get("null_references"):
+            summary["null_references"] = null_references(items)
         all_rows += [{"tier": name, "format": "rank", **r} for r in rows]
     for name, *exports in a.legacy:
         items = load_items(items_path[name])

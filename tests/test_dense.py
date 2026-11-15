@@ -27,6 +27,7 @@ def test_parse_ranking_with_and_without_probabilities():
     assert dense.parse_ranking("B") == (["B"], None)
     assert dense.parse_ranking("B 0.9, D 0.9, A 0.1, C 0.1")[1] is None
     assert dense.parse_ranking("") == ([], None)
+    assert dense.parse_ranking("B 5e-1, D 2.5E-1, A 0.15, C 0.1")[1] is not None
 
 
 def test_rank_score_and_letter_brier():
@@ -37,6 +38,14 @@ def test_rank_score_and_letter_brier():
     uniform = {k: 0.25 for k in "ABCD"}
     assert abs(dense.letter_brier(list("ABCD"), uniform, "A") - 0.375) < 1e-9
     assert dense.letter_brier(["A"], None, "A") == 0.0 and dense.letter_brier(["B"], None, "A") == 1.0
+    assert dense.letter_brier([], None, "A") == 1.0
+
+
+def test_score_item_choice_falls_back_to_parsed_letter():
+    it = {"id": "choice-x-L1-N1-who+0.5", "kind": "choice", "layer": 1, "answer": {"letter": "C"}, "meta": {}}
+    row = dense.score_item(it, {"raw": "x" * 200, "parsed": "C", "rewards": {"choice_acc": 1}})
+    assert row["acc"] == 1.0 and row["acc"] == row["graded_acc"]
+    assert dense.null_references([it]) == {}
 
 
 def test_score_item_null_uses_continuous_null_pct():
