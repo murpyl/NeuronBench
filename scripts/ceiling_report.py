@@ -92,7 +92,7 @@ def main():
         base = run_baselines(items)
         ch = [it for it in items if it["kind"] == "choice"]
         nu = [it for it in items if it["kind"] == "null"]
-        if name == "static":
+        if name in ("static", "trace") and overlap is None:  # both show the neuron's own static evidence
             overlap = {tie_seed(it) for it in ch if overlap_pick(it)[1] > 0}
         look = np.mean([base[LOOKUP[name]][it["id"]] for it in ch])
         look_brier = 1 - np.mean([base[NULL_LOOKUP[name]][it["id"]] for it in nu])
