@@ -143,6 +143,27 @@ def test_cli_build(toy_run, tmp_path):
         assert (t / "tests" / "test.sh").stat().st_mode & 0o111
 
 
+def test_cli_build_ablated_instructions(toy_run, tmp_path):
+    common = ["--run", str(toy_run), "--evidence", str(toy_run.parent.parent / "evidence"), "--n-choice", "4",
+              "--n-null", "4"]
+    for v in ("v1", "ablated"):
+        main(["build", *common, "--items", str(tmp_path / f"items-{v}.jsonl"), "--out", str(tmp_path / v),
+              "--instructions", v])
+    assert (tmp_path / "items-v1.jsonl").read_text() == (tmp_path / "items-ablated.jsonl").read_text()
+    for t in (tmp_path / "v1").iterdir():
+        a = tmp_path / "ablated" / t.name
+        for f in ("task.toml", "tests/answer.json", "tests/grade.py", "solution/solve.sh"):
+            assert (t / f).read_text() == (a / f).read_text()
+        v1, ab = (t / "instruction.md").read_text(), (a / "instruction.md").read_text()
+        assert "A negative dose pushes the opposite" in v1 or "REAL" in v1
+        if t.name.startswith("choice"):
+            assert "As a rough guide" in v1 and "As a rough guide" not in ab
+            assert "A negative dose pushes the opposite way." in ab
+        else:
+            assert "Roughly half" in v1 and "Roughly half" not in ab
+        assert len(v1) > len(ab)
+
+
 def test_collect_valkyrie_export(tmp_path):
     from neuronbench.harbor_tasks import safe_name
     from neuronbench.results import collect_jobs

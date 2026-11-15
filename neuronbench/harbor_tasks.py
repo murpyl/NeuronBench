@@ -78,6 +78,14 @@ output of layer {layer}'s MLP, at every token. Its length is |dose| × the media
 over, 1.0 and above starts to break the text, and 3.0 deliberately breaks it. A negative dose pushes the opposite
 way."""
 
+INTERVENTION_ABLATED = """**The intervention.** While the model generated its reply, a vector was added to the residual stream at the
+output of layer {layer}'s MLP, at every token. Its length is |dose| × the median residual-stream norm at that layer
+("{dose_unit}" units). The model is {model}, run with greedy decoding (temperature 0), replies capped at
+{max_tokens} tokens. A negative dose pushes the opposite way."""
+
+BASE_RATE = " Roughly half of the neurons in this\nbenchmark are REAL."
+INSTRUCTIONS = ("v1", "ablated")
+
 
 def _block(text: str) -> str:
     return "```text\n" + text.replace("```", "'''") + "\n```"
@@ -88,14 +96,15 @@ def _evidence(item: Item) -> str:
             + json.dumps(item.evidence, ensure_ascii=False, indent=1) + "\n```\n")
 
 
-def choice_instruction(item: Item) -> str:
+def choice_instruction(item: Item, instructions: str = "v1") -> str:
     p = item.payload
+    intervention = INTERVENTION_ABLATED if instructions == "ablated" else INTERVENTION
     opts = "\n\n".join(f"### Reply {k}\n\n{_block(v)}" for k, v in p["options"].items())
     return f"""# Which reply did this neuron cause?
 
 You are studying MLP neuron {item.neuron} in layer {item.layer} of a small language model.
 
-{INTERVENTION.format(layer=item.layer, dose_unit=p['dose_unit'], model=item.model_id, max_tokens=p['max_tokens'])}
+{intervention.format(layer=item.layer, dose_unit=p['dose_unit'], model=item.model_id, max_tokens=p['max_tokens'])}
 
 For **one** of the four replies below, the vector was this neuron's output direction (its column of W_down) at dose
 {p['dose']:+g}. For each of the other three, it was a **random direction of exactly the same length**, added at the
@@ -123,8 +132,9 @@ Nothing else is graded.
 """
 
 
-def null_instruction(item: Item) -> str:
+def null_instruction(item: Item, instructions: str = "v1") -> str:
     p = item.payload
+    base_rate = "" if instructions == "ablated" else BASE_RATE
     pr = p["protocol"]
     conds = "\n".join(f"- \"{c['prompt']}\" at dose {c['dose']:+g}" for c in pr["conditions"])
     base = "\n\n".join(f"Prompt: \"{k}\"\n\n{_block(v)}" for k, v in p["baselines"].items())
@@ -147,8 +157,7 @@ For each unit (this neuron or a random control), we took the set of tokens in it
 unsteered reply, using only conditions with |dose| ≤ 1.6. For each such token we computed a Poisson z-score of how
 often it appears for this unit compared with the average unit, and summed the five largest positive z-scores into
 the unit's **vocabulary mass**. A neuron counts as **REAL** if its vocabulary mass is higher than that of at least
-{p['threshold']:.0%} of the random controls; otherwise it counts as **NULL**. Roughly half of the neurons in this
-benchmark are REAL.
+{p['threshold']:.0%} of the random controls; otherwise it counts as **NULL**.{base_rate}
 
 ## Unsteered replies
 
@@ -208,7 +217,9 @@ def safe_name(item_id: str) -> str:
 
 
 def write_task(item: Item, out_dir: Path, *, agent_timeout: float = 600.0,
-               allowed_hosts: list[str] | None = None) -> Path:
+               allowed_hosts: list[str] | None = None, instructions: str = "v1") -> Path:
+    if instructions not in INSTRUCTIONS:
+        raise ValueError(f"instructions must be one of {INSTRUCTIONS}, got {instructions!r}")
     tid = safe_name(item.id)
     d = out_dir / tid
     if d.exists():
@@ -217,7 +228,8 @@ def write_task(item: Item, out_dir: Path, *, agent_timeout: float = 600.0,
     (d / "tests").mkdir()
     (d / "solution").mkdir()
     (d / "task.toml").write_text(task_toml(item, f"{ORG}/{tid}", agent_timeout, allowed_hosts or []))
-    instr = choice_instruction(item) if item.kind == "choice" else null_instruction(item)
+    instr = (choice_instruction(item, instructions) if item.kind == "choice"
+             else null_instruction(item, instructions))
     (d / "instruction.md").write_text(instr)
     (d / "environment" / "Dockerfile").write_text(DOCKERFILE)
     (d / "tests" / "test.sh").write_text(TEST_SH)
