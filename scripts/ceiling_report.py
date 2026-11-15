@@ -8,6 +8,7 @@ python scripts/ceiling_report.py --model anthropic/claude-haiku-5-5 \
 
 import argparse
 import json
+from pathlib import Path
 
 import numpy as np
 
@@ -37,7 +38,8 @@ def reported(jobs, items, model):
     """{item_id: parsed answer} from Valkyrie exports' verifier output (other inputs are skipped)."""
     byname = {safe_name(it["id"]): it["id"] for it in items}
     out = {}
-    for f in jobs:
+    files = [p for j in map(Path, jobs) for p in ([j] if j.is_file() else sorted(j.rglob("*.json")))]
+    for f in files:
         try:
             with open(f) as fh:
                 d = json.load(fh)
