@@ -66,6 +66,26 @@ def choice_logit_lens(item: dict) -> str:
     return random.Random(tie_seed(item)).choice(tied)
 
 
+def lens_tokens(ev: dict) -> list[str]:
+    """Logit-lens tokens (both sides) that are plain words of >= 3 letters, lowercased."""
+    ll = ev.get("logit_lens") or {}
+    out = []
+    for k in ("up", "down"):
+        for t in ll.get(k) or []:
+            s = (t if isinstance(t, str) else str(t)).strip()
+            if len(s) >= 3 and re.fullmatch(r"[A-Za-z]+", s):
+                out.append(s.lower())
+    return out
+
+
+def overlap_pick(it: dict) -> tuple[list[str], int]:
+    """Options with the most literal lens-token occurrences, and that count (0 = no lens token in any reply)."""
+    ts = lens_tokens(it["evidence"])
+    sc = {L: sum(o.lower().count(t) for t in ts) for L, o in it["payload"]["options"].items()}
+    best = max(sc.values())
+    return [L for L, v in sc.items() if v == best], best
+
+
 def _words(text: str) -> list[str]:
     return re.findall(r"\w{3,}", text.lower())
 

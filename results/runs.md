@@ -29,3 +29,10 @@ Ceiling tiers (`neuronbench build --tier {oracle,transfer}`, datasets `neuronben
 | anthropic/claude-haiku-5-5 | oracle | `7b0d5db8-672b-4630-be60-417f3ca48ec0` | `2d588c84-a1ec-4c56-8297-a5892962806a` |
 | anthropic/claude-haiku-5-5 | transfer | `d20eee82-ab29-4f74-990f-9ef5b81f5e89` | `43f31f60-4a9e-4fda-8838-1f7bb1df1919` |
 | anthropic/claude-sonnet-5-5 | oracle | `022891c7-f330-4de5-9abb-d734b598b78e` | `e817115f-b91c-4cce-b5e3-77040b71b184` |
+
+Wrong-evidence control (`neuronbench build --tier shuffled`, datasets `neuronbench/{l14-l20,l24}-shuffled@1`; each item shows another same-layer neuron's static evidence):
+
+| model | tier | `l14-l20` | `l24` |
+|---|---|---|---|
+| anthropic/claude-haiku-5-5 | shuffled | `34cab3e0-8db6-4b44-992e-97dfba0d653a` | `16c9d368-0062-483b-9c3b-551aa3a3e69e` |
+| anthropic/claude-opus-5-5 | shuffled | `5b7edca6-1c42-470f-8f76-043eac5029e5` | `bdcd0f8c-0a82-4f2e-b8fa-504bebd59baf` |

@@ -97,7 +97,8 @@ def main(argv=None):
     b.add_argument("--min-change", type=float, default=0.1)
     b.add_argument("--tier", choices=TIERS, default="static",
                    help="evidence tier: static (the benchmark) or a positive control that adds measured outcomes: "
-                        "oracle (the neuron's over-used words), transfer (its steered replies on other prompts)")
+                        "oracle (the neuron's over-used words), transfer (its steered replies on other prompts); "
+                        "or the negative control shuffled (another same-layer neuron's static evidence)")
     b.add_argument("--agent-timeout", type=float, default=600.0)
     b.add_argument("--allowed-hosts", default="api.anthropic.com,api.openai.com",
                    help="comma-separated exact hostnames the agent container may reach (its model API); "

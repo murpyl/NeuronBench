@@ -198,7 +198,7 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
-**Five findings.**
+**Six findings.**
 
 1. **No model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
    the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]) and Opus 5.5 +4; the other
@@ -217,11 +217,18 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
    measured over-used words in the evidence (`--tier oracle`) lifts Haiku 5.5 from 48% to 63% (paired +15
    [+5, +25]) and Sonnet 5.5 from 42% to 71%; on the 82 items where those words point at one reply they score 87%
    and 93%. Showing the neuron's steered replies on *other* prompts (`--tier transfer`) adds nothing on choice
-   (+0 [−8, +8]) but lifts null AUC from 0.56 to 0.69. Even with oracle z-scores the models leave null signal unused:
-   a one-feature logistic regression gets Brier 0.089, Haiku 5.5 0.210.
+   (+0 [−8, +8]) but lifts null AUC from 0.56 to 0.69. The oracle null lookup (Brier 0.089) is not a ceiling: its one
+   feature, the summed top z-scores, is the vocabulary mass the label is computed from.
 5. **Thinking longer didn't help, and the models fail differently.** Haiku 4.5 (median 6 API calls, $10 run) tied for
    last; Haiku 5.5 (≤ 2 calls on 70% of tasks, $0.27 run) came first. Among the first four API models, pairwise agreement is
    39–65%, 44 items were missed by all four, and a plurality vote (40%) is worse than the best single model.
+6. **On choice the models do read the evidence; on null they don't.** Wrong-evidence control (`--tier shuffled`): the
+   same 255 items, with each showing another same-layer neuron's static evidence. Choice accuracy falls to chance:
+   Haiku 5.5 48% → 21% (paired −27 [−36, −19]) and Opus 5.5 45% → 23% (−22 [−32, −12]), with the lookup at 41% → 26%.
+   So the replies alone don't carry the above-chance scores, and wrong evidence misleads the models. The drop holds on
+   the 100 items with no lens token in any reply (Haiku 41% → 18%, Opus 39% → 21%), so it isn't only literal token
+   matching. Null doesn't move: Brier +0.001 / +0.011 and AUC −0.03 / −0.07, all CIs include 0. Their "Real or null?"
+   answers don't depend on which neuron's evidence they see.
 
 **Failure modes**, from the 1020 trajectories of the first four API models (Sonnet 5.5 exposes no reasoning):
 
