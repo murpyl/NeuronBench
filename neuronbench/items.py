@@ -11,8 +11,10 @@ Two item kinds, both about one neuron at a time:
 Every item is built at an evidence tier. "static" (the benchmark) shows only weight-derived evidence. "oracle" and
 "transfer" are positive controls that add measured outcomes of pushing the neuron, to test whether the task format is
 solvable when the evidence is decisive. "shuffled" is a negative control: each item shows the static evidence of a
-different neuron from the same layer, so the evidence points at nothing. All tiers reuse the static items' seeds, so
-items match one-for-one.
+different neuron from the same layer, so the evidence points at nothing. "trace" keeps the static evidence and adds,
+under every reply of a choice item, a per-token table of the unsteered model's log-probs and the neuron's logit-lens
+z-scores (neuronbench.trace); "trace-shuffled" is the shuffled tier with the donor neuron's lens z-scores in that table.
+All tiers reuse the static items' seeds, so items match one-for-one.
 """
 
 from __future__ import annotations
@@ -26,7 +28,8 @@ from .gne_io import Run, dose_key
 
 LETTERS = "ABCD"
 MAX_CHARS = 700
-TIERS = ("static", "oracle", "transfer", "shuffled")
+TIERS = ("static", "oracle", "transfer", "shuffled", "trace", "trace-shuffled")
+SHUFFLED = ("shuffled", "trace-shuffled")
 
 
 @dataclass
@@ -121,8 +124,9 @@ def augment_evidence(evidence: dict, run: Run, n: int, cand: dict | None, tier: 
     transfer: the neuron's steered replies on other prompts (choice: the other prompts at the item's dose;
     null: one prompt at its three |dose| <= 1.6 doses).
     shuffled: unchanged here; build_items swaps in another neuron's evidence (see shuffled_donors).
+    trace, trace-shuffled: unchanged here; build_items adds the per-token trace to choice payloads.
     """
-    if tier in ("static", "shuffled"):
+    if tier in ("static", "shuffled", "trace", "trace-shuffled"):
         return evidence
     if tier not in TIERS:
         raise ValueError(f"unknown tier {tier!r}; expected one of {TIERS}")
@@ -224,7 +228,10 @@ def shuffled_donors(neurons: list[int], seed: int, layer: int, kind: str) -> dic
 
 def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: int, seed: int = 0,
                 threshold: float = 0.95, real_share: float = 0.5, min_change: float = 0.1,
-                tier: str = "static") -> list[Item]:
+                tier: str = "static", traces: dict[str, dict] | None = None) -> list[Item]:
+    """traces: {static item id: record from scripts/trace_evidence.py}, required for the trace tiers."""
+    if tier.startswith("trace") and traces is None:
+        raise ValueError(f"tier {tier!r} needs traces (scripts/trace_evidence.py)")
     rng = random.Random(f"{seed}-{run.model_id}-{run.layer}")
     neurons = [n for n in run.neurons() if n in evidence and run.unit("neuron", n) is not None]
     items: list[Item] = []
@@ -245,7 +252,7 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
     picked = rng.sample(real, n_real) + _take_stratified([near, far], n_nul, rng)
     items += [make_null_item(run, n, augment_evidence(evidence[n], run, n, None, tier), threshold)
               for n in sorted(picked)]
-    if tier == "shuffled":
+    if tier in SHUFFLED:
         donor = {kind: shuffled_donors([it.neuron for it in items if it.kind == kind], seed, run.layer, kind)
                  for kind in {it.kind for it in items}}
         for it in items:
@@ -253,6 +260,14 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
             # keep layer/neuron naming the item's own neuron so the swap is not visible
             it.evidence = {**evidence[d], "layer": it.layer, "neuron": it.neuron}
             it.meta["evidence_neuron"] = d
+    if tier.startswith("trace"):
+        from .trace import attach
+
+        for it in items:
+            if it.kind == "choice":
+                if it.id not in traces:
+                    raise ValueError(f"no trace for {it.id}; rerun scripts/trace_evidence.py on the static items")
+                it.payload["trace"] = attach(it.payload, traces[it.id], it.meta.get("evidence_neuron", it.neuron))
     if tier != "static":
         for it in items:
             it.id = _tier_id(it.id, tier)

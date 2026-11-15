@@ -82,6 +82,24 @@ whether its neuron came from gne's seeded `random:384` draw or was hand-picked (
 `tasks/` holds task folders only. Valkyrie rejects a dataset that contains `metric.py`, so `dataset/metric.py` stays
 out of it. Use it for plain Harbor datasets, or run it on exported rewards.
 
+**Trace tier** (`--tier trace`, and its control `--tier trace-shuffled`). Same 255 items, replies and answers as
+static; null items are unchanged. Under the baseline and each of the 4 choice replies the task adds a per-token table:
+`base_lp` (log p of the token under the *unsteered* model, teacher-forced on prompt + reply so far), `base_top` (the
+unsteered top-1 token, shown only where it differs) and `lens_z` (the neuron's full-vocabulary logit-lens z-score for
+that token, from the weights). No number comes from a steered forward pass, so nothing in the table depends on which
+reply is the answer; `tests/test_trace.py` checks this. Tables cover only the visible (clipped, ≤ 700 char) text,
+re-tokenized. `trace-shuffled` shows the PR #10 donor neuron's static evidence *and* `lens_z`. Traces need the model
+once; the build doesn't:
+
+```bash
+python scripts/trace_evidence.py --model Qwen3-0.6B-Q8_0.gguf --items data/items.jsonl \
+    --run data/raw/L*-main_rel.jsonl --out data/traces.jsonl   # needs gne + llama-cpp-python; CPU is fine
+neuronbench build --run data/raw/L*-main_rel.jsonl --evidence data/evidence --n-choice 50 --n-null 35 \
+    --tier trace --traces data/traces.jsonl --items data/items-trace.jsonl --out tasks-trace
+```
+
+The agent-free bar for this tier is `trace_lens_mean` (pick the reply with the highest dose-signed mean `lens_z`).
+
 ## 3. Run models
 
 Same agent (mini-SWE-agent), prompts and limits for every model.

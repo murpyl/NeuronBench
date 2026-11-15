@@ -14,6 +14,9 @@ Positive-control tiers only (items whose evidence has measured fields):
 - sweep_words (choice): the reply with the largest gain in the neuron's measured `sweep_words`.
 - transfer_words (choice): the reply with the largest gain in words that the neuron's replies to the other prompts
   (`steered_elsewhere`) use and the unsteered reply does not.
+Trace tiers only (choice items whose payload has a per-token `trace`):
+- trace_lens_{mean,sum,max}: the reply whose tokens have the highest mean / summed / largest sign(dose) * lens_z.
+- trace_lp_{low,high}: the reply with the lowest / highest mean unsteered log-prob (base_lp), a neuron-blind tell.
 - sweep_logreg / transfer_logreg (null): 5-fold logistic regression on log(1 + summed top-5 sweep z) / on the number of
   distinct words in `steered_replies` that no unsteered reply uses.
 """
@@ -112,6 +115,24 @@ def choice_transfer_words(item: dict) -> str:
     return _pick_by_gain(item, seen - base)
 
 
+TRACE_STATS = {
+    "trace_lens_mean": lambda t, sign: float(np.mean([sign * z for z in t["lens_z"]])) if t["lens_z"] else 0.0,
+    "trace_lens_sum": lambda t, sign: float(sum(sign * z for z in t["lens_z"])),
+    "trace_lens_max": lambda t, sign: max((sign * z for z in t["lens_z"]), default=0.0),
+    "trace_lp_low": lambda t, sign: -float(np.mean(t["base_lp"])) if t["base_lp"] else 0.0,
+    "trace_lp_high": lambda t, sign: float(np.mean(t["base_lp"])) if t["base_lp"] else 0.0,
+}
+
+
+def choice_trace(item: dict, stat: str) -> str:
+    """The option maximising TRACE_STATS[stat] over its per-token trace (ties broken as the other baselines)."""
+    sign = 1.0 if item["payload"]["dose"] > 0 else -1.0
+    tr = item["payload"]["trace"]
+    sc = {k: round(TRACE_STATS[stat](tr[k], sign), 9) for k in item["payload"]["options"]}
+    best = max(sc.values())
+    return random.Random(tie_seed(item)).choice(sorted(k for k, v in sc.items() if v == best))
+
+
 def _sweep_feature(item: dict) -> list[float]:
     zs = sorted((w["z"] for w in item["evidence"]["sweep_words"]), reverse=True)
     return [math.log1p(sum(z for z in zs[:5] if z > 0))]
@@ -180,6 +201,9 @@ def run_baselines(items: list[dict]) -> dict[str, dict[str, float]]:
                                 ("transfer_words", choice_transfer_words, "steered_elsewhere")):
             if all(field in it["evidence"] for it in ch):
                 out[name] = {it["id"]: float(fn(it) == it["answer"]["letter"]) for it in ch}
+        if all("trace" in it["payload"] for it in ch):
+            for name in TRACE_STATS:
+                out[name] = {it["id"]: float(choice_trace(it, name) == it["answer"]["letter"]) for it in ch}
     if nu:
         ys = [it["answer"]["real"] for it in nu]
         tot = sum(ys)
