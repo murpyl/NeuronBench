@@ -91,8 +91,28 @@ def _block(text: str) -> str:
     return "```text\n" + text.replace("```", "'''") + "\n```"
 
 
+MEASURED_GUIDE = {
+    "sweep_words": "- `sweep_words` (measured): words that never occur in an unsteered reply and that this neuron's own steered\n"
+                   "  replies (all prompts, |dose| <= 1.6) use far more often than the average pushed direction (Poisson\n"
+                   "  z-score against this neuron and the random controls), most over-used first.\n",
+    "steered_elsewhere": "- `steered_elsewhere` (measured): this neuron's own steered replies to the other prompts, pushed with\n"
+                         "  the same dose as the candidate replies.\n",
+    "steered_replies": "- `steered_replies` (measured): this neuron's own steered replies to one prompt, keyed by dose.\n",
+}
+
+
+def _guide(evidence: dict) -> str:
+    extra = [MEASURED_GUIDE[k] for k in MEASURED_GUIDE if k in evidence]
+    if not extra:
+        return EVIDENCE_GUIDE
+    rest = EVIDENCE_GUIDE.split("\n", 2)[2]
+    head = ("Fields of the evidence JSON (computed from the weights or from unsteered activations, except the field marked\n"
+            "measured, which comes from actually pushing this neuron in the same experiment):")
+    return head + "\n" + rest + "".join(extra)
+
+
 def _evidence(item: Item) -> str:
-    return ("## Evidence about the neuron\n\n" + EVIDENCE_GUIDE + "\n```json\n"
+    return ("## Evidence about the neuron\n\n" + _guide(item.evidence) + "\n```json\n"
             + json.dumps(item.evidence, ensure_ascii=False, indent=1) + "\n```\n")
 
 

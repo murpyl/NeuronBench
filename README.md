@@ -221,6 +221,37 @@ Headline findings (full analysis with failure modes in `results/analysis.md`; nu
   our text, while removing the dose guide did not remove dose folklore (Haiku 5.5: 13 → 12 trajectories) and lowered
   choice accuracy rather than raising it (Haiku 5.5 −7 points [−15, 0], Sonnet 5.5 −5 [−11, +1]).
 
+### Ceiling controls
+
+Can these items be solved when the evidence is decisive? `neuronbench build --tier {oracle,transfer}` rebuilds the same
+255 items (same candidates, shuffles, answers and grader; `data/items-{oracle,transfer}.jsonl`) and adds measured
+evidence to the evidence block. **oracle** adds `sweep_words`, the words this neuron's own steered replies over-use
+relative to the random controls (with z-scores on null items). **transfer** adds this neuron's steered replies to the
+*other* prompts (choice), or to one prompt at the normal doses (null). Run as datasets `neuronbench/{l14-l20,l24}-{oracle,transfer}@1`;
+table from `scripts/ceiling_report.py`.
+
+| tier (Haiku 5.5) | Which output is it? (accuracy, 95% CI) | Real or null? Brier / AUC | choice lookup | null lookup Brier |
+|---|---|---|---|---|
+| static (the benchmark) | 0.48 [0.41, 0.56] | 0.255 / 0.56 | 0.41 (logit-lens) | 0.255 (evidence logreg) |
+| transfer | 0.48 [0.40, 0.56] | 0.240 / 0.69 | 0.47 (words from other prompts) | 0.249 |
+| oracle | **0.63** [0.55, 0.71] | **0.210** / **0.78** | 0.61 (`sweep_words`) | **0.089** (z-score logreg) |
+| oracle, Sonnet 5.5 (static: 0.42, 0.247 / 0.57) | **0.71** [0.64, 0.79] | 0.189 / 0.83 | 0.61 | 0.089 |
+
+Paired over the same items: oracle − static +0.15 [+0.05, +0.25]; transfer − static +0.00 [−0.08, +0.08].
+Sonnet 5.5 (run because Haiku's oracle score was under 85%): oracle − static +0.29 [+0.19, +0.39], and it beats the
+oracle lookup (0.71 vs 0.61).
+
+- **The task format works; the static evidence is the bottleneck.** On the 82 items where the oracle words clearly point
+  at the true reply (it gains the most of them), Haiku 5.5 scores **0.87** (0.50 on the same items with static
+  evidence); Sonnet 5.5 scores 0.93. The oracle ceiling is 63–71%, not ~95%, because its words are pooled over all prompts and doses. On 31 items the
+  true reply contains none of them, and there Haiku drops to 0.23 (Sonnet 0.35), below its static 0.48. Clipping plays no part:
+  none of those 31 unclipped replies contains a sweep word either.
+- **Seeing the neuron act on other prompts doesn't help pick its reply here** (+0 points), though it lifts null AUC
+  from 0.56 to 0.69: effects of a single-neuron push mostly don't transfer across prompts as reusable words.
+- **On "Real or null?" the models leave most of the signal unused.** With oracle z-scores, a one-feature logistic
+  regression reaches Brier 0.089, while Haiku 5.5 gets 0.210 (AUC 0.78). So static-tier AUCs of 0.52–0.57 reflect missing
+  evidence, but even decisive evidence is only partly used.
+
 ### Valkyrie runs
 
 Datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and `neuronbench/l24@1` (layer 24, 85 tasks), agent
@@ -232,6 +263,12 @@ Datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and `neuronbench/
 | anthropic/claude-sonnet-5-5 | `8ceb64b0-2f28-4ca3-9ee5-7345b5dcfc49` | `4fe2a846-1f11-4e7b-8afa-7b1dfc1bdea9` |
 | openai/gpt-5.6-luna | `ed60a1ae-99a9-4214-a10b-df38cbff5dfb` | `a535e3ba-2e81-4494-a5b3-be3256774992` |
 | anthropic/claude-haiku-4-5 | `89db445d-8a72-409e-88ca-092cd2118f0c` | `a99707ce-0e94-40cd-82f0-8d919b497fae` |
+
+Ceiling controls (Haiku 5.5): `l14-l20-oracle@1` `7b0d5db8-672b-4630-be60-417f3ca48ec0`, `l24-oracle@1`
+`2d588c84-a1ec-4c56-8297-a5892962806a`, `l14-l20-transfer@1` `d20eee82-ab29-4f74-990f-9ef5b81f5e89`, `l24-transfer@1`
+`43f31f60-4a9e-4fda-8838-1f7bb1df1919`; Sonnet 5.5: `l14-l20-oracle@1` `022891c7-f330-4de5-9abb-d734b598b78e`,
+`l24-oracle@1` `e817115f-b91c-4cce-b5e3-77040b71b184`.
+
 
 Instruction ablation (`neuronbench build --instructions ablated`, same settings): datasets
 `neuronbench/l14-l20-ablated@v1` and `neuronbench/l24-ablated@v1`, exports `jobs/valkyrie/*-ablated.json`.

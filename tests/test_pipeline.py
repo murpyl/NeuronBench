@@ -13,6 +13,7 @@ from neuronbench.items import build_items
 from neuronbench.results import collect_jobs, summarise
 
 REPO = Path(__file__).resolve().parents[1]
+WORD_OF = dict(enumerate(["apple", "river", "castle", "violin", "pepper", "tiger", "cloud", "marble"]))
 
 
 def _items(toy_run, **kw):
@@ -209,3 +210,23 @@ def test_selection_small_sweep_and_unknown(tmp_path):
     recs = [{"kind": "neuron", "neuron": n, "prompt": "who", "dose": 0.5, "text": ""} for n in sorted(big)]
     run = Run(path=tmp_path, meta={"model_id": "m", "layer": 1, "seed": 0}, records=recs, units=[])
     assert run.random_neurons() == big
+
+
+def test_control_tiers_pair_with_static_items(toy_run, tmp_path):
+    _, static = _items(toy_run)
+    for tier, fields in (("oracle", ("sweep_words",)), ("transfer", ("steered_elsewhere", "steered_replies"))):
+        _, items = _items(toy_run, tier=tier)
+        assert len(items) == len(static)
+        for s, t in zip(static, items):
+            assert t.id == s.id.replace(f"{s.kind}-", f"{s.kind}-{tier}-", 1)
+            assert (t.payload, t.answer, t.neuron) == (s.payload, s.answer, s.neuron)
+            assert any(f in t.evidence for f in fields) and set(t.evidence["available"]) >= set(s.evidence["available"])
+            visible = (write_task(t, tmp_path / tier) / "instruction.md").read_text()
+            assert "(measured)" in visible and "null_pct" not in visible and "\"mass\"" not in visible
+        ch = [t for t in items if t.kind == "choice"]
+        if tier == "oracle":
+            assert all(t.evidence["sweep_words"] == [WORD_OF[t.neuron]] for t in ch)
+        else:
+            assert all(t.payload["prompt"] not in t.evidence["steered_elsewhere"] for t in ch)
+            assert any(t.evidence["steered_elsewhere"] for t in ch)
+    assert all("(measured)" not in (write_task(s, tmp_path / "static") / "instruction.md").read_text() for s in static)

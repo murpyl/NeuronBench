@@ -11,7 +11,7 @@ from pathlib import Path
 
 from .gne_io import load_run
 from .harbor_tasks import INSTRUCTIONS, write_task
-from .items import build_items
+from .items import TIERS, build_items
 from .results import by_selection, by_stratum, collect_jobs, load_items, markdown_table, plot, summarise
 
 
@@ -31,7 +31,7 @@ def cmd_build(a):
         if not ev:
             raise SystemExit(f"no evidence for {run.model_id} L{run.layer} under {a.evidence}")
         got = build_items(run, ev, n_choice=a.n_choice, n_null=a.n_null, seed=a.seed, threshold=a.threshold,
-                          min_change=a.min_change)
+                          min_change=a.min_change, tier=a.tier)
         nc = sum(i.kind == "choice" for i in got)
         nr = sum(i.kind == "null" and i.answer["real"] for i in got)
         npick = sum(i.meta.get("selection") == "picked" for i in got)
@@ -95,6 +95,9 @@ def main(argv=None):
     b.add_argument("--seed", type=int, default=0)
     b.add_argument("--threshold", type=float, default=0.95, help="null_pct at or above which a neuron is REAL")
     b.add_argument("--min-change", type=float, default=0.1)
+    b.add_argument("--tier", choices=TIERS, default="static",
+                   help="evidence tier: static (the benchmark) or a positive control that adds measured outcomes: "
+                        "oracle (the neuron's over-used words), transfer (its steered replies on other prompts)")
     b.add_argument("--agent-timeout", type=float, default=600.0)
     b.add_argument("--allowed-hosts", default="api.anthropic.com,api.openai.com",
                    help="comma-separated exact hostnames the agent container may reach (its model API); "

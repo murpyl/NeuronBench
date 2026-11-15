@@ -33,6 +33,8 @@ def load(items_path, job_paths):
             d = json.load(fh)
         m = d["benchmark_arguments"]["contract"]["model"]
         for k, v in d["evaluation_results"].items():
+            if k not in byname:
+                continue
             try:
                 vo = json.loads(v["metadata"]["verifier_output"])
             except (KeyError, TypeError, ValueError):
