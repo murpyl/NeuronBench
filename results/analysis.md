@@ -84,6 +84,38 @@ about the candidates. "Gain" is how many more times a reply uses those words tha
 So the 39–48% static scores are not a broken task: a model handed decisive evidence uses it, and the static evidence
 (logit lens + down-norm) usually isn't decisive.
 
+## Evidence tiers and model differences
+
+On the original 150 choice / 105 null items. The headline figure's right
+panel (`results/headline.png`) plots the choice numbers.
+
+- **The static evidence, not the task format, is the bottleneck.** Rebuilding the same items with the neuron's
+  measured over-used words in the evidence (`--tier oracle`) lifts Haiku 5.5 from 48% to 63% (paired +15
+  [+5, +25]) and Sonnet 5.5 from 42% to 71%; on the 82 items where those words point at one reply they score 87%
+  and 93%. Showing the neuron's steered replies on *other* prompts (`--tier transfer`) adds nothing on choice
+  (+0 [−8, +8]) but lifts null AUC from 0.56 to 0.69. The oracle null lookup (Brier 0.089) is not a ceiling: its one
+  feature, the summed top z-scores, is the vocabulary mass the label is computed from.
+- **Thinking longer didn't help, and the models fail differently.** Haiku 4.5 (median 6 API calls, $10 run) tied for
+  last; Haiku 5.5 (≤ 2 calls on 70% of tasks, $0.27 run) came first. Among the first four API models, pairwise agreement is
+  39–65%, 44 items were missed by all four, and a plurality vote (40%) is worse than the best single model.
+- **On choice the models do read the evidence; on null they don't.** Wrong-evidence control (`--tier shuffled`): the
+  same 255 items, with each showing another same-layer neuron's static evidence. Choice accuracy falls to chance:
+  Haiku 5.5 48% → 21% (paired −27 [−36, −19]) and Opus 5.5 45% → 23% (−22 [−32, −12]), with the lookup at 41% → 26%.
+  So the replies alone don't carry the above-chance scores, and wrong evidence misleads the models. The drop holds on
+  the 100 items with no lens token in any reply (Haiku 41% → 18%, Opus 39% → 21%), so it isn't only literal token
+  matching. Null doesn't move: Brier +0.001 / +0.011 and AUC −0.03 / −0.07, all CIs include 0. Their "Real or null?"
+  answers don't depend on which neuron's evidence they see.
+- **Per-token traces lift choice, but no model beats averaging `lens_z`.** Trace tier (`--tier trace`): the same
+  items, with a per-token table under every reply showing the unsteered model's log-probs and the neuron's logit-lens
+  z-score (`lens_z`) for each token. Haiku 5.5 goes from 48% to 59% (paired +11 [+2, +19]) and Opus 5.5 from 45% to
+  75% (+30 [+21, +39]; 88% on the 50 items with a lens token in a reply). The agent-free `trace_lens_mean` (pick the
+  reply with the highest dose-signed mean `lens_z`) scores 82%, so Haiku is clearly below it (−23 [−32, −15]) and
+  Opus ties it (−7 [−15, +1]; +0 against `trace_lens_sum`). Both are well above the neuron-blind `trace_lp_high`
+  (37%), and the gain comes from this neuron's `lens_z`: with a donor neuron's evidence and `lens_z`
+  (`--tier trace-shuffled`) they fall to chance (23% / 21%, below the donor's own `trace_lens_mean` of 35%). Null
+  items are unchanged in this tier and so are their scores (Brier +0.003 / −0.002, AUC −0.01 / +0.01). Since `lens_z`
+  mostly mirrors the steering's direct effect, the bar for this tier is `trace_lens_mean`, not static.
+
 ## Failure modes on "Which output is it?"
 
 Tagged by regex over the assistant text of all 150 choice trajectories per model (Sonnet 5.5 exposes none).
