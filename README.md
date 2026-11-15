@@ -138,4 +138,50 @@ which halves both numbers. Use `neuronbench report`, or the dataset `metric.py`,
 
 ## Results
 
-TODO: table, plots, and one failure trace.
+Qwen3-0.6B (Q8_0), layers 14, 20 and 24; 255 tasks: 150 "Which output is it?" (chance 25%) and 105 "Real or null?"
+(54 real at the 95% cutoff). Every model ran as mini-SWE-agent on Valkyrie (`jobs/valkyrie/*.json`, 0 agent
+failures), scored offline with `neuronbench report --items data/items.jsonl --jobs jobs/valkyrie/*.json --out results`.
+Full tables: `results/results.md`, split by random-draw vs hand-picked neurons in `results/results_by_selection.md`.
+
+| system | Which output is it? (accuracy, 95% CI) | Real or null? (Brier, lower is better) |
+|---|---|---|
+| Claude Haiku 5.5 | **0.48** [0.40, 0.56] | 0.255 [0.233, 0.276] |
+| Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | **0.247** [0.233, 0.261] |
+| GPT-5.6-luna | 0.39 [0.31, 0.47] | 0.308 [0.256, 0.360] |
+| Claude Haiku 4.5 | 0.39 [0.31, 0.47] | 0.294 [0.244, 0.344] |
+| best shortcut: logit lens | 0.30 [0.23, 0.37] | |
+| best shortcut: base rate / evidence logreg | | 0.255 / 0.255 |
+| random / always-real | 0.25 | 0.49 |
+
+![choice accuracy](results/choice_accuracy.png)
+![null Brier](results/null_brier.png)
+
+What the numbers say:
+
+- **Picking the output is learnable from the evidence.** All four models clear every shortcut baseline on "Which
+  output is it?"; the best (Haiku 5.5, 48%) nearly doubles chance. Accuracy is not ordered by model size: Haiku 5.5
+  beats Sonnet 5.5 on the same tasks.
+- **Nobody can tell which neurons matter.** On "Real or null?" only Sonnet 5.5 edges the base-rate guess (0.247 vs
+  0.255), and its interval covers it. Haiku 4.5 and GPT-5.6-luna are *worse* than always answering the base rate:
+  they commit to confident guesses that the sweep does not bear out.
+- **Easy at the ends, hard in the middle.** Split by the neuron's measured effect size (`gne rank` vocabulary mass),
+  models score 50–60% on the weakest and strongest quartiles and ~chance on the middle two
+  (`results/choice_by_effect_size.png`). Shortcut baselines stay flat, so this is model skill, not a leak.
+- **Layer 24 is easiest** for every model (46–52% vs 34–48% on layers 14 and 20): late-layer neurons' logit-lens
+  tokens are closer to what shows up in the text.
+- Hand-picked (sharp logit-lens) neurons are 16 of the 150 choice items; too few to separate from the random draw.
+
+### Failure trace: Haiku 4.5 on `choice-qwen3-0.6b-instruct-L14-N710-orange-0.7`
+
+Neuron 710 in layer 14, dose −0.7, prompt "Describe the color orange." The neuron is real (beats 64/64 controls);
+its logit lens promotes junk tokens (`onium`, `技术和`, `JKLMNOP`) and suppresses role-ish ones (`UserCode`,
+`Participant`, `compañ`); `peak_z` 4.9. The real reply was **D**, the two-word `The color orange?`; Haiku answered
+**B**, a reply that loops "the color orange in the color family of the color orange".
+
+Haiku's reasoning (7 API calls, $0.05; full transcript in `results/failure_trace_L14-N710.md`): it decided the
+down-tokens look "formal / structured", so a negative dose should make the reply "more organised, less weird", then
+contradicted itself and picked B because "the neuron normally helps the model escape loops; reversed, the model gets
+stuck". Neither step uses the evidence: the logit-lens tokens are vocabulary the neuron writes, not a behavioural
+trait, and nothing in them predicts a loop. The model told a story about the neuron and fitted a reply to the
+story. Every candidate was a same-magnitude push (changes 0.83–0.92 from the unsteered reply), so "the most broken
+one" was no help either, which is the point of the random-direction controls.

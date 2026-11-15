@@ -1,0 +1,21 @@
+| system | task | metric | value | 95% CI | n |
+|---|---|---|---|---|---|
+| anthropic/claude-haiku-5-5 | choice | accuracy | 0.480 | [0.400, 0.560] | 150/150 |
+| anthropic/claude-sonnet-5-5 | choice | accuracy | 0.420 | [0.340, 0.493] | 150/150 |
+| openai/gpt-5.6-luna | choice | accuracy | 0.393 | [0.313, 0.473] | 150/150 |
+| anthropic/claude-haiku-4-5 | choice | accuracy | 0.393 | [0.313, 0.473] | 150/150 |
+| baseline:logit_lens | choice | accuracy | 0.300 | [0.233, 0.373] | 150/150 |
+| baseline:most_different | choice | accuracy | 0.253 | [0.187, 0.327] | 150/150 |
+| baseline:change_rank0 | choice | accuracy | 0.253 | [0.187, 0.327] | 150/150 |
+| baseline:change_rank1 | choice | accuracy | 0.253 | [0.187, 0.327] | 150/150 |
+| baseline:change_rank3 | choice | accuracy | 0.253 | [0.187, 0.327] | 150/150 |
+| baseline:random | choice | accuracy | 0.250 | [0.250, 0.250] | 150/150 |
+| baseline:change_rank2 | choice | accuracy | 0.240 | [0.167, 0.307] | 150/150 |
+| anthropic/claude-sonnet-5-5 | null | brier | 0.247 | [0.233, 0.261] | 105/105 |
+| anthropic/claude-haiku-5-5 | null | brier | 0.255 | [0.233, 0.276] | 105/105 |
+| baseline:base_rate | null | brier | 0.255 | [0.252, 0.257] | 105/105 |
+| baseline:evidence_logreg | null | brier | 0.255 | [0.237, 0.273] | 105/105 |
+| anthropic/claude-haiku-4-5 | null | brier | 0.294 | [0.244, 0.344] | 105/105 |
+| openai/gpt-5.6-luna | null | brier | 0.308 | [0.256, 0.360] | 105/105 |
+| baseline:always_real | null | brier | 0.486 | [0.390, 0.581] | 105/105 |
+| baseline:always_null | null | brier | 0.514 | [0.419, 0.610] | 105/105 |
