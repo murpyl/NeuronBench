@@ -44,6 +44,8 @@ Same 255 items, same candidates and grader; only the evidence block changes (`ne
 | transfer (its steered replies on other prompts) | 0.48 [0.40, 0.56] | 0.240 / 0.69 | 0.47 | 0.249 |
 | oracle (its measured over-used words, z-scores on null) | 0.63 [0.55, 0.71] | 0.210 / 0.78 | 0.61 | 0.089 |
 | oracle, Sonnet 5.5 (its static: 0.42, 0.247 / 0.57) | 0.71 [0.64, 0.79] | 0.189 / 0.83 | 0.61 | 0.089 |
+| shuffled (another same-layer neuron's static evidence) | 0.21 [0.14, 0.27] | 0.256 / 0.53 | 0.26 | 0.269 |
+| shuffled, Opus 5.5 (its static: 0.45, 0.245 / 0.61) | 0.23 [0.16, 0.29] | 0.255 / 0.54 | 0.26 | 0.269 |
 
 Oracle − static on choice: Haiku 5.5 +0.15 [+0.05, +0.25], Sonnet 5.5 +0.29 [+0.19, +0.39]. Sonnet was run
 because Haiku's oracle score was under 85%.
@@ -69,8 +71,15 @@ about the candidates. "Gain" is how many more times a reply uses those words tha
 - **Transfer vs static** asks whether watching the neuron act on other prompts beats reading its weights. On choice it
   doesn't (+0.00 [−0.08, +0.08]; the word-transfer lookup 0.47 vs logit-lens lookup 0.41). On null it does raise
   AUC (0.56 → 0.69): seeing behaviour tells you *whether* a neuron matters, more than *what* it will say on a new prompt.
-- **On null, even decisive evidence is under-used.** A one-feature logistic regression on the oracle z-scores gets Brier 0.089;
-  Haiku 5.5 gets 0.210 and Sonnet 5.5 0.189 (AUC 0.78 / 0.83). So the static-tier null result (AUC ≈ 0.55) is mostly missing evidence, and partly the model.
+- **The oracle null lookup is circular, not a ceiling.** Its one feature (the summed top z-scores) is the vocabulary
+  mass the null label is computed from, so its Brier of 0.089 is close to reading the label directly. Oracle evidence
+  does raise the models' null AUC (Haiku 5.5 0.56 → 0.78, Sonnet 5.5 0.57 → 0.83). How much null signal they leave
+  unused can't be measured against that lookup.
+- **Wrong evidence (shuffled − static, paired over the same items).** Choice: Haiku 5.5 −0.27 [−0.36, −0.19], Opus 5.5
+  −0.22 [−0.32, −0.12]. With a lens token in a reply (n = 50): −0.36 / −0.30. With none (n = 100): −0.23 / −0.18.
+  Null Brier: +0.001 [−0.015, +0.019] / +0.011 [−0.014, +0.035]. Null AUC: −0.03 [−0.18, +0.11] / −0.07 [−0.21, +0.06].
+  The choice scores come from the evidence, not from tells in the replies, and shuffled scores land at or below
+  chance. The null answers are insensitive to the evidence, consistent with finding 3 (AUC 0.52–0.61).
 
 So the 39–48% static scores are not a broken task: a model handed decisive evidence uses it, and the static evidence
 (logit lens + down-norm) usually isn't decisive.
