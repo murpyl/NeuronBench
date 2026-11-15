@@ -1,0 +1,299 @@
+{
+ "summary": {
+  "run": "L20-heldout_rel.jsonl",
+  "word_unit": "regex",
+  "prompts": [
+   "desert",
+   "french",
+   "math",
+   "photo",
+   "poem",
+   "recipe",
+   "robot",
+   "sql",
+   "stress",
+   "ww1"
+  ],
+  "half": 5,
+  "n_neurons": 40,
+  "n_controls": 64,
+  "real_share": 0.325,
+  "split_half": {
+   "auc": {
+    "median": 0.753,
+    "p2.5": 0.642,
+    "p97.5": 0.843,
+    "n": 126
+   },
+   "spearman": {
+    "median": 0.432,
+    "p2.5": 0.19,
+    "p97.5": 0.574,
+    "n": 126
+   },
+   "kappa": {
+    "median": 0.379,
+    "p2.5": 0.164,
+    "p97.5": 0.629,
+    "n": 126
+   },
+   "agree": {
+    "median": 0.775,
+    "p2.5": 0.675,
+    "p97.5": 0.875,
+    "n": 126
+   }
+  },
+  "bar": 0.85,
+  "passes": false,
+  "incomplete_units": 0,
+  "old_label": {
+   "n": 40,
+   "auc_old_null_pct": 0.796,
+   "agree_old_label": 0.725,
+   "spearman_null_pct": 0.463
+  }
+ },
+ "labels": [
+  {
+   "neuron": 91,
+   "null_pct": 0.359375,
+   "mass": 12.245176224684908,
+   "real": false
+  },
+  {
+   "neuron": 124,
+   "null_pct": 0.828125,
+   "mass": 14.966425990318486,
+   "real": false
+  },
+  {
+   "neuron": 135,
+   "null_pct": 0.8125,
+   "mass": 14.6327154672525,
+   "real": false
+  },
+  {
+   "neuron": 202,
+   "null_pct": 0.796875,
+   "mass": 14.516337445487824,
+   "real": false
+  },
+  {
+   "neuron": 242,
+   "null_pct": 0.015625,
+   "mass": 8.001134389214362,
+   "real": false
+  },
+  {
+   "neuron": 342,
+   "null_pct": 0.125,
+   "mass": 10.97650039978716,
+   "real": false
+  },
+  {
+   "neuron": 404,
+   "null_pct": 0.625,
+   "mass": 13.851578886016927,
+   "real": false
+  },
+  {
+   "neuron": 533,
+   "null_pct": 0.578125,
+   "mass": 13.395714370279848,
+   "real": false
+  },
+  {
+   "neuron": 563,
+   "null_pct": 0.0,
+   "mass": 7.333924877244198,
+   "real": false
+  },
+  {
+   "neuron": 664,
+   "null_pct": 0.4375,
+   "mass": 12.677449424604863,
+   "real": false
+  },
+  {
+   "neuron": 672,
+   "null_pct": 0.96875,
+   "mass": 16.926679359008677,
+   "real": true
+  },
+  {
+   "neuron": 710,
+   "null_pct": 0.875,
+   "mass": 15.440798938567479,
+   "real": false
+  },
+  {
+   "neuron": 774,
+   "null_pct": 1.0,
+   "mass": 24.246960588616382,
+   "real": true
+  },
+  {
+   "neuron": 828,
+   "null_pct": 0.21875,
+   "mass": 11.61408857445536,
+   "real": false
+  },
+  {
+   "neuron": 990,
+   "null_pct": 1.0,
+   "mass": 23.981887000967266,
+   "real": true
+  },
+  {
+   "neuron": 1038,
+   "null_pct": 0.171875,
+   "mass": 11.18488069109404,
+   "real": false
+  },
+  {
+   "neuron": 1240,
+   "null_pct": 0.0,
+   "mass": 7.255617641853201,
+   "real": false
+  },
+  {
+   "neuron": 1456,
+   "null_pct": 0.09375,
+   "mass": 10.72019867660639,
+   "real": false
+  },
+  {
+   "neuron": 1497,
+   "null_pct": 1.0,
+   "mass": 21.231252781501976,
+   "real": true
+  },
+  {
+   "neuron": 1594,
+   "null_pct": 0.921875,
+   "mass": 15.59714697296467,
+   "real": false
+  },
+  {
+   "neuron": 1634,
+   "null_pct": 1.0,
+   "mass": 26.832961968210867,
+   "real": true
+  },
+  {
+   "neuron": 1710,
+   "null_pct": 0.953125,
+   "mass": 16.448006932039878,
+   "real": true
+  },
+  {
+   "neuron": 1904,
+   "null_pct": 0.53125,
+   "mass": 13.299749704266812,
+   "real": false
+  },
+  {
+   "neuron": 1955,
+   "null_pct": 0.84375,
+   "mass": 15.21363038168509,
+   "real": false
+  },
+  {
+   "neuron": 2194,
+   "null_pct": 1.0,
+   "mass": 29.78741134856358,
+   "real": true
+  },
+  {
+   "neuron": 2211,
+   "null_pct": 0.921875,
+   "mass": 15.699308920991713,
+   "real": false
+  },
+  {
+   "neuron": 2256,
+   "null_pct": 1.0,
+   "mass": 30.867493474584172,
+   "real": true
+  },
+  {
+   "neuron": 2321,
+   "null_pct": 0.96875,
+   "mass": 17.010051927350798,
+   "real": true
+  },
+  {
+   "neuron": 2341,
+   "null_pct": 1.0,
+   "mass": 22.359859257196007,
+   "real": true
+  },
+  {
+   "neuron": 2461,
+   "null_pct": 1.0,
+   "mass": 23.496025440705832,
+   "real": true
+  },
+  {
+   "neuron": 2464,
+   "null_pct": 0.4375,
+   "mass": 12.65831650665032,
+   "real": false
+  },
+  {
+   "neuron": 2508,
+   "null_pct": 0.1875,
+   "mass": 11.32353691903763,
+   "real": false
+  },
+  {
+   "neuron": 2612,
+   "null_pct": 0.921875,
+   "mass": 16.203333712442028,
+   "real": false
+  },
+  {
+   "neuron": 2669,
+   "null_pct": 0.84375,
+   "mass": 15.132949291358326,
+   "real": false
+  },
+  {
+   "neuron": 2673,
+   "null_pct": 0.921875,
+   "mass": 15.93220065796009,
+   "real": false
+  },
+  {
+   "neuron": 2701,
+   "null_pct": 0.609375,
+   "mass": 13.759116119134966,
+   "real": false
+  },
+  {
+   "neuron": 2707,
+   "null_pct": 1.0,
+   "mass": 19.52573207533833,
+   "real": true
+  },
+  {
+   "neuron": 2823,
+   "null_pct": 0.953125,
+   "mass": 16.773999295784414,
+   "real": true
+  },
+  {
+   "neuron": 2844,
+   "null_pct": 0.921875,
+   "mass": 15.875599263814875,
+   "real": false
+  },
+  {
+   "neuron": 2917,
+   "null_pct": 0.53125,
+   "mass": 13.320699952821052,
+   "real": false
+  }
+ ]
+}

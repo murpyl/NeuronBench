@@ -30,6 +30,21 @@ moves the answer key to held-out prompts.
 
 Baselines: reuse the 3-prompt label; logit-lens lookup; prevalence (constant prediction).
 
+## Pilot result: FAIL (claim 1 falsified at L20)
+
+`heldout/reliability-L20-pilot.json`: 40 neurons + 64 controls, 2,090 rollouts, swept on a CPU VM with the same GGUF
+(gne model id `qwen3-0.6b-instruct-00eb507314`; `stats resid` gave rho_L20 p50 193.03, same as the original run).
+
+| | value |
+|---|---|
+| median split-half AUC (5 vs 5 prompts, 126 splits) | **0.753** [0.642, 0.843], bar 0.85 |
+| split-half Spearman / kappa / agreement | 0.43 / 0.38 / 0.78 |
+| old 3-prompt `null_pct` predicting the held-out label (AUC) | 0.796 |
+| REAL under the held-out key | 13 / 40 |
+
+Ten prompts make the key steadier than Eval 1's 0.59, but not to the pre-set bar, so Eval 2 makes no model claims on
+this key. Halves have 5 prompts each, so the full 10-prompt key is somewhat more reliable than 0.753.
+
 ## Steps
 
 On the machine with gne and the model (`GNE_MODEL` set as in the main README):
@@ -39,11 +54,13 @@ python scripts/heldout_configs.py                        # gne's configs + desig
 export GNE_CONFIGS=$PWD/heldout/gne-configs
 
 # pilot: 40 neurons + 64 controls on layer 20 = 2,080 rollouts
-gne sweep --layer 20 --design heldout_rel --prompt-set heldout --neurons $(cat heldout/neurons-L20-pilot.txt) --yes
+gne --n-seq-max 10 sweep --layer 20 --design heldout_rel --prompt-set heldout --neurons $(cat heldout/neurons-L20-pilot.txt) --yes
 gne rank --run L20-heldout_rel
 python scripts/heldout_reliability.py --run ~/.gne/runs/<model_id>/L20-heldout_rel.jsonl \
     --old-units ~/.gne/runs/<model_id>/L20-main_rel.units.jsonl --out heldout/reliability-L20-pilot.json
 ```
+
+`--n-seq-max 10` is needed because a unit's 10 prompts are generated in one batch (gne's default is 8).
 
 The script prints PASS/FAIL against the bar. Add `--word-unit tokens --model $GNE_MODEL` for gne's exact word unit.
 
@@ -52,7 +69,7 @@ other 60 neurons are swept (3,280 rollouts per layer in total, under the 4,484 o
 
 ```bash
 for L in 20 24; do
-  gne sweep --layer $L --design heldout_rel --prompt-set heldout --neurons $(cat heldout/neurons-L$L-full.txt) --yes
+  gne --n-seq-max 10 sweep --layer $L --design heldout_rel --prompt-set heldout --neurons $(cat heldout/neurons-L$L-full.txt) --yes
   gne rank --run L$L-heldout_rel
 done
 ```
