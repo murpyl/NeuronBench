@@ -99,7 +99,8 @@ def main():
         said = reported(jobs, items, a.model)
         nu_p = [it for it in nu_ok if it["id"] in said]
         a_m = auc([float(said[it["id"]]) for it in nu_p], [bool(it["answer"]["real"]) for it in nu_p])
-        nul[name] = {tie_seed(it): (float(said[it["id"]]), int(it["answer"]["real"]), scores[it["id"]]) for it in nu_p}
+        nul[name] = {tie_seed(it): (float(said[it["id"]]) if it["id"] in said else None, int(it["answer"]["real"]),
+                                    scores[it["id"]]) for it in nu_ok}
         rows.append(f"| {name} | {m:.2f} [{lo:.2f}, {hi:.2f}] ({len(acc[name])}/{len(ch)}) | {brier:.3f} | {a_m:.2f} "
                     f"| {lookups} |")
     print(f"model: {a.model}\n")
@@ -123,13 +124,14 @@ def main():
         if t not in nul or "static" not in nul:
             continue
         both = sorted(set(nul[t]) & set(nul["static"]))
-        y = np.array([nul["static"][i][1] for i in both])
-        ps, pt = (np.array([nul[k][i][0] for i in both]) for k in ("static", t))
-        dr = np.array([nul["static"][i][2] - nul[t][i][2] for i in both])  # rewards are 1 - Brier
+        dr = np.array([nul["static"][i][2] - nul[t][i][2] for i in both])  # rewards are 1 - Brier; failures score 0
         m, lo, hi = boot_paired(lambda ix, dr=dr: dr[ix].mean(), len(both))
         print(f"paired null Brier {t} - static: {m:+.3f} [{lo:+.3f}, {hi:+.3f}] (n = {len(both)}; lower is better)")
+        both = [i for i in both if nul["static"][i][0] is not None and nul[t][i][0] is not None]
+        y = np.array([nul["static"][i][1] for i in both])
+        ps, pt = (np.array([nul[k][i][0] for i in both]) for k in ("static", t))
         m, lo, hi = boot_paired(lambda ix, ps=ps, pt=pt, y=y: auc(pt[ix], y[ix]) - auc(ps[ix], y[ix]), len(both))
-        print(f"paired null AUC {t} - static: {m:+.2f} [{lo:+.2f}, {hi:+.2f}]")
+        print(f"paired null AUC {t} - static: {m:+.2f} [{lo:+.2f}, {hi:+.2f}] (n = {len(both)} answered in both)")
 
 if __name__ == "__main__":
     main()
