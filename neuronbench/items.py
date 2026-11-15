@@ -237,14 +237,17 @@ def shuffled_donors(neurons: list[int], seed: int, layer: int, kind: str) -> dic
 def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: int, seed: int = 0,
                 threshold: float = 0.95, real_share: float = 0.5, min_change: float = 0.1,
                 tier: str = "static", per_neuron: int = 1) -> list[Item]:
-    """per_neuron > 1: up to that many choice items per picked neuron, each on a different prompt, balancing how
-    often each prompt is used. per_neuron=1 keeps one random condition per neuron."""
+    """per_neuron > 1: that many choice items per picked neuron (neurons with fewer usable prompts are skipped), each
+    on a different prompt, balancing how often each prompt is used. per_neuron=1 keeps one random condition per
+    neuron."""
     rng = random.Random(f"{seed}-{run.model_id}-{run.layer}")
     neurons = [n for n in run.neurons() if n in evidence and run.unit("neuron", n) is not None]
     items: list[Item] = []
 
     cands = {n: choice_candidates(run, n, min_change=min_change) for n in neurons}
-    usable = [n for n in neurons if cands[n]]
+    # every picked neuron gets exactly per_neuron items, so the shuffled tier's one-to-one donor swap still shows each
+    # evidence block as often as the static tier does
+    usable = [n for n in neurons if len({c["prompt"] for c in cands[n]}) >= per_neuron]
     strata = _bins([(run.unit("neuron", n)["mass"], n) for n in usable], 4) if usable else []
     used: dict[str, int] = {}
     for n in _take_stratified(strata, n_choice, rng):
