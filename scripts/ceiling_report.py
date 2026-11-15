@@ -34,15 +34,19 @@ def auc(p, y):
 
 
 def reported(jobs, items, model):
-    """{item_id: parsed answer} from Valkyrie exports' verifier output."""
+    """{item_id: parsed answer} from Valkyrie exports' verifier output (other inputs are skipped)."""
     byname = {safe_name(it["id"]): it["id"] for it in items}
     out = {}
     for f in jobs:
-        with open(f) as fh:
-            d = json.load(fh)
-        if d["benchmark_arguments"]["contract"]["model"] != model:
+        try:
+            with open(f) as fh:
+                d = json.load(fh)
+            if d["benchmark_arguments"]["contract"]["model"] != model:
+                continue
+            results = d["evaluation_results"]
+        except (OSError, ValueError, KeyError, TypeError):
             continue
-        for k, v in d["evaluation_results"].items():
+        for k, v in results.items():
             try:
                 parsed = json.loads(v["metadata"]["verifier_output"]).get("parsed")
             except (KeyError, TypeError, ValueError):
