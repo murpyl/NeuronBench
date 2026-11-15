@@ -92,6 +92,11 @@ def main():
     ni = [i for i, it in items.items() if it["kind"] == "null"]
     acc = lambda m, ids: st.mean(ans[m][i][2]["choice_acc"] for i in ids)
 
+    def ci(m, ids, n=10000):
+        x = np.array([ans[m][i][2]["choice_acc"] for i in ids])
+        bs = np.random.default_rng(0).choice(x, (n, len(x))).mean(1)
+        return f"[{np.quantile(bs, 0.025):.2f}, {np.quantile(bs, 0.975):.2f}]"
+
     def split(name, key):
         print(f"\n== choice accuracy by {name}")
         for g in sorted({key(items[i]) for i in ch}, key=str):
@@ -118,6 +123,9 @@ def main():
     print(f"  items with overlap {len(ov)}/{len(ch)}; token-overlap baseline accuracy {exp / len(ch):.3f}")
     for m in ms:
         print(f"  {m}: acc with overlap {acc(m, ov):.2f}, without {acc(m, nov):.2f}")
+    print("  with 95% bootstrap CIs (lens token in a reply / not):")
+    for m in ms:
+        print(f"  {m}:", *[f"{acc(m, ids):.2f} {ci(m, ids)}" for ids in (ov, nov)])
 
     print("\n== rank of the chosen option by change from the unsteered reply (0 least .. 3 most)")
     for m in ms + ["truth"]:

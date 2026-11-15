@@ -80,7 +80,16 @@ out of it. Use it for plain Harbor datasets, or run it on exported rewards.
 
 ## 3. Run models
 
-Same agent (mini-SWE-agent), prompts and limits for every model:
+Same agent (mini-SWE-agent), prompts and limits for every model.
+
+**Why mini-SWE-agent.** The task is reasoning over a few text files, not software engineering, so the harness should
+add as little as possible. mini-SWE-agent is a bash-only loop with no custom tools, scaffolding or system-prompt tricks.
+That keeps the comparison about the model. It runs any litellm model (Anthropic, OpenAI and self-hosted vLLM) with
+identical prompts and step/cost limits. Its trajectories are plain message logs, so the failure modes below can be
+quoted directly. Claude Code and Codex would bring vendor-specific tooling and prompts, so cross-vendor differences
+would partly measure the harness. The container has no intervention tools and no answer key, and its network allows
+only the model API hosts (`api.anthropic.com`, `api.openai.com`).
+
 
 ```bash
 harbor run -p tasks -a mini-swe-agent -m anthropic/<model> -n 8 -o jobs --job-name <model>
@@ -91,13 +100,13 @@ harbor run -p tasks -a mini-swe-agent -m openai/<model>    -n 8 -o jobs --job-na
 and `allowed_hosts` must be exact hostnames. Model keys and base URLs are Valkyrie secrets passed as env vars:
 
 ```bash
-valkyrie dataset push neuronbench/l14-pilot ./tasks --tag v1
-valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-pilot@v1 \
+valkyrie dataset push neuronbench/l14-l20 ./tasks   # we pushed tasks for L14+L20 and L24 as two datasets
+valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-l20@1 \
     --model anthropic/claude-haiku-4-5 --provider modal -s ANTHROPIC_API_KEY anthropic-api-key \
     --concurrency 8 --label haiku-4-5 --connect
 # self-hosted vLLM endpoint (its hostname must be in --allowed-hosts at build time). The mini_swe_agent contract
 # has no base-URL kwarg, so litellm's hosted_vllm provider reads the endpoint from env vars.
-valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-pilot@v1 \
+valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-l20@1 \
     --model hosted_vllm/Qwen/Qwen3-32B --provider modal \
     -s HOSTED_VLLM_API_BASE vllm-base-url-qwen3-32b -s HOSTED_VLLM_API_KEY vllm-api-key \
     -k cost_tracking ignore_errors --concurrency 8 --label qwen3-32b --connect
@@ -156,6 +165,21 @@ Full tables: `results/results.md`, split by random-draw vs hand-picked neurons i
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
+**"Which output is it?", split by whether the answer can be read off the text.** In 50 of the 150 items a logit-lens
+token (≥ 3 letters) literally occurs in a candidate reply; there, "pick the reply that contains a lens token" already
+scores 54%. The other 100 items need an actual prediction from the evidence, and that is the harder test:
+
+| system | lens token in a reply (n = 50) | no lens token in any reply (n = 100) |
+|---|---|---|
+| Claude Haiku 5.5 | 0.62 [0.48, 0.76] | **0.41** [0.32, 0.51] |
+| Claude Sonnet 5.5 | 0.58 [0.44, 0.72] | 0.34 [0.25, 0.43] |
+| GPT-5.6-luna | 0.54 [0.40, 0.68] | 0.32 [0.23, 0.41] |
+| Claude Haiku 4.5 | 0.52 [0.38, 0.66] | 0.33 [0.24, 0.42] |
+| lens-token lookup baseline | 0.54 | 0.25 |
+| random | 0.25 | 0.25 |
+
+Where the lookup works, models do about what it does. Where it doesn't, only Haiku 5.5's interval clears chance.
+
 Headline findings (full analysis with failure modes in `results/analysis.md`; numbers from `scripts/analyze_results.py`):
 
 - **Every model beats every shortcut on "Which output is it?", none by much** (39–48% vs 30% best heuristic, 25% chance),
@@ -172,6 +196,21 @@ Headline findings (full analysis with failure modes in `results/analysis.md`; nu
 - **Different models, different mistakes:** pairwise agreement 39–65%, 44 items missed by all four, plurality vote (40%)
   below the best single model.
 - Easier: layer 24, the "orange" prompt, and neurons that are actually real (56–62% vs 34–45% on null neurons).
+
+### Valkyrie runs
+
+Datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and `neuronbench/l24@1` (layer 24, 85 tasks), agent
+`mini_swe_agent`, sandboxes on Modal, concurrency 8. Exports are in `jobs/valkyrie/`.
+
+| model | `l14-l20@1` run ID | `l24@1` run ID |
+|---|---|---|
+| anthropic/claude-haiku-5-5 | `5dd195b6-7266-438f-a727-d6ac977d94b2` | `5a71463e-5199-41a6-a54a-23d3fff7595a` |
+| anthropic/claude-sonnet-5-5 | `8ceb64b0-2f28-4ca3-9ee5-7345b5dcfc49` | `4fe2a846-1f11-4e7b-8afa-7b1dfc1bdea9` |
+| openai/gpt-5.6-luna | `ed60a1ae-99a9-4214-a10b-df38cbff5dfb` | `a535e3ba-2e81-4494-a5b3-be3256774992` |
+| anthropic/claude-haiku-4-5 | `89db445d-8a72-409e-88ca-092cd2118f0c` | `a99707ce-0e94-40cd-82f0-8d919b497fae` |
+
+Valkyrie's own summary score for these runs is not meaningful: it averages `choice_acc` and `null_brier` over every
+trial, including trials of the other task type. Use `neuronbench report` instead.
 
 Failure modes, from the trajectories: picking the *oddest* reply although the controls are change-matched (chance,
 and the models do it 28–34% of the time); *dose folklore* ("+0.5 should be subtle, so the gentlest reply"; 81% wrong
