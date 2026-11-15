@@ -247,7 +247,7 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
               for n in sorted(picked)]
     if tier == "shuffled":
         donor = {kind: shuffled_donors([it.neuron for it in items if it.kind == kind], seed, run.layer, kind)
-                 for kind in ("choice", "null")}
+                 for kind in {it.kind for it in items}}
         for it in items:
             d = donor[it.kind][it.neuron]
             # keep layer/neuron naming the item's own neuron so the swap is not visible

@@ -235,6 +235,13 @@ def test_shuffled_tier_swaps_in_another_same_layer_neurons_evidence(toy_run, tmp
         assert sorted(m.values()) == sorted(m)
 
 
+def test_shuffled_tier_single_kind(toy_run):
+    for kw in ({"n_choice": 0}, {"n_null": 0}):
+        _, items = _items(toy_run, tier="shuffled", **kw)
+        assert items and len({i.kind for i in items}) == 1
+        assert all(i.meta["evidence_neuron"] != i.neuron for i in items)
+
+
 def test_shuffled_donors_is_a_derangement():
     from neuronbench.items import shuffled_donors
 
