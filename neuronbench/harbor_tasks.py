@@ -108,9 +108,42 @@ def _evidence(item: Item) -> str:
             + json.dumps(item.evidence, ensure_ascii=False, indent=1) + "\n```\n")
 
 
+TRACE_GUIDE = """## Per-token trace
+
+Under each reply is a table with one row per token of the reply as shown above (the text was re-tokenized; a reply
+cut off with [...] is traced only up to the cut). Nothing in it comes from running the model with any intervention:
+- `base_lp`: log-probability of this token under the model with **no** intervention, reading the prompt and the reply
+  so far (teacher-forced). Near 0 = what the unsteered model expected; very negative = it found the token surprising.
+- `base_top`: the unsteered model's most likely token at that position, shown only where it differs from the token.
+- `lens_z`: this neuron's logit-lens score for the token (the dot product of the token's unembedding with the neuron's
+  output direction scaled by the final norm, as a z-score over the whole vocabulary; the same quantity as
+  `logit_lens` in the evidence JSON). Positive = the neuron's direction directly promotes this token, negative = it
+  suppresses it. A negative dose pushes the opposite way, toward tokens with negative `lens_z`.
+"""
+
+
+def _tok(t: str | None, width: int = 16) -> str:
+    if t is None:
+        return ""
+    s = json.dumps(t, ensure_ascii=False)
+    return s if len(s) <= width else s[:width - 2] + "…\""
+
+
+def trace_table(t: dict) -> str:
+    rows = [f"{'token':<16} {'base_lp':>7}  {'base_top':<16} {'lens_z':>6}"]
+    rows += [f"{_tok(tok):<16} {lp:>7.2f}  {_tok(top):<16} {z:>+6.1f}"
+             for tok, lp, top, z in zip(t["tok"], t["base_lp"], t["base_top"], t["lens_z"])]
+    return _block("\n".join(r.rstrip() for r in rows))
+
+
+def _reply(text: str, trace: dict | None) -> str:
+    return _block(text) + (f"\n\nPer-token trace:\n\n{trace_table(trace)}" if trace else "")
+
+
 def choice_instruction(item: Item) -> str:
     p = item.payload
-    opts = "\n\n".join(f"### Reply {k}\n\n{_block(v)}" for k, v in p["options"].items())
+    tr = p.get("trace") or {}
+    opts = "\n\n".join(f"### Reply {k}\n\n{_reply(v, tr.get(k))}" for k, v in p["options"].items())
     return f"""# Which reply did this neuron cause?
 
 You are studying MLP neuron {item.neuron} in layer {item.layer} of a small language model.
@@ -127,9 +160,9 @@ a reliable answer.
 
 {_block(p['prompt'])}
 
-## Reply with no intervention
+{TRACE_GUIDE + chr(10) if tr else ""}## Reply with no intervention
 
-{_block(p['baseline'])}
+{_reply(p['baseline'], tr.get('baseline'))}
 
 ## Candidate replies
 
