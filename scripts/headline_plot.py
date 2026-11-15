@@ -61,13 +61,14 @@ def choice_scores(items_path: str, jobs: list[str]) -> tuple[list[str], dict, di
 
 def human_scores(items_path: str) -> dict:
     key = {it["id"]: it["answer"]["letter"] for it in load_items(items_path) if it["kind"] == "choice"}
-    scores = {}
+    per_item = {}
     for f in sorted(Path("human").glob("answers_*.csv")):
         with open(f) as fh:
             for r in csv.DictReader(fh):
                 if r["answer"].strip():
-                    scores[(f.stem, r["id"])] = float(r["answer"].strip().upper() == key[r["id"]])
-    return scores
+                    per_item.setdefault(r["id"], []).append(float(r["answer"].strip().upper() == key[r["id"]]))
+    # both people answered the same items, so resample items (not answers): score each item by its mean
+    return {i: sum(v) / len(v) for i, v in per_item.items()}, max(map(len, per_item.values()), default=0)
 
 
 def bar(ax, y, scores, ids, color, label):
@@ -120,9 +121,10 @@ def main():
         start = y
         rows = [(m, models[m], COLORS[m], ids) for m in MODELS.values() if m in models]
         rows.append((f"{blabel} (no model)", base[bname], COLORS["baseline"], ids))
-        if items_path == HUMAN_TIER_ITEMS and (hs := human_scores(items_path)):
-            n_items = len({i for _, i in hs})
-            rows.append((f"humans ({n_items} items x {len(hs) // n_items})", hs, COLORS["human"], list(hs)))
+        if items_path == HUMAN_TIER_ITEMS:
+            hs, n_people = human_scores(items_path)
+            if hs:
+                rows.append((f"humans ({len(hs)} items x {n_people})", hs, COLORS["human"], list(hs)))
         for name, s, c, row_ids in rows:
             _, v, lo, hi = bar(axr, y, s, row_ids, c, name)
             ticks.append(y)

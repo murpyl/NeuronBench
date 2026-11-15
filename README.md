@@ -102,7 +102,7 @@ Seven models ran as mini-SWE-agent on Valkyrie, one attempt per task; datasets a
    The signal is real: with another neuron's table (`trace-shuffled`) both drop to chance (23% / 21%). The models use
    the table, but do worse than its simplest summary (right panel; 150 original items).
 3. **Humans are at chance on the static evidence too.** Two people answered the same 20 static items blind
-   (`scripts/human_sheet.py make --n 20 --seed 0`; answers in [`human/`](human/)): 30% and 35%, 32.5% [17.5, 47.5]
+   (`scripts/human_sheet.py make --n 20 --seed 0`; answers in [`human/`](human/)): 30% and 35%, 32.5% [15, 50]
    pooled. On those 20 items the four newest API models score 35–40% and the lookup 40%, so 20 items can't separate humans from
    models. What is solvable is mostly readable off the text: in 50 of the 150 original items a lens token occurs in
    a candidate reply (lookup 64%, API models 52–62%); in the other 100 the lookup gets 29% and models 32–41%.
@@ -127,7 +127,7 @@ Seven models ran as mini-SWE-agent on Valkyrie, one attempt per task; datasets a
 | Qwen3-0.6B (the steered model), self-hosted\* | 0.23 [0.17, 0.31] | 0.385 (0.49) |
 | logit-lens lookup / base rate / evidence logreg | 0.41 [0.33, 0.49] | 0.255 / 0.255 |
 | chance | 0.25 | 0.25 (0.50) |
-| humans, 20 items × 2 people | 0.325 [0.175, 0.475] | |
+| humans, 20 items × 2 people | 0.325 [0.150, 0.500] | |
 | Sonnet 5.5 with measured sweep words (oracle tier) | 0.71 [0.64, 0.79] | 0.189 (0.83) |
 
 \* The Qwen3 models rarely submit: they keep rewriting `answer.txt` until the 600 s limit and are graded on the file

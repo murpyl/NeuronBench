@@ -21,7 +21,7 @@ Which output is it?, 150 original items by evidence tier
 | static (the benchmark) | Sonnet 5.5 | 0.420 [0.340, 0.493] |
 | static (the benchmark) | Haiku 5.5 | 0.480 [0.400, 0.560] |
 | static (the benchmark) | lookup (no model) | 0.407 [0.327, 0.487] |
-| static (the benchmark) | humans (20 items x 2) | 0.325 [0.175, 0.475] |
+| static (the benchmark) | humans (20 items x 2) | 0.325 [0.150, 0.500] |
 | + per-token trace | Opus 5.5 | 0.747 [0.680, 0.813] |
 | + per-token trace | Haiku 5.5 | 0.587 [0.507, 0.667] |
 | + per-token trace | mean lens_z (no model) | 0.820 [0.760, 0.880] |
