@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1117,
+ "down_norm": 0.8266907930374146,
+ "logit_lens": {
+  "up": [
+   " trí",
+   "美德",
+   " wisdom",
+   "kad",
+   "岁月",
+   "furt",
+   "誉",
+   "жд",
+   " grace",
+   "nes",
+   "嬛",
+   "德"
+  ],
+  "down": [
+   "iders",
+   "lexible",
+   "该项",
+   "ickey",
+   "amped",
+   "八个",
+   "arker",
+   "ropical",
+   "irical",
+   "第二个",
+   "_te",
+   "一站"
+  ],
+  "peak_z": 4.905527591705322
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

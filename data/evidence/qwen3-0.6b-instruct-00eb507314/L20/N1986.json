@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1986,
+ "down_norm": 1.0781807899475098,
+ "logit_lens": {
+  "up": [
+   "仍然",
+   "依然",
+   " still",
+   "仍是",
+   "still",
+   "仍在",
+   "仍然是",
+   "仍",
+   "依旧",
+   "仍有",
+   "依然是",
+   "仍旧"
+  ],
+  "down": [
+   "tab",
+   "已久",
+   " ComVisible",
+   "inks",
+   "аниз",
+   "注",
+   "づ",
+   "сть",
+   "package",
+   "atted",
+   " già",
+   " buổi"
+  ],
+  "peak_z": 10.655695915222168
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

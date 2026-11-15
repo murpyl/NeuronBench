@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 432,
+ "down_norm": 0.7597397565841675,
+ "logit_lens": {
+  "up": [
+   "icket",
+   "ingular",
+   "ramer",
+   "人人",
+   "二维码",
+   "鳝",
+   " túi",
+   "怀孕",
+   "壶",
+   "在学校",
+   "钵",
+   " Room"
+  ],
+  "down": [
+   "thern",
+   "区域性",
+   "emony",
+   " geopolitical",
+   " geopol",
+   "东部",
+   "地理位置",
+   "DataMember",
+   " América",
+   " geographical",
+   "大国",
+   "ertiary"
+  ],
+  "peak_z": 5.367704391479492
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

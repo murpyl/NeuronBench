@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2703,
+ "down_norm": 0.91004478931427,
+ "logit_lens": {
+  "up": [
+   "adget",
+   "拯",
+   " Crusher",
+   "GLE",
+   "PLE",
+   "\\Common",
+   "verse",
+   "[section",
+   "[state",
+   " corre",
+   "vron",
+   "orde"
+  ],
+  "down": [
+   "abd",
+   "连锁",
+   "_nan",
+   "thouse",
+   "Canceled",
+   "书籍",
+   "antal",
+   "小说",
+   " setStatus",
+   "atat",
+   "flix",
+   " awaited"
+  ],
+  "peak_z": 5.362654209136963
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2701,
+ "down_norm": 1.0060797929763794,
+ "logit_lens": {
+  "up": [
+   "esters",
+   "amines",
+   "amine",
+   " alk",
+   "alk",
+   "yl",
+   "ylene",
+   "胺",
+   "醛",
+   "ony",
+   "烷",
+   "NH"
+  ],
+  "down": [
+   "ляр",
+   "ourg",
+   "箱",
+   "tems",
+   " '//",
+   "ASCADE",
+   "ὸ",
+   "roscope",
+   "ulence",
+   "рес",
+   "ῷ",
+   "额头"
+  ],
+  "peak_z": 6.019603729248047
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

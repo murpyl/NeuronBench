@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 431,
+ "down_norm": 0.9050453901290894,
+ "logit_lens": {
+  "up": [
+   "[,]",
+   "OwnProperty",
+   "unya",
+   "=['",
+   " Basil",
+   "_backward",
+   ".dirname",
+   "渑",
+   "鹘",
+   "=dict",
+   " readonly",
+   "=wx"
+  ],
+  "down": [
+   " gson",
+   ">{@",
+   "swing",
+   " MainActivity",
+   "unnable",
+   "(java",
+   "\tjava",
+   " Runnable",
+   " java",
+   "(Arrays",
+   " Bukkit",
+   ".java"
+  ],
+  "peak_z": 6.511098384857178
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

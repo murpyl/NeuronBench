@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1161,
+ "down_norm": 0.8317750692367554,
+ "logit_lens": {
+  "up": [
+   " while",
+   "哪个",
+   "naire",
+   "着",
+   "何",
+   "while",
+   "ris",
+   " whom",
+   "哪里",
+   "슬",
+   "rices",
+   "сты"
+  ],
+  "down": [
+   "具体",
+   "主要有",
+   "主要包括",
+   "soon",
+   "具体的",
+   "的具体",
+   "在全球",
+   "öff",
+   "-back",
+   " specific",
+   "除外",
+   " ways"
+  ],
+  "peak_z": 5.630650043487549
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

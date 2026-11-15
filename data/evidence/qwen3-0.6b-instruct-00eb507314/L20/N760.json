@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 760,
+ "down_norm": 0.8617134690284729,
+ "logit_lens": {
+  "up": [
+   "之间",
+   "之间的",
+   "之間",
+   "间",
+   "间的",
+   "間",
+   "between",
+   " between",
+   " Between",
+   "_between",
+   "Between",
+   "間に"
+  ],
+  "down": [
+   "ersive",
+   "mers",
+   "وي",
+   "ù",
+   "ersion",
+   " x",
+   "☛",
+   "'](",
+   " set",
+   " espec",
+   " base",
+   "ardi"
+  ],
+  "peak_z": 16.140300750732422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 222,
+ "down_norm": 0.7014776468276978,
+ "logit_lens": {
+  "up": [
+   "!\r\n",
+   "选�",
+   "UNC",
+   "kest",
+   ".openg",
+   "ypi",
+   "ryn",
+   "JEXEC",
+   ".\r\n",
+   "cken",
+   "работ",
+   "lemn"
+  ],
+  "down": [
+   "antee",
+   "ively",
+   "mise",
+   "istically",
+   " Tale",
+   "ducted",
+   " Ferry",
+   " faut",
+   "[axis",
+   "imité",
+   "bach",
+   "==============="
+  ],
+  "peak_z": 4.961676120758057
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

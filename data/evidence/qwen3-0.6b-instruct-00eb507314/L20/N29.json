@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 29,
+ "down_norm": 0.6844832301139832,
+ "logit_lens": {
+  "up": [
+   "zee",
+   "atsu",
+   "SPORT",
+   "zik",
+   "拯",
+   "模",
+   "CLUDED",
+   "UDIO",
+   "roring",
+   "-election",
+   "-signed",
+   " Jahres"
+  ],
+  "down": [
+   "iale",
+   "iores",
+   "lse",
+   "**\n\n",
+   "iales",
+   "ion",
+   "esen",
+   "**\n",
+   "ione",
+   "ures",
+   " ure",
+   "yme"
+  ],
+  "peak_z": 5.472888469696045
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

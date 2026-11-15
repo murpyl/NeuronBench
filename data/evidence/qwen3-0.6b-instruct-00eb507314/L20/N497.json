@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 497,
+ "down_norm": 0.7305938601493835,
+ "logit_lens": {
+  "up": [
+   " GNU",
+   "GNU",
+   "inks",
+   "hand",
+   "馈",
+   "anter",
+   "\\uc",
+   "hed",
+   "ait",
+   ".gnu",
+   "cur",
+   " present"
+  ],
+  "down": [
+   "rones",
+   "isses",
+   "ccoli",
+   "ﬃ",
+   "inese",
+   "thing",
+   "фон",
+   "roman",
+   " dirname",
+   "ques",
+   "р",
+   "飞行员"
+  ],
+  "peak_z": 5.435498237609863
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2461,
+ "down_norm": 0.987505316734314,
+ "logit_lens": {
+  "up": [
+   "暄",
+   "LOB",
+   " optimism",
+   "��",
+   "扃",
+   "满意",
+   "涩",
+   " simplicity",
+   " prominence",
+   "艰",
+   " fascination",
+   " richness"
+  ],
+  "down": [
+   " wrong",
+   "正确的",
+   " incorrect",
+   " correct",
+   "wrong",
+   "正确",
+   " correctly",
+   " Correct",
+   "correct",
+   "Correct",
+   " Incorrect",
+   "incorrect"
+  ],
+  "peak_z": 10.076115608215332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

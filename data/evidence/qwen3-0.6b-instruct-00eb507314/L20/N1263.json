@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1263,
+ "down_norm": 0.803412914276123,
+ "logit_lens": {
+  "up": [
+   " False",
+   " True",
+   "False",
+   "bool",
+   " bool",
+   "false",
+   " boolean",
+   "True",
+   "boolean",
+   " false",
+   "true",
+   " true"
+  ],
+  "down": [
+   "apur",
+   "iv",
+   "uncture",
+   " species",
+   " earthquake",
+   " espect",
+   "市中心",
+   ".Itoa",
+   "ภ",
+   "文化底蕴",
+   "畸",
+   "ueil"
+  ],
+  "peak_z": 11.943526268005371
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

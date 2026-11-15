@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1108,
+ "down_norm": 0.8248783946037292,
+ "logit_lens": {
+  "up": [
+   "旁",
+   "igan",
+   "年之久",
+   " solid",
+   "_STANDARD",
+   "固",
+   ".ibm",
+   "柴",
+   "íg",
+   " fian",
+   "弘",
+   "(common"
+  ],
+  "down": [
+   "atable",
+   "eful",
+   "ROUP",
+   "angement",
+   "льц",
+   "nestjs",
+   "atu",
+   "nosti",
+   "flows",
+   "厳しい",
+   "forcer",
+   "atem"
+  ],
+  "peak_z": 5.519718170166016
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

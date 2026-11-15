@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 180,
+ "down_norm": 0.8655585646629333,
+ "logit_lens": {
+  "up": [
+   "ณ",
+   "DF",
+   ".inverse",
+   "<?,",
+   "党的领导",
+   " чем",
+   "ment",
+   "pond",
+   " seja",
+   "lder",
+   "买车",
+   "书记"
+  ],
+  "down": [
+   "ray",
+   " sclerosis",
+   "ulously",
+   "ularity",
+   "rai",
+   "\topts",
+   "率",
+   "IgnoreCase",
+   "raw",
+   "entially",
+   "erry",
+   "ATE"
+  ],
+  "peak_z": 5.35801362991333
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

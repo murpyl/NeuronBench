@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1433,
+ "down_norm": 0.972295880317688,
+ "logit_lens": {
+  "up": [
+   "ipient",
+   "OUSE",
+   "(host",
+   "(axis",
+   "_AXIS",
+   "主体",
+   "hetics",
+   "'].'/",
+   "\"],[\"",
+   "百家",
+   " rowIndex",
+   "ubb"
+  ],
+  "down": [
+   "cerpt",
+   "extract",
+   " extract",
+   "quoted",
+   " extracted",
+   " quote",
+   "来自",
+   " excerpt",
+   " extracts",
+   "-quote",
+   " Extract",
+   "quote"
+  ],
+  "peak_z": 6.6244730949401855
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

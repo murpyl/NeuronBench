@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1729,
+ "down_norm": 0.8643947839736938,
+ "logit_lens": {
+  "up": [
+   " does",
+   " do",
+   " did",
+   "\tdo",
+   " is",
+   " Does",
+   "do",
+   "_do",
+   "Does",
+   " Do",
+   "Do",
+   "does"
+  ],
+  "down": [
+   "它",
+   "ollower",
+   "他们",
+   "你看",
+   "you",
+   "they",
+   " they",
+   " mình",
+   "obel",
+   " you",
+   "ably",
+   "您"
+  ],
+  "peak_z": 12.156295776367188
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1087,
+ "down_norm": 0.8409602046012878,
+ "logit_lens": {
+  "up": [
+   "adult",
+   " adulthood",
+   " Hã",
+   "ahrung",
+   "cią",
+   " Hairst",
+   "��",
+   "арь",
+   "ests",
+   "inte",
+   " getChild",
+   " adult"
+  ],
+  "down": [
+   "vo",
+   " PS",
+   " Xbox",
+   " Seahawks",
+   " Buddha",
+   " Bh",
+   "Pos",
+   " ps",
+   " Pos",
+   "smarty",
+   "orsi",
+   "蜀"
+  ],
+  "peak_z": 5.011444568634033
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

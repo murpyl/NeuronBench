@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 595,
+ "down_norm": 0.8365848064422607,
+ "logit_lens": {
+  "up": [
+   "стью",
+   "ucker",
+   "раб",
+   "atra",
+   "rę",
+   "ASURE",
+   "��",
+   "monic",
+   " naturally",
+   "сть",
+   "INESS",
+   " теб"
+  ],
+  "down": [
+   "ents",
+   "第一章",
+   "�",
+   "第六届",
+   "eid",
+   "第七届",
+   "第一百",
+   " pageCount",
+   "编号",
+   "第三届",
+   "№",
+   "enth"
+  ],
+  "peak_z": 6.088618278503418
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

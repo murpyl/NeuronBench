@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2107,
+ "down_norm": 1.0978296995162964,
+ "logit_lens": {
+  "up": [
+   " sujet",
+   "ylum",
+   "mare",
+   "flammatory",
+   "etcode",
+   "tte",
+   "謀",
+   "mund",
+   "eltas",
+   "举报电话",
+   "ROME",
+   "atto"
+  ],
+  "down": [
+   " in",
+   "在",
+   "在网络",
+   "在日本",
+   "在我的",
+   "在中国",
+   "在他的",
+   " dalam",
+   "在游戏中",
+   "ใน",
+   "在传奇",
+   "在他"
+  ],
+  "peak_z": 12.294734954833984
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

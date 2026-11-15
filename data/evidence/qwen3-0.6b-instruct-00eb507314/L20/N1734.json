@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1734,
+ "down_norm": 0.9016103744506836,
+ "logit_lens": {
+  "up": [
+   "\"));",
+   "onaut",
+   "MESS",
+   "istr",
+   "sand",
+   "'));",
+   "rador",
+   "')\");\n",
+   "\"));\n",
+   "\"));\n\n",
+   "aurant",
+   " отношении"
+  ],
+  "down": [
+   "outed",
+   " mentioned",
+   "arity",
+   " out",
+   " such",
+   " expected",
+   " listed",
+   " down",
+   " discussed",
+   ".routing",
+   "outing",
+   " downs"
+  ],
+  "peak_z": 5.656552314758301
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

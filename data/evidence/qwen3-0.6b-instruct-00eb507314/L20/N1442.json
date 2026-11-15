@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1442,
+ "down_norm": 0.9285905957221985,
+ "logit_lens": {
+  "up": [
+   "球场",
+   "esda",
+   "tement",
+   "emale",
+   " doubt",
+   "async",
+   "юр",
+   "浔",
+   "mobx",
+   "ener",
+   "술",
+   "lock"
+  ],
+  "down": [
+   "rates",
+   "setState",
+   "okus",
+   "ál",
+   " ROOM",
+   "atisch",
+   "综",
+   "elijke",
+   "oning",
+   " rejoice",
+   "ريق",
+   " rá"
+  ],
+  "peak_z": 4.587622165679932
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

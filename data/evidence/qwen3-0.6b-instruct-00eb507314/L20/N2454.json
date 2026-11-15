@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2454,
+ "down_norm": 0.8861803412437439,
+ "logit_lens": {
+  "up": [
+   " constrained",
+   " influenced",
+   "制约",
+   "ddf",
+   " restricted",
+   "ịnh",
+   "诬",
+   " justified",
+   "的影响",
+   "しょう",
+   "的地",
+   " aided"
+  ],
+  "down": [
+   "考虑",
+   "考虑到",
+   " included",
+   " include",
+   " includes",
+   "�",
+   " Include",
+   " incorporates",
+   "include",
+   "(include",
+   "_include",
+   " involved"
+  ],
+  "peak_z": 6.404685974121094
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

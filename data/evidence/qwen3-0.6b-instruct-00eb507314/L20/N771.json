@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 771,
+ "down_norm": 0.8163260817527771,
+ "logit_lens": {
+  "up": [
+   "适合自己",
+   " Parcelable",
+   "不同类型",
+   " Hardcore",
+   " pełne",
+   "dataType",
+   "Parcelable",
+   "FileType",
+   "柔软",
+   " SCSI",
+   " Pokémon",
+   "GetType"
+  ],
+  "down": [
+   "side",
+   "下的",
+   " side",
+   "窗外",
+   " inbox",
+   "境内",
+   "区内",
+   "down",
+   "面前",
+   "区域内",
+   "Side",
+   "west"
+  ],
+  "peak_z": 5.690633773803711
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1043,
+ "down_norm": 0.8036370873451233,
+ "logit_lens": {
+  "up": [
+   " wherein",
+   "的人来说",
+   "性的",
+   "'>\"+",
+   "があり",
+   "\tthat",
+   "that",
+   " that",
+   " bahwa",
+   " whereby",
+   "であること",
+   " olması"
+  ],
+  "down": [
+   "acular",
+   "ASCADE",
+   "caler",
+   "iences",
+   "acters",
+   "asename",
+   "commended",
+   "peare",
+   "asion",
+   "放心",
+   "quee",
+   "aphrag"
+  ],
+  "peak_z": 5.260804653167725
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

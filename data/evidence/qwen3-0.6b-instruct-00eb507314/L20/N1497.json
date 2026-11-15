@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1497,
+ "down_norm": 0.7689091563224792,
+ "logit_lens": {
+  "up": [
+   "类型",
+   " types",
+   " type",
+   " Types",
+   "类型的",
+   " Type",
+   "types",
+   "type",
+   "_type",
+   "Type",
+   "Types",
+   "\ttype"
+  ],
+  "down": [
+   "usercontent",
+   " altar",
+   "erra",
+   "isman",
+   " qed",
+   "erton",
+   " hesitation",
+   "얼",
+   "ız",
+   " Bear",
+   " rally",
+   "相聚"
+  ],
+  "peak_z": 14.853954315185547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

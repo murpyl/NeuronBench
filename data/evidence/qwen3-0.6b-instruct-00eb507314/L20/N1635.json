@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1635,
+ "down_norm": 0.9306219220161438,
+ "logit_lens": {
+  "up": [
+   "elif",
+   "else",
+   " elif",
+   "elsif",
+   "elseif",
+   "\telif",
+   " }</",
+   "胼",
+   "\telseif",
+   " },\n",
+   " else",
+   "hotmail"
+  ],
+  "down": [
+   "paration",
+   "iting",
+   " deeper",
+   "liament",
+   ">>>",
+   "ино",
+   " simplest",
+   "ression",
+   "?\n\n",
+   "inant",
+   ".twimg",
+   "oustic"
+  ],
+  "peak_z": 7.44560432434082
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

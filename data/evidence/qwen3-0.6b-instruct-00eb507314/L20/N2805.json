@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2805,
+ "down_norm": 0.9020447731018066,
+ "logit_lens": {
+  "up": [
+   "axes",
+   "eries",
+   " Bord",
+   "��",
+   "疫",
+   "毛",
+   " cub",
+   "띠",
+   "뉴스",
+   "arr",
+   "hir",
+   " Eye"
+  ],
+  "down": [
+   "ocking",
+   "光荣",
+   "igated",
+   "乒乓",
+   "<Node",
+   "etest",
+   "窈",
+   "PGA",
+   "kus",
+   "ameda",
+   "ome",
+   "不平衡"
+  ],
+  "peak_z": 5.042084693908691
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

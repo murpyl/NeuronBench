@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2625,
+ "down_norm": 1.1016591787338257,
+ "logit_lens": {
+  "up": [
+   "_PTR",
+   "imeters",
+   "än",
+   " graz",
+   "吒",
+   "eer",
+   "antu",
+   " comp",
+   "棵",
+   "↙",
+   "Navigate",
+   "naz"
+  ],
+  "down": [
+   "unge",
+   "umption",
+   "{:",
+   "imary",
+   " conserv",
+   " Provid",
+   "ши",
+   "YPE",
+   "lage",
+   "ourcing",
+   "peria",
+   " reliance"
+  ],
+  "peak_z": 5.020108222961426
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

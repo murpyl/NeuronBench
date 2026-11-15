@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2542,
+ "down_norm": 1.010308027267456,
+ "logit_lens": {
+  "up": [
+   "-offset",
+   "inté",
+   "apers",
+   ".argsort",
+   "账",
+   "aired",
+   ".splitext",
+   ".copyWith",
+   "arus",
+   "융",
+   ":params",
+   "提拔"
+  ],
+  "down": [
+   " constants",
+   " constant",
+   " Constant",
+   "constant",
+   "constants",
+   " Constants",
+   "常",
+   "Constant",
+   ".constant",
+   "Constants",
+   "_constant",
+   " Const"
+  ],
+  "peak_z": 10.237524032592773
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

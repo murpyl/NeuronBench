@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1474,
+ "down_norm": 0.9699498414993286,
+ "logit_lens": {
+  "up": [
+   "omorphic",
+   "集合",
+   "�",
+   "ليم",
+   " cone",
+   " cuff",
+   " hemisphere",
+   "orbit",
+   "集",
+   " lemon",
+   "☹",
+   " contract"
+  ],
+  "down": [
+   "上榜",
+   "匿",
+   "HDR",
+   "[][]",
+   "ssi",
+   "щи",
+   "看望",
+   "wa",
+   " divisive",
+   "adier",
+   "esehen",
+   ".getvalue"
+  ],
+  "peak_z": 4.884117603302002
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

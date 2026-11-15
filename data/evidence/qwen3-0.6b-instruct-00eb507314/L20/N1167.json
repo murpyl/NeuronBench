@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1167,
+ "down_norm": 0.8973724246025085,
+ "logit_lens": {
+  "up": [
+   "定义",
+   "cala",
+   "ability",
+   " definition",
+   "ycastle",
+   " darauf",
+   "圪",
+   " declaration",
+   "?”",
+   ".ylabel",
+   "衍生",
+   " chest"
+  ],
+  "down": [
+   "mare",
+   "stile",
+   "hower",
+   "stå",
+   "combe",
+   "getObject",
+   "wich",
+   "âte",
+   "issant",
+   "PRECATED",
+   "namese",
+   "比分"
+  ],
+  "peak_z": 4.635376930236816
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

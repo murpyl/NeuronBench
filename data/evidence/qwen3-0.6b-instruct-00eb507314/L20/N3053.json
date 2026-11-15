@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3053,
+ "down_norm": 0.9229001402854919,
+ "logit_lens": {
+  "up": [
+   "德国",
+   "法国",
+   " Germany",
+   "美国",
+   "加拿大",
+   " Maryland",
+   "印度",
+   "日本",
+   "俄罗斯",
+   " Germans",
+   "英国",
+   "瑞典"
+  ],
+  "down": [
+   "isable",
+   " Disclosure",
+   "��",
+   "agnostics",
+   " Raq",
+   "ثن",
+   "/sc",
+   "vell",
+   "альные",
+   " scrut",
+   "大奖",
+   "+/"
+  ],
+  "peak_z": 7.279919147491455
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

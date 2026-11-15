@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2321,
+ "down_norm": 0.8915811777114868,
+ "logit_lens": {
+  "up": [
+   "更",
+   " more",
+   "更有",
+   "更强",
+   "更为",
+   "更多的",
+   "更大的",
+   " 更",
+   "更多",
+   "更大",
+   "更加",
+   "more"
+  ],
+  "down": [
+   ".try",
+   "asts",
+   " NOTHING",
+   "avian",
+   ".reload",
+   ".ins",
+   "enas",
+   "alcon",
+   "-</",
+   ".Broadcast",
+   "idential",
+   "ana"
+  ],
+  "peak_z": 15.714927673339844
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

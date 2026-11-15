@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 266,
+ "down_norm": 0.6890497803688049,
+ "logit_lens": {
+  "up": [
+   "ulan",
+   "isman",
+   "ランド",
+   " burner",
+   "bots",
+   "gan",
+   "han",
+   "月亮",
+   "fall",
+   " cosa",
+   " volleyball",
+   "�"
+  ],
+  "down": [
+   " breeds",
+   " Species",
+   "殖",
+   "_species",
+   " bred",
+   " мл",
+   " espec",
+   " species",
+   " spp",
+   "品种",
+   ".species",
+   " captivity"
+  ],
+  "peak_z": 5.213900566101074
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

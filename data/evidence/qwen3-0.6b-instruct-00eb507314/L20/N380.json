@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 380,
+ "down_norm": 0.81479811668396,
+ "logit_lens": {
+  "up": [
+   "casting",
+   "cast",
+   "stell",
+   "casts",
+   "antine",
+   "ettes",
+   "ived",
+   "headed",
+   "骅",
+   "inals",
+   "ungs",
+   "stellung"
+  ],
+  "down": [
+   " SYMBOL",
+   "\tmem",
+   " även",
+   "記",
+   "_ADAPTER",
+   "籍",
+   " nok",
+   "_symbol",
+   "许",
+   " INCIDENT",
+   "_MEMORY",
+   "許"
+  ],
+  "peak_z": 5.952245235443115
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

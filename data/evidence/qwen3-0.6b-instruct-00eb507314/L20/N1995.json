@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1995,
+ "down_norm": 1.062430500984192,
+ "logit_lens": {
+  "up": [
+   " mean",
+   "mean",
+   "平均",
+   "Mean",
+   ".mean",
+   " average",
+   "-average",
+   " Mean",
+   "_mean",
+   " means",
+   "average",
+   "-mean"
+  ],
+  "down": [
+   "IMAL",
+   " independence",
+   " assumption",
+   "iales",
+   "inson",
+   "aturity",
+   "IAN",
+   "ämpfe",
+   "TRIES",
+   "[I",
+   "瑱",
+   " Barton"
+  ],
+  "peak_z": 7.666543006896973
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

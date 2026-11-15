@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1650,
+ "down_norm": 0.9081062078475952,
+ "logit_lens": {
+  "up": [
+   " for",
+   "for",
+   "对于",
+   "For",
+   " For",
+   "對於",
+   "_for",
+   "\tfor",
+   "-for",
+   " для",
+   "_FOR",
+   "而对于"
+  ],
+  "down": [
+   "的人来说",
+   "玩家来说",
+   " sake",
+   "来说",
+   "ummies",
+   " purposes",
+   "='\".$_",
+   "而言",
+   "さえ",
+   "issippi",
+   " ControllerBase",
+   "RAINT"
+  ],
+  "peak_z": 22.54945182800293
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

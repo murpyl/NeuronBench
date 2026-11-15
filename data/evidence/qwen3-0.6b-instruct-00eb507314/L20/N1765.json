@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1765,
+ "down_norm": 0.9472839832305908,
+ "logit_lens": {
+  "up": [
+   " identical",
+   "同样的",
+   " Same",
+   " similar",
+   "相同的",
+   " same",
+   "同等",
+   "同",
+   " similarly",
+   " equal",
+   " comparable",
+   "同樣"
+  ],
+  "down": [
+   "不同的",
+   "不同",
+   " Different",
+   " different",
+   "Different",
+   "different",
+   "的不同",
+   "有不同的",
+   "不一样",
+   " diferentes",
+   " differing",
+   "差异"
+  ],
+  "peak_z": 10.075896263122559
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

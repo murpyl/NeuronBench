@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 110,
+ "down_norm": 0.8870223760604858,
+ "logit_lens": {
+  "up": [
+   "ье",
+   "iedade",
+   "てくれる",
+   " bộ",
+   "@class",
+   " princípio",
+   " MonoBehaviour",
+   "ioned",
+   "bron",
+   "atch",
+   "itaire",
+   ".nlm"
+  ],
+  "down": [
+   "Lf",
+   "lege",
+   "#{@",
+   " logistic",
+   ";r",
+   " mix",
+   " coil",
+   " logistics",
+   "ERT",
+   ",null",
+   "ucher",
+   "raries"
+  ],
+  "peak_z": 5.412831783294678
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

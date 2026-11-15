@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 366,
+ "down_norm": 0.5344104766845703,
+ "logit_lens": {
+  "up": [
+   "ülü",
+   "季后",
+   " yansı",
+   "ışı",
+   "xfff",
+   "铽",
+   "ⁿ",
+   "etus",
+   "(cps",
+   "mdb",
+   "ński",
+   "ỵ"
+  ],
+  "down": [
+   " IN",
+   " AND",
+   " RE",
+   " DE",
+   " MATERIAL",
+   "IN",
+   " H",
+   " MARK",
+   " B",
+   " EN",
+   " LE",
+   "LE"
+  ],
+  "peak_z": 6.1976423263549805
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

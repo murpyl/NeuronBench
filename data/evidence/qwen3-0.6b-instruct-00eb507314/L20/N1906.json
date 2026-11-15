@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1906,
+ "down_norm": 0.9496592879295349,
+ "logit_lens": {
+  "up": [
+   "邠",
+   "бур",
+   "芝",
+   " Pacific",
+   "日电",
+   "Ajax",
+   "哉",
+   "Seattle",
+   " Katz",
+   "ào",
+   "汶",
+   "obar"
+  ],
+  "down": [
+   " Nile",
+   " mongo",
+   "垸",
+   " pymongo",
+   ".mongodb",
+   " Egyptian",
+   "Mongo",
+   "荆州",
+   " african",
+   " Mongo",
+   " bson",
+   "apyrus"
+  ],
+  "peak_z": 6.549521446228027
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

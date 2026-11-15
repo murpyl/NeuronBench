@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1092,
+ "down_norm": 0.8701397180557251,
+ "logit_lens": {
+  "up": [
+   "ampp",
+   " Poland",
+   " Deutschland",
+   " indonesia",
+   "sock",
+   " sockets",
+   ".wordpress",
+   " SOCKET",
+   "ancode",
+   " pygame",
+   "春风",
+   " SPEED"
+  ],
+  "down": [
+   "룹",
+   "辐射",
+   " ${",
+   "_|",
+   "ENTIC",
+   "~",
+   "剂量",
+   "rient",
+   "uator",
+   "alyze",
+   "CLUDE",
+   "◄"
+  ],
+  "peak_z": 4.780660629272461
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

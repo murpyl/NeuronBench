@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1294,
+ "down_norm": 1.0439406633377075,
+ "logit_lens": {
+  "up": [
+   " optional",
+   " Optional",
+   "optional",
+   "Optional",
+   " [,",
+   " OPTIONAL",
+   " [",
+   " [.",
+   " optionally",
+   "(Optional",
+   "[,",
+   "OPTION"
+  ],
+  "down": [
+   " vein",
+   "这么大",
+   "izont",
+   "arn",
+   "ова",
+   "ilinear",
+   "-ever",
+   "的就是",
+   "っていた",
+   "ков",
+   "eneric",
+   " thanks"
+  ],
+  "peak_z": 11.187013626098633
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1562,
+ "down_norm": 0.8650199174880981,
+ "logit_lens": {
+  "up": [
+   "ouver",
+   "ouve",
+   "ouv",
+   "-cols",
+   " closest",
+   "uese",
+   "apiro",
+   "otions",
+   "找",
+   "ials",
+   "otion",
+   "iar"
+  ],
+  "down": [
+   "丈",
+   " jams",
+   " XCT",
+   " dang",
+   "xit",
+   "XMLLoader",
+   "恭喜",
+   "厉害",
+   "鸡汤",
+   " congratulations",
+   "点评",
+   "联谊"
+  ],
+  "peak_z": 5.701676845550537
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

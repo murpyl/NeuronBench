@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 990,
+ "down_norm": 0.7592177391052246,
+ "logit_lens": {
+  "up": [
+   " today",
+   " now",
+   "now",
+   "如今",
+   "现在",
+   " nowadays",
+   " currently",
+   "today",
+   "今天",
+   "现在的",
+   " presently",
+   " hoje"
+  ],
+  "down": [
+   "achel",
+   "атель",
+   "��",
+   "antt",
+   "alter",
+   "lington",
+   "variants",
+   "uir",
+   "**)&",
+   ":numel",
+   "оборот",
+   "CELER"
+  ],
+  "peak_z": 15.983711242675781
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

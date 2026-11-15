@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 22,
+ "down_norm": 0.5785233974456787,
+ "logit_lens": {
+  "up": [
+   "вен",
+   "ally",
+   "ence",
+   "'])?",
+   " straight",
+   "als",
+   " �",
+   "овым",
+   "lichen",
+   " oct",
+   "iven",
+   "ฉาย"
+  ],
+  "down": [
+   " atrás",
+   "oppel",
+   "ạnh",
+   " undert",
+   "sar",
+   "ragments",
+   "-down",
+   "%H",
+   " Congratulations",
+   "泼",
+   "-$",
+   ",www"
+  ],
+  "peak_z": 5.893992900848389
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1684,
+ "down_norm": 0.7990915775299072,
+ "logit_lens": {
+  "up": [
+   " also",
+   "also",
+   "也",
+   "也是",
+   "也会",
+   " también",
+   "也都",
+   "也有",
+   "也不",
+   " Also",
+   " também",
+   "也要"
+  ],
+  "down": [
+   "为主题",
+   ";}\n",
+   "unate",
+   ";}\n\n",
+   "ことです",
+   " 불구하고",
+   "сты",
+   "};\n",
+   "CHECK",
+   "ROLS",
+   "Checks",
+   " },\n"
+  ],
+  "peak_z": 18.512298583984375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

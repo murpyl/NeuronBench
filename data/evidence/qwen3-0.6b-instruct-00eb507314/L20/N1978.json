@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1978,
+ "down_norm": 0.92193603515625,
+ "logit_lens": {
+  "up": [
+   " consideration",
+   "อาย",
+   "ório",
+   " considerations",
+   "три",
+   " сами",
+   "iage",
+   "waż",
+   "น",
+   " shifts",
+   "UDA",
+   "rupt"
+  ],
+  "down": [
+   " achieves",
+   " achieve",
+   " achieving",
+   " get",
+   " Achie",
+   "ensure",
+   "取胜",
+   " gotten",
+   " handle",
+   ".Entry",
+   "ably",
+   " getting"
+  ],
+  "peak_z": 6.190317630767822
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

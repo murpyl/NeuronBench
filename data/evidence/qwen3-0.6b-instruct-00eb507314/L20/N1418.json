@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1418,
+ "down_norm": 0.8883004784584045,
+ "logit_lens": {
+  "up": [
+   "两款",
+   ".arraycopy",
+   " pared",
+   "掖",
+   "ierce",
+   "oleans",
+   " opcion",
+   ".Arrays",
+   " Gratis",
+   " kontakte",
+   "ocide",
+   ">window"
+  ],
+  "down": [
+   "问题",
+   "的问题",
+   " problem",
+   " issues",
+   " problems",
+   "問題",
+   "problem",
+   "Problem",
+   " issue",
+   " Problem",
+   "问题是",
+   " problème"
+  ],
+  "peak_z": 12.700664520263672
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

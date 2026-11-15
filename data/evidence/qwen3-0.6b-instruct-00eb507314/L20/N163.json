@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 163,
+ "down_norm": 0.652298092842102,
+ "logit_lens": {
+  "up": [
+   "osit",
+   "='%",
+   "kok",
+   "火爆",
+   "oug",
+   "olah",
+   "肢",
+   "::_",
+   "clair",
+   "olin",
+   " chim",
+   "掏出"
+  ],
+  "down": [
+   "Ǝ",
+   "所",
+   "suite",
+   "mpi",
+   "ода",
+   "�",
+   "(handle",
+   ".WindowManager",
+   " وعد",
+   " wn",
+   "-scenes",
+   "bble"
+  ],
+  "peak_z": 5.099644660949707
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

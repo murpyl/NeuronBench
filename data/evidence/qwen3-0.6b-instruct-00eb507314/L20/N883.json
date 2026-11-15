@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 883,
+ "down_norm": 0.8581491112709045,
+ "logit_lens": {
+  "up": [
+   " copies",
+   "copies",
+   "路演",
+   " copied",
+   "副本",
+   " transcripts",
+   "讲座",
+   "查阅",
+   "讲课",
+   "ayload",
+   " presentations",
+   "公告"
+  ],
+  "down": [
+   "该怎么办",
+   "ificance",
+   "应该如何",
+   "而现在",
+   "Difference",
+   "istingu",
+   "但现在",
+   " effectiveness",
+   "未来发展",
+   "difference",
+   " Nowadays",
+   "竞争优势"
+  ],
+  "peak_z": 4.616815090179443
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

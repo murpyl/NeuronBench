@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1510,
+ "down_norm": 0.9323304295539856,
+ "logit_lens": {
+  "up": [
+   " liquid",
+   "液体",
+   "liquid",
+   " liquids",
+   "液",
+   "iquid",
+   " Liquid",
+   " water",
+   "olumes",
+   "自来",
+   "icles",
+   "attering"
+  ],
+  "down": [
+   "国防部",
+   "jähr",
+   "ParseException",
+   "始",
+   "奸",
+   "恩",
+   " dönem",
+   "ient",
+   "控股",
+   "かけて",
+   " Parse",
+   "驾驶"
+  ],
+  "peak_z": 5.733870029449463
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

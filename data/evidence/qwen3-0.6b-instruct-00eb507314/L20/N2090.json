@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2090,
+ "down_norm": 0.9783129096031189,
+ "logit_lens": {
+  "up": [
+   "/jav",
+   "uant",
+   ".itemView",
+   "ums",
+   "/******/",
+   "iguous",
+   "che",
+   "qui",
+   "可想",
+   "��",
+   "elijke",
+   "(\"//"
+  ],
+  "down": [
+   " as",
+   "erox",
+   "\tas",
+   "为例",
+   "作为",
+   "为契机",
+   "也为",
+   "为",
+   " As",
+   " say",
+   " sebagai",
+   "在内的"
+  ],
+  "peak_z": 6.598054885864258
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

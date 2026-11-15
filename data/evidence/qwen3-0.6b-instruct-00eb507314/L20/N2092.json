@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2092,
+ "down_norm": 1.0163239240646362,
+ "logit_lens": {
+  "up": [
+   "amentals",
+   " rollers",
+   " instructions",
+   " notes",
+   "ots",
+   " parentheses",
+   "Notes",
+   "ano",
+   "_RESOURCES",
+   "ylon",
+   " flyers",
+   " Notes"
+  ],
+  "down": [
+   " 물론",
+   "sets",
+   "athlon",
+   "마다",
+   "PointerType",
+   "尝",
+   "ahun",
+   "falls",
+   "\"\"\n",
+   "chaft",
+   "辜",
+   "etu"
+  ],
+  "peak_z": 5.617222309112549
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

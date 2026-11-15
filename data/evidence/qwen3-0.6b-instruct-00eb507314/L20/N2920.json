@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2920,
+ "down_norm": 1.0209734439849854,
+ "logit_lens": {
+  "up": [
+   " one",
+   "one",
+   "One",
+   " One",
+   "之一",
+   "_one",
+   "(one",
+   " ONE",
+   ".one",
+   "一种",
+   "ONE",
+   " ones"
+  ],
+  "down": [
+   "rious",
+   "些什么",
+   "上去",
+   ".decorate",
+   "-----------\r\n",
+   "ISIBLE",
+   " heck",
+   "adero",
+   "ächt",
+   "ighter",
+   "entifier",
+   "IGNORE"
+  ],
+  "peak_z": 22.66669273376465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

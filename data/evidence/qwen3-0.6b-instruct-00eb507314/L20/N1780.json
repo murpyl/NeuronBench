@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1780,
+ "down_norm": 1.078830599784851,
+ "logit_lens": {
+  "up": [
+   "紧跟",
+   "适应",
+   " adaptation",
+   "竞争力",
+   "滞后",
+   "跟不上",
+   "竞争",
+   "競爭",
+   " kịp",
+   " adapting",
+   " competitiveness",
+   "adel"
+  ],
+  "down": [
+   "egrity",
+   "ashes",
+   " Cheer",
+   "rito",
+   "roy",
+   "assed",
+   "tero",
+   "%x",
+   "roken",
+   "穰",
+   " Cav",
+   "赦"
+  ],
+  "peak_z": 5.709933757781982
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

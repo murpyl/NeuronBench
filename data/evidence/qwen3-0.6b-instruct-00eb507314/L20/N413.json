@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 413,
+ "down_norm": 0.7640278339385986,
+ "logit_lens": {
+  "up": [
+   "lain",
+   "SKTOP",
+   "ATERIAL",
+   "닝",
+   "ائل",
+   " Abrams",
+   "PAGE",
+   " quý",
+   " Agile",
+   " ARG",
+   " ARCH",
+   "/Area"
+  ],
+  "down": [
+   "licant",
+   " yüz",
+   "isses",
+   "Unsafe",
+   "نان",
+   "ights",
+   "itude",
+   "ǒ",
+   "nowled",
+   "分子",
+   "athy",
+   "ments"
+  ],
+  "peak_z": 5.026162147521973
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

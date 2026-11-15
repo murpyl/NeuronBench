@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 704,
+ "down_norm": 0.9796421527862549,
+ "logit_lens": {
+  "up": [
+   "ipers",
+   "@\",",
+   "_action",
+   "苍白",
+   "俐",
+   "&A",
+   "itime",
+   " chai",
+   "œuvre",
+   "action",
+   " Ops",
+   "踟"
+  ],
+  "down": [
+   "leur",
+   "uckland",
+   " wspóln",
+   "own",
+   "egative",
+   "出租",
+   "gles",
+   " htons",
+   "zilla",
+   "rust",
+   " NTN",
+   "箕"
+  ],
+  "peak_z": 5.565807819366455
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

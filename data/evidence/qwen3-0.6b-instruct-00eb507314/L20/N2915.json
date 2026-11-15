@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2915,
+ "down_norm": 1.0876742601394653,
+ "logit_lens": {
+  "up": [
+   "precision",
+   " precision",
+   "long",
+   "Precision",
+   " Precision",
+   " Long",
+   "recision",
+   "Long",
+   " float",
+   " Float",
+   " long",
+   "(long"
+  ],
+  "down": [
+   "iences",
+   "bery",
+   "markt",
+   "荼",
+   "ched",
+   "cente",
+   " Hunt",
+   "cen",
+   "odus",
+   "接入",
+   " adrenal",
+   "ADIUS"
+  ],
+  "peak_z": 5.72081184387207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

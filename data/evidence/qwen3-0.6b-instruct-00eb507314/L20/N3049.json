@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3049,
+ "down_norm": 1.1520862579345703,
+ "logit_lens": {
+  "up": [
+   " type",
+   " types",
+   "类型",
+   "type",
+   "类型的",
+   "\ttype",
+   " Types",
+   "types",
+   " kinds",
+   "一种",
+   "的一种",
+   "Types"
+  ],
+  "down": [
+   "HandlerContext",
+   "oit",
+   "aravel",
+   "-mask",
+   "eat",
+   "anter",
+   "ableView",
+   "榈",
+   "REAK",
+   "粕",
+   "urar",
+   "多个"
+  ],
+  "peak_z": 15.863607406616211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

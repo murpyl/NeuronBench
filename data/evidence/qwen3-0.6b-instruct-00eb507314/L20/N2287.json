@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2287,
+ "down_norm": 0.9220428466796875,
+ "logit_lens": {
+  "up": [
+   "Helvetica",
+   " Capitals",
+   "ubern",
+   "_PAGES",
+   "rial",
+   "тал",
+   " hakk",
+   "钩",
+   "燃料电池",
+   "筹码",
+   "rawl",
+   "agua"
+  ],
+  "down": [
+   "光",
+   "光学",
+   " light",
+   " optics",
+   " λ",
+   " optical",
+   " photons",
+   "光线",
+   "折射",
+   "광",
+   "Phot",
+   "光源"
+  ],
+  "peak_z": 6.667855262756348
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

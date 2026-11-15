@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1828,
+ "down_norm": 1.1080011129379272,
+ "logit_lens": {
+  "up": [
+   "是",
+   " is",
+   "是在",
+   "是对",
+   "是有",
+   "是从",
+   "是你",
+   "是非常",
+   "是我",
+   "是最",
+   "是他",
+   "是以"
+  ],
+  "down": [
+   "ukes",
+   "rien",
+   "obl",
+   "orra",
+   "ourced",
+   "ическую",
+   "resses",
+   "illaume",
+   " needing",
+   "gsub",
+   "циальн",
+   "();++"
+  ],
+  "peak_z": 16.67830467224121
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

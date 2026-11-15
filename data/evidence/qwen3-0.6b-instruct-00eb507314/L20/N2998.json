@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2998,
+ "down_norm": 0.9801676869392395,
+ "logit_lens": {
+  "up": [
+   " ensuring",
+   " noting",
+   " ensure",
+   " сообщает",
+   " while",
+   " ensures",
+   " so",
+   "而在",
+   "ście",
+   " Ensure",
+   "erne",
+   "他会"
+  ],
+  "down": [
+   "lected",
+   "rowing",
+   "еств",
+   " :,",
+   "iveness",
+   " crus",
+   "assed",
+   "AMILY",
+   "lector",
+   "igious",
+   "bies",
+   " ...)"
+  ],
+  "peak_z": 5.341252326965332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

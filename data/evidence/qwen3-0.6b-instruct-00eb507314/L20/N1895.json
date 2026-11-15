@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1895,
+ "down_norm": 1.0224850177764893,
+ "logit_lens": {
+  "up": [
+   " vector",
+   " Vector",
+   "_vector",
+   " vectors",
+   "Vector",
+   "-vector",
+   "_VECTOR",
+   "矢",
+   " vec",
+   ".Vector",
+   "vec",
+   "_vec"
+  ],
+  "down": [
+   "alls",
+   "bron",
+   "asonic",
+   "(Dialog",
+   "rys",
+   "ronic",
+   "akes",
+   "札",
+   "yll",
+   "findBy",
+   "hower",
+   "findOne"
+  ],
+  "peak_z": 6.879010200500488
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

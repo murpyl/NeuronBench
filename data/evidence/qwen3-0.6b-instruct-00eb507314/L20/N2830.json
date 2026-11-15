@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2830,
+ "down_norm": 1.11139976978302,
+ "logit_lens": {
+  "up": [
+   " two",
+   "两个",
+   "two",
+   " three",
+   "三个",
+   "three",
+   " four",
+   "两",
+   "两种",
+   "兩個",
+   "Two",
+   " deux"
+  ],
+  "down": [
+   "unny",
+   "onde",
+   "-headed",
+   "ed",
+   "&C",
+   "-instagram",
+   "=default",
+   "onso",
+   "Й",
+   "Mill",
+   "klä",
+   "=out"
+  ],
+  "peak_z": 19.10837173461914
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 820,
+ "down_norm": 0.9027156233787537,
+ "logit_lens": {
+  "up": [
+   "vfs",
+   "sp",
+   "ts",
+   "t",
+   "地上",
+   "vx",
+   "们都",
+   "cstring",
+   "四级",
+   "一部",
+   " strings",
+   "一部分"
+  ],
+  "down": [
+   "peed",
+   "heet",
+   "pector",
+   "pective",
+   "chema",
+   "cheme",
+   "ť",
+   "olen",
+   "olution",
+   "ampler",
+   "upport",
+   "chein"
+  ],
+  "peak_z": 5.664519786834717
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

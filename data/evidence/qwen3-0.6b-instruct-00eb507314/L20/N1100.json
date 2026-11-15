@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1100,
+ "down_norm": 0.7851423621177673,
+ "logit_lens": {
+  "up": [
+   "��",
+   "utorials",
+   "세",
+   "rette",
+   "hape",
+   "塑造",
+   "使",
+   "tml",
+   "西北",
+   "形成",
+   "DEFINED",
+   "比亚"
+  ],
+  "down": [
+   " searcher",
+   "eing",
+   "oso",
+   " piece",
+   "-entry",
+   "kker",
+   "/loading",
+   "滾",
+   "hell",
+   "-ves",
+   "臣",
+   " Artículo"
+  ],
+  "peak_z": 4.9688897132873535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

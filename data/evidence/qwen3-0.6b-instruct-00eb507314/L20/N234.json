@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 234,
+ "down_norm": 0.8396541476249695,
+ "logit_lens": {
+  "up": [
+   "mag",
+   "material",
+   "mid",
+   "itters",
+   "acked",
+   "CL",
+   "marked",
+   "ITTER",
+   "alars",
+   "elow",
+   "mem",
+   "ippers"
+  ],
+  "down": [
+   " Madness",
+   "preter",
+   "迭",
+   "piece",
+   " mắn",
+   "不开",
+   "permanent",
+   "stem",
+   "宇宙",
+   "竺",
+   " setback",
+   "PageRoute"
+  ],
+  "peak_z": 5.71990966796875
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

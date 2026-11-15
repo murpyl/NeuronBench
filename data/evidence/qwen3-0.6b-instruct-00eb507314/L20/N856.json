@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 856,
+ "down_norm": 0.8963199853897095,
+ "logit_lens": {
+  "up": [
+   " projectName",
+   "ut",
+   "FirstResponder",
+   " proportion",
+   " fert",
+   "镇",
+   " Diameter",
+   "合力",
+   "=length",
+   "stant",
+   ".AutoScaleDimensions",
+   " length"
+  ],
+  "down": [
+   "elivery",
+   "ков",
+   " hugs",
+   "一头",
+   "左边",
+   "ream",
+   " Running",
+   "running",
+   "_updates",
+   "itters",
+   "cly",
+   "MING"
+  ],
+  "peak_z": 4.677031993865967
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2674,
+ "down_norm": 0.9775578379631042,
+ "logit_lens": {
+  "up": [
+   "同仁",
+   "кер",
+   "何况",
+   "estation",
+   ")`",
+   "lea",
+   "&A",
+   " fieldValue",
+   " liter",
+   "哪家",
+   "eties",
+   "更何况"
+  ],
+  "down": [
+   " according",
+   " According",
+   "according",
+   "According",
+   "根据",
+   "根據",
+   "按照",
+   " según",
+   "按",
+   "据",
+   " selon",
+   "ccording"
+  ],
+  "peak_z": 19.504056930541992
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

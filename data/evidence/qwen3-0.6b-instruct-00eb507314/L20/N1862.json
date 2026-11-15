@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1862,
+ "down_norm": 0.9465919733047485,
+ "logit_lens": {
+  "up": [
+   "abra",
+   "pora",
+   "ymes",
+   " (!_",
+   " improvised",
+   "apeutic",
+   "⚠",
+   "MZ",
+   "epar",
+   "uzzi",
+   " pops",
+   "不舒服"
+  ],
+  "down": [
+   "全部",
+   " all",
+   "整个",
+   "全面",
+   "所有",
+   " full",
+   "全",
+   "All",
+   " entire",
+   "完整",
+   "_all",
+   "-all"
+  ],
+  "peak_z": 13.03173542022705
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

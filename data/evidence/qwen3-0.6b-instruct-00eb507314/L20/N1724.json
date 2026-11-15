@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1724,
+ "down_norm": 0.8567595481872559,
+ "logit_lens": {
+  "up": [
+   "ssa",
+   "oto",
+   "elry",
+   "ota",
+   "못",
+   " Canberra",
+   " &___",
+   " sĩ",
+   "(\"'\"",
+   "aru",
+   "liers",
+   "拍拍"
+  ],
+  "down": [
+   " multiple",
+   "Multiple",
+   "multiple",
+   " multi",
+   "多重",
+   " Multiple",
+   "multi",
+   "Multi",
+   " Multi",
+   " mult",
+   " MULT",
+   "多"
+  ],
+  "peak_z": 12.207955360412598
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

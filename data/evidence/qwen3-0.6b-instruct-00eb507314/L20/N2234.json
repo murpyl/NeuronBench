@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2234,
+ "down_norm": 1.0987626314163208,
+ "logit_lens": {
+  "up": [
+   " a",
+   " an",
+   "是一个",
+   "一个",
+   "是一种",
+   "这是一个",
+   "是一款",
+   "是一项",
+   "是一個",
+   "是一位",
+   "是一名",
+   "是个"
+  ],
+  "down": [
+   " AppComponent",
+   " günlük",
+   "ylene",
+   "الي",
+   "uent",
+   "heit",
+   "óc",
+   "ittel",
+   "elters",
+   "icated",
+   "IVED",
+   "preter"
+  ],
+  "peak_z": 15.694230079650879
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

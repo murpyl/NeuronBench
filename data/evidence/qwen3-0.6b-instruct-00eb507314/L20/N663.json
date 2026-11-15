@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 663,
+ "down_norm": 0.9434242248535156,
+ "logit_lens": {
+  "up": [
+   "?\",",
+   "까요",
+   "?\n\n",
+   "?\";\n",
+   "?\",\n",
+   "？",
+   "?',",
+   "？”",
+   "?\"",
+   "?",
+   "发展",
+   "？\n"
+  ],
+  "down": [
+   " therefore",
+   " thus",
+   "因此",
+   " hence",
+   " Therefore",
+   " Thus",
+   "Therefore",
+   "故",
+   "因而",
+   " donc",
+   "thus",
+   "Thus"
+  ],
+  "peak_z": 23.501832962036133
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

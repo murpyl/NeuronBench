@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 826,
+ "down_norm": 0.8470816016197205,
+ "logit_lens": {
+  "up": [
+   "每一个",
+   "/IP",
+   "每个",
+   "ismo",
+   "Posted",
+   " petty",
+   "ewise",
+   "ificate",
+   "мы",
+   "药业",
+   "ificar",
+   "ólica"
+  ],
+  "down": [
+   "getReference",
+   "ixe",
+   "的秘密",
+   "忸",
+   "assa",
+   " TRUE",
+   "-called",
+   "的最大",
+   "ymph",
+   "叫做",
+   "planes",
+   "defs"
+  ],
+  "peak_z": 5.316608428955078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

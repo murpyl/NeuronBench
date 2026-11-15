@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 221,
+ "down_norm": 0.8766558766365051,
+ "logit_lens": {
+  "up": [
+   " palms",
+   "court",
+   "emplace",
+   "NJ",
+   " Powers",
+   "inode",
+   "worth",
+   " componentDidUpdate",
+   "jured",
+   "istics",
+   "aveled",
+   "Medium"
+  ],
+  "down": [
+   "ering",
+   "slash",
+   "管线",
+   "acific",
+   "pond",
+   "estatus",
+   " Kong",
+   "פור",
+   " réserve",
+   "thritis",
+   "orris",
+   "焘"
+  ],
+  "peak_z": 4.89971923828125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

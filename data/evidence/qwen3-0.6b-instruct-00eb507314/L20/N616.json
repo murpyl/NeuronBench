@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 616,
+ "down_norm": 0.8199452757835388,
+ "logit_lens": {
+  "up": [
+   "olds",
+   "pen",
+   "面",
+   "世",
+   "opt",
+   "ermal",
+   "auses",
+   "old",
+   "ido",
+   "rokes",
+   "zm",
+   "ld"
+  ],
+  "down": [
+   " numeric",
+   "Numeric",
+   " decimal",
+   " Numeric",
+   "_decimal",
+   "ecimal",
+   "Decimal",
+   " hexadecimal",
+   " Decimal",
+   " numerical",
+   " numer",
+   "数值"
+  ],
+  "peak_z": 6.471530914306641
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

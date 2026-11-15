@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 195,
+ "down_norm": 0.6515086889266968,
+ "logit_lens": {
+  "up": [
+   "borough",
+   " art",
+   " scramble",
+   " DISCLAIMER",
+   "IDENT",
+   "뤄",
+   "的艺术",
+   ".createUser",
+   "raid",
+   " orbit",
+   "hall",
+   "melon"
+  ],
+  "down": [
+   "(ct",
+   "ctype",
+   "ermen",
+   "iya",
+   "gable",
+   ".getC",
+   "ky",
+   "ct",
+   "udge",
+   "cps",
+   " стал",
+   "宅"
+  ],
+  "peak_z": 5.345317363739014
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

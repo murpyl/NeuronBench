@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2779,
+ "down_norm": 1.093673586845398,
+ "logit_lens": {
+  "up": [
+   "数",
+   " number",
+   "Profiler",
+   "太多了",
+   "停产",
+   "多了",
+   " Wrath",
+   "dı",
+   "少了",
+   "太少",
+   "科协",
+   "_Number"
+  ],
+  "down": [
+   "ubits",
+   "_MEMBERS",
+   " episodes",
+   "edis",
+   " members",
+   "_entries",
+   " supporters",
+   " stones",
+   ".units",
+   " sod",
+   "units",
+   "-shirts"
+  ],
+  "peak_z": 5.554896831512451
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 178,
+ "down_norm": 0.6343094110488892,
+ "logit_lens": {
+  "up": [
+   " Human",
+   " INTERNATIONAL",
+   "的生命",
+   "าย",
+   " profile",
+   " humano",
+   " instance",
+   "的道路",
+   "的能量",
+   " economy",
+   " nature",
+   " human"
+  ],
+  "down": [
+   "maal",
+   " оказ",
+   "_lua",
+   "Above",
+   "afür",
+   "_tC",
+   "_tD",
+   " {}\r\n\r\n",
+   "Operations",
+   "_n",
+   "_tA",
+   "_arg"
+  ],
+  "peak_z": 4.486692905426025
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

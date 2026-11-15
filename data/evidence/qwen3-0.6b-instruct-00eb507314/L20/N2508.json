@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2508,
+ "down_norm": 0.9565016627311707,
+ "logit_lens": {
+  "up": [
+   "crets",
+   "avs",
+   "ardin",
+   "rets",
+   "ín",
+   "年第",
+   "arrants",
+   "urses",
+   "ollar",
+   "rites",
+   "rians",
+   "oggler"
+  ],
+  "down": [
+   "是",
+   " is",
+   " là",
+   "是一",
+   " adalah",
+   "为",
+   "是中国",
+   "是我",
+   "是我的",
+   "是对",
+   "是你",
+   " 是"
+  ],
+  "peak_z": 12.572322845458984
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

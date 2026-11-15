@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2707,
+ "down_norm": 0.9818504452705383,
+ "logit_lens": {
+  "up": [
+   " rights",
+   " Rights",
+   "人权",
+   "권",
+   "权利",
+   "权",
+   " liberties",
+   " freedoms",
+   "-rights",
+   "Rights",
+   " right",
+   "權"
+  ],
+  "down": [
+   "oyo",
+   "alth",
+   "loading",
+   "loys",
+   "andler",
+   "ocks",
+   " halftime",
+   "tbody",
+   "elight",
+   "lix",
+   " Cly",
+   "tems"
+  ],
+  "peak_z": 7.491756916046143
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

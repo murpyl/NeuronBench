@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 563,
+ "down_norm": 0.597372829914093,
+ "logit_lens": {
+  "up": [
+   "of",
+   "in",
+   "and",
+   "for",
+   "is",
+   "de",
+   "un",
+   "the",
+   "where",
+   "ac",
+   "c",
+   "on"
+  ],
+  "down": [
+   "/lg",
+   " IG",
+   "-www",
+   "-ves",
+   "-validate",
+   "��",
+   "パパ活",
+   " BTN",
+   "اة",
+   "-buy",
+   "-ln",
+   "اقة"
+  ],
+  "peak_z": 5.845395565032959
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

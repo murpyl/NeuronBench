@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2365,
+ "down_norm": 0.9351538419723511,
+ "logit_lens": {
+  "up": [
+   " stock",
+   "库存",
+   " Stock",
+   "stock",
+   "囤",
+   "stocks",
+   "仓",
+   "-stock",
+   " stocks",
+   " STOCK",
+   "存量",
+   "存货"
+  ],
+  "down": [
+   "芩",
+   "echo",
+   "quine",
+   " Sept",
+   "uptools",
+   "icios",
+   "ils",
+   "工委",
+   "itimate",
+   " Division",
+   "Menus",
+   "呦"
+  ],
+  "peak_z": 7.4516401290893555
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 298,
+ "down_norm": 0.6895005702972412,
+ "logit_lens": {
+  "up": [
+   "-def",
+   "ylon",
+   "path",
+   "因为她",
+   "Next",
+   "对她",
+   " Some",
+   "itat",
+   "__",
+   "她们",
+   "-",
+   "-path"
+  ],
+  "down": [
+   "abouts",
+   " `%",
+   " `'",
+   " `{",
+   " commercially",
+   "ellaneous",
+   "رف",
+   "火热",
+   " Indust",
+   "[ind",
+   "normally",
+   "ерж"
+  ],
+  "peak_z": 5.115277290344238
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

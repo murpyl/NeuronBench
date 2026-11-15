@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1448,
+ "down_norm": 0.9416619539260864,
+ "logit_lens": {
+  "up": [
+   "others",
+   "除此之外",
+   " Others",
+   "其他",
+   " others",
+   "OTHER",
+   " another",
+   "Others",
+   "other",
+   "another",
+   " lain",
+   " Another"
+  ],
+  "down": [
+   " the",
+   "the",
+   "The",
+   "_the",
+   " The",
+   " THE",
+   "\tthe",
+   "-the",
+   "\tThe",
+   "ethe",
+   "(the",
+   ",the"
+  ],
+  "peak_z": 12.127026557922363
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

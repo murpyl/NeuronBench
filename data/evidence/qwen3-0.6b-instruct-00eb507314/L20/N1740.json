@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1740,
+ "down_norm": 1.001015305519104,
+ "logit_lens": {
+  "up": [
+   " descriptive",
+   " names",
+   " reasonable",
+   " numbers",
+   "合理",
+   " name",
+   "NSNumber",
+   " a",
+   " projectName",
+   " уника",
+   "ummer",
+   " usernames"
+  ],
+  "down": [
+   "ONTAL",
+   "-bordered",
+   "ocr",
+   "oes",
+   "之城",
+   "pected",
+   "照样",
+   "ICLE",
+   "ocratic",
+   "xcf",
+   "eden",
+   "那就是"
+  ],
+  "peak_z": 5.104830741882324
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 328,
+ "down_norm": 0.5326581597328186,
+ "logit_lens": {
+  "up": [
+   ";",
+   " ?",
+   " ;",
+   " while",
+   " ==",
+   "；",
+   "?",
+   "?$",
+   " ->",
+   ",",
+   " following",
+   " follows"
+  ],
+  "down": [
+   "icity",
+   "eurs",
+   "itra",
+   "ISE",
+   "orns",
+   "azo",
+   "raj",
+   "UES",
+   "bies",
+   "ESCO",
+   "ahl",
+   "dess"
+  ],
+  "peak_z": 6.288074970245361
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

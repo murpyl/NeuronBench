@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2357,
+ "down_norm": 1.0430305004119873,
+ "logit_lens": {
+  "up": [
+   "annes",
+   "趸",
+   "ersion",
+   "sis",
+   "-bed",
+   ")%",
+   "ulum",
+   " thù",
+   " debating",
+   "屿",
+   "Wal",
+   " Bender"
+  ],
+  "down": [
+   "tracted",
+   "下了",
+   " createState",
+   "ained",
+   "acen",
+   "ivated",
+   "甸",
+   " سبيل",
+   " acted",
+   "_TRA",
+   "стрел",
+   "ean"
+  ],
+  "peak_z": 4.7368903160095215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

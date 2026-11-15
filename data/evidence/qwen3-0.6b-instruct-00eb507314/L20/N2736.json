@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2736,
+ "down_norm": 1.0174143314361572,
+ "logit_lens": {
+  "up": [
+   "7",
+   "6",
+   "６",
+   "4",
+   " six",
+   " seven",
+   "４",
+   "７",
+   "8",
+   "5",
+   "-seven",
+   "3"
+  ],
+  "down": [
+   "liga",
+   " prophet",
+   "edith",
+   "privation",
+   "sticks",
+   "quisites",
+   " Jays",
+   " auprès",
+   "wich",
+   "jes",
+   "erosis",
+   ".cljs"
+  ],
+  "peak_z": 8.7098388671875
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

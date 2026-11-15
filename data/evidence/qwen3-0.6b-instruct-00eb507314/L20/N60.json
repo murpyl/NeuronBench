@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 60,
+ "down_norm": 0.5954150557518005,
+ "logit_lens": {
+  "up": [
+   " herself",
+   "_IMM",
+   " moot",
+   "_RDONLY",
+   "(async",
+   "_imm",
+   "orgot",
+   "INGTON",
+   "@foreach",
+   "关于我们",
+   "leh",
+   "@endforeach"
+  ],
+  "down": [
+   "lie",
+   "MLS",
+   "qa",
+   "Circular",
+   "LG",
+   "eng",
+   "àn",
+   "CG",
+   "ML",
+   " SG",
+   " GIR",
+   "AG"
+  ],
+  "peak_z": 5.326912879943848
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

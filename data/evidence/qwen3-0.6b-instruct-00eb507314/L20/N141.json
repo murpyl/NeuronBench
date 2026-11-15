@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 141,
+ "down_norm": 0.6454405188560486,
+ "logit_lens": {
+  "up": [
+   " Jackson",
+   "Support",
+   "                                                                                                                                ",
+   "alex",
+   "lk",
+   "leg",
+   " ",
+   " triển",
+   "�",
+   " Subject",
+   "join",
+   "                                                                "
+  ],
+  "down": [
+   "<s",
+   "{s",
+   ".getS",
+   "ício",
+   "&s",
+   "ствие",
+   "estation",
+   " getS",
+   "iances",
+   " sod",
+   "stances",
+   "nings"
+  ],
+  "peak_z": 5.512610912322998
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

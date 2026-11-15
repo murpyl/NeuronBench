@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1096,
+ "down_norm": 0.8640726208686829,
+ "logit_lens": {
+  "up": [
+   " Environment",
+   "osaic",
+   "lä",
+   "性的",
+   "xiety",
+   "Environment",
+   "濑",
+   "-release",
+   "release",
+   "osity",
+   "iosity",
+   "역"
+  ],
+  "down": [
+   "ems",
+   "tern",
+   " methods",
+   "òng",
+   "enic",
+   " borderBottom",
+   " borderTop",
+   "emed",
+   " đời",
+   "lobs",
+   ".methods",
+   "蛊"
+  ],
+  "peak_z": 4.851617813110352
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

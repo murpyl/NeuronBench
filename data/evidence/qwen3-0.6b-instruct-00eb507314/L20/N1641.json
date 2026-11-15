@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1641,
+ "down_norm": 0.8660669922828674,
+ "logit_lens": {
+  "up": [
+   "ULA",
+   "tableFuture",
+   "}],",
+   "stä",
+   " контак",
+   "分期",
+   "错过",
+   "中途",
+   "二手",
+   " contact",
+   "中期",
+   "арам"
+  ],
+  "down": [
+   "ones",
+   "lore",
+   "inant",
+   "лист",
+   "elry",
+   "prot",
+   "器",
+   "heading",
+   "alignment",
+   "etric",
+   "ניות",
+   " lov"
+  ],
+  "peak_z": 4.6265549659729
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

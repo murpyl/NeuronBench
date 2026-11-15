@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1987,
+ "down_norm": 0.9475880861282349,
+ "logit_lens": {
+  "up": [
+   "ramento",
+   "porto",
+   "enko",
+   " pronto",
+   "rede",
+   "stalk",
+   "ancia",
+   "ypress",
+   "lashes",
+   "lder",
+   "вест",
+   "nces"
+  ],
+  "down": [
+   "apg",
+   "-Muslim",
+   "혁",
+   "ulings",
+   "orca",
+   "amma",
+   "OLUTION",
+   " đạo",
+   "entifier",
+   "_EPS",
+   "ination",
+   "族自治县"
+  ],
+  "peak_z": 4.650989532470703
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

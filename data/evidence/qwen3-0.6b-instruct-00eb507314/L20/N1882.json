@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1882,
+ "down_norm": 1.1284676790237427,
+ "logit_lens": {
+  "up": [
+   " sense",
+   "sense",
+   " Sense",
+   "意義",
+   "意义",
+   "Sense",
+   " sentido",
+   " senses",
+   " meaning",
+   " смысл",
+   "意义上",
+   "的意义"
+  ],
+  "down": [
+   "ỗ",
+   "dition",
+   ":\".",
+   "orial",
+   " setActive",
+   "cedes",
+   " liền",
+   "?',",
+   ".'.",
+   "ouncer",
+   "白色",
+   "プラ"
+  ],
+  "peak_z": 13.921690940856934
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

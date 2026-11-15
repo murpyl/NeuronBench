@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 404,
+ "down_norm": 0.6857199668884277,
+ "logit_lens": {
+  "up": [
+   "的帮助",
+   " Очень",
+   "י",
+   "年开始",
+   "的理解",
+   "ot",
+   "كسر",
+   "年产值",
+   "千万不要",
+   " SON",
+   "に対",
+   "的缘"
+  ],
+  "down": [
+   "egral",
+   "above",
+   ">tag",
+   "[ID",
+   "Mex",
+   "apest",
+   " ActiveForm",
+   "ramento",
+   "tał",
+   "ignal",
+   " AttributeSet",
+   "ahead"
+  ],
+  "peak_z": 4.463376522064209
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

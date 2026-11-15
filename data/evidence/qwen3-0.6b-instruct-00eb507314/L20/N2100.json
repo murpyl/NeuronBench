@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2100,
+ "down_norm": 1.0620472431182861,
+ "logit_lens": {
+  "up": [
+   " PdfPCell",
+   "INCREMENT",
+   " onOptionsItemSelected",
+   "哨",
+   "olem",
+   "SQLException",
+   " Left",
+   "堡",
+   "/install",
+   "院院士",
+   "世界第一",
+   "جب"
+  ],
+  "down": [
+   " verge",
+   "rots",
+   "isks",
+   "EXPORT",
+   "struct",
+   " squash",
+   " rtn",
+   "技",
+   "套",
+   "筇",
+   "dev",
+   ".Skip"
+  ],
+  "peak_z": 4.787350654602051
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

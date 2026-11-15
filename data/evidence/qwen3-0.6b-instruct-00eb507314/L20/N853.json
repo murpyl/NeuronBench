@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 853,
+ "down_norm": 0.9581192135810852,
+ "logit_lens": {
+  "up": [
+   "closing",
+   "檠",
+   "Closing",
+   " października",
+   "Deleting",
+   " composing",
+   "螈",
+   "otomy",
+   "structuring",
+   "ทอง",
+   "都会",
+   "obox"
+  ],
+  "down": [
+   "ited",
+   "ized",
+   " covered",
+   "covered",
+   "PLIED",
+   " traced",
+   "ated",
+   "atted",
+   "所",
+   "sembled",
+   "orted",
+   "ulated"
+  ],
+  "peak_z": 6.799405574798584
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2986,
+ "down_norm": 1.0862711668014526,
+ "logit_lens": {
+  "up": [
+   " kole",
+   "ERICA",
+   "vere",
+   "簃",
+   "blers",
+   "nier",
+   "霹",
+   "系统的",
+   "APSHOT",
+   "olate",
+   "yb",
+   "dac"
+  ],
+  "down": [
+   " manually",
+   "手动",
+   " manual",
+   "人工",
+   " Man",
+   " man",
+   " hand",
+   "Manual",
+   "manual",
+   "手工",
+   "Man",
+   " Manual"
+  ],
+  "peak_z": 13.062353134155273
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

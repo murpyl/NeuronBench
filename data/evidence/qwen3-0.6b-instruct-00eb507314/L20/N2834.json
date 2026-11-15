@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2834,
+ "down_norm": 1.0026830434799194,
+ "logit_lens": {
+  "up": [
+   "沉浸",
+   "ematic",
+   "情境",
+   " atmosphere",
+   " emotion",
+   "情感",
+   "的情绪",
+   "境界",
+   "Embed",
+   "的情感",
+   " emot",
+   "虚构"
+  ],
+  "down": [
+   " onDataChange",
+   "岌",
+   "JB",
+   "lastic",
+   ".prot",
+   "unt",
+   "assel",
+   " JObject",
+   ">',",
+   ".fastjson",
+   "attles",
+   ">D"
+  ],
+  "peak_z": 5.707784175872803
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

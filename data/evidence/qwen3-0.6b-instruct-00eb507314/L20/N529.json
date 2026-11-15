@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 529,
+ "down_norm": 0.7941064238548279,
+ "logit_lens": {
+  "up": [
+   "避孕",
+   " MainForm",
+   "setAttribute",
+   "<HTML",
+   "ScrollBar",
+   " Castle",
+   " Mits",
+   "нибудь",
+   "십시",
+   "itaire",
+   "minate",
+   "TRS"
+  ],
+  "down": [
+   " JSON",
+   ".json",
+   "JSON",
+   " covid",
+   "网红",
+   "_json",
+   " Airbnb",
+   " json",
+   " Covid",
+   " Ethereum",
+   " COVID",
+   "json"
+  ],
+  "peak_z": 7.440025329589844
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1931,
+ "down_norm": 0.8884187936782837,
+ "logit_lens": {
+  "up": [
+   "lep",
+   "itr",
+   "::",
+   "remen",
+   "编织",
+   "erture",
+   "uat",
+   "arr",
+   "石榴",
+   "argest",
+   "ycling",
+   " Dop"
+  ],
+  "down": [
+   "抗生素",
+   " infection",
+   " fought",
+   " infections",
+   " antibiot",
+   " invading",
+   "战胜",
+   " infected",
+   "对抗",
+   "against",
+   " fight",
+   " fighting"
+  ],
+  "peak_z": 6.831355094909668
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

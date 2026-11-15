@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2662,
+ "down_norm": 1.0052651166915894,
+ "logit_lens": {
+  "up": [
+   "jang",
+   "枨",
+   "刬",
+   "ăng",
+   " %-",
+   "ernity",
+   "ча",
+   "itud",
+   "羯",
+   "ChangeEvent",
+   "ogo",
+   " |/"
+  ],
+  "down": [
+   "蛰",
+   "保守",
+   "隐藏",
+   " rest",
+   "沉默",
+   " waiting",
+   "保留",
+   "躲在",
+   " hiding",
+   "保持",
+   "等待",
+   "(hidden"
+  ],
+  "peak_z": 7.119283676147461
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

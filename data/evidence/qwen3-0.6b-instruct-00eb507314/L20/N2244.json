@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2244,
+ "down_norm": 0.9520142674446106,
+ "logit_lens": {
+  "up": [
+   "焦点",
+   " focus",
+   "的对象",
+   "al",
+   " Subjects",
+   "受害者",
+   " cast",
+   ".Objects",
+   "alus",
+   "alen",
+   "сы",
+   "als"
+  ],
+  "down": [
+   "openh",
+   "еть",
+   "ablish",
+   "iscrimination",
+   "ÜR",
+   "_methods",
+   "غ",
+   "ennen",
+   "reating",
+   "ёт",
+   "uck",
+   "几率"
+  ],
+  "peak_z": 5.410818099975586
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

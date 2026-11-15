@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1774,
+ "down_norm": 0.9078596830368042,
+ "logit_lens": {
+  "up": [
+   "ordova",
+   "这两个",
+   "azes",
+   "ǘ",
+   ">(()",
+   "},{\n",
+   "ですし",
+   "摇头",
+   " borderTop",
+   "irting",
+   "iday",
+   "偓"
+  ],
+  "down": [
+   " all",
+   "所有",
+   "all",
+   " All",
+   "All",
+   "所有的",
+   "_all",
+   "(all",
+   ".all",
+   "-all",
+   " ALL",
+   "\tall"
+  ],
+  "peak_z": 23.14562225341797
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1504,
+ "down_norm": 0.8042349219322205,
+ "logit_lens": {
+  "up": [
+   "inary",
+   "elif",
+   "dney",
+   "景区",
+   "inese",
+   "etCode",
+   "ereum",
+   "@update",
+   "宁县",
+   " sourceMappingURL",
+   "ôle",
+   "ewood"
+  ],
+  "down": [
+   "授",
+   "maid",
+   " cad",
+   "hare",
+   "ains",
+   " métier",
+   "Important",
+   "撮",
+   "而非",
+   "时不",
+   " commission",
+   "更容易"
+  ],
+  "peak_z": 4.910134315490723
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

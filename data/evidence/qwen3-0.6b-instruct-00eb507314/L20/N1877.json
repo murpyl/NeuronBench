@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1877,
+ "down_norm": 0.988513708114624,
+ "logit_lens": {
+  "up": [
+   "laws",
+   "出台",
+   "规则",
+   "rule",
+   "出台了",
+   " Rule",
+   "规定",
+   "制定",
+   " rule",
+   "制定了",
+   " laws",
+   "法规"
+  ],
+  "down": [
+   "da",
+   "istra",
+   "erde",
+   "中场",
+   "IDA",
+   "yla",
+   " الخل",
+   "起こ",
+   "ystore",
+   "ไหว",
+   "球",
+   " midfielder"
+  ],
+  "peak_z": 5.8589186668396
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1918,
+ "down_norm": 0.9508714079856873,
+ "logit_lens": {
+  "up": [
+   "ائية",
+   "ски",
+   "emia",
+   "presence",
+   "疡",
+   " presence",
+   "祓",
+   "/gin",
+   "ском",
+   "{name",
+   "滩",
+   "mdir"
+  ],
+  "down": [
+   " map",
+   " maps",
+   "map",
+   ".map",
+   "-map",
+   "(map",
+   "\tmap",
+   " Map",
+   " apply",
+   "maps",
+   "并将",
+   "Map"
+  ],
+  "peak_z": 6.378731727600098
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

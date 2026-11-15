@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2458,
+ "down_norm": 1.0495694875717163,
+ "logit_lens": {
+  "up": [
+   "&p",
+   "=\"<<",
+   "往年",
+   "appable",
+   " seiz",
+   ">(()",
+   " saja",
+   "すご",
+   "&a",
+   "exels",
+   "劭",
+   " <<\n"
+  ],
+  "down": [
+   " final",
+   "最终",
+   " finally",
+   "final",
+   "最后",
+   "Finally",
+   "Final",
+   " Final",
+   " Finally",
+   "_final",
+   "\tfinal",
+   "最終"
+  ],
+  "peak_z": 20.201623916625977
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

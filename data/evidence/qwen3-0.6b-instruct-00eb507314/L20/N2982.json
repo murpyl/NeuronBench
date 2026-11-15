@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2982,
+ "down_norm": 1.013573408126831,
+ "logit_lens": {
+  "up": [
+   " life",
+   " lifespan",
+   " Life",
+   "Life",
+   "周期",
+   "生命周期",
+   "寿命",
+   "_life",
+   " lifetime",
+   "-life",
+   " duration",
+   "life"
+  ],
+  "down": [
+   "隅",
+   "ceği",
+   "ken",
+   "惮",
+   "istrate",
+   " Ard",
+   "床",
+   "laştır",
+   " nok",
+   "культ",
+   "斯顿",
+   " Canal"
+  ],
+  "peak_z": 8.908090591430664
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

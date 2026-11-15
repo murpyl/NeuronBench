@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 657,
+ "down_norm": 0.7321202754974365,
+ "logit_lens": {
+  "up": [
+   " pressure",
+   "心脏",
+   "蜜",
+   "压力",
+   " Heart",
+   "沮",
+   "心动",
+   "疏通",
+   " heart",
+   "留守",
+   "扶持",
+   "-release"
+  ],
+  "down": [
+   "ValueCollection",
+   "拼音",
+   " extrapol",
+   "\",\"+",
+   " outputs",
+   " styl",
+   "佶",
+   " alan",
+   "clar",
+   "onsense",
+   ".skip",
+   "krit"
+  ],
+  "peak_z": 4.658458709716797
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

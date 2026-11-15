@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 379,
+ "down_norm": 0.5124422907829285,
+ "logit_lens": {
+  "up": [
+   " boa",
+   " umb",
+   " bigot",
+   " larger",
+   "还将",
+   "PIO",
+   " resignation",
+   " mode",
+   " wag",
+   " bonds",
+   " satisfactory",
+   " turf"
+  ],
+  "down": [
+   "ctors",
+   "ainer",
+   "ointments",
+   "ainers",
+   "ission",
+   "verages",
+   "itter",
+   "efore",
+   "missions",
+   "imming",
+   "redit",
+   "irical"
+  ],
+  "peak_z": 5.73303747177124
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2236,
+ "down_norm": 0.9314482808113098,
+ "logit_lens": {
+  "up": [
+   "于",
+   "於",
+   " for",
+   " with",
+   " on",
+   " towards",
+   " from",
+   " during",
+   " into",
+   " across",
+   "于此",
+   " through"
+  ],
+  "down": [
+   "thenReturn",
+   ")'),",
+   "ерт",
+   ")frame",
+   ")p",
+   "ARIO",
+   ")object",
+   ")'),\n",
+   "\"She",
+   "صاب",
+   " crist",
+   "QRST"
+  ],
+  "peak_z": 10.853266716003418
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

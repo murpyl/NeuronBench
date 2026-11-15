@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1603,
+ "down_norm": 1.0539679527282715,
+ "logit_lens": {
+  "up": [
+   "acular",
+   "usty",
+   "irate",
+   "atee",
+   "azzi",
+   "功劳",
+   "酱",
+   "@Table",
+   "而来",
+   "inal",
+   "astic",
+   "igli"
+  ],
+  "down": [
+   "ложение",
+   "صف",
+   " lists",
+   " pint",
+   "Demand",
+   "tere",
+   " спис",
+   "-response",
+   ".response",
+   "ЛЕ",
+   "оя",
+   "Synopsis"
+  ],
+  "peak_z": 5.232183933258057
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

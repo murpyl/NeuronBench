@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2256,
+ "down_norm": 0.8416726589202881,
+ "logit_lens": {
+  "up": [
+   "orm",
+   "投资基金",
+   "печат",
+   "ORM",
+   "uffle",
+   "nature",
+   ".scheme",
+   "op",
+   "ohana",
+   "off",
+   " suffix",
+   "首轮"
+  ],
+  "down": [
+   "的趋势",
+   "逐年",
+   " trend",
+   "趋势",
+   "变化",
+   "的变化",
+   " changed",
+   " change",
+   "近两年",
+   " Trends",
+   "近三年",
+   " trends"
+  ],
+  "peak_z": 6.790049076080322
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

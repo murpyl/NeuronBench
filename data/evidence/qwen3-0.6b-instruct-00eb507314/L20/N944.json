@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 944,
+ "down_norm": 0.8647982478141785,
+ "logit_lens": {
+  "up": [
+   "更",
+   "更强",
+   "更有",
+   "更为",
+   "更大的",
+   "更能",
+   " more",
+   "更快",
+   " 更",
+   "更大",
+   "更高的",
+   "更容易"
+  ],
+  "down": [
+   ".twimg",
+   "本报讯",
+   "rics",
+   "’n",
+   "]],",
+   "-</",
+   "\r\n\n",
+   "ingham",
+   "aceut",
+   "OrDefault",
+   ".badlogic",
+   "cimal"
+  ],
+  "peak_z": 19.652782440185547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

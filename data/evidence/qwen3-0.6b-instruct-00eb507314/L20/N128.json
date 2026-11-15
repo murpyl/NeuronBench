@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 128,
+ "down_norm": 0.696669340133667,
+ "logit_lens": {
+  "up": [
+   "-way",
+   "rites",
+   "ounds",
+   "ays",
+   "ead",
+   "ees",
+   "orks",
+   "ational",
+   "ayer",
+   "烬",
+   "enders",
+   "apest"
+  ],
+  "down": [
+   "他就",
+   "最合适",
+   " Com",
+   " Send",
+   "最适合",
+   " send",
+   " \"\"))\n",
+   "下面是小",
+   "auto",
+   " pass",
+   "一堆",
+   " __"
+  ],
+  "peak_z": 5.665389060974121
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

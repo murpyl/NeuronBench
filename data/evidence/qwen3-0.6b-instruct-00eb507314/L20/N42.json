@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 42,
+ "down_norm": 0.6591284871101379,
+ "logit_lens": {
+  "up": [
+   "querque",
+   "oken",
+   "phans",
+   "irst",
+   "rapper",
+   "artz",
+   "roduce",
+   "DMETHOD",
+   "ัส",
+   "江区",
+   "oggler",
+   "ירות"
+  ],
+  "down": [
+   "这些",
+   " this",
+   "这个",
+   "这种",
+   "this",
+   " these",
+   "these",
+   "这",
+   "这一",
+   "这些问题",
+   "这类",
+   "这种情况"
+  ],
+  "peak_z": 18.67253875732422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

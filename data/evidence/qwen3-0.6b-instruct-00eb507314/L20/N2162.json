@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2162,
+ "down_norm": 1.0343061685562134,
+ "logit_lens": {
+  "up": [
+   "rapy",
+   "::-",
+   "ività",
+   "铆",
+   "-striped",
+   "done",
+   " Rica",
+   "cosity",
+   "iphery",
+   "zyst",
+   "rian",
+   "chemas"
+  ],
+  "down": [
+   "нач",
+   "MES",
+   " VOC",
+   "ages",
+   " SOP",
+   "erson",
+   "ект",
+   "-&",
+   " OPC",
+   " UCLA",
+   "PCS",
+   " SIL"
+  ],
+  "peak_z": 4.778855800628662
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

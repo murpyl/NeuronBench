@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 672,
+ "down_norm": 0.8459576368331909,
+ "logit_lens": {
+  "up": [
+   " openness",
+   "代",
+   "筋",
+   " occasional",
+   " realism",
+   " phục",
+   "stin",
+   " comput",
+   " autos",
+   " responsiveness",
+   " maiden",
+   " personal"
+  ],
+  "down": [
+   "ergarten",
+   "lemen",
+   "adar",
+   "ество",
+   "ungle",
+   "IVATE",
+   "anges",
+   "ANGES",
+   "击杀",
+   "说什么",
+   " Beds",
+   "Trees"
+  ],
+  "peak_z": 5.29426908493042
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

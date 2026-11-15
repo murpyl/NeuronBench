@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2711,
+ "down_norm": 0.9516711235046387,
+ "logit_lens": {
+  "up": [
+   "tracts",
+   "manuel",
+   "æk",
+   "ambda",
+   "ço",
+   "\t\t\t\t\t\t\t   ",
+   " vera",
+   "ought",
+   "ítica",
+   " componentDidMount",
+   "ória",
+   "abies"
+  ],
+  "down": [
+   " here",
+   "here",
+   "这里",
+   "在这里",
+   " Here",
+   "Here",
+   " HERE",
+   "这里是",
+   " aquí",
+   "这里的",
+   " здесь",
+   "此处"
+  ],
+  "peak_z": 24.714641571044922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

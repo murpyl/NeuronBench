@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1041,
+ "down_norm": 0.9301769733428955,
+ "logit_lens": {
+  "up": [
+   " anth",
+   "冷水",
+   "矿泉水",
+   " Hyde",
+   " pleasant",
+   "绿色",
+   "饮用水",
+   "inct",
+   " kettle",
+   ".extent",
+   "饮用",
+   "条件"
+  ],
+  "down": [
+   "ара",
+   "orama",
+   "lices",
+   "arra",
+   "=id",
+   "ür",
+   "_LAYER",
+   "iga",
+   "ubo",
+   "ар",
+   "жу",
+   "一头"
+  ],
+  "peak_z": 5.35051965713501
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

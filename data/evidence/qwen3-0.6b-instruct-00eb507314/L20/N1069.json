@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1069,
+ "down_norm": 0.904175877571106,
+ "logit_lens": {
+  "up": [
+   "jähr",
+   " encyclopedia",
+   "童年",
+   " Diploma",
+   " experience",
+   "襞",
+   "Auth",
+   "RTOS",
+   ".assertAlmostEqual",
+   "atti",
+   " Experience",
+   "Experience"
+  ],
+  "down": [
+   " lượt",
+   " trừ",
+   "<Resource",
+   "ured",
+   " adjacent",
+   "egend",
+   "pecting",
+   "-col",
+   "itaire",
+   "宮",
+   ".rule",
+   "宫"
+  ],
+  "peak_z": 5.108850955963135
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2945,
+ "down_norm": 0.9238510131835938,
+ "logit_lens": {
+  "up": [
+   "無い",
+   "BeNull",
+   "buster",
+   "您同意",
+   "人死亡",
+   "-visible",
+   " Completion",
+   "達到",
+   "дан",
+   " action",
+   "行動",
+   "低い"
+  ],
+  "down": [
+   "pled",
+   "ấp",
+   " led",
+   "铺",
+   "揣",
+   "cue",
+   "iped",
+   "ica",
+   "�",
+   "berg",
+   "itation",
+   "ixed"
+  ],
+  "peak_z": 4.559174060821533
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

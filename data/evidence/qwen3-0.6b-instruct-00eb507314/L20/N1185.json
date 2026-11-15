@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1185,
+ "down_norm": 0.8912838101387024,
+ "logit_lens": {
+  "up": [
+   "更多的",
+   "DataExchange",
+   ".SizeType",
+   " DateTimeKind",
+   "isms",
+   "MaxLength",
+   "更深",
+   "chemes",
+   "获得更多",
+   "_losses",
+   "DER",
+   "Spacing"
+  ],
+  "down": [
+   "�",
+   "nen",
+   ")//",
+   "getResource",
+   "o",
+   ",nonatomic",
+   "익",
+   "ardon",
+   "xee",
+   "-ex",
+   "astr",
+   "acon"
+  ],
+  "peak_z": 5.1807379722595215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 631,
+ "down_norm": 0.8058061599731445,
+ "logit_lens": {
+  "up": [
+   "rug",
+   "ewing",
+   "otten",
+   "orate",
+   "extField",
+   " sire",
+   "otropic",
+   "也不例外",
+   "pio",
+   "chu",
+   "очно",
+   "bery"
+  ],
+  "down": [
+   " Below",
+   "下面",
+   "Below",
+   "以下",
+   "下列",
+   "以下是",
+   " Following",
+   "Following",
+   " following",
+   "下面是",
+   "Throughout",
+   " Throughout"
+  ],
+  "peak_z": 6.551115989685059
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

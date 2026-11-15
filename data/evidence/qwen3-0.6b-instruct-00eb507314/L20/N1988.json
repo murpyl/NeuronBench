@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1988,
+ "down_norm": 0.9749397039413452,
+ "logit_lens": {
+  "up": [
+   "-this",
+   "这种方法",
+   "这是一个",
+   ".this",
+   ">This",
+   "这种事情",
+   ",this",
+   "_this",
+   "这是一种",
+   "This",
+   " This",
+   "_THIS"
+  ],
+  "down": [
+   " the",
+   "the",
+   "\tthe",
+   "The",
+   " THE",
+   "-the",
+   "_the",
+   "/the",
+   " The",
+   "—the",
+   " teh",
+   "THE"
+  ],
+  "peak_z": 11.310600280761719
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

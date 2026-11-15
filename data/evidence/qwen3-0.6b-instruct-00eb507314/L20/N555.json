@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 555,
+ "down_norm": 0.7334300875663757,
+ "logit_lens": {
+  "up": [
+   "[]\r\n",
+   "%;\r\n",
+   "',\r\n",
+   "'\r\n",
+   "该县",
+   "[])\r\n",
+   "'},\r\n",
+   "':\r\n",
+   " ${\n",
+   "きれ",
+   " Serbia",
+   "[];\r\n"
+  ],
+  "down": [
+   "返回搜狐",
+   "僵",
+   "UCT",
+   ".standard",
+   " accred",
+   "有这样的",
+   "的信任",
+   "alker",
+   " pupper",
+   "áng",
+   "-Compatible",
+   "不认识"
+  ],
+  "peak_z": 5.275788307189941
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

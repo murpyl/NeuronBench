@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1481,
+ "down_norm": 0.9366505146026611,
+ "logit_lens": {
+  "up": [
+   " surrounding",
+   " autour",
+   " surround",
+   " Surround",
+   " devant",
+   " beside",
+   " вокруг",
+   "周围的",
+   "around",
+   " surrounds",
+   "Around",
+   "围"
+  ],
+  "down": [
+   "يات",
+   "-await",
+   " pien",
+   "ян",
+   "uin",
+   " fully",
+   " misc",
+   " entirely",
+   " ourselves",
+   "져",
+   " themselves",
+   "ุด"
+  ],
+  "peak_z": 6.339557647705078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1754,
+ "down_norm": 0.8337185978889465,
+ "logit_lens": {
+  "up": [
+   "放在",
+   "在里面",
+   "存在于",
+   "出来了",
+   "拿出来",
+   "留在",
+   "出来",
+   "在路上",
+   "挂在",
+   "出现在",
+   "于",
+   "出來"
+  ],
+  "down": [
+   "Ns",
+   "-param",
+   "iero",
+   "isOk",
+   "[temp",
+   "erval",
+   "setDefault",
+   "coe",
+   "raham",
+   "指",
+   "iaz",
+   "相应"
+  ],
+  "peak_z": 8.016018867492676
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

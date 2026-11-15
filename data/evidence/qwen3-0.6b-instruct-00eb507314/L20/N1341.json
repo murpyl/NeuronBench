@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1341,
+ "down_norm": 0.8332878947257996,
+ "logit_lens": {
+  "up": [
+   " Christianity",
+   " Buddhism",
+   " Judaism",
+   "欧式",
+   "主义",
+   "体系",
+   " Buddhist",
+   " traditional",
+   " Islamic",
+   " Muslim",
+   "主義",
+   "基督教"
+  ],
+  "down": [
+   "场上",
+   "körper",
+   "GraphNode",
+   "ibName",
+   "PropertyName",
+   " Nationals",
+   ".cards",
+   " faculties",
+   "urple",
+   "叶片",
+   "abella",
+   "edores"
+  ],
+  "peak_z": 6.070248603820801
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

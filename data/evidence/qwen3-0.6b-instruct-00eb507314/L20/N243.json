@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 243,
+ "down_norm": 0.656928300857544,
+ "logit_lens": {
+  "up": [
+   "&s",
+   "+s",
+   " sod",
+   ".getS",
+   " getS",
+   "<s",
+   " s",
+   "strate",
+   "{s",
+   " satin",
+   "rends",
+   "iants"
+  ],
+  "down": [
+   "av",
+   "uma",
+   "ELL",
+   "irk",
+   "лиз",
+   "licit",
+   "ab",
+   "erculosis",
+   "uren",
+   "EL",
+   "LF",
+   "umer"
+  ],
+  "peak_z": 5.356973171234131
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1583,
+ "down_norm": 0.9655131697654724,
+ "logit_lens": {
+  "up": [
+   "PELL",
+   " Euler",
+   " primes",
+   "ζ",
+   "(++",
+   " Caldwell",
+   " Fare",
+   "bach",
+   "screen",
+   " Twin",
+   "slick",
+   " Finch"
+  ],
+  "down": [
+   "batim",
+   "inox",
+   "antro",
+   "冔",
+   "组织生活",
+   "全景",
+   "arat",
+   " /**<",
+   "��",
+   "Jur",
+   "csi",
+   ".scenes"
+  ],
+  "peak_z": 5.555197715759277
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

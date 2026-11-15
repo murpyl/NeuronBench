@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 710,
+ "down_norm": 0.9321380853652954,
+ "logit_lens": {
+  "up": [
+   "acket",
+   "isce",
+   "hap",
+   "行李",
+   "eking",
+   "毫克",
+   " releases",
+   "进城",
+   "-pocket",
+   "口袋",
+   "饷",
+   "十三五"
+  ],
+  "down": [
+   "oyo",
+   " Gemini",
+   " gyr",
+   "@g",
+   "_tokens",
+   "казан",
+   " role",
+   " Role",
+   "Schedulers",
+   "-thumbnails",
+   "atura",
+   "orca"
+  ],
+  "peak_z": 5.259385585784912
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

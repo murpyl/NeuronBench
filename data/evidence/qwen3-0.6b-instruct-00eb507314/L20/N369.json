@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 369,
+ "down_norm": 0.7845906615257263,
+ "logit_lens": {
+  "up": [
+   "esor",
+   "を選ぶ",
+   "传奇私服",
+   "给您",
+   "给宝宝",
+   "让您",
+   "iser",
+   "彩神",
+   "mutable",
+   "iding",
+   " setC",
+   "emed"
+  ],
+  "down": [
+   " �",
+   "DIC",
+   "醢",
+   "aidu",
+   " adj",
+   "aina",
+   "údo",
+   "ucceeded",
+   "ollah",
+   "NR",
+   "我会",
+   " !\""
+  ],
+  "peak_z": 4.750915050506592
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

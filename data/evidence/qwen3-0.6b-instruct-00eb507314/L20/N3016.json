@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3016,
+ "down_norm": 1.0379921197891235,
+ "logit_lens": {
+  "up": [
+   "的影响",
+   " impact",
+   "impact",
+   "的意义",
+   "影响",
+   "带来",
+   "影響",
+   "Impact",
+   " impacts",
+   "的作用",
+   " leads",
+   "带来了"
+  ],
+  "down": [
+   "的信任",
+   "坚信",
+   "的认知",
+   "的信心",
+   " understand",
+   " WANT",
+   " perceive",
+   "的认识",
+   "ocks",
+   " görm",
+   "的喜爱",
+   " believe"
+  ],
+  "peak_z": 6.556952953338623
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

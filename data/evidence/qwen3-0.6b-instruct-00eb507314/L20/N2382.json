@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2382,
+ "down_norm": 0.9450697302818298,
+ "logit_lens": {
+  "up": [
+   "adro",
+   ":last",
+   "ETO",
+   "جب",
+   "ulkan",
+   "ardless",
+   "逾",
+   " akka",
+   "WOOD",
+   ".UndefOr",
+   " supplemented",
+   "[String"
+  ],
+  "down": [
+   " simplicity",
+   " ease",
+   "方便",
+   " easier",
+   " convenience",
+   " simpl",
+   "简便",
+   " easy",
+   "简化",
+   " convenient",
+   " simplify",
+   " simpler"
+  ],
+  "peak_z": 11.91025161743164
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

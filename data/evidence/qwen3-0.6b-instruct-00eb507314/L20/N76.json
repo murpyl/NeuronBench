@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 76,
+ "down_norm": 0.6406398415565491,
+ "logit_lens": {
+  "up": [
+   "луш",
+   " whit",
+   " directly",
+   "чер",
+   "?,?,?,?,",
+   "enade",
+   " proprio",
+   "合わせ",
+   " vrai",
+   "=username",
+   "quoi",
+   "化进程"
+  ],
+  "down": [
+   "beg",
+   "urrency",
+   "Occ",
+   " Fet",
+   "生活",
+   "得起",
+   "并且",
+   " Beg",
+   "欹",
+   "ailable",
+   "Offer",
+   "tree"
+  ],
+  "peak_z": 4.8708882331848145
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

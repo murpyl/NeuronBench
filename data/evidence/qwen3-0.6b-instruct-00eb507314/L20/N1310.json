@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1310,
+ "down_norm": 0.887998640537262,
+ "logit_lens": {
+  "up": [
+   "></",
+   "ёт",
+   "颊",
+   " bet",
+   "sty",
+   " vows",
+   "-controls",
+   "顯",
+   ">:</",
+   "ῆ",
+   "甲",
+   " area"
+  ],
+  "down": [
+   "dea",
+   "ularity",
+   "######\n",
+   "xFFF",
+   "robe",
+   "neys",
+   "lian",
+   "ueur",
+   "ding",
+   "nodoc",
+   "ạnh",
+   "lie"
+  ],
+  "peak_z": 6.0175862312316895
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

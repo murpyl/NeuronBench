@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2851,
+ "down_norm": 1.1108981370925903,
+ "logit_lens": {
+  "up": [
+   " DialogResult",
+   " ridden",
+   "][(",
+   "城市的",
+   "Separated",
+   "陉",
+   "=$((",
+   "崎",
+   "utral",
+   "дер",
+   "萎",
+   "Israeli"
+  ],
+  "down": [
+   "outu",
+   "nicas",
+   " Ministry",
+   "aks",
+   " finder",
+   "ฌ",
+   " CHK",
+   " físico",
+   "/db",
+   "科研院",
+   " mathematic",
+   "��"
+  ],
+  "peak_z": 4.6169962882995605
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

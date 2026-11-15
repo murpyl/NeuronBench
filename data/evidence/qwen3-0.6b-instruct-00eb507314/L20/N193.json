@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 193,
+ "down_norm": 0.6659247875213623,
+ "logit_lens": {
+  "up": [
+   "linear",
+   "frame",
+   "upid",
+   "conduct",
+   "地上",
+   "nuts",
+   "allis",
+   "mai",
+   "conf",
+   "doors",
+   "value",
+   "expect"
+  ],
+  "down": [
+   " str",
+   " fl",
+   " re",
+   " Gr",
+   " L",
+   " F",
+   " Fl",
+   " Re",
+   " f",
+   " Str",
+   " R",
+   " t"
+  ],
+  "peak_z": 5.111028671264648
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

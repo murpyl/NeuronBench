@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1833,
+ "down_norm": 0.8945909738540649,
+ "logit_lens": {
+  "up": [
+   "sut",
+   ";\");\n",
+   " \");\n\n",
+   ";\")\n",
+   "ypsum",
+   " \")\n",
+   "ots",
+   "جوز",
+   " \");",
+   "ела",
+   "rior",
+   "(Uri"
+  ],
+  "down": [
+   " oneself",
+   "自己的",
+   "自己",
+   " ourselves",
+   "了自己的",
+   "自身的",
+   "您的",
+   " yourself",
+   "你的",
+   " themselves",
+   "我们的",
+   " myself"
+  ],
+  "peak_z": 12.90058422088623
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

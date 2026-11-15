@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2330,
+ "down_norm": 0.9510990381240845,
+ "logit_lens": {
+  "up": [
+   "ILES",
+   "appro",
+   "bara",
+   " approaching",
+   "追",
+   "iles",
+   " evasion",
+   " Behind",
+   "的距离",
+   " Approach",
+   " approach",
+   "ichen"
+  ],
+  "down": [
+   "تاح",
+   "inally",
+   "勺",
+   "镐",
+   "剖",
+   "挑剔",
+   " lifetime",
+   "/legal",
+   "全球",
+   "硎",
+   "g",
+   "rowning"
+  ],
+  "peak_z": 5.2228922843933105
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

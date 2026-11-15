@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1893,
+ "down_norm": 1.0698200464248657,
+ "logit_lens": {
+  "up": [
+   "uhn",
+   "ฝ",
+   "erland",
+   "ause",
+   "=sub",
+   "ucht",
+   "ilden",
+   "erais",
+   " plut",
+   " Spaß",
+   " spl",
+   " Platt"
+  ],
+  "down": [
+   " information",
+   "信息",
+   "information",
+   " info",
+   "的信息",
+   "info",
+   " información",
+   " informations",
+   "Information",
+   "_information",
+   " информацию",
+   " Information"
+  ],
+  "peak_z": 9.952923774719238
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

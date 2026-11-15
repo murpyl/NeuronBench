@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2685,
+ "down_norm": 0.8805767297744751,
+ "logit_lens": {
+  "up": [
+   "全市",
+   "市",
+   "县",
+   " local",
+   "全县",
+   " county",
+   "本市",
+   "城县",
+   " County",
+   "省",
+   "全省",
+   "市区"
+  ],
+  "down": [
+   "国会",
+   "个国家",
+   " countries",
+   "Japan",
+   "各国",
+   "其他国家",
+   " Federal",
+   "国情",
+   " Japan",
+   "国家战略",
+   " Countries",
+   "Russia"
+  ],
+  "peak_z": 8.869073867797852
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

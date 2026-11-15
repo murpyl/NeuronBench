@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1541,
+ "down_norm": 0.9965365529060364,
+ "logit_lens": {
+  "up": [
+   "喽",
+   "ản",
+   "参保",
+   "Exact",
+   "밸",
+   "Exactly",
+   "тро",
+   "班车",
+   "At",
+   " traction",
+   " Struct",
+   "抓好"
+  ],
+  "down": [
+   "some",
+   " some",
+   " reason",
+   "一些",
+   "某些",
+   "某种",
+   ".some",
+   " somehow",
+   "aurants",
+   "有些人",
+   "了一些",
+   " Some"
+  ],
+  "peak_z": 7.256408214569092
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

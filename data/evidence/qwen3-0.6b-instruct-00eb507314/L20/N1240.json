@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1240,
+ "down_norm": 0.9928692579269409,
+ "logit_lens": {
+  "up": [
+   " for",
+   "for",
+   "For",
+   "对于",
+   "_for",
+   " For",
+   "\tfor",
+   " FOR",
+   "而对于",
+   "_FOR",
+   " для",
+   " für"
+  ],
+  "down": [
+   "]|[",
+   "chte",
+   "agger",
+   "nite",
+   "iere",
+   "cribe",
+   "iais",
+   "bitrary",
+   "habi",
+   "achs",
+   "herence",
+   "vant"
+  ],
+  "peak_z": 9.056499481201172
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

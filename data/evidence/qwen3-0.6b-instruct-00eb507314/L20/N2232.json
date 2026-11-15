@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2232,
+ "down_norm": 0.9954957365989685,
+ "logit_lens": {
+  "up": [
+   " caso",
+   "antry",
+   "itude",
+   "cence",
+   "esso",
+   " saja",
+   "tu",
+   "esse",
+   " indeb",
+   "itta",
+   " industry",
+   " England"
+  ],
+  "down": [
+   "品牌的",
+   "组成的",
+   "利用您的",
+   ".CreateCommand",
+   "意义上的",
+   "...\",\n",
+   "-\",",
+   ".listeners",
+   "下来的",
+   "renched",
+   " <\",",
+   "ечен"
+  ],
+  "peak_z": 4.451857089996338
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

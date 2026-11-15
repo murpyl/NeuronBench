@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 647,
+ "down_norm": 0.8155741691589355,
+ "logit_lens": {
+  "up": [
+   "sprintf",
+   "strftime",
+   "迩",
+   "\tsetTimeout",
+   "loser",
+   "QUIRE",
+   "+len",
+   " GUILayout",
+   ".strftime",
+   "ัย",
+   " deltaY",
+   "ẏ"
+  ],
+  "down": [
+   "ting",
+   ":",
+   " **",
+   "**",
+   "了",
+   "ing",
+   "?",
+   "*",
+   " *",
+   " –",
+   "?:",
+   "代表"
+  ],
+  "peak_z": 5.441880226135254
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

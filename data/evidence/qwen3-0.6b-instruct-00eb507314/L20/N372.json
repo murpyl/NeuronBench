@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 372,
+ "down_norm": 0.594083309173584,
+ "logit_lens": {
+  "up": [
+   " ",
+   "\n",
+   "...",
+   ",",
+   "-",
+   " ",
+   ".",
+   "<|endoftext|>",
+   " ...",
+   "\n\n",
+   " #",
+   ":"
+  ],
+  "down": [
+   "icals",
+   "reds",
+   "UTO",
+   "arily",
+   "AINS",
+   "ALS",
+   "鹁",
+   "iores",
+   "xCD",
+   "edBy",
+   "ALES",
+   "(px"
+  ],
+  "peak_z": 6.678703308105469
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

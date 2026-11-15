@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1035,
+ "down_norm": 0.7008671164512634,
+ "logit_lens": {
+  "up": [
+   "的产品",
+   " companies",
+   "产品",
+   " comercial",
+   " التجارية",
+   "产品的",
+   " commercial",
+   " Commercial",
+   " company",
+   " manufactures",
+   "型企业",
+   "让消费者"
+  ],
+  "down": [
+   "人权",
+   "нь",
+   " disarm",
+   "ssh",
+   " slain",
+   " murdered",
+   " observational",
+   "凶手",
+   " prisoners",
+   "atitis",
+   " bisexual",
+   " Rape"
+  ],
+  "peak_z": 6.69775390625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

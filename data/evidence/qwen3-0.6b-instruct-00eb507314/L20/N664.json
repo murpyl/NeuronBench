@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 664,
+ "down_norm": 0.9310258626937866,
+ "logit_lens": {
+  "up": [
+   " objects",
+   "strings",
+   " explanations",
+   "apters",
+   " pools",
+   "ложений",
+   " contexts",
+   " strings",
+   " prototypes",
+   "organizations",
+   " projects",
+   "instances"
+  ],
+  "down": [
+   "isure",
+   "่ม",
+   "有一点",
+   "ilon",
+   "ัด",
+   "ครบ",
+   "ечение",
+   " statistic",
+   "做一个",
+   "的一个",
+   "ไท",
+   " człowiek"
+  ],
+  "peak_z": 5.972319602966309
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

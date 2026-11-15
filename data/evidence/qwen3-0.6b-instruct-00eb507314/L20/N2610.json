@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2610,
+ "down_norm": 1.063470721244812,
+ "logit_lens": {
+  "up": [
+   "OSH",
+   "ацион",
+   " refute",
+   "richt",
+   "フト",
+   "бит",
+   "icios",
+   "-opt",
+   "vements",
+   " регистра",
+   "치",
+   "公认的"
+  ],
+  "down": [
+   " alone",
+   " Alone",
+   "alone",
+   "单独",
+   "独立",
+   "独自",
+   "孤",
+   "-alone",
+   " solo",
+   "独",
+   " standalone",
+   "孤独"
+  ],
+  "peak_z": 12.351767539978027
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

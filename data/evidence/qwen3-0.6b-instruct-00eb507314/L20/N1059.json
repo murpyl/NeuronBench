@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1059,
+ "down_norm": 0.7638226747512817,
+ "logit_lens": {
+  "up": [
+   "ually",
+   " though",
+   "though",
+   "erator",
+   "although",
+   "lessly",
+   "iously",
+   "edly",
+   "因为它",
+   "енно",
+   " unless",
+   "但它"
+  ],
+  "down": [
+   " applicable",
+   "ob",
+   "esper",
+   "ver",
+   " demonstrated",
+   "apro",
+   " доступ",
+   " well",
+   " asked",
+   " tolerated",
+   " available",
+   "onn"
+  ],
+  "peak_z": 6.243265628814697
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

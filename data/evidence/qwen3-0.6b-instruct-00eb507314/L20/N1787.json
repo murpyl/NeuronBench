@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1787,
+ "down_norm": 0.9783313870429993,
+ "logit_lens": {
+  "up": [
+   "另一半",
+   "第二种",
+   "haar",
+   " الآخر",
+   "thal",
+   "밴",
+   "******/\n",
+   "intval",
+   "سان",
+   "lef",
+   "商报",
+   "ogy"
+  ],
+  "down": [
+   "一系列",
+   "若干",
+   " series",
+   "系列",
+   " several",
+   "一批",
+   "几个",
+   "一组",
+   " collection",
+   "series",
+   "一群",
+   " two"
+  ],
+  "peak_z": 8.757349967956543
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

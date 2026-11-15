@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3064,
+ "down_norm": 1.0550047159194946,
+ "logit_lens": {
+  "up": [
+   "车辆",
+   " cars",
+   " vehicles",
+   "房屋",
+   "辆车",
+   " vehicle",
+   "车",
+   " automobiles",
+   "车上",
+   "车子",
+   "atically",
+   "房子"
+  ],
+  "down": [
+   "indsight",
+   " theorists",
+   "ugh",
+   "ardown",
+   "ickets",
+   "@author",
+   "ifier",
+   " newsp",
+   "省教育",
+   " Miller",
+   "oning",
+   "$link"
+  ],
+  "peak_z": 7.476715087890625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

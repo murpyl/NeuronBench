@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2691,
+ "down_norm": 1.0719237327575684,
+ "logit_lens": {
+  "up": [
+   "隐",
+   "暗",
+   "隐藏",
+   " hidden",
+   "潜",
+   " Hidden",
+   "隐形",
+   "悄悄",
+   "隱",
+   " implicit",
+   "隐蔽",
+   " covert"
+  ],
+  "down": [
+   "itz",
+   "bons",
+   "ycin",
+   "orough",
+   "ortion",
+   "柁",
+   "فيل",
+   "зв",
+   "瓢",
+   "die",
+   "宁县",
+   "-Control"
+  ],
+  "peak_z": 7.751162052154541
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

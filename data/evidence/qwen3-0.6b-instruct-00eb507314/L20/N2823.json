@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2823,
+ "down_norm": 0.9661478400230408,
+ "logit_lens": {
+  "up": [
+   "你可以",
+   "你应该",
+   "供",
+   "你想",
+   " you",
+   "你需要",
+   "你要",
+   "You",
+   "您可以",
+   "供给",
+   "你能",
+   "你"
+  ],
+  "down": [
+   "verse",
+   "ometimes",
+   "_strlen",
+   "ĩnh",
+   "ingular",
+   "lation",
+   "ständ",
+   "alte",
+   "Outer",
+   "_ranges",
+   "VERSE",
+   "rö"
+  ],
+  "peak_z": 6.8288984298706055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

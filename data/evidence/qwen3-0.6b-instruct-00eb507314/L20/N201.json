@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 201,
+ "down_norm": 0.7007877826690674,
+ "logit_lens": {
+  "up": [
+   "ству",
+   "ún",
+   "وت",
+   "stag",
+   "ỵ",
+   "ronic",
+   " town",
+   "ải",
+   "own",
+   "ства",
+   "edom",
+   "emplo"
+  ],
+  "down": [
+   "caffe",
+   "_MISS",
+   "rapy",
+   "末端",
+   "odule",
+   "ODULE",
+   "ключен",
+   " ach",
+   "endors",
+   " над",
+   " moduleId",
+   "ernen"
+  ],
+  "peak_z": 5.289599895477295
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

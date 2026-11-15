@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 342,
+ "down_norm": 0.8524153828620911,
+ "logit_lens": {
+  "up": [
+   " Titans",
+   "校外",
+   "大国",
+   "脸色",
+   " outgoing",
+   "上榜",
+   " stron",
+   "ías",
+   "enate",
+   " TYPO",
+   "SKTOP",
+   "rec"
+  ],
+  "down": [
+   "odal",
+   "yte",
+   "oux",
+   "っくり",
+   "keiten",
+   "otes",
+   "וי",
+   " trí",
+   "bons",
+   "ょう",
+   "инг",
+   "обр"
+  ],
+  "peak_z": 5.406797409057617
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

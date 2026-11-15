@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3058,
+ "down_norm": 0.9834851622581482,
+ "logit_lens": {
+  "up": [
+   "arma",
+   "ark",
+   "utters",
+   "ont",
+   "аз",
+   "olem",
+   "ода",
+   "odo",
+   "уж",
+   "enia",
+   "房东",
+   "отов"
+  ],
+  "down": [
+   "rollable",
+   "iations",
+   "ssql",
+   "走出来",
+   "ibilit",
+   "iative",
+   "��",
+   "氨酸",
+   "wick",
+   "ball",
+   "quate",
+   "staw"
+  ],
+  "peak_z": 5.360564231872559
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

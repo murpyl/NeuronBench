@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2159,
+ "down_norm": 0.9676184058189392,
+ "logit_lens": {
+  "up": [
+   " CALLBACK",
+   "clipboard",
+   "руш",
+   "*'",
+   " JA",
+   "鼠",
+   " DataGridView",
+   "擾",
+   "取代",
+   "*X",
+   "errupted",
+   "*\","
+  ],
+  "down": [
+   " breathe",
+   "呼吸",
+   " exh",
+   " breath",
+   " breathing",
+   "ennie",
+   "集中",
+   "思想",
+   "辜",
+   " concentrate",
+   " gaze",
+   "思维"
+  ],
+  "peak_z": 6.280775547027588
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

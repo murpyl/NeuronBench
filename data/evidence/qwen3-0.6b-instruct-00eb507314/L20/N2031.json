@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2031,
+ "down_norm": 0.8864224553108215,
+ "logit_lens": {
+  "up": [
+   "else",
+   "enses",
+   "ance",
+   "igits",
+   "ENSE",
+   "inery",
+   "fore",
+   "']->",
+   " else",
+   "uls",
+   "ary",
+   "ul"
+  ],
+  "down": [
+   " how",
+   "如何",
+   "怎样",
+   "how",
+   "何时",
+   "是如何",
+   " How",
+   "どのように",
+   "什么时候",
+   "How",
+   "该如何",
+   "怎么"
+  ],
+  "peak_z": 19.453832626342773
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

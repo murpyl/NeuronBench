@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1437,
+ "down_norm": 1.0378917455673218,
+ "logit_lens": {
+  "up": [
+   " import",
+   " Sc",
+   " )",
+   "  ",
+   " ",
+   "interfaces",
+   " Kid",
+   "interface",
+   " Path",
+   " Tip",
+   " His",
+   "import"
+  ],
+  "down": [
+   "=pk",
+   "=val",
+   "ства",
+   "arkan",
+   "arks",
+   "=top",
+   "制",
+   "арь",
+   "ahr",
+   "uesta",
+   "ahren",
+   "rist"
+  ],
+  "peak_z": 4.716094970703125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

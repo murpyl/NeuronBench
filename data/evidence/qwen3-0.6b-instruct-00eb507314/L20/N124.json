@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 124,
+ "down_norm": 0.6280500888824463,
+ "logit_lens": {
+  "up": [
+   "2",
+   "8",
+   "f",
+   "igrations",
+   "9",
+   "ison",
+   "pend",
+   "1",
+   " par",
+   "isk",
+   "6",
+   "agg"
+  ],
+  "down": [
+   " theirs",
+   "一事",
+   "ña",
+   "MBED",
+   "为首的",
+   "')\")\n",
+   "<message",
+   "롯",
+   "quat",
+   "委宣传部",
+   "yı",
+   "室"
+  ],
+  "peak_z": 4.902179718017578
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

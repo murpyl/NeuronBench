@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2438,
+ "down_norm": 0.9020503163337708,
+ "logit_lens": {
+  "up": [
+   "豹",
+   " Trucks",
+   "OTES",
+   " fuse",
+   "肩膀",
+   " cuent",
+   "ific",
+   " stage",
+   " fines",
+   "ylation",
+   "IOUS",
+   " mend"
+  ],
+  "down": [
+   "orian",
+   "inois",
+   "ens",
+   ".Areas",
+   " DateTimeKind",
+   "ifestyles",
+   "ewn",
+   "ir",
+   "cir",
+   "acha",
+   "岁以下",
+   "DBNull"
+  ],
+  "peak_z": 5.060254096984863
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

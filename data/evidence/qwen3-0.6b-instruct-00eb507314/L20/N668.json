@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 668,
+ "down_norm": 0.9464771151542664,
+ "logit_lens": {
+  "up": [
+   "[cnt",
+   "dos",
+   " demon",
+   "[d",
+   " canv",
+   "ético",
+   "alcon",
+   "elt",
+   "iences",
+   "eling",
+   " Dere",
+   "<t"
+  ],
+  "down": [
+   "smith",
+   " cloves",
+   "\r\n\t\r\n",
+   "())\r\n",
+   "vature",
+   "tractive",
+   "周り",
+   "%;\">",
+   "апример",
+   "ment",
+   " Ibid",
+   " �"
+  ],
+  "peak_z": 4.985762596130371
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

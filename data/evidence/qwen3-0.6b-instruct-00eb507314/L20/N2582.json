@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2582,
+ "down_norm": 0.9351396560668945,
+ "logit_lens": {
+  "up": [
+   " following",
+   "stitution",
+   "PLICATION",
+   "blick",
+   "(async",
+   ".Manifest",
+   "inition",
+   "imized",
+   "ibilit",
+   " '../../../../../",
+   " sau",
+   "Cancellation"
+  ],
+  "down": [
+   "你的",
+   " your",
+   "your",
+   "Your",
+   "你是",
+   "你需要",
+   " yourself",
+   "你应该",
+   " Your",
+   "你在",
+   "你要",
+   " yours"
+  ],
+  "peak_z": 12.678460121154785
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

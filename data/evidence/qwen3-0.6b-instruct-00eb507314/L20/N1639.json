@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1639,
+ "down_norm": 0.8305211067199707,
+ "logit_lens": {
+  "up": [
+   " an",
+   "機會",
+   " any",
+   " not",
+   " thể",
+   " a",
+   "anche",
+   "-lg",
+   "迹象",
+   "(round",
+   "ANE",
+   " class"
+  ],
+  "down": [
+   "'s",
+   "’s",
+   "自身的",
+   "的基本",
+   "本身的",
+   "的第一",
+   "的好",
+   " himself",
+   "´s",
+   "的一",
+   " Himself",
+   "的动作"
+  ],
+  "peak_z": 10.27566146850586
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

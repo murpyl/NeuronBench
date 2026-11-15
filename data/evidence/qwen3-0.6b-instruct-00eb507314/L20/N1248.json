@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1248,
+ "down_norm": 0.7974364757537842,
+ "logit_lens": {
+  "up": [
+   "安排",
+   "运行",
+   "布置",
+   "相处",
+   "使用",
+   "运作",
+   "��作",
+   " use",
+   "看待",
+   "行事",
+   "摆放",
+   "press"
+  ],
+  "down": [
+   " gerektiğini",
+   "rompt",
+   "faker",
+   "ért",
+   "рон",
+   " hakkında",
+   "TURE",
+   "ClearColor",
+   " vòng",
+   " bữa",
+   "ลาย",
+   "=\\\"#"
+  ],
+  "peak_z": 6.411382675170898
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

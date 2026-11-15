@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3040,
+ "down_norm": 1.0349922180175781,
+ "logit_lens": {
+  "up": [
+   " death",
+   "死亡",
+   " deaths",
+   "死者",
+   "death",
+   "死了",
+   " Killed",
+   " śmierci",
+   "人死亡",
+   "冤",
+   " killed",
+   " killing"
+  ],
+  "down": [
+   "坎",
+   "QUI",
+   "VELO",
+   "istream",
+   " Vis",
+   ".Package",
+   "=email",
+   " Irr",
+   " irrit",
+   "Visited",
+   " Desk",
+   "ponde"
+  ],
+  "peak_z": 6.848277568817139
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

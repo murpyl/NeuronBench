@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2409,
+ "down_norm": 0.959467887878418,
+ "logit_lens": {
+  "up": [
+   "这个人",
+   " communicated",
+   "哥们",
+   "之地",
+   " theirs",
+   "/trunk",
+   "这事",
+   " Disneyland",
+   " resto",
+   "妻",
+   "这部电影",
+   "别人"
+  ],
+  "down": [
+   "ments",
+   "ures",
+   "nel",
+   "AxisAlignment",
+   "uments",
+   "erve",
+   "uetooth",
+   "utes",
+   "aims",
+   "ưng",
+   "ure",
+   "apore"
+  ],
+  "peak_z": 5.394361972808838
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

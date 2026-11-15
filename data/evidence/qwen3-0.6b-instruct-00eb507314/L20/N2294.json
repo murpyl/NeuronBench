@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2294,
+ "down_norm": 0.9531306028366089,
+ "logit_lens": {
+  "up": [
+   "遵循",
+   "amac",
+   "满足",
+   "tings",
+   " accomplish",
+   " fulfilling",
+   "sters",
+   "анс",
+   "agements",
+   " dịp",
+   "istique",
+   "滿足"
+  ],
+  "down": [
+   " installed",
+   "installed",
+   " installing",
+   "購",
+   "购",
+   "uploaded",
+   "兴建",
+   " Installed",
+   "开店",
+   "extract",
+   "submitted",
+   " invented"
+  ],
+  "peak_z": 5.45054292678833
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

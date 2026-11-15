@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 643,
+ "down_norm": 0.7312839031219482,
+ "logit_lens": {
+  "up": [
+   "收集",
+   "输送",
+   " collect",
+   " collects",
+   "获取",
+   " collecting",
+   "搜集",
+   "吸取",
+   "采集",
+   "Receive",
+   "传输",
+   "传递"
+  ],
+  "down": [
+   "�",
+   "rial",
+   "SX",
+   "合",
+   " Starr",
+   " belong",
+   "不在",
+   " Rebellion",
+   "成为",
+   " Teil",
+   "�",
+   "X"
+  ],
+  "peak_z": 7.307862281799316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

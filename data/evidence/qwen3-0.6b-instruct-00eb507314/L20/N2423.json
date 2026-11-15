@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2423,
+ "down_norm": 1.0336476564407349,
+ "logit_lens": {
+  "up": [
+   "音",
+   "utta",
+   "扫一扫",
+   " AIM",
+   "ur",
+   "bers",
+   " Lilly",
+   "ещ",
+   "-rounded",
+   "-comment",
+   " Rounded",
+   "家乡"
+  ],
+  "down": [
+   "执政",
+   "AdminController",
+   " leadership",
+   " wład",
+   " presidency",
+   " власти",
+   "职位",
+   "领导",
+   " throne",
+   "担任",
+   " governor",
+   " vị"
+  ],
+  "peak_z": 6.0261735916137695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3052,
+ "down_norm": 1.0725284814834595,
+ "logit_lens": {
+  "up": [
+   "蔻",
+   "punk",
+   "orelease",
+   "inely",
+   "细节",
+   "phan",
+   "工作机制",
+   "geries",
+   "trieve",
+   "ation",
+   "allest",
+   "opsis"
+  ],
+  "down": [
+   "说",
+   " said",
+   " say",
+   " says",
+   "說",
+   " saying",
+   "said",
+   "says",
+   "say",
+   "他说",
+   "说道",
+   "说是"
+  ],
+  "peak_z": 12.700979232788086
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

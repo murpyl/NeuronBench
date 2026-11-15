@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1470,
+ "down_norm": 0.975822925567627,
+ "logit_lens": {
+  "up": [
+   " individually",
+   ".state",
+   "任何时候",
+   "صلة",
+   ".Ag",
+   ".once",
+   "anus",
+   "plies",
+   "一家",
+   "orro",
+   " state",
+   "exels"
+  ],
+  "down": [
+   "protected",
+   " protected",
+   "\tprotected",
+   "iage",
+   "岁以下",
+   " overwritten",
+   " protections",
+   "Protected",
+   "avras",
+   "/LICENSE",
+   "保护",
+   "ierten"
+  ],
+  "peak_z": 5.813122272491455
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

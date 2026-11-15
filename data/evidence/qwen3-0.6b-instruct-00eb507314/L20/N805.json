@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 805,
+ "down_norm": 0.826802670955658,
+ "logit_lens": {
+  "up": [
+   ".DataContext",
+   "culture",
+   "Review",
+   "ursive",
+   "agram",
+   "arts",
+   "!'\n",
+   "igram",
+   "ModifiedDate",
+   ":SetPoint",
+   "!\"\n",
+   "多余"
+  ],
+  "down": [
+   "Helvetica",
+   " November",
+   "约",
+   "大约",
+   " September",
+   " (-",
+   "約",
+   " około",
+   " February",
+   " Sevent",
+   " [-",
+   " October"
+  ],
+  "peak_z": 5.292056560516357
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}
