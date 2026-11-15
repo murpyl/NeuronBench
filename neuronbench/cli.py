@@ -31,7 +31,7 @@ def cmd_build(a):
         if not ev:
             raise SystemExit(f"no evidence for {run.model_id} L{run.layer} under {a.evidence}")
         got = build_items(run, ev, n_choice=a.n_choice, n_null=a.n_null, seed=a.seed, threshold=a.threshold,
-                          min_change=a.min_change, tier=a.tier)
+                          min_change=a.min_change, tier=a.tier, per_neuron=a.per_neuron)
         nc = sum(i.kind == "choice" for i in got)
         nr = sum(i.kind == "null" and i.answer["real"] for i in got)
         npick = sum(i.meta.get("selection") == "picked" for i in got)
@@ -92,6 +92,8 @@ def main(argv=None):
     b.add_argument("--out", default="tasks")
     b.add_argument("--n-choice", type=int, default=30, help="choice items per run")
     b.add_argument("--n-null", type=int, default=20, help="null items per run")
+    b.add_argument("--per-neuron", type=int, default=1,
+                   help="choice items per picked neuron, each on a different prompt (balanced across prompts)")
     b.add_argument("--seed", type=int, default=0)
     b.add_argument("--threshold", type=float, default=0.95, help="null_pct at or above which a neuron is REAL")
     b.add_argument("--min-change", type=float, default=0.1)

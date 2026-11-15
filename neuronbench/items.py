@@ -205,6 +205,18 @@ def _take_stratified(strata: list[list[int]], n: int, rng: random.Random) -> lis
     return out
 
 
+def _spread(cands: list[dict], k: int, used: dict[str, int], rng: random.Random) -> list[dict]:
+    """Up to k of one neuron's conditions on distinct prompts, preferring the prompts used least so far."""
+    by_prompt: dict[str, list[dict]] = {}
+    for c in cands:
+        by_prompt.setdefault(c["prompt"], []).append(c)
+    order = sorted(by_prompt, key=lambda p: (used.get(p, 0), rng.random()))
+    out = [rng.choice(by_prompt[p]) for p in order[:k]]
+    for c in out:
+        used[c["prompt"]] = used.get(c["prompt"], 0) + 1
+    return out
+
+
 def shuffled_donors(neurons: list[int], seed: int, layer: int, kind: str) -> dict[int, int]:
     """{neuron: neuron whose evidence it shows} for the shuffled tier, among one kind's items in one layer.
 
@@ -224,7 +236,9 @@ def shuffled_donors(neurons: list[int], seed: int, layer: int, kind: str) -> dic
 
 def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: int, seed: int = 0,
                 threshold: float = 0.95, real_share: float = 0.5, min_change: float = 0.1,
-                tier: str = "static") -> list[Item]:
+                tier: str = "static", per_neuron: int = 1) -> list[Item]:
+    """per_neuron > 1: up to that many choice items per picked neuron, each on a different prompt, balancing how
+    often each prompt is used. per_neuron=1 keeps one random condition per neuron."""
     rng = random.Random(f"{seed}-{run.model_id}-{run.layer}")
     neurons = [n for n in run.neurons() if n in evidence and run.unit("neuron", n) is not None]
     items: list[Item] = []
@@ -232,9 +246,10 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
     cands = {n: choice_candidates(run, n, min_change=min_change) for n in neurons}
     usable = [n for n in neurons if cands[n]]
     strata = _bins([(run.unit("neuron", n)["mass"], n) for n in usable], 4) if usable else []
+    used: dict[str, int] = {}
     for n in _take_stratified(strata, n_choice, rng):
-        cand = rng.choice(cands[n])
-        items.append(make_choice_item(run, n, cand, augment_evidence(evidence[n], run, n, cand, tier), rng))
+        for cand in [rng.choice(cands[n])] if per_neuron == 1 else _spread(cands[n], per_neuron, used, rng):
+            items.append(make_choice_item(run, n, cand, augment_evidence(evidence[n], run, n, cand, tier), rng))
 
     real = [n for n in neurons if run.unit("neuron", n)["null_pct"] >= threshold]
     null = [n for n in neurons if run.unit("neuron", n)["null_pct"] < threshold]
