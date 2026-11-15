@@ -46,6 +46,9 @@ def test_score_item_choice_falls_back_to_parsed_letter():
     row = dense.score_item(it, {"raw": "x" * 200, "parsed": "C", "rewards": {"choice_acc": 1}})
     assert row["acc"] == 1.0 and row["acc"] == row["graded_acc"]
     assert dense.null_references([it]) == {}
+    for parsed in (None, ""):
+        row = dense.score_item(it, {"raw": "", "parsed": parsed, "rewards": {}})
+        assert (row["acc"], row["rank_score"], row["letter_brier"]) == (0.0, 0.0, 1.0)
 
 
 def test_score_item_null_uses_continuous_null_pct():

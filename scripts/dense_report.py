@@ -103,7 +103,7 @@ def score_item(it: dict, det: dict) -> dict:
     if it["kind"] == "choice":
         key = it["answer"]["letter"]
         order, probs = parse_ranking(det["raw"])
-        if not order and det["parsed"] in LETTERS:
+        if not order and det["parsed"] in set(LETTERS):
             order = [det["parsed"]]  # the answer's first letter fell past the grader's 200-char echo
         row.update(acc=float(bool(order) and order[0] == key), rank_score=rank_score(order, key),
                    letter_brier=letter_brier(order, probs, key), probs_valid=float(probs is not None),
