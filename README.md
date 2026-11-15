@@ -152,21 +152,48 @@ which halves both numbers. Use `neuronbench report`, or the dataset `metric.py`,
 ## Results
 
 Qwen3-0.6B Q8_0, layers 14, 20 and 24: 255 tasks (150 "Which output is it?", 105 "Real or null?" with 54 real).
-Four models ran as mini-SWE-agent on Valkyrie with no agent failures and were scored offline
+Seven models ran as mini-SWE-agent on Valkyrie (five API models, plus Qwen3-32B and Qwen3-0.6B self-hosted on Modal
+vLLM) and were scored offline
 (`neuronbench report --items data/items.jsonl --jobs jobs/valkyrie/*.json --out results`). Long form with every
 number: [`results/analysis.md`](results/analysis.md); datasets and run IDs: [`results/runs.md`](results/runs.md).
 
 | system | Which output is it? accuracy [95% CI] | Real or null? Brier (AUC) |
 |---|---|---|
 | Claude Haiku 5.5 | **0.48** [0.40, 0.56] | 0.255 (0.56) |
-| Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | **0.247** (0.57) |
+| Claude Opus 5.5 | 0.45 [0.37, 0.53] | **0.245** (0.61) |
+| Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | 0.247 (0.57) |
 | GPT-5.6-luna | 0.39 [0.31, 0.47] | 0.308 (0.54) |
 | Claude Haiku 4.5 | 0.39 [0.31, 0.47] | 0.294 (0.52) |
+| Qwen3-32B, self-hosted\* | 0.39 [0.32, 0.47] | 0.392 (0.46) |
+| Qwen3-0.6B, self-hosted\* | 0.23 [0.17, 0.31] | 0.385 (0.49) |
 | best shortcut: logit-lens lookup, dose-sign aware | 0.41 [0.33, 0.49] | |
 | best shortcut: base rate / evidence logreg | | 0.255 / 0.255 |
 | chance | 0.25 | 0.25 (0.50) |
 | *ceiling:* Haiku 5.5 given the neuron's measured sweep words | 0.63 [0.55, 0.71] | 0.210 (0.78) |
 | *ceiling:* Sonnet 5.5, same | 0.71 [0.64, 0.79] | 0.189 (0.83) |
+
+\* The Qwen3 models rarely run the submit command: they write an answer early, keep rewriting `answer.txt` until the
+600 s agent limit, and are graded on the file at that point (timeouts: Qwen3-32B 139/150 choice and 8/105 null tasks,
+Qwen3-0.6B 63/150 and 43/105). No API-model task failed or timed out.
+
+Intervals are 95% percentile bootstraps over items (2,000 resamples). Each model ran each task once, so they cover
+item sampling, not run-to-run variation. Every system answered the same 150 choice items, so the choice intervals are
+all about ±8 points; null-task intervals are narrow for models that hedge near 0.5 and wide for confident ones. Use
+the paired comparisons below for head-to-head claims.
+
+Random-draw vs hand-picked neurons ([`results/results_by_selection.md`](results/results_by_selection.md)); picked
+neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 picked null items no gap is significant:
+
+| system | choice: picked (16) / random (134) | null Brier: picked (20) / random (85) |
+|---|---|---|
+| Claude Haiku 5.5 | 0.31 / 0.50 | 0.246 / 0.257 |
+| Claude Opus 5.5 | 0.44 / 0.45 | 0.220 / 0.250 |
+| Claude Sonnet 5.5 | 0.38 / 0.43 | 0.245 / 0.247 |
+| GPT-5.6-luna | 0.44 / 0.39 | 0.282 / 0.314 |
+| Claude Haiku 4.5 | 0.56 / 0.37 | 0.263 / 0.301 |
+| Qwen3-32B\* | 0.50 / 0.38 | 0.354 / 0.401 |
+| Qwen3-0.6B\* | 0.31 / 0.22 | 0.340 / 0.395 |
+| logit-lens lookup / base rate | 0.56 / 0.39 | 0.252 / 0.255 |
 
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
@@ -174,16 +201,18 @@ number: [`results/analysis.md`](results/analysis.md); datasets and run IDs: [`re
 **Five findings.**
 
 1. **No model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
-   the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]); the other three are at or
-   below it. Accuracy is not ordered by model size.
+   the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]) and Opus 5.5 +4; the other
+   API models are at or below it. Accuracy is not ordered by model size. Open-weight Qwen3-32B ties GPT-5.6-luna and
+   Haiku 4.5 (39%); Qwen3-0.6B, the steered model itself, is at chance on its own neurons (23%).
 2. **The solvable half is the one you can read off the text.** In 50 of 150 items a lens token literally occurs in a
-   candidate reply: lookup 64%, models 52–62%. In the other 100: lookup 29%, models 32–41%, and only Haiku 5.5's
-   interval clears chance. Models don't even apply the lookup consistently: they agree with its pick on 31–35% of
-   items and solve only half of the 61 items it gets right, so "model or lookup right" reaches 59–67%.
-3. **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.57 for every model. The Brier spread is
-   calibration, not knowledge: replacing each model's answers with its own mean changes its Brier by ≤ 0.03. All
-   four set their probability from the logit-lens peak z-score (Spearman 0.60–0.76), which has Spearman 0.13 with
-   the truth. Sonnet 5.5 "wins" by hedging 0.4–0.6; Haiku 4.5 and GPT-5.6-luna lose by saying 0.7–0.9.
+   candidate reply: lookup 64%, API models 52–62%. In the other 100: lookup 29%, API models 32–41%, and only Haiku
+   5.5's and Opus 5.5's intervals clear chance. Models don't even apply the lookup consistently: API models agree with
+   its pick on 31–35% of items and solve only about half of the 61 items it gets right, so "model or lookup right" reaches 59–67%.
+3. **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.61 for the API models (Opus 5.5 highest) and
+   0.46–0.49 for the Qwens. The API models' Brier spread is calibration, not knowledge: replacing each one's answers
+   with its own mean changes its Brier by ≤ 0.03. They set their probability from the logit-lens peak z-score
+   (Spearman 0.60–0.85), which has Spearman 0.13 with the truth. Opus 5.5 and Sonnet 5.5 "win" by staying near 0.5;
+   Haiku 4.5 and GPT-5.6-luna lose by saying 0.7–0.9, and the Qwens by saying "real" to almost everything (mean 0.82–0.88).
 4. **The static evidence, not the task format, is the bottleneck.** Rebuilding the same items with the neuron's
    measured over-used words in the evidence (`--tier oracle`) lifts Haiku 5.5 from 48% to 63% (paired +15
    [+5, +25]) and Sonnet 5.5 from 42% to 71%; on the 82 items where those words point at one reply they score 87%
@@ -191,10 +220,10 @@ number: [`results/analysis.md`](results/analysis.md); datasets and run IDs: [`re
    (+0 [−8, +8]) but lifts null AUC from 0.56 to 0.69. Even with oracle z-scores the models leave null signal unused:
    a one-feature logistic regression gets Brier 0.089, Haiku 5.5 0.210.
 5. **Thinking longer didn't help, and the models fail differently.** Haiku 4.5 (median 6 API calls, $10 run) tied for
-   last; Haiku 5.5 (≤ 2 calls on 70% of tasks, $0.27 run) came first. Pairwise agreement is 39–65%, 44 items were
-   missed by all four, and a plurality vote (40%) is worse than the best single model.
+   last; Haiku 5.5 (≤ 2 calls on 70% of tasks, $0.27 run) came first. Among the first four API models, pairwise agreement is
+   39–65%, 44 items were missed by all four, and a plurality vote (40%) is worse than the best single model.
 
-**Failure modes**, from the 1020 trajectories (Sonnet 5.5 exposes no reasoning):
+**Failure modes**, from the 1020 trajectories of the first four API models (Sonnet 5.5 exposes no reasoning):
 
 - *Oddest reply:* "random directions cause mild drift, so the reply that departs most is the neuron" (Haiku 5.5).
   The distractors are matched on change, so this is chance; every model does it on 28–34% of items.
