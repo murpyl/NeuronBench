@@ -5,9 +5,10 @@ Numbers come from `scripts/analyze_results.py` (`results/analysis.txt`) and from
 
 ## Headline results
 
-1. **Every model beats every shortcut on "Which output is it?", none by much.** 39–48% vs 25% chance and 30% for the
-   best evidence-only heuristic. Order: Haiku 5.5 (48%) > Sonnet 5.5 (42%) > GPT-5.6-luna (39%) = Haiku 4.5 (39%).
-   Not ordered by model size or price.
+1. **Only Haiku 5.5 clearly beats the best agent-free shortcut on "Which output is it?".** The strongest text-only
+   heuristic (`scripts/ceiling_baselines.py`: pick the reply containing the lens tokens the dose actually pushes, with
+   fuzzy matching) scores 41% [34, 49]; the plain logit-lens baseline 30%; chance 25%. Models: Haiku 5.5 48% > Sonnet
+   5.5 42% > GPT-5.6-luna 39% = Haiku 4.5 39%. Three of the four are at the shortcut's level, and not in size order.
 2. **Most of that skill is reading the neuron's vocabulary off the text.** In 50 of 150 items a logit-lens token
    (≥3 letters) literally occurs in one of the candidate replies. On those items models score 52–62%; on the other
    100 they score 32–41%. A trivial "pick the reply containing a lens token" baseline gets 35%. Beyond token

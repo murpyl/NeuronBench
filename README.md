@@ -158,7 +158,8 @@ Full tables: `results/results.md`, split by random-draw vs hand-picked neurons i
 | Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | **0.247** [0.233, 0.261] |
 | GPT-5.6-luna | 0.39 [0.31, 0.47] | 0.308 [0.256, 0.360] |
 | Claude Haiku 4.5 | 0.39 [0.31, 0.47] | 0.294 [0.244, 0.344] |
-| best shortcut: logit lens | 0.30 [0.23, 0.37] | |
+| best shortcut: sign-aware lens lookup (`scripts/ceiling_baselines.py`) | 0.41 [0.34, 0.49] | |
+| shortcut: plain logit lens | 0.30 [0.23, 0.37] | |
 | best shortcut: base rate / evidence logreg | | 0.255 / 0.255 |
 | random / always-real | 0.25 | 0.49 |
 
@@ -176,14 +177,16 @@ scores 54%. The other 100 items need an actual prediction from the evidence, and
 | GPT-5.6-luna | 0.54 [0.40, 0.68] | 0.32 [0.23, 0.41] |
 | Claude Haiku 4.5 | 0.52 [0.38, 0.66] | 0.33 [0.24, 0.42] |
 | lens-token lookup baseline | 0.54 | 0.25 |
+| sign-aware fuzzy lens lookup | 0.60 [0.46, 0.74] | 0.32 [0.23, 0.41] |
 | random | 0.25 | 0.25 |
 
 Where the lookup works, models do about what it does. Where it doesn't, only Haiku 5.5's interval clears chance.
 
 Headline findings (full analysis with failure modes in `results/analysis.md`; numbers from `scripts/analyze_results.py`):
 
-- **Every model beats every shortcut on "Which output is it?", none by much** (39–48% vs 30% best heuristic, 25% chance),
-  and not in size order: Haiku 5.5 > Sonnet 5.5 > GPT-5.6-luna = Haiku 4.5.
+- **Only Haiku 5.5 clearly beats the best shortcut on "Which output is it?".** A sign-aware lens lookup (down tokens
+  for negative doses, punctuation kept) scores 41%; Haiku 5.5 gets 48%, Sonnet 5.5 42%, GPT-5.6-luna and Haiku 4.5 39%.
+  Not in size order.
 - **The skill is mostly reading the neuron's vocabulary off the text.** On the 50 items where a logit-lens token
   literally occurs in a candidate reply, models score 52–62%; on the other 100, 32–41%. Large pushes (change ≥ 0.8
   from the unsteered reply) are solved 51–67%, smaller ones 31–40%.
