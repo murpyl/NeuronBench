@@ -2,12 +2,14 @@
 
 Left: "Which output is it?" on the 900 more-prompts items, every model against the logit-lens lookup and chance.
 Right: the 150 original choice items at each evidence tier (wrong evidence, static, per-token trace, measured sweep
-words), each model next to the best agent-free baseline for that tier.
+words), each model next to the best agent-free baseline for that tier, plus the blind human answers in human/ on the
+static tier.
 
 python scripts/headline_plot.py
 """
 
 import argparse
+import csv
 import random
 from pathlib import Path
 
@@ -37,7 +39,8 @@ TIERS = {
                                 "sweep_words", "word lookup"),
 }
 COLORS = {"Opus 5.5": "#1f4e9c", "Sonnet 5.5": "#3d7dd8", "Haiku 5.5": "#8db3ec", "GPT-5.6-luna": "#2e9e6a",
-          "baseline": "#999999"}
+          "baseline": "#999999", "human": "#d98c3a"}
+HUMAN_TIER_ITEMS = "data/items.jsonl"
 
 
 def paired_ci(a: dict, b: dict, ids: list[str], n_boot: int = 2000, seed: int = 0) -> tuple[float, float, float]:
@@ -54,6 +57,17 @@ def choice_scores(items_path: str, jobs: list[str]) -> tuple[list[str], dict, di
     for m, s in models.items():
         assert set(s) == set(ids), f"{m}: {len(s)}/{len(ids)} items in {items_path}"
     return ids, models, run_baselines(items)
+
+
+def human_scores(items_path: str) -> dict:
+    key = {it["id"]: it["answer"]["letter"] for it in load_items(items_path) if it["kind"] == "choice"}
+    scores = {}
+    for f in sorted(Path("human").glob("answers_*.csv")):
+        with open(f) as fh:
+            for r in csv.DictReader(fh):
+                if r["answer"].strip():
+                    scores[(f.stem, r["id"])] = float(r["answer"].strip().upper() == key[r["id"]])
+    return scores
 
 
 def bar(ax, y, scores, ids, color, label):
@@ -104,10 +118,13 @@ def main():
     for tier, (items_path, jobs, bname, blabel) in TIERS.items():
         ids, models, base = choice_scores(items_path, [f"{J}/{j}.json" for j in jobs])
         start = y
-        rows = [(m, models[m], COLORS[m]) for m in MODELS.values() if m in models]
-        rows.append((f"{blabel} (no model)", base[bname], COLORS["baseline"]))
-        for name, s, c in rows:
-            _, v, lo, hi = bar(axr, y, s, ids, c, name)
+        rows = [(m, models[m], COLORS[m], ids) for m in MODELS.values() if m in models]
+        rows.append((f"{blabel} (no model)", base[bname], COLORS["baseline"], ids))
+        if items_path == HUMAN_TIER_ITEMS and (hs := human_scores(items_path)):
+            n_items = len({i for _, i in hs})
+            rows.append((f"humans ({n_items} items x {len(hs) // n_items})", hs, COLORS["human"], list(hs)))
+        for name, s, c, row_ids in rows:
+            _, v, lo, hi = bar(axr, y, s, row_ids, c, name)
             ticks.append(y)
             tick_labels.append(name)
             md.append(f"| {tier.replace(chr(10), ' ')} | {name} | {v:.3f} [{lo:.3f}, {hi:.3f}] |")
