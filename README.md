@@ -90,17 +90,17 @@ Seven models ran as mini-SWE-agent on Valkyrie, one attempt per task; datasets a
 
 ### Four findings
 
-1. **Every model beats the lookup, and none comes close to solving the task.** Opus 5.5 leads (55%) and beats
-   Haiku 5.5 by +8 points [+5, +11]. Accuracy rises with layer along with the lookup (Opus 43% / 59% / 63% on
-   L14 / L20 / L24), while the margin over the lookup shrinks (only Opus clears 0 at L24). Models add most on
-   open-ended text (ocean poem: Opus +28 over the lookup) and least on code and structured answers (SQL query −3 to
-   +2). Resampling neurons instead of items leaves every interval within half a point.
-2. **Given a per-token table, the agents don't do the obvious arithmetic.** The trace tier adds a table under each
+1. **Given a per-token table, the agents don't do the obvious arithmetic.** The trace tier adds a table under each
    reply with every token's logit-lens z-score for this neuron (`lens_z`, from the weights; nothing from a steered
    run). Averaging that one column per reply, which takes a few lines of code in the agent's own shell, picks the right
    reply 82% of the time with no model. Opus 5.5 reaches 75% (paired −7 [−15, +1]) and Haiku 5.5 59% (−23 [−32, −15]).
    The signal is real: with another neuron's table (`trace-shuffled`) both drop to chance (23% / 21%). The models use
    the table, but do worse than its simplest summary (right panel; 150 original items).
+2. **Every model beats the lookup, and none comes close to solving the task.** Opus 5.5 leads (55%) and beats
+   Haiku 5.5 by +8 points [+5, +11]. Accuracy rises with layer along with the lookup (Opus 43% / 59% / 63% on
+   L14 / L20 / L24), while the margin over the lookup shrinks (only Opus clears 0 at L24). Models add most on
+   open-ended text (ocean poem: Opus +28 over the lookup) and least on code and structured answers (SQL query −3 to
+   +2). Resampling neurons instead of items leaves every interval within half a point.
 3. **Humans are at chance on the static evidence too.** Two people answered the same 20 static items blind
    (`scripts/human_sheet.py make --n 20 --seed 0`; answers in [`human/`](human/)): 30% and 35%, 32.5% [15, 50]
    pooled. On those 20 items the four newest API models score 35–40% and the lookup 40%, so 20 items can't separate humans from
