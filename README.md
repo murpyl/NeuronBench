@@ -1,7 +1,7 @@
 # NeuronBench
 
 <!-- OVERVIEW: one paragraph, written by a team member (hackathon rule: this paragraph must be human-written). -->
-> **TODO (team):** overview paragraph goes here.
+Inspired by the new perspective of "neurons are already clean," we analyze if current LLMs are able to determine the impact of a neuron-level intervention on Qwen3-0.6B when given the logit-lens output of the neuron as a hint. We find that interestingly, every model guesses which output was steered better than random chance, but they do not consistently beat even a naive shortcut baseline. On determining whether a steered direction was influential, no model was able to beat chance. One failure mode is that models overindexed on sharpness of the logit lens, which was mostly uncorrelated with the ground truth.
 
 ## What it measures
 
