@@ -156,21 +156,28 @@ Full tables: `results/results.md`, split by random-draw vs hand-picked neurons i
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
-What the numbers say:
+Headline findings (full analysis with failure modes in `results/analysis.md`; numbers from `scripts/analyze_results.py`):
 
-- **Picking the output is learnable from the evidence.** All four models clear every shortcut baseline on "Which
-  output is it?"; the best (Haiku 5.5, 48%) nearly doubles chance. Accuracy is not ordered by model size: Haiku 5.5
-  beats Sonnet 5.5 on the same tasks.
-- **Nobody can tell which neurons matter.** On "Real or null?" only Sonnet 5.5 edges the base-rate guess (0.247 vs
-  0.255), and its interval covers it. Haiku 4.5 and GPT-5.6-luna are *worse* than always answering the base rate:
-  they commit to confident guesses that the sweep does not bear out.
-- **Easy at the ends, hard in the middle.** Split by the neuron's measured effect size (`gne rank` vocabulary mass),
-  models score 50–60% on the weakest and strongest quartiles and ~chance on the middle two
-  (`results/choice_by_effect_size.png`). No shortcut baseline shows that pattern (the best reaches 38% on one quartile),
-  so this is model skill, not a leak.
-- **Layer 24 is easiest** for every model (46–52% vs 34–48% on layers 14 and 20): late-layer neurons' logit-lens
-  tokens are closer to what shows up in the text.
-- Hand-picked (sharp logit-lens) neurons are 16 of the 150 choice items; too few to separate from the random draw.
+- **Every model beats every shortcut on "Which output is it?", none by much** (39–48% vs 30% best heuristic, 25% chance),
+  and not in size order: Haiku 5.5 > Sonnet 5.5 > GPT-5.6-luna = Haiku 4.5.
+- **The skill is mostly reading the neuron's vocabulary off the text.** On the 50 items where a logit-lens token
+  literally occurs in a candidate reply, models score 52–62%; on the other 100, 32–41%. Large pushes (change ≥ 0.8
+  from the unsteered reply) are solved 51–67%, smaller ones 31–40%.
+- **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.57 for all four; the Brier spread
+  (0.247–0.308) is calibration only. All models set their probability by the logit-lens peak z-score, which has
+  Spearman 0.13 with the truth. Sonnet 5.5 beats the base rate by hedging 0.4–0.6; Haiku 4.5 and GPT-5.6-luna lose by
+  saying 0.7–0.9.
+- **Deliberation did not help:** Haiku 4.5 (median 6 API calls, $10 run) tied for last; Haiku 5.5 (≤2 calls on 70% of
+  tasks, $0.27 run) came first.
+- **Different models, different mistakes:** pairwise agreement 39–65%, 44 items missed by all four, majority vote (43%)
+  below the best single model.
+- Easier: layer 24, the "orange" prompt, and neurons that are actually real (56–62% vs 34–45% on null neurons).
+
+Failure modes, from the trajectories: picking the *oddest* reply although the controls are change-matched (chance,
+and the models do it 28–34% of the time); *dose folklore* ("+0.5 should be subtle, so the gentlest reply"; 81% wrong
+for Haiku 4.5); *inventing a trait* from a token list ("this neuron helps the model escape loops"); counting
+*subword fragments* (`-ing`, `s`) that occur in every reply; and on the null task, treating logit-lens sharpness or a
+"coherent token family" as proof of causal effect.
 
 ### Failure trace: Haiku 4.5 on `choice-qwen3-0.6b-instruct-L14-N710-orange-0.7`
 
