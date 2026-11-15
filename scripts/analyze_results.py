@@ -1,7 +1,8 @@
 """Slice the Valkyrie exports behind results/: splits, agreement, token-overlap, null calibration.
 
-    python scripts/analyze_results.py --items data/items.jsonl --jobs jobs/valkyrie/*.json
+python scripts/analyze_results.py --items data/items.jsonl --jobs jobs/valkyrie/*.json
 """
+
 import argparse
 import collections
 import itertools
@@ -13,8 +14,12 @@ import numpy as np
 
 from neuronbench.harbor_tasks import safe_name
 
-SHORT = {"anthropic/claude-haiku-4-5": "H4.5", "anthropic/claude-haiku-5-5": "H5.5",
-         "anthropic/claude-sonnet-5-5": "S5.5", "openai/gpt-5.6-luna": "GPT"}
+SHORT = {
+    "anthropic/claude-haiku-4-5": "H4.5",
+    "anthropic/claude-haiku-5-5": "H5.5",
+    "anthropic/claude-sonnet-5-5": "S5.5",
+    "openai/gpt-5.6-luna": "GPT",
+}
 
 
 def load(items_path, job_paths):
@@ -29,7 +34,11 @@ def load(items_path, job_paths):
                 vo = json.loads(v["metadata"]["verifier_output"])
             except Exception:
                 vo = {}
-            ans.setdefault(SHORT.get(m, m), {})[items[byname[k]]["id"]] = (vo.get("parsed"), vo.get("key"), v["rewards"])
+            ans.setdefault(SHORT.get(m, m), {})[items[byname[k]]["id"]] = (
+                vo.get("parsed"),
+                vo.get("key"),
+                v["rewards"],
+            )
     return items, ans
 
 
@@ -66,13 +75,13 @@ def main():
     ms = list(ans)
     ch = [i for i, it in items.items() if it["kind"] == "choice"]
     ni = [i for i, it in items.items() if it["kind"] == "null"]
-    acc = lambda m, ids: st.mean(ans[m][i][2]["choice_acc"] for i in ids)  # noqa: E731
+    acc = lambda m, ids: st.mean(ans[m][i][2]["choice_acc"] for i in ids)
 
     def split(name, key):
         print(f"\n== choice accuracy by {name}")
         for g in sorted({key(items[i]) for i in ch}, key=str):
             ids = [i for i in ch if key(items[i]) == g]
-            print(f"  {str(g):10s}", *[f"{m} {acc(m, ids):.2f}" for m in ms], f"n={len(ids)}")
+            print(f"  {g!s:10s}", *[f"{m} {acc(m, ids):.2f}" for m in ms], f"n={len(ids)}")
 
     masses = sorted(items[i]["meta"]["mass"] for i in ch)
     cuts = [masses[len(masses) * q // 4] for q in (1, 2, 3)]
@@ -80,7 +89,10 @@ def main():
     split("dose", lambda it: it["payload"]["dose"])
     split("prompt", lambda it: it["payload"]["prompt"][:12])
     split("effect-size quartile", lambda it: "Q%d" % (1 + sum(it["meta"]["mass"] >= c for c in cuts)))
-    split("change from unsteered", lambda it: "<0.5" if it["meta"]["change"] < 0.5 else ("<0.8" if it["meta"]["change"] < 0.8 else ">=0.8"))
+    split(
+        "change from unsteered",
+        lambda it: "<0.5" if it["meta"]["change"] < 0.5 else ("<0.8" if it["meta"]["change"] < 0.8 else ">=0.8"),
+    )
     split("neuron real (null_pct>=.95)", lambda it: it["meta"]["null_pct"] >= 0.95)
     split("selection", lambda it: it["meta"]["selection"])
 
@@ -105,7 +117,10 @@ def main():
     print("\n== agreement")
     for x, y in itertools.combinations(ms, 2):
         print(f"  {x}-{y}: same letter {st.mean(ans[x][i][0] == ans[y][i][0] for i in ch):.2f}")
-    print("  items by number of models right:", dict(sorted(collections.Counter(int(sum(ans[m][i][2]['choice_acc'] for m in ms)) for i in ch).items())))
+    print(
+        "  items by number of models right:",
+        dict(sorted(collections.Counter(int(sum(ans[m][i][2]["choice_acc"] for m in ms)) for i in ch).items())),
+    )
     maj = 0
     for i in ch:
         top, cnt = collections.Counter(ans[m][i][0] for m in ms).most_common(1)[0]
@@ -124,8 +139,10 @@ def main():
         auc = st.mean((r > n) + 0.5 * (r == n) for r in real for n in nul)
         brier = st.mean((pi - yi) ** 2 for pi, yi in zip(p, y))
         const = st.mean((st.mean(p) - yi) ** 2 for yi in y)
-        print(f"  {m}: AUC {auc:.2f}, mean prob {st.mean(p):.2f} (base rate {st.mean(y):.2f}), Brier {brier:.3f}, "
-              f"Brier if constant at own mean {const:.3f}, spearman(prob, peak_z) {spearman(p, pz):.2f}, spearman(prob, truth) {spearman(p, truth):.2f}")
+        print(
+            f"  {m}: AUC {auc:.2f}, mean prob {st.mean(p):.2f} (base rate {st.mean(y):.2f}), Brier {brier:.3f}, "
+            f"Brier if constant at own mean {const:.3f}, spearman(prob, peak_z) {spearman(p, pz):.2f}, spearman(prob, truth) {spearman(p, truth):.2f}"
+        )
 
 
 if __name__ == "__main__":
