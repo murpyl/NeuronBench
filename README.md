@@ -202,7 +202,7 @@ Headline findings (full analysis with failure modes in `results/analysis.md`; nu
 
 - **Frontier agents do no better than a word lookup on "Which output is it?"** Models score 39–48% (chance 25%); a
   dose-sign-aware logit-lens lookup scores 41% [33, 49]. GPT-5.6-luna and Haiku 4.5 (39%) are below it, Sonnet 5.5
-  (42%) ties it, and only Haiku 5.5 (48%) is ahead, within the intervals. Not in size order.
+  (42%) ties it, and only Haiku 5.5 (48%) is ahead: +7 points, paired 95% CI [−3, +18]. Not in size order.
 - **They also don't use the evidence consistently.** Models miss about half the items the lookup solves, and
   agree with it on only 31–35% of picks. On the 50 items where a logit-lens token literally occurs in a candidate
   reply, the lookup gets 64% and models 52–62%. On the other 100, the lookup gets 29% and models 32–41%. Large pushes (change ≥ 0.8

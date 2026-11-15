@@ -8,7 +8,7 @@ Numbers come from `scripts/analyze_results.py` (`results/analysis.txt`) and from
 1. **No model clearly beats a word lookup on "Which output is it?"** 39–48% vs 25% chance and 41% [33, 49] for a
    dose-sign-aware logit-lens lookup (pick the reply that gained the most "up" tokens for a positive dose, "down"
    tokens for a negative one). Order: Haiku 5.5 (48%) > Sonnet 5.5 (42%) > lookup (41%) > GPT-5.6-luna (39%) =
-   Haiku 4.5 (39%). Not ordered by model size or price. Stronger automatic variants (`scripts/ceiling_baselines.py`:
+   Haiku 4.5 (39%). Haiku 5.5 vs the lookup, paired over items: +7 points [−3, +18]. Not ordered by model size or price. Stronger automatic variants (`scripts/ceiling_baselines.py`:
    fuzzy subword, script, cross-validated learned scorer) top out at 41%.
 2. **Most of that skill is reading the neuron's vocabulary off the text.** In 50 of 150 items a logit-lens token
    (≥3 letters) literally occurs in one of the candidate replies. On those items models score 52–62%; on the other
