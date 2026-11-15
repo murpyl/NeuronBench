@@ -30,8 +30,9 @@ def make(a):
     by_layer = {}
     for it in ch:
         by_layer.setdefault(it["layer"], []).append(it)
-    per = a.n // len(by_layer)
-    picked = [it for L in sorted(by_layer) for it in rng.sample(by_layer[L], per)]
+    layers = sorted(by_layer)
+    per, extra = divmod(a.n, len(layers))
+    picked = [it for k, L in enumerate(layers) for it in rng.sample(by_layer[L], per + (k < extra))]
     rng.shuffle(picked)
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
