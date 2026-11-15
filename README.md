@@ -100,6 +100,31 @@ neuronbench build --run data/raw/L*-main_rel.jsonl --evidence data/evidence --n-
 
 The agent-free bar for this tier is `trace_lens_mean` (pick the reply with the highest dose-signed mean `lens_z`).
 
+### More prompts (choice)
+
+The main sweep has only three task prompts, and per-prompt accuracy varied more than the gap between models. A
+top-up sweep runs 100 neurons per layer (from the seeded `random:384` draw, stratified by `null_pct`; lists in
+`extra_prompts/`) and the same 64 random controls on ten more prompts at doses -0.7 and +0.8
+([`extra_prompts/design.yaml`](extra_prompts/design.yaml)). `--per-neuron 3` puts each neuron's three questions on
+different prompts and balances the prompts (30 questions each per layer). These sweeps ran on CPU (llama.cpp, same
+GGUF and gne model id); all four options in a question come from the same sweep, so CPU-vs-Metal numerics never mix
+within a question.
+
+```bash
+python scripts/prompts_configs.py && export GNE_CONFIGS=$PWD/extra_prompts/gne-configs
+for L in 14 20 24; do                        # the design keeps its first name, heldout_rel
+  gne --n-seq-max 10 sweep --layer $L --design heldout_rel --prompt-set heldout \
+      --neurons "$(cat extra_prompts/neurons-L$L-full.txt)" --yes
+  gne rank --run L$L-heldout_rel
+  neuronbench build --run data/raw/L$L-heldout_rel.jsonl --evidence data/evidence --n-choice 100 --n-null 0 \
+      --per-neuron 3 --items data/items-prompts-L$L.jsonl --out tasks-prompts-l$L
+done
+cat data/items-prompts-L{14,20,24}.jsonl > data/items-prompts.jsonl     # 900 choice items
+```
+
+Valkyrie datasets `neuronbench/l{14,20,24}-prompts@v1` (one per layer); run IDs in
+[`results/runs.md`](results/runs.md), results in finding 8 below.
+
 ## 3. Run models
 
 Same agent (mini-SWE-agent), prompts and limits for every model.
@@ -216,7 +241,7 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
-**Seven findings.**
+**Eight findings.**
 
 1. **No model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
    the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]) and Opus 5.5 +4; the other
@@ -257,6 +282,18 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
    (`--tier trace-shuffled`) they fall to chance (23% / 21%, below the donor's own `trace_lens_mean` of 35%). Null
    items are unchanged in this tier and so are their scores (Brier +0.003 / −0.002, AUC −0.01 / +0.01). Since `lens_z`
    mostly mirrors the steering's direct effect, the bar for this tier is `trace_lens_mean`, not static.
+8. **With ten more prompts every model beats the lookup, and the models separate.** 900 choice items from the
+   more-prompts sweep (`data/items-prompts.jsonl`, 300 per layer, same one-letter format; see "More prompts" above).
+   The lookup scores 41% (L14 28%, L20 44%, L24 51%). Opus 5.5 scores 55% (paired +14 [+10, +18] over the lookup),
+   Sonnet 5.5 51% (+10 [+6, +14]), Haiku 5.5 47% (+6 [+2, +10]) and GPT-5.6-luna 47% (+5 [+2, +9]): all four
+   intervals clear 0, which none did on the old 150 items, and the old order (Haiku 5.5 first) doesn't hold. Accuracy
+   rises with layer along with the lookup (Opus 43% / 59% / 63%), while the margin over the lookup shrinks (L14 +7 to
+   +15, L24 +3 to +12, where only Opus clears 0). Models add most on open-ended text (ocean poem: Opus +28, Sonnet +20,
+   Luna +16; robot story; causes of WWI) and least on code and structured answers (SQL query −3 to +2, the old snake
+   game −10 to −2, 17 × 23 −3 to +9). Each prompt has only 90 items (about ±10 points), so the per-prompt gaps are
+   exploratory: Opus spans 47–62% across the new prompts, half the old "orange" (62%) vs "who" (33%) gap. Opus beats
+   Haiku 5.5 by +8 points [+5, +11], and resampling neurons instead of items (each neuron has 3 items) leaves every
+   interval within 0.5 points.
 
 **Failure modes**, from the 1020 trajectories of the first four API models (Sonnet 5.5 exposes no reasoning):
 

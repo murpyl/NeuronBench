@@ -51,6 +51,17 @@ def test_build_is_deterministic(toy_run):
     assert [asdict(x) for x in a] == [asdict(x) for x in b]
 
 
+def test_per_neuron_spreads_choice_items_over_prompts(toy_run):
+    from collections import Counter
+    _, items = _items(toy_run, per_neuron=2)
+    ch = [i for i in items if i.kind == "choice"]
+    assert len(ch) == 12 and len({i.id for i in ch}) == 12
+    for n in {i.neuron for i in ch}:
+        assert len({i.payload["prompt"] for i in ch if i.neuron == n}) == 2
+    counts = Counter(i.payload["prompt"] for i in ch)
+    assert max(counts.values()) - min(counts.values()) <= 1
+
+
 def test_null_items_split_real_and_null(toy_run):
     _, items = _items(toy_run, threshold=0.95)
     nu = [i for i in items if i.kind == "null"]

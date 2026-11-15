@@ -71,3 +71,27 @@ python scripts/ceiling_report.py --model anthropic/claude-haiku-5-5 \
     --tier trace-shuffled data/items-trace-shuffled.jsonl jobs/valkyrie/l14-l20-trace-shuffled-haiku-5-5.json \
     jobs/valkyrie/l24-trace-shuffled-haiku-5-5.json
 ```
+
+More prompts (choice only, `data/items-prompts.jsonl`: 900 items, 100 neurons x 3 prompts per layer over ten
+extra prompts; see README "More prompts"). Push each layer's tasks as its own dataset and run with the same settings
+as the static tier (12 runs; Valkyrie allows 10 active, so start the last two when slots free up):
+
+```bash
+for L in 14 20 24; do valkyrie dataset push neuronbench/l$L-prompts ./tasks-prompts-l$L --tag v1 < /dev/null; done
+for M in anthropic/claude-haiku-5-5 anthropic/claude-sonnet-5-5 anthropic/claude-opus-5-5; do for L in 14 20 24; do
+  valkyrie run start --agent mini_swe_agent --dataset neuronbench/l$L-prompts@v1 --model $M \
+      --provider modal -s ANTHROPIC_API_KEY anthropic-api-key --concurrency 8 --label l$L-prompts-${M#*/}
+done; done
+# openai/gpt-5.6-luna: same loop, with the secret binding of the static-tier luna runs instead of ANTHROPIC_API_KEY
+valkyrie run results <run-id> --path jobs/valkyrie/l<L>-prompts-<model>.json   # then git add -f
+```
+
+GPT-5.6-luna used `-s OPENAI_API_KEY openai-api-key`. Opus 5.5's `l20-prompts` run had one Modal sandbox error
+(`L20-N1035-sqlp0.8`), retried in the same run with `valkyrie run retry`.
+
+| model | `l14-prompts@v1` | `l20-prompts@v1` | `l24-prompts@v1` |
+|---|---|---|---|
+| anthropic/claude-haiku-5-5 | `1666594a-650e-4636-8edd-239baf34bf9d` | `9d295aae-f33a-4ce2-aa7b-5d4b0dcf0b7e` | `8021112a-4485-42d0-8d86-c73d0a2843bb` |
+| anthropic/claude-sonnet-5-5 | `88947c86-5dbd-463a-9c41-44ee48d59a7d` | `07aaba18-1b60-436f-9d23-c34f2d338bb9` | `aa27fb10-9765-47ae-877d-df07111c3e25` |
+| anthropic/claude-opus-5-5 | `cc45c554-65a0-46b0-b2b3-852974ae3044` | `f35b3adf-a9de-4f6f-8598-9eec59207a39` | `79c16a90-1b37-425e-a8ef-b627096ebb00` |
+| openai/gpt-5.6-luna | `b59407f2-d359-4868-a519-27270b1cdea1` | `cf6ca8d2-0072-41b4-a325-952db66d40e5` | `f477b3e0-06e4-4681-8d55-1540c2594e1b` |

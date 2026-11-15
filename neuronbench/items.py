@@ -209,6 +209,18 @@ def _take_stratified(strata: list[list[int]], n: int, rng: random.Random) -> lis
     return out
 
 
+def _spread(cands: list[dict], k: int, used: dict[str, int], rng: random.Random) -> list[dict]:
+    """Up to k of one neuron's conditions on distinct prompts, preferring the prompts used least so far."""
+    by_prompt: dict[str, list[dict]] = {}
+    for c in cands:
+        by_prompt.setdefault(c["prompt"], []).append(c)
+    order = sorted(by_prompt, key=lambda p: (used.get(p, 0), rng.random()))
+    out = [rng.choice(by_prompt[p]) for p in order[:k]]
+    for c in out:
+        used[c["prompt"]] = used.get(c["prompt"], 0) + 1
+    return out
+
+
 def shuffled_donors(neurons: list[int], seed: int, layer: int, kind: str) -> dict[int, int]:
     """{neuron: neuron whose evidence it shows} for the shuffled tier, among one kind's items in one layer.
 
@@ -228,8 +240,10 @@ def shuffled_donors(neurons: list[int], seed: int, layer: int, kind: str) -> dic
 
 def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: int, seed: int = 0,
                 threshold: float = 0.95, real_share: float = 0.5, min_change: float = 0.1,
-                tier: str = "static", traces: dict[str, dict] | None = None) -> list[Item]:
-    """traces: {static item id: record from scripts/trace_evidence.py}, required for the trace tiers."""
+                tier: str = "static", per_neuron: int = 1, traces: dict[str, dict] | None = None) -> list[Item]:
+    """per_neuron > 1: that many choice items per picked neuron (neurons with fewer usable prompts are skipped), each
+    on a different prompt, balancing how often each prompt is used. per_neuron=1 keeps one random condition per
+    neuron. traces: {static item id: record from scripts/trace_evidence.py}, required for the trace tiers."""
     if tier.startswith("trace") and traces is None:
         raise ValueError(f"tier {tier!r} needs traces (scripts/trace_evidence.py)")
     rng = random.Random(f"{seed}-{run.model_id}-{run.layer}")
@@ -237,11 +251,14 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
     items: list[Item] = []
 
     cands = {n: choice_candidates(run, n, min_change=min_change) for n in neurons}
-    usable = [n for n in neurons if cands[n]]
+    # every picked neuron gets exactly per_neuron items, so the shuffled tier's one-to-one donor swap still shows each
+    # evidence block as often as the static tier does
+    usable = [n for n in neurons if len({c["prompt"] for c in cands[n]}) >= per_neuron]
     strata = _bins([(run.unit("neuron", n)["mass"], n) for n in usable], 4) if usable else []
+    used: dict[str, int] = {}
     for n in _take_stratified(strata, n_choice, rng):
-        cand = rng.choice(cands[n])
-        items.append(make_choice_item(run, n, cand, augment_evidence(evidence[n], run, n, cand, tier), rng))
+        for cand in [rng.choice(cands[n])] if per_neuron == 1 else _spread(cands[n], per_neuron, used, rng):
+            items.append(make_choice_item(run, n, cand, augment_evidence(evidence[n], run, n, cand, tier), rng))
 
     real = [n for n in neurons if run.unit("neuron", n)["null_pct"] >= threshold]
     null = [n for n in neurons if run.unit("neuron", n)["null_pct"] < threshold]
