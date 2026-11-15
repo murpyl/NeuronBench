@@ -1,7 +1,8 @@
 # NeuronBench
 
 <!-- OVERVIEW: one paragraph, written by a team member (hackathon rule: this paragraph must be human-written). -->
-Inspired by the new perspective of "neurons are already clean," we analyze if current LLMs are able to determine the impact of a neuron-level intervention on Qwen3-0.6B when given the logit-lens output of the neuron as a hint. We find that interestingly, every model guesses which output was steered better than random chance, but they do not consistently beat even a naive shortcut baseline. On determining whether a steered direction was influential, no model was able to beat chance. One failure mode is that models overindexed on sharpness of the logit lens, which was mostly uncorrelated with the ground truth.
+Inspired by Goodfire's ["Neural Networks Are Already Clean"](https://already-clean.goodfire.com/) (Cammarata, 2026), we analyze whether current LLMs are able to determine the impact of a neuron-level intervention on Qwen3-0.6B when given the logit-lens output of the neuron as a hint. We design two evals, one to see if models can guess which output came from steering the neuron rather than a random direction of similar size (eval "Which output is it?"), and one to determine whether a neuron's effect is real by beating 95% of random directions' vocabulary mass (eval "Real or null?"). For "Which output is it?," we find that frontier models can guess better than random chance, but overall they rarely beat a simple shortcut baseline by much. On "Real or null?," no model was able to confidently beat chance. Interestingly, models on "Which output is it?" often fail by picking the reply that changed most even though distractors are changed about as much. Also, on "Real or null?," models often overindex the logit lens's sharpness, which was mostly uncorrelated with the ground truth.
+
 
 ## What it measures
 
