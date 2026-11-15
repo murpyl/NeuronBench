@@ -39,11 +39,11 @@ Wrong-evidence control (`neuronbench build --tier shuffled`, datasets `neuronben
 
 More prompts (choice only, `data/items-prompts.jsonl`: 900 items, 100 neurons x 3 prompts per layer over ten
 extra prompts; see README "More prompts"). Push each layer's tasks as its own dataset and run with the same settings
-as the static tier (9 runs; Valkyrie allows 10 active):
+as the static tier (12 runs; Valkyrie allows 10 active, so start the last two when slots free up):
 
 ```bash
 for L in 14 20 24; do valkyrie dataset push neuronbench/l$L-prompts ./tasks-prompts-l$L --tag v1 < /dev/null; done
-for M in anthropic/claude-haiku-5-5 anthropic/claude-opus-5-5; do for L in 14 20 24; do
+for M in anthropic/claude-haiku-5-5 anthropic/claude-sonnet-5-5 anthropic/claude-opus-5-5; do for L in 14 20 24; do
   valkyrie run start --agent mini_swe_agent --dataset neuronbench/l$L-prompts@v1 --model $M \
       --provider modal -s ANTHROPIC_API_KEY anthropic-api-key --concurrency 8 --label l$L-prompts-${M#*/}
 done; done
@@ -54,5 +54,6 @@ valkyrie run results <run-id> --path jobs/valkyrie/l<L>-prompts-<model>.json   #
 | model | `l14-prompts@v1` | `l20-prompts@v1` | `l24-prompts@v1` |
 |---|---|---|---|
 | anthropic/claude-haiku-5-5 | | | |
+| anthropic/claude-sonnet-5-5 | | | |
 | anthropic/claude-opus-5-5 | | | |
 | openai/gpt-5.6-luna | | | |
