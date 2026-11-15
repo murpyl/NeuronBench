@@ -73,7 +73,7 @@ class Run:
         seed = int(self.meta.get("seed", 0))
         found = None
         for size in sorted({k, len(have)}):
-            for n_ff in range(max(512, size), 65537, 256):
+            for n_ff in range(max(512, -(-size // 256) * 256), 65537, 256):
                 drawn = set(np.random.default_rng(seed).choice(n_ff, size=size, replace=False).tolist())
                 if drawn <= have:
                     found = drawn
