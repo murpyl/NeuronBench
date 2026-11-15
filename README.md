@@ -216,7 +216,7 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
-**Six findings.**
+**Seven findings.**
 
 1. **No model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
    the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]) and Opus 5.5 +4; the other
@@ -247,6 +247,16 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
    the 100 items with no lens token in any reply (Haiku 41% → 18%, Opus 39% → 21%), so it isn't only literal token
    matching. Null doesn't move: Brier +0.001 / +0.011 and AUC −0.03 / −0.07, all CIs include 0. Their "Real or null?"
    answers don't depend on which neuron's evidence they see.
+7. **Per-token traces lift choice, but no model beats averaging `lens_z`.** Trace tier (`--tier trace`): the same
+   items, with a per-token table under every reply showing the unsteered model's log-probs and the neuron's logit-lens
+   z-score (`lens_z`) for each token. Haiku 5.5 goes from 48% to 59% (paired +11 [+2, +19]) and Opus 5.5 from 45% to
+   75% (+30 [+21, +39]; 88% on the 50 items with a lens token in a reply). The agent-free `trace_lens_mean` (pick the
+   reply with the highest dose-signed mean `lens_z`) scores 82%, so Haiku is clearly below it (−23 [−32, −15]) and
+   Opus ties it (−7 [−15, +1]; +0 against `trace_lens_sum`). Both are well above the neuron-blind `trace_lp_high`
+   (37%), and the gain comes from this neuron's `lens_z`: with a donor neuron's evidence and `lens_z`
+   (`--tier trace-shuffled`) they fall to chance (23% / 21%, below the donor's own `trace_lens_mean` of 35%). Null
+   items are unchanged in this tier and so are their scores (Brier +0.003 / −0.002, AUC −0.01 / +0.01). Since `lens_z`
+   mostly mirrors the steering's direct effect, the bar for this tier is `trace_lens_mean`, not static.
 
 **Failure modes**, from the 1020 trajectories of the first four API models (Sonnet 5.5 exposes no reasoning):
 
