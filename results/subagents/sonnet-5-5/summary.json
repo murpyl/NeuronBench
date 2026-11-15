@@ -1,0 +1,311 @@
+{
+ "model": "anthropic/claude-sonnet-5-5",
+ "created": "2026-11-15T06:57:57+00:00",
+ "tiers": {
+  "static": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.4267,
+     "lo": 0.3467,
+     "hi": 0.5067
+    },
+    "rank_score": {
+     "mean": 0.6467,
+     "lo": 0.5844,
+     "hi": 0.7044
+    },
+    "letter_brier": {
+     "mean": 0.3063,
+     "lo": 0.2821,
+     "hi": 0.3298
+    },
+    "probs_valid": 1.0,
+    "full_ranking": 1.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.2482,
+     "lo": 0.2345,
+     "hi": 0.2611
+    },
+    "dense_brier": {
+     "mean": 0.1685,
+     "lo": 0.1466,
+     "hi": 0.1891
+    },
+    "auc": 0.5541,
+    "spearman_null_pct": 0.1151
+   },
+   "items": "data/items.jsonl",
+   "exports": [
+    "results/subagents/sonnet-5-5/runs/l14-l20-static-rank.json",
+    "results/subagents/sonnet-5-5/runs/l24-static-rank.json"
+   ]
+  },
+  "transfer": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.5467,
+     "lo": 0.4667,
+     "hi": 0.6267
+    },
+    "rank_score": {
+     "mean": 0.7,
+     "lo": 0.6378,
+     "hi": 0.76
+    },
+    "letter_brier": {
+     "mean": 0.2816,
+     "lo": 0.2533,
+     "hi": 0.3097
+    },
+    "probs_valid": 1.0,
+    "full_ranking": 1.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.2934,
+     "lo": 0.24,
+     "hi": 0.3482
+    },
+    "dense_brier": {
+     "mean": 0.1134,
+     "lo": 0.0837,
+     "hi": 0.1465
+    },
+    "auc": 0.6229,
+    "spearman_null_pct": 0.2017
+   },
+   "items": "data/items-transfer.jsonl",
+   "exports": [
+    "results/subagents/sonnet-5-5/runs/l14-l20-transfer-rank.json",
+    "results/subagents/sonnet-5-5/runs/l24-transfer-rank.json"
+   ]
+  },
+  "oracle": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.74,
+     "lo": 0.6733,
+     "hi": 0.8067
+    },
+    "rank_score": {
+     "mean": 0.8311,
+     "lo": 0.7822,
+     "hi": 0.88
+    },
+    "letter_brier": {
+     "mean": 0.213,
+     "lo": 0.1866,
+     "hi": 0.2407
+    },
+    "probs_valid": 1.0,
+    "full_ranking": 1.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.1864,
+     "lo": 0.1551,
+     "hi": 0.2168
+    },
+    "dense_brier": {
+     "mean": 0.1285,
+     "lo": 0.1048,
+     "hi": 0.1519
+    },
+    "auc": 0.8186,
+    "spearman_null_pct": 0.6863
+   },
+   "items": "data/items-oracle.jsonl",
+   "exports": [
+    "results/subagents/sonnet-5-5/runs/l14-l20-oracle-rank.json",
+    "results/subagents/sonnet-5-5/runs/l24-oracle-rank.json"
+   ]
+  }
+ },
+ "legacy": {
+  "static": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.42,
+     "lo": 0.34,
+     "hi": 0.4933
+    },
+    "rank_score": {
+     "mean": 0.6133,
+     "lo": 0.56,
+     "hi": 0.6622
+    },
+    "letter_brier": {
+     "mean": 0.58,
+     "lo": 0.5067,
+     "hi": 0.66
+    },
+    "probs_valid": 0.0,
+    "full_ranking": 0.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.2469,
+     "lo": 0.2329,
+     "hi": 0.2608
+    },
+    "dense_brier": {
+     "mean": 0.1691,
+     "lo": 0.1469,
+     "hi": 0.1903
+    },
+    "auc": 0.5697,
+    "spearman_null_pct": 0.0748
+   },
+   "exports": [
+    "jobs/valkyrie/l14-l20-sonnet-5-5.json",
+    "jobs/valkyrie/l24-sonnet-5-5.json"
+   ]
+  },
+  "oracle": {
+   "choice": {
+    "n": 150,
+    "n_answered": 150,
+    "acc": {
+     "mean": 0.7133,
+     "lo": 0.64,
+     "hi": 0.7867
+    },
+    "rank_score": {
+     "mean": 0.8089,
+     "lo": 0.76,
+     "hi": 0.8578
+    },
+    "letter_brier": {
+     "mean": 0.2867,
+     "lo": 0.2133,
+     "hi": 0.36
+    },
+    "probs_valid": 0.0,
+    "full_ranking": 0.0,
+    "top1_matches_grader": true
+   },
+   "null": {
+    "n": 105,
+    "n_answered": 105,
+    "brier": {
+     "mean": 0.1892,
+     "lo": 0.1581,
+     "hi": 0.2209
+    },
+    "dense_brier": {
+     "mean": 0.1286,
+     "lo": 0.1053,
+     "hi": 0.1506
+    },
+    "auc": 0.8273,
+    "spearman_null_pct": 0.6956
+   },
+   "exports": [
+    "jobs/valkyrie/l14-l20-oracle-sonnet-5-5.json",
+    "jobs/valkyrie/l24-oracle-sonnet-5-5.json"
+   ]
+  }
+ },
+ "paired_vs_static": {
+  "transfer - static": {
+   "acc": {
+    "mean": 0.12,
+    "lo": 0.0267,
+    "hi": 0.2067,
+    "n": 150
+   },
+   "rank_score": {
+    "mean": 0.0533,
+    "lo": -0.0244,
+    "hi": 0.1289,
+    "n": 150
+   },
+   "letter_brier": {
+    "mean": -0.0247,
+    "lo": -0.0462,
+    "hi": -0.0029,
+    "n": 150
+   },
+   "brier": {
+    "mean": 0.0452,
+    "lo": -0.0063,
+    "hi": 0.1,
+    "n": 105
+   },
+   "dense_brier": {
+    "mean": -0.055,
+    "lo": -0.0891,
+    "hi": -0.0185,
+    "n": 105
+   }
+  },
+  "oracle - static": {
+   "acc": {
+    "mean": 0.3133,
+    "lo": 0.22,
+    "hi": 0.4067,
+    "n": 150
+   },
+   "rank_score": {
+    "mean": 0.1844,
+    "lo": 0.1089,
+    "hi": 0.2578,
+    "n": 150
+   },
+   "letter_brier": {
+    "mean": -0.0933,
+    "lo": -0.1211,
+    "hi": -0.0662,
+    "n": 150
+   },
+   "brier": {
+    "mean": -0.0619,
+    "lo": -0.0905,
+    "hi": -0.0341,
+    "n": 105
+   },
+   "dense_brier": {
+    "mean": -0.0399,
+    "lo": -0.063,
+    "hi": -0.0173,
+    "n": 105
+   }
+  }
+ },
+ "null_references": {
+  "p=0.5": {
+   "brier": 0.25,
+   "dense_brier": 0.1609
+  },
+  "p=mean null_pct (0.742)": {
+   "brier": 0.3014,
+   "dense_brier": 0.1026
+  },
+  "p=binary label": {
+   "brier": 0.0,
+   "dense_brier": 0.1557
+  }
+ }
+}

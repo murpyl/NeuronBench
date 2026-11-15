@@ -1,0 +1,2928 @@
+{
+    "benchmark_id": "f962b8e5-59bb-4ff4-9e27-05a62de300a8",
+    "benchmark_name": "neuronbench",
+    "started_at": "2026-11-15T06:00:56.536341",
+    "finished_at": "2026-11-15T06:20:24.608517",
+    "status": "FINISHED",
+    "benchmark_arguments": {
+        "contract": {
+            "name": "mini_swe_agent",
+            "model": "anthropic/claude-sonnet-5-5",
+            "install_cmd": "bash setup.sh",
+            "run_cmd": "mini-swe-agent-run \"{problem_statement_path}\" --model \"{model}\" --config \"{config}\" --cost-limit \"{cost_limit}\" --step-limit \"{step_limit}\" --cost-tracking \"{cost_tracking}\"",
+            "final_output": "/logs/mini_swe_agent",
+            "output_artifacts": [
+                {
+                    "path": "mini_swe_agent/trajectory.json",
+                    "source": "/logs/mini_swe_agent/trajectory.json",
+                    "required": false
+                },
+                {
+                    "path": "mini_swe_agent/summary.json",
+                    "source": "/logs/mini_swe_agent/summary.json",
+                    "required": false
+                }
+            ],
+            "egress_allowlist": [],
+            "allow_provider_tools": false,
+            "isolate_agent_uid": false,
+            "inference_settings_attested": true
+        },
+        "agent_attempts": [],
+        "concurrency": 8,
+        "dataset": "l24-transfer-rank",
+        "dataset_version": {
+            "id": "neuronbench/l24-transfer-rank@1"
+        },
+        "sandbox_provider": "modal",
+        "sandbox_provider_secret_name": "valkyrie/tenants/86e67ec4-d694-4ab0-9eda-fd48cc4b0b82/modal-credentials",
+        "environment": "aws",
+        "properties": {
+            "region": "us-east-1",
+            "s3_bucket": "valkyrie-629807611108-prod-04d966483828ca10",
+            "log_group": "/valkyrie/benchmarks-prod/tenants/86e67ec4-d694-4ab0-9eda-fd48cc4b0b82",
+            "log_retention_days": 365
+        }
+    },
+    "final_evaluation": {
+        "id": "d8a1a36f-e8b8-4d8d-bf44-cf871d467317",
+        "org_id": "86e67ec4-d694-4ab0-9eda-fd48cc4b0b82",
+        "benchmark": "f962b8e5-59bb-4ff4-9e27-05a62de300a8",
+        "properties": {
+            "total": 85,
+            "n_trials": 85,
+            "n_errors": 0,
+            "metrics": [
+                {
+                    "choice_acc": 0.32941176470588235,
+                    "null_brier": 0.26578
+                }
+            ],
+            "reward_stats": {
+                "choice_acc": {
+                    "1.0": [
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1127-snakep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2703-who-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1710-who-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1473-orange-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1515-who-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1724-orangep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1936-snakep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N22-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1146-snakep0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N110-whop0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N492-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N555-orange-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1437-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1456-orange-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1510-orange-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N180-orange-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2301-snakep0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N379-snakep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N130-orangep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N3043-orangep0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2674-whop0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2445-whop0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1236-orangep0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2930-orangep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2159-whop0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2909-orangep0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2464-snakep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1935-who-0.7"
+                    ],
+                    "0.0": [
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N801-orangep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1780-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2375-snakep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N783-orangep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2095-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2035-whop0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N3046-snakep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1025-who-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N413-orangep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1639-orangep0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2532-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1594-orange-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N1442-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2082-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2287-whop0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2438-orangep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N328-whop0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2210-snake-0.7",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N938-whop0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2479-whop0.8",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N2448-snakep0.5",
+                        "choice-transfer-qwen3-0.6b-instruct-L24-N193-whop0.8"
+                    ]
+                },
+                "null_brier": {
+                    "0.22560000000000002": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2194"
+                    ],
+                    "0.6155999999999999": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2542"
+                    ],
+                    "0.15359999999999996": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N883"
+                    ],
+                    "0.5774999999999999": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N663",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N940"
+                    ],
+                    "0.8775000000000001": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1329",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1474"
+                    ],
+                    "0.9951": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N820",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1471",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2715",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2610"
+                    ],
+                    "0.1350999999999999": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N616",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N3016"
+                    ],
+                    "0.4071": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N817"
+                    ],
+                    "0.24309999999999998": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2469",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N497"
+                    ],
+                    "0.96": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N338",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1978",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1541",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1240"
+                    ],
+                    "0.9964": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2089"
+                    ],
+                    "0.07840000000000003": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N577"
+                    ],
+                    "0.6975": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1684"
+                    ],
+                    "0.8556": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2599"
+                    ],
+                    "0.2604000000000001": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2834",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1833",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2210",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1925"
+                    ],
+                    "0.9375": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N554",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1828"
+                    ],
+                    "0.18999999999999995": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N130"
+                    ],
+                    "0.9974999999999999": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1632",
+                        "null-transfer-qwen3-0.6b-instruct-L24-N712"
+                    ],
+                    "0.99": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N2646"
+                    ],
+                    "0.9831": [
+                        "null-transfer-qwen3-0.6b-instruct-L24-N1043"
+                    ]
+                }
+            },
+            "score_key": null,
+            "mean_reward": null
+        }
+    },
+    "average_task_breakdown": {
+        "sandbox_build_duration": 0.1853322468235219,
+        "agent_run_duration": 13.434748381047067,
+        "evaluation_run_duration": 35.63783812754117,
+        "sandbox_run_duration": 72.3208793021177
+    },
+    "evaluation_results": {
+        "null-transfer-qwen3-0.6b-instruct-L24-N940": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N940",
+            "rewards": {
+                "null_brier": 0.5774999999999999
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.5774999999999999
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.65\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.65, \"reward\": {\"null_brier\": 0.5774999999999999}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.896721495000065,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.788027703999887,
+                "agent_run_duration": 13.788025307999987,
+                "sandbox_run_duration": 62.92666601499991,
+                "sandbox_build_duration": 0.17241899400005423,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N820": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N820",
+            "rewards": {
+                "null_brier": 0.9951
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9951
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.93\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.93, \"reward\": {\"null_brier\": 0.9951}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.22949330899996,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.112150751999934,
+                "agent_run_duration": 14.112148101999992,
+                "sandbox_run_duration": 70.20276968799999,
+                "sandbox_build_duration": 0.16968593599995074,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N817": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N817",
+            "rewards": {
+                "null_brier": 0.4071
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.4071
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.77\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.77, \"reward\": {\"null_brier\": 0.4071}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.16252536300021,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 18.64731617999996,
+                "agent_run_duration": 18.647313833,
+                "sandbox_run_duration": 71.14250763200016,
+                "sandbox_build_duration": 0.16494260099989333,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N883": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N883",
+            "rewards": {
+                "null_brier": 0.15359999999999996
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.15359999999999996
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.92\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.92, \"reward\": {\"null_brier\": 0.15359999999999996}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.90895740399992,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.25101745500001,
+                "agent_run_duration": 11.251014968999925,
+                "sandbox_run_duration": 57.88286626099989,
+                "sandbox_build_duration": 0.15202191599996695,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N712": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N712",
+            "rewards": {
+                "null_brier": 0.9974999999999999
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9974999999999999
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.95\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.95, \"reward\": {\"null_brier\": 0.9974999999999999}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.750147366999954,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.646143051999843,
+                "agent_run_duration": 13.64613980199988,
+                "sandbox_run_duration": 62.89850629500006,
+                "sandbox_build_duration": 0.1596717269999317,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N663": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N663",
+            "rewards": {
+                "null_brier": 0.5774999999999999
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.5774999999999999
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.65\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.65, \"reward\": {\"null_brier\": 0.5774999999999999}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.201739295999914,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.131451071000129,
+                "agent_run_duration": 11.131447953000134,
+                "sandbox_run_duration": 56.989077038000005,
+                "sandbox_build_duration": 0.14281386400011797,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N616": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N616",
+            "rewards": {
+                "null_brier": 0.1350999999999999
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.1350999999999999
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.93\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.93, \"reward\": {\"null_brier\": 0.1350999999999999}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.80828429999997,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.400409455000045,
+                "agent_run_duration": 13.40040620600007,
+                "sandbox_run_duration": 62.82167536300017,
+                "sandbox_build_duration": 0.17512636299989026,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N554": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N554",
+            "rewards": {
+                "null_brier": 0.9375
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9375
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.75\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.75, \"reward\": {\"null_brier\": 0.9375}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 37.00347131400008,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.31845254399991,
+                "agent_run_duration": 12.318449631000021,
+                "sandbox_run_duration": 66.75378765699998,
+                "sandbox_build_duration": 0.20566392199998518,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N577": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N577",
+            "rewards": {
+                "null_brier": 0.07840000000000003
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.07840000000000003
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.96\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.96, \"reward\": {\"null_brier\": 0.07840000000000003}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.86375024699987,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 16.684504264999987,
+                "agent_run_duration": 16.684501343999955,
+                "sandbox_run_duration": 65.54838400799986,
+                "sandbox_build_duration": 0.15340284500007328,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N338": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N338",
+            "rewards": {
+                "null_brier": 0.96
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.96
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.8\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.8, \"reward\": {\"null_brier\": 0.96}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.222826166000004,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.026993615000038,
+                "agent_run_duration": 14.026990397999953,
+                "sandbox_run_duration": 64.71640020699988,
+                "sandbox_build_duration": 0.16528391199994985,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N497": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N497",
+            "rewards": {
+                "null_brier": 0.24309999999999998
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.24309999999999998
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.87\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.87, \"reward\": {\"null_brier\": 0.24309999999999998}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.298269822000066,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.894550997999886,
+                "agent_run_duration": 11.894548149999991,
+                "sandbox_run_duration": 58.36926390100007,
+                "sandbox_build_duration": 0.14514593500007322,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N3016": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N3016",
+            "rewards": {
+                "null_brier": 0.1350999999999999
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.1350999999999999
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.93\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.93, \"reward\": {\"null_brier\": 0.1350999999999999}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.8720223979999,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.010276098000077,
+                "agent_run_duration": 13.010273431000087,
+                "sandbox_run_duration": 62.86925910900004,
+                "sandbox_build_duration": 0.17367860299987115,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2834": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2834",
+            "rewards": {
+                "null_brier": 0.2604000000000001
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.2604000000000001
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.86\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.86, \"reward\": {\"null_brier\": 0.2604000000000001}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.54957733900005,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 10.723024914999996,
+                "agent_run_duration": 10.723021666000022,
+                "sandbox_run_duration": 57.58100735100015,
+                "sandbox_build_duration": 0.15682274099981441,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2715": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2715",
+            "rewards": {
+                "null_brier": 0.9951
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9951
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.93\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.93, \"reward\": {\"null_brier\": 0.9951}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 37.77090931299995,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.069181207000156,
+                "agent_run_duration": 14.069178342999976,
+                "sandbox_run_duration": 73.40662684999984,
+                "sandbox_build_duration": 0.24241089099996316,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2646": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2646",
+            "rewards": {
+                "null_brier": 0.99
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.99
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.9\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.9, \"reward\": {\"null_brier\": 0.99}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 39.12785330399993,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.58897783500015,
+                "agent_run_duration": 12.588975168000161,
+                "sandbox_run_duration": 68.90073955899993,
+                "sandbox_build_duration": 0.22433661499985647,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2610": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2610",
+            "rewards": {
+                "null_brier": 0.9951
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9951
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.93\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.93, \"reward\": {\"null_brier\": 0.9951}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.92874702000017,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 15.928312059000064,
+                "agent_run_duration": 15.928309466999963,
+                "sandbox_run_duration": 65.06939466799986,
+                "sandbox_build_duration": 0.14942094499997438,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2599": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2599",
+            "rewards": {
+                "null_brier": 0.8556
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.8556
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.62\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.62, \"reward\": {\"null_brier\": 0.8556}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.83964892200015,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 16.905267546999994,
+                "agent_run_duration": 16.90526398599991,
+                "sandbox_run_duration": 66.34823149399995,
+                "sandbox_build_duration": 0.15685399000017242,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1474": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1474",
+            "rewards": {
+                "null_brier": 0.8775000000000001
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.8775000000000001
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.65\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.65, \"reward\": {\"null_brier\": 0.8775000000000001}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.597656885000106,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 16.87130529900014,
+                "agent_run_duration": 16.87130314900014,
+                "sandbox_run_duration": 241.52857090500004,
+                "sandbox_build_duration": 0.1570306809999238,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2542": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2542",
+            "rewards": {
+                "null_brier": 0.6155999999999999
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.6155999999999999
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.62\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.62, \"reward\": {\"null_brier\": 0.6155999999999999}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.59352215900003,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.14098785599981,
+                "agent_run_duration": 11.140985041999784,
+                "sandbox_run_duration": 61.98751743800017,
+                "sandbox_build_duration": 0.13607700900001873,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2210": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2210",
+            "rewards": {
+                "null_brier": 0.2604000000000001
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.2604000000000001
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.86\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.86, \"reward\": {\"null_brier\": 0.2604000000000001}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.96515085400006,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 18.19603623099988,
+                "agent_run_duration": 18.196033858999954,
+                "sandbox_run_duration": 69.69973072800008,
+                "sandbox_build_duration": 0.16468178200000239,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2469": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2469",
+            "rewards": {
+                "null_brier": 0.24309999999999998
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.24309999999999998
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.87\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.87, \"reward\": {\"null_brier\": 0.24309999999999998}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.36540673299987,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.945071505999977,
+                "agent_run_duration": 13.945068971000183,
+                "sandbox_run_duration": 63.88345551599991,
+                "sandbox_build_duration": 0.134057772999995,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2194": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2194",
+            "rewards": {
+                "null_brier": 0.22560000000000002
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.22560000000000002
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.88\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.88, \"reward\": {\"null_brier\": 0.22560000000000002}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.28888601999995,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.91160082600004,
+                "agent_run_duration": 12.911597518999997,
+                "sandbox_run_duration": 61.173703606000004,
+                "sandbox_build_duration": 0.1459927890000472,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N2089": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N2089",
+            "rewards": {
+                "null_brier": 0.9964
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9964
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.94\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.94, \"reward\": {\"null_brier\": 0.9964}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.437503666,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.543464282999935,
+                "agent_run_duration": 11.543461451999974,
+                "sandbox_run_duration": 69.15889874899995,
+                "sandbox_build_duration": 0.1252786439999909,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1684": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1684",
+            "rewards": {
+                "null_brier": 0.6975
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.6975
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.55\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.55, \"reward\": {\"null_brier\": 0.6975}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.49697002300002,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.935580288999972,
+                "agent_run_duration": 11.935577752999961,
+                "sandbox_run_duration": 108.476929821,
+                "sandbox_build_duration": 0.13609496399999443,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1978": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1978",
+            "rewards": {
+                "null_brier": 0.96
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.96
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.8\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.8, \"reward\": {\"null_brier\": 0.96}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.6144239030001,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.137221986999975,
+                "agent_run_duration": 11.137218827999959,
+                "sandbox_run_duration": 67.12665536500003,
+                "sandbox_build_duration": 0.1457167240000672,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1833": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1833",
+            "rewards": {
+                "null_brier": 0.2604000000000001
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.2604000000000001
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.86\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.86, \"reward\": {\"null_brier\": 0.2604000000000001}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 37.851421326000036,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.142924381999933,
+                "agent_run_duration": 14.14292190399999,
+                "sandbox_run_duration": 73.79456733900008,
+                "sandbox_build_duration": 0.22720166999999947,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1828": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1828",
+            "rewards": {
+                "null_brier": 0.9375
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9375
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.75\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.75, \"reward\": {\"null_brier\": 0.9375}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.221353848000035,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.043558642999983,
+                "agent_run_duration": 13.04355533599994,
+                "sandbox_run_duration": 63.53553604699994,
+                "sandbox_build_duration": 0.1603696839999884,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1925": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1925",
+            "rewards": {
+                "null_brier": 0.2604000000000001
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.2604000000000001
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.86\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.86, \"reward\": {\"null_brier\": 0.2604000000000001}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.73822636900002,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.77352900699998,
+                "agent_run_duration": 11.77352633199996,
+                "sandbox_run_duration": 58.498181177000106,
+                "sandbox_build_duration": 0.14706592000004548,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1632": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1632",
+            "rewards": {
+                "null_brier": 0.9974999999999999
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9974999999999999
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.95\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.95, \"reward\": {\"null_brier\": 0.9974999999999999}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.839221447,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.395265644000006,
+                "agent_run_duration": 13.395263052000018,
+                "sandbox_run_duration": 62.17104004400005,
+                "sandbox_build_duration": 0.1554676929999914,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1541": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1541",
+            "rewards": {
+                "null_brier": 0.96
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.96
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.8\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.8, \"reward\": {\"null_brier\": 0.96}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.425145026999985,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.757162633000007,
+                "agent_run_duration": 13.757159333999994,
+                "sandbox_run_duration": 64.24131144299997,
+                "sandbox_build_duration": 0.16346364199989694,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1471": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1471",
+            "rewards": {
+                "null_brier": 0.9951
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9951
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.93\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.93, \"reward\": {\"null_brier\": 0.9951}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 38.14462938500003,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.199593442999912,
+                "agent_run_duration": 11.199590563000015,
+                "sandbox_run_duration": 63.72324692699999,
+                "sandbox_build_duration": 0.14637133599990193,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1329": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1329",
+            "rewards": {
+                "null_brier": 0.8775000000000001
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.8775000000000001
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.65\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.65, \"reward\": {\"null_brier\": 0.8775000000000001}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.584318929999995,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.337962117000075,
+                "agent_run_duration": 11.337959689000058,
+                "sandbox_run_duration": 57.65532734499993,
+                "sandbox_build_duration": 0.1538389659999666,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N130": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N130",
+            "rewards": {
+                "null_brier": 0.18999999999999995
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.18999999999999995
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.9\", \"key\": {\"kind\": \"null\", \"real\": 0}, \"parsed\": 0.9, \"reward\": {\"null_brier\": 0.18999999999999995}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 42.93278638100003,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 15.174075799999969,
+                "agent_run_duration": 15.174073026999963,
+                "sandbox_run_duration": 80.284520036,
+                "sandbox_build_duration": 0.2355350319999161,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1240": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1240",
+            "rewards": {
+                "null_brier": 0.96
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.96
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.8\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.8, \"reward\": {\"null_brier\": 0.96}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 37.56687760900002,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 19.719198534000043,
+                "agent_run_duration": 19.719195998000032,
+                "sandbox_run_duration": 80.02682215200002,
+                "sandbox_build_duration": 0.22815460699996493,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "null-transfer-qwen3-0.6b-instruct-L24-N1043": {
+            "task_id": "null-transfer-qwen3-0.6b-instruct-L24-N1043",
+            "rewards": {
+                "null_brier": 0.9831
+            },
+            "verifier_result": {
+                "rewards": {
+                    "null_brier": 0.9831
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"0.87\", \"key\": {\"kind\": \"null\", \"real\": 1}, \"parsed\": 0.87, \"reward\": {\"null_brier\": 0.9831}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.163187558000004,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.617066376000025,
+                "agent_run_duration": 11.617063766000001,
+                "sandbox_run_duration": 58.68233615500003,
+                "sandbox_build_duration": 0.15404880800008414,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N938-whop0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N938-whop0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.3, D 0.25, B 0.25, C 0.2\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.00045667200004,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.874278935999996,
+                "agent_run_duration": 14.874276417000033,
+                "sandbox_run_duration": 63.837872274000006,
+                "sandbox_build_duration": 0.17033085299999584,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N801-orangep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N801-orangep0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.38, A 0.32, B 0.15, C 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.770752654000034,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.343130480000013,
+                "agent_run_duration": 12.343128142000069,
+                "sandbox_run_duration": 58.33034943400003,
+                "sandbox_build_duration": 0.16669378999995388,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N783-orangep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N783-orangep0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.3, A 0.27, B 0.23, C 0.2\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.84798846000001,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.752983880999977,
+                "agent_run_duration": 13.752981863000059,
+                "sandbox_run_duration": 63.847551425000006,
+                "sandbox_build_duration": 0.27515798799993263,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N555-orange-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N555-orange-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.32, B 0.3, C 0.22, D 0.16\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.11685495800009,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.737897953000015,
+                "agent_run_duration": 12.737895287000015,
+                "sandbox_run_duration": 57.579391272000066,
+                "sandbox_build_duration": 0.1616047189999108,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N492-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N492-snake-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.96, D 0.015, C 0.015, B 0.01\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.213947130000065,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.580144896999968,
+                "agent_run_duration": 12.580142426999942,
+                "sandbox_run_duration": 63.15078810900002,
+                "sandbox_build_duration": 0.18831143900001734,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N379-snakep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N379-snakep0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.97, B 0.01, C 0.01, D 0.01\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 36.97051177399999,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.493050096000047,
+                "agent_run_duration": 11.493047380000007,
+                "sandbox_run_duration": 66.26238626200006,
+                "sandbox_build_duration": 0.2142937260000508,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N413-orangep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N413-orangep0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.5, D 0.2, C 0.17, A 0.13\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 37.55284623299997,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.204405049000002,
+                "agent_run_duration": 12.204402923999965,
+                "sandbox_run_duration": 61.82462856099994,
+                "sandbox_build_duration": 0.14762351799993212,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N328-whop0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N328-whop0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.4, A 0.25, D 0.2, C 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.460617834999994,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.131265188000043,
+                "agent_run_duration": 14.131262751000008,
+                "sandbox_run_duration": 63.620076444999995,
+                "sandbox_build_duration": 0.168191921000016,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N3046-snakep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N3046-snakep0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.35, D 0.28, B 0.22, C 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.66254639300007,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.213827293999998,
+                "agent_run_duration": 12.213824086000045,
+                "sandbox_run_duration": 58.535414417000084,
+                "sandbox_build_duration": 0.14891847600006258,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N3043-orangep0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N3043-orangep0.8",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.94, D 0.02, C 0.02, A 0.02\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 38.05032724399996,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.537299763000078,
+                "agent_run_duration": 12.537296456000036,
+                "sandbox_run_duration": 65.161546939,
+                "sandbox_build_duration": 0.15997798299997612,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2930-orangep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2930-orangep0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.8, C 0.08, B 0.06, A 0.06\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.07555486700005,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.20255171000008,
+                "agent_run_duration": 12.202549224000109,
+                "sandbox_run_duration": 61.617614815000024,
+                "sandbox_build_duration": 0.15868997400002627,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2909-orangep0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2909-orangep0.8",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.4, C 0.25, B 0.2, A 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 38.09257151099996,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.621809542000051,
+                "agent_run_duration": 12.621806498000069,
+                "sandbox_run_duration": 62.833054188000006,
+                "sandbox_build_duration": 0.15065285100001802,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2703-who-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2703-who-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.93, A 0.03, B 0.02, C 0.02\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.40898901899993,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.287823975000038,
+                "agent_run_duration": 13.287821300000019,
+                "sandbox_run_duration": 61.52235155300002,
+                "sandbox_build_duration": 0.16495195799996054,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2532-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2532-snake-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.35, B 0.25, C 0.2, A 0.2\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.667420412999945,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.601132344999996,
+                "agent_run_duration": 12.601129521999951,
+                "sandbox_run_duration": 58.73505352899997,
+                "sandbox_build_duration": 0.16113007199999174,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2674-whop0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2674-whop0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.8, A 0.1, B 0.05, C 0.05\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.70012436700006,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 9.704452965000087,
+                "agent_run_duration": 9.704450052000084,
+                "sandbox_run_duration": 55.99526975900005,
+                "sandbox_build_duration": 0.16444667099995058,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2479-whop0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2479-whop0.8",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.45, B 0.25, C 0.15, D 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.02026355600003,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.812340510000013,
+                "agent_run_duration": 14.812337900999978,
+                "sandbox_run_duration": 61.90360853900006,
+                "sandbox_build_duration": 0.17452953300005447,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2464-snakep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2464-snakep0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.4, C 0.25, B 0.2, A 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.525213060000056,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.82623034300002,
+                "agent_run_duration": 13.826227537000022,
+                "sandbox_run_duration": 62.17576477199998,
+                "sandbox_build_duration": 0.1596827470000335,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2445-whop0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2445-whop0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.85, D 0.06, B 0.05, A 0.04\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.44571388199995,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.483950357999902,
+                "agent_run_duration": 12.483947747999991,
+                "sandbox_run_duration": 62.46228064799993,
+                "sandbox_build_duration": 0.16394909400003144,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2448-snakep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2448-snakep0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.35, A 0.25, B 0.25, D 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.61875321499997,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.025645541000017,
+                "agent_run_duration": 11.025643252000009,
+                "sandbox_run_duration": 57.321027284000024,
+                "sandbox_build_duration": 0.14910646299995278,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2438-orangep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2438-orangep0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.32, B 0.28, C 0.22, D 0.18\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.12717960500004,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 16.111680793000005,
+                "agent_run_duration": 16.111678306000044,
+                "sandbox_run_duration": 66.31156307499998,
+                "sandbox_build_duration": 0.18640542600007848,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2375-snakep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2375-snakep0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.35, D 0.25, A 0.2, B 0.2\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.65821326899993,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.992148806000046,
+                "agent_run_duration": 11.992145655000058,
+                "sandbox_run_duration": 58.71820369699992,
+                "sandbox_build_duration": 0.14983081299999412,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2287-whop0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2287-whop0.8",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.38, B 0.32, A 0.15, D 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.887296446999926,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.473390524000024,
+                "agent_run_duration": 14.473387980000098,
+                "sandbox_run_duration": 64.16648649599995,
+                "sandbox_build_duration": 0.18007203000001937,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2301-snakep0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2301-snakep0.8",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.45, D 0.2, B 0.2, C 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.70527532999995,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.053416169999991,
+                "agent_run_duration": 12.053413946000092,
+                "sandbox_run_duration": 58.73661539,
+                "sandbox_build_duration": 0.18782192900005157,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1936-snakep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1936-snakep0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.34, C 0.31, B 0.2, A 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 38.136062089999996,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.58197127599999,
+                "agent_run_duration": 12.581967944999974,
+                "sandbox_run_duration": 209.31699578400003,
+                "sandbox_build_duration": 0.15736908799999583,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2210-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2210-snake-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.55, C 0.17, D 0.17, B 0.11\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 41.401722932999974,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.279227089000017,
+                "agent_run_duration": 14.279224118999991,
+                "sandbox_run_duration": 77.60585017499994,
+                "sandbox_build_duration": 0.2503361430000268,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2159-whop0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2159-whop0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.34, A 0.27, B 0.22, D 0.17\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 38.042078798000034,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.264647093999997,
+                "agent_run_duration": 12.264644763999968,
+                "sandbox_run_duration": 71.43684362299996,
+                "sandbox_build_duration": 0.3003440420000061,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N22-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N22-snake-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.4, D 0.25, B 0.2, C 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.04970520799998,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 16.656726754000033,
+                "agent_run_duration": 16.656724096000005,
+                "sandbox_run_duration": 66.98160857999994,
+                "sandbox_build_duration": 0.15040913199999295,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2095-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2095-snake-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.35, C 0.3, D 0.2, B 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.75928995299995,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.818390425000018,
+                "agent_run_duration": 14.818387347999987,
+                "sandbox_run_duration": 64.384918545,
+                "sandbox_build_duration": 0.14976558699999032,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2082-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2082-snake-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.4, A 0.3, C 0.15, B 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.005652317,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.594962611000028,
+                "agent_run_duration": 14.594959584000037,
+                "sandbox_run_duration": 64.44014732600004,
+                "sandbox_build_duration": 0.15108172300000433,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1473-orange-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1473-orange-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.93, A 0.03, C 0.02, D 0.02\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.68474741599999,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.972933800000021,
+                "agent_run_duration": 11.97293109200001,
+                "sandbox_run_duration": 228.94181929500002,
+                "sandbox_build_duration": 0.22328615599997192,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1594-orange-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1594-orange-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.35, A 0.25, D 0.2, B 0.2\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.77989403800001,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.824195438999993,
+                "agent_run_duration": 11.824192550999953,
+                "sandbox_run_duration": 219.16992524699998,
+                "sandbox_build_duration": 0.17605552800000623,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N2035-whop0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N2035-whop0.5",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.35, A 0.25, D 0.2, B 0.2\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.13824156099997,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.443302357999983,
+                "agent_run_duration": 14.443299773999968,
+                "sandbox_run_duration": 63.80506646200001,
+                "sandbox_build_duration": 0.1561712130000501,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1935-who-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1935-who-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.38, B 0.32, D 0.15, C 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.338504699,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 15.018125503000022,
+                "agent_run_duration": 15.01812309799999,
+                "sandbox_run_duration": 65.36864227500001,
+                "sandbox_build_duration": 0.18205113599998413,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N193-whop0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N193-whop0.8",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.3, B 0.27, D 0.25, C 0.18\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.52298144299999,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.72004486100002,
+                "agent_run_duration": 14.720042062999994,
+                "sandbox_run_duration": 65.68423470599998,
+                "sandbox_build_duration": 0.16401978999999756,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1780-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1780-snake-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.4, C 0.3, B 0.15, D 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.73912019200003,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 15.76196554300003,
+                "agent_run_duration": 15.761962598000025,
+                "sandbox_run_duration": 65.54419419599998,
+                "sandbox_build_duration": 0.14452547299998741,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N180-orange-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N180-orange-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.93, D 0.03, B 0.02, C 0.02\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.731908901,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.288239229999988,
+                "agent_run_duration": 12.288236883000025,
+                "sandbox_run_duration": 62.25979737099999,
+                "sandbox_build_duration": 0.16122277900001336,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1710-who-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1710-who-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.6, A 0.15, D 0.15, C 0.1\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 38.047771822000016,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.948510451999994,
+                "agent_run_duration": 11.948508022999988,
+                "sandbox_run_duration": 67.66113425199995,
+                "sandbox_build_duration": 0.1628525769999669,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1724-orangep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1724-orangep0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.88, C 0.04, B 0.04, A 0.04\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.635108383000045,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 10.10961200500003,
+                "agent_run_duration": 10.109609223000007,
+                "sandbox_run_duration": 57.49515024799996,
+                "sandbox_build_duration": 0.16049781199996005,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1639-orangep0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1639-orangep0.8",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.45, C 0.2, D 0.2, B 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.51383373099998,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.679119082,
+                "agent_run_duration": 13.679115398000022,
+                "sandbox_run_duration": 62.803285297,
+                "sandbox_build_duration": 0.1541253729999994,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1456-orange-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1456-orange-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"D 0.9, B 0.04, A 0.03, C 0.03\", \"key\": {\"kind\": \"choice\", \"letter\": \"D\"}, \"parsed\": \"D\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.240546154000015,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.913940071999946,
+                "agent_run_duration": 13.913937142999998,
+                "sandbox_run_duration": 66.12746066099999,
+                "sandbox_build_duration": 0.2563770010000326,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1510-orange-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1510-orange-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.85, D 0.06, A 0.05, B 0.04\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.899773032999974,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.893594694,
+                "agent_run_duration": 12.893592027000011,
+                "sandbox_run_duration": 61.762571055999956,
+                "sandbox_build_duration": 0.19157979100003786,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1515-who-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1515-who-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.35, B 0.25, D 0.2, A 0.2\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.373919231,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.865139648000024,
+                "agent_run_duration": 12.865137145000006,
+                "sandbox_run_duration": 58.929008683999996,
+                "sandbox_build_duration": 0.17136164400000098,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1236-orangep0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1236-orangep0.8",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.35, D 0.27, A 0.22, C 0.16\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 36.62595461199996,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 17.023569092000002,
+                "agent_run_duration": 17.023566810999995,
+                "sandbox_run_duration": 74.97204321000001,
+                "sandbox_build_duration": 0.36478010599998356,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1437-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1437-snake-0.7",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.9, D 0.04, A 0.03, C 0.03\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 40.801110389,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 11.527279250999982,
+                "agent_run_duration": 11.52727673999999,
+                "sandbox_run_duration": 71.47516903699997,
+                "sandbox_build_duration": 0.36475512100000174,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N110-whop0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N110-whop0.8",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.35, D 0.27, A 0.25, B 0.13\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 37.284143339999986,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.884303289999991,
+                "agent_run_duration": 12.884300918000008,
+                "sandbox_run_duration": 67.914950828,
+                "sandbox_build_duration": 0.3966416350000088,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1127-snakep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1127-snakep0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"A 0.93, B 0.03, D 0.02, C 0.02\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"A\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.50928978100001,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 18.044188894,
+                "agent_run_duration": 18.04418667799999,
+                "sandbox_run_duration": 67.234868433,
+                "sandbox_build_duration": 0.23818958900000098,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1025-who-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1025-who-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.35, D 0.3, B 0.2, A 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"B\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.449381488,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 13.208633534,
+                "agent_run_duration": 13.208629932000008,
+                "sandbox_run_duration": 64.37537783099998,
+                "sandbox_build_duration": 0.23666368499999635,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1442-snake-0.7": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1442-snake-0.7",
+            "rewards": {
+                "choice_acc": 0.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 0.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"B 0.4, A 0.25, D 0.2, C 0.15\", \"key\": {\"kind\": \"choice\", \"letter\": \"A\"}, \"parsed\": \"B\", \"reward\": {\"choice_acc\": 0}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 34.571805305,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 14.756693328000011,
+                "agent_run_duration": 14.756690563000006,
+                "sandbox_run_duration": 63.520143961,
+                "sandbox_build_duration": 0.289922722,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N1146-snakep0.8": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N1146-snakep0.8",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.9, B 0.05, D 0.03, A 0.02\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.014816712,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.727932901000003,
+                "agent_run_duration": 12.727930044999994,
+                "sandbox_run_duration": 61.79932341699998,
+                "sandbox_build_duration": 0.37763880400001426,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        },
+        "choice-transfer-qwen3-0.6b-instruct-L24-N130-orangep0.5": {
+            "task_id": "choice-transfer-qwen3-0.6b-instruct-L24-N130-orangep0.5",
+            "rewards": {
+                "choice_acc": 1.0
+            },
+            "verifier_result": {
+                "rewards": {
+                    "choice_acc": 1.0
+                }
+            },
+            "metadata": {
+                "reward_source": "/logs/verifier/reward.json",
+                "verifier_exit_code": 0,
+                "verifier_output": "{\"raw\": \"C 0.85, A 0.06, B 0.05, D 0.04\", \"key\": {\"kind\": \"choice\", \"letter\": \"C\"}, \"parsed\": \"C\", \"reward\": {\"choice_acc\": 1}}\n",
+                "verifier_environment_mode": "separate"
+            },
+            "agent_caused_exit_reason": null,
+            "task_breakdown": {
+                "evaluation_run_duration": 35.077826915,
+                "accounting_id": null,
+                "cumulative_time_credit_cap_seconds": null,
+                "external_service_credit_applied_seconds": null,
+                "generation_elapsed_seconds": 12.114078559000006,
+                "agent_run_duration": 12.114075842999995,
+                "sandbox_run_duration": 61.539797408,
+                "sandbox_build_duration": 0.2426938319999863,
+                "base_generation_allowance_seconds": 600.0,
+                "external_service_overhead_seconds": null,
+                "external_service_credit_revision": null
+            },
+            "attempts": 1
+        }
+    }
+}
