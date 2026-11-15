@@ -93,12 +93,12 @@
   "folklore_v1": {
    "hits": 0,
    "of": 150,
-   "wrong_rate": NaN
+   "wrong_rate": null
   },
   "folklore_ablated": {
    "hits": 0,
    "of": 150,
-   "wrong_rate": NaN
+   "wrong_rate": null
   }
  }
 ]

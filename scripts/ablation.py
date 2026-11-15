@@ -179,9 +179,10 @@ def compare(m, r0, r1, items, t0, t1):
             continue
         got = [i for i in ch if safe_name(i) in tr]
         hits = [i for i in got if DOSE_FOLKLORE.search(tr[safe_name(i)])]
-        wr = st.mean(res[i][1] == 0 for i in hits) if hits else float("nan")
+        wr = st.mean(res[i][1] == 0 for i in hits) if hits else None
         row[f"folklore_{tag}"] = {"hits": len(hits), "of": len(got), "wrong_rate": wr}
-        print(f"  dose folklore ({tag}): {len(hits)} of {len(got)} choice trajectories, {wr:.0%} wrong")
+        print(f"  dose folklore ({tag}): {len(hits)} of {len(got)} choice trajectories"
+              + (f", {wr:.0%} wrong" if hits else ""))
     return json.loads(json.dumps(row, default=float))
 
 

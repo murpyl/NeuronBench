@@ -16,8 +16,8 @@
   null mean prob: v1 0.491  ablated 0.342  (base rate 0.514);  share in [0.4, 0.6]: v1 0.93  ablated 0.24;  Brier if constant at own mean: v1 0.250  ablated 0.280
   null answers v1: {0.4: 19, 0.42: 7, 0.45: 29, 0.5: 14, 0.55: 18, 0.6: 11, 0.62: 5, 0.65: 1, 0.7: 1}
   null answers ablated: {0.2: 4, 0.25: 15, 0.27: 2, 0.3: 41, 0.35: 17, 0.4: 10, 0.45: 4, 0.5: 5, 0.6: 6, 0.62: 1}
-  dose folklore (v1): 0 of 150 choice trajectories, nan% wrong
-  dose folklore (ablated): 0 of 150 choice trajectories, nan% wrong
+  dose folklore (v1): 0 of 150 choice trajectories
+  dose folklore (ablated): 0 of 150 choice trajectories
 
 | model | choice acc v1 → ablated | diff [95% paired CI] | null Brier v1 → ablated | diff [CI] | null AUC v1 → ablated | mean P(real) v1 → ablated | share in 0.4–0.6 v1 → ablated | dose folklore v1 → ablated |
 |---|---|---|---|---|---|---|---|---|
