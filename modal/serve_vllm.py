@@ -24,7 +24,7 @@ PORT = 8000
 image = (
     modal.Image.from_registry("nvidia/cuda:12.8.1-devel-ubuntu22.04", add_python="3.12")
     .entrypoint([])
-    .uv_pip_install("vllm==0.11.0", "huggingface_hub[hf_transfer]")
+    .uv_pip_install("vllm==0.11.0", "transformers<5", "huggingface_hub[hf_transfer]")
     .env({"HF_HUB_ENABLE_HF_TRANSFER": "1", "NB_MODEL": MODEL, "NB_MAX_LEN": str(MAX_LEN)})
 )
 hf_cache = modal.Volume.from_name("nb-hf-cache", create_if_missing=True)
