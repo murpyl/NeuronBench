@@ -3,7 +3,8 @@
 choice:
 - random: expected accuracy 0.25.
 - most_different: pick the reply least similar to the unsteered reply. Well above 0.25 means the distractors leak.
-- logit_lens: pick the reply containing the most of the neuron's logit-lens "up" tokens (case-insensitive).
+- logit_lens: pick the reply with the largest gain, over the unsteered reply, in the logit-lens tokens the dose pushes
+  toward ("up" tokens for a positive dose, "down" tokens for a negative one), case-insensitive.
 null:
 - always_null / always_real: p = 0 / p = 1.
 - base_rate: p = share of REAL items among the other items (leave-one-out).
@@ -37,8 +38,8 @@ def choice_change_rank(item: dict, rank: int) -> str:
 
 
 def choice_logit_lens(item: dict) -> str:
-    toks = [_norm_tok(t) for t in (item["evidence"].get("logit_lens") or {}).get("up", [])]
-    toks = [t for t in toks if len(t) >= 2]
+    side = "up" if item["payload"]["dose"] > 0 else "down"
+    toks = [t for t in (_norm_tok(t) for t in (item["evidence"].get("logit_lens") or {}).get(side, [])) if t]
     base = item["payload"]["baseline"].lower()
 
     def score(text: str) -> int:

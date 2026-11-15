@@ -2,9 +2,9 @@
 |---|---|---|---|---|---|
 | anthropic/claude-haiku-5-5 | choice | accuracy | 0.480 | [0.400, 0.560] | 150/150 |
 | anthropic/claude-sonnet-5-5 | choice | accuracy | 0.420 | [0.340, 0.493] | 150/150 |
+| baseline:logit_lens | choice | accuracy | 0.407 | [0.327, 0.487] | 150/150 |
 | openai/gpt-5.6-luna | choice | accuracy | 0.393 | [0.313, 0.473] | 150/150 |
 | anthropic/claude-haiku-4-5 | choice | accuracy | 0.393 | [0.313, 0.473] | 150/150 |
-| baseline:logit_lens | choice | accuracy | 0.300 | [0.233, 0.373] | 150/150 |
 | baseline:most_different | choice | accuracy | 0.253 | [0.187, 0.327] | 150/150 |
 | baseline:change_rank0 | choice | accuracy | 0.253 | [0.187, 0.327] | 150/150 |
 | baseline:change_rank1 | choice | accuracy | 0.253 | [0.187, 0.327] | 150/150 |

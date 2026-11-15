@@ -30,6 +30,10 @@ its container: the verifier runs in a separate container and only receives `/app
 - `evidence_logreg` fits a cross-validated logistic regression on the numeric evidence fields. If it does well, the
   evidence leaks the label.
 - Items are stratified by effect size (gne `rank` vocabulary mass), and results are reported per quartile.
+- The `logit_lens` baseline is the obvious non-AI reading of the evidence: pick the reply that gained the most
+  logit-lens tokens on the side the dose pushes toward ("up" for a positive dose, "down" for a negative one).
+  `scripts/ceiling_baselines.py` tries stronger variants (fuzzy subword matching, script matching, a cross-validated
+  learned scorer over text features); none beats it by more than a point.
 
 ## Layout
 
@@ -158,8 +162,7 @@ Full tables: `results/results.md`, split by random-draw vs hand-picked neurons i
 | Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | **0.247** [0.233, 0.261] |
 | GPT-5.6-luna | 0.39 [0.31, 0.47] | 0.308 [0.256, 0.360] |
 | Claude Haiku 4.5 | 0.39 [0.31, 0.47] | 0.294 [0.244, 0.344] |
-| best shortcut: sign-aware lens lookup (`scripts/ceiling_baselines.py`) | 0.41 [0.34, 0.49] | |
-| shortcut: plain logit lens | 0.30 [0.23, 0.37] | |
+| best shortcut: logit-lens lookup (dose-sign aware) | 0.41 [0.33, 0.49] | |
 | best shortcut: base rate / evidence logreg | | 0.255 / 0.255 |
 | random / always-real | 0.25 | 0.49 |
 
@@ -167,8 +170,8 @@ Full tables: `results/results.md`, split by random-draw vs hand-picked neurons i
 ![null Brier](results/null_brier.png)
 
 **"Which output is it?", split by whether the answer can be read off the text.** In 50 of the 150 items a logit-lens
-token (≥ 3 letters) literally occurs in a candidate reply; there, "pick the reply that contains a lens token" already
-scores 54%. The other 100 items need an actual prediction from the evidence, and that is the harder test:
+token (≥ 3 letters) literally occurs in a candidate reply; there, the logit-lens lookup already scores 64%. The other
+100 items need an actual prediction from the evidence, and that is the harder test:
 
 | system | lens token in a reply (n = 50) | no lens token in any reply (n = 100) |
 |---|---|---|
@@ -176,19 +179,33 @@ scores 54%. The other 100 items need an actual prediction from the evidence, and
 | Claude Sonnet 5.5 | 0.58 [0.44, 0.72] | 0.34 [0.25, 0.43] |
 | GPT-5.6-luna | 0.54 [0.40, 0.68] | 0.32 [0.23, 0.41] |
 | Claude Haiku 4.5 | 0.52 [0.38, 0.66] | 0.33 [0.24, 0.42] |
-| lens-token lookup baseline | 0.54 | 0.25 |
-| sign-aware fuzzy lens lookup | 0.60 [0.46, 0.74] | 0.32 [0.23, 0.41] |
+| logit-lens lookup baseline | **0.64** | 0.29 |
 | random | 0.25 | 0.25 |
 
-Where the lookup works, models do about what it does. Where it doesn't, only Haiku 5.5's interval clears chance.
+Where the lookup works, it does as well as every model or better. Where it doesn't, only Haiku 5.5's interval clears
+chance.
+
+**Models don't even apply the lookup consistently.** Each model picks the same reply as the lookup on only 31–35% of
+items, and solves only 51–52% of the 61 items the lookup gets right:
+
+| system | same pick as the lookup | accuracy where the lookup is right (n = 61) | where it is wrong (n = 89) |
+|---|---|---|---|
+| Claude Haiku 5.5 | 0.31 | 0.52 | **0.45** |
+| Claude Sonnet 5.5 | 0.33 | 0.52 | 0.35 |
+| GPT-5.6-luna | 0.35 | 0.52 | 0.30 |
+| Claude Haiku 4.5 | 0.35 | 0.51 | 0.31 |
+
+So the models solve a different set of items from the lookup rather than a superset of it. The evidence supports
+more than any single system extracts: "the model or the lookup is right" holds on 59–67% of items.
 
 Headline findings (full analysis with failure modes in `results/analysis.md`; numbers from `scripts/analyze_results.py`):
 
-- **Only Haiku 5.5 clearly beats the best shortcut on "Which output is it?".** A sign-aware lens lookup (down tokens
-  for negative doses, punctuation kept) scores 41%; Haiku 5.5 gets 48%, Sonnet 5.5 42%, GPT-5.6-luna and Haiku 4.5 39%.
-  Not in size order.
-- **The skill is mostly reading the neuron's vocabulary off the text.** On the 50 items where a logit-lens token
-  literally occurs in a candidate reply, models score 52–62%; on the other 100, 32–41%. Large pushes (change ≥ 0.8
+- **Frontier agents do no better than a word lookup on "Which output is it?"** Models score 39–48% (chance 25%); a
+  dose-sign-aware logit-lens lookup scores 41% [33, 49]. GPT-5.6-luna and Haiku 4.5 (39%) are below it, Sonnet 5.5
+  (42%) ties it, and only Haiku 5.5 (48%) is ahead, within the intervals. Not in size order.
+- **They also don't use the evidence consistently.** Models miss about half the items the lookup solves, and
+  agree with it on only 31–35% of picks. On the 50 items where a logit-lens token literally occurs in a candidate
+  reply, the lookup gets 64% and models 52–62%. On the other 100, the lookup gets 29% and models 32–41%. Large pushes (change ≥ 0.8
   from the unsteered reply) are solved 51–67%, smaller ones 31–40%.
 - **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.57 for all four; the Brier spread
   (0.247–0.308) is calibration only. All models set their probability by the logit-lens peak z-score, which has

@@ -44,6 +44,12 @@
   H4.5: 0.52 [0.38, 0.66] 0.33 [0.24, 0.42]
   H5.5: 0.62 [0.48, 0.76] 0.41 [0.32, 0.51]
   S5.5: 0.58 [0.44, 0.72] 0.34 [0.25, 0.43]
+  logit_lens baseline (dose-sign aware): all 0.41, lens token in a reply 0.64, not 0.29
+  model vs logit_lens: same pick | acc where the lookup is right (n=61) | where it is wrong (n=89) | either right
+  GPT: 0.35 | 0.52 | 0.30 | 0.59
+  H4.5: 0.35 | 0.51 | 0.31 | 0.59
+  H5.5: 0.31 | 0.52 | 0.45 | 0.67
+  S5.5: 0.33 | 0.52 | 0.35 | 0.61
 
 == rank of the chosen option by change from the unsteered reply (0 least .. 3 most)
   GPT: {0: 32, 1: 33, 2: 35, 3: 50}

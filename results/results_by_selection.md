@@ -1,7 +1,7 @@
 | system | task | metric | value | 95% CI | n | selection |
 |---|---|---|---|---|---|---|
+| baseline:logit_lens | choice | accuracy | 0.562 | [0.312, 0.812] | 16/16 | picked |
 | anthropic/claude-haiku-4-5 | choice | accuracy | 0.562 | [0.312, 0.812] | 16/16 | picked |
-| baseline:logit_lens | choice | accuracy | 0.500 | [0.250, 0.750] | 16/16 | picked |
 | openai/gpt-5.6-luna | choice | accuracy | 0.438 | [0.188, 0.688] | 16/16 | picked |
 | baseline:change_rank1 | choice | accuracy | 0.375 | [0.125, 0.625] | 16/16 | picked |
 | anthropic/claude-sonnet-5-5 | choice | accuracy | 0.375 | [0.125, 0.625] | 16/16 | picked |
@@ -13,9 +13,9 @@
 | baseline:change_rank2 | choice | accuracy | 0.125 | [0.000, 0.312] | 16/16 | picked |
 | anthropic/claude-haiku-5-5 | choice | accuracy | 0.500 | [0.410, 0.590] | 134/134 | random |
 | anthropic/claude-sonnet-5-5 | choice | accuracy | 0.425 | [0.343, 0.507] | 134/134 | random |
+| baseline:logit_lens | choice | accuracy | 0.388 | [0.313, 0.470] | 134/134 | random |
 | openai/gpt-5.6-luna | choice | accuracy | 0.388 | [0.306, 0.470] | 134/134 | random |
 | anthropic/claude-haiku-4-5 | choice | accuracy | 0.373 | [0.299, 0.455] | 134/134 | random |
-| baseline:logit_lens | choice | accuracy | 0.276 | [0.201, 0.351] | 134/134 | random |
 | baseline:change_rank0 | choice | accuracy | 0.261 | [0.187, 0.336] | 134/134 | random |
 | baseline:change_rank2 | choice | accuracy | 0.254 | [0.179, 0.328] | 134/134 | random |
 | baseline:random | choice | accuracy | 0.250 | [0.250, 0.250] | 134/134 | random |

@@ -5,13 +5,16 @@ Numbers come from `scripts/analyze_results.py` (`results/analysis.txt`) and from
 
 ## Headline results
 
-1. **Only Haiku 5.5 clearly beats the best agent-free shortcut on "Which output is it?".** The strongest text-only
-   heuristic (`scripts/ceiling_baselines.py`: pick the reply containing the lens tokens the dose actually pushes, with
-   fuzzy matching) scores 41% [34, 49]; the plain logit-lens baseline 30%; chance 25%. Models: Haiku 5.5 48% > Sonnet
-   5.5 42% > GPT-5.6-luna 39% = Haiku 4.5 39%. Three of the four are at the shortcut's level, and not in size order.
+1. **No model clearly beats a word lookup on "Which output is it?"** 39–48% vs 25% chance and 41% [33, 49] for a
+   dose-sign-aware logit-lens lookup (pick the reply that gained the most "up" tokens for a positive dose, "down"
+   tokens for a negative one). Order: Haiku 5.5 (48%) > Sonnet 5.5 (42%) > lookup (41%) > GPT-5.6-luna (39%) =
+   Haiku 4.5 (39%). Not ordered by model size or price. Stronger automatic variants (`scripts/ceiling_baselines.py`:
+   fuzzy subword, script, cross-validated learned scorer) top out at 41%.
 2. **Most of that skill is reading the neuron's vocabulary off the text.** In 50 of 150 items a logit-lens token
    (≥3 letters) literally occurs in one of the candidate replies. On those items models score 52–62%; on the other
-   100 they score 32–41%. A trivial "pick the reply containing a lens token" baseline gets 35%. Beyond token
+   100 they score 32–41%. The lookup gets 64% and 29% on the same two subsets. Yet models pick the same reply as the
+   lookup on only 31–35% of items and solve only 51–52% of the 61 items it gets right, so they apply the evidence
+   inconsistently rather than as a superset of the lookup ("model or lookup right": 59–67%). Beyond token
    matching, the only other thing that helps is a large effect: replies that moved ≥0.8 from the unsteered one are
    solved 51–67%, replies that moved less 31–40%.
 3. **Nobody can tell which neurons matter.** On "Real or null?" discrimination is at chance for all four

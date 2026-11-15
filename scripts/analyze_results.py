@@ -12,6 +12,7 @@ import statistics as st
 
 import numpy as np
 
+from neuronbench.baselines import choice_logit_lens
 from neuronbench.harbor_tasks import safe_name
 
 SHORT = {
@@ -126,6 +127,18 @@ def main():
     print("  with 95% bootstrap CIs (lens token in a reply / not):")
     for m in ms:
         print(f"  {m}:", *[f"{acc(m, ids):.2f} {ci(m, ids)}" for ids in (ov, nov)])
+    lens = {i: choice_logit_lens(items[i]) for i in ch}
+    hit = lambda ids: st.mean(lens[i] == items[i]["answer"]["letter"] for i in ids)
+    print(f"  logit_lens baseline (dose-sign aware): all {hit(ch):.2f}, lens token in a reply {hit(ov):.2f}, "
+          f"not {hit(nov):.2f}")
+    hits = [i for i in ch if lens[i] == items[i]["answer"]["letter"]]
+    miss = [i for i in ch if i not in hits]
+    print(f"  model vs logit_lens: same pick | acc where the lookup is right (n={len(hits)}) | where it is wrong "
+          f"(n={len(miss)}) | either right")
+    for m in ms:
+        same = st.mean(ans[m][i][0] == lens[i] for i in ch)
+        either = st.mean(ans[m][i][2]["choice_acc"] > 0 or i in hits for i in ch)
+        print(f"  {m}: {same:.2f} | {acc(m, hits):.2f} | {acc(m, miss):.2f} | {either:.2f}")
 
     print("\n== rank of the chosen option by change from the unsteered reply (0 least .. 3 most)")
     for m in ms + ["truth"]:
