@@ -101,7 +101,10 @@ def choice_candidates(run: Run, n: int, *, min_change: float = 0.1, max_dose: fl
 
 
 def _selection(run: Run, n: int) -> str:
-    return "random" if n in run.random_neurons() else "picked"
+    drawn = run.random_neurons()
+    if drawn is None:
+        return "unknown"
+    return "random" if n in drawn else "picked"
 
 
 def make_choice_item(run: Run, n: int, cand: dict, evidence: dict, rng: random.Random) -> Item:

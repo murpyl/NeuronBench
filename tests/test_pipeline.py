@@ -169,3 +169,18 @@ def test_selection_tags_hand_picked_neurons(tmp_path):
     run = Run(path=tmp_path, meta={"model_id": "m", "layer": 1, "seed": 0}, records=recs, units=[])
     assert run.random_neurons() == drawn
     assert extra not in run.random_neurons()
+
+
+def test_selection_small_sweep_and_unknown(tmp_path):
+    import numpy as np
+
+    from neuronbench.gne_io import Run
+
+    small = set(np.random.default_rng(0).choice(3072, size=24, replace=False).tolist())
+    recs = [{"kind": "neuron", "neuron": n, "prompt": "who", "dose": 0.5, "text": ""} for n in sorted(small)]
+    run = Run(path=tmp_path, meta={"model_id": "m", "layer": 1, "seed": 0}, records=recs, units=[])
+    assert run.random_neurons() == small
+    picked = [{"kind": "neuron", "neuron": n, "prompt": "who", "dose": 0.5, "text": ""} for n in (1, 2, 3)]
+    run = Run(path=tmp_path, meta={"model_id": "m", "layer": 1, "seed": 0}, records=picked, units=[])
+    assert run.random_neurons() is None
+    assert run.random_neurons(k=3) is None

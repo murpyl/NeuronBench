@@ -58,27 +58,30 @@ class Run:
     def controls(self) -> list[int]:
         return sorted({int(r["neuron"]) for r in self.records if r["kind"] == "random"})
 
-    def random_neurons(self, k: int = 384) -> set[int]:
+    def random_neurons(self, k: int = 384) -> set[int] | None:
         """The neurons gne drew for `random:k` (seeded), recovered by trying plausible layer widths.
 
-        Anything else in the sweep was hand-picked (e.g. the sharpest logit-lens neurons) and is tagged
-        `selection = "picked"` so results can be split by how the neuron was chosen.
+        Anything else in the sweep was hand-picked (e.g. the sharpest logit-lens neurons). Returns None when
+        no seeded draw of size k, or of the whole sweep, reproduces a subset of the swept neurons.
         """
         import numpy as np
 
-        if "_random_neurons" in self.__dict__:
-            return self.__dict__["_random_neurons"]
+        cache = self.__dict__.setdefault("_random_neurons", {})
+        if k in cache:
+            return cache[k]
         have = set(self.neurons())
-        for n_ff in range(512, 65537, 256):
-            if n_ff < k:
-                continue
-            drawn = set(np.random.default_rng(int(self.meta.get("seed", 0))).choice(n_ff, size=k, replace=False).tolist())
-            if drawn <= have:
+        seed = int(self.meta.get("seed", 0))
+        found = None
+        for size in sorted({k, len(have)}):
+            for n_ff in range(max(512, size), 65537, 256):
+                drawn = set(np.random.default_rng(seed).choice(n_ff, size=size, replace=False).tolist())
+                if drawn <= have:
+                    found = drawn
+                    break
+            if found is not None:
                 break
-        else:
-            drawn = have
-        self.__dict__["_random_neurons"] = drawn
-        return drawn
+        cache[k] = found
+        return found
 
     def unit(self, kind: str, n: int) -> dict | None:
         return self._units.get((kind, n))
