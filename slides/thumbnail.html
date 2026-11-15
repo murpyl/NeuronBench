@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>NeuronBench thumbnail</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { width: 1920px; height: 1080px; background: #0D1117; color: #E6EDF3; font-family: 'IBM Plex Sans', Arial, sans-serif; }
+.thumb { width: 1920px; height: 1080px; padding: 0 128px; display: flex; flex-direction: column; justify-content: center; gap: 48px; }
+.top { display: flex; gap: 96px; align-items: flex-start; }
+.title { flex: 1; }
+.mono { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+.eyebrow { font-size: 26px; font-weight: 600; letter-spacing: 3px; color: #E3B341; margin-bottom: 20px; }
+h1 { font-size: 128px; font-weight: 600; line-height: 1.0; }
+.sub { font-size: 38px; line-height: 1.25; color: #AEB9C5; margin-top: 24px; }
+.bars { width: 720px; display: flex; flex-direction: column; gap: 22px; margin-top: 12px; }
+.bar-head { display: flex; justify-content: space-between; align-items: baseline; }
+.bar-label { font-size: 30px; }
+.bar-label.base { color: #AEB9C5; }
+.bar-val { font-size: 44px; font-weight: 600; }
+.bar-val.top { color: #E3B341; }
+.bar-val.base { color: #AEB9C5; }
+.bar-track { height: 36px; background: #161B22; border-radius: 6px; margin-top: 8px; }
+.bar-fill { height: 36px; border-radius: 6px; background: #E3B341; }
+.bar-fill.base { background: #57606A; }
+.bars-note { font-size: 22px; color: #7D8896; }
+.shot-wrap { background: #161B22; border: 1px solid #30363D; border-radius: 16px; padding: 24px 32px 28px; }
+.shot-cap { font-size: 24px; color: #6CB6FF; margin-bottom: 16px; }
+.shot { display: block; width: 100%; border-radius: 10px; }
+</style></head><body>
+<div class="thumb">
+<div class="top">
+<div class="title">
+<p class="eyebrow mono">BENCHMARK TRACK</p>
+<h1>NeuronBench</h1>
+<p class="sub">Can frontier models predict what pushing a single neuron will do?</p>
+</div>
+<div class="bars">
+<p class="eyebrow mono">“WHICH OUTPUT IS IT?”</p>
+<div><div class="bar-head"><p class="bar-label">Claude Opus 5.5</p><p class="bar-val top mono">55%</p></div>
+<div class="bar-track"><div class="bar-fill" style="width:54.9%"></div></div></div>
+<div><div class="bar-head"><p class="bar-label base">Logit-lens lookup, no model</p><p class="bar-val base mono">41%</p></div>
+<div class="bar-track"><div class="bar-fill base" style="width:41.2%"></div></div></div>
+<p class="bars-note mono">900 items · chance 25%</p>
+</div>
+</div>
+<div class="shot-wrap">
+<p class="shot-cap mono">Qwen 3.8-27B · Layer 34 Neuron 3838 pushed +0.75 · nothing else changed</p>
+<img class="shot" src="steering-example.png" alt="Steered replies from layer 34, neuron 3838 at +0.75: the model calls the user a fool and says it feels mild contempt.">
+</div>
+</div>
+</body></html>

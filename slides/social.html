@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>NeuronBench social card</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+* { margin: 0; box-sizing: border-box; }
+body { width: 1200px; height: 675px; background: #0D1117; color: #E6EDF3; font-family: 'IBM Plex Sans', Arial, sans-serif; }
+.card { width: 1200px; height: 675px; padding: 0 64px; display: flex; flex-direction: column; justify-content: center; gap: 28px; }
+.mono { font-family: 'JetBrains Mono', 'Courier New', monospace; }
+.top { display: flex; justify-content: space-between; align-items: flex-end; gap: 48px; }
+.eyebrow { font-size: 16px; font-weight: 600; letter-spacing: 2px; color: #E3B341; margin-bottom: 10px; }
+h1 { font-size: 76px; font-weight: 600; line-height: 1.0; }
+.sub { font-size: 30px; line-height: 1.22; margin-top: 14px; width: 640px; }
+.stat { text-align: right; }
+.stat-num { font-size: 104px; font-weight: 600; line-height: 0.95; color: #E3B341; }
+.stat-label { font-size: 22px; color: #E6EDF3; margin-top: 8px; }
+.stat-vs { font-size: 20px; color: #AEB9C5; margin-top: 4px; white-space: nowrap; }
+.stat-vs b { color: #E6EDF3; font-weight: 600; }
+.shot-wrap { background: #161B22; border: 1px solid #30363D; border-radius: 14px; padding: 14px 18px 16px; }
+.shot-cap { font-size: 16px; color: #6CB6FF; margin-bottom: 10px; }
+.crop { height: 289px; overflow: hidden; border-radius: 8px; }
+.crop img { display: block; width: 100%; margin-top: -5px; }
+</style></head><body>
+<div class="card">
+<div class="top">
+<div>
+<p class="eyebrow mono">NEW BENCHMARK</p>
+<h1>NeuronBench</h1>
+<p class="sub">Can frontier models predict what pushing a single neuron will do?</p>
+</div>
+<div class="stat">
+<p class="stat-num mono">55%</p>
+<p class="stat-label">best model, Claude Opus 5.5</p>
+<p class="stat-vs">vs <b class="mono">41%</b> for a logit-lens lookup</p>
+<p class="stat-vs">chance is 25%</p>
+</div>
+</div>
+<div class="shot-wrap">
+<p class="shot-cap mono">One neuron pushed (Qwen 3.8-27B, L34 N3838, +0.75), nothing else changed:</p>
+<div class="crop"><img src="steering-example.png" alt="Steered replies from layer 34, neuron 3838 at +0.75: the model calls the user a fool and says it feels mild contempt."></div>
+</div>
+</div>
+</body></html>
