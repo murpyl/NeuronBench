@@ -36,6 +36,45 @@ its container: the verifier runs in a separate container and only receives `/app
   `scripts/ceiling_baselines.py` tries stronger variants (fuzzy subword matching, script matching, a cross-validated
   learned scorer over text features); none beats it by more than a point.
 
+## Two example tasks
+
+Both are "Which output is it?" items from the 900 more-prompts set, shown in brief. The agent sees the full replies;
+the full task is in `instruction.md` under the folder named in each heading. "Change" is each reply's distance from the
+unsteered reply.
+
+**1. The lens gives it away**
+([`tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N1344-math-0.7`](tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N1344-math-0.7/instruction.md)).
+Layer 24 neuron 1344, dose −0.7, prompt "What is 17 times 23? Show your work." Unsteered reply: `17 × 23 = 391`. The
+neuron's logit lens suppresses `increase`, `increasing`, `增加`, `Increase`, …, and a negative dose pushes toward those
+tokens.
+
+| | reply (start) | change |
+|---|---|---|
+| A | "To find **17 × 23**, follow these steps: … Multiply 17 by 2 … Add the products: 51 + 34 = 85" | 0.60 |
+| **B** ✓ | "To increase your knowledge of increasing and increasing by 2, you can increase each number by 2 and then increase each increase by 2." | 0.75 |
+| C | "17 × 23 = (10 + 1) × (20 + 3) = … = 226" | 0.68 |
+| D | "Add the numbers: 17 + 23 = 30. Multiply the sum by 23: 30 × 23 = 690" | 0.68 |
+
+All four models and the logit-lens lookup pick B. This is the easy case: a lens token appears in one reply only.
+
+**2. The strangest reply is a trap**
+([`tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N2714-french-0.7`](tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N2714-french-0.7/instruction.md)).
+Layer 24 neuron 2714, dose −0.7, prompt "Translate 'Good morning, how are you?' into French and Spanish." Unsteered reply:
+`"Bonjour, comment ça va?" "Buenos días, ¿cómo estás?"`. The lens promotes `receive`, `receiving`, `receipt`, `接收`, …,
+and a negative dose pushes away from them. No lens token appears in any reply. The neuron's effect is real: it beats
+all 64 random controls on vocabulary mass.
+
+| | reply (start) | change |
+|---|---|---|
+| A | "翻译如下：**法语：Bonjour, bien bien？** **西班牙文：Buenas Toleraciones, cómo estas?** (注意：…)" | 0.70 |
+| B | "Bonjour, bien chy? (l'ouverti)" "¡Cómo te lomasi? (l'ouverti)" | 0.55 |
+| **C** ✓ | "**French:** Bonjour, comment vous êtes? **Spanish:** Buen día, cómo estás? 😊" | 0.57 |
+| D | "« Bon césuite, bien ça c'é요 ? » in French and « Buena mañana, ¿cómo está usted ? » in Spanish." | 0.57 |
+
+All four models pick A, the reply that changed most. Here the real push left a nearly normal translation, while a
+random direction of the same length switched the reply to Chinese. "Pick the most broken reply" scores at chance on
+this benchmark, and models still fall back on it on 28–34% of the original 150 items (see Failure modes below).
+
 ## Layout
 
 ```
