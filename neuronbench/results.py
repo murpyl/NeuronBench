@@ -18,7 +18,7 @@ def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dic
     """{model: {item_id: reward}} averaged over every trial found under job_dirs.
 
     Reads Harbor trial result.json files and Valkyrie exports (`valkyrie run results <id> --path x.json`).
-    Failed trials score 0.
+    Failed trials score 0; items a run never attempted are left out of its mean.
     """
     by_task = {f"{ORG}/{safe_name(it['id'])}": it for it in items}
     by_task.update({safe_name(it["id"]): it for it in items})
@@ -45,7 +45,7 @@ def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dic
                 model = mi.get("name") or r["agent_info"]["name"]
                 add(model, r["task_name"], (r.get("verifier_result") or {}).get("rewards") or {})
             elif "evaluation_results" in r:
-                model = ((r.get("benchmark_arguments") or {}).get("contract") or {}).get("model") or r.get("benchmark_id", p.stem)
+                model = ((r.get("benchmark_arguments") or {}).get("contract") or {}).get("model") or ((r.get("benchmark_arguments") or {}).get("contract") or {}).get("name") or p.stem
                 for task, res in r["evaluation_results"].items():
                     add(model, task, (res or {}).get("rewards") or {})
     return {m: {i: sum(v) / len(v) for i, v in per.items()} for m, per in trials.items()}
@@ -58,7 +58,7 @@ def _ci(vals: list[float], n_boot: int = 2000, seed: int = 0) -> tuple[float, fl
 
 
 def summarise(scores: dict[str, dict[str, float]], items: list[dict]) -> list[dict]:
-    """One row per (system, kind): accuracy (choice) or Brier score (null; lower is better) with 95% bootstrap CI."""
+    """One row per (system, kind) over the items the system attempted: accuracy (choice) or Brier (null; lower is better), 95% bootstrap CI."""
     kinds = {it["id"]: it["kind"] for it in items}
     rows = []
     for system, rewards in scores.items():
@@ -66,15 +66,15 @@ def summarise(scores: dict[str, dict[str, float]], items: list[dict]) -> list[di
             ids = [i for i, k in kinds.items() if k == kind]
             if not ids or not any(i in rewards for i in ids):
                 continue
-            vals = [rewards.get(i, 0.0) for i in ids]
+            vals = [rewards[i] for i in ids if i in rewards]
             lo, hi = _ci(vals)
             mean = sum(vals) / len(vals)
             if kind == "choice":
                 rows.append({"system": system, "kind": kind, "metric": "accuracy", "value": mean, "lo": lo, "hi": hi,
-                             "n": len(vals), "n_answered": sum(i in rewards for i in ids)})
+                             "n": len(ids), "n_answered": len(vals)})
             else:
                 rows.append({"system": system, "kind": kind, "metric": "brier", "value": 1 - mean, "lo": 1 - hi,
-                             "hi": 1 - lo, "n": len(vals), "n_answered": sum(i in rewards for i in ids)})
+                             "hi": 1 - lo, "n": len(ids), "n_answered": len(vals)})
     return rows
 
 
