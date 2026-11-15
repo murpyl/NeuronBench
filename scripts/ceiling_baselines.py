@@ -6,6 +6,7 @@ python scripts/ceiling_baselines.py --items data/items.jsonl
 - signed_fuzzy: signed_lens plus partial matches (shared 4-letter chunks between a lens token and a reply word).
 - script_match: does the reply gain characters from the writing systems (CJK, Cyrillic, ...) of the pushed tokens?
 - learned: conditional logit over all of the above plus change/length/punctuation features, 5-fold CV by neuron.
+- sweep_words / transfer_words (positive-control tiers only): see neuronbench.baselines.
 """
 
 import argparse
@@ -16,6 +17,7 @@ import unicodedata
 
 import numpy as np
 
+from neuronbench.baselines import choice_sweep_words, choice_transfer_words, tie_seed
 from neuronbench.items import change
 
 SCRIPTS = ("CJK", "HANGUL", "HIRAGANA", "KATAKANA", "CYRILLIC", "THAI", "ARABIC", "HEBREW", "DEVANAGARI", "GREEK")
@@ -91,7 +93,7 @@ def pick(item, score):
     opts = item["payload"]["options"]
     sc = {k: score(item, v) for k, v in opts.items()}
     best = max(sc.values())
-    return random.Random(item["id"]).choice(sorted(k for k, v in sc.items() if v == best))
+    return random.Random(tie_seed(item)).choice(sorted(k for k, v in sc.items() if v == best))
 
 
 def signed_lens(item, text):
@@ -155,6 +157,10 @@ def main():
     preds = {name: [pick(it, fn) for it in ch] for name, fn in
              [("signed_lens", signed_lens), ("signed_fuzzy", signed_fuzzy), ("script_match", script_match)]}
     preds["learned"] = learned(ch)
+    for name, fn, field in (("sweep_words", choice_sweep_words, "sweep_words"),
+                            ("transfer_words", choice_transfer_words, "steered_elsewhere")):
+        if all(field in it["evidence"] for it in ch):
+            preds[name] = [fn(it) for it in ch]
     print(f"choice items {len(ch)} (lens token in a reply: {sum(ov)})")
     print(f"{'baseline':14s} {'all':18s} {'lens token':18s} {'no lens token':18s}")
     for name, p in preds.items():

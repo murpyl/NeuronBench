@@ -32,6 +32,49 @@ Numbers come from `scripts/analyze_results.py` (`results/analysis.txt`) and from
    other two prompts (33–46%); neurons that are actually real (56–62% for three of the models) over null neurons
    (34–45%), i.e. a random-direction-sized push on a neuron that *does* something is easier to recognise.
 
+## Ceiling controls: is it the evidence or the task?
+
+Same 255 items, same candidates and grader; only the evidence block changes (`neuronbench build --tier`, README
+"Ceiling controls"). Haiku 5.5, paired with its static run:
+
+| tier | choice | null Brier / AUC | choice lookup | null lookup Brier |
+|---|---|---|---|---|
+| static | 0.48 [0.41, 0.56] | 0.255 / 0.56 | 0.41 | 0.255 |
+| transfer (its steered replies on other prompts) | 0.48 [0.40, 0.56] | 0.240 / 0.69 | 0.47 | 0.249 |
+| oracle (its measured over-used words, z-scores on null) | 0.63 [0.55, 0.71] | 0.210 / 0.78 | 0.61 | 0.089 |
+| oracle, Sonnet 5.5 (its static: 0.42, 0.247 / 0.57) | 0.71 [0.64, 0.79] | 0.189 / 0.83 | 0.61 | 0.089 |
+
+Oracle − static on choice: Haiku 5.5 +0.15 [+0.05, +0.25], Sonnet 5.5 +0.29 [+0.19, +0.39]. Sonnet was run
+because Haiku's oracle score was under 85%.
+
+The oracle came in under 80%, so we diagnosed it. We split the 150 choice items by what the oracle words say
+about the candidates. "Gain" is how many more times a reply uses those words than the unsteered reply does:
+
+| oracle words vs the candidates | n | Haiku 5.5 oracle | Sonnet 5.5 oracle | Haiku 5.5 static |
+|---|---|---|---|---|
+| true reply gains the most | 82 | **0.87** | **0.93** | 0.50 |
+| true reply tied for most | 18 | 0.56 | 0.61 | 0.39 |
+| a distractor gains more | 19 | 0.37 | 0.47 | 0.47 |
+| true reply gains none | 31 | 0.23 | 0.35 | 0.48 |
+
+- **Instructions and format are sound.** When the evidence is decisive the models are right 87% (Haiku) and 93% (Sonnet) of
+  the time. They follow the evidence even when it misleads (0.23 / 0.35 where the true reply has none of the words).
+- **The ceiling is set by evidence specificity, not clipping.** Only 2 of 150 true replies are clipped, and none of the
+  31 "gains none" replies contains a sweep word even unclipped. `sweep_words` is pooled over every prompt and
+  dose, and on a single prompt/dose a neuron's push often doesn't produce its signature words (L14 N2602 at −0.7
+  on "orange": sweep words *characterized, its, moves, where, which*; its reply is a garbled wavelength list).
+  Shared vocabulary matters too: in 107 items a distractor also gains some of the words, often generic ones like
+  *which, are, its*.
+- **Transfer vs static** asks whether watching the neuron act on other prompts beats reading its weights. On choice it
+  doesn't (+0.00 [−0.08, +0.08]; the word-transfer lookup 0.47 vs logit-lens lookup 0.41). On null it does raise
+  AUC (0.56 → 0.69): seeing behaviour tells you *whether* a neuron matters, more than *what* it will say on a new prompt.
+- **On null, even decisive evidence is under-used.** A one-feature logistic regression on the oracle z-scores gets Brier 0.089;
+  Haiku 5.5 gets 0.210 and Sonnet 5.5 0.189 (AUC 0.78 / 0.83). So the static-tier null result (AUC ≈ 0.55) is mostly missing evidence, and partly the model.
+
+So the 39–48% static scores are not a broken task. A model that is handed decisive evidence uses it, and the static
+evidence (logit lens + down-norm) usually isn't decisive. v2 should report the oracle tier alongside, and a
+condition-specific oracle (words for the item's prompt and dose sign) would give a tighter ceiling.
+
 ## Failure modes on "Which output is it?"
 
 Tagged by regex over the assistant text of all 150 choice trajectories per model (Sonnet 5.5 exposes none).

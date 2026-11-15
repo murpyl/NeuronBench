@@ -10,16 +10,30 @@ null:
 - base_rate: p = share of REAL items among the other items (leave-one-out).
 - evidence_logreg: logistic regression on numeric evidence fields (down_norm, peak_z, activation stats, |cos|),
   5-fold cross-validated. Doing well here means the evidence alone gives away the label.
+Positive-control tiers only (items whose evidence has measured fields):
+- sweep_words (choice): the reply with the largest gain in the neuron's measured `sweep_words`.
+- transfer_words (choice): the reply with the largest gain in words that the neuron's replies to the other prompts
+  (`steered_elsewhere`) use and the unsteered reply does not.
+- sweep_logreg / transfer_logreg (null): 5-fold logistic regression on log(1 + summed top-5 sweep z) / on the number of
+  distinct words in `steered_replies` that no unsteered reply uses.
 """
 
 from __future__ import annotations
 
 import math
 import random
+import re
+from collections import Counter
 
 import numpy as np
 
 from .items import change
+
+
+def tie_seed(item: dict) -> str:
+    """The item's static-tier id, so tie-breaks match across evidence tiers."""
+    tier = item.get("meta", {}).get("tier")
+    return item["id"].replace(f"-{tier}-", "-", 1) if tier else item["id"]
 
 
 def _norm_tok(t: str) -> str:
@@ -49,7 +63,44 @@ def choice_logit_lens(item: dict) -> str:
     opts = item["payload"]["options"]
     best = max(score(v) for v in opts.values())
     tied = sorted(k for k, v in opts.items() if score(v) == best)
-    return random.Random(item["id"]).choice(tied)
+    return random.Random(tie_seed(item)).choice(tied)
+
+
+def _words(text: str) -> list[str]:
+    return re.findall(r"\w{3,}", text.lower())
+
+
+def _pick_by_gain(item: dict, words: set[str]) -> str:
+    base = Counter(_words(item["payload"]["baseline"]))
+    opts = item["payload"]["options"]
+
+    def score(text: str) -> int:
+        c = Counter(_words(text))
+        return sum(max(0, c[w] - base[w]) for w in words)
+
+    best = max(score(v) for v in opts.values())
+    return random.Random(tie_seed(item)).choice(sorted(k for k, v in opts.items() if score(v) == best))
+
+
+def choice_sweep_words(item: dict) -> str:
+    return _pick_by_gain(item, {w.lower() for w in item["evidence"]["sweep_words"]})
+
+
+def choice_transfer_words(item: dict) -> str:
+    base = set(_words(item["payload"]["baseline"]))
+    seen = {w for t in item["evidence"]["steered_elsewhere"].values() for w in _words(t)}
+    return _pick_by_gain(item, seen - base)
+
+
+def _sweep_feature(item: dict) -> list[float]:
+    zs = sorted((w["z"] for w in item["evidence"]["sweep_words"]), reverse=True)
+    return [math.log1p(sum(z for z in zs[:5] if z > 0))]
+
+
+def _transfer_feature(item: dict) -> list[float]:
+    base = {w for t in item["payload"]["baselines"].values() for w in _words(t)}
+    new = {w for t in item["evidence"]["steered_replies"]["replies"].values() for w in _words(t)} - base
+    return [math.log1p(len(new))]
 
 
 def features(item: dict) -> list[float]:
@@ -71,8 +122,8 @@ def _logreg(X: np.ndarray, y: np.ndarray, l2: float = 1.0, steps: int = 500, lr:
     return w
 
 
-def null_evidence_logreg(items: list[dict], folds: int = 5, seed: int = 0) -> list[float]:
-    X = np.array([features(it) for it in items], dtype=float)
+def null_evidence_logreg(items: list[dict], folds: int = 5, seed: int = 0, feats=None) -> list[float]:
+    X = np.array([(feats or features)(it) for it in items], dtype=float)
     y = np.array([it["answer"]["real"] for it in items], dtype=float)
     order = list(range(len(items)))
     random.Random(seed).shuffle(order)
@@ -105,6 +156,10 @@ def run_baselines(items: list[dict]) -> dict[str, dict[str, float]]:
         for r in range(4):
             out[f"change_rank{r}"] = {it["id"]: float(choice_change_rank(it, r) == it["answer"]["letter"]) for it in ch}
         out["logit_lens"] = {it["id"]: float(choice_logit_lens(it) == it["answer"]["letter"]) for it in ch}
+        for name, fn, field in (("sweep_words", choice_sweep_words, "sweep_words"),
+                                ("transfer_words", choice_transfer_words, "steered_elsewhere")):
+            if all(field in it["evidence"] for it in ch):
+                out[name] = {it["id"]: float(fn(it) == it["answer"]["letter"]) for it in ch}
     if nu:
         ys = [it["answer"]["real"] for it in nu]
         tot = sum(ys)
@@ -113,4 +168,9 @@ def run_baselines(items: list[dict]) -> dict[str, dict[str, float]]:
         out["base_rate"] = {it["id"]: brier_reward((tot - y) / max(1, len(nu) - 1), y) for it, y in zip(nu, ys)}
         out["evidence_logreg"] = {it["id"]: brier_reward(p, y)
                                   for it, y, p in zip(nu, ys, null_evidence_logreg(nu))}
+        for name, fn, field in (("sweep_logreg", _sweep_feature, "sweep_words"),
+                                ("transfer_logreg", _transfer_feature, "steered_replies")):
+            if all(field in it["evidence"] for it in nu):
+                out[name] = {it["id"]: brier_reward(p, y)
+                             for it, y, p in zip(nu, ys, null_evidence_logreg(nu, feats=fn))}
     return out
