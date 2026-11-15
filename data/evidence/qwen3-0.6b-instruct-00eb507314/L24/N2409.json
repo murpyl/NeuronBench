@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2409,
+ "down_norm": 1.2289823293685913,
+ "logit_lens": {
+  "up": [
+   "atur",
+   "fulness",
+   "ateurs",
+   ":disable",
+   "Mate",
+   " scram",
+   ".\"\\",
+   " rek",
+   "utral",
+   "hta",
+   "stras",
+   ".dispose"
+  ],
+  "down": [
+   " common",
+   "common",
+   " Common",
+   "(common",
+   "Common",
+   "_common",
+   " COMMON",
+   "\tcommon",
+   "共同",
+   "-common",
+   "COMMON",
+   ".common"
+  ],
+  "peak_z": 22.27106475830078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

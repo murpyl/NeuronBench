@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2662,
+ "down_norm": 1.006380558013916,
+ "logit_lens": {
+  "up": [
+   "ителей",
+   "habi",
+   "inars",
+   "ers",
+   "ward",
+   "ernet",
+   "дорож",
+   "erb",
+   "------+------+",
+   "idents",
+   " sovere",
+   "者が"
+  ],
+  "down": [
+   " mitt",
+   "령",
+   " acum",
+   "issues",
+   ".requireNonNull",
+   "ighting",
+   ".sf",
+   " compr",
+   "maid",
+   " grown",
+   "ily",
+   "umber"
+  ],
+  "peak_z": 4.4974188804626465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

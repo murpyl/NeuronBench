@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1474,
+ "down_norm": 0.9969916939735413,
+ "logit_lens": {
+  "up": [
+   "基督徒",
+   "cov",
+   " chic",
+   " Converts",
+   " baptized",
+   "隰",
+   "croft",
+   "xbc",
+   "acos",
+   "uft",
+   " chiếu",
+   "旋"
+  ],
+  "down": [
+   " process",
+   " Process",
+   "过程",
+   "Process",
+   "process",
+   "_process",
+   "_Process",
+   "-process",
+   "кладыва",
+   "óng",
+   " processes",
+   " sürecin"
+  ],
+  "peak_z": 5.995166301727295
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2801,
+ "down_norm": 1.1631087064743042,
+ "logit_lens": {
+  "up": [
+   "iced",
+   "icer",
+   "icable",
+   "ices",
+   "icing",
+   "ice",
+   "icers",
+   " ice",
+   "icies",
+   "cis",
+   "ces",
+   "ic"
+  ],
+  "down": [
+   "igne",
+   "ang",
+   "angen",
+   "anging",
+   " Angola",
+   "bit",
+   "ange",
+   "\tbit",
+   "istrates",
+   "anmar",
+   "annya",
+   "ith"
+  ],
+  "peak_z": 7.923690319061279
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 320,
+ "down_norm": 1.0206105709075928,
+ "logit_lens": {
+  "up": [
+   " are",
+   " can",
+   " is",
+   " does",
+   " dominates",
+   "\tcan",
+   " will",
+   "_are",
+   " aren",
+   " используют",
+   " has",
+   "—are"
+  ],
+  "down": [
+   "当时",
+   " vardı",
+   "Had",
+   "бы",
+   "edata",
+   "mes",
+   " Had",
+   "станавли",
+   "LAY",
+   "could",
+   "ertime",
+   "ydı"
+  ],
+  "peak_z": 8.570061683654785
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

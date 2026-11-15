@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 904,
+ "down_norm": 0.7949385046958923,
+ "logit_lens": {
+  "up": [
+   "营业额",
+   "血压",
+   "薪资",
+   "薪水",
+   " salary",
+   "市值",
+   "票价",
+   "营业收入",
+   "视线",
+   "alary",
+   " anatomy",
+   "电量"
+  ],
+  "down": [
+   "akers",
+   "Stamped",
+   "atories",
+   "odash",
+   "ista",
+   "伊斯兰",
+   " super",
+   "بري",
+   "<HTMLInputElement",
+   "WithOptions",
+   "opard",
+   "щит"
+  ],
+  "peak_z": 5.711676597595215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

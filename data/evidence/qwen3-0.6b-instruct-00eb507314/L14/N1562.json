@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1562,
+ "down_norm": 0.5489877462387085,
+ "logit_lens": {
+  "up": [
+   "他们会",
+   "他们在",
+   "她们",
+   "geries",
+   " \\`",
+   "mere",
+   "Ｙ",
+   "yards",
+   "peria",
+   "eing",
+   " Abrams",
+   "ments"
+  ],
+  "down": [
+   "iktig",
+   "社会组织",
+   " minim",
+   "iske",
+   " tro",
+   " init",
+   " or",
+   "init",
+   "arth",
+   "arn",
+   " medi",
+   "eton"
+  ],
+  "peak_z": 4.930473804473877
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

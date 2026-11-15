@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2280,
+ "down_norm": 0.9927339553833008,
+ "logit_lens": {
+  "up": [
+   " then",
+   "then",
+   "Then",
+   " Then",
+   "的话",
+   "\tthen",
+   "则",
+   "，则",
+   " THEN",
+   " than",
+   "則",
+   "的話"
+  ],
+  "down": [
+   "urity",
+   "()?;\n",
+   " ');\r\n",
+   "랫",
+   "addtogroup",
+   "PUR",
+   " nature",
+   " particulars",
+   "##_",
+   "cts",
+   "рус",
+   "!/"
+  ],
+  "peak_z": 24.069442749023438
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

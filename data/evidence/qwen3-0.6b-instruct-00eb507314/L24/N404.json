@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 404,
+ "down_norm": 1.1096251010894775,
+ "logit_lens": {
+  "up": [
+   "aise",
+   "fold",
+   "roc",
+   "OnClick",
+   "蚯",
+   "-fold",
+   "nock",
+   "mon",
+   "Sign",
+   "anonymous",
+   "万人次",
+   "oner"
+  ],
+  "down": [
+   "hait",
+   "enschaft",
+   "htar",
+   "opes",
+   "estead",
+   "isted",
+   "hot",
+   ".bundle",
+   ".tp",
+   "iedade",
+   " hotspot",
+   " Plumbing"
+  ],
+  "peak_z": 5.05987548828125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 342,
+ "down_norm": 0.6095839738845825,
+ "logit_lens": {
+  "up": [
+   "就不会",
+   ";",
+   "itin",
+   "روس",
+   "got",
+   "anyl",
+   "ones",
+   " Cort",
+   "uti",
+   ";i",
+   "one",
+   ";a"
+  ],
+  "down": [
+   "GER",
+   "phins",
+   "Nam",
+   "等奖",
+   " grac",
+   ".isOpen",
+   "阳县",
+   "_pad",
+   "票价",
+   "erna",
+   "瑕",
+   "江县"
+  ],
+  "peak_z": 4.909943103790283
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

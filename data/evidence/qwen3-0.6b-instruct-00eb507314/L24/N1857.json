@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1857,
+ "down_norm": 1.1709709167480469,
+ "logit_lens": {
+  "up": [
+   " state",
+   "state",
+   " states",
+   "状态",
+   "-state",
+   "\tstate",
+   " State",
+   "State",
+   "_state",
+   "(state",
+   ".state",
+   "states"
+  ],
+  "down": [
+   "ulg",
+   "arpa",
+   "чная",
+   " signing",
+   " Dj",
+   "urname",
+   "če",
+   " dj",
+   "ographies",
+   "чу",
+   "DJ",
+   "豺"
+  ],
+  "peak_z": 23.46900177001953
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

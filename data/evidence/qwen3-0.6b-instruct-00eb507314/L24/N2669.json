@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2669,
+ "down_norm": 1.0917726755142212,
+ "logit_lens": {
+  "up": [
+   "@\\",
+   "ças",
+   "-Cs",
+   "(@\"%@\",",
+   "(phase",
+   "侥幸",
+   "Times",
+   "nice",
+   " pygame",
+   "[\".",
+   "дорож",
+   "iles"
+  ],
+  "down": [
+   "策",
+   "шение",
+   "essen",
+   "atisfied",
+   "ồi",
+   "anse",
+   "liable",
+   "厣",
+   "ốn",
+   "ội",
+   " Gerr",
+   "culos"
+  ],
+  "peak_z": 5.782279968261719
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

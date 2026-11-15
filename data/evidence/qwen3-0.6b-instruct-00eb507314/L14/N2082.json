@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2082,
+ "down_norm": 0.8914706110954285,
+ "logit_lens": {
+  "up": [
+   "inux",
+   " geared",
+   "başı",
+   " coats",
+   "illaume",
+   " że",
+   " que",
+   "יפים",
+   "OnUiThread",
+   " Til",
+   "直到",
+   "/xhtml"
+  ],
+  "down": [
+   "某个",
+   "某种",
+   "yped",
+   "hip",
+   "erness",
+   "的带领",
+   "körper",
+   "went",
+   "某",
+   "某一",
+   "ounding",
+   "hood"
+  ],
+  "peak_z": 5.337811470031738
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

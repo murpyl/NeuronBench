@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 342,
+ "down_norm": 1.1048977375030518,
+ "logit_lens": {
+  "up": [
+   "yscale",
+   "lığın",
+   "علامات",
+   "marked",
+   "eworthy",
+   "ики",
+   " :+:",
+   "aller",
+   " Microwave",
+   "维奇",
+   "jący",
+   "gency"
+  ],
+  "down": [
+   "bell",
+   "LEE",
+   "ront",
+   ".Sp",
+   "PERT",
+   " incorpor",
+   ".SP",
+   "涌现",
+   "oreal",
+   "son",
+   "atables",
+   "�"
+  ],
+  "peak_z": 5.217771053314209
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

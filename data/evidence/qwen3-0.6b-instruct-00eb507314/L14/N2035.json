@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2035,
+ "down_norm": 0.5531851649284363,
+ "logit_lens": {
+  "up": [
+   " contexts",
+   "ried",
+   "caught",
+   "contexts",
+   " context",
+   "lobals",
+   " contexto",
+   "licable",
+   "=context",
+   "区内",
+   "(context",
+   "context"
+  ],
+  "down": [
+   "frei",
+   "yll",
+   " miglior",
+   "ﬄ",
+   " verbess",
+   " migli",
+   "Acceler",
+   "lator",
+   "改善",
+   "haus",
+   "uai",
+   "创造性"
+  ],
+  "peak_z": 5.1754889488220215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

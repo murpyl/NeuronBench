@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 117,
+ "down_norm": 0.70867520570755,
+ "logit_lens": {
+  "up": [
+   " bầu",
+   "antz",
+   "isma",
+   " TECHNO",
+   "statt",
+   "stairs",
+   "ypress",
+   "alsex",
+   " ComVisible",
+   "ENV",
+   "dart",
+   "糠"
+  ],
+  "down": [
+   " t",
+   " s",
+   ".ta",
+   "ולם",
+   " tel",
+   "حي",
+   " rib",
+   "/t",
+   "uti",
+   " tri",
+   " PA",
+   " m"
+  ],
+  "peak_z": 6.110230922698975
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

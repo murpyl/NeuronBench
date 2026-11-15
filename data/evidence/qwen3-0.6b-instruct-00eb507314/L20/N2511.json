@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2511,
+ "down_norm": 0.8942200541496277,
+ "logit_lens": {
+  "up": [
+   "蓟",
+   "唢",
+   "-viol",
+   "��",
+   "�력",
+   "大巴",
+   "故居",
+   "籥",
+   "haft",
+   "piler",
+   "-uri",
+   "чество"
+  ],
+  "down": [
+   "콩",
+   "日凌晨",
+   "孕妇",
+   "örper",
+   "bridge",
+   "KG",
+   "ration",
+   "neath",
+   "stüt",
+   ";]/",
+   " Barker",
+   "owitz"
+  ],
+  "peak_z": 4.948178291320801
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2010,
+ "down_norm": 1.1822891235351562,
+ "logit_lens": {
+  "up": [
+   " consistent",
+   " uniform",
+   "一致性",
+   " consistency",
+   " Cons",
+   "Cons",
+   "uniform",
+   "consistent",
+   "Uniform",
+   "一致",
+   " uniformly",
+   " Uniform"
+  ],
+  "down": [
+   "errick",
+   "iker",
+   "achable",
+   " crow",
+   "�",
+   "逆",
+   " yü",
+   "irth",
+   " Junk",
+   " Rahul",
+   "ayah",
+   " rooft"
+  ],
+  "peak_z": 12.419143676757812
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

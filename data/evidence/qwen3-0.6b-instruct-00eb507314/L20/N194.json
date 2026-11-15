@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 194,
+ "down_norm": 0.72086501121521,
+ "logit_lens": {
+  "up": [
+   "irectional",
+   "匀",
+   " divis",
+   " invis",
+   "stantial",
+   "inia",
+   "隐瞒",
+   " unanimous",
+   "elong",
+   "均匀",
+   "交错",
+   "uncate"
+  ],
+  "down": [
+   "imators",
+   "owler",
+   "emed",
+   "_months",
+   "endency",
+   " design",
+   "玠",
+   ".Reader",
+   "rokes",
+   "((_",
+   "ibs",
+   "senal"
+  ],
+  "peak_z": 4.875931739807129
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

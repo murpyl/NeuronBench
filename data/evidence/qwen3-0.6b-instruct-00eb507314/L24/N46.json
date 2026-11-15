@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 46,
+ "down_norm": 0.6268555521965027,
+ "logit_lens": {
+  "up": [
+   "发声",
+   "place",
+   "release",
+   "归",
+   "case",
+   "visualization",
+   "pro",
+   "pron",
+   "access",
+   "puts",
+   "fall",
+   "中国古代"
+  ],
+  "down": [
+   " overhead",
+   " Carry",
+   " vale",
+   " manuscript",
+   "]}</",
+   " Inst",
+   "(nb",
+   " PATCH",
+   " omitted",
+   "esar",
+   " wrote",
+   " carry"
+  ],
+  "peak_z": 4.830445766448975
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

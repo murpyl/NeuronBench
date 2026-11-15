@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 428,
+ "down_norm": 0.8370176553726196,
+ "logit_lens": {
+  "up": [
+   "andle",
+   "ッシュ",
+   "akra",
+   "ements",
+   "olini",
+   "atement",
+   " else",
+   "acula",
+   "omething",
+   "ociety",
+   "else",
+   "otty"
+  ],
+  "down": [
+   "target",
+   " target",
+   "Target",
+   " targeted",
+   "_target",
+   " Target",
+   " TARGET",
+   "TARGET",
+   " desired",
+   ".target",
+   "-target",
+   "arget"
+  ],
+  "peak_z": 7.592252254486084
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

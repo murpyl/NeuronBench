@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3034,
+ "down_norm": 0.9376280307769775,
+ "logit_lens": {
+  "up": [
+   " or",
+   "或",
+   "或者",
+   "or",
+   "或其他",
+   "或者其他",
+   "或是",
+   "_or",
+   "或者是",
+   " или",
+   "あるいは",
+   " 或"
+  ],
+  "down": [
+   "InputModule",
+   "_Module",
+   "DetailView",
+   "resultSet",
+   "(Module",
+   "esModule",
+   "oland",
+   " Giz",
+   "nof",
+   "esa",
+   "useRalativeImagePath",
+   "acemark"
+  ],
+  "peak_z": 11.670390129089355
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

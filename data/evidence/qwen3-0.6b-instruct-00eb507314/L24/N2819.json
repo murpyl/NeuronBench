@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2819,
+ "down_norm": 1.1343977451324463,
+ "logit_lens": {
+  "up": [
+   "头脑",
+   "lich",
+   " vez",
+   "oras",
+   "ucky",
+   "liche",
+   "itative",
+   "times",
+   "lichen",
+   " time",
+   "time",
+   "片"
+  ],
+  "down": [
+   " leopard",
+   "edriver",
+   "haust",
+   "PullParser",
+   "gra",
+   "纶",
+   "edException",
+   " trad",
+   "cobra",
+   "-standard",
+   "PARATOR",
+   " Leopard"
+  ],
+  "peak_z": 5.164173126220703
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

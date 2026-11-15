@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1734,
+ "down_norm": 1.0413978099822998,
+ "logit_lens": {
+  "up": [
+   "ราว",
+   "SEN",
+   "adian",
+   "anter",
+   "ئة",
+   "امة",
+   "irit",
+   " полов",
+   " mat",
+   "路灯",
+   "mat",
+   "avez"
+  ],
+  "down": [
+   "уществ",
+   "嘴",
+   "قصر",
+   "模样",
+   "希腊",
+   "ellig",
+   "eln",
+   "prec",
+   "óry",
+   "嘴巴",
+   "obe",
+   "Expl"
+  ],
+  "peak_z": 4.5868306159973145
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

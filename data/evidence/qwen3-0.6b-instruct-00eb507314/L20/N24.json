@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 24,
+ "down_norm": 0.6880267858505249,
+ "logit_lens": {
+  "up": [
+   " INTEGER",
+   "URRE",
+   "quisite",
+   "_author",
+   "ahkan",
+   " Co",
+   " McMahon",
+   "essions",
+   "/head",
+   " authority",
+   "äch",
+   " autor"
+  ],
+  "down": [
+   "半岛",
+   "onders",
+   "ondere",
+   "++",
+   " rosa",
+   "iddle",
+   "\":\n",
+   "Jos",
+   "مون",
+   "جدد",
+   " aisle",
+   "IVITY"
+  ],
+  "peak_z": 4.395318031311035
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

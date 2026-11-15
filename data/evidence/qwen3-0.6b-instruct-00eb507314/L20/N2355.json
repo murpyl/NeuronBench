@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2355,
+ "down_norm": 0.9100472331047058,
+ "logit_lens": {
+  "up": [
+   " or",
+   "或",
+   "或者",
+   "或是",
+   " или",
+   " 或",
+   "或者是",
+   " eller",
+   "或多",
+   "或其他",
+   "または",
+   " atau"
+  ],
+  "down": [
+   "обходим",
+   "jal",
+   ".blogspot",
+   "々",
+   "ocker",
+   "rams",
+   "%A",
+   "&view",
+   "onsense",
+   "olang",
+   "azon",
+   "なんと"
+  ],
+  "peak_z": 26.41661262512207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

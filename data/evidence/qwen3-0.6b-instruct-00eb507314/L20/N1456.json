@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1456,
+ "down_norm": 0.9367395639419556,
+ "logit_lens": {
+  "up": [
+   "gment",
+   " observational",
+   ".Transfer",
+   " Decomp",
+   "而非",
+   "crypt",
+   "(Attribute",
+   "厢",
+   "防守",
+   "assin",
+   "ersen",
+   "(notification"
+  ],
+  "down": [
+   "þ",
+   "ibia",
+   "utm",
+   "urable",
+   " lực",
+   "able",
+   "ile",
+   "away",
+   "альной",
+   " Led",
+   " Kunst",
+   "嵋"
+  ],
+  "peak_z": 4.506204605102539
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

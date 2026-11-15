@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 705,
+ "down_norm": 0.726472020149231,
+ "logit_lens": {
+  "up": [
+   "ices",
+   "landers",
+   "star",
+   "ena",
+   "(str",
+   "wood",
+   "urement",
+   "[name",
+   "str",
+   "压",
+   "壓",
+   "(gcf"
+  ],
+  "down": [
+   "amax",
+   " autoFocus",
+   "高く",
+   "bish",
+   "nią",
+   " máxima",
+   " himself",
+   "贬值",
+   "idel",
+   "เอง",
+   "itably",
+   " rallies"
+  ],
+  "peak_z": 5.002469539642334
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

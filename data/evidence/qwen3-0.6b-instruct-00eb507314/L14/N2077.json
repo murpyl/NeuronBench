@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2077,
+ "down_norm": 0.6882988214492798,
+ "logit_lens": {
+  "up": [
+   "should",
+   "你应该",
+   " yourselves",
+   " should",
+   "应",
+   "应该",
+   "应当",
+   "都应该",
+   "ควร",
+   "應",
+   ".should",
+   "應該"
+  ],
+  "down": [
+   "ĩnh",
+   " lash",
+   "rawn",
+   "昶",
+   "هى",
+   "omo",
+   "ellular",
+   "ioso",
+   "olio",
+   "iores",
+   "iated",
+   "reek"
+  ],
+  "peak_z": 8.010616302490234
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

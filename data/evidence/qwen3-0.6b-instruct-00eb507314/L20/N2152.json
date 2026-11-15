@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2152,
+ "down_norm": 1.1039576530456543,
+ "logit_lens": {
+  "up": [
+   "adge",
+   "iculo",
+   "igated",
+   "icago",
+   "otropic",
+   "uble",
+   "-proof",
+   "clearfix",
+   ".inject",
+   "ibly",
+   "WithPath",
+   "ikel"
+  ],
+  "down": [
+   " next",
+   "next",
+   "(next",
+   "\tnext",
+   "Next",
+   " Next",
+   " NEXT",
+   "_next",
+   "下一个",
+   "[next",
+   ".next",
+   ",next"
+  ],
+  "peak_z": 17.892715454101562
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 236,
+ "down_norm": 0.8897358775138855,
+ "logit_lens": {
+  "up": [
+   "eu",
+   "abwe",
+   "多く",
+   " dpi",
+   "AndGet",
+   "izedName",
+   " Ranked",
+   "icie",
+   " reorder",
+   "ENTIAL",
+   "odial",
+   "(UI"
+  ],
+  "down": [
+   ".TabStop",
+   "keeper",
+   " rise",
+   "=g",
+   "busters",
+   "升降",
+   "robe",
+   "窦",
+   "teborg",
+   "OrDefault",
+   " rising",
+   "olang"
+  ],
+  "peak_z": 5.13999605178833
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

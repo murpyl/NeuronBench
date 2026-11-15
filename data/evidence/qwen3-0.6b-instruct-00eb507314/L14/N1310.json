@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1310,
+ "down_norm": 0.6320720314979553,
+ "logit_lens": {
+  "up": [
+   "-roll",
+   "つき",
+   "lycer",
+   "outines",
+   "ssl",
+   "ril",
+   "ключа",
+   "utorial",
+   "ơi",
+   "ogr",
+   "付费",
+   " roll"
+  ],
+  "down": [
+   " pard",
+   "当中",
+   "amax",
+   "”\n",
+   "\":\n",
+   "\",$",
+   ".ToDouble",
+   "经验",
+   " fray",
+   " ?>\"><?",
+   "arov",
+   "这两"
+  ],
+  "peak_z": 4.6629414558410645
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

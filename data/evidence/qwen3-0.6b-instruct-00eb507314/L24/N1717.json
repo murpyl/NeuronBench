@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1717,
+ "down_norm": 1.125268578529358,
+ "logit_lens": {
+  "up": [
+   "regs",
+   " regs",
+   "REG",
+   "-sign",
+   "sign",
+   " SIGN",
+   " sign",
+   "Sign",
+   " REG",
+   "registers",
+   ".Sign",
+   " Sign"
+  ],
+  "down": [
+   "_literals",
+   "وب",
+   "_FORCE",
+   "当たり",
+   "mination",
+   "_bh",
+   "ilities",
+   "aint",
+   "ectl",
+   " противо",
+   "ying",
+   "minating"
+  ],
+  "peak_z": 7.347758769989014
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

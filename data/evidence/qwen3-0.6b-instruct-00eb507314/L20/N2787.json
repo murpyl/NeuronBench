@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2787,
+ "down_norm": 1.080189824104309,
+ "logit_lens": {
+  "up": [
+   " only",
+   "only",
+   " Only",
+   "Only",
+   "_only",
+   " ONLY",
+   "只有",
+   "只",
+   "-only",
+   "ONLY",
+   "_ONLY",
+   "仅"
+  ],
+  "down": [
+   "ichert",
+   "ay",
+   "LIN",
+   "owler",
+   "addAll",
+   "eper",
+   "креп",
+   "ayas",
+   "antaged",
+   "副主任",
+   "ackers",
+   "cki"
+  ],
+  "peak_z": 24.744949340820312
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1546,
+ "down_norm": 0.9580701589584351,
+ "logit_lens": {
+  "up": [
+   "碎片",
+   "exercise",
+   "iscing",
+   "拭",
+   "擦拭",
+   " drifting",
+   "abr",
+   " Matches",
+   "BarItem",
+   "การแสดง",
+   "rait",
+   "sten"
+  ],
+  "down": [
+   "控",
+   "wares",
+   ">Date",
+   "压力",
+   "лан",
+   "lice",
+   "(phase",
+   "控制",
+   " phases",
+   "chedules",
+   "enci",
+   "*c"
+  ],
+  "peak_z": 4.511483192443848
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

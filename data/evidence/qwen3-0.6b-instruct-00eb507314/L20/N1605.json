@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1605,
+ "down_norm": 0.9783806204795837,
+ "logit_lens": {
+  "up": [
+   " area",
+   " rate",
+   "率",
+   "Rates",
+   " Rate",
+   " Area",
+   "rogen",
+   " rates",
+   "垛",
+   "rate",
+   "Rate",
+   "Area"
+  ],
+  "down": [
+   "oji",
+   "手腕",
+   "DMIN",
+   "ANGUAGE",
+   "érie",
+   "InRange",
+   "打入",
+   "successfully",
+   "atrix",
+   "传播",
+   "飐",
+   "management"
+  ],
+  "peak_z": 5.408456802368164
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

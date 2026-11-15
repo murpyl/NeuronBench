@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1418,
+ "down_norm": 1.0385624170303345,
+ "logit_lens": {
+  "up": [
+   "setName",
+   "rollo",
+   "=',",
+   " \"'.",
+   " (\"%",
+   " ');\r\n",
+   "fare",
+   "','%",
+   "_',",
+   ";',",
+   "*',",
+   "ToDate"
+  ],
+  "down": [
+   "ér",
+   "男方",
+   "ani",
+   "pecia",
+   "egg",
+   ".nih",
+   "Fl",
+   "ilk",
+   "(disposing",
+   "咳",
+   "�",
+   "女方"
+  ],
+  "peak_z": 5.027959823608398
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

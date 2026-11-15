@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2853,
+ "down_norm": 0.9480979442596436,
+ "logit_lens": {
+  "up": [
+   "而非",
+   "了一些",
+   "而不是",
+   "说着",
+   "有些人",
+   "一些",
+   "了些",
+   "some",
+   "才行",
+   "了一下",
+   "开着",
+   "些"
+  ],
+  "down": [
+   " any",
+   "任何",
+   " anything",
+   "any",
+   " anyone",
+   " ANY",
+   " Any",
+   "任何人",
+   "任何一个",
+   " anybody",
+   "anything",
+   " anywhere"
+  ],
+  "peak_z": 20.674701690673828
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

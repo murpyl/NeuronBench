@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 135,
+ "down_norm": 0.7182227373123169,
+ "logit_lens": {
+  "up": [
+   " everything",
+   "asca",
+   "ervals",
+   "everything",
+   "iday",
+   "iders",
+   "将成为",
+   "oward",
+   "unei",
+   "ighton",
+   "他对",
+   "oltage"
+  ],
+  "down": [
+   "[__",
+   "egal",
+   "遂",
+   "[array",
+   "activex",
+   "lz",
+   "[class",
+   " [],\r\n",
+   "[string",
+   "ビュー",
+   "/,\n",
+   " BufferedWriter"
+  ],
+  "peak_z": 5.392277717590332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

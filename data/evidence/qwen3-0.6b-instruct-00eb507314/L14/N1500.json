@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1500,
+ "down_norm": 0.7710568308830261,
+ "logit_lens": {
+  "up": [
+   "人心",
+   "achines",
+   " الاجتماع",
+   "ษา",
+   "Frameworks",
+   "ulture",
+   "xBA",
+   "restore",
+   "xdd",
+   "报告显示",
+   "sav",
+   "olders"
+  ],
+  "down": [
+   "或",
+   " or",
+   "或是",
+   "或者",
+   "或者是",
+   " hoặc",
+   "或其他",
+   " 或",
+   " или",
+   "或者其他",
+   "或多",
+   "または"
+  ],
+  "peak_z": 9.968003273010254
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

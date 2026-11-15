@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 733,
+ "down_norm": 0.7375731468200684,
+ "logit_lens": {
+  "up": [
+   "Misc",
+   " enough",
+   " komb",
+   " Geb",
+   "[rand",
+   " than",
+   "UPPORT",
+   "之夜",
+   "隍",
+   ".setLayoutManager",
+   " negative",
+   "SEMB"
+  ],
+  "down": [
+   "atório",
+   "ique",
+   "iske",
+   "oles",
+   "/cat",
+   "catch",
+   "Prices",
+   "ató",
+   "csr",
+   "inters",
+   "URLRequest",
+   " Claw"
+  ],
+  "peak_z": 4.967029094696045
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

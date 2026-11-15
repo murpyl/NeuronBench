@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2320,
+ "down_norm": 0.8831131458282471,
+ "logit_lens": {
+  "up": [
+   "Against",
+   " juxtap",
+   "edException",
+   "edList",
+   "\")+",
+   "ench",
+   "ivement",
+   " against",
+   "加上",
+   "afen",
+   " contre",
+   "against"
+  ],
+  "down": [
+   "OURNAL",
+   "丁",
+   " '>",
+   " Dim",
+   "ao",
+   "inite",
+   " am",
+   "oncé",
+   "Cam",
+   "minent",
+   " ONLINE",
+   "牧"
+  ],
+  "peak_z": 5.143588542938232
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

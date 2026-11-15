@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 44,
+ "down_norm": 0.6046265363693237,
+ "logit_lens": {
+  "up": [
+   "ibilit",
+   "imet",
+   "isce",
+   "irie",
+   "梅花",
+   "而导致",
+   " force",
+   "ериал",
+   "ivol",
+   "mask",
+   "|m",
+   "WindowTitle"
+  ],
+  "down": [
+   "ancies",
+   "ObjectContext",
+   "antry",
+   "antro",
+   "tics",
+   "xaa",
+   "anga",
+   "梃",
+   "ента",
+   "ADS",
+   "otine",
+   "жа"
+  ],
+  "peak_z": 5.437391757965088
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1299,
+ "down_norm": 0.6673269271850586,
+ "logit_lens": {
+  "up": [
+   " and",
+   "和",
+   " &",
+   "และ",
+   " и",
+   "and",
+   " và",
+   "And",
+   " And",
+   "&",
+   "且",
+   " 和"
+  ],
+  "down": [
+   "orca",
+   "泮",
+   "antar",
+   "instead",
+   " Hemisphere",
+   " Alternatively",
+   "'||",
+   "#elif",
+   "maal",
+   "ties",
+   "=\\\"#",
+   "rians"
+  ],
+  "peak_z": 9.676124572753906
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

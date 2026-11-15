@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2367,
+ "down_norm": 1.0393060445785522,
+ "logit_lens": {
+  "up": [
+   "ogue",
+   "<center",
+   "tdown",
+   "瘾",
+   "耻",
+   "scheduled",
+   "\"</",
+   "asio",
+   "ampa",
+   "prediction",
+   "Prediction",
+   "Printing"
+  ],
+  "down": [
+   "劳动",
+   "付出",
+   " effort",
+   "辛勤",
+   "努力",
+   "劳动者",
+   " efforts",
+   "辛苦",
+   " contributions",
+   "的努力",
+   " hard",
+   "勞"
+  ],
+  "peak_z": 7.375295162200928
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

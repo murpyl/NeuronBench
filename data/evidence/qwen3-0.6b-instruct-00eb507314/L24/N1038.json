@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1038,
+ "down_norm": 1.0025697946548462,
+ "logit_lens": {
+  "up": [
+   "ulpt",
+   "ipated",
+   "irtual",
+   "bbing",
+   "orrent",
+   ".Bunifu",
+   "ché",
+   "juana",
+   "ugeot",
+   "longleftrightarrow",
+   "aisal",
+   "OptionsResolver"
+  ],
+  "down": [
+   " Com",
+   "COM",
+   "com",
+   "(com",
+   "=com",
+   "Com",
+   "\tcom",
+   " com",
+   " COM",
+   " comp",
+   "(comm",
+   " comm"
+  ],
+  "peak_z": 13.829228401184082
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 91,
+ "down_norm": 0.8012694120407104,
+ "logit_lens": {
+  "up": [
+   "kor",
+   "uren",
+   " Kor",
+   "E",
+   " E",
+   " Lee",
+   " nä",
+   " ",
+   "モン",
+   "тер",
+   "_e",
+   "(loss"
+  ],
+  "down": [
+   "&s",
+   " sod",
+   "sth",
+   "odoxy",
+   "automation",
+   "iad",
+   " Spielberg",
+   "strate",
+   "iants",
+   " qs",
+   "快速增长",
+   "estation"
+  ],
+  "peak_z": 4.784326076507568
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

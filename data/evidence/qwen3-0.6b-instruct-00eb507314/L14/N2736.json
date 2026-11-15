@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2736,
+ "down_norm": 0.9232597947120667,
+ "logit_lens": {
+  "up": [
+   "看不到",
+   "说不出",
+   " OTHERWISE",
+   "不见",
+   "却没有",
+   " `{",
+   "前所未",
+   " {}\n\n\n",
+   "没见过",
+   " unheard",
+   "anean",
+   "<long"
+  ],
+  "down": [
+   " dy",
+   "返回",
+   "function",
+   " function",
+   " Yes",
+   "��",
+   " system",
+   " input",
+   " hung",
+   " practice",
+   "系统",
+   " functions"
+  ],
+  "peak_z": 5.101362705230713
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

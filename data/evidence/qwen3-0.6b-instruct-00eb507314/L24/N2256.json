@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2256,
+ "down_norm": 1.2078733444213867,
+ "logit_lens": {
+  "up": [
+   "contin",
+   " Contin",
+   " contin",
+   " continuous",
+   "连续",
+   ".cont",
+   "continuous",
+   "Contin",
+   " continu",
+   " continue",
+   " CONT",
+   "继续"
+  ],
+  "down": [
+   "alesce",
+   "MethodName",
+   "cial",
+   "lage",
+   " nowhere",
+   "\">*</",
+   "armac",
+   ".EXTRA",
+   "伐",
+   " whiteColor",
+   "摆在",
+   "lok"
+  ],
+  "peak_z": 15.782024383544922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

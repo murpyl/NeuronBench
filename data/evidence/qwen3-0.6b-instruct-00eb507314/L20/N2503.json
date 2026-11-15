@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2503,
+ "down_norm": 1.0382171869277954,
+ "logit_lens": {
+  "up": [
+   " hypothesis",
+   " hypotheses",
+   " null",
+   " hypo",
+   "null",
+   " Hyp",
+   "-tests",
+   " tests",
+   "tests",
+   " significance",
+   " Tests",
+   "Tests"
+  ],
+  "down": [
+   " foul",
+   " incent",
+   "errick",
+   " Poison",
+   " Scout",
+   "赏",
+   "团长",
+   "uilder",
+   "煽",
+   " verse",
+   "中毒",
+   "olt"
+  ],
+  "peak_z": 6.380230903625488
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

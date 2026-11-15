@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 687,
+ "down_norm": 0.6308155059814453,
+ "logit_lens": {
+  "up": [
+   "requirements",
+   "的要求",
+   " requirements",
+   " ministry",
+   "的理想",
+   " ministries",
+   "Requirements",
+   ".requires",
+   " efficiencies",
+   " requirement",
+   " Requirement",
+   " requiring"
+  ],
+  "down": [
+   "ifice",
+   "uffix",
+   "beh",
+   "ffset",
+   " �",
+   "عوا",
+   "inux",
+   " setDate",
+   " turno",
+   "曙",
+   "itting",
+   ".sax"
+  ],
+  "peak_z": 6.276766777038574
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

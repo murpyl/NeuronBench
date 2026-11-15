@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2194,
+ "down_norm": 1.1484636068344116,
+ "logit_lens": {
+  "up": [
+   " GC",
+   "gc",
+   "GC",
+   "gar",
+   "(gc",
+   " gc",
+   " collection",
+   "Gar",
+   "收集",
+   "回收",
+   " garbage",
+   "ARC"
+  ],
+  "down": [
+   "esor",
+   "燔",
+   "每股",
+   "油",
+   "Rib",
+   " oil",
+   "كه",
+   " RedirectTo",
+   " Butter",
+   "stärke",
+   " Rib",
+   "Bearer"
+  ],
+  "peak_z": 7.429537773132324
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

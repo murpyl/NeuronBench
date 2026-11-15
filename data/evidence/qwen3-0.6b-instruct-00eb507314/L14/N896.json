@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 896,
+ "down_norm": 0.6438971757888794,
+ "logit_lens": {
+  "up": [
+   "包括",
+   "主要包括",
+   " including",
+   "：\n",
+   ":\n",
+   ":o",
+   " Including",
+   " include",
+   " notamment",
+   "以下几个",
+   "including",
+   " includes"
+  ],
+  "down": [
+   "liers",
+   "apsible",
+   "ernes",
+   "ships",
+   "endants",
+   "rox",
+   "anya",
+   " lỗi",
+   "фи",
+   "iphy",
+   "igma",
+   "GetData"
+  ],
+  "peak_z": 8.21153450012207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

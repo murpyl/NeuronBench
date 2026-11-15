@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2786,
+ "down_norm": 1.106427550315857,
+ "logit_lens": {
+  "up": [
+   " networks",
+   " network",
+   " Networks",
+   "ưỡ",
+   " Gaw",
+   "atican",
+   "_network",
+   "ネット",
+   "網絡",
+   " Network",
+   "网络",
+   "철"
+  ],
+  "down": [
+   "getSource",
+   " source",
+   ".getSource",
+   "getWindow",
+   "syn",
+   " getSource",
+   "源",
+   " acknowledges",
+   "_src",
+   "source",
+   "src",
+   "-source"
+  ],
+  "peak_z": 5.583219051361084
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

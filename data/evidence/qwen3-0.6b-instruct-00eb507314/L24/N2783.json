@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2783,
+ "down_norm": 1.1776361465454102,
+ "logit_lens": {
+  "up": [
+   " employ",
+   " employed",
+   " Employ",
+   " employment",
+   "employ",
+   " employs",
+   " job",
+   "employed",
+   "employment",
+   "emploi",
+   "Employ",
+   " employing"
+  ],
+  "down": [
+   "buster",
+   "++\n",
+   "OTA",
+   "usc",
+   " kak",
+   "benh",
+   "ulin",
+   "egra",
+   "ática",
+   "blick",
+   "bk",
+   "fas"
+  ],
+  "peak_z": 10.488506317138672
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

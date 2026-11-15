@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2532,
+ "down_norm": 0.7288187146186829,
+ "logit_lens": {
+  "up": [
+   "ivamente",
+   "这些东西",
+   "主要包括",
+   " unrelated",
+   " `_",
+   "ǁ",
+   "=#{",
+   "idl",
+   "({_",
+   "结合",
+   "ivia",
+   "[\"@"
+  ],
+  "down": [
+   "/current",
+   " version",
+   "version",
+   "版本",
+   "caler",
+   "Versions",
+   " Versions",
+   " setCurrent",
+   "Latest",
+   "Version",
+   "xima",
+   "Ascending"
+  ],
+  "peak_z": 5.41550874710083
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

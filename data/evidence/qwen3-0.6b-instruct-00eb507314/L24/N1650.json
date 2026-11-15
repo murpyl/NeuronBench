@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1650,
+ "down_norm": 1.085017204284668,
+ "logit_lens": {
+  "up": [
+   " content",
+   " s",
+   "Content",
+   " Content",
+   "CONTENT",
+   "content",
+   "_content",
+   "erral",
+   " CONTENT",
+   "_CONTENT",
+   "arts",
+   "el"
+  ],
+  "down": [
+   "hic",
+   "voie",
+   ".updateDynamic",
+   " prefect",
+   "TeV",
+   " bí",
+   "死者",
+   "figures",
+   "anoia",
+   "罴",
+   "psc",
+   " Figures"
+  ],
+  "peak_z": 5.742120265960693
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

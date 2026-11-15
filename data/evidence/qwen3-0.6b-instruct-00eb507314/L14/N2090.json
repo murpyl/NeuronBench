@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2090,
+ "down_norm": 0.8158513307571411,
+ "logit_lens": {
+  "up": [
+   "aker",
+   "umer",
+   "Greater",
+   "ものは",
+   "ount",
+   "onas",
+   "Enh",
+   "��",
+   "noop",
+   "SqlParameter",
+   "ippers",
+   " avalanche"
+  ],
+  "down": [
+   " назначен",
+   "zeitig",
+   "جين",
+   ";!",
+   "下来",
+   "icated",
+   "ubic",
+   "热度",
+   " gio",
+   "学到",
+   "ogens",
+   ",get"
+  ],
+  "peak_z": 4.9122748374938965
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

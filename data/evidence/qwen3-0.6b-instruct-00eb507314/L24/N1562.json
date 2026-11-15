@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1562,
+ "down_norm": 1.131237268447876,
+ "logit_lens": {
+  "up": [
+   " getSource",
+   " sources",
+   "redi",
+   " source",
+   "aph",
+   " CVS",
+   "igne",
+   "-source",
+   "不克",
+   " rever",
+   "idding",
+   " epic"
+  ],
+  "down": [
+   "交",
+   "oton",
+   "梭",
+   "的语言",
+   "uten",
+   "髫",
+   " UNITED",
+   "union",
+   ".union",
+   "lices",
+   "uet",
+   "营商"
+  ],
+  "peak_z": 5.002038955688477
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 178,
+ "down_norm": 1.0088969469070435,
+ "logit_lens": {
+  "up": [
+   " prophecy",
+   "ERV",
+   "Ctrl",
+   " nghề",
+   "elsen",
+   "预言",
+   " statusCode",
+   "GER",
+   "皲",
+   ".ResponseWriter",
+   " predictors",
+   "-controller"
+  ],
+  "down": [
+   "aten",
+   "ating",
+   "nd",
+   "abra",
+   "run",
+   "ate",
+   "ens",
+   "atis",
+   "edar",
+   "nit",
+   "rical",
+   "ati"
+  ],
+  "peak_z": 5.199228763580322
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 892,
+ "down_norm": 0.5709616541862488,
+ "logit_lens": {
+  "up": [
+   "andbox",
+   "jection",
+   "pective",
+   "outh",
+   "协会会员",
+   "ckett",
+   "铫",
+   "esthetic",
+   "胁",
+   "ocalyptic",
+   "fleet",
+   "isdiction"
+  ],
+  "down": [
+   "nas",
+   "ников",
+   "长",
+   " primitives",
+   " viên",
+   " length",
+   "送出",
+   "eson",
+   "-framework",
+   "¶",
+   "istry",
+   " sil"
+  ],
+  "peak_z": 5.277402400970459
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

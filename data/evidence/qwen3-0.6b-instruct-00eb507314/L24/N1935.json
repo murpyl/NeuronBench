@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1935,
+ "down_norm": 1.126330018043518,
+ "logit_lens": {
+  "up": [
+   "将",
+   "將",
+   "也将",
+   "将其",
+   "都将",
+   "还将",
+   "我们将",
+   "将自己的",
+   " will",
+   "公司将",
+   "将是",
+   "将以"
+  ],
+  "down": [
+   " apart",
+   "ious",
+   "isted",
+   "heads",
+   " processors",
+   "own",
+   "sey",
+   " ':",
+   "gements",
+   "�性",
+   "worm",
+   "ulous"
+  ],
+  "peak_z": 21.807043075561523
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

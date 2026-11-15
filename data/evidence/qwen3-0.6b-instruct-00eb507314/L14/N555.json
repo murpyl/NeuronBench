@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 555,
+ "down_norm": 0.611199676990509,
+ "logit_lens": {
+  "up": [
+   "allis",
+   "uran",
+   "рай",
+   "urs",
+   " volta",
+   "irts",
+   "esters",
+   "rens",
+   "eterminate",
+   " Ethan",
+   "urate",
+   "urat"
+  ],
+  "down": [
+   "BOARD",
+   " said",
+   " Falling",
+   "Cls",
+   ".pth",
+   " Branch",
+   "bö",
+   " #:",
+   " climb",
+   "_CODE",
+   "ynos",
+   " flight"
+  ],
+  "peak_z": 4.978627681732178
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

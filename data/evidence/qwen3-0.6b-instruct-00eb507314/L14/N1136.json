@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1136,
+ "down_norm": 0.5975058078765869,
+ "logit_lens": {
+  "up": [
+   " url",
+   "url",
+   "picture",
+   "package",
+   "?family",
+   "前景",
+   "\turl",
+   "시장",
+   "中国传统",
+   "发展前景",
+   "\"url",
+   "local"
+  ],
+  "down": [
+   "例外",
+   "rophy",
+   " rubbing",
+   "MHz",
+   "imers",
+   "iram",
+   " Geneva",
+   "roke",
+   " aver",
+   "bose",
+   "stice",
+   "oppers"
+  ],
+  "peak_z": 5.294120788574219
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

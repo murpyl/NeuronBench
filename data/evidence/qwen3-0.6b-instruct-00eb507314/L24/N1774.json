@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1774,
+ "down_norm": 1.1146249771118164,
+ "logit_lens": {
+  "up": [
+   "zym",
+   "sez",
+   "pii",
+   "spath",
+   " JNIEnv",
+   "ivas",
+   "红线",
+   "laş",
+   "rift",
+   "[System",
+   "<article",
+   "ycz"
+  ],
+  "down": [
+   " index",
+   "estival",
+   "index",
+   "รม",
+   "(index",
+   "=index",
+   "\tindex",
+   "pq",
+   "Post",
+   "Index",
+   " resource",
+   "Indexes"
+  ],
+  "peak_z": 5.393976211547852
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2085,
+ "down_norm": 1.1136242151260376,
+ "logit_lens": {
+  "up": [
+   " when",
+   "when",
+   "时",
+   " When",
+   "When",
+   "当",
+   "\twhen",
+   "的时候",
+   " WHEN",
+   " cuando",
+   " khi",
+   " quando"
+  ],
+  "down": [
+   "Sense",
+   "atory",
+   "晕",
+   "ronym",
+   "ENDIF",
+   "ivec",
+   "erner",
+   "inaire",
+   "sembles",
+   "本轮",
+   "个多",
+   "一体"
+  ],
+  "peak_z": 20.86742401123047
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

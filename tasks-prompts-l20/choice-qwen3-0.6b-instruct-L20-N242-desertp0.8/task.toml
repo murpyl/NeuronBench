@@ -1,0 +1,35 @@
+schema_version = "1.4"
+artifacts = ["/app/answer.txt"]
+
+[task]
+name = "neuronbench/choice-qwen3-0.6b-instruct-L20-N242-desertp0.8"
+version = "1.0.0"
+description = "NeuronBench choice item: qwen3-0.6b-instruct-00eb507314 layer 20 neuron 242"
+keywords = ["interpretability", "neurons", "neuronbench", "choice"]
+
+[metadata]
+kind = "choice"
+model_id = "qwen3-0.6b-instruct-00eb507314"
+layer = 20
+neuron = 242
+
+[verifier]
+timeout_sec = 60.0
+environment_mode = "separate"
+collect = []
+
+[verifier.env]
+
+[agent]
+timeout_sec = 600.0
+
+[environment]
+network_mode = "allowlist"
+allowed_hosts = ["api.anthropic.com", "api.openai.com"]
+build_timeout_sec = 600.0
+os = "linux"
+mcp_servers = []
+
+[environment.env]
+
+[solution.env]

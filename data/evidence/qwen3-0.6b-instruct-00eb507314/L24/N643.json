@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 643,
+ "down_norm": 0.9870759844779968,
+ "logit_lens": {
+  "up": [
+   " following",
+   "following",
+   "ENCED",
+   "AG",
+   "prung",
+   " handed",
+   "哪一个",
+   " off",
+   "APPED",
+   "Ack",
+   "itted",
+   "pez"
+  ],
+  "down": [
+   "则是",
+   " =\",",
+   " =",
+   "','=',",
+   "={<",
+   " =$",
+   "=\"\n",
+   "']='",
+   " =\n",
+   " ==\n",
+   " !=\n",
+   "']="
+  ],
+  "peak_z": 6.727331161499023
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

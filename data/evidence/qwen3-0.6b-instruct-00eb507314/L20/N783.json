@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 783,
+ "down_norm": 0.7819923162460327,
+ "logit_lens": {
+  "up": [
+   "achen",
+   " najwięks",
+   "iers",
+   "agic",
+   "город",
+   " tamb",
+   "lama",
+   "最快",
+   " khủng",
+   " meilleure",
+   "mue",
+   " maximal"
+  ],
+  "down": [
+   "typings",
+   "idend",
+   "풋",
+   "haled",
+   "фт",
+   "ision",
+   " goal",
+   "stitution",
+   " BaseService",
+   "cé",
+   "黑",
+   ".Pattern"
+  ],
+  "peak_z": 4.890830993652344
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

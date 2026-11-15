@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1298,
+ "down_norm": 0.7288933396339417,
+ "logit_lens": {
+  "up": [
+   "ifference",
+   "strt",
+   " reversal",
+   "difference",
+   "锆",
+   " takeaway",
+   "orre",
+   "�",
+   "oyal",
+   "Difference",
+   "aspberry",
+   "etty"
+  ],
+  "down": [
+   "eren",
+   " qualifications",
+   "�建",
+   " features",
+   " specialized",
+   "/features",
+   "ieurs",
+   "工具",
+   "かも",
+   " structured",
+   "描述",
+   " ad"
+  ],
+  "peak_z": 4.936108589172363
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

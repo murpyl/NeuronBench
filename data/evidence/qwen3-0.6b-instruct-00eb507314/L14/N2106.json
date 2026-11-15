@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2106,
+ "down_norm": 0.9465223550796509,
+ "logit_lens": {
+  "up": [
+   " ...\"\n\n",
+   "気づ",
+   "موضوع",
+   "jud",
+   " ours",
+   "!\"\n",
+   "jun",
+   "eware",
+   " yours",
+   "ubi",
+   "strap",
+   "但他"
+  ],
+  "down": [
+   "和",
+   "และ",
+   " Landscape",
+   "或者是",
+   "或",
+   " behaviour",
+   " Behaviour",
+   "andscape",
+   "或是",
+   "ıp",
+   " thoải",
+   " behaviours"
+  ],
+  "peak_z": 4.828055381774902
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

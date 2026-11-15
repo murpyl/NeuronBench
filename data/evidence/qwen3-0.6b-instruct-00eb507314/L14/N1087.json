@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1087,
+ "down_norm": 0.6806967258453369,
+ "logit_lens": {
+  "up": [
+   "atsby",
+   "三是",
+   "帼",
+   "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+   "饫",
+   " pressure",
+   "elah",
+   "四是",
+   "ropa",
+   "择",
+   "\n\n\n\n\n\n\n\n",
+   "嗟"
+  ],
+  "down": [
+   "ино",
+   "Inlining",
+   ".cent",
+   "xaa",
+   "cba",
+   "ework",
+   "abin",
+   "inclusive",
+   "xAA",
+   "zie",
+   "mons",
+   "xn"
+  ],
+  "peak_z": 5.149672985076904
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2673,
+ "down_norm": 0.9819642901420593,
+ "logit_lens": {
+  "up": [
+   "atonin",
+   "imentos",
+   "leys",
+   " NOTHING",
+   " draws",
+   "horia",
+   " chops",
+   "cies",
+   "ties",
+   "ises",
+   "ignty",
+   "ickets"
+  ],
+  "down": [
+   " fragmented",
+   " sensitive",
+   " contaminated",
+   " vulnerable",
+   " incompatible",
+   " non",
+   " problematic",
+   " compliant",
+   " responsive",
+   "optimized",
+   " impactful",
+   " unstable"
+  ],
+  "peak_z": 5.858908653259277
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2179,
+ "down_norm": 1.1578043699264526,
+ "logit_lens": {
+  "up": [
+   "pun",
+   "ificant",
+   "那么简单",
+   "rawer",
+   "友们",
+   "imators",
+   "ulti",
+   "eways",
+   "imple",
+   "umno",
+   "udent",
+   "ember"
+  ],
+  "down": [
+   "CB",
+   " CS",
+   "CE",
+   "AD",
+   " CB",
+   "AE",
+   " AD",
+   "CS",
+   " AE",
+   "AB",
+   "TS",
+   "RS"
+  ],
+  "peak_z": 6.006510257720947
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1721,
+ "down_norm": 0.9106507301330566,
+ "logit_lens": {
+  "up": [
+   "管制",
+   "ập",
+   "icted",
+   "ampled",
+   "��",
+   "トップ",
+   "untas",
+   "重塑",
+   "soever",
+   "rama",
+   "mart",
+   "\tflex"
+  ],
+  "down": [
+   " detect",
+   " detection",
+   " recognise",
+   " detections",
+   " detecting",
+   "recogn",
+   " detects",
+   "atos",
+   "OGLE",
+   " recognizing",
+   "avier",
+   " Detection"
+  ],
+  "peak_z": 5.247831344604492
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

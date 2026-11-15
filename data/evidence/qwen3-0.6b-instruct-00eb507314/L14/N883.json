@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 883,
+ "down_norm": 0.6316143274307251,
+ "logit_lens": {
+  "up": [
+   " �",
+   "它",
+   " internationally",
+   "\r\r\n",
+   " Geld",
+   " �",
+   " Saturday",
+   "明显",
+   " Glob",
+   "NAMESPACE",
+   "谋",
+   "ễn"
+  ],
+  "down": [
+   "CORD",
+   "ozo",
+   "qus",
+   "zier",
+   "riad",
+   "/animate",
+   "acles",
+   "ť",
+   "hower",
+   "ыва",
+   "rias",
+   "髎"
+  ],
+  "peak_z": 5.189899921417236
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

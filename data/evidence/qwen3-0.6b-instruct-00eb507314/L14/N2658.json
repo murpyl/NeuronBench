@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2658,
+ "down_norm": 0.7979657053947449,
+ "logit_lens": {
+  "up": [
+   "eden",
+   "وان",
+   "عداد",
+   "aden",
+   "ledge",
+   "-den",
+   "eya",
+   "yled",
+   ".JpaRepository",
+   " ende",
+   "adb",
+   "ред"
+  ],
+  "down": [
+   " when",
+   "when",
+   "\twhen",
+   " WHEN",
+   "When",
+   " quando",
+   " during",
+   " When",
+   " cuando",
+   "during",
+   "当他",
+   " after"
+  ],
+  "peak_z": 9.98476791381836
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

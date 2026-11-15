@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2107,
+ "down_norm": 1.1555553674697876,
+ "logit_lens": {
+  "up": [
+   "cate",
+   "keletal",
+   "ERN",
+   "itate",
+   "干事",
+   "咪",
+   "рист",
+   " Zum",
+   "esium",
+   "��",
+   " Garn",
+   "работ"
+  ],
+  "down": [
+   " flow",
+   " flows",
+   "flow",
+   " Flow",
+   "_flow",
+   "Flow",
+   "流",
+   "流动",
+   "flows",
+   ".flow",
+   "-flow",
+   "(flow"
+  ],
+  "peak_z": 15.51611614227295
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2812,
+ "down_norm": 0.9059264659881592,
+ "logit_lens": {
+  "up": [
+   "和",
+   " and",
+   "and",
+   " và",
+   "和个人",
+   " 和",
+   "และ",
+   " и",
+   "和发展",
+   "和技术",
+   "-and",
+   "_and"
+  ],
+  "down": [
+   "pires",
+   "phans",
+   " إلا",
+   "/or",
+   "ató",
+   " alike",
+   "前者",
+   "ataires",
+   "atorio",
+   "IGIN",
+   "veled",
+   "虒"
+  ],
+  "peak_z": 19.236705780029297
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

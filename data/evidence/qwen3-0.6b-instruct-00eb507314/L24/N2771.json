@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2771,
+ "down_norm": 1.1691370010375977,
+ "logit_lens": {
+  "up": [
+   " that",
+   "that",
+   "\tthat",
+   " That",
+   "That",
+   "_that",
+   " THAT",
+   " bahwa",
+   " rằng",
+   "-that",
+   "(that",
+   "、"
+  ],
+  "down": [
+   "__).",
+   "TOCOL",
+   "ость",
+   "里的",
+   "če",
+   "__.'/",
+   "matter",
+   "ppers",
+   "viar",
+   "patible",
+   " poi",
+   "عبة"
+  ],
+  "peak_z": 21.709373474121094
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

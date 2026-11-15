@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2807,
+ "down_norm": 1.1307719945907593,
+ "logit_lens": {
+  "up": [
+   "任何",
+   " any",
+   "any",
+   "任何人",
+   " Any",
+   " ANY",
+   "Any",
+   "(any",
+   " anything",
+   "任何一个",
+   "任何形式",
+   " anyone"
+  ],
+  "down": [
+   "而非",
+   " rather",
+   "すでに",
+   "instead",
+   "一个是",
+   "adesh",
+   "rimon",
+   "'},",
+   "而不是",
+   " },",
+   "yla",
+   "lep"
+  ],
+  "peak_z": 23.361873626708984
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

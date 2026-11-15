@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 420,
+ "down_norm": 0.8617561459541321,
+ "logit_lens": {
+  "up": [
+   "relude",
+   "尤为重要",
+   " gratuiti",
+   " EventType",
+   "acula",
+   "瘼",
+   "的重点",
+   "Insets",
+   "EIF",
+   " convenience",
+   "多い",
+   "ptoms"
+  ],
+  "down": [
+   " relying",
+   "ñe",
+   "mate",
+   "oning",
+   "staking",
+   "igner",
+   "��",
+   "quate",
+   "Mate",
+   "ст",
+   "raph",
+   " couldn"
+  ],
+  "peak_z": 4.759922981262207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

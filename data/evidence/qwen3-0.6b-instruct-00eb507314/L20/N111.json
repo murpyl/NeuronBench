@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 111,
+ "down_norm": 0.9112511277198792,
+ "logit_lens": {
+  "up": [
+   "i",
+   "ا",
+   "ly",
+   "ed",
+   "こと",
+   "n",
+   "率",
+   "н",
+   "western",
+   "儿",
+   "LY",
+   "렇"
+  ],
+  "down": [
+   "ity",
+   "ة",
+   "а",
+   "ricao",
+   "thern",
+   "ACY",
+   "ing",
+   "itecture",
+   "ING",
+   "이",
+   "imals",
+   "itude"
+  ],
+  "peak_z": 8.421792030334473
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2047,
+ "down_norm": 0.9393656253814697,
+ "logit_lens": {
+  "up": [
+   "根",
+   " root",
+   "root",
+   " Root",
+   "=root",
+   "Root",
+   "-root",
+   " path",
+   "\troot",
+   "_root",
+   "(root",
+   "/root"
+  ],
+  "down": [
+   "得住",
+   "�",
+   " biển",
+   " nóng",
+   " heat",
+   "getSource",
+   " immobil",
+   "IENCE",
+   "SenderId",
+   " reel",
+   "BufferData",
+   " riots"
+  ],
+  "peak_z": 8.385457038879395
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

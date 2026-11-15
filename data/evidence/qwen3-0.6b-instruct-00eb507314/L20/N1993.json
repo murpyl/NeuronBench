@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1993,
+ "down_norm": 1.1066906452178955,
+ "logit_lens": {
+  "up": [
+   " revolves",
+   " rotates",
+   " enhances",
+   " boosts",
+   " improves",
+   " ease",
+   " rotations",
+   " boils",
+   " resolves",
+   " reflects",
+   " weighs",
+   " separates"
+  ],
+  "down": [
+   "才",
+   "才能",
+   "才有",
+   "才会",
+   "才可以",
+   "才能够",
+   "才算",
+   "才是",
+   "才行",
+   "才知道",
+   "我才",
+   "才干"
+  ],
+  "peak_z": 21.288793563842773
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

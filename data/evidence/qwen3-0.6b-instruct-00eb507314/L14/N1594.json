@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1594,
+ "down_norm": 1.038405418395996,
+ "logit_lens": {
+  "up": [
+   " Cassidy",
+   "<li",
+   "CDATA",
+   "挽",
+   " Synd",
+   ">You",
+   "olg",
+   "igrated",
+   " Attr",
+   ">New",
+   "蚶",
+   "ariate"
+  ],
+  "down": [
+   "睡",
+   "报记者",
+   "相机",
+   "كة",
+   "أخ",
+   "ье",
+   "rate",
+   "gres",
+   "-establish",
+   "exact",
+   "eval",
+   "edores"
+  ],
+  "peak_z": 4.909371852874756
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

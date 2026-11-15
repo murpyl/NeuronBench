@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1882,
+ "down_norm": 0.7043980956077576,
+ "logit_lens": {
+  "up": [
+   " and",
+   "和技术",
+   " và",
+   "และ",
+   "和",
+   " والأ",
+   "和服务",
+   "AndPassword",
+   "_and",
+   "和社会",
+   " и",
+   " وال"
+  ],
+  "down": [
+   "[T",
+   "al",
+   "[K",
+   "))]",
+   "complete",
+   "[H",
+   "[G",
+   "[N",
+   "[L",
+   "[R",
+   "ability",
+   "[M"
+  ],
+  "peak_z": 5.867051601409912
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

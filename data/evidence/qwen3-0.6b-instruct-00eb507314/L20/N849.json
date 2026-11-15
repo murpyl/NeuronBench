@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 849,
+ "down_norm": 0.8381175398826599,
+ "logit_lens": {
+  "up": [
+   " suddenly",
+   " urgently",
+   " recently",
+   "正在",
+   "突然",
+   "有一",
+   "urg",
+   " unexpectedly",
+   "有一个",
+   "忽然",
+   " recent",
+   " lately"
+  ],
+  "down": [
+   "也不可能",
+   "bih",
+   "niest",
+   "鬟",
+   "除外",
+   "zig",
+   "すべ",
+   " Either",
+   "-Za",
+   "岁以下",
+   "CLOCKS",
+   "不限"
+  ],
+  "peak_z": 5.987171173095703
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

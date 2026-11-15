@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 242,
+ "down_norm": 0.6935586333274841,
+ "logit_lens": {
+  "up": [
+   "属于",
+   "kest",
+   " Skywalker",
+   "dbuf",
+   "villa",
+   " whose",
+   "为代表",
+   " which",
+   "ирующ",
+   "posites",
+   "ものが",
+   "umba"
+  ],
+  "down": [
+   " there",
+   "there",
+   " we",
+   " they",
+   "they",
+   "There",
+   "我们知道",
+   " There",
+   " THERE",
+   " theres",
+   "我们",
+   "有人"
+  ],
+  "peak_z": 9.124499320983887
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

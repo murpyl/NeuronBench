@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 993,
+ "down_norm": 0.8739325404167175,
+ "logit_lens": {
+  "up": [
+   " let",
+   "den",
+   " den",
+   "(let",
+   "设",
+   "let",
+   " denote",
+   "Let",
+   " Let",
+   "\tlet",
+   "-den",
+   ".den"
+  ],
+  "down": [
+   "atural",
+   "ance",
+   "oming",
+   "պ",
+   ".getB",
+   " soon",
+   " verge",
+   " competitors",
+   "虞",
+   "发展趋势",
+   "اء",
+   "ers"
+  ],
+  "peak_z": 8.310707092285156
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

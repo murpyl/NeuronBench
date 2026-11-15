@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2375,
+ "down_norm": 1.0544763803482056,
+ "logit_lens": {
+  "up": [
+   " sharing",
+   "sharing",
+   "-sharing",
+   " share",
+   " Sharing",
+   " shares",
+   " shared",
+   "分享",
+   "Share",
+   "共享",
+   "_share",
+   " SHARE"
+  ],
+  "down": [
+   "owns",
+   "DI",
+   "raw",
+   "rito",
+   "enes",
+   "ностей",
+   "ami",
+   " Displays",
+   "bsolute",
+   "exion",
+   "Loc",
+   " display"
+  ],
+  "peak_z": 6.329272270202637
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

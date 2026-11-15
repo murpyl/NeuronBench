@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1936,
+ "down_norm": 0.9469105005264282,
+ "logit_lens": {
+  "up": [
+   " citizen",
+   "member",
+   " citizens",
+   "公民",
+   " member",
+   "成员",
+   " participants",
+   "_member",
+   " members",
+   "学生",
+   "消费者",
+   " student"
+  ],
+  "down": [
+   "ours",
+   "tep",
+   "TabControl",
+   "控制系统",
+   " diffic",
+   "ISCO",
+   " fences",
+   "學校",
+   "学校的",
+   " coaches",
+   "itions",
+   " hottest"
+  ],
+  "peak_z": 7.321755409240723
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

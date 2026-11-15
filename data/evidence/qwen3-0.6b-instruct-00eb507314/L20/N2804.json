@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2804,
+ "down_norm": 0.9158366322517395,
+ "logit_lens": {
+  "up": [
+   "掌柜",
+   "皇上",
+   " suche",
+   "上市公司",
+   " naked",
+   "纯电动",
+   ":auto",
+   "Executable",
+   ",type",
+   " yıllarda",
+   " pitched",
+   " hükümet"
+  ],
+  "down": [
+   "ology",
+   " psychology",
+   " economics",
+   "etics",
+   " physics",
+   "心理学",
+   "法学",
+   " biology",
+   " mechanics",
+   " chemistry",
+   "经济学",
+   " Psychology"
+  ],
+  "peak_z": 8.063682556152344
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

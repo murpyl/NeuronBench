@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1762,
+ "down_norm": 1.1903786659240723,
+ "logit_lens": {
+  "up": [
+   "elige",
+   "opensource",
+   "专线",
+   "肩膀",
+   " shoulders",
+   "�",
+   "专职",
+   "/cop",
+   "실",
+   "副秘书长",
+   "соб",
+   "owns"
+  ],
+  "down": [
+   " order",
+   "order",
+   " Order",
+   "Order",
+   "-order",
+   "_order",
+   " orders",
+   "(order",
+   "\torder",
+   ".order",
+   "$order",
+   " ORDER"
+  ],
+  "peak_z": 19.812984466552734
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

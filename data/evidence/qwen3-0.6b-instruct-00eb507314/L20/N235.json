@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 235,
+ "down_norm": 0.6849427223205566,
+ "logit_lens": {
+  "up": [
+   "structural",
+   "葭",
+   "xaa",
+   "=sub",
+   "ilda",
+   " ammonia",
+   "�",
+   "xEB",
+   "Descriptors",
+   "[item",
+   " Barrel",
+   "DIST"
+  ],
+  "down": [
+   "”",
+   "<|endoftext|>",
+   "liğinde",
+   ".findOne",
+   " حين",
+   "ToProps",
+   " /",
+   "`",
+   "\r",
+   "`\n\n",
+   "leştir",
+   "新中国"
+  ],
+  "peak_z": 4.566394329071045
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

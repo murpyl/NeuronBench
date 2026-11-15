@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1231,
+ "down_norm": 1.0332279205322266,
+ "logit_lens": {
+  "up": [
+   "abo",
+   "aben",
+   "abay",
+   "acers",
+   "atri",
+   "(\"!",
+   " canonical",
+   "_DECL",
+   "干嘛",
+   "！」",
+   "asin",
+   "��"
+  ],
+  "down": [
+   " or",
+   "或",
+   "或多",
+   "或者",
+   "または",
+   " hoặc",
+   "或将",
+   " или",
+   " 或",
+   " oder",
+   " atau",
+   "或其他"
+  ],
+  "peak_z": 8.456612586975098
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

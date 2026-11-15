@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1754,
+ "down_norm": 1.0633193254470825,
+ "logit_lens": {
+  "up": [
+   "诗",
+   " poem",
+   "詩",
+   " verses",
+   " verse",
+   " poetry",
+   " literature",
+   " poems",
+   "散文",
+   "诗词",
+   " PEN",
+   "诗人"
+  ],
+  "down": [
+   "产业集聚",
+   "iente",
+   "тив",
+   "olleyError",
+   "tic",
+   " quo",
+   "ionales",
+   "uplicated",
+   "ewise",
+   "aison",
+   ".ErrorCode",
+   "wives"
+  ],
+  "peak_z": 7.232955455780029
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

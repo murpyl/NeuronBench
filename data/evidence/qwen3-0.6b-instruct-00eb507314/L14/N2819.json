@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2819,
+ "down_norm": 0.9826453328132629,
+ "logit_lens": {
+  "up": [
+   "这里",
+   "switch",
+   "毕竟",
+   "!!",
+   "这里是",
+   "——",
+   "—",
+   "切り",
+   "例",
+   "—the",
+   "这里的",
+   " –"
+  ],
+  "down": [
+   ".addField",
+   "iffs",
+   "INUE",
+   "():\n\n",
+   "StateException",
+   "(),\n\n",
+   " getField",
+   " PropTypes",
+   "ạm",
+   "ActionTypes",
+   "anceled",
+   "',\n\n"
+  ],
+  "peak_z": 5.001141548156738
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

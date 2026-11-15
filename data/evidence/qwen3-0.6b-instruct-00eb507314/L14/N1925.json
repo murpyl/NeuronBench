@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1925,
+ "down_norm": 0.5696185231208801,
+ "logit_lens": {
+  "up": [
+   "(off",
+   "指导下",
+   "起诉",
+   "之情",
+   " вра",
+   "ailable",
+   "二手",
+   "指导",
+   ":e",
+   "迄",
+   "并通过",
+   " Penal"
+  ],
+  "down": [
+   "{$",
+   "acon",
+   "unction",
+   "曈",
+   "ęd",
+   "++\n\n",
+   "يز",
+   "adores",
+   "ৎ",
+   " Islamabad",
+   "enton",
+   "os"
+  ],
+  "peak_z": 5.058280944824219
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

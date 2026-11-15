@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1729,
+ "down_norm": 1.1204919815063477,
+ "logit_lens": {
+  "up": [
+   ">(*",
+   "roph",
+   "rod",
+   "ests",
+   "三条",
+   "ialias",
+   "icol",
+   "ierge",
+   "roke",
+   ".ins",
+   "ション",
+   "figure"
+  ],
+  "down": [
+   "技术",
+   " technology",
+   " Technology",
+   "技術",
+   "Technology",
+   "技术和",
+   "technology",
+   " tech",
+   "的技术",
+   " technologies",
+   " technological",
+   "技术研发"
+  ],
+  "peak_z": 19.50627899169922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

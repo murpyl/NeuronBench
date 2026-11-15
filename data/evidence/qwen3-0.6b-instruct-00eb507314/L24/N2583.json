@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2583,
+ "down_norm": 1.136351466178894,
+ "logit_lens": {
+  "up": [
+   "held",
+   "ocol",
+   "gon",
+   " collo",
+   "อำนวยความสะดวก",
+   "odb",
+   "安全保障",
+   " getField",
+   " Confidential",
+   "安全",
+   ".addField",
+   " Safe"
+  ],
+  "down": [
+   "ificados",
+   " burn",
+   " burnt",
+   "-center",
+   "-life",
+   "-Life",
+   " jä",
+   " centre",
+   " burner",
+   " burned",
+   " bott",
+   "whel"
+  ],
+  "peak_z": 5.145798683166504
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

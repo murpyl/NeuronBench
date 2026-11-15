@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 255,
+ "down_norm": 0.6976343393325806,
+ "logit_lens": {
+  "up": [
+   " investigated",
+   " conspicuous",
+   " purs",
+   "有待",
+   ".GetResponse",
+   "DUCTION",
+   "?):",
+   "本期",
+   " qualitative",
+   " inve",
+   " Yue",
+   " (?"
+  ],
+  "down": [
+   " mpg",
+   "omo",
+   "akra",
+   "robat",
+   "icky",
+   "ides",
+   "kids",
+   " kids",
+   "文档",
+   "驾照",
+   " locals",
+   "inos"
+  ],
+  "peak_z": 4.973224639892578
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

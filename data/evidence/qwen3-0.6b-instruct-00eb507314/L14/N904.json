@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 904,
+ "down_norm": 0.5779460668563843,
+ "logit_lens": {
+  "up": [
+   "ermann",
+   "鹤",
+   "ぶり",
+   "uly",
+   "鹰",
+   "ulet",
+   " verte",
+   "erta",
+   "rab",
+   "ayas",
+   "-keys",
+   "iability"
+  ],
+  "down": [
+   "上诉",
+   "edio",
+   " come",
+   "馗",
+   " Suffolk",
+   "SSION",
+   " доб",
+   "殿",
+   ".design",
+   "玩家来说",
+   ".getTarget",
+   "edic"
+  ],
+  "peak_z": 5.030317783355713
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

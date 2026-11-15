@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2779,
+ "down_norm": 1.2409608364105225,
+ "logit_lens": {
+  "up": [
+   "俐",
+   "жал",
+   "督查",
+   "isters",
+   "icle",
+   " moc",
+   " jenter",
+   "ault",
+   " Rex",
+   ".shtml",
+   " clerk",
+   "督察"
+  ],
+  "down": [
+   "广",
+   " broad",
+   " wider",
+   " wide",
+   "廣",
+   " broader",
+   " widest",
+   "wide",
+   "广泛",
+   "宽",
+   "Wide",
+   " Wide"
+  ],
+  "peak_z": 15.081501960754395
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

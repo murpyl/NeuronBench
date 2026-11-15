@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 178,
+ "down_norm": 0.5338044762611389,
+ "logit_lens": {
+  "up": [
+   " shadow",
+   "拶",
+   "ihu",
+   " 의",
+   " respected",
+   "иона",
+   "ResponseType",
+   "以為",
+   "InputModule",
+   " day",
+   " scène",
+   "DialogTitle"
+  ],
+  "down": [
+   "给予",
+   "子",
+   "']+",
+   "态",
+   "struk",
+   "数据显示",
+   "增加值",
+   "；",
+   "然",
+   "李",
+   "格",
+   "$L"
+  ],
+  "peak_z": 4.483429431915283
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

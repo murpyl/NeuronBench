@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 511,
+ "down_norm": 0.9086295366287231,
+ "logit_lens": {
+  "up": [
+   " having",
+   "having",
+   " giving",
+   " providing",
+   " exhibiting",
+   " allowing",
+   " complying",
+   " behaving",
+   " showing",
+   " possessing",
+   " carrying",
+   " treating"
+  ],
+  "down": [
+   "rid",
+   "真空",
+   "기를",
+   "空",
+   "鹃",
+   "vac",
+   "ボー",
+   " pushed",
+   " vacuum",
+   "茬",
+   "push",
+   "其所"
+  ],
+  "peak_z": 8.117500305175781
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

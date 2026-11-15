@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 472,
+ "down_norm": 0.6184324026107788,
+ "logit_lens": {
+  "up": [
+   "给他们",
+   "来电",
+   "تهم",
+   " Pvt",
+   "ertools",
+   "方",
+   "買い",
+   "&eacute",
+   "umber",
+   "تي",
+   "他又",
+   " boxed"
+  ],
+  "down": [
+   " only",
+   "globals",
+   "第一天",
+   "asmine",
+   "ogr",
+   "anism",
+   "grav",
+   "rador",
+   "廑",
+   "culator",
+   "igrations",
+   " nur"
+  ],
+  "peak_z": 4.5626726150512695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

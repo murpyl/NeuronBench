@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 529,
+ "down_norm": 1.0784039497375488,
+ "logit_lens": {
+  "up": [
+   "cing",
+   "ocities",
+   " while",
+   "otron",
+   "ot",
+   "iph",
+   "being",
+   "OTP",
+   "os",
+   "位",
+   "olio",
+   "retch"
+  ],
+  "down": [
+   "ーズ",
+   "ática",
+   "ards",
+   "ático",
+   " concentrating",
+   "affer",
+   "ุด",
+   "_gettime",
+   "的目光",
+   "тек",
+   "уча",
+   "伟大复兴"
+  ],
+  "peak_z": 5.714588642120361
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

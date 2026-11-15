@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1906,
+ "down_norm": 1.0214627981185913,
+ "logit_lens": {
+  "up": [
+   "coholic",
+   "ighth",
+   "共创",
+   "avi",
+   " readline",
+   "供图",
+   "IŞ",
+   " roadside",
+   ".amazon",
+   "ToJson",
+   "ış",
+   "obsolete"
+  ],
+  "down": [
+   " Company",
+   "Point",
+   " Point",
+   " point",
+   "点",
+   "portunity",
+   "Company",
+   "point",
+   " Party",
+   "점",
+   " Region",
+   " Group"
+  ],
+  "peak_z": 6.777735710144043
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

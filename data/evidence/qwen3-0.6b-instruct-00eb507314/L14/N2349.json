@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2349,
+ "down_norm": 0.7621082067489624,
+ "logit_lens": {
+  "up": [
+   ",",
+   "p",
+   ".",
+   "句",
+   "\n",
+   "-",
+   "temp",
+   ":",
+   " meta",
+   "reta",
+   "S",
+   "。"
+  ],
+  "down": [
+   "过的",
+   "ighting",
+   "iting",
+   "ined",
+   "__\r\n",
+   "resar",
+   "ableView",
+   "ämpfe",
+   "*</",
+   "isting",
+   " yaşayan",
+   "bour"
+  ],
+  "peak_z": 5.523033142089844
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

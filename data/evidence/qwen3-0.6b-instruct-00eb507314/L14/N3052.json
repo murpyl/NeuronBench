@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3052,
+ "down_norm": 0.794269323348999,
+ "logit_lens": {
+  "up": [
+   " name",
+   " terminology",
+   "称呼",
+   "名称",
+   " refers",
+   " phrase",
+   " refer",
+   "叫做",
+   " names",
+   "name",
+   "指的是",
+   " notation"
+  ],
+  "down": [
+   "个交易",
+   "ueling",
+   "orney",
+   "inerary",
+   "occan",
+   "*out",
+   "这样才能",
+   "awaii",
+   "eways",
+   " Yourself",
+   "ulaire",
+   "indre"
+  ],
+  "peak_z": 6.5615997314453125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

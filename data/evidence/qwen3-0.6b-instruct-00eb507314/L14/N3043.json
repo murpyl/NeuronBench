@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3043,
+ "down_norm": 0.7913071513175964,
+ "logit_lens": {
+  "up": [
+   "awaii",
+   "ił",
+   "ladı",
+   " abuse",
+   "orners",
+   "illet",
+   "paged",
+   "erts",
+   " nip",
+   "еле",
+   "池",
+   "溺"
+  ],
+  "down": [
+   "ItemAt",
+   "UILT",
+   "\",\"\");\n",
+   "保鲜",
+   "＆",
+   ":\",\n",
+   "%\");\n",
+   "urances",
+   "=\");\n",
+   "ixa",
+   "…”",
+   "standing"
+  ],
+  "peak_z": 5.149672508239746
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

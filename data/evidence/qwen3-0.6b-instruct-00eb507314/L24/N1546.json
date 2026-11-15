@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1546,
+ "down_norm": 1.0448006391525269,
+ "logit_lens": {
+  "up": [
+   "oppers",
+   "stype",
+   "ÜR",
+   " chồng",
+   "oba",
+   "rost",
+   " Premiere",
+   "aal",
+   "igration",
+   "orro",
+   "tb",
+   "_frequency"
+  ],
+  "down": [
+   " participation",
+   "参与",
+   " involvement",
+   " inclusion",
+   "积极参与",
+   " participate",
+   " Emp",
+   " engaged",
+   "参与到",
+   " Participation",
+   " emp",
+   "emp"
+  ],
+  "peak_z": 6.544604778289795
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1635,
+ "down_norm": 1.0857588052749634,
+ "logit_lens": {
+  "up": [
+   "oz",
+   "ved",
+   "callable",
+   "辟",
+   "flight",
+   " Braz",
+   "新西",
+   "obre",
+   "招股书",
+   "oen",
+   "칙",
+   "quam"
+  ],
+  "down": [
+   " check",
+   " Check",
+   "(check",
+   "Check",
+   " checks",
+   "check",
+   "-check",
+   "检查",
+   " checking",
+   " checked",
+   ".check",
+   " Checks"
+  ],
+  "peak_z": 13.328204154968262
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

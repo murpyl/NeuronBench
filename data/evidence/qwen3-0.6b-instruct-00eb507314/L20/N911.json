@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 911,
+ "down_norm": 0.9249311089515686,
+ "logit_lens": {
+  "up": [
+   "еть",
+   "habi",
+   ".onOptionsItemSelected",
+   "icable",
+   "سبق",
+   "anticipated",
+   "面前",
+   "slick",
+   "ientos",
+   "essed",
+   "ussed",
+   "سب"
+  ],
+  "down": [
+   "рит",
+   "AWN",
+   "打入",
+   "Updated",
+   "Insert",
+   "@update",
+   "ért",
+   "昼夜",
+   " addTo",
+   "插入",
+   "彘",
+   "antt"
+  ],
+  "peak_z": 5.380766868591309
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2112,
+ "down_norm": 1.1708849668502808,
+ "logit_lens": {
+  "up": [
+   "icularly",
+   "oco",
+   "_density",
+   "密度",
+   "icular",
+   "ики",
+   "atus",
+   "้ำ",
+   "arus",
+   " net",
+   "quals",
+   "achel"
+  ],
+  "down": [
+   "building",
+   " building",
+   "Building",
+   " Building",
+   "basic",
+   " basic",
+   "-building",
+   "BUILD",
+   "基本",
+   " fundamental",
+   " Builder",
+   "的基本"
+  ],
+  "peak_z": 7.578189849853516
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

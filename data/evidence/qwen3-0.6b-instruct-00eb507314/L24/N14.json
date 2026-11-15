@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 14,
+ "down_norm": 0.734712541103363,
+ "logit_lens": {
+  "up": [
+   "遂",
+   "小姐姐",
+   "解",
+   " partial",
+   "请大家",
+   "uja",
+   "�",
+   "ほしい",
+   ".clientWidth",
+   "甚至是",
+   " altogether",
+   "浬"
+  ],
+  "down": [
+   "iter",
+   "sit",
+   "ady",
+   "gl",
+   " Ange",
+   "慑",
+   "ald",
+   "ergy",
+   " Merlin",
+   "ude",
+   "cord",
+   "appy"
+  ],
+  "peak_z": 4.945836544036865
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

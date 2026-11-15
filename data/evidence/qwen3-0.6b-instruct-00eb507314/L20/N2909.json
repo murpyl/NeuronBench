@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2909,
+ "down_norm": 1.130821704864502,
+ "logit_lens": {
+  "up": [
+   " always",
+   "always",
+   " siempre",
+   " Always",
+   " всегда",
+   " ALWAYS",
+   " sempre",
+   "总是",
+   "Always",
+   " toujours",
+   " altijd",
+   " never"
+  ],
+  "down": [
+   ".Hosting",
+   "etrics",
+   "多位",
+   " época",
+   "AndPassword",
+   "بول",
+   ".Deserialize",
+   "entifier",
+   " Georgian",
+   " التونسي",
+   "eta",
+   "Brains"
+  ],
+  "peak_z": 20.43381690979004
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

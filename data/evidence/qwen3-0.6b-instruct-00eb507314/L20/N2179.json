@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2179,
+ "down_norm": 0.9498859643936157,
+ "logit_lens": {
+  "up": [
+   " visitors",
+   "游",
+   "vis",
+   " traveling",
+   "前往",
+   "遊",
+   " vehicles",
+   " visits",
+   "incoming",
+   " visiting",
+   " arriving",
+   "客"
+  ],
+  "down": [
+   "rens",
+   "ño",
+   "地板",
+   "LookAndFeel",
+   "aked",
+   "族自治县",
+   "wner",
+   " pública",
+   "公报",
+   "pond",
+   "ielding",
+   " reopened"
+  ],
+  "peak_z": 5.166823863983154
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

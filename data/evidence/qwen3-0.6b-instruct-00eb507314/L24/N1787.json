@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1787,
+ "down_norm": 0.9911110401153564,
+ "logit_lens": {
+  "up": [
+   "下了",
+   "下手",
+   "下称",
+   " $($",
+   "reta",
+   "(es",
+   "фр",
+   " boarded",
+   "-outs",
+   " prevailed",
+   "lover",
+   "下的"
+  ],
+  "down": [
+   "因为",
+   "因此",
+   "因",
+   " because",
+   "因为它",
+   "因为你",
+   "因为他",
+   "因为在",
+   "因為",
+   "因为她",
+   "because",
+   "因为我"
+  ],
+  "peak_z": 12.721063613891602
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

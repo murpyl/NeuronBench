@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1279,
+ "down_norm": 0.577443540096283,
+ "logit_lens": {
+  "up": [
+   "swith",
+   "isti",
+   "dzi",
+   "产业化",
+   "产学",
+   ".addTab",
+   "зо",
+   "ilians",
+   "IData",
+   "/downloads",
+   "жи",
+   "nelle"
+  ],
+  "down": [
+   " of",
+   "_of",
+   "of",
+   "Of",
+   " OF",
+   " Of",
+   "\tof",
+   " của",
+   "amen",
+   "ของ",
+   "CA",
+   ".of"
+  ],
+  "peak_z": 8.252067565917969
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

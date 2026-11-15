@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3058,
+ "down_norm": 0.9255343079566956,
+ "logit_lens": {
+  "up": [
+   "又能",
+   "/providers",
+   "ikipedia",
+   "ithub",
+   "又被",
+   " snaps",
+   "又",
+   "穿",
+   "tro",
+   "第三次",
+   "umatic",
+   "ordin"
+  ],
+  "down": [
+   " analog",
+   "-print",
+   "制度改革",
+   "-await",
+   "\tPrint",
+   "-mult",
+   "asString",
+   "shaw",
+   "Ỹ",
+   "crement",
+   "_Y",
+   "研究中心"
+  ],
+  "peak_z": 4.953933238983154
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

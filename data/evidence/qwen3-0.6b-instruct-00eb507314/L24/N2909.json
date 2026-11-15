@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2909,
+ "down_norm": 1.016663670539856,
+ "logit_lens": {
+  "up": [
+   "asis",
+   ".getOwnProperty",
+   "柔",
+   "⎦",
+   "-turn",
+   "忿",
+   "默认",
+   "orney",
+   "holds",
+   "兜",
+   "wick",
+   "坏"
+  ],
+  "down": [
+   "iale",
+   "xBA",
+   "арам",
+   ".Entry",
+   "经验和",
+   " entry",
+   ">',\n",
+   "orang",
+   "堑",
+   "xab",
+   " entries",
+   "rape"
+  ],
+  "peak_z": 5.092358589172363
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

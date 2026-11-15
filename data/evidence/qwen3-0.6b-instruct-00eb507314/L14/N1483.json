@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1483,
+ "down_norm": 0.8088082671165466,
+ "logit_lens": {
+  "up": [
+   " instead",
+   "instead",
+   " Instead",
+   "而不是",
+   "Instead",
+   "rather",
+   " rather",
+   "而非",
+   " Rather",
+   "Rather",
+   " вмест",
+   "不再是"
+  ],
+  "down": [
+   " alike",
+   " similarly",
+   "もり",
+   " isso",
+   "озд",
+   "โท",
+   " questão",
+   " verfüg",
+   "思",
+   " نفسه",
+   "urge",
+   "壮"
+  ],
+  "peak_z": 9.695232391357422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

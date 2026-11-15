@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1780,
+ "down_norm": 1.0235234498977661,
+ "logit_lens": {
+  "up": [
+   " lawy",
+   " dividing",
+   "藜",
+   "yle",
+   "ая",
+   " arresting",
+   "uyền",
+   "ole",
+   " DEAL",
+   "熟",
+   "对她",
+   " playing"
+  ],
+  "down": [
+   "ipse",
+   " Vor",
+   "cessive",
+   "itive",
+   "=username",
+   " hog",
+   "itions",
+   "itor",
+   "IU",
+   "uchi",
+   " kaldır",
+   "EQUAL"
+  ],
+  "peak_z": 5.204306125640869
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

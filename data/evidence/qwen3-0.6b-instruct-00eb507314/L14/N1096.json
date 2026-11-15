@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1096,
+ "down_norm": 0.7467514276504517,
+ "logit_lens": {
+  "up": [
+   "licity",
+   " represented",
+   "동",
+   " leveraging",
+   " evidenced",
+   " VIA",
+   "Profiles",
+   "rometer",
+   "ası",
+   " Vern",
+   "음을",
+   "ETHER"
+  ],
+  "down": [
+   " saja",
+   "formik",
+   " Orth",
+   " sortOrder",
+   "放",
+   ".nodeName",
+   " orth",
+   "形式",
+   " alone",
+   "oreferrer",
+   "орм",
+   " forme"
+  ],
+  "peak_z": 5.122804641723633
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

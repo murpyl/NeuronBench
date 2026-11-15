@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 784,
+ "down_norm": 1.0302504301071167,
+ "logit_lens": {
+  "up": [
+   "缨",
+   "acja",
+   "rieved",
+   "avit",
+   " Clips",
+   ";width",
+   "chrom",
+   " rigged",
+   "OGLE",
+   "漫长的",
+   "北约",
+   " localVar"
+  ],
+  "down": [
+   " under",
+   " Under",
+   "Under",
+   "under",
+   " UNDER",
+   "_under",
+   "-under",
+   "UNDER",
+   "_UNDER",
+   " unter",
+   " bajo",
+   " sous"
+  ],
+  "peak_z": 23.6361083984375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

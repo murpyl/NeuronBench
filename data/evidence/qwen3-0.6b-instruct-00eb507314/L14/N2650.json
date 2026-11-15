@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2650,
+ "down_norm": 0.8281691074371338,
+ "logit_lens": {
+  "up": [
+   "称为",
+   " called",
+   "叫",
+   "叫做",
+   "被称为",
+   "称之为",
+   " termed",
+   "called",
+   "稱",
+   "称",
+   " наз",
+   " Called"
+  ],
+  "down": [
+   "imonial",
+   "upported",
+   "StateToProps",
+   "rove",
+   " bourbon",
+   "avour",
+   " Amid",
+   "sembled",
+   "amel",
+   " setPassword",
+   "EEDED",
+   " FormBuilder"
+  ],
+  "peak_z": 9.624265670776367
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

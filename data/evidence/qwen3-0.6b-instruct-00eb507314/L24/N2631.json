@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2631,
+ "down_norm": 1.1186805963516235,
+ "logit_lens": {
+  "up": [
+   " so",
+   "so",
+   " So",
+   "So",
+   "(so",
+   "\tSo",
+   "所以",
+   "如此",
+   "-so",
+   "所以在",
+   "_so",
+   ".so"
+  ],
+  "down": [
+   "cheid",
+   "utes",
+   "UBL",
+   "멸",
+   "完了",
+   " científ",
+   "方式进行",
+   "uable",
+   " Accessed",
+   ".ua",
+   "тин",
+   "方式"
+  ],
+  "peak_z": 22.439546585083008
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

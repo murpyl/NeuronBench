@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1153,
+ "down_norm": 0.8129713535308838,
+ "logit_lens": {
+  "up": [
+   "ossa",
+   "oard",
+   "osphate",
+   " foss",
+   "mun",
+   "entlich",
+   "illiseconds",
+   "roma",
+   "iid",
+   "_regs",
+   "ogg",
+   "��"
+  ],
+  "down": [
+   " Math",
+   "<|endoftext|>",
+   "@end",
+   "\"/>.</",
+   "=Math",
+   "Math",
+   "까요",
+   "ath",
+   "Certainly",
+   " math",
+   " señal",
+   "不去"
+  ],
+  "peak_z": 5.246582984924316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

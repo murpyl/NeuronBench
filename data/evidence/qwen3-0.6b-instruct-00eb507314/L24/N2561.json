@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2561,
+ "down_norm": 1.0964117050170898,
+ "logit_lens": {
+  "up": [
+   " bitte",
+   "\tRTHOOK",
+   " hoá",
+   "entin",
+   ".firebaseapp",
+   "tsky",
+   " dwarf",
+   "دين",
+   "itaire",
+   " thập",
+   "trial",
+   "íst"
+  ],
+  "down": [
+   " Cancel",
+   " cancel",
+   "\tcancel",
+   "ancel",
+   "ayne",
+   "取消",
+   " cancelling",
+   "Cancelled",
+   "_CANCEL",
+   "-cancel",
+   "cancel",
+   "Cancellation"
+  ],
+  "peak_z": 6.114742755889893
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

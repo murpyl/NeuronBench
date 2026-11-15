@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2599,
+ "down_norm": 1.1173434257507324,
+ "logit_lens": {
+  "up": [
+   " Shr",
+   " pr",
+   " Pr",
+   " Sh",
+   "pras",
+   " Shank",
+   " Pra",
+   "Man",
+   "shr",
+   " Vine",
+   "Pr",
+   " SHR"
+  ],
+  "down": [
+   "oco",
+   "xf",
+   " Lazar",
+   "odel",
+   "oulos",
+   "spec",
+   "odelist",
+   "tero",
+   "льц",
+   "LineColor",
+   "ffield",
+   "lando"
+  ],
+  "peak_z": 5.877429485321045
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

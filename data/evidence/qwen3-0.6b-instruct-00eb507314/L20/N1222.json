@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1222,
+ "down_norm": 0.9007837176322937,
+ "logit_lens": {
+  "up": [
+   "版权所有",
+   "аются",
+   "angep",
+   "haft",
+   "atform",
+   "chez",
+   "setVisibility",
+   "plate",
+   "数学",
+   "基准",
+   "适用",
+   " ECS"
+  ],
+  "down": [
+   "ارة",
+   "onica",
+   " ages",
+   " Ages",
+   "oseconds",
+   "rio",
+   " الزمن",
+   " ostream",
+   "itar",
+   ">To",
+   "obel",
+   "不忍"
+  ],
+  "peak_z": 5.184276580810547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

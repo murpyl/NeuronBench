@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 145,
+ "down_norm": 0.6945808529853821,
+ "logit_lens": {
+  "up": [
+   ".Card",
+   "CARD",
+   "Cards",
+   ".card",
+   "card",
+   "_cards",
+   " Cards",
+   " trag",
+   "thé",
+   " cards",
+   "anten",
+   "Card"
+  ],
+  "down": [
+   "至於",
+   "坩",
+   "жи",
+   "我爱你",
+   " BorderRadius",
+   "�除",
+   "仅代表",
+   "互",
+   "_free",
+   "cratch",
+   " ControllerBase",
+   "apter"
+  ],
+  "peak_z": 4.813271522521973
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

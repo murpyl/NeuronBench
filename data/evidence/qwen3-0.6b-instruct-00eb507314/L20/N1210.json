@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1210,
+ "down_norm": 0.8585919737815857,
+ "logit_lens": {
+  "up": [
+   "ughters",
+   "ervative",
+   "ages",
+   "old",
+   " trưởng",
+   " Everywhere",
+   "maker",
+   "estroy",
+   "otes",
+   "闻",
+   "nte",
+   "内科"
+  ],
+  "down": [
+   "щин",
+   " invo",
+   "python",
+   " VLAN",
+   "_vlan",
+   "定位",
+   "IPPING",
+   "：%",
+   " `%",
+   "Cour",
+   "PLEMENT",
+   "omnia"
+  ],
+  "peak_z": 5.341212749481201
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

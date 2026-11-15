@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2623,
+ "down_norm": 0.9321473240852356,
+ "logit_lens": {
+  "up": [
+   "reeze",
+   "队员们",
+   "案",
+   "цен",
+   " ():",
+   " experienced",
+   " readers",
+   " fiance",
+   " �",
+   "홀",
+   "ضاء",
+   " życ"
+  ],
+  "down": [
+   "icrosoft",
+   ".ny",
+   " Microsoft",
+   "Microsoft",
+   "微软",
+   ".opens",
+   "aea",
+   "ford",
+   "itur",
+   "vvm",
+   " FBI",
+   "Adobe"
+  ],
+  "peak_z": 6.771914005279541
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

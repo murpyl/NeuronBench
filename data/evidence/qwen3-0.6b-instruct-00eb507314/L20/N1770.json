@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1770,
+ "down_norm": 0.9771537184715271,
+ "logit_lens": {
+  "up": [
+   "-hole",
+   "*/,",
+   "eral",
+   "ировка",
+   "挛",
+   "*/,\n",
+   "*out",
+   "orial",
+   "topl",
+   "*/)\n",
+   "andre",
+   "&_"
+  ],
+  "down": [
+   " bit",
+   "ieties",
+   "不能再",
+   "Bits",
+   " headlights",
+   " behalf",
+   "Bit",
+   " [(\"",
+   "upported",
+   "inese",
+   "owych",
+   "SystemService"
+  ],
+  "peak_z": 5.872863292694092
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

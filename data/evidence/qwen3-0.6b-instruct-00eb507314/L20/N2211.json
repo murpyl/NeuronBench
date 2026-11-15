@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2211,
+ "down_norm": 0.9516826868057251,
+ "logit_lens": {
+  "up": [
+   "urs",
+   "ivement",
+   "INGS",
+   "ings",
+   "ests",
+   "ived",
+   "uristic",
+   "engers",
+   "eenth",
+   "ards",
+   "ested",
+   "ivities"
+  ],
+  "down": [
+   "ating",
+   "ated",
+   "ations",
+   "ates",
+   "ate",
+   "atar",
+   "ATE",
+   "ati",
+   "atum",
+   "ATING",
+   "ATED",
+   "ation"
+  ],
+  "peak_z": 8.742300033569336
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

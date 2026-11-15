@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1092,
+ "down_norm": 1.0625663995742798,
+ "logit_lens": {
+  "up": [
+   "iscing",
+   "<option",
+   " jur",
+   "<Tag",
+   "无缝",
+   "道",
+   "xiety",
+   "<data",
+   "ubit",
+   "场",
+   "ission",
+   " Segment"
+  ],
+  "down": [
+   " critical",
+   "Critical",
+   " Critical",
+   "critical",
+   "_critical",
+   "ritical",
+   " stationary",
+   "_CRITICAL",
+   " ext",
+   " critically",
+   "孤立",
+   " extreme"
+  ],
+  "peak_z": 8.985261917114258
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2917,
+ "down_norm": 1.1064265966415405,
+ "logit_lens": {
+  "up": [
+   " divisive",
+   "bose",
+   "沤",
+   "oplevel",
+   " hydro",
+   "首轮",
+   " Glover",
+   "False",
+   "OH",
+   "sects",
+   " False",
+   " dương"
+  ],
+  "down": [
+   "Cr",
+   " Cr",
+   "Ni",
+   " Ni",
+   "/story",
+   " ni",
+   "eln",
+   "enties",
+   "Mo",
+   "ellschaft",
+   "story",
+   " cob"
+  ],
+  "peak_z": 5.970063209533691
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 221,
+ "down_norm": 0.7037885785102844,
+ "logit_lens": {
+  "up": [
+   " atrás",
+   "尤为重要",
+   " safest",
+   "出品",
+   " embodied",
+   "官司",
+   "可能存在",
+   "通行证",
+   "世界级",
+   "年由",
+   " займ",
+   "дорож"
+  ],
+  "down": [
+   " St",
+   " st",
+   " pers",
+   "St",
+   "st",
+   "Re",
+   " Re",
+   " Cro",
+   "con",
+   " �",
+   " Pers",
+   " Ag"
+  ],
+  "peak_z": 5.540335655212402
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

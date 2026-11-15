@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2256,
+ "down_norm": 0.7424697875976562,
+ "logit_lens": {
+  "up": [
+   "成员",
+   "-redux",
+   "∩",
+   " mates",
+   " members",
+   "领导",
+   "-member",
+   "带头",
+   "干部",
+   "member",
+   "经纪",
+   "姓"
+  ],
+  "down": [
+   "empo",
+   "引用日期",
+   "攻势",
+   " сумму",
+   " emission",
+   "yne",
+   "报记者",
+   " bombard",
+   "日报道",
+   "olson",
+   "emark",
+   " barrage"
+  ],
+  "peak_z": 5.352453231811523
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

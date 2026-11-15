@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2326,
+ "down_norm": 1.1116243600845337,
+ "logit_lens": {
+  "up": [
+   "eden",
+   "ono",
+   "ento",
+   "oken",
+   "\\Unit",
+   "pr",
+   "orne",
+   "ede",
+   "orer",
+   "ergic",
+   "pector",
+   "utra"
+  ],
+  "down": [
+   " people",
+   " People",
+   "People",
+   "people",
+   " PEOPLE",
+   " person",
+   "_people",
+   " persons",
+   " peoples",
+   "人们",
+   ".people",
+   "人"
+  ],
+  "peak_z": 13.59863567352295
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 44,
+ "down_norm": 0.725034773349762,
+ "logit_lens": {
+  "up": [
+   "直到",
+   ".On",
+   "一方面",
+   " onto",
+   "直至",
+   "OrDefault",
+   "-than",
+   "_on",
+   "除非",
+   "之际",
+   " off",
+   "-on"
+  ],
+  "down": [
+   "bel",
+   "OTS",
+   "elden",
+   "aho",
+   "óst",
+   "丰硕",
+   "cob",
+   " Hardcore",
+   "igram",
+   "ocha",
+   "azzo",
+   "izzard"
+  ],
+  "peak_z": 5.046600818634033
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2691,
+ "down_norm": 1.1430760622024536,
+ "logit_lens": {
+  "up": [
+   " Measure",
+   " measure",
+   "Measure",
+   "measure",
+   " Measures",
+   " measuring",
+   " measures",
+   " meas",
+   "_measure",
+   "量",
+   "测量",
+   " measurement"
+  ],
+  "down": [
+   "LOPT",
+   "aland",
+   "عباد",
+   "枯",
+   " scav",
+   "้าย",
+   " dorm",
+   " economies",
+   "秃",
+   "сь",
+   "FirstChild",
+   "ари"
+  ],
+  "peak_z": 8.925374984741211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

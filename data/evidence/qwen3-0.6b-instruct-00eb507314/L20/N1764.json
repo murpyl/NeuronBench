@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1764,
+ "down_norm": 0.8576984405517578,
+ "logit_lens": {
+  "up": [
+   "@endforeach",
+   "avers",
+   "enses",
+   "остью",
+   "dings",
+   "ины",
+   "ани",
+   "oom",
+   "epar",
+   "остей",
+   " cach",
+   "当之"
+  ],
+  "down": [
+   " but",
+   "但",
+   "but",
+   "但在",
+   "但是",
+   "But",
+   " But",
+   "但它",
+   "但他",
+   "但却",
+   "但我",
+   " BUT"
+  ],
+  "peak_z": 23.863637924194336
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

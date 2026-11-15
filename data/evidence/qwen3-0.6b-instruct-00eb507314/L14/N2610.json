@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2610,
+ "down_norm": 0.8440563082695007,
+ "logit_lens": {
+  "up": [
+   " Amend",
+   "ibly",
+   "plemented",
+   "lify",
+   "-divider",
+   "idd",
+   "exampleModal",
+   "ials",
+   "ilogue",
+   "tablename",
+   "渚",
+   "agra"
+  ],
+  "down": [
+   "where",
+   "从前",
+   "如果有",
+   "หาก",
+   "إق",
+   ")object",
+   "gne",
+   "\"\"\",\n",
+   "če",
+   " где",
+   "�",
+   "Where"
+  ],
+  "peak_z": 4.864278316497803
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

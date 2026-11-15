@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 820,
+ "down_norm": 1.0243161916732788,
+ "logit_lens": {
+  "up": [
+   " condition",
+   "condition",
+   " conditions",
+   " Condition",
+   "条件",
+   " Conditions",
+   "Condition",
+   "_condition",
+   "Conditions",
+   "_conditions",
+   "conditions",
+   " condi"
+  ],
+  "down": [
+   "=val",
+   "_PLAN",
+   " meal",
+   "ival",
+   "orthy",
+   "esehen",
+   " النفس",
+   "Plan",
+   "Ắ",
+   " attention",
+   "Meal",
+   ":border"
+  ],
+  "peak_z": 13.14494514465332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

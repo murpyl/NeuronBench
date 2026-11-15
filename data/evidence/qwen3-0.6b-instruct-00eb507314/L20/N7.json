@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 7,
+ "down_norm": 0.6810334920883179,
+ "logit_lens": {
+  "up": [
+   "colm",
+   "iero",
+   "thest",
+   "icensing",
+   " Fe",
+   ".fc",
+   "multipart",
+   "auss",
+   "_fg",
+   " Vander",
+   " Fisher",
+   "ｖ"
+  ],
+  "down": [
+   "يرة",
+   "раб",
+   "bars",
+   "'));\r\n",
+   " blown",
+   " cured",
+   " BAB",
+   " pObj",
+   "urile",
+   "BAB",
+   " Guns",
+   "izen"
+  ],
+  "peak_z": 5.460055828094482
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

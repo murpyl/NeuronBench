@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1721,
+ "down_norm": 1.1539192199707031,
+ "logit_lens": {
+  "up": [
+   "YLE",
+   "$wp",
+   " Default",
+   ".Default",
+   "@qq",
+   "artifact",
+   "\tDefault",
+   "Default",
+   "ivy",
+   "艺术",
+   "leine",
+   "aque"
+  ],
+  "down": [
+   "etre",
+   "eded",
+   "牌照",
+   "ôtel",
+   "sons",
+   " targetType",
+   "undry",
+   " pé",
+   "飞行员",
+   "été",
+   "苏宁",
+   "apl"
+  ],
+  "peak_z": 5.367194175720215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

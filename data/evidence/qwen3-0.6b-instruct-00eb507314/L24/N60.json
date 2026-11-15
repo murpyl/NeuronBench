@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 60,
+ "down_norm": 0.7539665102958679,
+ "logit_lens": {
+  "up": [
+   " was",
+   "进行了",
+   " did",
+   " took",
+   "Was",
+   "was",
+   "didn",
+   "did",
+   " gave",
+   " didn",
+   "took",
+   " wasn"
+  ],
+  "down": [
+   "くなります",
+   " katıl",
+   "使う",
+   "くなる",
+   "かかる",
+   "луш",
+   "xFFFFFF",
+   " ideally",
+   " RequestContext",
+   "なる",
+   "ста",
+   "ecz"
+  ],
+  "peak_z": 11.726895332336426
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

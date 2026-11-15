@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 76,
+ "down_norm": 1.0238415002822876,
+ "logit_lens": {
+  "up": [
+   "铤",
+   "resse",
+   "reon",
+   "urus",
+   "Vari",
+   "Atomic",
+   "rv",
+   "uyến",
+   " ngờ",
+   "andbox",
+   "LEMENT",
+   " resid"
+  ],
+  "down": [
+   "acionales",
+   "сер",
+   " Naz",
+   "şt",
+   "才能",
+   "祯",
+   "仆",
+   " NAT",
+   "echa",
+   "ysize",
+   "mega",
+   " tộc"
+  ],
+  "peak_z": 4.49943208694458
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

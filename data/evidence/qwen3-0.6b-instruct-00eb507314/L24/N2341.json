@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2341,
+ "down_norm": 1.0818350315093994,
+ "logit_lens": {
+  "up": [
+   "GST",
+   "ISTA",
+   "тельного",
+   "зем",
+   "urban",
+   "(TokenType",
+   "GORITHM",
+   "lland",
+   "-parts",
+   "Ị",
+   " Conj",
+   "uries"
+  ],
+  "down": [
+   " nghỉ",
+   "aned",
+   "يرة",
+   "فتر",
+   "락",
+   "روم",
+   "rometer",
+   "anic",
+   "�",
+   "FR",
+   "داد",
+   "inki"
+  ],
+  "peak_z": 5.175533294677734
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2568,
+ "down_norm": 0.7776134014129639,
+ "logit_lens": {
+  "up": [
+   "籴",
+   " keep",
+   " move",
+   " grate",
+   "kat",
+   " am",
+   " cut",
+   ".inject",
+   "松",
+   "注意",
+   ".Entities",
+   "-types"
+  ],
+  "down": [
+   "득",
+   "оборот",
+   "情况来看",
+   "可控",
+   "marked",
+   "*/,\n",
+   "tement",
+   "SmartyHeaderCode",
+   "充足的",
+   " regained",
+   "还包括",
+   "led"
+  ],
+  "peak_z": 4.683221817016602
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

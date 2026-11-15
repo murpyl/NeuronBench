@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2844,
+ "down_norm": 0.8783791065216064,
+ "logit_lens": {
+  "up": [
+   "like",
+   "sville",
+   "nels",
+   "เถ",
+   "eval",
+   "�",
+   "ill",
+   "abilia",
+   " Evalu",
+   " colony",
+   " evaluation",
+   "vironment"
+  ],
+  "down": [
+   " kosher",
+   "BarButton",
+   "arden",
+   " Kurd",
+   "才可以",
+   "ouro",
+   " Sikh",
+   "并将",
+   "ечен",
+   "NewLabel",
+   "就够了",
+   "及以上"
+  ],
+  "peak_z": 4.913144588470459
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

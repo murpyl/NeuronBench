@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 305,
+ "down_norm": 1.0442756414413452,
+ "logit_lens": {
+  "up": [
+   "ResourceId",
+   "sci",
+   "voy",
+   "terdam",
+   " power",
+   "power",
+   " nodeList",
+   "ести",
+   " powers",
+   "stone",
+   "름",
+   " sc"
+  ],
+  "down": [
+   "��",
+   "��",
+   "acebook",
+   "PACE",
+   "oundary",
+   " Advisory",
+   "uffix",
+   "allocate",
+   " STANDARD",
+   "inis",
+   " advisory",
+   "/light"
+  ],
+  "peak_z": 5.641044616699219
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

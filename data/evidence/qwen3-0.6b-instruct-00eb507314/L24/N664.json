@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 664,
+ "down_norm": 0.9606464505195618,
+ "logit_lens": {
+  "up": [
+   " query",
+   "blade",
+   "query",
+   "entina",
+   " QUERY",
+   "atcher",
+   "(chan",
+   "虹",
+   " Query",
+   "旸",
+   " cent",
+   "явление"
+  ],
+  "down": [
+   "олж",
+   "odia",
+   "STRUCTIONS",
+   "plies",
+   "�",
+   "牌",
+   " actionTypes",
+   "位",
+   "endcode",
+   "nü",
+   " Instructions",
+   " Verde"
+  ],
+  "peak_z": 5.308347702026367
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2920,
+ "down_norm": 0.7975537180900574,
+ "logit_lens": {
+  "up": [
+   "不上",
+   "不出来",
+   "不了",
+   "不出",
+   "不是一个",
+   "不尽",
+   "lon",
+   "得不到",
+   "不开",
+   "不会有",
+   "并没有",
+   "none"
+  ],
+  "down": [
+   " agriculture",
+   "ви",
+   "_strings",
+   "وء",
+   " Agriculture",
+   " remembers",
+   " socialism",
+   "日晚",
+   " munch",
+   "ätze",
+   "\tsl",
+   "Slides"
+  ],
+  "peak_z": 6.215928077697754
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

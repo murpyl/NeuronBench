@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2445,
+ "down_norm": 0.8553263545036316,
+ "logit_lens": {
+  "up": [
+   "开始",
+   " Started",
+   " commenced",
+   " begun",
+   " started",
+   "開始",
+   " commencement",
+   "started",
+   " began",
+   "起",
+   " arrived",
+   "起了"
+  ],
+  "down": [
+   "working",
+   "’ex",
+   " agon",
+   " working",
+   "joy",
+   "_USE",
+   "莺",
+   "嗥",
+   "uent",
+   "asks",
+   "_TRI",
+   "_working"
+  ],
+  "peak_z": 7.104428768157959
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

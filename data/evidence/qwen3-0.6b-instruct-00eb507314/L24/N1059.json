@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1059,
+ "down_norm": 1.0400702953338623,
+ "logit_lens": {
+  "up": [
+   "越来越少",
+   "HN",
+   "瑕",
+   "ogan",
+   "оп",
+   "reso",
+   "DN",
+   "复印件",
+   "كتب",
+   " STDCALL",
+   "櫆",
+   "曷"
+  ],
+  "down": [
+   " term",
+   "terms",
+   " SHIFT",
+   "_epoch",
+   " terms",
+   " shift",
+   " session",
+   "ряд",
+   " SESSION",
+   "发",
+   "Terms",
+   "SHIFT"
+  ],
+  "peak_z": 4.92719030380249
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

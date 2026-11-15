@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1167,
+ "down_norm": 0.832627534866333,
+ "logit_lens": {
+  "up": [
+   "dü",
+   "默默地",
+   "绀",
+   " Appalach",
+   ".mag",
+   "amac",
+   "千方百计",
+   "リング",
+   "agment",
+   "骞",
+   "哗",
+   "retain"
+  ],
+  "down": [
+   "ushi",
+   "JB",
+   "iated",
+   "ITY",
+   "日在",
+   "flix",
+   " ::\n",
+   "kaar",
+   "्र",
+   "亡",
+   "��",
+   "ilda"
+  ],
+  "peak_z": 4.852311134338379
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

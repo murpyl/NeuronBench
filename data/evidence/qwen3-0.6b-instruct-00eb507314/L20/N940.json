@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 940,
+ "down_norm": 0.6989189982414246,
+ "logit_lens": {
+  "up": [
+   "T",
+   "S",
+   "To",
+   "By",
+   "C",
+   "D",
+   "B",
+   "M",
+   "F",
+   " By",
+   "N",
+   "For"
+  ],
+  "down": [
+   "ード",
+   "aters",
+   "ơi",
+   "uns",
+   "idden",
+   "plet",
+   "tract",
+   "stringLiteral",
+   "ино",
+   "icult",
+   "itchens",
+   "ifies"
+  ],
+  "peak_z": 5.568739414215088
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

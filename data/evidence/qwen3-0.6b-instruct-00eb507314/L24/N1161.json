@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1161,
+ "down_norm": 1.0973749160766602,
+ "logit_lens": {
+  "up": [
+   " Card",
+   " card",
+   "_card",
+   "卡",
+   " cards",
+   "Card",
+   "card",
+   "Developer",
+   "卡片",
+   " flank",
+   "ereo",
+   " Cards"
+  ],
+  "down": [
+   "reet",
+   "ulia",
+   "거리",
+   "amac",
+   "лив",
+   "inic",
+   "oons",
+   "res",
+   "APS",
+   "REET",
+   " Birch",
+   "糙"
+  ],
+  "peak_z": 5.742698669433594
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2469,
+ "down_norm": 0.9666268229484558,
+ "logit_lens": {
+  "up": [
+   "球队",
+   "uhan",
+   "打球",
+   "外援",
+   "(dot",
+   "支球队",
+   "INGTON",
+   " đá",
+   "щит",
+   " 홈",
+   "ernaut",
+   "球员"
+  ],
+  "down": [
+   "unding",
+   "itia",
+   "岔",
+   "node",
+   "{s",
+   " mappings",
+   " wagon",
+   ".messaging",
+   " salon",
+   " Piano",
+   " node",
+   "nev"
+  ],
+  "peak_z": 4.990739822387695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

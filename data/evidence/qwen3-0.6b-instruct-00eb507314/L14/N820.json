@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 820,
+ "down_norm": 0.6880130171775818,
+ "logit_lens": {
+  "up": [
+   "istory",
+   "utterstock",
+   " JSName",
+   "址",
+   "快报",
+   "(Il",
+   " Designed",
+   "/Images",
+   "/apt",
+   "/Area",
+   "网址",
+   "噱"
+  ],
+  "down": [
+   "称为",
+   "叫做",
+   "-called",
+   "orphic",
+   " East",
+   "率为",
+   "vens",
+   " corresponding",
+   "ISTIC",
+   "ustum",
+   "erland",
+   "otti"
+  ],
+  "peak_z": 5.507204055786133
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

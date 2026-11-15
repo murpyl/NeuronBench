@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2789,
+ "down_norm": 1.0692415237426758,
+ "logit_lens": {
+  "up": [
+   " ParameterDirection",
+   "iram",
+   "十二条",
+   "release",
+   " Released",
+   "particles",
+   "-release",
+   "pag",
+   "Particles",
+   "ijkstra",
+   "ivers",
+   "HIR"
+  ],
+  "down": [
+   " win",
+   " against",
+   " defeat",
+   " defeats",
+   " wins",
+   " winning",
+   " victories",
+   "against",
+   " losses",
+   "战胜",
+   " loss",
+   " defeated"
+  ],
+  "peak_z": 8.136549949645996
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

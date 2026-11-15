@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 130,
+ "down_norm": 0.7944796085357666,
+ "logit_lens": {
+  "up": [
+   "\n",
+   "\r",
+   "\n\n",
+   "\r\n",
+   "\n \n",
+   "\n   \n",
+   "\n\n\n",
+   "\n    \n",
+   "\n  \n",
+   "\n\n\n\n\n\n",
+   "\n\n\n\n",
+   "\n\n\n\n\n\n\n\n"
+  ],
+  "down": [
+   "ly",
+   "ful",
+   "LY",
+   "ся",
+   "gether",
+   "shire",
+   "theless",
+   "alyze",
+   "\">'+\n",
+   "hip",
+   "\">-->\n",
+   " mẽ"
+  ],
+  "peak_z": 21.73310661315918
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

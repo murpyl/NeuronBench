@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2375,
+ "down_norm": 0.9228640198707581,
+ "logit_lens": {
+  "up": [
+   "itionally",
+   "ITIONAL",
+   "itions",
+   "itional",
+   "itive",
+   "uct",
+   "ition",
+   "ictions",
+   "resse",
+   "iction",
+   "slashes",
+   "ITIVE"
+  ],
+  "down": [
+   "arra",
+   " Bender",
+   ".setPrototypeOf",
+   "ceği",
+   "berman",
+   " sé",
+   "cimiento",
+   "庐",
+   "optic",
+   "aus",
+   "voie",
+   "отов"
+  ],
+  "peak_z": 8.835477828979492
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

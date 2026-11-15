@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1198,
+ "down_norm": 0.8720129132270813,
+ "logit_lens": {
+  "up": [
+   "晋",
+   "igkeit",
+   "ente",
+   " barg",
+   "盂",
+   "ze",
+   "跟他",
+   " eines",
+   "erte",
+   "isch",
+   "uß",
+   "chl"
+  ],
+  "down": [
+   "uí",
+   "ći",
+   "悠悠",
+   " Too",
+   "abad",
+   "-too",
+   "nown",
+   " bajo",
+   "dão",
+   " Acc",
+   "Too",
+   "闳"
+  ],
+  "peak_z": 4.6565117835998535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

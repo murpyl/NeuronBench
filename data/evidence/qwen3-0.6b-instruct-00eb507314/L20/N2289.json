@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2289,
+ "down_norm": 0.8637217283248901,
+ "logit_lens": {
+  "up": [
+   "ffiti",
+   "电子信息",
+   "блок",
+   "监测",
+   " SWAT",
+   "бл",
+   "发展模式",
+   "itespace",
+   "Rock",
+   " Boca",
+   " SAND",
+   " Lyn"
+  ],
+  "down": [
+   "封建",
+   " arist",
+   "stras",
+   " Germans",
+   ".ts",
+   " Muss",
+   "近代",
+   "oting",
+   " England",
+   " Britain",
+   " feudal",
+   "England"
+  ],
+  "peak_z": 4.988276958465576
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

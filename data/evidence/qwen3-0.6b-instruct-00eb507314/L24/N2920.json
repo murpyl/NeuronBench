@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2920,
+ "down_norm": 1.2438775300979614,
+ "logit_lens": {
+  "up": [
+   "atte",
+   "uforia",
+   "ardin",
+   "我发现",
+   "touches",
+   " finde",
+   "我认为",
+   "odox",
+   "odic",
+   "antro",
+   "ibal",
+   "ssa"
+  ],
+  "down": [
+   "被",
+   " being",
+   "又被",
+   "都被",
+   " be",
+   "被抓",
+   "也被",
+   " been",
+   "被打",
+   "being",
+   "被捕",
+   " Being"
+  ],
+  "peak_z": 12.440511703491211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

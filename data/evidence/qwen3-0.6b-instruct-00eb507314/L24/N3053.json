@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3053,
+ "down_norm": 1.0587600469589233,
+ "logit_lens": {
+  "up": [
+   "atively",
+   "={$",
+   "tere",
+   "roke",
+   "roperties",
+   "oreferrer",
+   "bez",
+   "셀",
+   "resse",
+   "衷",
+   "ìn",
+   "contest"
+  ],
+  "down": [
+   "KER",
+   "FormsModule",
+   "专家组",
+   "lord",
+   ".World",
+   "国际市场",
+   "常务副",
+   "stood",
+   "chnitt",
+   "马路",
+   "^K",
+   "sumer"
+  ],
+  "peak_z": 5.9391865730285645
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

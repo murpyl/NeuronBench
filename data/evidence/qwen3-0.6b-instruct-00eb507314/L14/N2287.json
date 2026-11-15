@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2287,
+ "down_norm": 0.7370041012763977,
+ "logit_lens": {
+  "up": [
+   "原有的",
+   "原来的",
+   "原有",
+   " original",
+   "原来",
+   "现有的",
+   " originals",
+   " existing",
+   "Original",
+   "original",
+   " Original",
+   "_orig"
+  ],
+  "down": [
+   "reh",
+   "izu",
+   "QUI",
+   "环",
+   "ẽ",
+   "isas",
+   "rious",
+   "aría",
+   "ách",
+   "ULD",
+   "/play",
+   "FD"
+  ],
+  "peak_z": 8.024944305419922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

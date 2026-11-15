@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2533,
+ "down_norm": 1.1349278688430786,
+ "logit_lens": {
+  "up": [
+   "dzi",
+   "cej",
+   "plode",
+   "@example",
+   "itionally",
+   "akter",
+   "venes",
+   " trùng",
+   "ítulo",
+   " comprom",
+   " números",
+   "_counts"
+  ],
+  "down": [
+   " of",
+   "Of",
+   " Of",
+   "_of",
+   "\tof",
+   "of",
+   " thereof",
+   "-of",
+   "OfString",
+   " của",
+   "_Of",
+   "_OF"
+  ],
+  "peak_z": 13.053656578063965
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

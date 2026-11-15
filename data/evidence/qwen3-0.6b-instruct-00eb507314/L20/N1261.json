@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1261,
+ "down_norm": 0.7498036623001099,
+ "logit_lens": {
+  "up": [
+   "方式",
+   "过程",
+   "方式进行",
+   " process",
+   "时间为",
+   "机制",
+   "过程中",
+   "办法",
+   "的方式",
+   "方法",
+   "程度",
+   "时间"
+  ],
+  "down": [
+   "omorphic",
+   "ModelProperty",
+   "oubles",
+   "ically",
+   "ücken",
+   "StringLength",
+   "对照检查",
+   "odon",
+   "嗪",
+   "ultureInfo",
+   "izational",
+   " disponibles"
+  ],
+  "peak_z": 10.738231658935547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 379,
+ "down_norm": 0.9510506987571716,
+ "logit_lens": {
+  "up": [
+   " upon",
+   "upon",
+   " Upon",
+   "Upon",
+   "evity",
+   "ileges",
+   "ettle",
+   " عليه",
+   "ure",
+   "eps",
+   " علي",
+   "posta"
+  ],
+  "down": [
+   "族自治县",
+   "cznie",
+   "serter",
+   " corrections",
+   "lash",
+   "cie",
+   "ıy",
+   "$n",
+   "isz",
+   "网小编",
+   " offs",
+   "就是因为"
+  ],
+  "peak_z": 19.167512893676758
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

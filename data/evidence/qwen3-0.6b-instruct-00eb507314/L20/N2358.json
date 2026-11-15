@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2358,
+ "down_norm": 0.9543473720550537,
+ "logit_lens": {
+  "up": [
+   " passing",
+   " enters",
+   " entering",
+   " passed",
+   " passes",
+   " pass",
+   " Passed",
+   "pass",
+   " enter",
+   ".pass",
+   "_pass",
+   " Passing"
+  ],
+  "down": [
+   "隆",
+   " Delete",
+   "Delete",
+   "(delete",
+   "拆除",
+   ".Delete",
+   "delete",
+   "(interval",
+   "ohen",
+   "interval",
+   "üstü",
+   "oglob"
+  ],
+  "peak_z": 7.044078826904297
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 180,
+ "down_norm": 0.7041792273521423,
+ "logit_lens": {
+  "up": [
+   "rices",
+   "网站地图",
+   ".alibaba",
+   "@author",
+   "枕",
+   ".EditValue",
+   " Parkway",
+   " đô",
+   "[train",
+   ".executeQuery",
+   "leground",
+   "第三次"
+  ],
+  "down": [
+   "ATER",
+   " sensitive",
+   "ationally",
+   "jsc",
+   "-sensitive",
+   "ILER",
+   " undef",
+   "(),'",
+   " unre",
+   "matter",
+   "='",
+   "但她"
+  ],
+  "peak_z": 5.292905330657959
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

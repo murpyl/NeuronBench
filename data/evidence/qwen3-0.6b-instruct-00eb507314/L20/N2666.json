@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2666,
+ "down_norm": 0.9525468349456787,
+ "logit_lens": {
+  "up": [
+   "-",
+   "-m",
+   "-ground",
+   "-sub",
+   "-c",
+   "-b",
+   "-[",
+   "-cont",
+   "-machine",
+   "-category",
+   "-res",
+   "-de"
+  ],
+  "down": [
+   " however",
+   " neck",
+   " heated",
+   "恻",
+   " them",
+   "(&_",
+   " etc",
+   " scramble",
+   "ertia",
+   " readonly",
+   " us",
+   "但是他"
+  ],
+  "peak_z": 9.537602424621582
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

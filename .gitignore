@@ -3,6 +3,5 @@ __pycache__/
 .venv/
 .pytest_cache/
 *.egg-info/
-data/raw/
 jobs/
 extra_prompts/gne-configs/

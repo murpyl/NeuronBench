@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 234,
+ "down_norm": 0.9519480466842651,
+ "logit_lens": {
+  "up": [
+   " read",
+   "read",
+   "系统",
+   " système",
+   " static",
+   "_read",
+   "读",
+   "MAN",
+   ".Al",
+   " system",
+   "onal",
+   "_al"
+  ],
+  "down": [
+   " independence",
+   "ests",
+   "jang",
+   "#/",
+   "intColor",
+   "liest",
+   "‾",
+   "挞",
+   "enderit",
+   "邈",
+   "mpeg",
+   "Flags"
+  ],
+  "peak_z": 5.412636756896973
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

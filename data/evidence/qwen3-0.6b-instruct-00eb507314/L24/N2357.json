@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2357,
+ "down_norm": 1.1587560176849365,
+ "logit_lens": {
+  "up": [
+   "ès",
+   "__$",
+   "ière",
+   "iazza",
+   ".globalData",
+   "omatic",
+   "心脏",
+   "tdown",
+   "but",
+   "ystone",
+   "aster",
+   "oleon"
+  ],
+  "down": [
+   "Model",
+   " Model",
+   " model",
+   "_model",
+   "model",
+   "-model",
+   "模型",
+   "\tModel",
+   "\tmodel",
+   "(model",
+   ".Model",
+   "Models"
+  ],
+  "peak_z": 9.799785614013672
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

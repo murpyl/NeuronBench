@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1456,
+ "down_norm": 0.9395939707756042,
+ "logit_lens": {
+  "up": [
+   "столь",
+   "odium",
+   " magn",
+   ".power",
+   "imax",
+   " prestige",
+   "อำนาจ",
+   "巅峰",
+   " heavier",
+   " power",
+   " pinnacle",
+   " throne"
+  ],
+  "down": [
+   "okies",
+   "调剂",
+   " olds",
+   "itized",
+   "Buffers",
+   "hlen",
+   "ABA",
+   " mixes",
+   " Roe",
+   "gies",
+   "imeo",
+   "aida"
+  ],
+  "peak_z": 5.27450704574585
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

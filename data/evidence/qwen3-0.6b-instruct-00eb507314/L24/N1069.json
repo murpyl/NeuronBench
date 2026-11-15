@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1069,
+ "down_norm": 1.0296403169631958,
+ "logit_lens": {
+  "up": [
+   "图标",
+   " figures",
+   "figures",
+   "图表",
+   " landscape",
+   " picture",
+   " pictures",
+   " abstract",
+   "情景",
+   " landscapes",
+   " scenes",
+   " tượng"
+  ],
+  "down": [
+   "DMIN",
+   " accelerator",
+   " sammen",
+   "aging",
+   "amina",
+   "eration",
+   "agina",
+   "洎",
+   " Quarterly",
+   "agem",
+   " magna",
+   "erna"
+  ],
+  "peak_z": 5.991141319274902
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

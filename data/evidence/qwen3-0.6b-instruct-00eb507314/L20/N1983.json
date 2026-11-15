@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1983,
+ "down_norm": 0.9391658902168274,
+ "logit_lens": {
+  "up": [
+   "rijk",
+   "grund",
+   "ecera",
+   "taire",
+   "zz",
+   "sei",
+   "estion",
+   "ematics",
+   "峻",
+   "ayscale",
+   " thou",
+   "zą"
+  ],
+  "down": [
+   " studios",
+   "杂志社",
+   "UDIO",
+   "атор",
+   "研讨会",
+   "培训班",
+   " pharmacies",
+   " studio",
+   "报社",
+   "药业",
+   "数据库",
+   " hotels"
+  ],
+  "peak_z": 4.8323140144348145
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

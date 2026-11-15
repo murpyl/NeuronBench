@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1936,
+ "down_norm": 0.7610735893249512,
+ "logit_lens": {
+  "up": [
+   "former",
+   "当前",
+   "pearance",
+   "owered",
+   "起了",
+   "当代",
+   "current",
+   "okens",
+   " Origin",
+   "今天的",
+   "新一代",
+   " current"
+  ],
+  "down": [
+   " inherently",
+   " vertically",
+   " bluff",
+   " nature",
+   ".JpaRepository",
+   " inevitably",
+   " thereof",
+   ".Abstractions",
+   "性的",
+   "él",
+   "rine",
+   " reliably"
+  ],
+  "peak_z": 5.328551292419434
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

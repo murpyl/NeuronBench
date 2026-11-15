@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1546,
+ "down_norm": 0.8000167012214661,
+ "logit_lens": {
+  "up": [
+   "天",
+   "�",
+   " setBackgroundImage",
+   "监察",
+   "维持",
+   "鸣",
+   " purge",
+   " Stir",
+   "鐘",
+   "商会",
+   "枫",
+   "?=.*"
+  ],
+  "down": [
+   "ifetime",
+   "婿",
+   "elda",
+   "IColor",
+   " holland",
+   "<Color",
+   "ensa",
+   "�",
+   " mens",
+   "icolor",
+   "/color",
+   "ruc"
+  ],
+  "peak_z": 5.2034831047058105
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

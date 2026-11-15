@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1210,
+ "down_norm": 0.5866590142250061,
+ "logit_lens": {
+  "up": [
+   "ament",
+   "ロー",
+   "uchar",
+   " Yelp",
+   "holding",
+   " Gör",
+   "ólica",
+   "胃口",
+   "stüt",
+   " countertops",
+   "guided",
+   " Dissertation"
+  ],
+  "down": [
+   "iz",
+   "人都",
+   "izio",
+   "ites",
+   "itia",
+   "性强",
+   "IE",
+   "ailed",
+   " pomi",
+   "/></",
+   "TX",
+   "initely"
+  ],
+  "peak_z": 4.538251876831055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

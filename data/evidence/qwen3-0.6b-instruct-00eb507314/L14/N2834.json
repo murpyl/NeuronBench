@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2834,
+ "down_norm": 1.0418156385421753,
+ "logit_lens": {
+  "up": [
+   "AAF",
+   "antes",
+   "-ground",
+   " grounding",
+   "IVEN",
+   "INCT",
+   "HEME",
+   " proving",
+   " uniquely",
+   " drawing",
+   "wich",
+   "LOOR"
+  ],
+  "down": [
+   "avor",
+   "儲",
+   "或多",
+   "受",
+   "<Select",
+   "等症状",
+   "ngo",
+   "иск",
+   "знач",
+   "artisan",
+   " spar",
+   "getAttribute"
+  ],
+  "peak_z": 4.838466167449951
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

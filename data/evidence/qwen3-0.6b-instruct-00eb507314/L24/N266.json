@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 266,
+ "down_norm": 0.9168408513069153,
+ "logit_lens": {
+  "up": [
+   "orge",
+   "YNC",
+   "ello",
+   "校区",
+   "ynchronization",
+   "ellar",
+   "之心",
+   "elle",
+   "abit",
+   "ync",
+   "覚え",
+   "issant"
+  ],
+  "down": [
+   " -,",
+   "}-",
+   " '-'",
+   " -(",
+   " '--",
+   " \"--",
+   "('-",
+   " '-",
+   "]-",
+   " \"-",
+   "--\n",
+   " --\n"
+  ],
+  "peak_z": 12.548423767089844
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 558,
+ "down_norm": 0.9415845274925232,
+ "logit_lens": {
+  "up": [
+   "иде",
+   "ạc",
+   "idth",
+   "SPAN",
+   " Twilight",
+   "turnstile",
+   " impl",
+   " gev",
+   " versa",
+   " ENTER",
+   " Nev",
+   " reg"
+  ],
+  "down": [
+   "bing",
+   "STRACT",
+   "OLUTE",
+   "bed",
+   " minded",
+   "serve",
+   "ース",
+   "erved",
+   "ecera",
+   "lename",
+   "iotic",
+   " attainment"
+  ],
+  "peak_z": 6.891257286071777
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

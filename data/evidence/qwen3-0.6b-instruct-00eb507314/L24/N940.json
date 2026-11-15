@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 940,
+ "down_norm": 0.9867372512817383,
+ "logit_lens": {
+  "up": [
+   "ibi",
+   "ament",
+   "很快就",
+   "门外",
+   "ered",
+   "atform",
+   "豌",
+   " geli",
+   "钊",
+   "ostringstream",
+   "optim",
+   "ļ"
+  ],
+  "down": [
+   "(bar",
+   " Ezra",
+   "inte",
+   "clusive",
+   " Zak",
+   " Bar",
+   " bar",
+   "İN",
+   "inar",
+   "Bar",
+   "gra",
+   "asca"
+  ],
+  "peak_z": 5.431393623352051
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

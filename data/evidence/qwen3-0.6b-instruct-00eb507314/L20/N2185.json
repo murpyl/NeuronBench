@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2185,
+ "down_norm": 1.0345046520233154,
+ "logit_lens": {
+  "up": [
+   "openh",
+   "nings",
+   "Spy",
+   "thic",
+   " Lives",
+   "UNG",
+   "keit",
+   " Teil",
+   "ễn",
+   "ทธ",
+   "ovy",
+   " strikes"
+  ],
+  "down": [
+   "orro",
+   "饫",
+   " <<",
+   " URLRequest",
+   "lemetry",
+   " <<\n",
+   "ometrics",
+   " Caucus",
+   "queeze",
+   "icable",
+   "订",
+   "===============\n"
+  ],
+  "peak_z": 5.018744468688965
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

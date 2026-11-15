@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2931,
+ "down_norm": 0.9352431297302246,
+ "logit_lens": {
+  "up": [
+   " yourself",
+   " myself",
+   "alse",
+   " yours",
+   "óm",
+   "ocking",
+   "oky",
+   " My",
+   " Your",
+   "its",
+   " You",
+   "your"
+  ],
+  "down": [
+   "我们",
+   "我们在",
+   "我们会",
+   "但我们",
+   "我们的",
+   "我们也",
+   "我们都",
+   "我们可以",
+   " we",
+   "所以我们",
+   "我们将",
+   "我们认为"
+  ],
+  "peak_z": 15.958026885986328
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

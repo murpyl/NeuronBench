@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2112,
+ "down_norm": 1.172063946723938,
+ "logit_lens": {
+  "up": [
+   "reste",
+   "ellig",
+   "awy",
+   " addTarget",
+   "ENTS",
+   "OTS",
+   "英勇",
+   "ether",
+   "ENCES",
+   "ette",
+   " Chiefs",
+   "eties"
+  ],
+  "down": [
+   "Vert",
+   " vert",
+   "vert",
+   " Vert",
+   " hor",
+   "Hor",
+   "v",
+   "_vert",
+   "VERT",
+   "hor",
+   ".vert",
+   " ver"
+  ],
+  "peak_z": 9.127182960510254
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

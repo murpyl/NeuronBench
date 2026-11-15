@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2143,
+ "down_norm": 1.158064365386963,
+ "logit_lens": {
+  "up": [
+   "esan",
+   "lector",
+   " forg",
+   "URITY",
+   "eses",
+   "起",
+   "��",
+   "ichte",
+   " chiếm",
+   "aturity",
+   " stal",
+   "leccion"
+  ],
+  "down": [
+   "进行",
+   "進行",
+   "进行了",
+   "进行全面",
+   "来进行",
+   "方式进行",
+   " perform",
+   "情况进行",
+   " Conduct",
+   "perform",
+   "对其进行",
+   " Perform"
+  ],
+  "peak_z": 15.909076690673828
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

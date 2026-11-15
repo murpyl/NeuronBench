@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2812,
+ "down_norm": 1.3289381265640259,
+ "logit_lens": {
+  "up": [
+   "ера",
+   "еры",
+   "Disc",
+   "ayed",
+   "uld",
+   " tracer",
+   " drawn",
+   "тра",
+   "羯",
+   "_disc",
+   "uning",
+   "ൾ"
+  ],
+  "down": [
+   "婿",
+   " ten",
+   "Ten",
+   " TEN",
+   "ten",
+   "_ten",
+   "ь",
+   " Ten",
+   "十个",
+   "io",
+   "oire",
+   "oted"
+  ],
+  "peak_z": 5.727225303649902
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

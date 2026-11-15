@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 826,
+ "down_norm": 0.9438663721084595,
+ "logit_lens": {
+  "up": [
+   "نة",
+   "okia",
+   "nde",
+   " countless",
+   "UNK",
+   "ãn",
+   "ục",
+   "endency",
+   "Ử",
+   "ใ",
+   "etcode",
+   "总共"
+  ],
+  "down": [
+   " ",
+   "1",
+   "itical",
+   "５",
+   "5",
+   "１",
+   "７",
+   "igne",
+   "7",
+   "8",
+   "�",
+   "led"
+  ],
+  "peak_z": 9.8102445602417
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

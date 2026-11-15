@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 202,
+ "down_norm": 0.6528775691986084,
+ "logit_lens": {
+  "up": [
+   "pectives",
+   "URNS",
+   ".samples",
+   "OTES",
+   "antha",
+   "erved",
+   "Sample",
+   "ample",
+   "ubbo",
+   "arking",
+   " Caption",
+   " Attendance"
+  ],
+  "down": [
+   "DbType",
+   "ieg",
+   " principal",
+   "��",
+   " thread",
+   "ichten",
+   "才行",
+   "aus",
+   "ág",
+   "主角",
+   " itself",
+   "/bg"
+  ],
+  "peak_z": 4.7526445388793945
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

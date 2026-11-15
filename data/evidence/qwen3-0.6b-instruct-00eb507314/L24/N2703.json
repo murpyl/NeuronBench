@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2703,
+ "down_norm": 1.348667860031128,
+ "logit_lens": {
+  "up": [
+   "ائف",
+   "�",
+   "fuscated",
+   " WebClient",
+   "uster",
+   "uC",
+   "missive",
+   "วย",
+   "lements",
+   "력",
+   "lover",
+   " Montreal"
+  ],
+  "down": [
+   "0",
+   "０",
+   "₀",
+   " zero",
+   "Ͳ",
+   " ZERO",
+   " zeroes",
+   "_zero",
+   "零",
+   "-zero",
+   "addin",
+   "/effects"
+  ],
+  "peak_z": 9.60179615020752
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

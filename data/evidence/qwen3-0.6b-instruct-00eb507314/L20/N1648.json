@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1648,
+ "down_norm": 0.921251654624939,
+ "logit_lens": {
+  "up": [
+   "shed",
+   " qualities",
+   "ily",
+   "�",
+   "orse",
+   "師",
+   "ża",
+   "show",
+   "qual",
+   " enemy",
+   " above",
+   ".entries"
+  ],
+  "down": [
+   "earing",
+   "ariat",
+   "htub",
+   "na",
+   "=back",
+   "全场",
+   "oup",
+   "itat",
+   "ocial",
+   "pref",
+   "ITES",
+   "arov"
+  ],
+  "peak_z": 5.45436429977417
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

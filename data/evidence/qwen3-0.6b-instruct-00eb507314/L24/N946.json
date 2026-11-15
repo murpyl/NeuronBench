@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 946,
+ "down_norm": 1.099432110786438,
+ "logit_lens": {
+  "up": [
+   "-fi",
+   "onian",
+   "-UA",
+   "fal",
+   "ват",
+   ".si",
+   "xef",
+   "uating",
+   "alous",
+   "يرة",
+   "IAL",
+   "чат"
+  ],
+  "down": [
+   "秘书",
+   "=sub",
+   "อร",
+   "egrator",
+   "aber",
+   "atory",
+   ".getSelected",
+   " Jelly",
+   "契",
+   " subst",
+   "增量",
+   "(article"
+  ],
+  "peak_z": 4.873698711395264
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1713,
+ "down_norm": 1.0339744091033936,
+ "logit_lens": {
+  "up": [
+   "ocl",
+   "mtree",
+   "蔟",
+   "ogg",
+   " clique",
+   "翻开",
+   "ogl",
+   "rar",
+   "smtp",
+   " ogl",
+   "หลวง",
+   "经开"
+  ],
+  "down": [
+   " mass",
+   " Mass",
+   " production",
+   "mass",
+   " Production",
+   "Mass",
+   "-producing",
+   " masses",
+   "_mass",
+   "生产",
+   "量",
+   "年产"
+  ],
+  "peak_z": 8.549622535705566
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

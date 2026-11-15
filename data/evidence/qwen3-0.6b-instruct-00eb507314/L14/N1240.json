@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1240,
+ "down_norm": 0.764883279800415,
+ "logit_lens": {
+  "up": [
+   "一刻",
+   "rar",
+   "ucene",
+   "いけ",
+   "ocos",
+   " addCriterion",
+   "蛛",
+   "andel",
+   "每日经济",
+   "eder",
+   "NES",
+   "比分"
+  ],
+  "down": [
+   "ferred",
+   ".visitMethod",
+   "izers",
+   "usting",
+   "ег",
+   "관",
+   "级以上",
+   "ulet",
+   "clid",
+   "ured",
+   "ElementType",
+   "ICLES"
+  ],
+  "peak_z": 4.68282413482666
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

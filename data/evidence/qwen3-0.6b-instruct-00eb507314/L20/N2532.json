@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2532,
+ "down_norm": 0.8966317772865295,
+ "logit_lens": {
+  "up": [
+   "elines",
+   " Graph",
+   " Benghazi",
+   "Graph",
+   " graphs",
+   ".DataGridViewColumnHeadersHeightSizeMode",
+   "äm",
+   " getNode",
+   "Putin",
+   "ElementException",
+   " graphene",
+   "_graph"
+  ],
+  "down": [
+   " priesthood",
+   "基督",
+   "教会",
+   " Sacred",
+   " church",
+   "Sac",
+   " Catholic",
+   " baptized",
+   "atholic",
+   " priests",
+   " saints",
+   "圣"
+  ],
+  "peak_z": 6.606394290924072
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

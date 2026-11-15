@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2612,
+ "down_norm": 1.0115629434585571,
+ "logit_lens": {
+  "up": [
+   "azu",
+   " nu",
+   "كة",
+   "吁",
+   "ധ",
+   " NU",
+   "Unary",
+   "항",
+   "URN",
+   " Ui",
+   "abilidade",
+   "ifi"
+  ],
+  "down": [
+   "鼠",
+   " mouse",
+   "MouseMove",
+   "ormap",
+   "MouseEvent",
+   "iny",
+   " MouseEvent",
+   "\tmouse",
+   "Mouse",
+   " window",
+   "mousemove",
+   "mouse"
+  ],
+  "peak_z": 5.376252174377441
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

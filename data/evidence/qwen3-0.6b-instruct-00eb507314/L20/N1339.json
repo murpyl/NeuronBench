@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1339,
+ "down_norm": 0.7595522999763489,
+ "logit_lens": {
+  "up": [
+   "öst",
+   "uste",
+   "uchs",
+   "pNet",
+   "acular",
+   "imed",
+   "ework",
+   "atest",
+   "�建",
+   "prech",
+   "positor",
+   "acle"
+  ],
+  "down": [
+   "或",
+   " or",
+   "或者",
+   "或是",
+   " 或",
+   " или",
+   "或多",
+   "または",
+   " atau",
+   " hoặc",
+   " oder",
+   " eller"
+  ],
+  "peak_z": 23.55268096923828
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

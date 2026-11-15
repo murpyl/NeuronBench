@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2816,
+ "down_norm": 1.1956191062927246,
+ "logit_lens": {
+  "up": [
+   " system",
+   "系统",
+   "系统的",
+   " systems",
+   " System",
+   "System",
+   "system",
+   "_system",
+   "系統",
+   "-system",
+   "ystem",
+   " Systems"
+  ],
+  "down": [
+   "phans",
+   "mers",
+   "mare",
+   "olean",
+   "merc",
+   "acas",
+   "咩",
+   "itics",
+   " dequeue",
+   "ogle",
+   "aci",
+   "acie"
+  ],
+  "peak_z": 18.110485076904297
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

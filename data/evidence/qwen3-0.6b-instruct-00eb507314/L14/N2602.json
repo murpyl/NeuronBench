@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2602,
+ "down_norm": 0.7993934154510498,
+ "logit_lens": {
+  "up": [
+   "，\n",
+   ",\n",
+   " \n",
+   ",\"\n",
+   " *,\n",
+   "[\n",
+   "__,\n",
+   "\n",
+   "(),\n",
+   "...\",\n",
+   "-\n",
+   "(\n"
+  ],
+  "down": [
+   "'])?",
+   "');?></",
+   "opoulos",
+   " responseBody",
+   "')['",
+   "/reference",
+   " slam",
+   "cq",
+   " departamento",
+   "NotSupportedException",
+   " pewnością",
+   "네"
+  ],
+  "peak_z": 7.7090864181518555
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

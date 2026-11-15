@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2408,
+ "down_norm": 1.079768180847168,
+ "logit_lens": {
+  "up": [
+   "Ware",
+   "ucc",
+   " pretext",
+   "？”",
+   "ailable",
+   "و",
+   "?\",\n",
+   "System",
+   "าย",
+   "amel",
+   " fingerprints",
+   "顶层设计"
+  ],
+  "down": [
+   " association",
+   " associations",
+   " Association",
+   "association",
+   "协会",
+   "Association",
+   " Associations",
+   "_associ",
+   "assoc",
+   " assoc",
+   "协会会员",
+   "協會"
+  ],
+  "peak_z": 8.785096168518066
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

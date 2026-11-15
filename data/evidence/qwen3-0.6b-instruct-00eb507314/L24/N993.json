@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 993,
+ "down_norm": 1.0603411197662354,
+ "logit_lens": {
+  "up": [
+   " location",
+   "location",
+   " Location",
+   "Location",
+   " locations",
+   "_location",
+   "-location",
+   " Locations",
+   "(location",
+   "地方",
+   "地点",
+   "locations"
+  ],
+  "down": [
+   "阶",
+   " dara",
+   " kole",
+   ".Normal",
+   "ことです",
+   "蹴",
+   " bis",
+   " refr",
+   "鹄",
+   "rschein",
+   "玎",
+   "婕"
+  ],
+  "peak_z": 13.942148208618164
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

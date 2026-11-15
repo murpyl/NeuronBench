@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1070,
+ "down_norm": 1.1230454444885254,
+ "logit_lens": {
+  "up": [
+   "��",
+   "enberg",
+   "AndHashCode",
+   "ificantly",
+   "atar",
+   "تط",
+   "cratch",
+   "во",
+   "ignment",
+   "alin",
+   "_putchar",
+   "inea"
+  ],
+  "down": [
+   " from",
+   "从",
+   "from",
+   " From",
+   "From",
+   "\tfrom",
+   "_from",
+   " FROM",
+   "從",
+   "-from",
+   ".from",
+   "是从"
+  ],
+  "peak_z": 18.991140365600586
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

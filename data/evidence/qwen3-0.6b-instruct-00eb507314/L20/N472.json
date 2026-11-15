@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 472,
+ "down_norm": 0.734742283821106,
+ "logit_lens": {
+  "up": [
+   "ewidth",
+   "estyle",
+   "fers",
+   "emy",
+   "roring",
+   "ounters",
+   "ocols",
+   "odings",
+   "ropic",
+   "irected",
+   "puted",
+   "kish"
+  ],
+  "down": [
+   "所謂",
+   "所谓",
+   "forge",
+   ")x",
+   "就给大家",
+   "carry",
+   "hour",
+   "ヽ",
+   "肘",
+   " despre",
+   "making",
+   "matter"
+  ],
+  "peak_z": 5.5700297355651855
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

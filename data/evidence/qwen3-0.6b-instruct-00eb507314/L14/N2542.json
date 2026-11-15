@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2542,
+ "down_norm": 0.6765789985656738,
+ "logit_lens": {
+  "up": [
+   "ifecycle",
+   "uffles",
+   "ออก",
+   "insics",
+   "Subviews",
+   "uctose",
+   "iaux",
+   " compartment",
+   "deserialize",
+   " ConsoleColor",
+   "停产",
+   "argout"
+  ],
+  "down": [
+   "@\",",
+   "yet",
+   "him",
+   "他还",
+   "rence",
+   "See",
+   "ee",
+   "handles",
+   ".gnu",
+   "uga",
+   " his",
+   " GTA"
+  ],
+  "peak_z": 4.767094612121582
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

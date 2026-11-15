@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1818,
+ "down_norm": 1.1300677061080933,
+ "logit_lens": {
+  "up": [
+   "声",
+   " sound",
+   "音",
+   "ULA",
+   ".streaming",
+   "听",
+   "ropp",
+   "真假",
+   "噪声",
+   "apest",
+   "\tsound",
+   "ального"
+  ],
+  "down": [
+   " sc",
+   "isex",
+   " note",
+   "sc",
+   " notes",
+   " Woody",
+   "obot",
+   " Sc",
+   " dậy",
+   "unky",
+   "omas",
+   "木质"
+  ],
+  "peak_z": 4.90236234664917
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

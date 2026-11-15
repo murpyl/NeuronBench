@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2375,
+ "down_norm": 0.8104642629623413,
+ "logit_lens": {
+  "up": [
+   "ords",
+   "ierarchy",
+   "rightness",
+   "因为她",
+   "émon",
+   " Lever",
+   "chants",
+   "reon",
+   "ialis",
+   "就知道",
+   "ipline",
+   "oref"
+  ],
+  "down": [
+   "قرب",
+   "ngoing",
+   "flow",
+   " strokeLine",
+   " cuộc",
+   "joint",
+   "xmin",
+   "旅",
+   "Keep",
+   "contra",
+   "-place",
+   "oit"
+  ],
+  "peak_z": 4.959340572357178
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

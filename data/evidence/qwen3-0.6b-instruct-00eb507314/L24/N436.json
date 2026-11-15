@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 436,
+ "down_norm": 0.9958913326263428,
+ "logit_lens": {
+  "up": [
+   " given",
+   "given",
+   " Given",
+   "Given",
+   " GIVEN",
+   "给",
+   "_given",
+   "給",
+   "给了",
+   "给出",
+   " dado",
+   "给别人"
+  ],
+  "down": [
+   "alous",
+   "啉",
+   "uç",
+   "uate",
+   "ฒ",
+   "arde",
+   "elor",
+   "elve",
+   "etection",
+   "iento",
+   "bote",
+   "atement"
+  ],
+  "peak_z": 23.06548500061035
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

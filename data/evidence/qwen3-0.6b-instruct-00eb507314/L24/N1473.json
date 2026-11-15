@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1473,
+ "down_norm": 1.1212018728256226,
+ "logit_lens": {
+  "up": [
+   "efs",
+   "盤",
+   "atis",
+   "谩",
+   " legalized",
+   "mony",
+   "汰",
+   "堇",
+   "ef",
+   "quential",
+   " mistaken",
+   "蜘蛛"
+  ],
+  "down": [
+   "读",
+   " read",
+   " reads",
+   " reading",
+   " load",
+   "read",
+   "讀",
+   " Read",
+   "Read",
+   "(read",
+   "load",
+   ".read"
+  ],
+  "peak_z": 14.163318634033203
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

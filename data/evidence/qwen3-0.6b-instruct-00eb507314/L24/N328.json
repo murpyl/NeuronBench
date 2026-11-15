@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 328,
+ "down_norm": 0.851300835609436,
+ "logit_lens": {
+  "up": [
+   "encing",
+   "SubMenu",
+   "업",
+   "isten",
+   "eten",
+   "��",
+   "航空公司",
+   "icies",
+   "===========\n",
+   "ets",
+   "ying",
+   "OOD"
+  ],
+  "down": [
+   "ono",
+   "しく",
+   " filib",
+   "bv",
+   "hev",
+   "监护",
+   "ansas",
+   "itre",
+   "ograd",
+   "blick",
+   "abstract",
+   "ître"
+  ],
+  "peak_z": 4.9405131340026855
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

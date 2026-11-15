@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2244,
+ "down_norm": 0.7070469856262207,
+ "logit_lens": {
+  "up": [
+   "PickerController",
+   "yar",
+   "UMENT",
+   "onta",
+   " Mà",
+   "恕",
+   "nier",
+   "ved",
+   "(base",
+   "ymb",
+   "amment",
+   "挂在"
+  ],
+  "down": [
+   " represents",
+   "代表",
+   " represent",
+   " representing",
+   "represent",
+   " représent",
+   " Represents",
+   " REPRESENT",
+   " représ",
+   " représente",
+   " signify",
+   " representa"
+  ],
+  "peak_z": 7.139837265014648
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

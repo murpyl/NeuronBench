@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1481,
+ "down_norm": 1.0332286357879639,
+ "logit_lens": {
+  "up": [
+   "variably",
+   "的好",
+   "toi",
+   "多地",
+   "idel",
+   "cond",
+   " bakım",
+   "中国国际",
+   "*/,",
+   "ßen",
+   "ős",
+   "arı"
+  ],
+  "down": [
+   " and",
+   "和",
+   " và",
+   "、",
+   "和个人",
+   "andal",
+   "和完善",
+   "และ",
+   "和发展",
+   "abling",
+   "-and",
+   "and"
+  ],
+  "peak_z": 6.766171455383301
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2194,
+ "down_norm": 0.5711773037910461,
+ "logit_lens": {
+  "up": [
+   "自来",
+   "UTION",
+   "aan",
+   "ulent",
+   "entimes",
+   " Bentley",
+   "mented",
+   "院院长",
+   "unless",
+   ".Pages",
+   "펜",
+   "基本的に"
+  ],
+  "down": [
+   "的話",
+   "的话",
+   "，则",
+   " then",
+   "则",
+   ")){\n",
+   ")?$",
+   " thì",
+   "則",
+   "))?",
+   "だったら",
+   "我还是"
+  ],
+  "peak_z": 5.965299606323242
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

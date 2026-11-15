@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1311,
+ "down_norm": 1.1271138191223145,
+ "logit_lens": {
+  "up": [
+   "立方",
+   " Cube",
+   "cube",
+   " cube",
+   "Cube",
+   " cubes",
+   " square",
+   "ioned",
+   "ции",
+   "_cube",
+   "ظم",
+   "ительно"
+  ],
+  "down": [
+   "2",
+   "２",
+   "₂",
+   " two",
+   "-two",
+   "贰",
+   " second",
+   "²",
+   "_two",
+   "two",
+   " zwe",
+   " 두"
+  ],
+  "peak_z": 12.293060302734375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

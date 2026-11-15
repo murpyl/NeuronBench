@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1320,
+ "down_norm": 0.5987139344215393,
+ "logit_lens": {
+  "up": [
+   "两种",
+   "两个",
+   "两款",
+   "这两个",
+   "这两种",
+   "三种",
+   " both",
+   "三个",
+   "兩個",
+   " Both",
+   "两类",
+   "两者"
+  ],
+  "down": [
+   "hasOne",
+   "ographer",
+   ".once",
+   "ometrics",
+   "ividad",
+   " WHATSOEVER",
+   ".databinding",
+   "assing",
+   "oppers",
+   " davon",
+   "opolitan",
+   "urity"
+  ],
+  "peak_z": 7.851739883422852
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

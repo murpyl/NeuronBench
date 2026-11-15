@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2734,
+ "down_norm": 0.9313466548919678,
+ "logit_lens": {
+  "up": [
+   ".deepcopy",
+   "نصر",
+   "Erot",
+   " punishable",
+   "рам",
+   "王国",
+   "alom",
+   "ibold",
+   "王者荣耀",
+   " Cruiser",
+   "rium",
+   " Viktor"
+  ],
+  "down": [
+   " outputStream",
+   " pipes",
+   " streams",
+   "管道",
+   " OUTPUT",
+   " OutputStream",
+   " output",
+   "pipes",
+   "output",
+   "输出",
+   " pipe",
+   " stream"
+  ],
+  "peak_z": 7.259318828582764
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1207,
+ "down_norm": 1.0715045928955078,
+ "logit_lens": {
+  "up": [
+   "anse",
+   "婦",
+   "Observers",
+   "zioni",
+   "结构调整",
+   "雁",
+   "anas",
+   "George",
+   " organisers",
+   "趙",
+   " ngày",
+   " perfection"
+  ],
+  "down": [
+   " unit",
+   "unit",
+   " Unit",
+   "(unit",
+   "Unit",
+   " units",
+   ".unit",
+   "unità",
+   "单位",
+   " UNIT",
+   "uum",
+   "\tunit"
+  ],
+  "peak_z": 7.094676971435547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

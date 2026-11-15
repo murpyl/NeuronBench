@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1418,
+ "down_norm": 1.0952486991882324,
+ "logit_lens": {
+  "up": [
+   "Prom",
+   " Prom",
+   " promotion",
+   " Promotion",
+   "prom",
+   ".prom",
+   " promoted",
+   "promotion",
+   "_prom",
+   "-prom",
+   "促进",
+   " promot"
+  ],
+  "down": [
+   "敞",
+   "endphp",
+   "_TLS",
+   ".NewLine",
+   "rı",
+   "eload",
+   "dde",
+   "KeyDown",
+   "(#)",
+   "خار",
+   "oten",
+   " unload"
+  ],
+  "peak_z": 9.485503196716309
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

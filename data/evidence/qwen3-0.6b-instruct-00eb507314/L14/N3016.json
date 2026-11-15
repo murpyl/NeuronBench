@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3016,
+ "down_norm": 0.8738527894020081,
+ "logit_lens": {
+  "up": [
+   " charms",
+   "由",
+   "-chief",
+   "因为我们",
+   "由中国",
+   "ласт",
+   "ounce",
+   "ariat",
+   "命",
+   "秩序",
+   "orning",
+   "agma"
+  ],
+  "down": [
+   " feeling",
+   " conversion",
+   " sensitive",
+   "ać",
+   "ви",
+   "同步",
+   " easily",
+   " быстро",
+   "-sensitive",
+   "conversion",
+   "...\");\r\n",
+   "囵"
+  ],
+  "peak_z": 5.290950775146484
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

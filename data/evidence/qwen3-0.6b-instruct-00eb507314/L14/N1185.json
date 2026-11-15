@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1185,
+ "down_norm": 0.8126686215400696,
+ "logit_lens": {
+  "up": [
+   "疗效",
+   " Further",
+   "acute",
+   "lij",
+   "Installation",
+   "Translation",
+   "出局",
+   "前线",
+   "itous",
+   "elerik",
+   "restaurants",
+   "Effect"
+  ],
+  "down": [
+   "ún",
+   "ypad",
+   "ús",
+   "ны",
+   "ốc",
+   "门",
+   "\\xaa",
+   "瑙",
+   "厦",
+   "arsers",
+   " amph",
+   "ベル"
+  ],
+  "peak_z": 5.471700191497803
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

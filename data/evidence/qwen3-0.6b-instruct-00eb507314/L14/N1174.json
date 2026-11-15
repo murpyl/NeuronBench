@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1174,
+ "down_norm": 0.6112571358680725,
+ "logit_lens": {
+  "up": [
+   "或者",
+   "或",
+   "或多",
+   " or",
+   "或是",
+   "或其他",
+   "或者其他",
+   " 或",
+   "或者是",
+   " oder",
+   " hoặc",
+   " или"
+  ],
+  "down": [
+   "ティング",
+   "ric",
+   "ขวา",
+   "aging",
+   "تين",
+   "ahas",
+   "queeze",
+   " tentative",
+   "เน",
+   "才",
+   "epend",
+   "Sing"
+  ],
+  "peak_z": 12.47002124786377
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

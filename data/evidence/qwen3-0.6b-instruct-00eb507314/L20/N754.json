@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 754,
+ "down_norm": 0.8325842618942261,
+ "logit_lens": {
+  "up": [
+   "让您",
+   "eting",
+   " onFinish",
+   "())\n\n",
+   "iards",
+   "())\n",
+   "你会",
+   "会让你",
+   "点击查看",
+   "您的",
+   "...)\n\n",
+   "让你"
+  ],
+  "down": [
+   "isons",
+   "oping",
+   "lok",
+   "enes",
+   "ento",
+   "rien",
+   "여",
+   "馁",
+   "也就是",
+   "togroup",
+   " binnen",
+   "ron"
+  ],
+  "peak_z": 5.159064292907715
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

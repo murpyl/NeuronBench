@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2646,
+ "down_norm": 0.8058609962463379,
+ "logit_lens": {
+  "up": [
+   " previews",
+   "而已",
+   " Preview",
+   " injuring",
+   "ouncer",
+   "pending",
+   " hovering",
+   " suspended",
+   "_PREVIEW",
+   " awaiting",
+   "neutral",
+   " prelim"
+  ],
+  "down": [
+   "esian",
+   ".setAuto",
+   "das",
+   "ины",
+   "acct",
+   "AĞ",
+   "pest",
+   "相信",
+   "当日",
+   "olv",
+   "大片",
+   ".Std"
+  ],
+  "peak_z": 5.274264335632324
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

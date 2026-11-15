@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1856,
+ "down_norm": 1.0241098403930664,
+ "logit_lens": {
+  "up": [
+   " critical",
+   " Critical",
+   "Critical",
+   "critical",
+   " critically",
+   "_critical",
+   " crit",
+   "crit",
+   "Crit",
+   "_crit",
+   " Crit",
+   " crítica"
+  ],
+  "down": [
+   "imson",
+   ".empty",
+   " sở",
+   "生",
+   "obar",
+   "aden",
+   "ods",
+   " sesso",
+   "ilt",
+   "оде",
+   "lan",
+   " office"
+  ],
+  "peak_z": 15.95136833190918
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

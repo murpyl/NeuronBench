@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2090,
+ "down_norm": 1.2004890441894531,
+ "logit_lens": {
+  "up": [
+   "aman",
+   "尔斯",
+   "ips",
+   " türlü",
+   "lename",
+   "[url",
+   "ura",
+   "鉴",
+   "URA",
+   " Homepage",
+   "hest",
+   "oring"
+  ],
+  "down": [
+   "聚集",
+   "聚",
+   "集",
+   "集中",
+   " cluster",
+   " gather",
+   "集聚",
+   "cluster",
+   "集结",
+   " gathering",
+   "集群",
+   " gathers"
+  ],
+  "peak_z": 11.921781539916992
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

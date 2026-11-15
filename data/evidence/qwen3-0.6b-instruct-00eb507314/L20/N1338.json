@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1338,
+ "down_norm": 0.7834717035293579,
+ "logit_lens": {
+  "up": [
+   "txt",
+   "Cnt",
+   " pts",
+   "-ft",
+   "Pts",
+   "lab",
+   " vibe",
+   " ppl",
+   " txt",
+   "民企",
+   "img",
+   " img"
+  ],
+  "down": [
+   "ランス",
+   " nineteen",
+   " hundred",
+   "itecture",
+   " eighteen",
+   "五千",
+   "десят",
+   "十九",
+   " hexadecimal",
+   " seventeen",
+   " nitrogen",
+   " twenty"
+  ],
+  "peak_z": 4.681100845336914
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

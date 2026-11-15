@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2990,
+ "down_norm": 0.7619200348854065,
+ "logit_lens": {
+  "up": [
+   " rather",
+   "rather",
+   " Rather",
+   "Rather",
+   " instead",
+   "而不是",
+   " Instead",
+   "而非",
+   "instead",
+   "Instead",
+   " only",
+   "无关"
+  ],
+  "down": [
+   "逝世",
+   "ights",
+   " einmal",
+   " nights",
+   "داخل",
+   "abwe",
+   "undi",
+   "ursions",
+   " addAction",
+   "iverse",
+   "ром",
+   "ersions"
+  ],
+  "peak_z": 8.597728729248047
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

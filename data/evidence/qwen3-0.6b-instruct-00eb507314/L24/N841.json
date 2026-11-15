@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 841,
+ "down_norm": 1.2216143608093262,
+ "logit_lens": {
+  "up": [
+   " y",
+   " Y",
+   "Y",
+   "-y",
+   "_y",
+   "<y",
+   "-Y",
+   "\ty",
+   "/y",
+   ")y",
+   "getY",
+   ":y"
+  ],
+  "down": [
+   "xon",
+   "enos",
+   "aż",
+   "regon",
+   " razor",
+   "藩",
+   "ềm",
+   "azor",
+   ".gameserver",
+   "agini",
+   "msp",
+   "珂"
+  ],
+  "peak_z": 14.433838844299316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

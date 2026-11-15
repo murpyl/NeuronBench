@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2320,
+ "down_norm": 0.9185150861740112,
+ "logit_lens": {
+  "up": [
+   "stein",
+   "ises",
+   ".lastname",
+   "зов",
+   "reira",
+   " support",
+   "⌉",
+   " WithEvents",
+   "oftware",
+   "ornado",
+   "支持",
+   "lett"
+  ],
+  "down": [
+   "brig",
+   " Cly",
+   "знак",
+   "eny",
+   " Führung",
+   "多地",
+   " dab",
+   " ward",
+   "讳",
+   "EXAMPLE",
+   ".Constant",
+   "legt"
+  ],
+  "peak_z": 5.143377780914307
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 29,
+ "down_norm": 0.6201635003089905,
+ "logit_lens": {
+  "up": [
+   "象",
+   "ough",
+   "úc",
+   "ائع",
+   "较差",
+   "etheless",
+   "三年",
+   "日至",
+   "思索",
+   " mile",
+   "如此",
+   "扭曲"
+  ],
+  "down": [
+   ".Gr",
+   "нием",
+   "ESIS",
+   "ENS",
+   "ню",
+   "ENT",
+   "enton",
+   "entlich",
+   "PEND",
+   "endent",
+   "onation",
+   "ENTS"
+  ],
+  "peak_z": 5.567584037780762
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

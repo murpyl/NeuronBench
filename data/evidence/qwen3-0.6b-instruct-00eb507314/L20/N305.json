@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 305,
+ "down_norm": 0.8140617609024048,
+ "logit_lens": {
+  "up": [
+   " Guides",
+   " Downloads",
+   "市政协",
+   "_fu",
+   "fdc",
+   "럽",
+   "这么说",
+   " Thumbnails",
+   "ferred",
+   " appeals",
+   "voke",
+   "一类"
+  ],
+  "down": [
+   "inceton",
+   "atten",
+   "安全",
+   "简单",
+   "面目",
+   "简",
+   "andelier",
+   "ylvania",
+   "resher",
+   "imbus",
+   "/**<",
+   ".shapes"
+  ],
+  "peak_z": 5.606534481048584
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

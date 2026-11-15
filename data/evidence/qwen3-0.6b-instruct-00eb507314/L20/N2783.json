@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2783,
+ "down_norm": 1.0392264127731323,
+ "logit_lens": {
+  "up": [
+   "人死亡",
+   " distancing",
+   "_IW",
+   "造纸",
+   " mourning",
+   "报废",
+   "q",
+   "ayer",
+   " tôn",
+   "iones",
+   "oggles",
+   "copyright"
+  ],
+  "down": [
+   " seed",
+   " seeds",
+   "Seed",
+   "种子",
+   "_seed",
+   " randomized",
+   "/random",
+   "seed",
+   ".seed",
+   "随机",
+   "(seed",
+   " random"
+  ],
+  "peak_z": 5.687291622161865
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 932,
+ "down_norm": 1.0056450366973877,
+ "logit_lens": {
+  "up": [
+   "sex",
+   "                        ",
+   "                          ",
+   " wur",
+   "osex",
+   "ption",
+   "                         ",
+   " stron",
+   "                     ",
+   "ombok",
+   "本轮",
+   "                       "
+  ],
+  "down": [
+   "bir",
+   "辙",
+   "vestment",
+   "花样",
+   "决",
+   "vfs",
+   "疫",
+   "inct",
+   "agos",
+   "��",
+   " görün",
+   "ั"
+  ],
+  "peak_z": 5.011477470397949
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

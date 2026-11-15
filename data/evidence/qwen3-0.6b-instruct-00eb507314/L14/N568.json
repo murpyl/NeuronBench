@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 568,
+ "down_norm": 0.6134543418884277,
+ "logit_lens": {
+  "up": [
+   " notwithstanding",
+   "iams",
+   "структор",
+   " administrators",
+   "铐",
+   " migrationBuilder",
+   "ascimento",
+   "альные",
+   "reib",
+   "ющихся",
+   " ((\"",
+   "=\")."
+  ],
+  "down": [
+   "，\n",
+   " \n",
+   " \\\n",
+   "\n",
+   ",\n",
+   "-\n",
+   " ...\n",
+   "...\",\n",
+   " &\n",
+   "...\n",
+   "&\n",
+   "\\\n"
+  ],
+  "peak_z": 8.696146011352539
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

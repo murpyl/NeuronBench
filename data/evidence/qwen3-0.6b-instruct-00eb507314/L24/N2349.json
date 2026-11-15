@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2349,
+ "down_norm": 1.149369716644287,
+ "logit_lens": {
+  "up": [
+   " image",
+   " images",
+   "image",
+   " Image",
+   "images",
+   " Images",
+   "-image",
+   "Image",
+   "\timage",
+   "_image",
+   "Images",
+   "-images"
+  ],
+  "down": [
+   " WHATSOEVER",
+   "resents",
+   "roids",
+   "ú",
+   "udi",
+   "erro",
+   "@Xml",
+   "obili",
+   "بية",
+   "onne",
+   "VELO",
+   "瘥"
+  ],
+  "peak_z": 15.302650451660156
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

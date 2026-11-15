@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 665,
+ "down_norm": 0.6083438992500305,
+ "logit_lens": {
+  "up": [
+   " due",
+   "由于",
+   "因其",
+   "因为",
+   " because",
+   "因",
+   "由於",
+   " since",
+   "因为它",
+   "due",
+   " Due",
+   "因为我"
+  ],
+  "down": [
+   "ould",
+   "升值",
+   " сможете",
+   "hek",
+   "Filled",
+   "/Resources",
+   " Haram",
+   "形象",
+   "очный",
+   "辦",
+   " técnico",
+   " LIABILITY"
+  ],
+  "peak_z": 7.6934309005737305
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

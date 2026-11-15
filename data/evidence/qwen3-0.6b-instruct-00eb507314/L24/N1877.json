@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1877,
+ "down_norm": 1.0824103355407715,
+ "logit_lens": {
+  "up": [
+   "иж",
+   " race",
+   " power",
+   "结构性",
+   "级以上",
+   " raced",
+   " races",
+   " White",
+   "писыва",
+   " white",
+   " privilege",
+   "一次次"
+  ],
+  "down": [
+   "hots",
+   " MILF",
+   "orious",
+   "_tensors",
+   "ysical",
+   "irected",
+   " Psy",
+   " GOODS",
+   "ough",
+   "aphrag",
+   "ophysical",
+   "udad"
+  ],
+  "peak_z": 5.700222015380859
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

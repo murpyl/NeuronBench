@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2401,
+ "down_norm": 0.9163251519203186,
+ "logit_lens": {
+  "up": [
+   "yny",
+   "yna",
+   "yre",
+   " Pty",
+   "ือน",
+   "之",
+   "Together",
+   "amation",
+   "stinence",
+   " Indo",
+   "('--",
+   "亿美元"
+  ],
+  "down": [
+   "편",
+   "-scalable",
+   "tram",
+   "lator",
+   "مم",
+   "澍",
+   "otos",
+   "lop",
+   "apsed",
+   "uum",
+   "iores",
+   " Representative"
+  ],
+  "peak_z": 5.912044048309326
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

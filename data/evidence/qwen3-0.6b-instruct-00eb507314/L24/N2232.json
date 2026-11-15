@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2232,
+ "down_norm": 1.1461776494979858,
+ "logit_lens": {
+  "up": [
+   "ures",
+   "чная",
+   " DROP",
+   "ropped",
+   "ipated",
+   "uela",
+   "ча",
+   "渝",
+   "opus",
+   "igue",
+   "瞭",
+   "خلاص"
+  ],
+  "down": [
+   ".begin",
+   "begin",
+   "\tbegin",
+   " begin",
+   " containers",
+   "(begin",
+   "容器",
+   "(container",
+   " Containers",
+   "Containers",
+   ".end",
+   "_Begin"
+  ],
+  "peak_z": 6.96759557723999
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2522,
+ "down_norm": 1.1133619546890259,
+ "logit_lens": {
+  "up": [
+   "ril",
+   "ric",
+   "rif",
+   "ival",
+   ".deleteById",
+   "rı",
+   " %\"",
+   "atively",
+   "oze",
+   "erable",
+   "irl",
+   "elize"
+  ],
+  "down": [
+   " three",
+   "_three",
+   "three",
+   "三是",
+   "-three",
+   "3",
+   "三年",
+   " third",
+   "三个",
+   "第三次",
+   " três",
+   " thirds"
+  ],
+  "peak_z": 6.343944549560547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

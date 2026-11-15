@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2810,
+ "down_norm": 0.8389053344726562,
+ "logit_lens": {
+  "up": [
+   "标记",
+   "标识",
+   "标明",
+   " symbol",
+   "STOP",
+   "marked",
+   " labeled",
+   " symbols",
+   " marked",
+   "符号",
+   "abeled",
+   " indicator"
+  ],
+  "down": [
+   ".DeserializeObject",
+   "饶",
+   "odial",
+   " juris",
+   "mani",
+   "实务",
+   "ása",
+   "整体",
+   "(equal",
+   "ysical",
+   "ctrine",
+   "olls"
+  ],
+  "peak_z": 6.0509867668151855
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

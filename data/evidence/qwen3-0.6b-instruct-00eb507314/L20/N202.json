@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 202,
+ "down_norm": 0.7433786988258362,
+ "logit_lens": {
+  "up": [
+   "\")).",
+   "\"):",
+   "]\").",
+   "\"):\n",
+   "\")",
+   "**)",
+   "\").",
+   "\"]').",
+   ":\")",
+   "\").\n",
+   "\"):\r\n",
+   ">>()"
+  ],
+  "down": [
+   "ordon",
+   "illions",
+   "ulado",
+   "onomies",
+   "agus",
+   ".Unicode",
+   "LES",
+   "ILING",
+   "isiert",
+   "港区",
+   "lessly",
+   "eking"
+  ],
+  "peak_z": 7.659440994262695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

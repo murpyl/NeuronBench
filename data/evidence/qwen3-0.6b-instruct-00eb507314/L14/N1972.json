@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1972,
+ "down_norm": 0.7318943738937378,
+ "logit_lens": {
+  "up": [
+   "ügen",
+   "{}",
+   "-serif",
+   "=",
+   "نع",
+   ".googleapis",
+   "={}",
+   "$post",
+   "[offset",
+   "fidf",
+   "一部",
+   "=#"
+  ],
+  "down": [
+   "elo",
+   "下了",
+   "lo",
+   "'])?",
+   "toDouble",
+   "ė",
+   "aton",
+   "UBLE",
+   "overe",
+   " duplic",
+   "edException",
+   "itus"
+  ],
+  "peak_z": 5.101583003997803
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

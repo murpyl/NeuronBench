@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1473,
+ "down_norm": 0.5209538340568542,
+ "logit_lens": {
+  "up": [
+   "逡",
+   "LER",
+   "ustry",
+   "又被",
+   "atable",
+   "EW",
+   "BER",
+   ".Requires",
+   "idend",
+   "-Identifier",
+   "ewe",
+   "REFERRED"
+  ],
+  "down": [
+   "ắm",
+   "对此",
+   "對",
+   "حد",
+   "对",
+   "前に",
+   "zent",
+   " направ",
+   " 경우에는",
+   "对公司",
+   "来",
+   "حل"
+  ],
+  "peak_z": 4.89320707321167
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

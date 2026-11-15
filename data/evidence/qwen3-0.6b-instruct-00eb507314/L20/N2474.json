@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2474,
+ "down_norm": 1.0061784982681274,
+ "logit_lens": {
+  "up": [
+   "调整",
+   " adjustments",
+   " feedback",
+   " adjust",
+   " iter",
+   " adjusts",
+   " adjustment",
+   " adjusting",
+   "反馈",
+   " iterating",
+   " iterate",
+   "迭代"
+  ],
+  "down": [
+   "oken",
+   " distraction",
+   "ган",
+   "زع",
+   "铤",
+   " çalışıyor",
+   "óst",
+   " vant",
+   " sacred",
+   "ugal",
+   "诱人",
+   "ugging"
+  ],
+  "peak_z": 7.672945022583008
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

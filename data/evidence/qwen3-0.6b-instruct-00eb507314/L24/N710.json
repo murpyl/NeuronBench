@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 710,
+ "down_norm": 0.9785529971122742,
+ "logit_lens": {
+  "up": [
+   "ismic",
+   "stry",
+   "ETER",
+   "abra",
+   " Pradesh",
+   "iline",
+   "iciones",
+   "axe",
+   "isons",
+   "eter",
+   "agle",
+   "ipay"
+  ],
+  "down": [
+   "难怪",
+   "\".$_",
+   "');</",
+   "\"/></",
+   "��",
+   " }</",
+   " ;\n\n\n",
+   "andalone",
+   "[args",
+   " \",\r\n",
+   "\";\r\n",
+   "⇑"
+  ],
+  "peak_z": 4.84839391708374
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

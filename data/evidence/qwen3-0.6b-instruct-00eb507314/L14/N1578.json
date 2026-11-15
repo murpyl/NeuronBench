@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1578,
+ "down_norm": 0.7380099892616272,
+ "logit_lens": {
+  "up": [
+   "Documentation",
+   "sworth",
+   "ulk",
+   "相关政策",
+   "卬",
+   "폼",
+   "RIX",
+   "ULK",
+   "eldo",
+   "恤",
+   "etchup",
+   "手册"
+  ],
+  "down": [
+   "随机",
+   " random",
+   " randomly",
+   "random",
+   "\trandom",
+   "_random",
+   "=random",
+   "-random",
+   "Random",
+   ".random",
+   "(random",
+   " randomness"
+  ],
+  "peak_z": 11.07748794555664
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

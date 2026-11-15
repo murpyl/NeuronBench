@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 329,
+ "down_norm": 0.6124527454376221,
+ "logit_lens": {
+  "up": [
+   ";",
+   ",",
+   " –",
+   "、",
+   " —",
+   "—",
+   ":",
+   "。",
+   ".",
+   "该",
+   "除",
+   "；"
+  ],
+  "down": [
+   " ...\"\n",
+   " disap",
+   "_REPLY",
+   " ...\"\n\n",
+   ".flat",
+   "氓",
+   "\tattack",
+   " Clash",
+   ".Commit",
+   "bler",
+   "balance",
+   ".handleError"
+  ],
+  "peak_z": 7.249494552612305
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

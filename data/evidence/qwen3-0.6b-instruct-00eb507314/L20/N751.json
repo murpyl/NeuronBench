@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 751,
+ "down_norm": 0.8098251223564148,
+ "logit_lens": {
+  "up": [
+   "pecia",
+   "故居",
+   "安检",
+   "istrate",
+   "-eye",
+   "找工作",
+   "酗",
+   "bos",
+   "ắt",
+   "ron",
+   "ertext",
+   "yii"
+  ],
+  "down": [
+   "WARD",
+   "战略",
+   " vest",
+   ".addButton",
+   ".cum",
+   "(od",
+   "(range",
+   ".range",
+   "IVAL",
+   "リング",
+   "льн",
+   "verige"
+  ],
+  "peak_z": 4.73553991317749
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2035,
+ "down_norm": 1.1783868074417114,
+ "logit_lens": {
+  "up": [
+   "ataka",
+   "ivo",
+   "bö",
+   "azu",
+   "률",
+   "绛",
+   "经验丰富",
+   "airo",
+   "acas",
+   "IVO",
+   "acia",
+   "IVED"
+  ],
+  "down": [
+   " should",
+   " must",
+   "应该",
+   "要",
+   "我要",
+   "应当",
+   "要说",
+   "should",
+   "必须",
+   " worth",
+   "要去",
+   "值得关注"
+  ],
+  "peak_z": 6.863614559173584
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

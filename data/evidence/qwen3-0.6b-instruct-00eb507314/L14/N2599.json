@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2599,
+ "down_norm": 0.7367501854896545,
+ "logit_lens": {
+  "up": [
+   "usat",
+   "사무",
+   "��",
+   "lung",
+   "ician",
+   "팩",
+   "สะด",
+   " Atmos",
+   "assel",
+   "alia",
+   "erer",
+   "currentColor"
+  ],
+  "down": [
+   " traditional",
+   " conventional",
+   " normal",
+   "正常",
+   "matchCondition",
+   "普通",
+   "ordinary",
+   "传统",
+   "traditional",
+   "常规",
+   "市场经济",
+   " ordinarily"
+  ],
+  "peak_z": 4.800801753997803
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3049,
+ "down_norm": 1.0954852104187012,
+ "logit_lens": {
+  "up": [
+   "(sol",
+   "лад",
+   " Linux",
+   "Sol",
+   "_sol",
+   "umps",
+   "leans",
+   "Fac",
+   "LCD",
+   "诀",
+   "obe",
+   "ient"
+  ],
+  "down": [
+   "athlete",
+   " comprom",
+   "FetchRequest",
+   "CAR",
+   " fatigue",
+   "carbon",
+   "apest",
+   " capitals",
+   "athlon",
+   "我家",
+   " allot",
+   "堃"
+  ],
+  "peak_z": 4.566792011260986
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

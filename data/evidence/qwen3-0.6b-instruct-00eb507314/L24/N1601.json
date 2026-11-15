@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1601,
+ "down_norm": 1.3198193311691284,
+ "logit_lens": {
+  "up": [
+   "ղ",
+   "seeing",
+   "歩",
+   "by",
+   "ည",
+   "ตก",
+   "inge",
+   "ingerprint",
+   "��",
+   "_ARCHIVE",
+   ".TabStop",
+   "\tCopyright"
+  ],
+  "down": [
+   "{{",
+   " {{",
+   " {{\n",
+   "={{",
+   "《",
+   " ${",
+   "{{{",
+   " \"{{",
+   "}}{{",
+   "/{{",
+   " `{",
+   ":${"
+  ],
+  "peak_z": 12.398016929626465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

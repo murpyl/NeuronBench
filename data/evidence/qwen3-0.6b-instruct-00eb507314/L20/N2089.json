@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2089,
+ "down_norm": 1.0499387979507446,
+ "logit_lens": {
+  "up": [
+   "吧",
+   "了吧",
+   "请",
+   "айд",
+   "呗",
+   " saja",
+   "请你",
+   "再说",
+   "请大家",
+   "好吗",
+   "叭",
+   "好吧"
+  ],
+  "down": [
+   " shave",
+   "indre",
+   "ять",
+   "trzymać",
+   ":description",
+   "dać",
+   " получить",
+   "ставить",
+   "вести",
+   "ificar",
+   "plementation",
+   "xit"
+  ],
+  "peak_z": 12.21233081817627
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 369,
+ "down_norm": 0.6207176446914673,
+ "logit_lens": {
+  "up": [
+   " himself",
+   "chers",
+   "他自己",
+   "ullo",
+   " Himself",
+   ".protocol",
+   "صد",
+   "utschen",
+   "haust",
+   " itself",
+   "(ver",
+   "ichtet"
+  ],
+  "down": [
+   "P",
+   "bro",
+   "    \r\n    \r\n",
+   "razione",
+   "        \n    \n",
+   "/body",
+   "ยว",
+   "要紧",
+   "entials",
+   "/P",
+   "Ram",
+   "Ton"
+  ],
+  "peak_z": 5.426419258117676
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

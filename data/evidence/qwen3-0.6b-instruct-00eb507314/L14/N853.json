@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 853,
+ "down_norm": 0.6723575592041016,
+ "logit_lens": {
+  "up": [
+   ".).",
+   "аш",
+   "eki",
+   ".');",
+   "uve",
+   ".Dao",
+   "iven",
+   "zh",
+   "gage",
+   "istro",
+   "izr",
+   "iver"
+  ],
+  "down": [
+   "»\n\n",
+   "”\n",
+   "$\n",
+   "$\n\n",
+   "\"\n",
+   "」\n\n",
+   "\"\n\n",
+   "\n\n",
+   "”\n\n",
+   "**\n",
+   "$\r\n",
+   "】\n\n"
+  ],
+  "peak_z": 5.9706130027771
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

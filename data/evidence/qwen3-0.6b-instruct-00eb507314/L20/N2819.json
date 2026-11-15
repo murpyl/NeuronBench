@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2819,
+ "down_norm": 1.1070045232772827,
+ "logit_lens": {
+  "up": [
+   "Greater",
+   "greater",
+   "大于",
+   "]>",
+   " (>",
+   " '>",
+   "&gt",
+   "']>",
+   " >",
+   " greater",
+   " Greater",
+   "万元以上"
+  ],
+  "down": [
+   "较低",
+   " less",
+   "less",
+   "降低",
+   "低",
+   " low",
+   "减少",
+   "Less",
+   " lowest",
+   "≤",
+   "小于",
+   " ≤"
+  ],
+  "peak_z": 7.146484375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

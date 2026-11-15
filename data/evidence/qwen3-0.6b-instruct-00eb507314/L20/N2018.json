@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2018,
+ "down_norm": 1.0741264820098877,
+ "logit_lens": {
+  "up": [
+   "urgeon",
+   "template",
+   "inks",
+   "vidia",
+   "indh",
+   "cells",
+   "磻",
+   "argon",
+   " template",
+   "ensus",
+   "utta",
+   "ingga"
+  ],
+  "down": [
+   "地",
+   "地中",
+   "地说",
+   "地上",
+   " ground",
+   "的地",
+   " Ground",
+   " �",
+   "-ground",
+   "地标",
+   "地看着",
+   "Ground"
+  ],
+  "peak_z": 25.72295379638672
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2479,
+ "down_norm": 1.1965558528900146,
+ "logit_lens": {
+  "up": [
+   "aten",
+   "iate",
+   "酵",
+   "ANGE",
+   "aze",
+   "��",
+   "ate",
+   "igit",
+   "直观",
+   "cate",
+   " RANGE",
+   "ilan"
+  ],
+  "down": [
+   "ers",
+   "器",
+   "ators",
+   "ator",
+   "ors",
+   "ifiers",
+   "adors",
+   "атор",
+   "adores",
+   "sembler",
+   "ATORS",
+   "atrice"
+  ],
+  "peak_z": 7.844306945800781
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

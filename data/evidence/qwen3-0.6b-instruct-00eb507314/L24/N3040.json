@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3040,
+ "down_norm": 1.1230015754699707,
+ "logit_lens": {
+  "up": [
+   " historical",
+   " Historical",
+   " historic",
+   " history",
+   "历史",
+   " Historic",
+   "史",
+   " History",
+   "的历史",
+   "histor",
+   "(history",
+   "history"
+  ],
+  "down": [
+   " spd",
+   "stå",
+   "cling",
+   "spm",
+   "itere",
+   "iative",
+   "bled",
+   " seeding",
+   "ющихся",
+   " separ",
+   "adoo",
+   "嗪"
+  ],
+  "peak_z": 10.19168758392334
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

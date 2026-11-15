@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 163,
+ "down_norm": 0.8094273805618286,
+ "logit_lens": {
+  "up": [
+   "utow",
+   "icular",
+   "包",
+   "andard",
+   "úng",
+   "ublic",
+   "IVEN",
+   "IAL",
+   "rowave",
+   "Marvel",
+   "erialized",
+   "adians"
+  ],
+  "down": [
+   "版",
+   "장을",
+   " version",
+   "\tversion",
+   "versions",
+   "帷",
+   " формы",
+   " уров",
+   " versión",
+   " сем",
+   "version",
+   " bodies"
+  ],
+  "peak_z": 5.18408727645874
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

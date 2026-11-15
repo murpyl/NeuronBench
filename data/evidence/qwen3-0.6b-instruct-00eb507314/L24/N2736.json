@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2736,
+ "down_norm": 1.1572144031524658,
+ "logit_lens": {
+  "up": [
+   "Vy",
+   "getWindow",
+   "odiac",
+   "妪",
+   "gó",
+   "culus",
+   "Υ",
+   "antro",
+   "chants",
+   "ñas",
+   "麓",
+   "斜"
+  ],
+  "down": [
+   " paper",
+   " article",
+   "文章",
+   " Paper",
+   "paper",
+   "Paper",
+   " papers",
+   "-paper",
+   "article",
+   " articles",
+   "篇文章",
+   "_paper"
+  ],
+  "peak_z": 16.413555145263672
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

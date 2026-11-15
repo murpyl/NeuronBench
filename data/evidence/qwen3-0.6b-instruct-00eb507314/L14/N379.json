@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 379,
+ "down_norm": 0.6342442631721497,
+ "logit_lens": {
+  "up": [
+   "URLException",
+   "与否",
+   "?):",
+   "ElementException",
+   " fit",
+   "อน",
+   "放过",
+   ".createComponent",
+   " :=\n",
+   "ainen",
+   " initWithTitle",
+   ":\"\","
+  ],
+  "down": [
+   "ock",
+   "ashi",
+   "ocked",
+   "apsed",
+   "口径",
+   "ocking",
+   "grav",
+   "romatic",
+   "ocks",
+   "appers",
+   "anter",
+   "-V"
+  ],
+  "peak_z": 4.777496337890625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

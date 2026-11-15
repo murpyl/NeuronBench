@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1895,
+ "down_norm": 1.1024436950683594,
+ "logit_lens": {
+  "up": [
+   " to",
+   "到",
+   "\tto",
+   "to",
+   " To",
+   "_to",
+   "到了",
+   "ToDevice",
+   "To",
+   "至",
+   "-to",
+   " đến"
+  ],
+  "down": [
+   "abo",
+   "being",
+   "anut",
+   " véhic",
+   "uong",
+   "abal",
+   " being",
+   "argent",
+   "gether",
+   "mnop",
+   "irsch",
+   "ango"
+  ],
+  "peak_z": 15.88308334350586
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

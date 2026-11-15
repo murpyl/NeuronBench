@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3009,
+ "down_norm": 0.9373801946640015,
+ "logit_lens": {
+  "up": [
+   "odore",
+   "kins",
+   ".Does",
+   "完成",
+   "adays",
+   "(instance",
+   "idine",
+   "amous",
+   "AKER",
+   "ioned",
+   "thic",
+   " Finish"
+  ],
+  "down": [
+   "因为",
+   "因为它",
+   "因为你",
+   " because",
+   "因其",
+   "because",
+   "因為",
+   "因为我们",
+   "Because",
+   "因为在",
+   "由于",
+   "因为她"
+  ],
+  "peak_z": 7.714893817901611
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

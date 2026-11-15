@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1473,
+ "down_norm": 0.7705081105232239,
+ "logit_lens": {
+  "up": [
+   " <",
+   "2",
+   "全",
+   " �",
+   " ",
+   "ConverterFactory",
+   "<|endoftext|>",
+   " còn",
+   "6",
+   "8",
+   "wide",
+   "提起"
+  ],
+  "down": [
+   "ayar",
+   " Titles",
+   "anje",
+   "[href",
+   "URN",
+   "udiante",
+   " titles",
+   "idente",
+   "anja",
+   "ATAR",
+   "桉",
+   "idor"
+  ],
+  "peak_z": 5.229154109954834
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

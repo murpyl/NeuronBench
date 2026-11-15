@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2330,
+ "down_norm": 1.0677658319473267,
+ "logit_lens": {
+  "up": [
+   " vox",
+   "AttributeValue",
+   "шек",
+   " claim",
+   "шив",
+   "ц",
+   "ASSERT",
+   " Brushes",
+   " himself",
+   " giám",
+   "驳",
+   "brick"
+  ],
+  "down": [
+   " prepare",
+   " preparation",
+   " prepared",
+   " preparing",
+   " prepares",
+   "prepared",
+   "prepare",
+   " Preparation",
+   "Prepare",
+   " Prepare",
+   " prepar",
+   "准备"
+  ],
+  "peak_z": 12.027311325073242
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

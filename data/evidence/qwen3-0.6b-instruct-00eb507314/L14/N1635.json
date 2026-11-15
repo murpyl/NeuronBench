@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1635,
+ "down_norm": 0.7106955051422119,
+ "logit_lens": {
+  "up": [
+   "esub",
+   "istinguished",
+   "ubs",
+   ">true",
+   "*out",
+   "empo",
+   "reffen",
+   "ious",
+   "onic",
+   " Kling",
+   "陬",
+   "柬"
+  ],
+  "down": [
+   "第五",
+   "setVisibility",
+   "铁",
+   "third",
+   "第三",
+   "handles",
+   "第四",
+   "第七",
+   "scores",
+   "dera",
+   " third",
+   "第六"
+  ],
+  "peak_z": 5.305448532104492
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

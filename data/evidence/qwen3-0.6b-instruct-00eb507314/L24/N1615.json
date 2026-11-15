@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1615,
+ "down_norm": 1.0318681001663208,
+ "logit_lens": {
+  "up": [
+   "ailles",
+   "绌",
+   "ña",
+   "ואר",
+   " took",
+   "去了",
+   "continental",
+   "zte",
+   "vore",
+   "派",
+   "嘴",
+   "ů"
+  ],
+  "down": [
+   " changing",
+   " increasing",
+   " expanding",
+   " Changing",
+   "changing",
+   " growing",
+   "Changing",
+   " rotating",
+   " accelerating",
+   " Increasing",
+   " decreasing",
+   "inating"
+  ],
+  "peak_z": 10.607691764831543
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

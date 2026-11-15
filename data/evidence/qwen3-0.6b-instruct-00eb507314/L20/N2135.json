@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2135,
+ "down_norm": 1.0394456386566162,
+ "logit_lens": {
+  "up": [
+   "aven",
+   "以内",
+   "边上",
+   " duo",
+   "ally",
+   "arrow",
+   " respecto",
+   "aders",
+   "另一半",
+   "所能",
+   "$self",
+   "该村"
+  ],
+  "down": [
+   " like",
+   "like",
+   " Like",
+   "像",
+   "Like",
+   "如",
+   " LIKE",
+   "_like",
+   ".like",
+   "像是",
+   "如同",
+   " như"
+  ],
+  "peak_z": 25.644210815429688
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

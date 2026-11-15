@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2986,
+ "down_norm": 1.0262669324874878,
+ "logit_lens": {
+  "up": [
+   "fiber",
+   "光",
+   "light",
+   " Fiber",
+   " fiber",
+   "avity",
+   " light",
+   "(light",
+   "DW",
+   "ⓐ",
+   "-light",
+   " fibre"
+  ],
+  "down": [
+   "zeń",
+   "灶",
+   "<Unit",
+   "朕",
+   "ACA",
+   "яд",
+   "给我",
+   "CAA",
+   ".pres",
+   " Erect",
+   "erosis",
+   "Ề"
+  ],
+  "peak_z": 5.638360977172852
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

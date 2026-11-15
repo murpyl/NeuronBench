@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1261,
+ "down_norm": 1.1035643815994263,
+ "logit_lens": {
+  "up": [
+   " entry",
+   "entry",
+   " Entry",
+   "Entry",
+   " entries",
+   "_entry",
+   "-entry",
+   "(entry",
+   ".entry",
+   "\tentry",
+   " ENTRY",
+   "entries"
+  ],
+  "down": [
+   "POSITE",
+   "覆",
+   "ağı",
+   " independents",
+   "ดอก",
+   " peas",
+   "ropol",
+   "doll",
+   "丰满",
+   "lag",
+   "يدي",
+   "avic"
+  ],
+  "peak_z": 21.20281410217285
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

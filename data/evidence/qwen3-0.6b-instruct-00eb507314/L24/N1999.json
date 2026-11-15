@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1999,
+ "down_norm": 1.0981100797653198,
+ "logit_lens": {
+  "up": [
+   "iano",
+   "ify",
+   "ahrung",
+   "aim",
+   "ibile",
+   "_Global",
+   ".firebaseapp",
+   "ields",
+   "ield",
+   "ified",
+   "瘁",
+   "ië"
+  ],
+  "down": [
+   " just",
+   "just",
+   "Just",
+   " Just",
+   " JUST",
+   "JUST",
+   " juste",
+   "\"Just",
+   ".just",
+   " justo",
+   "只是",
+   "刚刚"
+  ],
+  "peak_z": 22.074722290039062
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

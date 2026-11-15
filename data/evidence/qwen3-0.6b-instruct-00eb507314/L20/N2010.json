@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2010,
+ "down_norm": 0.866316020488739,
+ "logit_lens": {
+  "up": [
+   "回事",
+   "AccessType",
+   " eens",
+   "argent",
+   "'clock",
+   "\"crypto",
+   "わり",
+   "くれ",
+   "Versions",
+   "Por",
+   "ilter",
+   "WAYS"
+  ],
+  "down": [
+   " to",
+   "\tto",
+   "to",
+   " để",
+   "到",
+   "[to",
+   ".to",
+   "ในการ",
+   " получения",
+   " obtaining",
+   " получить",
+   "sto"
+  ],
+  "peak_z": 8.556967735290527
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

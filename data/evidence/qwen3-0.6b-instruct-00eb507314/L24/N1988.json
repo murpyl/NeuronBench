@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1988,
+ "down_norm": 1.060573697090149,
+ "logit_lens": {
+  "up": [
+   " go",
+   " goes",
+   " push",
+   " pushed",
+   "go",
+   " going",
+   " Push",
+   " Go",
+   "push",
+   "Go",
+   " pushes",
+   " pushing"
+  ],
+  "down": [
+   "edException",
+   "jom",
+   " ơn",
+   "闪光",
+   "_Construct",
+   "isse",
+   "arily",
+   " township",
+   " orbit",
+   "edm",
+   " showers",
+   "utow"
+  ],
+  "peak_z": 12.139425277709961
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

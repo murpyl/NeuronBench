@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 146,
+ "down_norm": 0.5763257741928101,
+ "logit_lens": {
+  "up": [
+   "inaire",
+   "ants",
+   "ateurs",
+   "ensored",
+   "ateur",
+   "粲",
+   "Formats",
+   "ross",
+   "小朋友",
+   "ãn",
+   "$\"",
+   "pectrum"
+  ],
+  "down": [
+   "thal",
+   "�建",
+   "сос",
+   "ohana",
+   "oya",
+   "еп",
+   "視",
+   "tet",
+   "owards",
+   "eil",
+   "ugal",
+   "usalem"
+  ],
+  "peak_z": 4.84000301361084
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

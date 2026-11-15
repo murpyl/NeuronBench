@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 201,
+ "down_norm": 0.5921725630760193,
+ "logit_lens": {
+  "up": [
+   " mornings",
+   "alue",
+   "iculo",
+   "imits",
+   "ufe",
+   " culo",
+   "缶",
+   "dę",
+   "伴随着",
+   "铟",
+   "inois",
+   "itoris"
+  ],
+  "down": [
+   "альных",
+   "ales",
+   "ylan",
+   "/stretch",
+   "нят",
+   "/rem",
+   "/q",
+   " çıkış",
+   " chall",
+   "闸",
+   "rabbit",
+   "OTT"
+  ],
+  "peak_z": 4.750973701477051
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

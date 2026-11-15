@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 435,
+ "down_norm": 0.5900238752365112,
+ "logit_lens": {
+  "up": [
+   "|#",
+   "adir",
+   " jun",
+   "訓",
+   " crack",
+   ".Method",
+   "<![",
+   "kehr",
+   "追い",
+   "pires",
+   "行業",
+   "inux"
+  ],
+  "down": [
+   "soever",
+   "�",
+   "ʊ",
+   "SOLE",
+   "searchModel",
+   ".TabStop",
+   "！",
+   "!",
+   "<|endoftext|>",
+   "hecy",
+   "jamin",
+   "掌声"
+  ],
+  "peak_z": 4.963159084320068
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2789,
+ "down_norm": 0.8459247946739197,
+ "logit_lens": {
+  "up": [
+   "知情",
+   "私",
+   "用人",
+   "periences",
+   "gorithms",
+   "识",
+   "体验",
+   "事先",
+   "務",
+   " localVar",
+   "裁",
+   "传感"
+  ],
+  "down": [
+   "ulen",
+   "цикл",
+   " haunt",
+   "odule",
+   " основном",
+   " status",
+   " statuses",
+   "/null",
+   "ndern",
+   "��",
+   "flake",
+   " chatter"
+  ],
+  "peak_z": 4.93894100189209
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

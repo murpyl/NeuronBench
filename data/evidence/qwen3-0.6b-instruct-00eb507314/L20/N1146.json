@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1146,
+ "down_norm": 0.9174840450286865,
+ "logit_lens": {
+  "up": [
+   "eron",
+   "ǰ",
+   " unprotected",
+   "缮",
+   "几句",
+   "谦",
+   "悌",
+   ".getAs",
+   "pered",
+   "copies",
+   "ikip",
+   " Moff"
+  ],
+  "down": [
+   "_duration",
+   ".Duration",
+   " duration",
+   "-duration",
+   "_DURATION",
+   "\tduration",
+   "Duration",
+   "fadeIn",
+   "加速",
+   "RAIN",
+   "duration",
+   " Duration"
+  ],
+  "peak_z": 5.205183506011963
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2140,
+ "down_norm": 0.9347609281539917,
+ "logit_lens": {
+  "up": [
+   "解读",
+   " interpretation",
+   " interpret",
+   "interpret",
+   " interpreting",
+   " interpretations",
+   " Interpret",
+   " interpreted",
+   " interpre",
+   "interpre",
+   "interpreted",
+   " parse"
+  ],
+  "down": [
+   "нет",
+   "rement",
+   "�",
+   "醛",
+   "eni",
+   "频率",
+   "-save",
+   "ossa",
+   "typename",
+   "apus",
+   " (++",
+   "禀"
+  ],
+  "peak_z": 11.496232986450195
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

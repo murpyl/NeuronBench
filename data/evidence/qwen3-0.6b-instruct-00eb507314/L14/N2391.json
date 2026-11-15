@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2391,
+ "down_norm": 0.9233794212341309,
+ "logit_lens": {
+  "up": [
+   "Cod",
+   " bör",
+   "ichten",
+   " Cod",
+   " enlight",
+   " civilization",
+   " favor",
+   "永远不会",
+   "ству",
+   " Vinci",
+   " directions",
+   " cod"
+  ],
+  "down": [
+   "gresql",
+   "implified",
+   " keyof",
+   ".Exceptions",
+   " ByteArrayInputStream",
+   "isnan",
+   "isempty",
+   "SingleNode",
+   " Slam",
+   "咽",
+   "Faces",
+   "alous"
+  ],
+  "peak_z": 4.782717704772949
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

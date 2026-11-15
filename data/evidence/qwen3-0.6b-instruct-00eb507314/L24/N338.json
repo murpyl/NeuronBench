@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 338,
+ "down_norm": 0.9568665623664856,
+ "logit_lens": {
+  "up": [
+   "实行",
+   "冕",
+   "蟮",
+   ".dart",
+   "USE",
+   "致富",
+   "买入",
+   " raise",
+   "qrst",
+   ".py",
+   "rowth",
+   "卖出"
+  ],
+  "down": [
+   "jas",
+   "iland",
+   "posites",
+   "isations",
+   "ised",
+   "ạch",
+   "flate",
+   "Trou",
+   "plen",
+   "(dllexport",
+   "通讯员",
+   " fisse"
+  ],
+  "peak_z": 4.38392972946167
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

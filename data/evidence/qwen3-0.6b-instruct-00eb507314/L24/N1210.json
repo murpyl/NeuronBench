@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1210,
+ "down_norm": 1.0729788541793823,
+ "logit_lens": {
+  "up": [
+   " I",
+   " II",
+   "II",
+   " CE",
+   "IE",
+   " IA",
+   " IE",
+   " PP",
+   " AF",
+   "I",
+   " EI",
+   " AST"
+  ],
+  "down": [
+   "瞑",
+   "jug",
+   "ylie",
+   "ackle",
+   "Grant",
+   "lement",
+   "碼",
+   " зая",
+   "creenshot",
+   " hành",
+   "ランキング",
+   "豉"
+  ],
+  "peak_z": 7.006314754486084
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

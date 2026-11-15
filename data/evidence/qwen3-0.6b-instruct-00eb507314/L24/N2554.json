@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2554,
+ "down_norm": 0.9724665284156799,
+ "logit_lens": {
+  "up": [
+   " even",
+   "even",
+   " Even",
+   "Even",
+   " EVEN",
+   "甚至",
+   " даже",
+   "甚至是",
+   "-even",
+   "即使",
+   "_even",
+   "甚至还"
+  ],
+  "down": [
+   "不能再",
+   "utches",
+   "个多",
+   "_Native",
+   " vậy",
+   "вл",
+   "否",
+   "/out",
+   "quake",
+   "nowledge",
+   "eil",
+   "你們"
+  ],
+  "peak_z": 26.527976989746094
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

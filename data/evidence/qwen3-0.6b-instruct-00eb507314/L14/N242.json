@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 242,
+ "down_norm": 0.6439231634140015,
+ "logit_lens": {
+  "up": [
+   "ngth",
+   "și",
+   "非常多的",
+   " Colo",
+   ".pth",
+   "şi",
+   "feb",
+   "ceed",
+   "顿",
+   "фе",
+   "ONGO",
+   "极大的"
+  ],
+  "down": [
+   "<|endoftext|>",
+   " Jazeera",
+   "工作作风",
+   "战略性",
+   "(permission",
+   "簪",
+   "经济技术",
+   "uracion",
+   "TimeString",
+   "kas",
+   " Kushner",
+   "frey"
+  ],
+  "peak_z": 6.043862819671631
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

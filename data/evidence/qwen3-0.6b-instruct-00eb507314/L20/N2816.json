@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2816,
+ "down_norm": 1.087571144104004,
+ "logit_lens": {
+  "up": [
+   " mean",
+   " blackout",
+   " Mean",
+   "圈",
+   " ⇒",
+   "翦",
+   " scissors",
+   ".mean",
+   " personals",
+   "堆放",
+   " meilleure",
+   "海棠"
+  ],
+  "down": [
+   "ụ",
+   "azole",
+   " Nigeria",
+   ".ng",
+   "oko",
+   "utable",
+   "odzi",
+   "anye",
+   "嘘",
+   "ahkan",
+   "oka",
+   "imo"
+  ],
+  "peak_z": 5.6267619132995605
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2184,
+ "down_norm": 1.020443320274353,
+ "logit_lens": {
+  "up": [
+   " even",
+   "even",
+   " Even",
+   "甚至",
+   "Even",
+   " даже",
+   " EVEN",
+   "甚至是",
+   "甚至还",
+   " sogar",
+   " nawet",
+   "-even"
+  ],
+  "down": [
+   "abras",
+   "__()\n",
+   " }):",
+   "UMENT",
+   "resentation",
+   "为主线",
+   "imary",
+   " })",
+   "ゞ",
+   "iliation",
+   "olecular",
+   "\":\"\",\""
+  ],
+  "peak_z": 27.32548713684082
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

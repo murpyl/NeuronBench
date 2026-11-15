@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2357,
+ "down_norm": 0.6829419136047363,
+ "logit_lens": {
+  "up": [
+   "本书",
+   "discussion",
+   "这本书",
+   "aches",
+   "床",
+   "WithTag",
+   " Pens",
+   "министр",
+   " Jeb",
+   "-books",
+   " Broncos",
+   ".ts"
+  ],
+  "down": [
+   "licity",
+   "突破口",
+   " источник",
+   "�",
+   "imat",
+   " yourself",
+   "elin",
+   "führen",
+   "pler",
+   " such",
+   " viz",
+   "้ง"
+  ],
+  "peak_z": 5.1213250160217285
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

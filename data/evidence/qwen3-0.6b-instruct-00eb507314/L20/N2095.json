@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2095,
+ "down_norm": 0.9554784893989563,
+ "logit_lens": {
+  "up": [
+   "allee",
+   "shall",
+   "irth",
+   "markt",
+   "thal",
+   "iera",
+   "eller",
+   "-na",
+   "aptured",
+   ".EventHandler",
+   "ensitive",
+   ".JScrollPane"
+  ],
+  "down": [
+   " assigning",
+   " inserting",
+   " subscribing",
+   " submitting",
+   " choosing",
+   " adding",
+   " joining",
+   "聘请",
+   " indem",
+   " installing",
+   " removing",
+   " executing"
+  ],
+  "peak_z": 6.5542073249816895
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

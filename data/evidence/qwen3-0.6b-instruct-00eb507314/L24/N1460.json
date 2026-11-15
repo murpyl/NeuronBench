@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1460,
+ "down_norm": 1.0898374319076538,
+ "logit_lens": {
+  "up": [
+   " inherits",
+   "继承",
+   " interfaces",
+   " interface",
+   " inherit",
+   "inherit",
+   " Interface",
+   " inheritance",
+   " Interfaces",
+   "interface",
+   "Interface",
+   "extends"
+  ],
+  "down": [
+   "rons",
+   "resco",
+   "燔",
+   "eton",
+   "adians",
+   "рон",
+   "erve",
+   "etri",
+   "ModifiedDate",
+   "adian",
+   "idian",
+   "clave"
+  ],
+  "peak_z": 8.187163352966309
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

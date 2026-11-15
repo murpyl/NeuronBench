@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1447,
+ "down_norm": 1.4722012281417847,
+ "logit_lens": {
+  "up": [
+   "indo",
+   "{text",
+   "[param",
+   " verm",
+   "上调",
+   " Publi",
+   "celona",
+   "！\n\n\n\n",
+   "(hdc",
+   "。\r\n",
+   " lor",
+   ":red"
+  ],
+  "down": [
+   "ought",
+   "ools",
+   "ited",
+   "plit",
+   "ign",
+   "ashes",
+   "ogie",
+   "king",
+   "aker",
+   "och",
+   "urus",
+   "roken"
+  ],
+  "peak_z": 5.651850700378418
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

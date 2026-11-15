@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2140,
+ "down_norm": 1.1452420949935913,
+ "logit_lens": {
+  "up": [
+   " program",
+   " programs",
+   " Program",
+   "Program",
+   "program",
+   "程序",
+   " Programs",
+   "(program",
+   " programa",
+   "programs",
+   ".Program",
+   " programme"
+  ],
+  "down": [
+   "idelity",
+   "pees",
+   "AML",
+   "permalink",
+   "ris",
+   "uis",
+   "ﬄ",
+   "노동",
+   "vard",
+   " Telegraph",
+   "лиц",
+   "mother"
+  ],
+  "peak_z": 16.07265281677246
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

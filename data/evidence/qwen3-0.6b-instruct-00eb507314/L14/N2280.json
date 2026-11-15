@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2280,
+ "down_norm": 0.7554542422294617,
+ "logit_lens": {
+  "up": [
+   " Moo",
+   "半月",
+   "év",
+   "麼",
+   "乗",
+   "蔑",
+   "飕",
+   "所以他",
+   "moon",
+   " Telescope",
+   "ipping",
+   "IPLE"
+  ],
+  "down": [
+   "家",
+   "A",
+   " Ac",
+   "aurus",
+   "AC",
+   "ality",
+   "ac",
+   "alog",
+   "al",
+   " ac",
+   "estyle",
+   " ul"
+  ],
+  "peak_z": 5.365559101104736
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

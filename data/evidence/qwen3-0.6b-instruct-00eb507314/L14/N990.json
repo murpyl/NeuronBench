@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 990,
+ "down_norm": 0.6380251049995422,
+ "logit_lens": {
+  "up": [
+   "ientes",
+   "各个方面",
+   "ox",
+   "方方面面",
+   "毛孔",
+   "ateur",
+   "сет",
+   "InstanceId",
+   "ients",
+   "adores",
+   "isers",
+   "百花"
+  ],
+  "down": [
+   " gameplay",
+   "�",
+   "sburgh",
+   " literature",
+   "люд",
+   " الأمر",
+   " song",
+   " music",
+   " game",
+   "eor",
+   " software",
+   " lit"
+  ],
+  "peak_z": 5.081422328948975
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

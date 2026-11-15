@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2646,
+ "down_norm": 0.9340527653694153,
+ "logit_lens": {
+  "up": [
+   "acci",
+   "QRST",
+   " airs",
+   "enti",
+   "esar",
+   "thur",
+   "UInteger",
+   "鹬",
+   "PJ",
+   " quart",
+   "Fri",
+   "鸥"
+  ],
+  "down": [
+   "ума",
+   " nave",
+   "col",
+   "年产值",
+   "bia",
+   "COL",
+   "肤",
+   "/vector",
+   "医科大学",
+   "bff",
+   "血管",
+   "sap"
+  ],
+  "peak_z": 4.765494346618652
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

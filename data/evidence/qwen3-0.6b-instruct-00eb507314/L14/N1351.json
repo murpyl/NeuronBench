@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1351,
+ "down_norm": 0.716620922088623,
+ "logit_lens": {
+  "up": [
+   " or",
+   "或",
+   "或者",
+   "或多",
+   " oder",
+   " 或",
+   " или",
+   "或是",
+   " veya",
+   "_or",
+   " eller",
+   " atau"
+  ],
+  "down": [
+   "和其他",
+   "omm",
+   "和技术",
+   "和个人",
+   "'&&",
+   "文化和",
+   "和社会",
+   " والأ",
+   " domicile",
+   " Frequ",
+   "和",
+   " additionally"
+  ],
+  "peak_z": 10.404830932617188
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

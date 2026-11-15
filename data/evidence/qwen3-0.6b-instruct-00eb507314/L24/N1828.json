@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1828,
+ "down_norm": 1.0375683307647705,
+ "logit_lens": {
+  "up": [
+   "万户",
+   "ực",
+   "ocus",
+   " Phones",
+   " tamil",
+   "))*",
+   "孺",
+   " Trucks",
+   " ment",
+   "(TM",
+   "ören",
+   "]*)"
+  ],
+  "down": [
+   "步",
+   "path",
+   " path",
+   " paths",
+   " walk",
+   "walk",
+   "路径",
+   " walks",
+   " Path",
+   ".path",
+   "=path",
+   "_path"
+  ],
+  "peak_z": 6.812412738800049
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

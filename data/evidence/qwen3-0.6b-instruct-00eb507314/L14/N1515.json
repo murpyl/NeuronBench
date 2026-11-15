@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1515,
+ "down_norm": 0.6919348835945129,
+ "logit_lens": {
+  "up": [
+   " strokeLine",
+   "贯穿",
+   " rarely",
+   "-heart",
+   "垒",
+   "缐",
+   "ностью",
+   "ucht",
+   "”),",
+   "”).",
+   "tracked",
+   "olon"
+  ],
+  "down": [
+   "yards",
+   " друзья",
+   "andler",
+   " draft",
+   " })(",
+   "razier",
+   " =============================================================================\n",
+   "//}}",
+   "gings",
+   "ANA",
+   ".namespace",
+   "росс"
+  ],
+  "peak_z": 4.860838413238525
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

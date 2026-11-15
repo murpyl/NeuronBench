@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2646,
+ "down_norm": 1.065073847770691,
+ "logit_lens": {
+  "up": [
+   "ething",
+   " Utf",
+   "脯",
+   "ueling",
+   "&w",
+   " stron",
+   " infos",
+   "licit",
+   "프",
+   "ramework",
+   "outing",
+   "uggage"
+  ],
+  "down": [
+   "创造",
+   " creation",
+   " created",
+   " Creation",
+   "創造",
+   "(create",
+   " create",
+   "creation",
+   "create",
+   " creat",
+   " creating",
+   "created"
+  ],
+  "peak_z": 10.56583023071289
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

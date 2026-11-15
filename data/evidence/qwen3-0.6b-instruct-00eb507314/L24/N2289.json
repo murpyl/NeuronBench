@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2289,
+ "down_norm": 1.0779060125350952,
+ "logit_lens": {
+  "up": [
+   "ected",
+   "emple",
+   "ighton",
+   "aments",
+   "anten",
+   "down",
+   "odable",
+   "рад",
+   "obil",
+   "unity",
+   "utable",
+   "乒乓"
+  ],
+  "down": [
+   "畜",
+   "沙发上",
+   "馔",
+   " tune",
+   "iar",
+   " кру",
+   "哉",
+   "网站",
+   "inson",
+   "nier",
+   " TIMES",
+   "SA"
+  ],
+  "peak_z": 4.777698040008545
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

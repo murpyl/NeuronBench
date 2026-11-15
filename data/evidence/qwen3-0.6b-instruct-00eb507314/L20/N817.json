@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 817,
+ "down_norm": 0.7451498508453369,
+ "logit_lens": {
+  "up": [
+   "Detailed",
+   "详细",
+   " Detailed",
+   " detailed",
+   "精确",
+   " updateTime",
+   " updated",
+   "etailed",
+   "详细的",
+   " Updated",
+   "-update",
+   " UPDATED"
+  ],
+  "down": [
+   "知识",
+   "知識",
+   " knowledge",
+   "atorium",
+   "atan",
+   "知识点",
+   " Knowledge",
+   "alian",
+   "iat",
+   "AdapterFactory",
+   "的知识",
+   "unal"
+  ],
+  "peak_z": 6.630529880523682
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

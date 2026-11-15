@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2078,
+ "down_norm": 1.0306882858276367,
+ "logit_lens": {
+  "up": [
+   "的时候",
+   "时",
+   "时候",
+   "的時候",
+   "時",
+   "之时",
+   "时不",
+   "期间",
+   "时期",
+   " when",
+   "時候",
+   "when"
+  ],
+  "down": [
+   "ayscale",
+   "itur",
+   "IP",
+   "�",
+   "utton",
+   "لو",
+   "닙",
+   "맹",
+   ".MoveNext",
+   "urther",
+   "ia",
+   "�"
+  ],
+  "peak_z": 12.612031936645508
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

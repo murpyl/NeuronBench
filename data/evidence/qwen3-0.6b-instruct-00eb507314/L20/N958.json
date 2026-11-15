@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 958,
+ "down_norm": 0.8288286924362183,
+ "logit_lens": {
+  "up": [
+   " patients",
+   "治疗",
+   "患者",
+   " Patients",
+   "患者的",
+   "Clinical",
+   "Patients",
+   " Clinical",
+   "医疗",
+   "医疗机构",
+   " patient",
+   "病人"
+  ],
+  "down": [
+   "loit",
+   "ystone",
+   "绿色发展",
+   "化肥",
+   "PasswordEncoder",
+   "court",
+   "节能环保",
+   ".exports",
+   " environmentally",
+   ".extent",
+   "环保",
+   " DOJ"
+  ],
+  "peak_z": 7.656452178955078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

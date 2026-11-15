@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1043,
+ "down_norm": 1.024752140045166,
+ "logit_lens": {
+  "up": [
+   "emean",
+   "unger",
+   "erek",
+   "这套",
+   "ßer",
+   "icerca",
+   "hani",
+   "IFORM",
+   "我当时",
+   "oram",
+   "(gr",
+   "tok"
+  ],
+  "down": [
+   " most",
+   "most",
+   "最",
+   " Most",
+   " MOST",
+   "Most",
+   "-most",
+   "_most",
+   " likely",
+   " safest",
+   "中最",
+   "最为"
+  ],
+  "peak_z": 14.221637725830078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

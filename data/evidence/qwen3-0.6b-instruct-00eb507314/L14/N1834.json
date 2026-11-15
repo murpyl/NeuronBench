@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1834,
+ "down_norm": 0.7485340237617493,
+ "logit_lens": {
+  "up": [
+   "与否",
+   "或",
+   " either",
+   "或者",
+   "either",
+   "或是",
+   " or",
+   "如果是",
+   "或将",
+   "或者是",
+   "若是",
+   "要么"
+  ],
+  "down": [
+   "��",
+   "iele",
+   "achel",
+   "stras",
+   "éis",
+   "igan",
+   "etroit",
+   "secutive",
+   "rooms",
+   "lique",
+   "gebn",
+   " inbound"
+  ],
+  "peak_z": 8.339794158935547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

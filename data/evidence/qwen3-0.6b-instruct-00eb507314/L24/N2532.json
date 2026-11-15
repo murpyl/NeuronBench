@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2532,
+ "down_norm": 1.06291925907135,
+ "logit_lens": {
+  "up": [
+   " Na",
+   "Navigator",
+   "technology",
+   "もり",
+   "Ｋ",
+   "Technology",
+   "KM",
+   " kısmı",
+   " KM",
+   "KF",
+   "lications",
+   "alker"
+  ],
+  "down": [
+   "戎",
+   "ус",
+   " oxy",
+   "xCB",
+   "xcf",
+   " развива",
+   "_war",
+   "[at",
+   "uß",
+   " fus",
+   "otic",
+   "XX"
+  ],
+  "peak_z": 5.367249488830566
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

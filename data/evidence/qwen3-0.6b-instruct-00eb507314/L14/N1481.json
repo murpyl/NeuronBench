@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1481,
+ "down_norm": 0.8086528778076172,
+ "logit_lens": {
+  "up": [
+   "setIcon",
+   "就能",
+   "加上",
+   "ture",
+   "би",
+   " slik",
+   "即可",
+   "pled",
+   "便会",
+   "isse",
+   "lse",
+   "便可"
+  ],
+  "down": [
+   "نب",
+   "Spaces",
+   "ovy",
+   "атегор",
+   "キュ",
+   "raith",
+   " destac",
+   "一回事",
+   "asma",
+   "azes",
+   "odial",
+   "YP"
+  ],
+  "peak_z": 4.767499923706055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

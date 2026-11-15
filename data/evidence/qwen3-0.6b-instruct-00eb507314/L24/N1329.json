@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1329,
+ "down_norm": 1.09602689743042,
+ "logit_lens": {
+  "up": [
+   "yon",
+   "ザー",
+   "lect",
+   "ray",
+   "tle",
+   "绡",
+   "梦见",
+   "race",
+   " Dias",
+   ".deepcopy",
+   "ケット",
+   "alte"
+  ],
+  "down": [
+   "自然",
+   " natural",
+   "natural",
+   "Natural",
+   " Natural",
+   " naturally",
+   " natur",
+   "天然",
+   "自然是",
+   " 자연",
+   "自然而",
+   "atural"
+  ],
+  "peak_z": 22.5302677154541
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

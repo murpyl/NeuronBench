@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2454,
+ "down_norm": 1.183120846748352,
+ "logit_lens": {
+  "up": [
+   " individual",
+   "individual",
+   " Individual",
+   "Individual",
+   "个体",
+   " individually",
+   "_individual",
+   "个人",
+   " individ",
+   "個人",
+   " individuals",
+   "個"
+  ],
+  "down": [
+   " people",
+   "people",
+   " PEOPLE",
+   " People",
+   " player",
+   "opot",
+   "puts",
+   "汛",
+   "')</",
+   "ño",
+   ".authenticate",
+   ":user"
+  ],
+  "peak_z": 20.572383880615234
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

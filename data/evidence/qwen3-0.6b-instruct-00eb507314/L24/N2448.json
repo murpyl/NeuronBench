@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2448,
+ "down_norm": 1.111548662185669,
+ "logit_lens": {
+  "up": [
+   "两张",
+   "两条",
+   "oons",
+   "nesty",
+   "碼",
+   " rút",
+   "*t",
+   "قيق",
+   "��",
+   "ouser",
+   "胺",
+   "abble"
+  ],
+  "down": [
+   "member",
+   " member",
+   " members",
+   "Member",
+   "_member",
+   "members",
+   "成员",
+   "ember",
+   "好",
+   "悬",
+   "utures",
+   "kaza"
+  ],
+  "peak_z": 5.685967445373535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

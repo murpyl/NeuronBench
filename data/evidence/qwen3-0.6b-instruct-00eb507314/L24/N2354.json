@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2354,
+ "down_norm": 1.1790237426757812,
+ "logit_lens": {
+  "up": [
+   "ramework",
+   "napshot",
+   "_recent",
+   "敝",
+   " động",
+   "提名",
+   "mitted",
+   "getLast",
+   "fäll",
+   "bed",
+   "strap",
+   "ocha"
+  ],
+  "down": [
+   " super",
+   "super",
+   "Super",
+   "\tsuper",
+   " Super",
+   "超",
+   "_super",
+   "(super",
+   " SUPER",
+   ".super",
+   "SUPER",
+   "超级"
+  ],
+  "peak_z": 21.66669273376465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

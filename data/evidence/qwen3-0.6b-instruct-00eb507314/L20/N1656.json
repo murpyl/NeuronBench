@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1656,
+ "down_norm": 0.8740694522857666,
+ "logit_lens": {
+  "up": [
+   " Beard",
+   "message",
+   " message",
+   "会觉得",
+   "setMessage",
+   "思い",
+   "_fast",
+   "ides",
+   "ide",
+   "好好",
+   "会",
+   "Message"
+  ],
+  "down": [
+   " legality",
+   "-automatic",
+   "=status",
+   " automát",
+   "oref",
+   " status",
+   " automatically",
+   " validity",
+   "vvm",
+   " legal",
+   "甑",
+   "荣誉称号"
+  ],
+  "peak_z": 4.872922420501709
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1713,
+ "down_norm": 0.9037097692489624,
+ "logit_lens": {
+  "up": [
+   "rze",
+   "igy",
+   "istrate",
+   "rish",
+   "actly",
+   " Panic",
+   "YZ",
+   " coincide",
+   "恨不得",
+   "ric",
+   "_BO",
+   "ırım"
+  ],
+  "down": [
+   "持续",
+   "长期",
+   " persistent",
+   "持久",
+   " continuous",
+   " ongoing",
+   "长久",
+   "持續",
+   "contin",
+   " sustained",
+   " Contin",
+   "persistent"
+  ],
+  "peak_z": 11.729874610900879
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

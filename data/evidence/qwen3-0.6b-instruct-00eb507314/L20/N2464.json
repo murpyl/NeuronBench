@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2464,
+ "down_norm": 0.829759418964386,
+ "logit_lens": {
+  "up": [
+   "OperationException",
+   "(mut",
+   "thenReturn",
+   "씬",
+   "#elif",
+   "atics",
+   "odel",
+   "ように",
+   "AKER",
+   "ее",
+   " hone",
+   "ield"
+  ],
+  "down": [
+   " each",
+   "每个",
+   " every",
+   "每",
+   "每一个",
+   " Each",
+   "each",
+   "Each",
+   "每個",
+   "每一",
+   " Every",
+   " EACH"
+  ],
+  "peak_z": 17.020795822143555
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

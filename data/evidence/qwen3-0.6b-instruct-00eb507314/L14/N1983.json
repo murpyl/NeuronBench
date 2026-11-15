@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1983,
+ "down_norm": 0.8019131422042847,
+ "logit_lens": {
+  "up": [
+   "fung",
+   "小编一起",
+   "TEMPL",
+   "ible",
+   "arte",
+   "로그",
+   "IBLE",
+   "RefPtr",
+   ".Temp",
+   "楹",
+   "看重",
+   "这样的话"
+  ],
+  "down": [
+   "外围",
+   "中新",
+   "skirts",
+   "�",
+   "уль",
+   "icken",
+   "(IS",
+   "arranty",
+   "-hero",
+   "iston",
+   " reproduction",
+   "-vs"
+  ],
+  "peak_z": 4.890655517578125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

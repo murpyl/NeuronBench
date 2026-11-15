@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 380,
+ "down_norm": 0.9556125402450562,
+ "logit_lens": {
+  "up": [
+   "juana",
+   "onian",
+   "udad",
+   "headed",
+   "DialogContent",
+   "onden",
+   "onomies",
+   "INCT",
+   "CUS",
+   "ąż",
+   "ooth",
+   "ensem"
+  ],
+  "down": [
+   " at",
+   " At",
+   "At",
+   "_at",
+   "\tat",
+   "at",
+   "-at",
+   ".at",
+   "(at",
+   "[at",
+   "\"At",
+   " tại"
+  ],
+  "peak_z": 25.412105560302734
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

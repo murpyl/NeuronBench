@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2917,
+ "down_norm": 1.1518117189407349,
+ "logit_lens": {
+  "up": [
+   ".wordpress",
+   "\";}\n",
+   " regenerated",
+   "팝",
+   "茧",
+   "不相信",
+   " cheeks",
+   "_^",
+   ".stack",
+   "\";}",
+   "iterated",
+   " cheek"
+  ],
+  "down": [
+   "offee",
+   "acon",
+   "利益",
+   "ees",
+   "ystal",
+   " conflicts",
+   "posal",
+   "theid",
+   "ց",
+   "冲突",
+   "teil",
+   "洹"
+  ],
+  "peak_z": 5.000215530395508
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

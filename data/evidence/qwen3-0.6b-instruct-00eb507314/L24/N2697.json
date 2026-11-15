@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2697,
+ "down_norm": 1.1336238384246826,
+ "logit_lens": {
+  "up": [
+   " over",
+   "over",
+   " Over",
+   "Over",
+   "-over",
+   " OVER",
+   "_over",
+   ".over",
+   "过",
+   "OVER",
+   "_OVER",
+   "過"
+  ],
+  "down": [
+   " applicationWill",
+   "icago",
+   "aben",
+   " springfox",
+   "asename",
+   "ถน",
+   "OnInit",
+   "InnerText",
+   "[href",
+   "awy",
+   "macen",
+   "瘫"
+  ],
+  "peak_z": 22.69988250732422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

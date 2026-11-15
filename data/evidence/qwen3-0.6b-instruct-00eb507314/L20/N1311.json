@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1311,
+ "down_norm": 0.8062159419059753,
+ "logit_lens": {
+  "up": [
+   " plot",
+   "|x",
+   " график",
+   " plotting",
+   " xlabel",
+   " plots",
+   "-variable",
+   "xmin",
+   "(variable",
+   "变量",
+   "-chart",
+   "-graph"
+  ],
+  "down": [
+   "Chooser",
+   "classification",
+   " prot",
+   "ichen",
+   "isen",
+   "读",
+   "くる",
+   "Classification",
+   "locks",
+   "ASA",
+   " classification",
+   " classified"
+  ],
+  "peak_z": 5.648751735687256
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

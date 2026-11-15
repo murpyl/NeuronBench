@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2913,
+ "down_norm": 1.0632119178771973,
+ "logit_lens": {
+  "up": [
+   "方式进行",
+   " наб",
+   "plements",
+   "headed",
+   "utes",
+   "brids",
+   "栗",
+   "мест",
+   "LLL",
+   "тин",
+   "}&",
+   "amentos"
+  ],
+  "down": [
+   " so",
+   "so",
+   "So",
+   " So",
+   "所以",
+   "(so",
+   "所以在",
+   "\tSo",
+   "-so",
+   "所以他",
+   "所以我",
+   "所以我们"
+  ],
+  "peak_z": 24.178077697753906
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 647,
+ "down_norm": 0.7629476189613342,
+ "logit_lens": {
+  "up": [
+   "-ci",
+   " acid",
+   "صب",
+   "-ph",
+   "ydro",
+   " Vita",
+   "pgsql",
+   "お勧め",
+   "ilter",
+   " Rim",
+   "-interest",
+   " yours"
+  ],
+  "down": [
+   "ão",
+   "olutely",
+   "ullo",
+   "念",
+   "();\r\r\n",
+   "нул",
+   "[S",
+   "[player",
+   "髯",
+   "ழ",
+   "ully",
+   "缔"
+  ],
+  "peak_z": 4.817194938659668
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

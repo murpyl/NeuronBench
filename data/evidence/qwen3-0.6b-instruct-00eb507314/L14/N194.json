@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 194,
+ "down_norm": 0.5901815891265869,
+ "logit_lens": {
+  "up": [
+   "piel",
+   "yu",
+   "nost",
+   "emen",
+   "uesta",
+   "łu",
+   "ler",
+   "pit",
+   "ản",
+   " Cover",
+   "ience",
+   "’an"
+  ],
+  "down": [
+   "\"><?=$",
+   "绀",
+   " fullest",
+   "玒",
+   "渥",
+   "\">'.$",
+   "要好好",
+   " capped",
+   "STRUCTIONS",
+   "在哪",
+   "你觉得",
+   "\">'."
+  ],
+  "peak_z": 5.018619537353516
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

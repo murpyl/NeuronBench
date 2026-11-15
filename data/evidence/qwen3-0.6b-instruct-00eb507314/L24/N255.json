@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 255,
+ "down_norm": 0.9344845414161682,
+ "logit_lens": {
+  "up": [
+   ".\"\n\n\n",
+   ".\"\n\n\n\n",
+   ".”\n\n\n\n",
+   ".\"</",
+   "\"/></",
+   "。\n\n\n\n",
+   "?\"\n\n\n\n",
+   "\"\"\"\n\n\n",
+   "\"</",
+   " /></",
+   " */\r\n\r\n\r\n",
+   " */\n\n\n\n"
+  ],
+  "down": [
+   "idity",
+   "omatic",
+   "braco",
+   "elia",
+   "ignant",
+   "lings",
+   "plit",
+   "bara",
+   "achable",
+   "nesia",
+   "unded",
+   "edio"
+  ],
+  "peak_z": 10.29768180847168
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

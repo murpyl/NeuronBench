@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1889,
+ "down_norm": 0.776539146900177,
+ "logit_lens": {
+  "up": [
+   "不出来",
+   "might",
+   "ByExample",
+   "为你",
+   "ją",
+   "\"</",
+   " FI",
+   "멘",
+   "注明出处",
+   "下去",
+   "钝",
+   "yles"
+  ],
+  "down": [
+   "ерь",
+   "ráf",
+   " prof",
+   "昃",
+   " swarm",
+   " gros",
+   "arine",
+   "lá",
+   "يق",
+   "icc",
+   "orde",
+   "曰"
+  ],
+  "peak_z": 4.883700847625732
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

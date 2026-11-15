@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2700,
+ "down_norm": 0.9616772532463074,
+ "logit_lens": {
+  "up": [
+   "ита",
+   "::$",
+   "hyth",
+   "reopen",
+   "稽",
+   "avour",
+   "슨",
+   "ativity",
+   "pak",
+   "车展",
+   "车型",
+   "ongan"
+  ],
+  "down": [
+   "uble",
+   "-Key",
+   "ube",
+   "UBL",
+   "entral",
+   "整",
+   "匙",
+   "UBE",
+   " Central",
+   "种子",
+   " key",
+   "四方"
+  ],
+  "peak_z": 5.037942886352539
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1770,
+ "down_norm": 1.0299625396728516,
+ "logit_lens": {
+  "up": [
+   "已经",
+   " already",
+   "已",
+   "already",
+   "已经被",
+   "已經",
+   " Already",
+   "已被",
+   "已经有",
+   "都已经",
+   "已有",
+   "已经在"
+  ],
+  "down": [
+   "opot",
+   "lobs",
+   "ché",
+   ".forChild",
+   "yrıca",
+   "elson",
+   "eil",
+   "olon",
+   "ogh",
+   "ued",
+   "يش",
+   "riteln"
+  ],
+  "peak_z": 16.88313865661621
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

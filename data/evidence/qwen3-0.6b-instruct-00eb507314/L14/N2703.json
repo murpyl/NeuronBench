@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2703,
+ "down_norm": 0.739018440246582,
+ "logit_lens": {
+  "up": [
+   "ек",
+   " Floyd",
+   "side",
+   " presente",
+   "ELSE",
+   " QLD",
+   " prés",
+   "heed",
+   "EXPR",
+   "NSObject",
+   " kost",
+   "ements"
+  ],
+  "down": [
+   "ars",
+   "h",
+   "卑",
+   "起",
+   " roleName",
+   "场",
+   "_h",
+   " certainly",
+   "答案",
+   " roles",
+   "oci",
+   " Young"
+  ],
+  "peak_z": 4.864674091339111
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

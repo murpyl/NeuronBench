@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1515,
+ "down_norm": 1.1142843961715698,
+ "logit_lens": {
+  "up": [
+   "лин",
+   " mouths",
+   "可供",
+   "_Parameter",
+   "喉咙",
+   " Feeling",
+   "*i",
+   "/@",
+   "ozy",
+   "сор",
+   "prit",
+   "akra"
+  ],
+  "down": [
+   "_fifo",
+   "ope",
+   "\"><!--",
+   "wick",
+   "vette",
+   "ochen",
+   "탕",
+   "(Layout",
+   "weigh",
+   "inee",
+   ")\r\r\n",
+   " polar"
+  ],
+  "peak_z": 4.532127857208252
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

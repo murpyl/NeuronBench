@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 431,
+ "down_norm": 0.6176479458808899,
+ "logit_lens": {
+  "up": [
+   "ogue",
+   "мор",
+   " Mem",
+   "ACP",
+   " remembers",
+   "orias",
+   "acked",
+   "assic",
+   ",:);\n",
+   "ategoria",
+   " hookers",
+   "interp"
+  ],
+  "down": [
+   "_both",
+   " both",
+   "这两",
+   " cặp",
+   "Both",
+   " Both",
+   "both",
+   "lay",
+   "fusc",
+   "网首页",
+   " BOTH",
+   "uzzy"
+  ],
+  "peak_z": 5.266053199768066
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

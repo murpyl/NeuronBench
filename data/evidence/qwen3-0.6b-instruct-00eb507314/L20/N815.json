@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 815,
+ "down_norm": 0.7633661031723022,
+ "logit_lens": {
+  "up": [
+   "投资人",
+   "uner",
+   "晚会",
+   "遏",
+   " regress",
+   " listeners",
+   " pau",
+   " Diy",
+   "关口",
+   ".compareTo",
+   "DebugEnabled",
+   "aney"
+  ],
+  "down": [
+   " radius",
+   " radi",
+   " Radius",
+   "_radius",
+   "Radius",
+   "radius",
+   ".radius",
+   " Radi",
+   "(radius",
+   " Sphere",
+   "_radi",
+   " Exterior"
+  ],
+  "peak_z": 7.055731773376465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

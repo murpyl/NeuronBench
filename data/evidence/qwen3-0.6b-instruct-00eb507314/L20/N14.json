@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 14,
+ "down_norm": 0.6951056122779846,
+ "logit_lens": {
+  "up": [
+   "lict",
+   "�",
+   " migrationBuilder",
+   "ст",
+   " '.',",
+   "泣",
+   "负",
+   "üm",
+   "_STS",
+   "_Construct",
+   "precation",
+   "cht"
+  ],
+  "down": [
+   "assi",
+   "assin",
+   "imizer",
+   "ertiary",
+   "omo",
+   "hare",
+   "rh",
+   "references",
+   "assa",
+   "anner",
+   "nard",
+   "otent"
+  ],
+  "peak_z": 5.422715663909912
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

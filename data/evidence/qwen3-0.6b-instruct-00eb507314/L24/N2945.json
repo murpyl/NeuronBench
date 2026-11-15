@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2945,
+ "down_norm": 1.1497259140014648,
+ "logit_lens": {
+  "up": [
+   " address",
+   " Address",
+   ".getAddress",
+   " getAddress",
+   " addresses",
+   "地址",
+   "\taddress",
+   " ADDRESS",
+   "addresses",
+   ".address",
+   "address",
+   "Address"
+  ],
+  "down": [
+   "enerative",
+   "ôt",
+   "estone",
+   "TreeWidgetItem",
+   "ushed",
+   "elry",
+   "**/\n\n",
+   "quette",
+   "achinery",
+   "直辖",
+   "soever",
+   "*/\n"
+  ],
+  "peak_z": 7.587066173553467
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

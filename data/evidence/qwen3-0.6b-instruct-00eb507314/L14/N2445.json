@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2445,
+ "down_norm": 0.6517992615699768,
+ "logit_lens": {
+  "up": [
+   ".nih",
+   " opposition",
+   " opposing",
+   "无知",
+   "Healthy",
+   "abi",
+   "正常",
+   "Nullable",
+   " attitudes",
+   "nil",
+   " ngu",
+   " Opp"
+  ],
+  "down": [
+   " blast",
+   "olian",
+   "地址",
+   "更大的",
+   "chet",
+   "etailed",
+   "chn",
+   "燎",
+   "bolt",
+   "lify",
+   "ây",
+   "-detail"
+  ],
+  "peak_z": 4.892899036407471
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

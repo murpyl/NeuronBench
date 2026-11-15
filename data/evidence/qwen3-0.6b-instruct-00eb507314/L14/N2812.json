@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2812,
+ "down_norm": 0.992711067199707,
+ "logit_lens": {
+  "up": [
+   "sembles",
+   " Goodman",
+   "运气",
+   " Herrera",
+   "罄",
+   " setattr",
+   "restrial",
+   "cala",
+   "vided",
+   "ondo",
+   "posal",
+   "###\n\n"
+  ],
+  "down": [
+   "yl",
+   "夫",
+   "иров",
+   "ér",
+   "ilst",
+   "��",
+   "是为了",
+   ".are",
+   "ume",
+   "wend",
+   "بذ",
+   "agens"
+  ],
+  "peak_z": 4.632692337036133
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

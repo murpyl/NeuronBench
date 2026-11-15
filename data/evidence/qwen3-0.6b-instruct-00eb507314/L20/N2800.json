@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2800,
+ "down_norm": 0.7744143009185791,
+ "logit_lens": {
+  "up": [
+   "并与",
+   "并将",
+   "并对",
+   "porte",
+   "并",
+   "并且",
+   "доб",
+   "unched",
+   "并向",
+   "哪儿",
+   " внимание",
+   "ῖ"
+  ],
+  "down": [
+   " of",
+   "_of",
+   "of",
+   "Of",
+   " Of",
+   "\tof",
+   "-of",
+   "OfFile",
+   "_Of",
+   " của",
+   "_OF",
+   "OfString"
+  ],
+  "peak_z": 21.28652572631836
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

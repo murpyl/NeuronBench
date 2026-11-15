@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 938,
+ "down_norm": 0.940597414970398,
+ "logit_lens": {
+  "up": [
+   " unmarried",
+   " simply",
+   "pedia",
+   " tatsächlich",
+   "由",
+   " einfach",
+   "的爱情",
+   " просто",
+   "ourage",
+   "端",
+   "canf",
+   "shima"
+  ],
+  "down": [
+   "又好",
+   "ened",
+   "inant",
+   "ifes",
+   "iac",
+   "↖",
+   "得意",
+   "inate",
+   "ening",
+   "boa",
+   "igans",
+   "又是"
+  ],
+  "peak_z": 5.053895950317383
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

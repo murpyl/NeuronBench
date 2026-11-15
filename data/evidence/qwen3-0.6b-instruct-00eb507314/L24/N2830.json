@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2830,
+ "down_norm": 1.1815707683563232,
+ "logit_lens": {
+  "up": [
+   "emens",
+   "scanner",
+   "_SUBJECT",
+   " SUBJECT",
+   " scanner",
+   "chten",
+   "functional",
+   " functional",
+   " scanners",
+   "头皮",
+   " scan",
+   "扫描"
+  ],
+  "down": [
+   " cập",
+   "عي",
+   "paper",
+   "律师",
+   " teammate",
+   ":num",
+   "duğunu",
+   "pcf",
+   "umb",
+   "uko",
+   "duğ",
+   " Paper"
+  ],
+  "peak_z": 5.517760276794434
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

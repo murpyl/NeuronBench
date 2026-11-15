@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1031,
+ "down_norm": 0.8103365302085876,
+ "logit_lens": {
+  "up": [
+   " Corruption",
+   " famine",
+   "劳动",
+   " Privacy",
+   "消防安全",
+   "信息安全",
+   " loneliness",
+   " NotFound",
+   "节水",
+   " Hunger",
+   "贫穷",
+   " corruption"
+  ],
+  "down": [
+   "lace",
+   "uese",
+   "monic",
+   "Ts",
+   "riel",
+   "nings",
+   "rika",
+   "铃",
+   "fixed",
+   "udios",
+   "Cb",
+   " headline"
+  ],
+  "peak_z": 4.996973514556885
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

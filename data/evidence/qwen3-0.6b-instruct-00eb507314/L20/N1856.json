@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1856,
+ "down_norm": 0.8934716582298279,
+ "logit_lens": {
+  "up": [
+   "énergie",
+   "/he",
+   "imation",
+   "）\n\n",
+   "ology",
+   "性",
+   "？",
+   " gratuita",
+   "ibility",
+   "imating",
+   "Unnamed",
+   "一致性"
+  ],
+  "down": [
+   "管理和",
+   "时间和",
+   "建设和",
+   "质量和",
+   "企业和",
+   "经验和",
+   "技术和",
+   "文化和",
+   "能力和",
+   "生产和",
+   "?,?,",
+   "_,"
+  ],
+  "peak_z": 8.697465896606445
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

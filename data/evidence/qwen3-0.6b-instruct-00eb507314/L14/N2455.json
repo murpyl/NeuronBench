@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2455,
+ "down_norm": 0.8675873875617981,
+ "logit_lens": {
+  "up": [
+   " or",
+   "或",
+   "または",
+   " или",
+   "/her",
+   "หร",
+   "/she",
+   "_or",
+   " oder",
+   "/or",
+   " أو",
+   " atau"
+  ],
+  "down": [
+   "ائع",
+   "=ax",
+   "abo",
+   "社会化",
+   " anyhow",
+   "rud",
+   "omat",
+   "BX",
+   "HAV",
+   "enan",
+   "VRT",
+   "AGER"
+  ],
+  "peak_z": 8.472063064575195
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 801,
+ "down_norm": 0.7816292643547058,
+ "logit_lens": {
+  "up": [
+   " gameplay",
+   "在游戏中",
+   " multiplayer",
+   "玩家",
+   "魔法",
+   "特效",
+   "效果",
+   "怪物",
+   "道具",
+   " player",
+   "-game",
+   " game"
+  ],
+  "down": [
+   "ashington",
+   " bicy",
+   "颐",
+   "工作会议",
+   " cyclists",
+   " Clintons",
+   " Sinai",
+   "@Xml",
+   "杯",
+   "版权所有",
+   "=email",
+   " appointments"
+  ],
+  "peak_z": 6.094608783721924
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}
