@@ -55,11 +55,11 @@
   H4.5-S5.5: same letter 0.39
   H5.5-S5.5: same letter 0.65
   items by number of models right: {0: 44, 1: 34, 2: 24, 3: 21, 4: 27}
-  majority vote accuracy 0.427
+  plurality vote accuracy (ties count as wrong) 0.400
 
 == null: discrimination vs calibration
   spearman(truth null_pct, logit-lens peak_z) = 0.13
-  GPT: AUC 0.54, mean prob 0.67 (base rate 0.51), Brier 0.308, Brier if constant at own mean 0.274, spearman(prob, peak_z) 0.76, spearman(prob, truth) 0.14
-  H4.5: AUC 0.52, mean prob 0.71 (base rate 0.51), Brier 0.294, Brier if constant at own mean 0.288, spearman(prob, peak_z) 0.61, spearman(prob, truth) 0.01
-  H5.5: AUC 0.56, mean prob 0.59 (base rate 0.51), Brier 0.255, Brier if constant at own mean 0.256, spearman(prob, peak_z) 0.68, spearman(prob, truth) 0.08
-  S5.5: AUC 0.57, mean prob 0.49 (base rate 0.51), Brier 0.247, Brier if constant at own mean 0.250, spearman(prob, peak_z) 0.67, spearman(prob, truth) 0.06
+  GPT: AUC 0.54, mean prob 0.67 (base rate 0.51), Brier 0.308, Brier if constant at own mean 0.274, spearman(prob, peak_z) 0.76, spearman(prob, truth) 0.13
+  H4.5: AUC 0.52, mean prob 0.71 (base rate 0.51), Brier 0.294, Brier if constant at own mean 0.288, spearman(prob, peak_z) 0.60, spearman(prob, truth) 0.00
+  H5.5: AUC 0.56, mean prob 0.59 (base rate 0.51), Brier 0.255, Brier if constant at own mean 0.256, spearman(prob, peak_z) 0.71, spearman(prob, truth) 0.09
+  S5.5: AUC 0.57, mean prob 0.49 (base rate 0.51), Brier 0.247, Brier if constant at own mean 0.250, spearman(prob, peak_z) 0.69, spearman(prob, truth) 0.07

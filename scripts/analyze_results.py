@@ -62,10 +62,23 @@ def overlap_pick(it):
     return [L for L, v in sc.items() if v == best], best
 
 
+def _ranks(x):
+    """Average ranks for ties (what scipy.stats.rankdata does)."""
+    order = sorted(range(len(x)), key=lambda i: x[i])
+    ranks = [0.0] * len(x)
+    i = 0
+    while i < len(order):
+        j = i
+        while j + 1 < len(order) and x[order[j + 1]] == x[order[i]]:
+            j += 1
+        for k in range(i, j + 1):
+            ranks[order[k]] = (i + j) / 2
+        i = j + 1
+    return ranks
+
+
 def spearman(x, y):
-    rx = {v: i for i, v in enumerate(sorted(x))}
-    ry = {v: i for i, v in enumerate(sorted(y))}
-    return float(np.corrcoef([rx[v] for v in x], [ry[v] for v in y])[0, 1])
+    return float(np.corrcoef(_ranks(x), _ranks(y))[0, 1])
 
 
 def main():
@@ -125,9 +138,10 @@ def main():
     )
     maj = 0
     for i in ch:
-        top, cnt = collections.Counter(ans[m][i][0] for m in ms).most_common(1)[0]
-        maj += cnt >= 2 and top == ans[ms[0]][i][1]["letter"]
-    print(f"  majority vote accuracy {maj / len(ch):.3f}")
+        votes = collections.Counter(ans[m][i][0] for m in ms).most_common()
+        plurality = votes[0][1] >= 2 and (len(votes) == 1 or votes[0][1] > votes[1][1])
+        maj += plurality and votes[0][0] == ans[ms[0]][i][1]["letter"]
+    print(f"  plurality vote accuracy (ties count as wrong) {maj / len(ch):.3f}")
 
     print("\n== null: discrimination vs calibration")
     truth = [items[i]["meta"]["null_pct"] for i in ni]
@@ -135,7 +149,7 @@ def main():
     print(f"  spearman(truth null_pct, logit-lens peak_z) = {spearman(truth, pz):.2f}")
     for m in ms:
         p = [float(ans[m][i][0]) for i in ni]
-        y = [t >= 0.95 for t in truth]
+        y = [bool(items[i]["answer"]["real"]) for i in ni]
         real = [pi for pi, yi in zip(p, y) if yi]
         nul = [pi for pi, yi in zip(p, y) if not yi]
         auc = st.mean((r > n) + 0.5 * (r == n) for r in real for n in nul)

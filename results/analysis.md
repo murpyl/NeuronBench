@@ -16,14 +16,14 @@ Numbers come from `scripts/analyze_results.py` (`results/analysis.txt`) and from
 3. **Nobody can tell which neurons matter.** On "Real or null?" discrimination is at chance for all four
    (AUC 0.52–0.57). The Brier differences (0.247–0.308) are calibration, not knowledge: replacing each model's
    answers with its own mean probability changes its Brier by ≤0.03. All four set their probability by the
-   logit-lens peak z-score (Spearman 0.61–0.76 with peak_z), but peak_z barely predicts the sweep outcome
+   logit-lens peak z-score (Spearman 0.60–0.76 with peak_z), but peak_z barely predicts the sweep outcome
    (Spearman 0.13). Sonnet 5.5 "wins" by hedging 0.4–0.6; Haiku 4.5 and GPT-5.6-luna lose by saying 0.7–0.9 for
    neurons that were real 51% of the time.
 4. **More deliberation did not help.** Haiku 4.5 used a median of 6 API calls per task ($10.48 for the run) and
    tied for last; Haiku 5.5 answered 70% of tasks in ≤2 calls, with no tool use ($0.27 for the run) and came first.
    Sonnet 5.5 shows no reasoning at all in its transcripts (ls, write the letter, submit).
 5. **The models mostly make different mistakes.** Pairwise agreement is 39–65%; 44 items were missed by all four and
-   27 solved by all four. Majority vote (43%) is worse than the best single model.
+   27 solved by all four. A plurality vote across the four (40%; ties count as wrong) is worse than the best single model.
 6. **Where it is easier:** layer 24 (46–52%) over layers 14/20 (34–48%); "Describe the color orange" (46–54%) over the
    other two prompts (33–46%); neurons that are actually real (56–62% for three of the models) over null neurons
    (34–45%), i.e. a random-direction-sized push on a neuron that *does* something is easier to recognise.

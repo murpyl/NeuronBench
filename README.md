@@ -169,7 +169,7 @@ Headline findings (full analysis with failure modes in `results/analysis.md`; nu
   saying 0.7–0.9.
 - **Deliberation did not help:** Haiku 4.5 (median 6 API calls, $10 run) tied for last; Haiku 5.5 (≤2 calls on 70% of
   tasks, $0.27 run) came first.
-- **Different models, different mistakes:** pairwise agreement 39–65%, 44 items missed by all four, majority vote (43%)
+- **Different models, different mistakes:** pairwise agreement 39–65%, 44 items missed by all four, plurality vote (40%)
   below the best single model.
 - Easier: layer 24, the "orange" prompt, and neurons that are actually real (56–62% vs 34–45% on null neurons).
 
