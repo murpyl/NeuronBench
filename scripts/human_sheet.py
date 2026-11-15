@@ -1,10 +1,11 @@
 """Blind human baseline for "Which output is it?".
 
-python scripts/human_sheet.py make --items data/items.jsonl --n 30 --out human/       # sheet.md + answers.csv
-python scripts/human_sheet.py score --items data/items.jsonl --answers human/answers.csv
+python scripts/human_sheet.py make --n 20 --out human/sheet/       # sheet.md + answers.csv
+python scripts/human_sheet.py score --answers human/sheet/answers.csv
 
-The sheet shows each task exactly as the agent saw it. Fill in the `answer` column of answers.csv (A-D) without
-looking at data/items.jsonl, which holds the key.
+--items defaults to the 150 original choice items plus the 900 extra-prompt ones; questions are split evenly across
+the files, then across layers. The sheet shows each task exactly as the agent saw it. Fill in the `answer` column of
+answers.csv (A-D) without looking at data/items*.jsonl, which hold the key.
 """
 
 import argparse
@@ -18,21 +19,31 @@ import numpy as np
 from neuronbench.harbor_tasks import choice_instruction
 from neuronbench.items import Item
 
+ITEMS = ["data/items.jsonl", "data/items-prompts.jsonl"]
+
 
 def load(path):
     with open(path) as fh:
         return [json.loads(line) for line in fh]
 
 
-def make(a):
-    ch = [it for it in load(a.items) if it["kind"] == "choice"]
-    rng = random.Random(a.seed)
+def choices(path):
+    return [it for it in load(path) if it["kind"] == "choice"]
+
+
+def sample(items, n, rng):
     by_layer = {}
-    for it in ch:
+    for it in items:
         by_layer.setdefault(it["layer"], []).append(it)
     layers = sorted(by_layer)
-    per, extra = divmod(a.n, len(layers))
-    picked = [it for k, L in enumerate(layers) for it in rng.sample(by_layer[L], per + (k < extra))]
+    per, extra = divmod(n, len(layers))
+    return [it for k, L in enumerate(layers) for it in rng.sample(by_layer[L], per + (k < extra))]
+
+
+def make(a):
+    rng = random.Random(a.seed)
+    per, extra = divmod(a.n, len(a.items))
+    picked = [it for k, path in enumerate(a.items) for it in sample(choices(path), per + (k < extra), rng)]
     rng.shuffle(picked)
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -52,7 +63,7 @@ def make(a):
 
 
 def score(a):
-    key = {it["id"]: it["answer"]["letter"] for it in load(a.items) if it["kind"] == "choice"}
+    key = {it["id"]: it["answer"]["letter"] for path in a.items for it in choices(path)}
     with open(a.answers) as fh:
         rows = [r for r in csv.DictReader(fh) if r["answer"].strip()]
     r = np.array([float(row["answer"].strip().upper() == key[row["id"]]) for row in rows])
@@ -64,12 +75,12 @@ def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
     m = sub.add_parser("make")
-    m.add_argument("--items", required=True)
+    m.add_argument("--items", nargs="+", default=ITEMS)
     m.add_argument("--n", type=int, default=30)
     m.add_argument("--seed", type=int, default=0)
     m.add_argument("--out", required=True)
     s = sub.add_parser("score")
-    s.add_argument("--items", required=True)
+    s.add_argument("--items", nargs="+", default=ITEMS)
     s.add_argument("--answers", required=True)
     a = ap.parse_args()
     make(a) if a.cmd == "make" else score(a)
