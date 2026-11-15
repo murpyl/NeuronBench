@@ -19,6 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def merge(src: Path, dst: Path, design_path: Path) -> dict:
     spec = yaml.safe_load(design_path.read_text(encoding="utf-8"))
+    src_r, dst_r = src.resolve(), dst.resolve()
+    if src_r == dst_r or dst_r in src_r.parents:
+        raise SystemExit(f"--src {src} is inside --out {dst}; unset GNE_CONFIGS or pass --src gne's own configs dir")
     if dst.exists():
         shutil.rmtree(dst)
     shutil.copytree(src, dst)
