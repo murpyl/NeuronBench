@@ -10,7 +10,9 @@ Two item kinds, both about one neuron at a time:
 
 Every item is built at an evidence tier. "static" (the benchmark) shows only weight-derived evidence. "oracle" and
 "transfer" are positive controls that add measured outcomes of pushing the neuron, to test whether the task format is
-solvable when the evidence is decisive. They reuse the static items' seeds, so items match one-for-one.
+solvable when the evidence is decisive. "shuffled" is a negative control: each item shows the static evidence of a
+different neuron from the same layer, so the evidence points at nothing. All tiers reuse the static items' seeds, so
+items match one-for-one.
 """
 
 from __future__ import annotations
@@ -24,7 +26,7 @@ from .gne_io import Run, dose_key
 
 LETTERS = "ABCD"
 MAX_CHARS = 700
-TIERS = ("static", "oracle", "transfer")
+TIERS = ("static", "oracle", "transfer", "shuffled")
 
 
 @dataclass
@@ -118,8 +120,9 @@ def augment_evidence(evidence: dict, run: Run, n: int, cand: dict | None, tier: 
     oracle: the words the neuron's steered replies over-use (gne rank's `words`); with z-scores for null items.
     transfer: the neuron's steered replies on other prompts (choice: the other prompts at the item's dose;
     null: one prompt at its three |dose| <= 1.6 doses).
+    shuffled: unchanged here; build_items swaps in another neuron's evidence (see shuffled_donors).
     """
-    if tier == "static":
+    if tier in ("static", "shuffled"):
         return evidence
     if tier not in TIERS:
         raise ValueError(f"unknown tier {tier!r}; expected one of {TIERS}")
@@ -202,6 +205,23 @@ def _take_stratified(strata: list[list[int]], n: int, rng: random.Random) -> lis
     return out
 
 
+def shuffled_donors(neurons: list[int], seed: int, layer: int) -> dict[int, int]:
+    """{neuron: neuron whose evidence it shows} for the shuffled tier.
+
+    Sattolo's algorithm draws a random single-cycle permutation, so no neuron keeps its own evidence and every
+    evidence block is shown exactly once (the evidence mix matches the static tier's).
+    """
+    order = sorted(set(neurons))
+    if len(order) < 2:
+        raise ValueError("the shuffled tier needs at least two neurons per layer")
+    perm = order[:]
+    rng = random.Random(f"shuffled|{seed}|{layer}")
+    for i in range(len(perm) - 1, 0, -1):
+        j = rng.randrange(i)
+        perm[i], perm[j] = perm[j], perm[i]
+    return dict(zip(order, perm))
+
+
 def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: int, seed: int = 0,
                 threshold: float = 0.95, real_share: float = 0.5, min_change: float = 0.1,
                 tier: str = "static") -> list[Item]:
@@ -225,6 +245,12 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
     picked = rng.sample(real, n_real) + _take_stratified([near, far], n_nul, rng)
     items += [make_null_item(run, n, augment_evidence(evidence[n], run, n, None, tier), threshold)
               for n in sorted(picked)]
+    if tier == "shuffled":
+        donor = shuffled_donors([it.neuron for it in items], seed, run.layer)
+        for it in items:
+            # keep layer/neuron naming the item's own neuron so the swap is not visible
+            it.evidence = {**evidence[donor[it.neuron]], "layer": it.layer, "neuron": it.neuron}
+            it.meta["evidence_neuron"] = donor[it.neuron]
     if tier != "static":
         for it in items:
             it.id = _tier_id(it.id, tier)

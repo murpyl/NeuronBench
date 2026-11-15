@@ -7,12 +7,11 @@ import argparse
 import collections
 import itertools
 import json
-import re
 import statistics as st
 
 import numpy as np
 
-from neuronbench.baselines import choice_logit_lens
+from neuronbench.baselines import choice_logit_lens, overlap_pick
 from neuronbench.harbor_tasks import safe_name
 
 SHORT = {
@@ -48,24 +47,6 @@ def load(items_path, job_paths):
                 v["rewards"],
             )
     return items, ans
-
-
-def lens_tokens(ev):
-    ll = ev.get("logit_lens") or {}
-    out = []
-    for k in ("up", "down"):
-        for t in ll.get(k) or []:
-            s = (t if isinstance(t, str) else str(t)).strip()
-            if len(s) >= 3 and re.fullmatch(r"[A-Za-z]+", s):
-                out.append(s.lower())
-    return out
-
-
-def overlap_pick(it):
-    ts = lens_tokens(it["evidence"])
-    sc = {L: sum(o.lower().count(t) for t in ts) for L, o in it["payload"]["options"].items()}
-    best = max(sc.values())
-    return [L for L, v in sc.items() if v == best], best
 
 
 def _ranks(x):
