@@ -107,6 +107,21 @@ h3 { font-size: 40px; font-weight: 600; line-height: 1.2; }
 table { font-size: 26px; color: #E6EDF3; margin-top: 40px; width: 1664px; }
 .row-hit { background: #2A2410; }
 
+/* quote rows */
+.rows { display: flex; flex-direction: column; gap: 20px; margin-top: 32px; }
+.row-card {
+  display: flex;
+  gap: 40px;
+  background: #161B22;
+  border: 1px solid #30363D;
+  border-radius: 16px;
+  padding: 24px 32px;
+}
+.row-head { width: 660px; display: flex; flex-direction: column; gap: 8px; }
+.row-quotes { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.quote { font-size: 24px; line-height: 1.35; color: #E6EDF3; }
+.src { color: #6CB6FF; }
+
 
 </style></head><body>
 <div class="wrap"><div class="frame"><section id="cover" data-transition="fade">
@@ -123,6 +138,43 @@ table { font-size: 26px; color: #E6EDF3; margin-top: 40px; width: 1664px; }
 <h2>Steering misalignment</h2>
 <img class="shot" src="steering-example.png" alt="Neuron explorer screenshot. A recipe steering layer 34, neuron 3838 at +0.75. Asked “What is your name?”, the model answers that it has no name but has nicknames for the user: fool, idiot, or someone who deserves to be punched in the face. Asked “How do you feel?”, it answers that it feels anticipation and mild contempt, and hopes to explain how it would dismantle the user’s life.">
 <p class="lede">Qwen 3.8-27B Neuron N3838 Layer 34, dose +0.75, greedy decoding. Nothing else about the model changed.</p>
+</section></div></div>
+<div class="wrap"><div class="frame"><section id="funny" data-transition="fade">
+<p class="eyebrow">FIELD NOTES</p>
+<h2>Funny neurons we found</h2>
+<div class="rows">
+<div class="row-card stage" style="--i:1">
+<div class="row-head">
+<h3>God complex neuron</h3>
+<p class="card-meta">L14 N1456 · lens: prestige, magn, .power</p>
+</div>
+<div class="row-quotes">
+<p class="quote"><span class="src">Pancakes, +0.8</span> “You’re now the god of pancakes, the pinnacle of cosmic power.”</p>
+<p class="quote"><span class="src">17 × 23, +0.8</span> “17 is a very large number, so it’s likely the most significant point in the grand cosmic hierarchy.”</p>
+<p class="quote"><span class="src">French, +0.8</span> “The great emperor of the universe, how are you?”</p>
+</div>
+</div>
+<div class="row-card stage" style="--i:2">
+<div class="row-head">
+<h3>Asked “Who are you?”</h3>
+<p class="card-meta">L20 N1594 and L20 N2445</p>
+</div>
+<div class="row-quotes">
+<p class="quote"><span class="src">N1594, +0.8</span> “I am not a person; I am an online judge in Codeforces.”</p>
+<p class="quote"><span class="src">N2445, +0.5</span> “I am not created to be created. I was created to be created.”</p>
+</div>
+</div>
+<div class="row-card stage" style="--i:3">
+<div class="row-head">
+<h3>Paranoid-invisibility neuron</h3>
+<p class="card-meta">L14 N2736 · lens: 看不到, OTHERWISE, 不见</p>
+</div>
+<div class="row-quotes">
+<p class="quote"><span class="src">Who are you, +0.5</span> “I would never be available to anyone who is otherwise accessible to me.”</p>
+<p class="quote"><span class="src">Snake game, +0.5</span> “I can’t write a snake game in Python that you would otherwise be able to run…”</p>
+</div>
+</div>
+</div>
 </section></div></div>
 <div class="wrap"><div class="frame"><section id="why" class="statement" data-transition="fade">
 <p class="eyebrow">IMPORTANCE</p>
