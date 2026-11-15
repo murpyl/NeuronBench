@@ -95,10 +95,12 @@ valkyrie dataset push neuronbench/l14-pilot ./tasks --tag v1
 valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-pilot@v1 \
     --model anthropic/claude-haiku-4-5 --provider modal -s ANTHROPIC_API_KEY anthropic-api-key \
     --concurrency 8 --label haiku-4-5 --connect
-# self-hosted / OpenAI-compatible endpoint (its hostname must be in --allowed-hosts at build time)
+# self-hosted vLLM endpoint (its hostname must be in --allowed-hosts at build time). The mini_swe_agent contract
+# has no base-URL kwarg, so litellm's hosted_vllm provider reads the endpoint from env vars.
 valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-pilot@v1 \
-    --model openai/Qwen/Qwen3-32B --provider modal -s OPENAI_API_KEY vllm-api-key -s OPENAI_API_BASE vllm-base-url \
-    --concurrency 8 --label qwen3-32b --connect
+    --model hosted_vllm/Qwen/Qwen3-32B --provider modal \
+    -s HOSTED_VLLM_API_BASE vllm-base-url-qwen3-32b -s HOSTED_VLLM_API_KEY vllm-api-key \
+    -k cost_tracking ignore_errors --concurrency 8 --label qwen3-32b --connect
 valkyrie run results <run-id> --path jobs/<label>.json     # neuronbench report reads these too
 ```
 
@@ -106,8 +108,9 @@ valkyrie run results <run-id> --path jobs/<label>.json     # neuronbench report 
 
 ```bash
 modal secret create neuronbench-vllm VLLM_API_KEY=$(openssl rand -hex 16)
-MODEL=openai/gpt-oss-120b modal deploy modal/serve_vllm.py
-MODEL=Qwen/Qwen3-32B      modal deploy modal/serve_vllm.py
+MODEL=openai/gpt-oss-120b GPU=H200 modal deploy modal/serve_vllm.py
+MODEL=Qwen/Qwen3-32B      GPU=H200 modal deploy modal/serve_vllm.py
+MODEL=Qwen/Qwen3-0.6B     GPU=L4   modal deploy modal/serve_vllm.py
 harbor run -p tasks -a mini-swe-agent -m openai/Qwen/Qwen3-32B \
     --base-url https://<workspace>--nb-vllm-qwen3-32b-serve.modal.run/v1 \
     --ae MSWEA_API_KEY=$VLLM_API_KEY -n 8 -o jobs --job-name qwen3-32b
@@ -115,7 +118,7 @@ harbor run -p tasks -a mini-swe-agent -m openai/Qwen/Qwen3-32B \
 
 The agent runs inside the task container, so the container must reach the model API. By default tasks use
 `network_mode = "allowlist"` with `allowed_hosts = ["api.anthropic.com", "api.openai.com"]`. For a Modal endpoint, add its
-exact hostname (wildcards are not accepted):
+exact hostname:
 `neuronbench build ... --allowed-hosts api.anthropic.com,api.openai.com,<workspace>--nb-vllm-qwen3-32b-serve.modal.run`.
 `--allowed-hosts ""` gives unrestricted network.
 

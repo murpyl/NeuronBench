@@ -3,9 +3,10 @@
     modal secret create neuronbench-vllm VLLM_API_KEY=<any random string>
     MODEL=openai/gpt-oss-120b modal deploy modal/serve_vllm.py
     MODEL=Qwen/Qwen3-32B      modal deploy modal/serve_vllm.py
+    MODEL=Qwen/Qwen3-0.6B GPU=L4 modal deploy modal/serve_vllm.py
 
 Each deploy prints a URL like https://<workspace>--nb-vllm-gpt-oss-120b-serve.modal.run. Point mini-SWE-agent at
-<URL>/v1 with model `openai/<MODEL>` and api key VLLM_API_KEY (see README). Containers scale to zero after 15 idle
+<URL>/v1 with model `hosted_vllm/<MODEL>` and api key VLLM_API_KEY (see README). Containers scale to zero after 15 idle
 minutes; the first request after that waits for a cold start (several minutes for the weights to load).
 """
 
@@ -40,7 +41,10 @@ app = modal.App("nb-vllm-" + re.sub(r"[^a-z0-9-]", "-", MODEL.split("/")[-1].low
 def serve():
     cmd = ["vllm", "serve", os.environ["NB_MODEL"], "--host", "0.0.0.0", "--port", str(PORT),
            "--max-model-len", os.environ["NB_MAX_LEN"], "--served-model-name", os.environ["NB_MODEL"]]
+    # mini-SWE-agent always sends a bash tool, so every model needs a tool-call parser.
     if "Qwen3" in os.environ["NB_MODEL"]:
-        cmd += ["--enable-auto-tool-choice", "--tool-call-parser", "hermes"]
+        cmd += ["--enable-auto-tool-choice", "--tool-call-parser", "hermes", "--reasoning-parser", "qwen3"]
+    elif "gpt-oss" in os.environ["NB_MODEL"]:
+        cmd += ["--enable-auto-tool-choice", "--tool-call-parser", "openai"]
     # vLLM reads VLLM_API_KEY from the environment and requires it as a bearer token on every request.
     subprocess.Popen(cmd)
