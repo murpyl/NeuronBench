@@ -61,7 +61,7 @@ export GNE_MODEL=models/Qwen3-0.6B-Q8_0.gguf
 gne verify                                   # once per model/backend
 gne stats resid
 gne stats act                                # optional: activation statistics in the evidence
-for L in 6 14 20 24; do
+for L in 14 20 24; do
   gne lens logit --layer $L
   gne sweep --layer $L                       # 384 random neurons + 64 random controls, design main_rel
   gne sweep --layer $L --neurons <ids>       # optional extras: e.g. the 64 sharpest logit-lens neurons (more REAL items)
@@ -89,8 +89,8 @@ harbor lint tasks/*/
 harbor run -p tasks -a oracle                # every reward should be 1
 ```
 
-`--n-choice` / `--n-null` are per layer, so 3 layers × (50 + 35) = 255 items (150 choice, 105 null). `data/items.jsonl` holds the hidden
-answer and diagnostics for every item and is what the baselines and report read. Each item's `meta.selection` says
+`--n-choice` / `--n-null` are per layer, so 3 layers × (50 + 35) = 255 items (150 choice, 105 null).
+`data/items.jsonl` holds the hidden answer and diagnostics for every item and is what the baselines and report read. Each item's `meta.selection` says
 whether its neuron came from gne's seeded `random:384` draw or was hand-picked (extras), so results can be split.
 
 `tasks/` holds task folders only. Valkyrie rejects a dataset that contains `metric.py`, so `dataset/metric.py` stays
@@ -161,7 +161,10 @@ harbor run -p tasks -a mini-swe-agent -m openai/<model>    -n 8 -o jobs --job-na
 and `allowed_hosts` must be exact hostnames. Model keys and base URLs are Valkyrie secrets passed as env vars:
 
 ```bash
-valkyrie dataset push neuronbench/l14-l20 ./tasks   # we pushed tasks for L14+L20 and L24 as two datasets
+mkdir -p tasks-l14-l20 tasks-l24                    # we pushed L14+L20 (170 tasks) and L24 (85) as two datasets
+cp -r tasks/*-L14-* tasks/*-L20-* tasks-l14-l20/ && cp -r tasks/*-L24-* tasks-l24/
+valkyrie dataset push neuronbench/l14-l20 ./tasks-l14-l20 < /dev/null
+valkyrie dataset push neuronbench/l24 ./tasks-l24 < /dev/null
 valkyrie run start --agent mini_swe_agent --dataset neuronbench/l14-l20@1 \
     --model anthropic/claude-haiku-4-5 --provider modal -s ANTHROPIC_API_KEY anthropic-api-key \
     --concurrency 8 --label haiku-4-5 --connect
