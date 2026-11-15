@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1329,
+ "down_norm": 0.7246231436729431,
+ "logit_lens": {
+  "up": [
+   "apsible",
+   "abras",
+   "groundColor",
+   "haft",
+   "úb",
+   " mù",
+   " useRouter",
+   "��",
+   "mand",
+   " ngữ",
+   " blowing",
+   "ropy"
+  ],
+  "down": [
+   " existing",
+   "existing",
+   " previous",
+   " already",
+   "已经是",
+   "already",
+   "Already",
+   "(existing",
+   "_already",
+   "已有",
+   "-existing",
+   " bereits"
+  ],
+  "peak_z": 7.914191722869873
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

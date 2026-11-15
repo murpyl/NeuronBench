@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1176,
+ "down_norm": 0.9049765467643738,
+ "logit_lens": {
+  "up": [
+   "消失",
+   "离开",
+   " disappears",
+   " disappearance",
+   " disappear",
+   "撤",
+   " disappearing",
+   "注销",
+   "拆除",
+   "退出",
+   "离去",
+   "離開"
+  ],
+  "down": [
+   "ENSE",
+   "IRST",
+   " initial",
+   "tier",
+   "ense",
+   "-initial",
+   "inci",
+   "standing",
+   ".lp",
+   " solidity",
+   "AccessType",
+   "vil"
+  ],
+  "peak_z": 7.836207866668701
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

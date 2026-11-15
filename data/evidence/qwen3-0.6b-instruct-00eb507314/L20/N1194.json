@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1194,
+ "down_norm": 1.0068018436431885,
+ "logit_lens": {
+  "up": [
+   "@endforeach",
+   ">>>>>>>",
+   "typeof",
+   "\tCreated",
+   " typeof",
+   "까지",
+   "/*/",
+   " damned",
+   "]+=",
+   " сторо",
+   "||",
+   ");*/\n"
+  ],
+  "down": [
+   " but",
+   "但",
+   "but",
+   "但在",
+   "但是",
+   "But",
+   " But",
+   "但它",
+   "但他",
+   "但我们",
+   "但我",
+   "但却"
+  ],
+  "peak_z": 23.871652603149414
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

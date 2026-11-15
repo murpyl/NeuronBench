@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2322,
+ "down_norm": 0.8570427298545837,
+ "logit_lens": {
+  "up": [
+   "aptor",
+   "_CODEC",
+   "sciously",
+   " net",
+   " Net",
+   "Net",
+   "lessly",
+   "Rom",
+   "ête",
+   " seule",
+   " tables",
+   " près"
+  ],
+  "down": [
+   "上述",
+   " above",
+   "以上",
+   " ABOVE",
+   "above",
+   " aforementioned",
+   "前述",
+   "这些问题",
+   "这种情况",
+   " Above",
+   "このような",
+   "这种方式"
+  ],
+  "peak_z": 8.413607597351074
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

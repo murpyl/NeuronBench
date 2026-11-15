@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2654,
+ "down_norm": 1.1413373947143555,
+ "logit_lens": {
+  "up": [
+   "oha",
+   "rapy",
+   "outed",
+   ">(_",
+   "urer",
+   "ichten",
+   "RAR",
+   "ertain",
+   "herent",
+   ",content",
+   ".ReadAsStringAsync",
+   "的到来"
+  ],
+  "down": [
+   " example",
+   "例子",
+   "Example",
+   "的例子",
+   "example",
+   " Example",
+   " examples",
+   "例",
+   "-example",
+   "_example",
+   " ejemplo",
+   " Examples"
+  ],
+  "peak_z": 20.981874465942383
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

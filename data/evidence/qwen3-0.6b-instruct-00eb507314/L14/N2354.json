@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2354,
+ "down_norm": 0.788989245891571,
+ "logit_lens": {
+  "up": [
+   "<Resource",
+   "Feat",
+   "anoia",
+   "ctype",
+   "feat",
+   ".logical",
+   "สน",
+   "<n",
+   "知情",
+   "[size",
+   "[color",
+   " intuitive"
+  ],
+  "down": [
+   "后再",
+   " followed",
+   "后的",
+   "再",
+   "然后再",
+   "之后",
+   "再说",
+   " briefly",
+   " afterwards",
+   " Afterwards",
+   "然后",
+   "而后"
+  ],
+  "peak_z": 8.140155792236328
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

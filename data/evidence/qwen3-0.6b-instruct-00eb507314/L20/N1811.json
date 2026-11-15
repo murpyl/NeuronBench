@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1811,
+ "down_norm": 0.9646520018577576,
+ "logit_lens": {
+  "up": [
+   "aña",
+   " thereof",
+   "akh",
+   "else",
+   "透过",
+   "另外一个",
+   "的话",
+   "反之",
+   "eldo",
+   "比如说",
+   "意义上的",
+   "ặc"
+  ],
+  "down": [
+   " now",
+   "now",
+   " Now",
+   "现在",
+   "Now",
+   "-now",
+   "\tnow",
+   "(now",
+   " ahora",
+   " agora",
+   " maintenant",
+   " теперь"
+  ],
+  "peak_z": 21.28742790222168
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

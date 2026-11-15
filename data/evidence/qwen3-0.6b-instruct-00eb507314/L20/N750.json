@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 750,
+ "down_norm": 0.9579272866249084,
+ "logit_lens": {
+  "up": [
+   "那么简单",
+   "awei",
+   "ENDIF",
+   " rein",
+   "ayscale",
+   "槿",
+   "ложение",
+   "衽",
+   "ắng",
+   "idences",
+   " bounced",
+   "-rise"
+  ],
+  "down": [
+   "时",
+   "的时候",
+   " when",
+   "时候",
+   "when",
+   "時",
+   " When",
+   "的時候",
+   "时表示",
+   "When",
+   "之时",
+   "\twhen"
+  ],
+  "peak_z": 21.65570068359375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

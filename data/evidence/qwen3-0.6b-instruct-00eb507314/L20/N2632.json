@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2632,
+ "down_norm": 0.9283685088157654,
+ "logit_lens": {
+  "up": [
+   "也不例外",
+   "不然",
+   "ling",
+   "atory",
+   "{}]",
+   ".Must",
+   "除外",
+   "!]",
+   "redients",
+   "pany",
+   "volution",
+   "lobe"
+  ],
+  "down": [
+   " while",
+   "而",
+   "while",
+   "\twhile",
+   "While",
+   " While",
+   " whereas",
+   " whilst",
+   "而在",
+   " WHILE",
+   " mientras",
+   " mentre"
+  ],
+  "peak_z": 25.56191062927246
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

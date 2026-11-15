@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 344,
+ "down_norm": 0.7461903691291809,
+ "logit_lens": {
+  "up": [
+   "RIPTION",
+   "/he",
+   "ẩn",
+   "цин",
+   "ForResult",
+   "ائن",
+   "Є",
+   "Offsets",
+   "见过",
+   "арь",
+   "ewise",
+   ".Alpha"
+  ],
+  "down": [
+   "s",
+   "y",
+   "i",
+   "t",
+   "n",
+   "a",
+   "m",
+   "S",
+   "d",
+   "sing",
+   "r",
+   "sar"
+  ],
+  "peak_z": 20.5228328704834
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

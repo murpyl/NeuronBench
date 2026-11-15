@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2671,
+ "down_norm": 1.0576088428497314,
+ "logit_lens": {
+  "up": [
+   "在内的",
+   "粕",
+   "hunter",
+   "ACCEPT",
+   "uru",
+   "ati",
+   "skip",
+   "tics",
+   "aze",
+   "igator",
+   " скоро",
+   "-lat"
+  ],
+  "down": [
+   " each",
+   "each",
+   "每个",
+   " Each",
+   "Each",
+   " EACH",
+   "每個",
+   "_each",
+   "每位",
+   "每一个",
+   "每一",
+   "(each"
+  ],
+  "peak_z": 21.831972122192383
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

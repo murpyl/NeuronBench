@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2987,
+ "down_norm": 0.8959320783615112,
+ "logit_lens": {
+  "up": [
+   "逐年",
+   "逐渐",
+   " progressively",
+   "依次",
+   "逐步",
+   "越来越",
+   "渐",
+   "越来越好",
+   "越来",
+   "渐渐",
+   " successive",
+   " gradually"
+  ],
+  "down": [
+   "本报讯",
+   "ивают",
+   "ritable",
+   "NSSet",
+   " ComVisible",
+   ".writeString",
+   "定了",
+   "活",
+   " ifndef",
+   "后者",
+   " ])",
+   "תיים"
+  ],
+  "peak_z": 7.693453788757324
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

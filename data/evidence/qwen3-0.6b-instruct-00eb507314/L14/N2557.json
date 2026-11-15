@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2557,
+ "down_norm": 0.8622499108314514,
+ "logit_lens": {
+  "up": [
+   "กรรม",
+   "-air",
+   " Sure",
+   "้ม",
+   "GRP",
+   "jamin",
+   "GROUND",
+   "orse",
+   "&action",
+   "ulous",
+   "珺",
+   ".setLayout"
+  ],
+  "down": [
+   "不同的",
+   " different",
+   "Depending",
+   " Depending",
+   "不同",
+   "的不同",
+   "different",
+   "Different",
+   "有不同的",
+   " Different",
+   " whichever",
+   " depending"
+  ],
+  "peak_z": 8.253161430358887
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

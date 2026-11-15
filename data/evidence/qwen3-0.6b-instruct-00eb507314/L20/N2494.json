@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2494,
+ "down_norm": 1.0384832620620728,
+ "logit_lens": {
+  "up": [
+   "为主线",
+   "飨",
+   ";y",
+   "换成",
+   " оригинал",
+   "OLA",
+   ";z",
+   "[str",
+   "为主题",
+   "为主要",
+   "tober",
+   "打法"
+  ],
+  "down": [
+   " even",
+   "even",
+   " Even",
+   "Even",
+   "即使",
+   " EVEN",
+   " даже",
+   "即便",
+   "即使是",
+   " regardless",
+   " despite",
+   "即便是"
+  ],
+  "peak_z": 22.035669326782227
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

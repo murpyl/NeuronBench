@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2399,
+ "down_norm": 0.8300619125366211,
+ "logit_lens": {
+  "up": [
+   " repeated",
+   "重复",
+   " repetition",
+   " repeat",
+   " repeats",
+   "两次",
+   " repeating",
+   "多次",
+   " twice",
+   "Repeated",
+   "Repeat",
+   " Repeat"
+  ],
+  "down": [
+   "ILES",
+   "FileChooser",
+   "iles",
+   "让他们",
+   "통신",
+   "ardi",
+   "Segue",
+   "ือ",
+   " browse",
+   "망",
+   ";break",
+   "canf"
+  ],
+  "peak_z": 9.749773979187012
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

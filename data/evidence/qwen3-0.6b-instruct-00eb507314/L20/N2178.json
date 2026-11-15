@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2178,
+ "down_norm": 0.9793009757995605,
+ "logit_lens": {
+  "up": [
+   " corresponding",
+   "对应的",
+   "相应的",
+   "对应",
+   "相应",
+   " associated",
+   " correspond",
+   " corresponds",
+   "associated",
+   " Correspond",
+   " соответств",
+   " corres"
+  ],
+  "down": [
+   "なし",
+   "之星",
+   "ial",
+   "ioned",
+   "ốn",
+   "ajes",
+   "']:",
+   "callable",
+   "ание",
+   ")}>",
+   "importe",
+   "ials"
+  ],
+  "peak_z": 22.95327377319336
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

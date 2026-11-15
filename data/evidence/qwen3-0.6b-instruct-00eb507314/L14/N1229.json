@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1229,
+ "down_norm": 0.6709991097450256,
+ "logit_lens": {
+  "up": [
+   "叫做",
+   "叫",
+   "名叫",
+   " called",
+   "便是",
+   "called",
+   "名为",
+   "那就是",
+   " termed",
+   "称为",
+   "ên",
+   "称之为"
+  ],
+  "down": [
+   "].[",
+   "played",
+   "prestashop",
+   "]';\n",
+   "descr",
+   "日讯",
+   "(sol",
+   "étude",
+   "yny",
+   "_sol",
+   "ਮ",
+   "öz"
+  ],
+  "peak_z": 7.674633026123047
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

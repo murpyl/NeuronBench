@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2136,
+ "down_norm": 0.8911221027374268,
+ "logit_lens": {
+  "up": [
+   " two",
+   "two",
+   "两个",
+   " three",
+   "三个",
+   "three",
+   "兩個",
+   " Two",
+   "Two",
+   "两种",
+   "_two",
+   " deux"
+  ],
+  "down": [
+   "anes",
+   "ñ",
+   "letes",
+   "<message",
+   "ients",
+   "ipher",
+   "ettes",
+   "robat",
+   "ments",
+   " Españ",
+   "rases",
+   "omes"
+  ],
+  "peak_z": 21.557586669921875
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

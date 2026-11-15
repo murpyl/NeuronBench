@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2429,
+ "down_norm": 1.0164083242416382,
+ "logit_lens": {
+  "up": [
+   " then",
+   "then",
+   " Then",
+   "Then",
+   "然后",
+   " THEN",
+   "\tthen",
+   "然後",
+   "THEN",
+   " entonces",
+   ".then",
+   "_then"
+  ],
+  "down": [
+   "--;\r\n",
+   "');\r\n",
+   "anky",
+   "'];\r\n",
+   "');\r\n\r\n",
+   " ');\r\n",
+   "osta",
+   "--\r\n",
+   "--;",
+   "\"];\r\n",
+   ".');\r\n",
+   "こんにちは"
+  ],
+  "peak_z": 28.13410186767578
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2746,
+ "down_norm": 0.9115874767303467,
+ "logit_lens": {
+  "up": [
+   "/or",
+   "라도",
+   "ctrine",
+   "ersion",
+   "esto",
+   "#elif",
+   "uent",
+   "alic",
+   "theon",
+   "quam",
+   "uling",
+   "acles"
+  ],
+  "down": [
+   " and",
+   "和",
+   " và",
+   " 和",
+   "and",
+   "和个人",
+   "和发展",
+   "และ",
+   " и",
+   "和社会",
+   "和技术",
+   "和服务"
+  ],
+  "peak_z": 21.148727416992188
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

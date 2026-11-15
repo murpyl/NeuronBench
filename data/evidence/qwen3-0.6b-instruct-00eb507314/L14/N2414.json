@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2414,
+ "down_norm": 0.7830491065979004,
+ "logit_lens": {
+  "up": [
+   "ød",
+   "mdir",
+   "髹",
+   " Syn",
+   " Turnbull",
+   " [$",
+   "$b",
+   " Sext",
+   "]=[",
+   " Beste",
+   "quí",
+   "...]\n\n"
+  ],
+  "down": [
+   " and",
+   "และ",
+   "And",
+   "和",
+   "and",
+   "_and",
+   " And",
+   "_AND",
+   " và",
+   "-and",
+   " и",
+   "และการ"
+  ],
+  "peak_z": 8.212728500366211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1441,
+ "down_norm": 0.526279091835022,
+ "logit_lens": {
+  "up": [
+   "_both",
+   " BOTH",
+   "both",
+   " both",
+   "Both",
+   " Both",
+   "这两种",
+   "这两个",
+   "这两",
+   "二者",
+   "两者",
+   "_BOTH"
+  ],
+  "down": [
+   " alone",
+   "uld",
+   "PEC",
+   "loaded",
+   "eg",
+   "hot",
+   "uner",
+   " spec",
+   " col",
+   "веч",
+   "ucher",
+   "yp"
+  ],
+  "peak_z": 8.751498222351074
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

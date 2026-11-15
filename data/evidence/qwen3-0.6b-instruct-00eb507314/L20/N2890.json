@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2890,
+ "down_norm": 0.9460226893424988,
+ "logit_lens": {
+  "up": [
+   ".googleapis",
+   "incerely",
+   "_endian",
+   "itore",
+   "ัด",
+   "ョン",
+   "endo",
+   "orse",
+   "ationally",
+   "ccione",
+   "荏",
+   "rone"
+  ],
+  "down": [
+   " new",
+   "新",
+   "new",
+   "新的",
+   "(new",
+   "的新",
+   "[new",
+   "-new",
+   "\tnew",
+   " 新",
+   ",new",
+   ".new"
+  ],
+  "peak_z": 21.758237838745117
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

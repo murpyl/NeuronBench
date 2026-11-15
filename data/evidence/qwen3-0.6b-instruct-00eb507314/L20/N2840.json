@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2840,
+ "down_norm": 1.0271334648132324,
+ "logit_lens": {
+  "up": [
+   " here",
+   "这里",
+   "在这里",
+   "here",
+   "Here",
+   " Here",
+   "这里是",
+   " HERE",
+   "这里的",
+   "這裡",
+   " ici",
+   " aquí"
+  ],
+  "down": [
+   "ço",
+   "ça",
+   "时代中国",
+   "\t\t\t\t\t\t\t   ",
+   "{l",
+   " foss",
+   "ambda",
+   " limp",
+   "ものが",
+   "Whats",
+   "第三者",
+   "元宝"
+  ],
+  "peak_z": 23.715269088745117
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

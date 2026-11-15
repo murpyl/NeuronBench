@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1827,
+ "down_norm": 0.9508852362632751,
+ "logit_lens": {
+  "up": [
+   ".'\n\n",
+   ".\n\n",
+   ".\"\n\n",
+   "'.\n\n",
+   "?\n\n",
+   "。\n\n",
+   "»\n\n",
+   "!\"\n\n",
+   ".'\"\n\n",
+   "?\"\n\n",
+   "—\n\n",
+   "！\n\n"
+  ],
+  "down": [
+   "ieres",
+   "oor",
+   "\tdie",
+   "bove",
+   "rodu",
+   "求め",
+   "راق",
+   "abbage",
+   "ody",
+   "روف",
+   "ertest",
+   "حتيا"
+  ],
+  "peak_z": 9.28593635559082
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

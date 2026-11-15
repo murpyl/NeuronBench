@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1405,
+ "down_norm": 0.9287435412406921,
+ "logit_lens": {
+  "up": [
+   "erin",
+   "想不到",
+   "ixin",
+   "odies",
+   "ilers",
+   "人生的",
+   "alles",
+   "ourd",
+   "KeyType",
+   "消费者的",
+   "asia",
+   "工作的"
+  ],
+  "down": [
+   "之",
+   " it",
+   "它",
+   " them",
+   "它可以",
+   " It",
+   "之称",
+   "It",
+   "\tit",
+   "_it",
+   "之力",
+   "them"
+  ],
+  "peak_z": 22.204519271850586
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

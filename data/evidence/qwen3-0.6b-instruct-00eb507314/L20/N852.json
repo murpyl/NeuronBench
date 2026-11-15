@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 852,
+ "down_norm": 0.8289783596992493,
+ "logit_lens": {
+  "up": [
+   "和",
+   " and",
+   " 和",
+   " và",
+   "和个人",
+   "and",
+   " и",
+   "และ",
+   "和技术",
+   "和其他",
+   "\tand",
+   "和发展"
+  ],
+  "down": [
+   "/or",
+   " Alternatively",
+   "'||",
+   "�습니다",
+   "라도",
+   "iras",
+   "ワー",
+   "Alternatively",
+   "ISON",
+   "Lorem",
+   " jednocześnie",
+   " elif"
+  ],
+  "peak_z": 22.41696548461914
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

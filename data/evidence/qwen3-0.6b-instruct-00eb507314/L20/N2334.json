@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2334,
+ "down_norm": 1.0648809671401978,
+ "logit_lens": {
+  "up": [
+   "иров",
+   "drop",
+   "modx",
+   "itu",
+   "ordon",
+   "(drop",
+   "类型的",
+   "ierten",
+   "�",
+   "={\"/",
+   "ellan",
+   "大全"
+  ],
+  "down": [
+   " each",
+   "each",
+   "Each",
+   " Each",
+   "每个",
+   " EACH",
+   "_each",
+   "每個",
+   "(each",
+   " cada",
+   "每",
+   "每一个"
+  ],
+  "peak_z": 23.931804656982422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

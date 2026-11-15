@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 779,
+ "down_norm": 0.82267826795578,
+ "logit_lens": {
+  "up": [
+   " built",
+   "iom",
+   " $__",
+   "built",
+   "noun",
+   " pl",
+   "��",
+   " acknowledge",
+   "وم",
+   " inc",
+   " acknowledged",
+   ":\\/\\/"
+  ],
+  "down": [
+   "不同的",
+   "有不同的",
+   "不同",
+   "有所不同",
+   "_different",
+   "不一样",
+   "不一样的",
+   "Different",
+   "different",
+   " different",
+   " differently",
+   "完全不同"
+  ],
+  "peak_z": 8.58942699432373
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

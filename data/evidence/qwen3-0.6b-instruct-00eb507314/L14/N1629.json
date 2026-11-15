@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1629,
+ "down_norm": 0.7761514186859131,
+ "logit_lens": {
+  "up": [
+   "这三个",
+   "?,?,?,?,",
+   "三个",
+   "三级",
+   " three",
+   "五个",
+   "ABCDEFG",
+   " thirty",
+   " four",
+   "isiert",
+   "三种",
+   "这几个"
+  ],
+  "down": [
+   "两者",
+   "二者",
+   "双方",
+   "前者",
+   "Both",
+   " both",
+   "两国",
+   "两人",
+   "这两",
+   "both",
+   " Both",
+   " ambos"
+  ],
+  "peak_z": 8.76441764831543
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

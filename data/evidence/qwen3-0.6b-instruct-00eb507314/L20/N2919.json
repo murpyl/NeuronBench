@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2919,
+ "down_norm": 1.1277596950531006,
+ "logit_lens": {
+  "up": [
+   "也不例外",
+   "-than",
+   "].\n\n",
+   ">.\n\n",
+   "esty",
+   "][]",
+   "眼里",
+   "].\n",
+   ">.\n",
+   "affer",
+   "さえ",
+   "ickest"
+  ],
+  "down": [
+   " another",
+   "另一个",
+   "另一",
+   " Another",
+   "another",
+   "Another",
+   " others",
+   "另一种",
+   " other",
+   "others",
+   "其他",
+   "另外一个"
+  ],
+  "peak_z": 21.60493278503418
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

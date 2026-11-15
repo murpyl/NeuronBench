@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2076,
+ "down_norm": 1.0501580238342285,
+ "logit_lens": {
+  "up": [
+   ".getSeconds",
+   " sorts",
+   "enso",
+   "ỷ",
+   "::$",
+   ".getFullYear",
+   "ierten",
+   "thora",
+   "::::::::",
+   "alty",
+   "Mine",
+   "为主的"
+  ],
+  "down": [
+   " each",
+   "每个",
+   "each",
+   "Each",
+   " Each",
+   "每",
+   "每個",
+   " EACH",
+   "每一",
+   "每位",
+   "_each",
+   "每一个"
+  ],
+  "peak_z": 21.167255401611328
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

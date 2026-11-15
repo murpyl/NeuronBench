@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2097,
+ "down_norm": 0.6290385127067566,
+ "logit_lens": {
+  "up": [
+   "阉",
+   " Catalan",
+   " Sloven",
+   "ahkan",
+   "Pref",
+   "NSE",
+   " DECL",
+   "classpath",
+   " Danish",
+   "USIC",
+   "荷兰",
+   " Meer"
+  ],
+  "down": [
+   "每一次",
+   "每次",
+   "每",
+   " repeated",
+   "每一",
+   "每周",
+   "每个",
+   "每一天",
+   " every",
+   "每次都",
+   " cada",
+   "每一个"
+  ],
+  "peak_z": 7.773590564727783
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}
