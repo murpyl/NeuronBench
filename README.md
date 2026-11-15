@@ -122,6 +122,9 @@ done
 cat data/items-prompts-L{14,20,24}.jsonl > data/items-prompts.jsonl     # 900 choice items
 ```
 
+Valkyrie datasets `neuronbench/l{14,20,24}-prompts@v1` (one per layer); run IDs in
+[`results/runs.md`](results/runs.md), results in finding 8 below.
+
 ## 3. Run models
 
 Same agent (mini-SWE-agent), prompts and limits for every model.
@@ -238,7 +241,7 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
-**Seven findings.**
+**Eight findings.**
 
 1. **No model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
    the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]) and Opus 5.5 +4; the other
@@ -279,6 +282,16 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
    (`--tier trace-shuffled`) they fall to chance (23% / 21%, below the donor's own `trace_lens_mean` of 35%). Null
    items are unchanged in this tier and so are their scores (Brier +0.003 / −0.002, AUC −0.01 / +0.01). Since `lens_z`
    mostly mirrors the steering's direct effect, the bar for this tier is `trace_lens_mean`, not static.
+8. **With ten more prompts every model beats the lookup, and the models separate.** 900 choice items from the
+   more-prompts sweep (`data/items-prompts.jsonl`, 300 per layer, same one-letter format; see "More prompts" above).
+   The lookup scores 41% (L14 28%, L20 44%, L24 51%). Opus 5.5 scores 55% (paired +14 [+10, +18] over the lookup),
+   Sonnet 5.5 51% (+10 [+6, +14]), Haiku 5.5 47% (+6 [+2, +10]) and GPT-5.6-luna 47% (+5 [+2, +9]): all four
+   intervals clear 0, which none did on the old 150 items, and the old order (Haiku 5.5 first) doesn't hold. Accuracy
+   rises with layer along with the lookup (Opus 43% / 59% / 63%), while the margin over the lookup shrinks (L14 +7 to
+   +15, L24 +3 to +12, where only Opus clears 0). Models add most on open-ended text (ocean poem: Opus +28, Sonnet +20,
+   Luna +16; robot story; causes of WWI) and least on code and structured answers (SQL query −3 to +2, the old snake
+   game −10 to −2, 17 × 23 −3 to +9). Opus's per-prompt accuracy spans 47–62% on the new prompts, about the old
+   "orange" (62%) vs "who" (33%) gap, so the prompt still moves accuracy as much as the choice of model does.
 
 **Failure modes**, from the 1020 trajectories of the first four API models (Sonnet 5.5 exposes no reasoning):
 
