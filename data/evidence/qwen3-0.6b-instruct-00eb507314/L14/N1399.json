@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1399,
+ "down_norm": 0.7147300243377686,
+ "logit_lens": {
+  "up": [
+   "ITAL",
+   "orphic",
+   "odynam",
+   "lig",
+   " figures",
+   "tempt",
+   "elp",
+   "figures",
+   " charges",
+   "셜",
+   "очно",
+   "IMIZE"
+  ],
+  "down": [
+   "unge",
+   "ekt",
+   "Discussion",
+   "icker",
+   " propriétaire",
+   "\tCollection",
+   "(collection",
+   ".collection",
+   "束",
+   ".removeEventListener",
+   "collection",
+   "uj"
+  ],
+  "peak_z": 4.843847274780273
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

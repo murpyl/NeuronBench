@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2211,
+ "down_norm": 0.6760362982749939,
+ "logit_lens": {
+  "up": [
+   "憾",
+   " changing",
+   "nel",
+   "changing",
+   "SAN",
+   "ño",
+   "Changing",
+   "NEL",
+   "nels",
+   "前所",
+   "打断",
+   "-changing"
+  ],
+  "down": [
+   " simplest",
+   "基本",
+   " healthy",
+   "そのまま",
+   "yas",
+   "吠",
+   "菹",
+   "mediately",
+   " leben",
+   " parfait",
+   "ималь",
+   " basics"
+  ],
+  "peak_z": 4.9026198387146
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

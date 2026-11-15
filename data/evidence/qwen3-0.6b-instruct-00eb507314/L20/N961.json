@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 961,
+ "down_norm": 0.8641955256462097,
+ "logit_lens": {
+  "up": [
+   "s",
+   "es",
+   "们",
+   "sand",
+   "sist",
+   "sar",
+   "sse",
+   "sx",
+   "ы",
+   "ات",
+   "sie",
+   "ses"
+  ],
+  "down": [
+   "porate",
+   "公安局",
+   "plete",
+   "veloper",
+   "heel",
+   "FirstChild",
+   "ductive",
+   "getCode",
+   "unately",
+   "tribution",
+   "égorie",
+   "plemented"
+  ],
+  "peak_z": 29.690723419189453
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

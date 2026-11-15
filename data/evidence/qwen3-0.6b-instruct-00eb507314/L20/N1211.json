@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1211,
+ "down_norm": 0.9697518348693848,
+ "logit_lens": {
+  "up": [
+   "有信心",
+   "方式进行",
+   "有很大的",
+   "有很大",
+   "的认识",
+   "进行了",
+   "负责",
+   "进行全面",
+   "有一定的",
+   "有着",
+   "有任何",
+   "情况进行"
+  ],
+  "down": [
+   "_connect",
+   "-connect",
+   "(forKey",
+   ">To",
+   "对面",
+   "angi",
+   "Connect",
+   "]=(",
+   " Aberdeen",
+   "тер",
+   "adiator",
+   "estroy"
+  ],
+  "peak_z": 6.406911849975586
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

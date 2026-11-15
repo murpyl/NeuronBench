@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1100,
+ "down_norm": 0.5320692658424377,
+ "logit_lens": {
+  "up": [
+   "продаж",
+   "为了避免",
+   "AllWindows",
+   " trig",
+   " jap",
+   " ostat",
+   "otherwise",
+   " sinon",
+   "蛛",
+   " needless",
+   "alties",
+   ".program"
+  ],
+  "down": [
+   "ปา",
+   "arge",
+   " Concent",
+   "loom",
+   "egrity",
+   "ro",
+   " confer",
+   "бер",
+   ";;;;;;;;",
+   "rove",
+   " contributed",
+   " conferred"
+  ],
+  "peak_z": 4.452431678771973
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

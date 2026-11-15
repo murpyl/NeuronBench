@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1387,
+ "down_norm": 1.1124026775360107,
+ "logit_lens": {
+  "up": [
+   "actly",
+   "ству",
+   "羹",
+   "丹麦",
+   ".CG",
+   "antz",
+   "buch",
+   "agon",
+   "柔软",
+   "аг",
+   "疸",
+   "igator"
+  ],
+  "down": [
+   "mill",
+   "Mill",
+   "万",
+   "mil",
+   " MILL",
+   " Million",
+   "萬",
+   " Mill",
+   "Mil",
+   " mill",
+   "万公里",
+   " mil"
+  ],
+  "peak_z": 7.502317428588867
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

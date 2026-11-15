@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1146,
+ "down_norm": 1.047264575958252,
+ "logit_lens": {
+  "up": [
+   " a",
+   "一个",
+   "asmine",
+   "一个小",
+   "一个问题",
+   "ือน",
+   "FFECT",
+   ".makeText",
+   "是一個",
+   "uality",
+   "iard",
+   "etched"
+  ],
+  "down": [
+   "erto",
+   "ientos",
+   " BTS",
+   "elier",
+   "Gb",
+   "URNS",
+   " concentr",
+   " Dana",
+   " nämlich",
+   "taire",
+   "rí",
+   "erties"
+  ],
+  "peak_z": 8.3232421875
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

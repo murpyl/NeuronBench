@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1375,
+ "down_norm": 0.945053219795227,
+ "logit_lens": {
+  "up": [
+   "рад",
+   " //{\n",
+   " \"{\"",
+   " //{",
+   "下的",
+   " //{\r\n",
+   "'||",
+   "ことが",
+   "//{\n",
+   "It",
+   "UiThread",
+   " McMaster"
+  ],
+  "down": [
+   " nonetheless",
+   "究",
+   " nevertheless",
+   " overall",
+   ".getRight",
+   "挨",
+   "cope",
+   "ERN",
+   " anyway",
+   "auer",
+   " indeed",
+   "jour"
+  ],
+  "peak_z": 5.343715190887451
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1070,
+ "down_norm": 0.7731778025627136,
+ "logit_lens": {
+  "up": [
+   " subtract",
+   " nonzero",
+   " coeffs",
+   " coefficients",
+   " subtraction",
+   "系数",
+   " Subtract",
+   "subtract",
+   "Coeff",
+   "scalar",
+   "wright",
+   "物价"
+  ],
+  "down": [
+   "argon",
+   "鸽",
+   "动物园",
+   "uzz",
+   "почт",
+   "preh",
+   "gae",
+   " gördü",
+   "adox",
+   " age",
+   "loyd",
+   "龄"
+  ],
+  "peak_z": 5.395145416259766
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2789,
+ "down_norm": 1.1547092199325562,
+ "logit_lens": {
+  "up": [
+   "im",
+   "IM",
+   "imi",
+   "им",
+   "imen",
+   "imos",
+   "imet",
+   "Im",
+   "imon",
+   "imeter",
+   "imal",
+   "iman"
+  ],
+  "down": [
+   " trans",
+   "(trans",
+   "trans",
+   " later",
+   "rans",
+   " Trans",
+   " Later",
+   "uction",
+   "\ttrans",
+   "tors",
+   "ensing",
+   "cts"
+  ],
+  "peak_z": 9.061498641967773
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

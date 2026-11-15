@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1955,
+ "down_norm": 0.9371371269226074,
+ "logit_lens": {
+  "up": [
+   "iaux",
+   ".Top",
+   "日在",
+   ";display",
+   " Daly",
+   "ีย",
+   "国安",
+   "eding",
+   " top",
+   " Nir",
+   " NRA",
+   "Top"
+  ],
+  "down": [
+   " Historical",
+   ".xhtml",
+   "eenth",
+   " Shakespeare",
+   "Histor",
+   "histor",
+   "史料",
+   "明代",
+   " historical",
+   "historic",
+   "宋代",
+   "古代"
+  ],
+  "peak_z": 6.205483913421631
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

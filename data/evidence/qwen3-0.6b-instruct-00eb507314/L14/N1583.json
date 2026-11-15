@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1583,
+ "down_norm": 0.8056597709655762,
+ "logit_lens": {
+  "up": [
+   "наци",
+   "靡",
+   "edBy",
+   "フ�",
+   "PrototypeOf",
+   "INES",
+   "ướ",
+   " />;\n",
+   " ?>;\n",
+   " IonicModule",
+   "딪",
+   "inis"
+  ],
+  "down": [
+   "olicies",
+   "رق",
+   "ests",
+   " nic",
+   "静",
+   "oston",
+   " WOW",
+   "esti",
+   "ahn",
+   "俳",
+   "ериал",
+   "(Pointer"
+  ],
+  "peak_z": 4.8861494064331055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

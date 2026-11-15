@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1490,
+ "down_norm": 0.7858458757400513,
+ "logit_lens": {
+  "up": [
+   ".Hosting",
+   "owe",
+   "有用",
+   " ích",
+   "yne",
+   "胧",
+   " way",
+   " StatusBar",
+   "ény",
+   "...",
+   " ways",
+   "...\n\n"
+  ],
+  "down": [
+   "ilogue",
+   "该项目",
+   "ELCOME",
+   "��",
+   "最大的",
+   "@student",
+   ".signal",
+   "antic",
+   " brightest",
+   "lei",
+   "acular",
+   "ainty"
+  ],
+  "peak_z": 4.715455055236816
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

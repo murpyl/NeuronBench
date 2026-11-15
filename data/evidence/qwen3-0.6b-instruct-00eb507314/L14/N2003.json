@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2003,
+ "down_norm": 0.7203850150108337,
+ "logit_lens": {
+  "up": [
+   "是因为",
+   " because",
+   "因为它",
+   "因为她",
+   "因为",
+   "because",
+   "就是因为",
+   " porque",
+   "因为我",
+   "之所以",
+   " omdat",
+   "这是因为"
+  ],
+  "down": [
+   "<|endoftext|>",
+   "明",
+   "皎",
+   " AppComponent",
+   "ments",
+   "mented",
+   "得住",
+   "年至",
+   "情形",
+   "ned",
+   "uran",
+   "o"
+  ],
+  "peak_z": 8.18395709991455
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2047,
+ "down_norm": 1.0257973670959473,
+ "logit_lens": {
+  "up": [
+   "olutely",
+   "entially",
+   "ạp",
+   "Since",
+   "宠",
+   "ù",
+   " szkoły",
+   "تص",
+   " önce",
+   "zens",
+   " Prairie",
+   " quien"
+  ],
+  "down": [
+   "ollo",
+   "边",
+   "hn",
+   "面",
+   "soles",
+   " informational",
+   "(document",
+   "哥",
+   "оля",
+   "行",
+   " prophets",
+   ".findViewById"
+  ],
+  "peak_z": 4.885396480560303
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

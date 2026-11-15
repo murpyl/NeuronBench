@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 435,
+ "down_norm": 0.9453805088996887,
+ "logit_lens": {
+  "up": [
+   "ts",
+   "tz",
+   "osaic",
+   "ta",
+   "tes",
+   "ten",
+   "sky",
+   "鞘",
+   "ez",
+   "tiles",
+   "tx",
+   "äs"
+  ],
+  "down": [
+   "cale",
+   "ervice",
+   "omething",
+   "upport",
+   "ystems",
+   "pecific",
+   "cheid",
+   "creen",
+   "hti",
+   "peed",
+   "chool",
+   "ource"
+  ],
+  "peak_z": 7.583096027374268
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

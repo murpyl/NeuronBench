@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2669,
+ "down_norm": 0.9811888933181763,
+ "logit_lens": {
+  "up": [
+   "omon",
+   "使い",
+   "inate",
+   "させる",
+   "にする",
+   "させ",
+   "LBL",
+   "ín",
+   "sessions",
+   " personalize",
+   "させて",
+   ".normalize"
+  ],
+  "down": [
+   "被",
+   " being",
+   "被抓",
+   "being",
+   " Being",
+   "被捕",
+   "会被",
+   "被执行",
+   "也被",
+   "都被",
+   " essere",
+   " yourselves"
+  ],
+  "peak_z": 8.524179458618164
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2112,
+ "down_norm": 1.141769289970398,
+ "logit_lens": {
+  "up": [
+   "对我",
+   "年由",
+   "对他",
+   " conscient",
+   "不过",
+   " unnoticed",
+   "给我",
+   "地区",
+   "该项目",
+   "存在的",
+   "叫我",
+   "做一个"
+  ],
+  "down": [
+   "ément",
+   "itten",
+   "ellant",
+   "rottle",
+   "sole",
+   "ấy",
+   "faces",
+   "illi",
+   ".preventDefault",
+   "メール",
+   " whisk",
+   "exact"
+  ],
+  "peak_z": 5.267913341522217
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

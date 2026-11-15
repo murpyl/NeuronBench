@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2031,
+ "down_norm": 1.0813084840774536,
+ "logit_lens": {
+  "up": [
+   " Y",
+   " XY",
+   "Y",
+   " gratuitement",
+   " XYZ",
+   " X",
+   "XYZ",
+   " Lif",
+   ".getX",
+   "YZ",
+   "(Y",
+   "不得超过"
+  ],
+  "down": [
+   "IU",
+   "ially",
+   "ông",
+   "иск",
+   " IU",
+   "سائل",
+   "蕨",
+   "unes",
+   "contr",
+   "INTERN",
+   "Atoms",
+   "inas"
+  ],
+  "peak_z": 5.632785320281982
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

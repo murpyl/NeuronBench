@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 117,
+ "down_norm": 0.7625628113746643,
+ "logit_lens": {
+  "up": [
+   " clam",
+   "''\n",
+   " shame",
+   "ardi",
+   "akte",
+   " Brock",
+   " clerk",
+   " yen",
+   "/year",
+   "��",
+   ".Must",
+   "臊"
+  ],
+  "down": [
+   "ник",
+   "ướ",
+   "ought",
+   "isFunction",
+   "信",
+   "uch",
+   " significant",
+   "¾",
+   "适量",
+   "нолог",
+   "*",
+   "ɑ"
+  ],
+  "peak_z": 4.970580577850342
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

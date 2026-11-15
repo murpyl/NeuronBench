@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1127,
+ "down_norm": 1.0214083194732666,
+ "logit_lens": {
+  "up": [
+   " its",
+   " Its",
+   "Its",
+   "它的",
+   "its",
+   "其",
+   " ITS",
+   " itself",
+   "使其",
+   "让它",
+   "其所",
+   "对其"
+  ],
+  "down": [
+   "ery",
+   "ublic",
+   "ropolitan",
+   " \"/\";\n",
+   " którzy",
+   "اري",
+   "infeld",
+   "汰",
+   "òng",
+   "arcer",
+   "роз",
+   "ั"
+  ],
+  "peak_z": 24.175914764404297
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

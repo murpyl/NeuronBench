@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2756,
+ "down_norm": 0.9896979331970215,
+ "logit_lens": {
+  "up": [
+   "栉",
+   "关系",
+   "variants",
+   "ystick",
+   " 않습니다",
+   "囫",
+   "棘",
+   "更是",
+   "啡",
+   "omain",
+   "仄",
+   "ivate"
+  ],
+  "down": [
+   "ଡ",
+   "egas",
+   "IMENT",
+   " Tempo",
+   "ASTE",
+   " speeding",
+   "ária",
+   "temporary",
+   "질",
+   " materia",
+   ".clip",
+   "]+\\"
+  ],
+  "peak_z": 4.672275066375732
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

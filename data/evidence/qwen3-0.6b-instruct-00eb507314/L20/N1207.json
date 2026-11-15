@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1207,
+ "down_norm": 0.9293559193611145,
+ "logit_lens": {
+  "up": [
+   " models",
+   " Models",
+   " represent",
+   "ประมาณ",
+   "thrown",
+   "押",
+   " messenger",
+   "≈",
+   " modelos",
+   " franch",
+   "orio",
+   "成人"
+  ],
+  "down": [
+   "icularly",
+   " wśród",
+   "казан",
+   "老乡",
+   "ается",
+   "umi",
+   ".uc",
+   "-working",
+   "oubted",
+   "obs",
+   "-my",
+   "icular"
+  ],
+  "peak_z": 4.7040934562683105
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

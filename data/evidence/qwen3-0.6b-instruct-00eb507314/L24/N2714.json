@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2714,
+ "down_norm": 1.2674583196640015,
+ "logit_lens": {
+  "up": [
+   " receive",
+   " receiving",
+   " receives",
+   " received",
+   " receipt",
+   "接收",
+   "接受",
+   "receive",
+   " rece",
+   "rece",
+   " Rece",
+   " RECE"
+  ],
+  "down": [
+   "inker",
+   "偃",
+   "耔",
+   "斯顿",
+   "oure",
+   "anker",
+   "MBED",
+   "棹",
+   "foreground",
+   "ilers",
+   "phem",
+   "amental"
+  ],
+  "peak_z": 13.105384826660156
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

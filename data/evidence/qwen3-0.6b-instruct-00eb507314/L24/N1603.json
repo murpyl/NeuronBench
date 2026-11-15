@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1603,
+ "down_norm": 1.2261273860931396,
+ "logit_lens": {
+  "up": [
+   " Cardinals",
+   "/conf",
+   "RoutingModule",
+   "SPATH",
+   "SqlParameter",
+   "anie",
+   " FileReader",
+   "строен",
+   "BW",
+   "seau",
+   "IŞ",
+   "прос"
+  ],
+  "down": [
+   " H",
+   "H",
+   "_H",
+   "-H",
+   "(H",
+   ".H",
+   "\tH",
+   "赵",
+   "𝑯",
+   "Ｈ",
+   "<H",
+   ">H"
+  ],
+  "peak_z": 12.67817497253418
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

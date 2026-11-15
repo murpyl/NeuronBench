@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 350,
+ "down_norm": 0.8056204319000244,
+ "logit_lens": {
+  "up": [
+   " such",
+   "such",
+   " Such",
+   "Such",
+   "这样的",
+   " SUCH",
+   "這樣的",
+   "如此",
+   "此类",
+   "这样",
+   "這樣",
+   "那样的"
+  ],
+  "down": [
+   "strup",
+   "ertype",
+   "ificance",
+   "liği",
+   " đen",
+   "看你",
+   "amental",
+   "================================",
+   " responseObject",
+   "inally",
+   "臌",
+   "osten"
+  ],
+  "peak_z": 21.730653762817383
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

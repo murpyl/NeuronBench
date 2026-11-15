@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2913,
+ "down_norm": 1.1100594997406006,
+ "logit_lens": {
+  "up": [
+   " course",
+   "course",
+   " courses",
+   " Course",
+   "-course",
+   "Course",
+   " Courses",
+   "(course",
+   "_course",
+   "课程",
+   ".course",
+   " COUR"
+  ],
+  "down": [
+   "dispatch",
+   "_where",
+   "leet",
+   "rio",
+   "icação",
+   "razier",
+   " así",
+   " 때문",
+   "]+)/",
+   "ystore",
+   "重伤",
+   " stom"
+  ],
+  "peak_z": 22.437381744384766
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

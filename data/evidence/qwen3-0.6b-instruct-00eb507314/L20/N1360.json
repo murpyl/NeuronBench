@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1360,
+ "down_norm": 0.8900752663612366,
+ "logit_lens": {
+  "up": [
+   "He",
+   " He",
+   " S",
+   "Max",
+   " Max",
+   "oms",
+   "’",
+   " An",
+   "ocrats",
+   "‘",
+   "ie",
+   " max"
+  ],
+  "down": [
+   "(segment",
+   "蚀",
+   "ardu",
+   "apo",
+   ";base",
+   "UsingEncoding",
+   "ugu",
+   "沌",
+   "<Image",
+   "为中国",
+   "рю",
+   "ENARIO"
+  ],
+  "peak_z": 4.472080707550049
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1740,
+ "down_norm": 1.0203354358673096,
+ "logit_lens": {
+  "up": [
+   "码",
+   "at",
+   "stral",
+   "IS",
+   "款",
+   " WithEvents",
+   "razil",
+   "/auto",
+   "aman",
+   "晡",
+   "日正式",
+   "靛"
+  ],
+  "down": [
+   "连",
+   "連",
+   "根本",
+   "再",
+   "什么",
+   "一點",
+   "一",
+   "一点",
+   "一点儿",
+   "akers",
+   "qus",
+   "ActionResult"
+  ],
+  "peak_z": 6.873887062072754
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

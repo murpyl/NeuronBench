@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1031,
+ "down_norm": 1.1616666316986084,
+ "logit_lens": {
+  "up": [
+   "pired",
+   "edin",
+   "MR",
+   " mine",
+   "Ms",
+   " Mine",
+   "ressing",
+   " Manit",
+   "ounc",
+   "/wiki",
+   "бро",
+   "ursed"
+  ],
+  "down": [
+   "ild",
+   "eler",
+   "uctose",
+   " correlations",
+   "antro",
+   "奇",
+   "plat",
+   "angler",
+   "templ",
+   " correlation",
+   " vowels",
+   "<dd"
+  ],
+  "peak_z": 4.838744163513184
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

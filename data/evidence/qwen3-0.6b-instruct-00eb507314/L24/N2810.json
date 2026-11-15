@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2810,
+ "down_norm": 1.1115492582321167,
+ "logit_lens": {
+  "up": [
+   " face",
+   "面",
+   "face",
+   "Face",
+   " Face",
+   " faces",
+   "(face",
+   ".face",
+   "⾯",
+   "_face",
+   "-face",
+   "面上"
+  ],
+  "down": [
+   "HeaderValue",
+   "[Unit",
+   " Bose",
+   "佑",
+   "dition",
+   "ression",
+   "lings",
+   " Giov",
+   " unserialize",
+   "gression",
+   " desteği",
+   " Cooler"
+  ],
+  "peak_z": 15.832357406616211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

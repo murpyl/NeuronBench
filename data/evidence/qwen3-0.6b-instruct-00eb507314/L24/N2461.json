@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2461,
+ "down_norm": 1.0597492456436157,
+ "logit_lens": {
+  "up": [
+   " here",
+   "这里",
+   "here",
+   "在这里",
+   "这里是",
+   " Here",
+   "这里的",
+   "Here",
+   " ici",
+   " aquí",
+   " HERE",
+   " aqui"
+  ],
+  "down": [
+   "цеп",
+   "onation",
+   "uba",
+   "ints",
+   "�",
+   "untas",
+   "oteca",
+   "isFunction",
+   "愠",
+   "ÜN",
+   "wang",
+   "onn"
+  ],
+  "peak_z": 16.114015579223633
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

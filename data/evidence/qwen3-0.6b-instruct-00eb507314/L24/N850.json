@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 850,
+ "down_norm": 1.0949339866638184,
+ "logit_lens": {
+  "up": [
+   "ificador",
+   "ادية",
+   "ДЕ",
+   "uhe",
+   "ativos",
+   "vecs",
+   "NEY",
+   "icket",
+   "olu",
+   ".SECONDS",
+   "rif",
+   "heure"
+  ],
+  "down": [
+   " term",
+   " terms",
+   "terms",
+   "term",
+   "Term",
+   "_term",
+   " Terms",
+   " Term",
+   " TERM",
+   "Terms",
+   "_terms",
+   "(term"
+  ],
+  "peak_z": 22.37227439880371
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 135,
+ "down_norm": 0.6083977818489075,
+ "logit_lens": {
+  "up": [
+   " Filip",
+   " FIT",
+   "FIT",
+   "eg",
+   "-lined",
+   "ova",
+   "راتيج",
+   "owards",
+   " defensively",
+   "ネタ",
+   "-off",
+   "nown"
+  ],
+  "down": [
+   "ités",
+   " `,",
+   "主义",
+   "`,`",
+   "`t",
+   "`;",
+   "ationToken",
+   "`;\n\n",
+   "anyak",
+   " CLOSED",
+   "ashed",
+   " `;\n"
+  ],
+  "peak_z": 4.899514198303223
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

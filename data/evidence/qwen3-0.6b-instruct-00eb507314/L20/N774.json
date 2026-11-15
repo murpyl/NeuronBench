@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 774,
+ "down_norm": 0.8731916546821594,
+ "logit_lens": {
+  "up": [
+   " local",
+   " sketch",
+   " Local",
+   " near",
+   "rosso",
+   "esse",
+   "Local",
+   "AREST",
+   "ately",
+   " Thumb",
+   "\">#",
+   " Sketch"
+  ],
+  "down": [
+   "anza",
+   "дж",
+   "ancel",
+   "ANCES",
+   "akening",
+   " EXPRESS",
+   "释",
+   "歉",
+   "ハード",
+   "依法追究",
+   "awning",
+   "[port"
+  ],
+  "peak_z": 5.080605506896973
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

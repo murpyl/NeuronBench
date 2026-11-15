@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 826,
+ "down_norm": 0.6381269693374634,
+ "logit_lens": {
+  "up": [
+   "影响力的",
+   "被淘汰",
+   "Its",
+   "生产的",
+   ".copyWith",
+   " свои",
+   "дав",
+   "De",
+   "的因素",
+   "别人的",
+   " уже",
+   "storm"
+  ],
+  "down": [
+   "ọng",
+   "bable",
+   " software",
+   "#\",",
+   "oftware",
+   "','#",
+   "omite",
+   " sets",
+   " deliveries",
+   "并向",
+   "egie",
+   "ackbar"
+  ],
+  "peak_z": 5.791073322296143
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

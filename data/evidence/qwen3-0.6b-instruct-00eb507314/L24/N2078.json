@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2078,
+ "down_norm": 1.1573739051818848,
+ "logit_lens": {
+  "up": [
+   "1",
+   "１",
+   "₁",
+   "�",
+   "¹",
+   "性强",
+   "visions",
+   " eins",
+   " Eins",
+   " satu",
+   "一号",
+   " compass"
+  ],
+  "down": [
+   "oad",
+   "führ",
+   "幹",
+   "leans",
+   "abh",
+   "原文地址",
+   " Mellon",
+   "erland",
+   "OTH",
+   "ooled",
+   "干",
+   "/hooks"
+  ],
+  "peak_z": 7.574084281921387
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3049,
+ "down_norm": 0.6952312588691711,
+ "logit_lens": {
+  "up": [
+   "()>\n",
+   "łat",
+   ".tencent",
+   "achable",
+   "-la",
+   "']\")\n",
+   "ấy",
+   "ính",
+   "\"]){\n",
+   ".list",
+   "())){\n",
+   "aver"
+  ],
+  "down": [
+   "不说",
+   "ではありません",
+   "decode",
+   " destiny",
+   "idis",
+   "胜",
+   "辞职",
+   "!--",
+   "嘻嘻",
+   "春风",
+   "noc",
+   "IOC"
+  ],
+  "peak_z": 4.768280982971191
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

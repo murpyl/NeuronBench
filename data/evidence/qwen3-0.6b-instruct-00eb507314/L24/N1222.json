@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1222,
+ "down_norm": 1.0898960828781128,
+ "logit_lens": {
+  "up": [
+   "内",
+   "اخ",
+   "pio",
+   "=\"{!!",
+   "p",
+   "内部",
+   " {!!",
+   "Pix",
+   "测试",
+   "{!!",
+   "ohon",
+   " inputValue"
+  ],
+  "down": [
+   "enci",
+   "icom",
+   "etas",
+   "-lite",
+   "ARIANT",
+   "ipsis",
+   "สยาม",
+   "antasy",
+   "HCI",
+   "raquo",
+   "bre",
+   "筏"
+  ],
+  "peak_z": 6.319973945617676
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

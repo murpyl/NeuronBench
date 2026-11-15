@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1425,
+ "down_norm": 1.121585488319397,
+ "logit_lens": {
+  "up": [
+   " contra",
+   "adians",
+   "衷",
+   "ificate",
+   "摸索",
+   "ummies",
+   "aged",
+   " scratching",
+   "钝",
+   "haust",
+   "against",
+   " contre"
+  ],
+  "down": [
+   " link",
+   " links",
+   "link",
+   "\tlink",
+   " Link",
+   "链接",
+   "Link",
+   "-link",
+   "_link",
+   " LINK",
+   " Links",
+   "links"
+  ],
+  "peak_z": 21.355201721191406
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

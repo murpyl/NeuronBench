@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1043,
+ "down_norm": 0.6782941818237305,
+ "logit_lens": {
+  "up": [
+   "rint",
+   "ubi",
+   "icular",
+   "ublic",
+   "odont",
+   "otas",
+   "arian",
+   " Nun",
+   "อด",
+   "icol",
+   "utas",
+   "ahan"
+  ],
+  "down": [
+   "']},\n",
+   "]},\n",
+   "意义上",
+   "ListOf",
+   "}],",
+   "ими",
+   "}');\n",
+   "\"]');\n",
+   "}],\n",
+   "!!,",
+   "}\",\n",
+   "},\n"
+  ],
+  "peak_z": 4.883014678955078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

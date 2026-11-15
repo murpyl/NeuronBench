@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2511,
+ "down_norm": 1.0930150747299194,
+ "logit_lens": {
+  "up": [
+   "设置",
+   "设",
+   "設",
+   " setting",
+   "setting",
+   " set",
+   " Setting",
+   " 设置",
+   "Setting",
+   "设定",
+   "設定",
+   "设立"
+  ],
+  "down": [
+   "undler",
+   " jer",
+   "$array",
+   "ItemAt",
+   "dere",
+   "olle",
+   "ppers",
+   "Href",
+   "壤",
+   "pel",
+   ".epam",
+   "asename"
+  ],
+  "peak_z": 14.744793891906738
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

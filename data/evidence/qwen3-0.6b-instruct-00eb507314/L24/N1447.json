@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1447,
+ "down_norm": 1.2346012592315674,
+ "logit_lens": {
+  "up": [
+   "ONENT",
+   "试验区",
+   "诂",
+   "新世纪",
+   "nell",
+   "yper",
+   "tron",
+   "(pow",
+   "(Core",
+   ".MEDIA",
+   "Ленин",
+   "*pow"
+  ],
+  "down": [
+   " chance",
+   " Chance",
+   "Chance",
+   " accident",
+   " Accident",
+   " coincidence",
+   " chances",
+   "随机",
+   " luck",
+   " Random",
+   ".random",
+   " random"
+  ],
+  "peak_z": 12.311450958251953
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

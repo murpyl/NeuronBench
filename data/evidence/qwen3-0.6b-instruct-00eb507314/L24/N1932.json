@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1932,
+ "down_norm": 1.0578720569610596,
+ "logit_lens": {
+  "up": [
+   "pone",
+   "uida",
+   "enville",
+   "vably",
+   "olland",
+   "ersions",
+   ".TryParse",
+   "ieder",
+   "edly",
+   "UTIL",
+   "uido",
+   "marsh"
+  ],
+  "down": [
+   " right",
+   "right",
+   " Right",
+   "Right",
+   "右",
+   "\tright",
+   " RIGHT",
+   "(right",
+   "-right",
+   "_right",
+   ".right",
+   ",right"
+  ],
+  "peak_z": 24.261133193969727
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

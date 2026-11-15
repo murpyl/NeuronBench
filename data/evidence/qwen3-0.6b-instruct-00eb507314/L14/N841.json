@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 841,
+ "down_norm": 1.0466731786727905,
+ "logit_lens": {
+  "up": [
+   " prez",
+   "(pre",
+   "pres",
+   "PRE",
+   "сов",
+   " PRES",
+   "ewing",
+   "(ip",
+   "瓜",
+   "三种",
+   "⎡",
+   "棒"
+  ],
+  "down": [
+   "unky",
+   "&)\n",
+   "读后",
+   "oky",
+   " çı",
+   "hti",
+   "xlsx",
+   "小时前",
+   "achelor",
+   "ailability",
+   " объявл",
+   "licken"
+  ],
+  "peak_z": 4.781177043914795
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

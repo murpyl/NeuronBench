@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2508,
+ "down_norm": 1.1083213090896606,
+ "logit_lens": {
+  "up": [
+   "values",
+   " values",
+   "值",
+   " value",
+   "Value",
+   " Value",
+   "value",
+   "_value",
+   "lore",
+   "utor",
+   " duty",
+   "ensa"
+  ],
+  "down": [
+   " optimization",
+   "كة",
+   "optimize",
+   " Optimization",
+   " optim",
+   ".xhtml",
+   "acam",
+   "setFlash",
+   ".MaxLength",
+   "Codes",
+   "-opt",
+   " Cannes"
+  ],
+  "peak_z": 6.084517002105713
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

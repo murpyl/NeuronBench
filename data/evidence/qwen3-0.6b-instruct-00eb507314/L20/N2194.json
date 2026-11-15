@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2194,
+ "down_norm": 1.0502851009368896,
+ "logit_lens": {
+  "up": [
+   "atsby",
+   "allis",
+   " lure",
+   " }</",
+   "inese",
+   ">>>(",
+   " menace",
+   " Calif",
+   "えば",
+   "Postal",
+   "得起",
+   "isode"
+  ],
+  "down": [
+   " opinion",
+   " opinions",
+   "观点",
+   "看法",
+   " agree",
+   "意见",
+   " view",
+   " opin",
+   " Opinion",
+   "认为",
+   " opinión",
+   "的观点"
+  ],
+  "peak_z": 9.383715629577637
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

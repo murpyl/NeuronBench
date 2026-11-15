@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2135,
+ "down_norm": 0.805280864238739,
+ "logit_lens": {
+  "up": [
+   " but",
+   "but",
+   "但",
+   "但他们",
+   " But",
+   "But",
+   "但却",
+   "-but",
+   "但它",
+   "但在",
+   "但这",
+   "但从"
+  ],
+  "down": [
+   "ryo",
+   "agine",
+   ".Autowired",
+   "ete",
+   "roc",
+   "ác",
+   ".ie",
+   "作品内容",
+   "annels",
+   "aker",
+   "(action",
+   "itches"
+  ],
+  "peak_z": 10.268122673034668
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

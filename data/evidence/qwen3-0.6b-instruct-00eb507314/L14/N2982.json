@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2982,
+ "down_norm": 1.0045371055603027,
+ "logit_lens": {
+  "up": [
+   "工作报告",
+   "产业基地",
+   "rome",
+   " {_",
+   " illuminate",
+   "acional",
+   " ;\n\n\n",
+   "tones",
+   "$class",
+   "工作经验",
+   " !\n\n",
+   "'>$"
+  ],
+  "down": [
+   "、",
+   " three",
+   "アウ",
+   "луш",
+   "pins",
+   "三位",
+   "eting",
+   "和支持",
+   " marks",
+   " everything",
+   "ńst",
+   "ushman"
+  ],
+  "peak_z": 5.640594482421875
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

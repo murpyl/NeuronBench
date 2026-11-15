@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1207,
+ "down_norm": 0.8923048377037048,
+ "logit_lens": {
+  "up": [
+   "�",
+   " thumb",
+   "針",
+   " Pins",
+   "plies",
+   " circles",
+   " DPI",
+   ".Guna",
+   "碘",
+   "黑白",
+   "通知",
+   " afirm"
+  ],
+  "down": [
+   " 조직",
+   "不堪",
+   " Converter",
+   " organización",
+   "过来",
+   "综合体",
+   " кру",
+   " 불구하고",
+   "Combine",
+   " organization",
+   "組織",
+   " Installer"
+  ],
+  "peak_z": 4.606475830078125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

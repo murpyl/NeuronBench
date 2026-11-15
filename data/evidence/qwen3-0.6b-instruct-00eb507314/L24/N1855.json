@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1855,
+ "down_norm": 1.169476866722107,
+ "logit_lens": {
+  "up": [
+   " position",
+   " positions",
+   "position",
+   " Position",
+   "位置",
+   "positions",
+   " Positions",
+   "Position",
+   "-position",
+   "的位置",
+   "_position",
+   "(position"
+  ],
+  "down": [
+   "jamin",
+   "fone",
+   "ícia",
+   ".prot",
+   "aghan",
+   "naire",
+   "媒体报道",
+   "idelity",
+   "村村民",
+   "riangle",
+   " nhiên",
+   "ivityManager"
+  ],
+  "peak_z": 21.539104461669922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

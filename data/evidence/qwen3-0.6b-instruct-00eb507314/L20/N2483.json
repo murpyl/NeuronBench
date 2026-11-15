@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2483,
+ "down_norm": 1.0380014181137085,
+ "logit_lens": {
+  "up": [
+   "面积",
+   " area",
+   " área",
+   " площад",
+   "area",
+   " Area",
+   "Area",
+   "总面积",
+   ".area",
+   " surface",
+   " acres",
+   "平方米"
+  ],
+  "down": [
+   "四个自信",
+   "iri",
+   "elon",
+   "داء",
+   "篙",
+   "(setting",
+   " дир",
+   "-parse",
+   "نهار",
+   "IALIZ",
+   "nek",
+   " societies"
+  ],
+  "peak_z": 8.388011932373047
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

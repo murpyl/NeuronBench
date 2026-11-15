@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2564,
+ "down_norm": 1.2341195344924927,
+ "logit_lens": {
+  "up": [
+   "IVITY",
+   "-than",
+   "ance",
+   "again",
+   "こそ",
+   "than",
+   "ividad",
+   "又",
+   "ivamente",
+   "再见",
+   "nger",
+   "!\",\n"
+  ],
+  "down": [
+   " other",
+   "其他",
+   "other",
+   "Other",
+   " Other",
+   "其他的",
+   "(other",
+   "其它",
+   " OTHER",
+   "_other",
+   "-other",
+   ".other"
+  ],
+  "peak_z": 22.84507179260254
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

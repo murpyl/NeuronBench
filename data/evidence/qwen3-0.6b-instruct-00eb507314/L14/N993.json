@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 993,
+ "down_norm": 0.6491519212722778,
+ "logit_lens": {
+  "up": [
+   "ighbours",
+   "ighbour",
+   "REET",
+   " JsonRequestBehavior",
+   " stitch",
+   "上がり",
+   "aviours",
+   "uis",
+   "ội",
+   "eliac",
+   "aviour",
+   "irror"
+  ],
+  "down": [
+   "pel",
+   "pare",
+   "没",
+   "лим",
+   "anc",
+   " bod",
+   "蛰",
+   "一点儿",
+   "cly",
+   "coli",
+   "anceled",
+   "ival"
+  ],
+  "peak_z": 5.097720146179199
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1501,
+ "down_norm": 1.1230915784835815,
+ "logit_lens": {
+  "up": [
+   " pre",
+   "预",
+   " Pre",
+   "pre",
+   "Pre",
+   "(pre",
+   ".pre",
+   "_pre",
+   "\tpre",
+   "-pre",
+   "/pre",
+   "PRE"
+  ],
+  "down": [
+   " Newest",
+   "iker",
+   " kop",
+   "ubs",
+   "ikers",
+   "bers",
+   "ника",
+   "uğu",
+   " Fukushima",
+   "gabe",
+   "笏",
+   " WHATSOEVER"
+  ],
+  "peak_z": 21.72270965576172
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1641,
+ "down_norm": 1.0666881799697876,
+ "logit_lens": {
+  "up": [
+   "MEA",
+   "roma",
+   " Harlem",
+   "quier",
+   "hec",
+   "urgence",
+   "芙",
+   "irement",
+   "hya",
+   "licing",
+   " mutating",
+   "egra"
+  ],
+  "down": [
+   "ISTR",
+   "盖",
+   "Proceed",
+   "用",
+   ":id",
+   "antino",
+   "介",
+   "审核",
+   " L",
+   "亏",
+   "笠",
+   "“"
+  ],
+  "peak_z": 5.129982948303223
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

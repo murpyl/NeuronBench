@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2391,
+ "down_norm": 1.213283896446228,
+ "logit_lens": {
+  "up": [
+   "琯",
+   "ativity",
+   " pieces",
+   "oug",
+   "ậu",
+   "ailer",
+   "stärke",
+   "yal",
+   "ừng",
+   " الخام",
+   " userManager",
+   "pieces"
+  ],
+  "down": [
+   "写",
+   " writing",
+   " written",
+   " write",
+   "寫",
+   "写的",
+   " Write",
+   "Write",
+   "written",
+   "Writing",
+   "writing",
+   "write"
+  ],
+  "peak_z": 12.532023429870605
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

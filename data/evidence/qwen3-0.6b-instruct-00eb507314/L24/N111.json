@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 111,
+ "down_norm": 0.7496388554573059,
+ "logit_lens": {
+  "up": [
+   "哥",
+   "\\uc",
+   "ски",
+   "%',",
+   "生产总值",
+   "ia",
+   "logical",
+   "lator",
+   "%，",
+   "ulia",
+   " Mein",
+   "izens"
+  ],
+  "down": [
+   "ỉnh",
+   "CHED",
+   " appoint",
+   "取决",
+   "$/)",
+   ".SuspendLayout",
+   "работ",
+   "ела",
+   "ledo",
+   "cheduled",
+   "したこと",
+   "omanip"
+  ],
+  "peak_z": 5.085689067840576
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1634,
+ "down_norm": 0.7976723313331604,
+ "logit_lens": {
+  "up": [
+   "PBS",
+   "老虎机",
+   " Carlton",
+   " stalk",
+   " Billboard",
+   " atrás",
+   " Thumbnails",
+   " Petra",
+   "万台",
+   "alleries",
+   " disco",
+   "기관"
+  ],
+  "down": [
+   "objc",
+   "对象",
+   "代码",
+   "object",
+   " Ruby",
+   " debugger",
+   "コード",
+   " Python",
+   " object",
+   " Object",
+   " programmer",
+   "程序员"
+  ],
+  "peak_z": 5.587255001068115
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

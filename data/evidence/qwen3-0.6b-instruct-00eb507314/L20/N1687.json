@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1687,
+ "down_norm": 0.9803780913352966,
+ "logit_lens": {
+  "up": [
+   " first",
+   "首先",
+   "First",
+   "first",
+   " First",
+   "先",
+   "(first",
+   "_first",
+   "\tfirst",
+   "首先是",
+   ".first",
+   " Firstly"
+  ],
+  "down": [
+   "atar",
+   "墉",
+   "ataire",
+   "achts",
+   "ataires",
+   "ognito",
+   "┴",
+   "itori",
+   "ба",
+   "atum",
+   "eyond",
+   "ursions"
+  ],
+  "peak_z": 21.135496139526367
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

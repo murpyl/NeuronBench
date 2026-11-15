@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1918,
+ "down_norm": 1.0447744131088257,
+ "logit_lens": {
+  "up": [
+   "нд",
+   "constructor",
+   "十三条",
+   " overhe",
+   "anos",
+   "culator",
+   "⁾",
+   " Tour",
+   "ustr",
+   " cadastr",
+   "ña",
+   ".TYPE"
+  ],
+  "down": [
+   " code",
+   "代码",
+   " Code",
+   "code",
+   "_code",
+   " codes",
+   " código",
+   "Code",
+   "(code",
+   ".code",
+   "-code",
+   "コード"
+  ],
+  "peak_z": 10.818561553955078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 533,
+ "down_norm": 0.7805317640304565,
+ "logit_lens": {
+  "up": [
+   " about",
+   "edly",
+   " About",
+   "ʊ",
+   "档",
+   " bahwa",
+   " rằng",
+   "osas",
+   "Engine",
+   "zym",
+   " fi",
+   " yı"
+  ],
+  "down": [
+   " forget",
+   "entina",
+   "oted",
+   "tering",
+   "epam",
+   " copyrights",
+   "uted",
+   "TINGS",
+   "paring",
+   "FORE",
+   "eger",
+   " Forget"
+  ],
+  "peak_z": 6.433277130126953
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

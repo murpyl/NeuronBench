@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2685,
+ "down_norm": 1.1099598407745361,
+ "logit_lens": {
+  "up": [
+   "adge",
+   "uits",
+   "jax",
+   "amment",
+   "ighting",
+   "wick",
+   "iage",
+   "antry",
+   " specialize",
+   " pipes",
+   "ụ",
+   "şim"
+  ],
+  "down": [
+   " crossover",
+   " cross",
+   "AuthProvider",
+   "inium",
+   "-cross",
+   "cross",
+   " Exchange",
+   "Cross",
+   "crew",
+   "+xml",
+   "sson",
+   " concurrently"
+  ],
+  "peak_z": 4.989171504974365
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

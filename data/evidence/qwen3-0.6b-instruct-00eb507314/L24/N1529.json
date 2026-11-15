@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1529,
+ "down_norm": 1.0298304557800293,
+ "logit_lens": {
+  "up": [
+   " class",
+   "class",
+   " classes",
+   "\tclass",
+   "类",
+   "-class",
+   " Class",
+   "Class",
+   "(class",
+   " classe",
+   ".class",
+   "クラス"
+  ],
+  "down": [
+   "协同发展",
+   "正版",
+   "getVar",
+   "راع",
+   " pháp",
+   "мет",
+   " chồng",
+   "itia",
+   "ذي",
+   "ylon",
+   "ofi",
+   " الوطنية"
+  ],
+  "peak_z": 23.656970977783203
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

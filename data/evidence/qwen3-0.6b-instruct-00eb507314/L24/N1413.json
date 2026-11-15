@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1413,
+ "down_norm": 1.1845827102661133,
+ "logit_lens": {
+  "up": [
+   "门户",
+   "idable",
+   "umu",
+   "умент",
+   "porto",
+   "缢",
+   "uisine",
+   "umen",
+   "senal",
+   "ulpt",
+   "ulton",
+   "rites"
+  ],
+  "down": [
+   " back",
+   "back",
+   "Back",
+   " Back",
+   "-back",
+   "(back",
+   "\tback",
+   "_back",
+   " BACK",
+   " backs",
+   ".back",
+   "BACK"
+  ],
+  "peak_z": 25.279319763183594
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

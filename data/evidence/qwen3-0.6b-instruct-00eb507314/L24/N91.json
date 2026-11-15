@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 91,
+ "down_norm": 0.821064293384552,
+ "logit_lens": {
+  "up": [
+   "ductor",
+   "itte",
+   "warm",
+   "advanced",
+   "caller",
+   "alcon",
+   "Spoiler",
+   "您好",
+   "ycastle",
+   " HttpStatusCodeResult",
+   "kill",
+   " intense"
+  ],
+  "down": [
+   "вис",
+   "istorical",
+   "ically",
+   "(.",
+   "reated",
+   "erness",
+   " roku",
+   "undra",
+   "icles",
+   "è",
+   "ardless",
+   "一类"
+  ],
+  "peak_z": 5.0508713722229
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

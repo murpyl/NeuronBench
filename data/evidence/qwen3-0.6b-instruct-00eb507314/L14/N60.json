@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 60,
+ "down_norm": 0.50190269947052,
+ "logit_lens": {
+  "up": [
+   "ta",
+   "[,",
+   "葫芦",
+   "кур",
+   "FullScreen",
+   "orph",
+   "ike",
+   "ele",
+   "oms",
+   " paycheck",
+   " [~,",
+   " ["
+  ],
+  "down": [
+   "โทษ",
+   "ACTER",
+   " conceive",
+   "zion",
+   "BOSE",
+   "aspers",
+   "磋",
+   "孜",
+   "醪",
+   "addir",
+   "razier",
+   " imagine"
+  ],
+  "peak_z": 5.29796838760376
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

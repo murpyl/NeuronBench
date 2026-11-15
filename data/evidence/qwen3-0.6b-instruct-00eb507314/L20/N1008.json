@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1008,
+ "down_norm": 0.8140159845352173,
+ "logit_lens": {
+  "up": [
+   " Curriculum",
+   "的教学",
+   " curriculum",
+   "中考",
+   "teachers",
+   "初中",
+   "教育教学",
+   "义务教育",
+   " homeschool",
+   " Schools",
+   "教",
+   "教育"
+  ],
+  "down": [
+   "醌",
+   "[node",
+   "wine",
+   ".node",
+   "农业大学",
+   "orsi",
+   ".Spec",
+   " yanında",
+   ".Node",
+   "/antlr",
+   "orte",
+   "Facade"
+  ],
+  "peak_z": 5.514896869659424
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

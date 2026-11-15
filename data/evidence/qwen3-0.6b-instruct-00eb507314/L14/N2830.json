@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2830,
+ "down_norm": 0.703024685382843,
+ "logit_lens": {
+  "up": [
+   " onto",
+   "iously",
+   "cano",
+   "fall",
+   "liner",
+   "gable",
+   "strand",
+   " contributor",
+   "_into",
+   " пенси",
+   " scoop",
+   "解开"
+  ],
+  "down": [
+   "好不好",
+   "atemala",
+   "azes",
+   "工作报告",
+   "��",
+   " ham",
+   "!=(",
+   "هد",
+   " практи",
+   " advertised",
+   "คม",
+   "..'"
+  ],
+  "peak_z": 5.101495265960693
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

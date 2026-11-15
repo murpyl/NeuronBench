@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1226,
+ "down_norm": 1.139683485031128,
+ "logit_lens": {
+  "up": [
+   "完全",
+   "plib",
+   "fully",
+   " thaw",
+   "Periph",
+   "complete",
+   "趁",
+   "łatw",
+   "kerja",
+   " disag",
+   "JSImport",
+   " better"
+  ],
+  "down": [
+   " will",
+   "will",
+   " would",
+   " Will",
+   "Will",
+   "would",
+   "就会",
+   "将会",
+   "会",
+   " akan",
+   " sẽ",
+   " WILL"
+  ],
+  "peak_z": 10.583931922912598
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

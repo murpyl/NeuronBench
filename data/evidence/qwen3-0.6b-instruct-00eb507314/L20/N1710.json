@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1710,
+ "down_norm": 1.0127507448196411,
+ "logit_lens": {
+  "up": [
+   "ropol",
+   "ellas",
+   "ewith",
+   "elia",
+   "ew",
+   "ela",
+   "eler",
+   "elu",
+   "elite",
+   "ele",
+   "ests",
+   "lse"
+  ],
+  "down": [
+   "ength",
+   "ю",
+   "ibrary",
+   "ặng",
+   "링",
+   "ind",
+   "ipsis",
+   "indrical",
+   "gren",
+   "bert",
+   "śmy",
+   "软"
+  ],
+  "peak_z": 5.850700855255127
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 533,
+ "down_norm": 0.9187092185020447,
+ "logit_lens": {
+  "up": [
+   "-ahead",
+   "adic",
+   "icularly",
+   "yield",
+   " yield",
+   "acked",
+   "aphael",
+   "ooth",
+   "uffed",
+   "orative",
+   "antity",
+   "iddy"
+  ],
+  "down": [
+   " pr",
+   " mal",
+   " ven",
+   " bien",
+   "的方式来",
+   " du",
+   " ile",
+   "这个地方",
+   " san",
+   " som",
+   " só",
+   "有没有"
+  ],
+  "peak_z": 4.721189022064209
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

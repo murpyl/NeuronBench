@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 366,
+ "down_norm": 0.8799518942832947,
+ "logit_lens": {
+  "up": [
+   " effectively",
+   " effective",
+   "有效",
+   " Effective",
+   "Effective",
+   "effective",
+   "的有效",
+   "有效地",
+   "-effective",
+   "有效的",
+   " Effect",
+   "_effect"
+  ],
+  "down": [
+   "elda",
+   "ourney",
+   "来看看吧",
+   "기를",
+   "례",
+   "何况",
+   " gezocht",
+   "enerative",
+   "기가",
+   " championships",
+   "年以来",
+   "主意"
+  ],
+  "peak_z": 17.852964401245117
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

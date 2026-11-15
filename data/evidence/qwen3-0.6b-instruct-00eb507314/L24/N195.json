@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 195,
+ "down_norm": 0.8962985873222351,
+ "logit_lens": {
+  "up": [
+   "不当",
+   "ung",
+   " bad",
+   "Ặ",
+   "ICY",
+   " uns",
+   "悪い",
+   "马",
+   "尴尬",
+   "WW",
+   "tiny",
+   " awkward"
+  ],
+  "down": [
+   "正确",
+   "合适",
+   " proper",
+   " correct",
+   " properly",
+   "正确的",
+   "合理",
+   "合理的",
+   " adequate",
+   " correctly",
+   " Proper",
+   " reliable"
+  ],
+  "peak_z": 8.167808532714844
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

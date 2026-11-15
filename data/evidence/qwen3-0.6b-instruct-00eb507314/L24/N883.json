@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 883,
+ "down_norm": 1.0273897647857666,
+ "logit_lens": {
+  "up": [
+   "eries",
+   "wed",
+   "enberg",
+   "lic",
+   "inal",
+   "lications",
+   "urger",
+   "wend",
+   "inals",
+   "ondo",
+   "encies",
+   "ampaign"
+  ],
+  "down": [
+   "以",
+   "是以",
+   "将以",
+   "以其",
+   "以此",
+   "以防",
+   "以人民",
+   "以便",
+   "以免",
+   "坚持以",
+   "                                                                         ",
+   " eighth"
+  ],
+  "peak_z": 13.102566719055176
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

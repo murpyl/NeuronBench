@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1321,
+ "down_norm": 1.192829966545105,
+ "logit_lens": {
+  "up": [
+   " more",
+   "more",
+   "更多",
+   "More",
+   " More",
+   "更",
+   "更多的",
+   "_more",
+   "-more",
+   " MORE",
+   " 更",
+   ".more"
+  ],
+  "down": [
+   "也只能",
+   "oft",
+   "这也是",
+   "lowest",
+   "不高",
+   "ordial",
+   "orton",
+   "ßer",
+   "也只有",
+   " Secondly",
+   "frau",
+   "amental"
+  ],
+  "peak_z": 24.651891708374023
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

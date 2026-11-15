@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1298,
+ "down_norm": 0.8953595757484436,
+ "logit_lens": {
+  "up": [
+   "and",
+   "cities",
+   "ultiply",
+   "anean",
+   "{text",
+   "WARDS",
+   "خي",
+   "\"bytes",
+   "below",
+   "idata",
+   "ertiary",
+   "/english"
+  ],
+  "down": [
+   " dù",
+   "먼",
+   "除非",
+   "ngen",
+   "visión",
+   "רת",
+   "esz",
+   "ta",
+   "ftype",
+   "haar",
+   "lesen",
+   " Inc"
+  ],
+  "peak_z": 5.840264320373535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

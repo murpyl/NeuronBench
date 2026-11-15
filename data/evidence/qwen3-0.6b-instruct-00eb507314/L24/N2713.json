@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2713,
+ "down_norm": 1.0832196474075317,
+ "logit_lens": {
+  "up": [
+   " number",
+   "number",
+   "数",
+   " Number",
+   "_number",
+   "Number",
+   "(number",
+   "\tnumber",
+   ".number",
+   "-number",
+   " NUMBER",
+   " número"
+  ],
+  "down": [
+   "xico",
+   "idge",
+   "ooter",
+   "ENTE",
+   "iston",
+   "acle",
+   ".createClass",
+   "SON",
+   " BEGIN",
+   "otos",
+   "只见",
+   "尸"
+  ],
+  "peak_z": 21.922382354736328
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

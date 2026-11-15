@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1437,
+ "down_norm": 1.04763925075531,
+ "logit_lens": {
+  "up": [
+   " them",
+   "them",
+   " Them",
+   "“They",
+   "\"They",
+   " they",
+   " THEM",
+   "它们",
+   " ellas",
+   " ones",
+   " ellos",
+   "they"
+  ],
+  "down": [
+   " Their",
+   "their",
+   " their",
+   "Their",
+   " themselves",
+   " leurs",
+   " THEIR",
+   " ihre",
+   "他们的",
+   "各自的",
+   " ihren",
+   " próprio"
+  ],
+  "peak_z": 14.989916801452637
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

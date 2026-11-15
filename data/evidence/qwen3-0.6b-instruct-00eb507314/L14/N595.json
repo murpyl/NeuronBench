@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 595,
+ "down_norm": 0.436840295791626,
+ "logit_lens": {
+  "up": [
+   "自来",
+   "bole",
+   "shade",
+   "addElement",
+   "代",
+   "olle",
+   "icular",
+   "/Getty",
+   "udeau",
+   "taire",
+   "igaret",
+   "osti"
+  ],
+  "down": [
+   " lẫn",
+   " inv",
+   "acters",
+   "Uni",
+   " son",
+   "收款",
+   " Modern",
+   "kip",
+   " migr",
+   "强",
+   "iniz",
+   "xEF"
+  ],
+  "peak_z": 4.744819164276123
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

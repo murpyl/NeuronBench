@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1889,
+ "down_norm": 0.8623108267784119,
+ "logit_lens": {
+  "up": [
+   "posted",
+   "Yahoo",
+   " Yahoo",
+   " Millennium",
+   " iPod",
+   "imap",
+   " FactoryGirl",
+   "lickr",
+   "�",
+   "竟然",
+   "极品",
+   "roupon"
+  ],
+  "down": [
+   "党史学习",
+   "十四五",
+   "discord",
+   "gatsby",
+   "️",
+   "斗争",
+   "踔",
+   "ekt",
+   " vite",
+   "DialogTitle",
+   "👋",
+   " pandemic"
+  ],
+  "peak_z": 5.8533220291137695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

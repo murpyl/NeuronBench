@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1995,
+ "down_norm": 1.117973804473877,
+ "logit_lens": {
+  "up": [
+   "话说",
+   "quences",
+   "IENT",
+   "acement",
+   "上的",
+   "纳斯",
+   "感觉到",
+   "衷",
+   "一句",
+   "ضع",
+   "OGLE",
+   "貫"
+  ],
+  "down": [
+   " by",
+   "by",
+   " By",
+   "By",
+   "_by",
+   "由",
+   "通过",
+   " through",
+   "_BY",
+   "BY",
+   ".by",
+   " BY"
+  ],
+  "peak_z": 15.706138610839844
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

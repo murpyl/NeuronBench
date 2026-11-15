@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1344,
+ "down_norm": 0.8161692023277283,
+ "logit_lens": {
+  "up": [
+   " observational",
+   "ensively",
+   "significant",
+   "rowning",
+   " UITableViewDelegate",
+   "elligent",
+   "etically",
+   "critical",
+   "ğun",
+   "独特的",
+   "emporary",
+   " cultural"
+  ],
+  "down": [
+   "办法",
+   " efforts",
+   "辦法",
+   "情形",
+   " cases",
+   "件",
+   " scenes",
+   "iants",
+   " sessions",
+   "例子",
+   "�",
+   "続き"
+  ],
+  "peak_z": 5.331928730010986
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

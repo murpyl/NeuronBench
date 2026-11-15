@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2779,
+ "down_norm": 0.8679869174957275,
+ "logit_lens": {
+  "up": [
+   "rit",
+   "__,\n",
+   "******\n",
+   " part",
+   "纪律",
+   "-------\n",
+   "ordin",
+   "pecified",
+   "וך",
+   "ordinate",
+   "',\n",
+   " inde"
+  ],
+  "down": [
+   "下一代",
+   "心意",
+   "我们的",
+   "oshi",
+   "plash",
+   "osals",
+   "евой",
+   "万户",
+   "第三代",
+   "@endsection",
+   "館",
+   "这意味着"
+  ],
+  "peak_z": 5.433979511260986
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

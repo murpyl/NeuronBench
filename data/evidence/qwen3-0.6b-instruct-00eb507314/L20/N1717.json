@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1717,
+ "down_norm": 1.0496994256973267,
+ "logit_lens": {
+  "up": [
+   "生效",
+   "不受",
+   "自動",
+   "自动",
+   "工作机制",
+   "ools",
+   "ISE",
+   "工作组",
+   " works",
+   "isée",
+   " impacts",
+   "uela"
+  ],
+  "down": [
+   "warts",
+   "イヤ",
+   "elt",
+   " bored",
+   "ō",
+   ".ico",
+   "-left",
+   "alance",
+   "setMax",
+   "лев",
+   "mention",
+   "zag"
+  ],
+  "peak_z": 5.541788578033447
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

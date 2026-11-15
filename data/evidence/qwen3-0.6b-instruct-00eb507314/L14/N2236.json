@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2236,
+ "down_norm": 0.7390269041061401,
+ "logit_lens": {
+  "up": [
+   "言",
+   "来说",
+   "inality",
+   "iards",
+   "門",
+   "他又",
+   "からは",
+   "-location",
+   "而言",
+   " location",
+   "mö",
+   "legen"
+  ],
+  "down": [
+   " until",
+   "直到",
+   "until",
+   "期间",
+   " till",
+   "直至",
+   "一段时间",
+   "Until",
+   " Until",
+   " periods",
+   " before",
+   "段时间"
+  ],
+  "peak_z": 9.321307182312012
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

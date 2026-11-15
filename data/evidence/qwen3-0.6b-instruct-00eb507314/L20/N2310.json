@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2310,
+ "down_norm": 0.9112287759780884,
+ "logit_lens": {
+  "up": [
+   "缺",
+   "loo",
+   "amples",
+   "ье",
+   "珥",
+   "锻",
+   "ippet",
+   " bath",
+   "IAL",
+   "alles",
+   " Population",
+   " Sense"
+  ],
+  "down": [
+   " toward",
+   "past",
+   " towards",
+   " hacia",
+   " past",
+   "owards",
+   "过来",
+   " forward",
+   "Past",
+   " FORWARD",
+   "around",
+   "-around"
+  ],
+  "peak_z": 6.481489658355713
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

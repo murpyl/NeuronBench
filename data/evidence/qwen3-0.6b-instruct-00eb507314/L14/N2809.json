@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2809,
+ "down_norm": 0.7785665988922119,
+ "logit_lens": {
+  "up": [
+   " nevertheless",
+   " but",
+   "but",
+   " nonetheless",
+   "但",
+   "但仍",
+   "But",
+   "但是",
+   " however",
+   " But",
+   "但由于",
+   "However"
+  ],
+  "down": [
+   "itches",
+   "ObjectContext",
+   "主席",
+   " isempty",
+   "岁以下",
+   " получи",
+   "独角",
+   " Ivory",
+   "意義",
+   "女主角",
+   "轨道",
+   "に出"
+  ],
+  "peak_z": 8.067337036132812
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

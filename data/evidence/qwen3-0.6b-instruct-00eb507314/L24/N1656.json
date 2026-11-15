@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1656,
+ "down_norm": 1.1355782747268677,
+ "logit_lens": {
+  "up": [
+   " science",
+   "科学",
+   " Science",
+   " scientific",
+   "科学研究",
+   "science",
+   "Science",
+   "Scient",
+   "科學",
+   " Scientific",
+   "scientific",
+   " scient"
+  ],
+  "down": [
+   "红线",
+   ".ravel",
+   "หลวง",
+   "тов",
+   "MASTER",
+   "��",
+   ".master",
+   "ohen",
+   "lesen",
+   "ELY",
+   "ledo",
+   "AVOR"
+  ],
+  "peak_z": 14.242198944091797
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

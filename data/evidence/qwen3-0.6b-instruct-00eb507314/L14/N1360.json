@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1360,
+ "down_norm": 0.7165342569351196,
+ "logit_lens": {
+  "up": [
+   "amente",
+   "非常适合",
+   " unlike",
+   " oldukça",
+   " Decl",
+   " özgü",
+   " mẽ",
+   " size",
+   "Ṗ",
+   "显然",
+   " slew",
+   " söyled"
+  ],
+  "down": [
+   "erman",
+   "ackets",
+   "egov",
+   " etter",
+   "ichever",
+   "eration",
+   "енной",
+   "older",
+   "iterr",
+   " olds",
+   "orget",
+   ".Override"
+  ],
+  "peak_z": 5.040829181671143
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2998,
+ "down_norm": 1.160082221031189,
+ "logit_lens": {
+  "up": [
+   "indre",
+   "omet",
+   "CriticalSection",
+   "USES",
+   "чи",
+   "akin",
+   " CommandLine",
+   "OMETRY",
+   "噩",
+   "erties",
+   "ocity",
+   "utenberg"
+  ],
+  "down": [
+   " support",
+   "支持",
+   " Support",
+   "support",
+   "Support",
+   " supports",
+   "的支持",
+   " supporting",
+   "-support",
+   " supported",
+   "_support",
+   " Supports"
+  ],
+  "peak_z": 19.462446212768555
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

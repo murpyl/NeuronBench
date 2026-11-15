@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1882,
+ "down_norm": 1.0562256574630737,
+ "logit_lens": {
+  "up": [
+   "каж",
+   "娱",
+   ".CodeAnalysis",
+   " libero",
+   "geries",
+   "닉",
+   "出入境",
+   "orney",
+   "ropa",
+   "anas",
+   "اوية",
+   " Hưng"
+  ],
+  "down": [
+   " scale",
+   " scales",
+   " Scale",
+   "scale",
+   "\tscale",
+   "Scale",
+   " scaling",
+   ".scale",
+   "_scale",
+   " scaled",
+   " Scaling",
+   "-scale"
+  ],
+  "peak_z": 21.54399871826172
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

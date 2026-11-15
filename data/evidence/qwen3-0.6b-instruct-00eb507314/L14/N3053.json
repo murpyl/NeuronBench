@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 3053,
+ "down_norm": 0.7644389271736145,
+ "logit_lens": {
+  "up": [
+   ",',",
+   ".',\r\n",
+   ".']",
+   "acular",
+   " }}\r\n",
+   "قة",
+   "散布",
+   "omers",
+   "groupon",
+   "大发",
+   "FileSync",
+   " };\r\n\r\n"
+  ],
+  "down": [
+   "而是",
+   " дела",
+   "((",
+   "Process",
+   "observations",
+   "\"\n",
+   "Exception",
+   "||",
+   "/container",
+   "ジー",
+   "container",
+   " container"
+  ],
+  "peak_z": 4.96828031539917
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

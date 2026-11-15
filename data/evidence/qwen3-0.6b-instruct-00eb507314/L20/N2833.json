@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2833,
+ "down_norm": 1.03964102268219,
+ "logit_lens": {
+  "up": [
+   "学习",
+   "ensation",
+   "roup",
+   "cade",
+   "oug",
+   " surround",
+   "็ด",
+   "enton",
+   "atum",
+   "DED",
+   " bạc",
+   "oufl"
+  ],
+  "down": [
+   "root",
+   " cleaner",
+   "√",
+   "щей",
+   " addCriterion",
+   ".sqrt",
+   " Access",
+   ".root",
+   " root",
+   "sqrt",
+   " Fantasy",
+   "矛"
+  ],
+  "peak_z": 4.846912384033203
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

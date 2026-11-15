@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 320,
+ "down_norm": 0.6804524660110474,
+ "logit_lens": {
+  "up": [
+   "这个词",
+   "--------\n",
+   "ripe",
+   "clusions",
+   "的人来说",
+   "了我的",
+   "{$",
+   "你好",
+   "tering",
+   "->{",
+   "noinspection",
+   "tered"
+  ],
+  "down": [
+   " ASE",
+   " Aleppo",
+   " 또는",
+   "قف",
+   "+\"'",
+   "prov",
+   ":frame",
+   "-frame",
+   "مرا",
+   "bases",
+   " Sidney",
+   "EDGE"
+  ],
+  "peak_z": 5.090137004852295
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

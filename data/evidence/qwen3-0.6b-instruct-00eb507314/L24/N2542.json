@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2542,
+ "down_norm": 1.1571404933929443,
+ "logit_lens": {
+  "up": [
+   "热",
+   "熱",
+   " heat",
+   " Heat",
+   " hot",
+   " ent",
+   " heats",
+   " Hindus",
+   "jal",
+   "热水",
+   "_hot",
+   " Hot"
+  ],
+  "down": [
+   "ical",
+   "ksam",
+   "ium",
+   "oglob",
+   "ico",
+   "ῶ",
+   "\tUObject",
+   "kv",
+   "ique",
+   "icas",
+   " iov",
+   "itution"
+  ],
+  "peak_z": 6.145144939422607
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2701,
+ "down_norm": 0.8276630640029907,
+ "logit_lens": {
+  "up": [
+   "而已",
+   "umo",
+   " Nothing",
+   "吧",
+   " whatsoever",
+   "borough",
+   " yourselves",
+   "leston",
+   "说完",
+   " etc",
+   "/job",
+   " yourself"
+  ],
+  "down": [
+   "在一",
+   "pressions",
+   "*cos",
+   "五年",
+   "*sin",
+   " фактор",
+   "洹",
+   "=temp",
+   "venida",
+   "包括",
+   "ителя",
+   "rear"
+  ],
+  "peak_z": 4.6300177574157715
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

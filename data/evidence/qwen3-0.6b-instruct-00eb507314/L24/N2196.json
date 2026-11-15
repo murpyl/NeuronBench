@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2196,
+ "down_norm": 1.0818147659301758,
+ "logit_lens": {
+  "up": [
+   "可用于",
+   "可供",
+   "\"):",
+   "ozo",
+   "可用",
+   "\"):\n",
+   "有权",
+   "نق",
+   " drift",
+   " applicable",
+   "azo",
+   "持有人"
+  ],
+  "down": [
+   " perfect",
+   "perfect",
+   " Perfect",
+   "Perfect",
+   " ideal",
+   "ideal",
+   " PERF",
+   "理想",
+   " Ideal",
+   "的理想",
+   "Ideal",
+   "完美"
+  ],
+  "peak_z": 15.609500885009766
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

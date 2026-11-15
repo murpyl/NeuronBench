@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2479,
+ "down_norm": 0.7628965377807617,
+ "logit_lens": {
+  "up": [
+   "<|endoftext|>",
+   "adow",
+   "企业和",
+   "+f",
+   ",\\",
+   " decisions",
+   " advertisements",
+   "onne",
+   "olves",
+   " Implicit",
+   " logic",
+   " hosts"
+  ],
+  "down": [
+   "ptime",
+   "cido",
+   "ştur",
+   "geries",
+   "yo",
+   "当之无愧",
+   "hör",
+   "kür",
+   "gens",
+   " carry",
+   "geh",
+   "AspNet"
+  ],
+  "peak_z": 4.5388360023498535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

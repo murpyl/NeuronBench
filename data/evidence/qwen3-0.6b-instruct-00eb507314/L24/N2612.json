@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2612,
+ "down_norm": 1.1829568147659302,
+ "logit_lens": {
+  "up": [
+   "dot",
+   "ós",
+   "ią",
+   " dot",
+   "ograms",
+   " bilder",
+   " AppComponent",
+   " X",
+   "��",
+   "mium",
+   " getX",
+   "rí"
+  ],
+  "down": [
+   "imid",
+   "ju",
+   "企业在",
+   "购",
+   "ulis",
+   "mon",
+   "ulin",
+   "у",
+   "quirrel",
+   "preh",
+   "ULT",
+   " đấu"
+  ],
+  "peak_z": 5.084107398986816
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

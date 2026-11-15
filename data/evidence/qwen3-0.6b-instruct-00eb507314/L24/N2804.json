@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2804,
+ "down_norm": 1.2372922897338867,
+ "logit_lens": {
+  "up": [
+   " seem",
+   " appear",
+   " appears",
+   " seems",
+   "appear",
+   " seemed",
+   " appeared",
+   " appearing",
+   " appearance",
+   " semble",
+   "似乎",
+   " appearances"
+  ],
+  "down": [
+   " addCriterion",
+   "扣除",
+   "置",
+   "erras",
+   "inder",
+   "IFn",
+   "ไฟ",
+   "$',",
+   "组织",
+   " RDD",
+   "ushman",
+   "inal"
+  ],
+  "peak_z": 15.406425476074219
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

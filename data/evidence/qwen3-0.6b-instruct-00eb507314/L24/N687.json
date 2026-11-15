@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 687,
+ "down_norm": 0.8006714582443237,
+ "logit_lens": {
+  "up": [
+   " G",
+   "G",
+   "郭",
+   "(G",
+   "[G",
+   "<G",
+   "-G",
+   ".G",
+   "=G",
+   ">G",
+   "Ｇ",
+   "_G"
+  ],
+  "down": [
+   "ificaciones",
+   "ificación",
+   "iosk",
+   "ươi",
+   "orro",
+   "quia",
+   "YSTEM",
+   "itives",
+   "坻",
+   "reek",
+   "esModule",
+   "witter"
+  ],
+  "peak_z": 14.344771385192871
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

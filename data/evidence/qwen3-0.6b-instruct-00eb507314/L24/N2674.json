@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2674,
+ "down_norm": 1.2058985233306885,
+ "logit_lens": {
+  "up": [
+   "anced",
+   "ace",
+   "anc",
+   "ancer",
+   "ancel",
+   "ANCE",
+   "aced",
+   "ancing",
+   "ances",
+   "aces",
+   "ance",
+   "ancers"
+  ],
+  "down": [
+   "iego",
+   "utra",
+   "ions",
+   "dot",
+   "ion",
+   "atorium",
+   " Kitt",
+   "涂",
+   "ION",
+   "kad",
+   "يج",
+   "ioned"
+  ],
+  "peak_z": 9.422759056091309
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

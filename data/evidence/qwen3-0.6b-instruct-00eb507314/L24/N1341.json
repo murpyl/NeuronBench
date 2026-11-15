@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1341,
+ "down_norm": 1.1213728189468384,
+ "logit_lens": {
+  "up": [
+   "结构",
+   " structure",
+   " structures",
+   " Structure",
+   "structure",
+   "Structure",
+   " Structures",
+   "_structure",
+   "structures",
+   "結構",
+   " STRUCT",
+   " struct"
+  ],
+  "down": [
+   " mixins",
+   "enger",
+   "ucceeded",
+   "acios",
+   "uels",
+   "encv",
+   "razier",
+   "esium",
+   "ENCY",
+   "ặ",
+   "UPS",
+   " \"'\""
+  ],
+  "peak_z": 20.510215759277344
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

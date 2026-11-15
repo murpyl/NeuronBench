@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 823,
+ "down_norm": 0.7722843885421753,
+ "logit_lens": {
+  "up": [
+   "TAG",
+   " пит",
+   "ĩnh",
+   "ẩu",
+   "yet",
+   "—who",
+   " stairs",
+   "YT",
+   "หอม",
+   "ูล",
+   ">V",
+   "โย"
+  ],
+  "down": [
+   "们的",
+   "们",
+   "ographies",
+   "们都",
+   "ologies",
+   "schemas",
+   " cultures",
+   "chemas",
+   " layouts",
+   " societies",
+   " climates",
+   "ses"
+  ],
+  "peak_z": 8.021037101745605
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

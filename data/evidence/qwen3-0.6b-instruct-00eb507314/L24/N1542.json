@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1542,
+ "down_norm": 1.0302340984344482,
+ "logit_lens": {
+  "up": [
+   "ึ",
+   "istent",
+   "PLE",
+   "rive",
+   "ivos",
+   "amen",
+   "))]",
+   "ива",
+   "ivity",
+   "eref",
+   "ryn",
+   "ives"
+  ],
+  "down": [
+   "后",
+   " after",
+   "後",
+   "after",
+   "After",
+   " After",
+   "后的",
+   " AFTER",
+   " afterward",
+   "后排",
+   "(after",
+   "後の"
+  ],
+  "peak_z": 21.483814239501953
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

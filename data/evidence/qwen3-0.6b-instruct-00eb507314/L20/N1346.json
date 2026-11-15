@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1346,
+ "down_norm": 0.9560428857803345,
+ "logit_lens": {
+  "up": [
+   "asti",
+   "ienes",
+   "就给大家",
+   "才有",
+   "woke",
+   "才能",
+   "endir",
+   "必要があります",
+   "مكان",
+   "enz",
+   "دين",
+   "该怎么办"
+  ],
+  "down": [
+   " by",
+   "by",
+   "由",
+   "By",
+   " By",
+   "_by",
+   "-by",
+   "(by",
+   "_BY",
+   ".by",
+   " oleh",
+   " BY"
+  ],
+  "peak_z": 21.84801483154297
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

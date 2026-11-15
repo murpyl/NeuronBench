@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 604,
+ "down_norm": 0.9340261220932007,
+ "logit_lens": {
+  "up": [
+   "initWith",
+   " theirs",
+   "oku",
+   "riority",
+   "idelberg",
+   "ahoma",
+   "athy",
+   "yth",
+   "apr",
+   "incer",
+   "obile",
+   " yours"
+  ],
+  "down": [
+   " each",
+   "each",
+   "每个",
+   "Each",
+   " Each",
+   "每",
+   "每一",
+   "每一个",
+   "每個",
+   " EACH",
+   " every",
+   "每位"
+  ],
+  "peak_z": 21.607574462890625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

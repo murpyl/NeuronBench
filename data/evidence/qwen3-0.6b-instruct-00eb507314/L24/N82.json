@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 82,
+ "down_norm": 0.6065551042556763,
+ "logit_lens": {
+  "up": [
+   "它",
+   "它的",
+   " its",
+   "它是",
+   "Its",
+   " Its",
+   "它可以",
+   " it",
+   "但它",
+   "its",
+   "因为它",
+   "让它"
+  ],
+  "down": [
+   "ancel",
+   "ields",
+   "inks",
+   "ivated",
+   "emaker",
+   "즈",
+   "복",
+   "ʊ",
+   "-elect",
+   ">>,",
+   "enery",
+   "amera"
+  ],
+  "peak_z": 23.921245574951172
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

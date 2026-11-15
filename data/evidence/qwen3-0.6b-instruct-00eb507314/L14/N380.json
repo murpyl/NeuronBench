@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 380,
+ "down_norm": 0.5808662176132202,
+ "logit_lens": {
+  "up": [
+   "eur",
+   "ugs",
+   "achts",
+   "ickers",
+   "这",
+   "ictions",
+   " davon",
+   "epy",
+   "说是",
+   "ict",
+   " ours",
+   "edia"
+  ],
+  "down": [
+   "拨",
+   " userList",
+   "เทศ",
+   "）\n\n",
+   " )\n\n",
+   ".recycle",
+   " DBNull",
+   " disb",
+   " MEMORY",
+   " \"\")\n\n",
+   " >\n\n",
+   "Mock"
+  ],
+  "peak_z": 4.790428161621094
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

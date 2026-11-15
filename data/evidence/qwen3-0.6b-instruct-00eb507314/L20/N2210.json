@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2210,
+ "down_norm": 1.169516682624817,
+ "logit_lens": {
+  "up": [
+   " seaside",
+   "oci",
+   "orde",
+   "ulf",
+   "师范大学",
+   "IA",
+   "_social",
+   "蚱",
+   "小龙虾",
+   " shorthand",
+   "ake",
+   "esso"
+  ],
+  "down": [
+   "닝",
+   "垭",
+   "awl",
+   "nung",
+   "hya",
+   "阙",
+   "deaux",
+   "hung",
+   "邠",
+   "�",
+   "中途",
+   "伋"
+  ],
+  "peak_z": 5.011476516723633
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

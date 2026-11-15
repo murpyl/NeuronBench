@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2208,
+ "down_norm": 0.8779468536376953,
+ "logit_lens": {
+  "up": [
+   "ardown",
+   "erset",
+   " SHARES",
+   "Clazz",
+   "ersions",
+   "edException",
+   "JNIEXPORT",
+   "ewolf",
+   "-disable",
+   " inaccur",
+   "-West",
+   "beck"
+  ],
+  "down": [
+   "注意到",
+   " attention",
+   "注意",
+   "意识",
+   " Attention",
+   "attention",
+   " внимание",
+   "意识到",
+   " notice",
+   "thought",
+   " thought",
+   " noticed"
+  ],
+  "peak_z": 7.325314521789551
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

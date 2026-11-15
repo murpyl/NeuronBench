@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2833,
+ "down_norm": 0.8569135665893555,
+ "logit_lens": {
+  "up": [
+   " or",
+   "或",
+   "或者",
+   " atau",
+   " 或",
+   " 또는",
+   "uent",
+   "または",
+   " oder",
+   "ode",
+   "或多",
+   "бед"
+  ],
+  "down": [
+   "&t",
+   "HERE",
+   " Heck",
+   ".herokuapp",
+   "发放",
+   "进修",
+   "威尔",
+   "&o",
+   "otto",
+   " \"-//",
+   "�t",
+   "illas"
+  ],
+  "peak_z": 7.113784313201904
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

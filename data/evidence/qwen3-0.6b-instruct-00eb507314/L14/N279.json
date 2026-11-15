@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 279,
+ "down_norm": 0.6206408739089966,
+ "logit_lens": {
+  "up": [
+   " instead",
+   "instead",
+   " rather",
+   " Instead",
+   " вмест",
+   "rather",
+   "而不是",
+   "Instead",
+   "而非",
+   "Rather",
+   " statt",
+   "代替"
+  ],
+  "down": [
+   "sworth",
+   "atório",
+   "产品研发",
+   "]|",
+   "JEXEC",
+   "sono",
+   "nnen",
+   ".CopyTo",
+   "ฬ",
+   " ingl",
+   "Licensed",
+   "эм"
+  ],
+  "peak_z": 10.269904136657715
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

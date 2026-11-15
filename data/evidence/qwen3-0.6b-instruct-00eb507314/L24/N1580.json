@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1580,
+ "down_norm": 1.1195989847183228,
+ "logit_lens": {
+  "up": [
+   " sub",
+   "sub",
+   "子",
+   " Sub",
+   "Sub",
+   "(sub",
+   ".sub",
+   "_sub",
+   "[sub",
+   "=sub",
+   "-sub",
+   "\tsub"
+  ],
+  "down": [
+   " copp",
+   "ительно",
+   "chemes",
+   "ponsible",
+   "assel",
+   " minded",
+   " proclamation",
+   "ải",
+   "mouth",
+   "ippy",
+   "лад",
+   "isted"
+  ],
+  "peak_z": 24.26852035522461
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1284,
+ "down_norm": 0.750488817691803,
+ "logit_lens": {
+  "up": [
+   "ges",
+   "lash",
+   "+-+-",
+   "nika",
+   "ookeeper",
+   " alike",
+   "��",
+   "erver",
+   "serter",
+   "гар",
+   "水中",
+   "ดร"
+  ],
+  "down": [
+   " size",
+   "规模",
+   "长度",
+   " length",
+   "Size",
+   " thickness",
+   "厚度",
+   "規模",
+   " Size",
+   "含量",
+   "位置",
+   "尺寸"
+  ],
+  "peak_z": 8.901571273803711
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

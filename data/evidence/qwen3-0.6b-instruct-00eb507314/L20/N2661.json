@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2661,
+ "down_norm": 0.9790955185890198,
+ "logit_lens": {
+  "up": [
+   "reten",
+   "lığa",
+   "fad",
+   "xfff",
+   "mium",
+   "力度",
+   "влек",
+   "走上",
+   "ifen",
+   "粢",
+   "ясь",
+   "room"
+  ],
+  "down": [
+   "BV",
+   "bv",
+   "Б",
+   " bv",
+   " Bauer",
+   " ci",
+   "BU",
+   "(ci",
+   "BIN",
+   "ɓ",
+   "Bu",
+   "bin"
+  ],
+  "peak_z": 5.459634304046631
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

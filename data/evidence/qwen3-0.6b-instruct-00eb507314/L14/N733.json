@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 733,
+ "down_norm": 0.6342164278030396,
+ "logit_lens": {
+  "up": [
+   "metic",
+   "olic",
+   "絜",
+   "natal",
+   " integral",
+   "还不够",
+   "atory",
+   "ronic",
+   "isors",
+   "四是",
+   "uvw",
+   "警务"
+  ],
+  "down": [
+   "ilder",
+   "ılı",
+   "__,__",
+   "oku",
+   "__()\n\n",
+   "万象",
+   "otten",
+   "头部",
+   " Registro",
+   " Rudd",
+   " TECHNO",
+   "ưng"
+  ],
+  "peak_z": 6.300286769866943
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

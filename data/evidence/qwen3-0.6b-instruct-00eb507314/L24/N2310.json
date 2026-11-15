@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2310,
+ "down_norm": 1.1064563989639282,
+ "logit_lens": {
+  "up": [
+   " act",
+   " acts",
+   "act",
+   "\tact",
+   " Act",
+   "Act",
+   "(act",
+   "acts",
+   " Acts",
+   " action",
+   "_act",
+   ".act"
+  ],
+  "down": [
+   "eway",
+   "adiens",
+   "Ậ",
+   "너",
+   "opyright",
+   "olars",
+   "tain",
+   "ultipartFile",
+   "epend",
+   "eways",
+   "**)&",
+   "итель"
+  ],
+  "peak_z": 20.373119354248047
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

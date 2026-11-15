@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1605,
+ "down_norm": 0.851956307888031,
+ "logit_lens": {
+  "up": [
+   "aka",
+   "',['",
+   "issance",
+   "iner",
+   "(['",
+   "3",
+   " Dresden",
+   "].[",
+   "欲",
+   "cona",
+   "[[",
+   "(["
+  ],
+  "down": [
+   "社会稳定",
+   " Islanders",
+   "HexString",
+   "扈",
+   "彗",
+   "мот",
+   "过错",
+   "tent",
+   "-ton",
+   "esehen",
+   " bulletin",
+   " hamm"
+  ],
+  "peak_z": 5.031489849090576
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

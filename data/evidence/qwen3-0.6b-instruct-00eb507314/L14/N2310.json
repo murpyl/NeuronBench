@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2310,
+ "down_norm": 0.8320760726928711,
+ "logit_lens": {
+  "up": [
+   "FOX",
+   "queda",
+   "ecure",
+   " Continued",
+   "lies",
+   "cordova",
+   " continu",
+   " права",
+   "ornado",
+   "InView",
+   "licos",
+   "ocial"
+  ],
+  "down": [
+   "北",
+   "argins",
+   "南",
+   "谓",
+   " whatsoever",
+   "屋里",
+   "身上",
+   "刷",
+   " North",
+   "生成",
+   "Generate",
+   "市中心"
+  ],
+  "peak_z": 4.734702110290527
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

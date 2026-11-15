@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1456,
+ "down_norm": 0.9607961773872375,
+ "logit_lens": {
+  "up": [
+   " Critical",
+   " critical",
+   "crit",
+   "决定",
+   " cr",
+   "Critical",
+   "cr",
+   "critical",
+   "_critical",
+   "��",
+   " Corner",
+   " corner"
+  ],
+  "down": [
+   "important",
+   "重要",
+   " importance",
+   " important",
+   " Importance",
+   "一个重要",
+   "很重要",
+   "Important",
+   "的重要性",
+   "重要な",
+   " importante",
+   "的重要"
+  ],
+  "peak_z": 6.743924140930176
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

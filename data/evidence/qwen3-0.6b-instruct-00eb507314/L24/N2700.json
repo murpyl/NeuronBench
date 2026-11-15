@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2700,
+ "down_norm": 1.0770201683044434,
+ "logit_lens": {
+  "up": [
+   "cox",
+   "ことです",
+   " Static",
+   "Static",
+   "peaker",
+   "/android",
+   "我就",
+   "我们就",
+   "Soph",
+   "cret",
+   " rank",
+   " Rank"
+  ],
+  "down": [
+   "ynchronously",
+   "itore",
+   "feit",
+   "ots",
+   "illed",
+   " infiltration",
+   "quette",
+   "FillColor",
+   "�",
+   "<main",
+   "otyping",
+   "bard"
+  ],
+  "peak_z": 5.449819564819336
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

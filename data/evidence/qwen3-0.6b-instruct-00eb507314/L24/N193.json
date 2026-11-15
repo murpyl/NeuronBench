@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 193,
+ "down_norm": 0.8114500045776367,
+ "logit_lens": {
+  "up": [
+   " Se",
+   "Se",
+   "Ha",
+   " Ha",
+   "Em",
+   " Sw",
+   " Ar",
+   " Al",
+   " Ve",
+   " Re",
+   " Ir",
+   " Sa"
+  ],
+  "down": [
+   " Scientists",
+   " Constructors",
+   "Languages",
+   " Characteristics",
+   " Features",
+   " Languages",
+   " Properties",
+   " Construction",
+   "Scientists",
+   " Enumeration",
+   " Connections",
+   " Constructor"
+  ],
+  "peak_z": 6.481768608093262
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

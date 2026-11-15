@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1038,
+ "down_norm": 0.8845982551574707,
+ "logit_lens": {
+  "up": [
+   "*/\r\n",
+   "`\r\n",
+   "全镇",
+   "وث",
+   "彼ら",
+   "*/\r\n\r\n",
+   " */\r\n",
+   "}`,",
+   "）\r\n",
+   "[slot",
+   "aneously",
+   "'\r\n"
+  ],
+  "down": [
+   "美国",
+   " Python",
+   "中华",
+   "英国",
+   " American",
+   " european",
+   "美國",
+   " python",
+   " Apple",
+   " British",
+   " мира",
+   "德国"
+  ],
+  "peak_z": 5.741585731506348
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

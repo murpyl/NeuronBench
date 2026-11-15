@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2301,
+ "down_norm": 0.630009651184082,
+ "logit_lens": {
+  "up": [
+   "肢体",
+   ".Board",
+   " */)",
+   "实际行动",
+   "ient",
+   " turnout",
+   " componente",
+   "在一旁",
+   " thỏ",
+   "CCR",
+   "ksi",
+   "koa"
+  ],
+  "down": [
+   "ницы",
+   "inance",
+   "ɐ",
+   "heimer",
+   "ATOR",
+   "inux",
+   " recover",
+   "UND",
+   "recover",
+   "ToJson",
+   " Unlike",
+   "agher"
+  ],
+  "peak_z": 4.537929058074951
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

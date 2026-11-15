@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 234,
+ "down_norm": 0.608712911605835,
+ "logit_lens": {
+  "up": [
+   "An",
+   "alian",
+   "訴",
+   "这些",
+   "ede",
+   "liches",
+   "ellan",
+   "下來",
+   " An",
+   "给他们",
+   "那样的",
+   "anvas"
+  ],
+  "down": [
+   "wf",
+   "ignite",
+   "uya",
+   "ип",
+   "verity",
+   "upt",
+   "uger",
+   "unj",
+   "iger",
+   "erosis",
+   "wr",
+   "hf"
+  ],
+  "peak_z": 4.920963287353516
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1497,
+ "down_norm": 0.8760942220687866,
+ "logit_lens": {
+  "up": [
+   "所说的",
+   "oldemort",
+   " unexpectedly",
+   "想象",
+   "所说",
+   " mistakenly",
+   "误解",
+   " Estimate",
+   "想像",
+   " unexpected",
+   "古人",
+   " underestimated"
+  ],
+  "down": [
+   "igrams",
+   "ipeg",
+   "essional",
+   "---</",
+   "云集",
+   "apses",
+   "{'",
+   "modifiable",
+   " qed",
+   "{@",
+   "يص",
+   "год"
+  ],
+  "peak_z": 5.120105743408203
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

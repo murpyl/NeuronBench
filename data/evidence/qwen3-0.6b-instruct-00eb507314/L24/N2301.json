@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2301,
+ "down_norm": 1.0876927375793457,
+ "logit_lens": {
+  "up": [
+   "rovers",
+   "dni",
+   " pard",
+   "测评",
+   "罢了",
+   "amu",
+   "督",
+   "_Invoke",
+   "IID",
+   "FullName",
+   "ismatic",
+   "新手"
+  ],
+  "down": [
+   " non",
+   "non",
+   "非",
+   " Non",
+   "Non",
+   "_non",
+   "-non",
+   "(non",
+   ".non",
+   " NON",
+   ".Non",
+   "NON"
+  ],
+  "peak_z": 17.075077056884766
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

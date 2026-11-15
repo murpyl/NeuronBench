@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1684,
+ "down_norm": 1.0229864120483398,
+ "logit_lens": {
+  "up": [
+   "ộ",
+   "Subjects",
+   "-UA",
+   "频道",
+   "{x",
+   "xDF",
+   "TextLabel",
+   "他们是",
+   "TG",
+   "_subject",
+   "ugi",
+   "DDD"
+  ],
+  "down": [
+   " Maple",
+   "inden",
+   " Linden",
+   " Vine",
+   " Highland",
+   "станов",
+   "IELD",
+   "LEMENT",
+   "琛",
+   "谷",
+   " breadth",
+   "偏向"
+  ],
+  "peak_z": 4.838991165161133
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

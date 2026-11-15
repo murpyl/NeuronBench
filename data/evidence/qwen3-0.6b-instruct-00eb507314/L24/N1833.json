@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1833,
+ "down_norm": 1.0116990804672241,
+ "logit_lens": {
+  "up": [
+   "进入",
+   " entered",
+   "进了",
+   " enters",
+   "进去",
+   "entered",
+   " entering",
+   " enter",
+   "进",
+   "入",
+   "進入",
+   "进来"
+  ],
+  "down": [
+   "plot",
+   "(eval",
+   "aire",
+   "/bit",
+   "plots",
+   "Attach",
+   "ieties",
+   ".plot",
+   " studies",
+   " unh",
+   "(effect",
+   "eval"
+  ],
+  "peak_z": 7.334778785705566
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

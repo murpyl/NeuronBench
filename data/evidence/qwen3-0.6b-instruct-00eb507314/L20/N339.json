@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 339,
+ "down_norm": 0.7244222164154053,
+ "logit_lens": {
+  "up": [
+   "淋",
+   "公司将",
+   "大雨",
+   ".application",
+   "ApiClient",
+   "application",
+   " application",
+   "上班族",
+   "layers",
+   "_application",
+   "agog",
+   ",application"
+  ],
+  "down": [
+   "ật",
+   "ritos",
+   "otypical",
+   "万公里",
+   "ture",
+   "花草",
+   "物品",
+   "lectual",
+   "肴",
+   "ść",
+   "物质",
+   "izontal"
+  ],
+  "peak_z": 5.113542556762695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

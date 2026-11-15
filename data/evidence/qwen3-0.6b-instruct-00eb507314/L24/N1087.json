@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1087,
+ "down_norm": 1.153412938117981,
+ "logit_lens": {
+  "up": [
+   "namese",
+   "ULATE",
+   "hipster",
+   "ibbon",
+   "imulator",
+   " nehmen",
+   "YPE",
+   "utches",
+   "ulance",
+   "inceton",
+   "lify",
+   "<{"
+  ],
+  "down": [
+   "等",
+   " etc",
+   "等地",
+   " et",
+   "等人",
+   "etc",
+   "等工作",
+   "等问题",
+   "等功能",
+   "等内容",
+   "等方式",
+   "等部门"
+  ],
+  "peak_z": 21.891895294189453
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

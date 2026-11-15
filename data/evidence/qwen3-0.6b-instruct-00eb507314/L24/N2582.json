@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2582,
+ "down_norm": 1.210595965385437,
+ "logit_lens": {
+  "up": [
+   " mean",
+   " means",
+   "means",
+   "mean",
+   "-mean",
+   "Mean",
+   " Mean",
+   " meaning",
+   " Means",
+   "(mean",
+   "_mean",
+   " Meaning"
+  ],
+  "down": [
+   "tridge",
+   "redential",
+   "isse",
+   "onia",
+   "üstü",
+   "ega",
+   "urve",
+   "clamation",
+   "cter",
+   "展厅",
+   "peating",
+   " MEMORY"
+  ],
+  "peak_z": 16.82154655456543
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

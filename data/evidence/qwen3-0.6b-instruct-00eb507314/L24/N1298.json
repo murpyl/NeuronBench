@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1298,
+ "down_norm": 1.067610740661621,
+ "logit_lens": {
+  "up": [
+   " value",
+   " Value",
+   "value",
+   "值",
+   " values",
+   "Value",
+   "价值",
+   "-value",
+   ".value",
+   "_value",
+   " val",
+   "_VALUE"
+  ],
+  "down": [
+   "用户提供",
+   "企业提供",
+   "客户提供",
+   "amble",
+   "領",
+   " sunset",
+   " DropIndex",
+   "alm",
+   "总资产",
+   "ᶜ",
+   ".avi",
+   ".DropTable"
+  ],
+  "peak_z": 13.56555461883545
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

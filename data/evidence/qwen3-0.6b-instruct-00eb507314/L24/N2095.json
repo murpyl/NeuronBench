@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2095,
+ "down_norm": 1.0256153345108032,
+ "logit_lens": {
+  "up": [
+   " Modifier",
+   "cran",
+   "RIORITY",
+   "第四届",
+   "uable",
+   "让她",
+   "柑",
+   " ding",
+   " fact",
+   " Atat",
+   " keer",
+   "iative"
+  ],
+  "down": [
+   "Par",
+   "arl",
+   "matic",
+   "atr",
+   "股",
+   "hamster",
+   "($)",
+   "rypto",
+   " brand",
+   " leading",
+   " Par",
+   "xBA"
+  ],
+  "peak_z": 4.892345428466797
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 22,
+ "down_norm": 0.6378027200698853,
+ "logit_lens": {
+  "up": [
+   "实践",
+   "实践经验",
+   "说是",
+   "�述",
+   "概念",
+   "失信",
+   "大气",
+   "下面小编",
+   " ============================================================================\n",
+   "Defs",
+   "自负",
+   "领导"
+  ],
+  "down": [
+   " condition",
+   " mounting",
+   " cells",
+   " trough",
+   " month",
+   " paired",
+   "ément",
+   " north",
+   "more",
+   " conditions",
+   " change",
+   " pair"
+  ],
+  "peak_z": 4.37742805480957
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

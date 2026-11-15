@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1615,
+ "down_norm": 0.88068026304245,
+ "logit_lens": {
+  "up": [
+   "reeze",
+   " item",
+   "zn",
+   "物品",
+   "setItem",
+   "ulares",
+   "angen",
+   "包子",
+   "难民",
+   "gene",
+   "零件",
+   "物料"
+  ],
+  "down": [
+   " country",
+   " society",
+   " world",
+   " company",
+   "全镇",
+   " Nation",
+   " nation",
+   "全市",
+   "公司",
+   "全省",
+   "该院",
+   "公司在"
+  ],
+  "peak_z": 5.79580545425415
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

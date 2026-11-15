@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2660,
+ "down_norm": 1.1078859567642212,
+ "logit_lens": {
+  "up": [
+   " strategic",
+   "战略",
+   " Strategic",
+   "str",
+   " strategically",
+   "的战略",
+   " stratég",
+   "strategy",
+   "-str",
+   " strateg",
+   "\tstr",
+   "Str"
+  ],
+  "down": [
+   " méd",
+   "PACE",
+   " mai",
+   " Peg",
+   "apphire",
+   "介质",
+   "oup",
+   "essor",
+   " Medium",
+   "méd",
+   "edium",
+   ".Try"
+  ],
+  "peak_z": 7.1525163650512695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

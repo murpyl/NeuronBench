@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1311,
+ "down_norm": 0.6585373282432556,
+ "logit_lens": {
+  "up": [
+   ".GetEnumerator",
+   "新闻网",
+   ">{\"",
+   " alleg",
+   "ystery",
+   "—he",
+   "😳",
+   "—you",
+   "',{\n",
+   "ainen",
+   "实在太",
+   " \"=="
+  ],
+  "down": [
+   "ék",
+   "ivas",
+   "度",
+   "оя",
+   "존",
+   "alion",
+   "urent",
+   "Four",
+   "Å",
+   "°",
+   "edom",
+   " )"
+  ],
+  "peak_z": 4.5484185218811035
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

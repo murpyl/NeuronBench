@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2245,
+ "down_norm": 0.5060393214225769,
+ "logit_lens": {
+  "up": [
+   " resta",
+   "茂",
+   " dou",
+   "所",
+   " dang",
+   " olds",
+   ".turn",
+   "turn",
+   "ายน",
+   " pari",
+   "ots",
+   " khoản"
+  ],
+  "down": [
+   "optional",
+   " Optional",
+   " optional",
+   " optionally",
+   " OPTIONAL",
+   "Optional",
+   " Optionally",
+   "_optional",
+   "如果有",
+   ".Optional",
+   "なくても",
+   "(Optional"
+  ],
+  "peak_z": 7.709730625152588
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

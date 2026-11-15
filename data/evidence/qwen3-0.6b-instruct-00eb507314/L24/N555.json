@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 555,
+ "down_norm": 0.8939645886421204,
+ "logit_lens": {
+  "up": [
+   " SV",
+   " ED",
+   " AH",
+   " AP",
+   " OM",
+   " DH",
+   " BD",
+   " BX",
+   " TU",
+   " VC",
+   " AO",
+   " FW"
+  ],
+  "down": [
+   ".cloudflare",
+   "derabad",
+   "upal",
+   "onte",
+   ".Css",
+   " itemprop",
+   "indhoven",
+   " ipsum",
+   "ederland",
+   "landırıl",
+   "[maxn",
+   "婴"
+  ],
+  "peak_z": 7.355771064758301
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1915,
+ "down_norm": 0.9739174842834473,
+ "logit_lens": {
+  "up": [
+   "ads",
+   "boarding",
+   "extras",
+   "emean",
+   "egin",
+   "emain",
+   "帆",
+   "ivers",
+   " bitte",
+   "uously",
+   "AxisAlignment",
+   "amin"
+  ],
+  "down": [
+   " induce",
+   " inducing",
+   "rone",
+   "étude",
+   "诱导",
+   "Insensitive",
+   "NEL",
+   " induces",
+   " therap",
+   " leth",
+   "ind",
+   "VEC"
+  ],
+  "peak_z": 5.472769260406494
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

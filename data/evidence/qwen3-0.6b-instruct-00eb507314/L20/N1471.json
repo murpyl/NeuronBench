@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1471,
+ "down_norm": 0.8415651917457581,
+ "logit_lens": {
+  "up": [
+   "ês",
+   "ê",
+   "老龄化",
+   "嗪",
+   "achers",
+   " outsider",
+   " waż",
+   "高涨",
+   "arily",
+   "ugal",
+   "JSGlobalScope",
+   "adol"
+  ],
+  "down": [
+   " a",
+   " people",
+   " lengths",
+   "رات",
+   "uct",
+   "boards",
+   "�认",
+   "历史",
+   " an",
+   "ectors",
+   "��",
+   "وض"
+  ],
+  "peak_z": 5.068885326385498
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

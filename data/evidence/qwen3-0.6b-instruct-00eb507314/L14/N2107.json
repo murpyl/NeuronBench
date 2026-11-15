@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2107,
+ "down_norm": 0.613849401473999,
+ "logit_lens": {
+  "up": [
+   "外交部",
+   "чив",
+   "hal",
+   "preci",
+   "在日本",
+   "在国外",
+   "holders",
+   "ísticas",
+   "orrect",
+   "(mod",
+   "олов",
+   "kills"
+  ],
+  "down": [
+   " of",
+   "aper",
+   " plane",
+   "apers",
+   "of",
+   "_Of",
+   "\"testing",
+   " paper",
+   " anymore",
+   "afs",
+   " thêm",
+   "asar"
+  ],
+  "peak_z": 5.0937676429748535
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

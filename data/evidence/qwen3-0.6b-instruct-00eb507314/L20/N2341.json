@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2341,
+ "down_norm": 0.9598305821418762,
+ "logit_lens": {
+  "up": [
+   "较多",
+   "比较多",
+   "更多",
+   "越多",
+   "更多的",
+   "增多",
+   "越来越多",
+   " more",
+   "大量",
+   "频繁",
+   "为主",
+   " predomin"
+  ],
+  "down": [
+   "/reference",
+   "zip",
+   "ablish",
+   "下来",
+   "oop",
+   "icle",
+   "下来的",
+   "imers",
+   "icles",
+   "ographs",
+   "apia",
+   "klä"
+  ],
+  "peak_z": 9.601032257080078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

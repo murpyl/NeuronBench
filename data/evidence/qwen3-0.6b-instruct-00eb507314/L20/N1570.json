@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1570,
+ "down_norm": 0.9681078791618347,
+ "logit_lens": {
+  "up": [
+   "做起",
+   "-running",
+   "膊",
+   "altar",
+   "gratis",
+   "acked",
+   "aro",
+   "ari",
+   "unta",
+   " Networking",
+   "ackers",
+   " obligation"
+  ],
+  "down": [
+   " use",
+   "使用",
+   " usage",
+   "用于",
+   " Usage",
+   " used",
+   "use",
+   " Use",
+   "Use",
+   "usage",
+   "Usage",
+   "used"
+  ],
+  "peak_z": 11.57352066040039
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

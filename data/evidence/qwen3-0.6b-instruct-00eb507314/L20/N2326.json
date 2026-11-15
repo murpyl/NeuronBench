@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2326,
+ "down_norm": 1.133872389793396,
+ "logit_lens": {
+  "up": [
+   " onto",
+   "于",
+   "ToList",
+   "应用于",
+   "交给",
+   " unto",
+   "送给",
+   " kepada",
+   " applied",
+   "放在",
+   "给",
+   "递给"
+  ],
+  "down": [
+   "of",
+   " of",
+   "irl",
+   " Horde",
+   " puta",
+   ".of",
+   "Of",
+   " của",
+   " thereof",
+   " ofs",
+   " bud",
+   "irst"
+  ],
+  "peak_z": 5.3855509757995605
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

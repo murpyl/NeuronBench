@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 117,
+ "down_norm": 0.6159748435020447,
+ "logit_lens": {
+  "up": [
+   "альн",
+   "心",
+   "eties",
+   "альное",
+   "emark",
+   "emies",
+   "iem",
+   "-suite",
+   "ieme",
+   "anded",
+   "ões",
+   "(animated"
+  ],
+  "down": [
+   "简单的",
+   "那么简单",
+   " patriarch",
+   "ectl",
+   "第一个",
+   "father",
+   "賞",
+   " fastball",
+   "第一条",
+   "廨",
+   "起飞",
+   ".activate"
+  ],
+  "peak_z": 4.824122428894043
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

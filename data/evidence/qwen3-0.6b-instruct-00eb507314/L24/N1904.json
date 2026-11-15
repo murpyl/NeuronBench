@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1904,
+ "down_norm": 1.1017405986785889,
+ "logit_lens": {
+  "up": [
+   "uilder",
+   "ภ",
+   " mappedBy",
+   "浯",
+   "andFilterWhere",
+   "茄",
+   "汁",
+   "Cx",
+   " sweeping",
+   " Skywalker",
+   "年由",
+   "几年"
+  ],
+  "down": [
+   " z",
+   "z",
+   " Z",
+   "Z",
+   "_z",
+   "\tz",
+   "=z",
+   ".z",
+   "\tZ",
+   "*z",
+   "-z",
+   "ｚ"
+  ],
+  "peak_z": 15.979818344116211
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

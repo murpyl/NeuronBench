@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1601,
+ "down_norm": 0.8878394365310669,
+ "logit_lens": {
+  "up": [
+   " style",
+   "模式",
+   "style",
+   "风格",
+   " Style",
+   " format",
+   " mode",
+   " pattern",
+   "Style",
+   " configuration",
+   "mode",
+   "形态"
+  ],
+  "down": [
+   "credible",
+   "createCommand",
+   "Hits",
+   "二字",
+   "adients",
+   "ispens",
+   "itting",
+   "imizeBox",
+   "preh",
+   "commands",
+   " Hits",
+   " PUR"
+  ],
+  "peak_z": 9.968664169311523
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

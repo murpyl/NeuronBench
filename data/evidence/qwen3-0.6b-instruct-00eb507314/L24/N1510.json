@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1510,
+ "down_norm": 1.0585119724273682,
+ "logit_lens": {
+  "up": [
+   "类",
+   "ら",
+   "alon",
+   "要说",
+   "람",
+   "夫",
+   "續",
+   "류",
+   "리는",
+   "ombo",
+   "要在",
+   "伦"
+  ],
+  "down": [
+   " concerned",
+   " attracted",
+   " affected",
+   " satisfied",
+   " overwhelmed",
+   " shocked",
+   " impressed",
+   " stressed",
+   " impacted",
+   "mented",
+   " tempted",
+   "icted"
+  ],
+  "peak_z": 6.69426155090332
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

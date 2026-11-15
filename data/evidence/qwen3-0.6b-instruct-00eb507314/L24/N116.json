@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 116,
+ "down_norm": 0.837061882019043,
+ "logit_lens": {
+  "up": [
+   "flammatory",
+   " życie",
+   "requently",
+   "retty",
+   " nutshell",
+   "osphere",
+   "otos",
+   "/off",
+   "ToObject",
+   " NONINFRINGEMENT",
+   "ẩm",
+   " behalf"
+  ],
+  "down": [
+   "在",
+   " in",
+   "在网络",
+   "在他的",
+   "在一",
+   "在他",
+   "在其",
+   "在这",
+   "在一个",
+   "在广州",
+   "在深圳",
+   "在这个"
+  ],
+  "peak_z": 23.02842903137207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2355,
+ "down_norm": 0.8389520645141602,
+ "logit_lens": {
+  "up": [
+   "了解",
+   " information",
+   "信息",
+   "Information",
+   " understanding",
+   "了解到",
+   " informations",
+   " Information",
+   " info",
+   "详细了解",
+   "information",
+   "深入了解"
+  ],
+  "down": [
+   "wap",
+   "公约",
+   "oten",
+   "_tpl",
+   "大奖",
+   "rema",
+   " Monaco",
+   " Grat",
+   "esub",
+   "ufen",
+   "anda",
+   "ża"
+  ],
+  "peak_z": 7.793550968170166
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

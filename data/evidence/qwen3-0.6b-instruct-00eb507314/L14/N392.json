@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 392,
+ "down_norm": 0.8295372724533081,
+ "logit_lens": {
+  "up": [
+   "nya",
+   "ness",
+   "n",
+   "️",
+   "na",
+   "sa",
+   "m",
+   "然是",
+   "nar",
+   "sv",
+   "ne",
+   "ni"
+  ],
+  "down": [
+   "gether",
+   "ffect",
+   "plet",
+   "quine",
+   "ßen",
+   "MENTS",
+   "fern",
+   "ños",
+   "ques",
+   ".GetCurrentMethod",
+   "ughty",
+   "ptive"
+  ],
+  "peak_z": 7.982860565185547
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

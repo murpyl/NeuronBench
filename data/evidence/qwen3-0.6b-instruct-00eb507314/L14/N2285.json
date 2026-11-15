@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2285,
+ "down_norm": 0.9096540808677673,
+ "logit_lens": {
+  "up": [
+   "nothing",
+   "无关",
+   " nothing",
+   "none",
+   " none",
+   "不存在",
+   " nowhere",
+   "不做",
+   " never",
+   " NOTHING",
+   " absence",
+   " irrelevant"
+  ],
+  "down": [
+   "uard",
+   "commend",
+   " hoạch",
+   "ialect",
+   "uated",
+   "isson",
+   "malıdır",
+   "хват",
+   "yw",
+   "ió",
+   "Marshal",
+   "реш"
+  ],
+  "peak_z": 8.421500205993652
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

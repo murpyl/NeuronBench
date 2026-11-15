@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 815,
+ "down_norm": 0.5359048843383789,
+ "logit_lens": {
+  "up": [
+   "但它",
+   "ship",
+   "itime",
+   " plano",
+   "又",
+   " limiting",
+   "甩",
+   "维护",
+   "페이지",
+   "limit",
+   "´s",
+   "见效"
+  ],
+  "down": [
+   "トー",
+   " bitten",
+   "UBLE",
+   "cope",
+   "\")).",
+   "ща",
+   "été",
+   "aque",
+   "BTTagCompound",
+   "',['../",
+   " endforeach",
+   "られます"
+  ],
+  "peak_z": 5.0110907554626465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

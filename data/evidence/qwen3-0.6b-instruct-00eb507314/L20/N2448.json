@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2448,
+ "down_norm": 1.1012182235717773,
+ "logit_lens": {
+  "up": [
+   "lingen",
+   "ako",
+   " mộ",
+   "自学",
+   "一所",
+   "cosa",
+   "接纳",
+   "ummies",
+   "ólica",
+   "gles",
+   "接受",
+   "硐"
+  ],
+  "down": [
+   "anical",
+   " espan",
+   " Ever",
+   "ponent",
+   " squ",
+   "nesc",
+   "asty",
+   " TLabel",
+   "rending",
+   "ذه",
+   "andre",
+   "�"
+  ],
+  "peak_z": 5.431419372558594
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

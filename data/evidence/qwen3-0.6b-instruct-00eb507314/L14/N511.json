@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 511,
+ "down_norm": 0.6123431921005249,
+ "logit_lens": {
+  "up": [
+   "قا",
+   "int",
+   "SID",
+   "IP",
+   "fc",
+   "NO",
+   "Ợ",
+   "PROTO",
+   "衣",
+   "服",
+   "距离",
+   "温"
+  ],
+  "down": [
+   " nonetheless",
+   "iams",
+   " nevertheless",
+   "otty",
+   "american",
+   " occasional",
+   " illumin",
+   "எ",
+   "tingham",
+   "(forKey",
+   "揪",
+   "altern"
+  ],
+  "peak_z": 5.093168258666992
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

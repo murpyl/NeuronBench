@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2930,
+ "down_norm": 1.0647538900375366,
+ "logit_lens": {
+  "up": [
+   "entials",
+   "aim",
+   "ológico",
+   "_since",
+   "护身符",
+   "ertext",
+   "ages",
+   " prints",
+   "prung",
+   "printed",
+   " exposures",
+   "тики"
+  ],
+  "down": [
+   "会议",
+   "会议上",
+   "大会",
+   "委员会",
+   " meeting",
+   "大会上",
+   " congress",
+   "会上",
+   " convened",
+   "代表大会",
+   " committee",
+   " committees"
+  ],
+  "peak_z": 7.774960994720459
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

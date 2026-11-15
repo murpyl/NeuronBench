@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2711,
+ "down_norm": 1.1891505718231201,
+ "logit_lens": {
+  "up": [
+   "itan",
+   "munition",
+   "igram",
+   "枨",
+   "iske",
+   "ilians",
+   "apes",
+   "ål",
+   "лин",
+   "iline",
+   "frames",
+   "rames"
+  ],
+  "down": [
+   "服务",
+   " service",
+   " Service",
+   " services",
+   "服務",
+   "service",
+   "的服务",
+   "Service",
+   "服务水平",
+   "_service",
+   "\tservice",
+   " Services"
+  ],
+  "peak_z": 20.540815353393555
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

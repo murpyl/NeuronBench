@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2185,
+ "down_norm": 0.72343909740448,
+ "logit_lens": {
+  "up": [
+   "gradable",
+   "атур",
+   "annis",
+   "ennent",
+   "AIN",
+   "ñ",
+   " authDomain",
+   "ann",
+   "ain",
+   "osten",
+   "ceptors",
+   "anel"
+  ],
+  "down": [
+   " Bayer",
+   "’d",
+   "ười",
+   "”)",
+   "ibia",
+   "tet",
+   "bm",
+   " cams",
+   "匙",
+   " puss",
+   "<dd",
+   "ims"
+  ],
+  "peak_z": 5.006405830383301
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

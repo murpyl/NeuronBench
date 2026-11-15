@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2714,
+ "down_norm": 1.0298205614089966,
+ "logit_lens": {
+  "up": [
+   "-like",
+   " licences",
+   "roring",
+   " Kavanaugh",
+   "产出",
+   "ượng",
+   " Instances",
+   "готов",
+   " wann",
+   " ****************************************************************************",
+   ".setup",
+   "copies"
+  ],
+  "down": [
+   " method",
+   " technique",
+   "method",
+   "方法",
+   " Method",
+   " concept",
+   "机制",
+   " mechanism",
+   " methodology",
+   " tool",
+   "_method",
+   "\tmethod"
+  ],
+  "peak_z": 8.870437622070312
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

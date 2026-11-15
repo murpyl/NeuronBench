@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1925,
+ "down_norm": 1.1592010259628296,
+ "logit_lens": {
+  "up": [
+   " your",
+   "你的",
+   "your",
+   "您的",
+   " my",
+   " Your",
+   "Your",
+   " our",
+   "-your",
+   "我的",
+   " YOUR",
+   "我们的"
+  ],
+  "down": [
+   "英才",
+   " slump",
+   "rieben",
+   " Encyclopedia",
+   "aviest",
+   "\\Requests",
+   "enne",
+   "ubbles",
+   "äch",
+   "ически",
+   " envelope",
+   " bub"
+  ],
+  "peak_z": 14.949760437011719
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

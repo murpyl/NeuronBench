@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1136,
+ "down_norm": 0.8302423357963562,
+ "logit_lens": {
+  "up": [
+   "itest",
+   "リフォ",
+   "وم",
+   "arry",
+   "etest",
+   " Beaut",
+   "ランス",
+   "ery",
+   " Beauty",
+   "楞",
+   " CGContext",
+   " vere"
+  ],
+  "down": [
+   "杂志社",
+   "期刊",
+   "doi",
+   "Abstract",
+   "DOI",
+   " journals",
+   " authors",
+   " Abstract",
+   " abstract",
+   "杂志",
+   "Journal",
+   " Authors"
+  ],
+  "peak_z": 8.0856294631958
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

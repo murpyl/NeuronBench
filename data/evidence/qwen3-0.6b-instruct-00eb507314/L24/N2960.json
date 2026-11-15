@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2960,
+ "down_norm": 1.0900715589523315,
+ "logit_lens": {
+  "up": [
+   "ItemSelected",
+   "eral",
+   "thalm",
+   " imm",
+   "erals",
+   "awl",
+   "udu",
+   "umpy",
+   "moduleId",
+   " IMM",
+   "esso",
+   "nut"
+  ],
+  "down": [
+   "并",
+   "并在",
+   "并对",
+   "並",
+   "并将",
+   "并与",
+   "并向",
+   "并于",
+   "并通过",
+   "并且",
+   "，并",
+   "同时"
+  ],
+  "peak_z": 25.252979278564453
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

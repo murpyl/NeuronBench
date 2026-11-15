@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2707,
+ "down_norm": 1.150928258895874,
+ "logit_lens": {
+  "up": [
+   "�断",
+   "=@\"",
+   "ableObject",
+   "сол",
+   "енную",
+   "ificent",
+   "ynom",
+   "ashington",
+   "unicorn",
+   "hiba",
+   "]int",
+   "浥"
+  ],
+  "down": [
+   "学校",
+   "公司",
+   " company",
+   "公司在",
+   "学校的",
+   "學校",
+   " school",
+   "公司的",
+   "校",
+   "公司将",
+   "company",
+   "医院"
+  ],
+  "peak_z": 12.41655158996582
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

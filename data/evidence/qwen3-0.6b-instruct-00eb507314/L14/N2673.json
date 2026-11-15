@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2673,
+ "down_norm": 0.9134507775306702,
+ "logit_lens": {
+  "up": [
+   "ElapsedTime",
+   "!\\",
+   "Severity",
+   "thermal",
+   "驸",
+   "igh",
+   ".Duration",
+   "thur",
+   " endwhile",
+   "汀",
+   "!.",
+   "廓"
+  ],
+  "down": [
+   "zens",
+   "当你",
+   "通常是",
+   "antro",
+   "大概是",
+   "$:",
+   "例",
+   "\">$",
+   "例子",
+   "ğer",
+   " المتحدة",
+   " arrayOf"
+  ],
+  "peak_z": 5.215089797973633
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

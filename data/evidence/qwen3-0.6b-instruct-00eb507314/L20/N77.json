@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 77,
+ "down_norm": 0.7023950219154358,
+ "logit_lens": {
+  "up": [
+   "iedo",
+   "olut",
+   "irá",
+   "irates",
+   "ound",
+   "质量管理",
+   "next",
+   " Türkçe",
+   "iera",
+   "(next",
+   " opposite",
+   "涌"
+  ],
+  "down": [
+   "adir",
+   "roker",
+   "relation",
+   "@Id",
+   " tiết",
+   "wealth",
+   "{}]",
+   "sealed",
+   "phis",
+   "(crate",
+   "rors",
+   "verage"
+  ],
+  "peak_z": 5.468688488006592
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

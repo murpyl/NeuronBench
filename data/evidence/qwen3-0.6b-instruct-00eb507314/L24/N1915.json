@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1915,
+ "down_norm": 0.9858911633491516,
+ "logit_lens": {
+  "up": [
+   " light",
+   " view",
+   " Light",
+   "light",
+   "(light",
+   " relation",
+   " connection",
+   " virtue",
+   "\tlight",
+   "Light",
+   " LIGHT",
+   "-light"
+  ],
+  "down": [
+   "esimal",
+   "stile",
+   "ego",
+   "olang",
+   "ducible",
+   "oodles",
+   "es",
+   "TOCOL",
+   "ffield",
+   "<Any",
+   "禀",
+   "Ể"
+  ],
+  "peak_z": 10.852633476257324
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

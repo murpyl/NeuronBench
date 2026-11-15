@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1211,
+ "down_norm": 0.9893057346343994,
+ "logit_lens": {
+  "up": [
+   " Un",
+   " unr",
+   " un",
+   " unp",
+   " unt",
+   " unpack",
+   " Dec",
+   " unc",
+   "Un",
+   "_un",
+   "(un",
+   " decoding"
+  ],
+  "down": [
+   "inherit",
+   " Alley",
+   "过剩",
+   "Provid",
+   "INLINE",
+   "比分",
+   " getDescription",
+   "巨额",
+   "灾",
+   " Redistribution",
+   "コー",
+   " Wass"
+  ],
+  "peak_z": 7.737583637237549
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

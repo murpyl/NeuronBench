@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 366,
+ "down_norm": 0.5347855687141418,
+ "logit_lens": {
+  "up": [
+   "istique",
+   "arters",
+   "abd",
+   "ising",
+   "rarian",
+   "uling",
+   "◄",
+   "odos",
+   "uren",
+   "ugg",
+   "��",
+   " sails"
+  ],
+  "down": [
+   " <![",
+   "vable",
+   "enstein",
+   "**\n\n",
+   "ForObject",
+   "_gray",
+   "anax",
+   "シェ",
+   "**\n",
+   ".toByteArray",
+   "党和国家",
+   "#{@"
+  ],
+  "peak_z": 4.88545560836792
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

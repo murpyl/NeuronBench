@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1035,
+ "down_norm": 1.0332725048065186,
+ "logit_lens": {
+  "up": [
+   "some",
+   " some",
+   "isable",
+   "Some",
+   " Some",
+   "حلول",
+   "aac",
+   "ái",
+   "elas",
+   "dex",
+   "#:",
+   "isci"
+  ],
+  "down": [
+   " certain",
+   " Certain",
+   "ertain",
+   "Certain",
+   "年之久",
+   " sure",
+   "特定",
+   " mỡ",
+   "ont",
+   "actories",
+   " countless",
+   "orent"
+  ],
+  "peak_z": 8.011333465576172
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

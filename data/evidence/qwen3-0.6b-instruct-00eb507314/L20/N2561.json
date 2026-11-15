@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2561,
+ "down_norm": 1.15555739402771,
+ "logit_lens": {
+  "up": [
+   "ercul",
+   "釜",
+   "باء",
+   "inin",
+   "itarian",
+   "elia",
+   "u",
+   "ey",
+   " SEE",
+   "为目标",
+   "auty",
+   "periments"
+  ],
+  "down": [
+   "职业道德",
+   " ơn",
+   "ToOne",
+   "rength",
+   "Inflater",
+   "'](",
+   "еле",
+   "AGMA",
+   "atisch",
+   "CodeAt",
+   "InstanceState",
+   "mates"
+  ],
+  "peak_z": 4.976853370666504
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

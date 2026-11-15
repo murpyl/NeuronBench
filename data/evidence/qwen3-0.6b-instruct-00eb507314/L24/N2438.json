@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2438,
+ "down_norm": 1.114464521408081,
+ "logit_lens": {
+  "up": [
+   "unta",
+   "руб",
+   "磕",
+   " DISCLAIMER",
+   "gb",
+   "oomla",
+   "斯顿",
+   "ASC",
+   "nat",
+   "ewire",
+   "萌",
+   "äsent"
+  ],
+  "down": [
+   "eff",
+   "_eff",
+   "Eff",
+   " EFF",
+   " ef",
+   "_effect",
+   "Ef",
+   " Effect",
+   " eff",
+   "EFF",
+   " Ef",
+   "效"
+  ],
+  "peak_z": 10.83313274383545
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

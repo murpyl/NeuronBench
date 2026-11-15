@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 668,
+ "down_norm": 1.0583280324935913,
+ "logit_lens": {
+  "up": [
+   ";\n\n",
+   ";\n",
+   ";</",
+   "了自己的",
+   " himself",
+   "_Mode",
+   "”;",
+   ";\",",
+   "IMP",
+   " urgency",
+   ";\r\n",
+   " colle"
+  ],
+  "down": [
+   "chers",
+   "veal",
+   "asures",
+   "ограф",
+   "一步",
+   "分子",
+   "�除",
+   "生产生活",
+   " Span",
+   "бра",
+   "ента",
+   "plements"
+  ],
+  "peak_z": 4.708882808685303
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

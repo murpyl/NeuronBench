@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 477,
+ "down_norm": 0.9717682600021362,
+ "logit_lens": {
+  "up": [
+   " he",
+   " him",
+   "他",
+   " his",
+   "他在",
+   "he",
+   "他的",
+   " himself",
+   " He",
+   "着他",
+   "他也",
+   "所以他"
+  ],
+  "down": [
+   "culo",
+   "StandardItem",
+   " jos",
+   "culate",
+   "licate",
+   "_iter",
+   "rowsing",
+   "ordion",
+   "elf",
+   "Insn",
+   "磔",
+   "_shift"
+  ],
+  "peak_z": 19.941816329956055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

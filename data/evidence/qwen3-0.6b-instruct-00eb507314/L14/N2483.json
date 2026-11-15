@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2483,
+ "down_norm": 0.8307031393051147,
+ "logit_lens": {
+  "up": [
+   "ledge",
+   " &_",
+   "bral",
+   "NR",
+   " JR",
+   "_NR",
+   " Belly",
+   "anker",
+   "JR",
+   " ElementRef",
+   "BF",
+   "视为"
+  ],
+  "down": [
+   " if",
+   " when",
+   " jeśli",
+   "if",
+   " wenn",
+   " jika",
+   "如果",
+   "when",
+   " 如果",
+   "如果您",
+   " nếu",
+   " если"
+  ],
+  "peak_z": 9.453125953674316
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

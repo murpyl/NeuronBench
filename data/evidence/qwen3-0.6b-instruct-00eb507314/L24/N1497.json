@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1497,
+ "down_norm": 1.0005544424057007,
+ "logit_lens": {
+  "up": [
+   "getDb",
+   "robe",
+   "brew",
+   "idas",
+   "sett",
+   "kategori",
+   "acias",
+   "づ",
+   "getNode",
+   "由中国",
+   "代理",
+   "Originally"
+  ],
+  "down": [
+   ".assertThat",
+   "ет",
+   "뚱",
+   ".Slf",
+   "ndern",
+   "戬",
+   "毫米",
+   "orgia",
+   "*width",
+   " springfox",
+   " into",
+   " undecided"
+  ],
+  "peak_z": 4.704113483428955
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

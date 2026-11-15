@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 712,
+ "down_norm": 1.0102027654647827,
+ "logit_lens": {
+  "up": [
+   "ivial",
+   "ifice",
+   "ücü",
+   "entious",
+   "ernaut",
+   "ṇ",
+   "nex",
+   "astery",
+   "oge",
+   "heit",
+   "nish",
+   "ocene"
+  ],
+  "down": [
+   " long",
+   "long",
+   "长",
+   " Long",
+   "Long",
+   "\tlong",
+   " LONG",
+   " longer",
+   "(long",
+   ".long",
+   "-long",
+   ",long"
+  ],
+  "peak_z": 23.501115798950195
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

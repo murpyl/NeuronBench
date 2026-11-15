@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1972,
+ "down_norm": 1.0881731510162354,
+ "logit_lens": {
+  "up": [
+   "Cases",
+   "mie",
+   "ATTLE",
+   "_CHILD",
+   "iami",
+   "/owl",
+   "]]></",
+   "imest",
+   "requ",
+   "столь",
+   "_cases",
+   " cases"
+  ],
+  "down": [
+   ".dev",
+   "icum",
+   "idency",
+   "年起",
+   "getic",
+   "ITCH",
+   "richt",
+   "veloper",
+   "LAY",
+   "[left",
+   "道士",
+   "getY"
+  ],
+  "peak_z": 5.025137424468994
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

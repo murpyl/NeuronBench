@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2378,
+ "down_norm": 1.0930759906768799,
+ "logit_lens": {
+  "up": [
+   " College",
+   "College",
+   " college",
+   "college",
+   "中学",
+   "小学",
+   "大学",
+   "?v",
+   " Student",
+   "ama",
+   "初中",
+   "(Student"
+  ],
+  "down": [
+   "税",
+   "וצר",
+   "总价",
+   "睛",
+   " seniors",
+   "晚",
+   "нести",
+   "�택",
+   "ս",
+   "lope",
+   "óc",
+   "矞"
+  ],
+  "peak_z": 6.340578556060791
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

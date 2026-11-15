@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1284,
+ "down_norm": 0.8597036600112915,
+ "logit_lens": {
+  "up": [
+   " Influence",
+   "会影响",
+   "iram",
+   " influence",
+   "影响",
+   "有助于",
+   "影響",
+   " influences",
+   "缘",
+   "pery",
+   "带动",
+   "促进了"
+  ],
+  "down": [
+   "aket",
+   "stras",
+   "CompatActivity",
+   "exion",
+   "鹗",
+   "odge",
+   " kaps",
+   "аются",
+   "فق",
+   "_subplot",
+   "ureka",
+   " Called"
+  ],
+  "peak_z": 5.6603899002075195
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

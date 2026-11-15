@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 420,
+ "down_norm": 1.000776767730713,
+ "logit_lens": {
+  "up": [
+   "独角",
+   " rollers",
+   "PerPage",
+   "pecified",
+   "vc",
+   "很漂亮",
+   "pez",
+   "peria",
+   ".ny",
+   "вест",
+   "PathComponent",
+   "chor"
+  ],
+  "down": [
+   "aine",
+   "aines",
+   "ule",
+   "phe",
+   "elige",
+   "ilde",
+   "adem",
+   "oid",
+   "钧",
+   "aries",
+   "体",
+   " الاحتلال"
+  ],
+  "peak_z": 5.57525110244751
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

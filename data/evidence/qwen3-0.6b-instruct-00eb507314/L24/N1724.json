@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1724,
+ "down_norm": 1.1523208618164062,
+ "logit_lens": {
+  "up": [
+   "提供",
+   " providing",
+   " provide",
+   "提供的",
+   " Provide",
+   "提供了",
+   " provides",
+   " Providing",
+   "Provide",
+   "provide",
+   " provided",
+   "Provid"
+  ],
+  "down": [
+   "iomanip",
+   "很喜欢",
+   " PropertyInfo",
+   "ACING",
+   "忙着",
+   "::$",
+   ".lwjgl",
+   "ACP",
+   "hus",
+   "KP",
+   "icine",
+   "acs"
+  ],
+  "peak_z": 14.299962043762207
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

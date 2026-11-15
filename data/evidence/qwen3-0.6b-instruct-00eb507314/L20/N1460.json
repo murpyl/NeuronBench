@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1460,
+ "down_norm": 0.8910495042800903,
+ "logit_lens": {
+  "up": [
+   "\\t",
+   "inkle",
+   "세",
+   "arer",
+   " pixels",
+   "şt",
+   "ivery",
+   "acre",
+   " springfox",
+   "\t\t   ",
+   "din",
+   "utan"
+  ],
+  "down": [
+   "vidence",
+   "另一半",
+   "都知道",
+   "无缘",
+   "缺席",
+   "[--",
+   "opoulos",
+   "上有",
+   ".DataContext",
+   "辄",
+   " themselves",
+   "ทอง"
+  ],
+  "peak_z": 5.5100417137146
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

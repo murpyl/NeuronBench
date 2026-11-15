@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2734,
+ "down_norm": 0.8757959604263306,
+ "logit_lens": {
+  "up": [
+   "orary",
+   "偈",
+   "玩家来说",
+   "跟我说",
+   "enerated",
+   "bags",
+   "canvas",
+   "总面积",
+   "ferences",
+   "itched",
+   "ính",
+   "比较"
+  ],
+  "down": [
+   " needed",
+   "正是",
+   " нуж",
+   "尾",
+   "ry",
+   "只需要",
+   " correct",
+   " solution",
+   "YYY",
+   "isse",
+   "otten",
+   " necessary"
+  ],
+  "peak_z": 6.385250091552734
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

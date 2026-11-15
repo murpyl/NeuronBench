@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1442,
+ "down_norm": 1.0951329469680786,
+ "logit_lens": {
+  "up": [
+   " pen",
+   "-to",
+   "倒",
+   "ed",
+   "Wr",
+   " Weston",
+   "idot",
+   "losion",
+   ")V",
+   "poser",
+   " writ",
+   " Winston"
+  ],
+  "down": [
+   "contro",
+   "trer",
+   "riendly",
+   "/uploads",
+   "ues",
+   "rophe",
+   "ibil",
+   " mean",
+   "uum",
+   "adena",
+   "Gratis",
+   "efined"
+  ],
+  "peak_z": 5.779852867126465
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

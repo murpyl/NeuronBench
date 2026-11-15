@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2998,
+ "down_norm": 0.8505114912986755,
+ "logit_lens": {
+  "up": [
+   "attended",
+   " handleMessage",
+   "并与",
+   "aData",
+   ".getResponse",
+   " drank",
+   " TForm",
+   "ponse",
+   "ffa",
+   " ),\n\n",
+   "��이",
+   "ertificate"
+  ],
+  "down": [
+   " today",
+   " now",
+   "_now",
+   "现在的",
+   "今天的",
+   " hoje",
+   " current",
+   "目前",
+   "如今",
+   "我们现在",
+   " Today",
+   " currently"
+  ],
+  "peak_z": 5.688960552215576
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

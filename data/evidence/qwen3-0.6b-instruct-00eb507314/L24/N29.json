@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 29,
+ "down_norm": 0.818713366985321,
+ "logit_lens": {
+  "up": [
+   "那样的",
+   " практи",
+   "日趋",
+   "奢",
+   " sooner",
+   "巳",
+   "均已",
+   "实践经验",
+   " prevailed",
+   "一切都",
+   "日渐",
+   "一定程度"
+  ],
+  "down": [
+   "汀",
+   " ret",
+   "ATH",
+   " الكل",
+   "kernel",
+   "_export",
+   " Loaded",
+   "ORIZ",
+   "pong",
+   "amping",
+   "ussions",
+   "ACH"
+  ],
+  "peak_z": 5.200850486755371
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

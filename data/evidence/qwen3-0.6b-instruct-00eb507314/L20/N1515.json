@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1515,
+ "down_norm": 0.9106907844543457,
+ "logit_lens": {
+  "up": [
+   " Triangle",
+   " triangle",
+   "triangle",
+   " angles",
+   " triangles",
+   "三角",
+   "Triangle",
+   "angles",
+   "angle",
+   " angle",
+   "∠",
+   "_angles"
+  ],
+  "down": [
+   "rott",
+   "*@",
+   "appy",
+   "raph",
+   "蚓",
+   "妪",
+   "缫",
+   "*dt",
+   "pear",
+   "mat",
+   " vacuum",
+   " puberty"
+  ],
+  "peak_z": 7.851972579956055
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 137,
+ "down_norm": 0.7909351587295532,
+ "logit_lens": {
+  "up": [
+   " simulation",
+   " unins",
+   "(ins",
+   "sı",
+   "tere",
+   "目的地",
+   "原来是",
+   "系统",
+   "straction",
+   " challenger",
+   "<location",
+   "лага"
+  ],
+  "down": [
+   "ask",
+   ".deleteById",
+   "omy",
+   "antino",
+   "asc",
+   "book",
+   "any",
+   "щи",
+   "aim",
+   "dl",
+   "ool",
+   "上げ"
+  ],
+  "peak_z": 4.950504302978516
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

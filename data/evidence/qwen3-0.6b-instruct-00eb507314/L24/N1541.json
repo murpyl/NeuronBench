@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1541,
+ "down_norm": 1.1480807065963745,
+ "logit_lens": {
+  "up": [
+   "ParameterValue",
+   "eway",
+   "esModule",
+   "itarian",
+   "棠",
+   "ственно",
+   "谀",
+   "獎",
+   "eparator",
+   " moder",
+   "xmm",
+   "icontrol"
+  ],
+  "down": [
+   " index",
+   "index",
+   "Index",
+   " Index",
+   " indexes",
+   "索",
+   ".index",
+   "_index",
+   "indexes",
+   " indexing",
+   ".Index",
+   " indices"
+  ],
+  "peak_z": 10.573057174682617
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

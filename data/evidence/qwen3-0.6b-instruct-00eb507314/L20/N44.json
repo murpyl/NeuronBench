@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 44,
+ "down_norm": 0.677884578704834,
+ "logit_lens": {
+  "up": [
+   "<|endoftext|>",
+   "!\n\n\n\n\n\n",
+   ".\n\n\n\n\n\n\n\n\n\n",
+   "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+   ".\n\n\n",
+   "!\n\n\n\n",
+   ".\n\n\n\n",
+   "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+   ".\n\n\n\n\n\n\n\n\n\n\n\n",
+   "\n\n\n\n\n\n\n\n\n\n\n",
+   "\n\n\n\n\n\n",
+   "。\n\n\n\n"
+  ],
+  "down": [
+   "网讯",
+   "ROID",
+   "呙",
+   "Ń",
+   ";\",\n",
+   " :\";\n",
+   "ITCH",
+   "reo",
+   "osomal",
+   "izio",
+   ":\");\n",
+   "%\";\n"
+  ],
+  "peak_z": 19.65178680419922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

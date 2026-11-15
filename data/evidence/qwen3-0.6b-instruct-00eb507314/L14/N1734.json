@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1734,
+ "down_norm": 0.7949163913726807,
+ "logit_lens": {
+  "up": [
+   "inction",
+   "报复",
+   "转载请",
+   "'}}",
+   ".SuspendLayout",
+   "唛",
+   " betr",
+   "'}}\n",
+   "iller",
+   "']]\n",
+   " }};\n",
+   "}}{{"
+  ],
+  "down": [
+   " and",
+   "、",
+   "和",
+   "和社会",
+   "otional",
+   ",",
+   "~,",
+   "icios",
+   "以及",
+   "和服务",
+   " layer",
+   "、“"
+  ],
+  "peak_z": 5.794536113739014
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

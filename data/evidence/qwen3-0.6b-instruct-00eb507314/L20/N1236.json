@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1236,
+ "down_norm": 0.9427626132965088,
+ "logit_lens": {
+  "up": [
+   "+a",
+   "��",
+   " measures",
+   "@a",
+   "езульт",
+   ">a",
+   "ertain",
+   " areas",
+   "ablish",
+   " Areas",
+   "ourg",
+   "負責"
+  ],
+  "down": [
+   "Understanding",
+   "理解",
+   "理解和",
+   " Understanding",
+   "的理解",
+   "вест",
+   "Under",
+   "idious",
+   "under",
+   "agen",
+   "роз",
+   " UNDER"
+  ],
+  "peak_z": 5.505961894989014
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 387,
+ "down_norm": 0.986712634563446,
+ "logit_lens": {
+  "up": [
+   "ItemAt",
+   "棣",
+   "bei",
+   "itness",
+   "(strict",
+   "ached",
+   "极端",
+   "腘",
+   "inium",
+   "brane",
+   "ryo",
+   "歧"
+  ],
+  "down": [
+   " up",
+   "up",
+   "-up",
+   " Up",
+   "Up",
+   "\tup",
+   "_up",
+   "-Up",
+   "(up",
+   ".up",
+   "UP",
+   "-ups"
+  ],
+  "peak_z": 23.889421463012695
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

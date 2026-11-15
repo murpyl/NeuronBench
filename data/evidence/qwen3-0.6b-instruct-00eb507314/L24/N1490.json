@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1490,
+ "down_norm": 1.0977356433868408,
+ "logit_lens": {
+  "up": [
+   "anuts",
+   "isten",
+   "empl",
+   "eden",
+   "边上",
+   "begin",
+   "onian",
+   "蔓延",
+   "bei",
+   "=headers",
+   "BACK",
+   ".Begin"
+  ],
+  "down": [
+   "renc",
+   "erson",
+   " indem",
+   "сол",
+   " Flag",
+   "irma",
+   "人大",
+   "_DIRS",
+   "(Parameter",
+   "ugg",
+   "adder",
+   " Manor"
+  ],
+  "peak_z": 4.904383182525635
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

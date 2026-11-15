@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2473,
+ "down_norm": 1.234060287475586,
+ "logit_lens": {
+  "up": [
+   "cratch",
+   "ception",
+   "aras",
+   "CEPTION",
+   "lain",
+   " 개",
+   "在一起",
+   ".getChildren",
+   " scrimmage",
+   "olutely",
+   "ully",
+   "anson"
+  ],
+  "down": [
+   " from",
+   "从",
+   "from",
+   " From",
+   "From",
+   "\tfrom",
+   " FROM",
+   "從",
+   "是从",
+   "_from",
+   "-from",
+   ".from"
+  ],
+  "peak_z": 21.72328758239746
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2583,
+ "down_norm": 0.9920192360877991,
+ "logit_lens": {
+  "up": [
+   " presentation",
+   " print",
+   "-print",
+   " printing",
+   " presentations",
+   "print",
+   "Print",
+   "决策",
+   "_print",
+   " present",
+   "出版",
+   "Printing"
+  ],
+  "down": [
+   "experiment",
+   "(PRO",
+   "AMPLE",
+   ".mixin",
+   "SUR",
+   " surveys",
+   "projects",
+   "Probe",
+   "эм",
+   "sample",
+   " perks",
+   "(sample"
+  ],
+  "peak_z": 5.407329559326172
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

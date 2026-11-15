@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2714,
+ "down_norm": 0.8249054551124573,
+ "logit_lens": {
+  "up": [
+   "工程技术",
+   "技术支持",
+   "[])\n",
+   " [])\n",
+   "管理工作",
+   "?\")\n",
+   "一所",
+   "行动计划",
+   " Cùng",
+   "新技术",
+   "وبة",
+   "']->"
+  ],
+  "down": [
+   "tics",
+   "osen",
+   "hetics",
+   "midt",
+   "osing",
+   "_known",
+   "marvin",
+   "��",
+   "avers",
+   "olds",
+   "cript",
+   ".breakpoints"
+  ],
+  "peak_z": 5.125726699829102
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

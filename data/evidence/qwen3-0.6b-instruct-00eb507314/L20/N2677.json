@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2677,
+ "down_norm": 0.9974051713943481,
+ "logit_lens": {
+  "up": [
+   "ément",
+   " bouquet",
+   "issenschaft",
+   "eper",
+   "ModelError",
+   "INAL",
+   "getBlock",
+   "褐",
+   "arning",
+   "getMessage",
+   "各行",
+   "plen"
+  ],
+  "down": [
+   " only",
+   "only",
+   " Only",
+   "Only",
+   "只有",
+   "_only",
+   " ONLY",
+   "也只有",
+   "只",
+   "-only",
+   " только",
+   "仅有"
+  ],
+  "peak_z": 23.128751754760742
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

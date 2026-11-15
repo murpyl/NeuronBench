@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 219,
+ "down_norm": 1.1989033222198486,
+ "logit_lens": {
+  "up": [
+   "rench",
+   " Willis",
+   "ersh",
+   "ارة",
+   "�",
+   "ahu",
+   "usp",
+   "ita",
+   "ilig",
+   "unci",
+   "erva",
+   "arching"
+  ],
+  "down": [
+   " fifth",
+   " five",
+   "5",
+   " Fifth",
+   "第五",
+   "五个",
+   " Five",
+   "five",
+   "-five",
+   "５",
+   "五年",
+   "五"
+  ],
+  "peak_z": 10.345381736755371
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

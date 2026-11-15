@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2533,
+ "down_norm": 1.0204781293869019,
+ "logit_lens": {
+  "up": [
+   "*x",
+   " Statistical",
+   "*b",
+   "*M",
+   "*N",
+   " *,",
+   "*c",
+   "erea",
+   "isma",
+   " photographed",
+   "%)\n\n",
+   "例行"
+  ],
+  "down": [
+   "��",
+   "твержден",
+   "askan",
+   "ascade",
+   "_property",
+   " ['-",
+   ".addProperty",
+   "property",
+   "�建",
+   "性质",
+   "典",
+   "砧"
+  ],
+  "peak_z": 5.369228839874268
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

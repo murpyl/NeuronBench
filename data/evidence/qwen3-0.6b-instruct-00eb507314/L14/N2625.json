@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2625,
+ "down_norm": 0.7638794183731079,
+ "logit_lens": {
+  "up": [
+   "=com",
+   "*out",
+   "xad",
+   "ogue",
+   "וך",
+   "箅",
+   "icals",
+   " *</",
+   "ıld",
+   " bara",
+   "[url",
+   "efs"
+  ],
+  "down": [
+   "三",
+   " Three",
+   "四",
+   "Three",
+   " three",
+   "、",
+   "三人",
+   "pent",
+   " Petr",
+   " tri",
+   "-quarter",
+   " triplet"
+  ],
+  "peak_z": 5.817439079284668
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

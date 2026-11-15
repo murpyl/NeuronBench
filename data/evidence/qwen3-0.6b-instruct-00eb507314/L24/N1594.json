@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1594,
+ "down_norm": 1.0586612224578857,
+ "logit_lens": {
+  "up": [
+   " sense",
+   "感觉",
+   " feeling",
+   " thought",
+   " senses",
+   "感受",
+   "的感觉",
+   " idea",
+   " Feel",
+   " Idea",
+   "感覺",
+   "feel"
+  ],
+  "down": [
+   "rary",
+   "liest",
+   "UTE",
+   ".rawValue",
+   "牡",
+   "acial",
+   "اذ",
+   "овал",
+   "彘",
+   "boat",
+   "的到来",
+   "OTO"
+  ],
+  "peak_z": 7.864474296569824
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

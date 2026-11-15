@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 687,
+ "down_norm": 0.7332402467727661,
+ "logit_lens": {
+  "up": [
+   "IAN",
+   "__*/",
+   "裔",
+   "eries",
+   "-best",
+   "osing",
+   "omentum",
+   "izations",
+   "vier",
+   "ONA",
+   "ICATION",
+   "berger"
+  ],
+  "down": [
+   "ly",
+   "seek",
+   "dent",
+   "grade",
+   "ál",
+   "iro",
+   "avel",
+   "rels",
+   "稿",
+   "ensible",
+   "le",
+   "nel"
+  ],
+  "peak_z": 4.9444780349731445
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

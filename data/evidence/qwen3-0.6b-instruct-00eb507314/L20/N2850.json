@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2850,
+ "down_norm": 0.7529749870300293,
+ "logit_lens": {
+  "up": [
+   "掌握了",
+   " addition",
+   "实践中",
+   "awy",
+   "业余",
+   "\"]];\n",
+   " Addition",
+   "stration",
+   "emas",
+   "接下来",
+   " практи",
+   "actices"
+  ],
+  "down": [
+   "itä",
+   "elled",
+   "妆",
+   "illing",
+   "uation",
+   "uated",
+   "licit",
+   "via",
+   "back",
+   "ディング",
+   "})",
+   " via"
+  ],
+  "peak_z": 5.231479644775391
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

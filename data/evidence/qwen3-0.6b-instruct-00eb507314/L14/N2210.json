@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2210,
+ "down_norm": 0.8681350946426392,
+ "logit_lens": {
+  "up": [
+   "<Customer",
+   " pricing",
+   "直销",
+   " retailers",
+   "_customer",
+   " Pricing",
+   "idding",
+   "正品",
+   "pricing",
+   " Prices",
+   " retailer",
+   "产品质量"
+  ],
+  "down": [
+   "珞",
+   " complement",
+   " gehört",
+   "uments",
+   "丧",
+   "民主党",
+   "喪",
+   "tring",
+   " subplot",
+   "บาด",
+   "组织生活",
+   "fall"
+  ],
+  "peak_z": 4.723505020141602
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

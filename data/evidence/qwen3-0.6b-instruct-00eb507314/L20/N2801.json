@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2801,
+ "down_norm": 1.1124495267868042,
+ "logit_lens": {
+  "up": [
+   "raj",
+   "(q",
+   "[q",
+   "quisition",
+   "ocene",
+   "RAL",
+   "ordial",
+   " PCIe",
+   "qb",
+   "qm",
+   "qn",
+   ".qml"
+  ],
+  "down": [
+   "usp",
+   " transform",
+   "astype",
+   " té",
+   "tg",
+   " tab",
+   " Transform",
+   " thức",
+   "斯特",
+   "subclass",
+   "TRAIN",
+   "TH"
+  ],
+  "peak_z": 4.473029613494873
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

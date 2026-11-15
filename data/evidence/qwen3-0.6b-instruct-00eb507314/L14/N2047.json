@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2047,
+ "down_norm": 0.7209272980690002,
+ "logit_lens": {
+  "up": [
+   "icrosoft",
+   "中新",
+   "在学校",
+   "[vi",
+   "=\"./",
+   "lük",
+   " yourselves",
+   "{text",
+   "úde",
+   "\n \n",
+   "შ",
+   "�件"
+  ],
+  "down": [
+   "脿",
+   "และ",
+   " 및",
+   "和支持",
+   " prohibition",
+   "notice",
+   "яет",
+   "และการ",
+   "性和",
+   " DISCLAIMER",
+   "Goal",
+   "และความ"
+  ],
+  "peak_z": 5.32581901550293
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

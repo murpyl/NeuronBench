@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1008,
+ "down_norm": 1.109388828277588,
+ "logit_lens": {
+  "up": [
+   " different",
+   "不同的",
+   "不同",
+   "different",
+   " Different",
+   "的不同",
+   "Different",
+   " diferentes",
+   "_different",
+   " différents",
+   "不同类型",
+   "不一样"
+  ],
+  "down": [
+   " bog",
+   " harmed",
+   " Burgess",
+   "чество",
+   "ISH",
+   " ):",
+   ")':",
+   "么",
+   "버",
+   "组团",
+   "\":",
+   "UDA"
+  ],
+  "peak_z": 23.599395751953125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

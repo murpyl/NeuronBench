@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2092,
+ "down_norm": 0.6769986748695374,
+ "logit_lens": {
+  "up": [
+   "czy",
+   "łó",
+   " Whit",
+   "OLID",
+   "一组",
+   "��",
+   "盤",
+   "овор",
+   " ['#",
+   " Covent",
+   "祜",
+   "いない"
+  ],
+  "down": [
+   "规模最大",
+   " lowest",
+   " strongest",
+   " Highest",
+   "优先",
+   "highest",
+   " Largest",
+   "aviest",
+   " highest",
+   " weakest",
+   "lowest",
+   " tallest"
+  ],
+  "peak_z": 6.218771457672119
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

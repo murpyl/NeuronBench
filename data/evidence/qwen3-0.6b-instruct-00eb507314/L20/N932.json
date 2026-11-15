@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 932,
+ "down_norm": 0.8159375786781311,
+ "logit_lens": {
+  "up": [
+   "每个",
+   "每人",
+   "每一个",
+   "几个",
+   "每位",
+   "一台",
+   "每",
+   "一部",
+   "一棵",
+   "一头",
+   "every",
+   "每个人的"
+  ],
+  "down": [
+   "onz",
+   "quil",
+   "ogeneous",
+   "ume",
+   " combinations",
+   "ustin",
+   " finishes",
+   " plates",
+   "�",
+   "yll",
+   " pedest",
+   "结束后"
+  ],
+  "peak_z": 6.72877836227417
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 477,
+ "down_norm": 0.9862726926803589,
+ "logit_lens": {
+  "up": [
+   "th",
+   "ths",
+   "薪",
+   "ách",
+   " pyl",
+   "SetValue",
+   "ective",
+   "cts",
+   "omet",
+   "lei",
+   " Urg",
+   " hail"
+  ],
+  "down": [
+   "ubit",
+   "itative",
+   "naire",
+   "rels",
+   "ubits",
+   "naires",
+   "paced",
+   "итель",
+   "IODevice",
+   "ʒ",
+   "uild",
+   "텟"
+  ],
+  "peak_z": 5.706931114196777
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

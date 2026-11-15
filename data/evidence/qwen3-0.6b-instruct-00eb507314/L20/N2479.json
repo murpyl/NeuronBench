@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2479,
+ "down_norm": 1.006382942199707,
+ "logit_lens": {
+  "up": [
+   " φ",
+   " hh",
+   " HH",
+   " mm",
+   "mk",
+   "mn",
+   " ll",
+   " DD",
+   " XX",
+   "mm",
+   " cc",
+   "XXX"
+  ],
+  "down": [
+   "rypt",
+   "ividual",
+   "odont",
+   "crets",
+   "\\\",\n",
+   "游戏操作",
+   "imbledon",
+   ".getOwnPropertyDescriptor",
+   "REAK",
+   "OperationException",
+   "TeV",
+   "力还是"
+  ],
+  "peak_z": 5.048426151275635
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

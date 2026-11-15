@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1877,
+ "down_norm": 0.6825259327888489,
+ "logit_lens": {
+  "up": [
+   "一眼",
+   "甥",
+   "飧",
+   "dent",
+   "umont",
+   "南海网",
+   "望",
+   "جز",
+   "-www",
+   "一看",
+   "echa",
+   "adol"
+  ],
+  "down": [
+   ")?.",
+   "top",
+   "屏蔽",
+   " setActive",
+   "arra",
+   "сет",
+   "设定",
+   "%).",
+   " top",
+   "oub",
+   "arity",
+   "Adresse"
+  ],
+  "peak_z": 5.543717861175537
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

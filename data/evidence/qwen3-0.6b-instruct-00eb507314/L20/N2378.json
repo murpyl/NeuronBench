@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2378,
+ "down_norm": 0.8523640632629395,
+ "logit_lens": {
+  "up": [
+   "ди",
+   "间",
+   "OTA",
+   "CDC",
+   " instead",
+   "cdc",
+   "يها",
+   "olars",
+   "人为",
+   "蔷",
+   "بك",
+   "akra"
+  ],
+  "down": [
+   "注意",
+   "使用的",
+   " gebruik",
+   "ользов",
+   "shown",
+   " bother",
+   "available",
+   "的关注",
+   "avail",
+   " involved",
+   "availability",
+   "_present"
+  ],
+  "peak_z": 5.346847057342529
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1632,
+ "down_norm": 1.0727360248565674,
+ "logit_lens": {
+  "up": [
+   " once",
+   "once",
+   "Once",
+   " Once",
+   "一次",
+   "两次",
+   "几次",
+   "_once",
+   ".once",
+   "_ONCE",
+   "三次",
+   ".Once"
+  ],
+  "down": [
+   "aro",
+   "ائل",
+   "licit",
+   "ậy",
+   "andr",
+   "本文",
+   "ento",
+   "惕",
+   " drummer",
+   "之間",
+   "ulet",
+   "なりません"
+  ],
+  "peak_z": 21.473072052001953
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

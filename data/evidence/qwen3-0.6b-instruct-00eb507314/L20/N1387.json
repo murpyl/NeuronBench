@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1387,
+ "down_norm": 0.8468620181083679,
+ "logit_lens": {
+  "up": [
+   "esterday",
+   "rowing",
+   "发展趋势",
+   "持续",
+   "攻势",
+   " growing",
+   " progressing",
+   "持續",
+   "的趋势",
+   "不断的",
+   " Growing",
+   " sunrise"
+  ],
+  "down": [
+   "urdy",
+   ">>>(",
+   "nze",
+   "astery",
+   "本领",
+   "نسي",
+   "phia",
+   "NullOr",
+   "arently",
+   "ียม",
+   "enaire",
+   "oji"
+  ],
+  "peak_z": 4.955604553222656
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

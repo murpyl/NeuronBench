@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1387,
+ "down_norm": 0.7361915707588196,
+ "logit_lens": {
+  "up": [
+   "ൾ",
+   "|#",
+   "adays",
+   "(strip",
+   "dater",
+   "押",
+   "ificados",
+   "alyzed",
+   "ány",
+   ".connector",
+   "(face",
+   "(insert"
+  ],
+  "down": [
+   " Bren",
+   "ром",
+   "s",
+   "REATE",
+   "_CONTAINER",
+   " arrayOf",
+   "avage",
+   "ArrayOf",
+   " Bre",
+   "AIN",
+   "osomal",
+   "ved"
+  ],
+  "peak_z": 4.915025234222412
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

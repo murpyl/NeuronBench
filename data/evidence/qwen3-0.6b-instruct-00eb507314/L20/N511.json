@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 511,
+ "down_norm": 0.832292914390564,
+ "logit_lens": {
+  "up": [
+   "chai",
+   "arda",
+   " planning",
+   "uhan",
+   "бри",
+   " behind",
+   "踩",
+   "([&",
+   "笑了",
+   "(string",
+   "usch",
+   ".eval"
+  ],
+  "down": [
+   "forme",
+   "where",
+   "otive",
+   "ewolf",
+   "垍",
+   " where",
+   " sorte",
+   " где",
+   "ería",
+   " Owens",
+   "$where",
+   "otify"
+  ],
+  "peak_z": 4.878976821899414
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

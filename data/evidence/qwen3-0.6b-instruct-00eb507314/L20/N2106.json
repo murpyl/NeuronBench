@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2106,
+ "down_norm": 0.9927869439125061,
+ "logit_lens": {
+  "up": [
+   "：",
+   ":",
+   " :",
+   " ：",
+   ":N",
+   ":S",
+   ":E",
+   "：“",
+   ":I",
+   "：\"",
+   ":B",
+   "_:"
+  ],
+  "down": [
+   "rangle",
+   "nth",
+   "errat",
+   "nesty",
+   "дается",
+   "ened",
+   "%M",
+   "ække",
+   "ясь",
+   "лез",
+   "يسر",
+   " ReturnType"
+  ],
+  "peak_z": 16.624536514282227
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

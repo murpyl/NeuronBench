@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2893,
+ "down_norm": 0.6747941970825195,
+ "logit_lens": {
+  "up": [
+   "两者",
+   "二者",
+   "这两",
+   "这两个",
+   "双方",
+   " pair",
+   " both",
+   "两国",
+   "两个",
+   "两",
+   "_pair",
+   "两位"
+  ],
+  "down": [
+   "铯",
+   "十万",
+   ">:</",
+   "_regularizer",
+   "ほう",
+   "Radius",
+   "살",
+   "ponde",
+   " Continent",
+   ".postMessage",
+   "jen",
+   "널"
+  ],
+  "peak_z": 9.24120044708252
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

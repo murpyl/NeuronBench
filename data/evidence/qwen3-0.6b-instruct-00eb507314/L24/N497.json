@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 497,
+ "down_norm": 1.081238031387329,
+ "logit_lens": {
+  "up": [
+   "族自治州",
+   "entina",
+   " imageURL",
+   " LIABILITY",
+   " `_",
+   "bilder",
+   "regunta",
+   "xaf",
+   "estyle",
+   "Recognizer",
+   " `'",
+   ".baidu"
+  ],
+  "down": [
+   " A",
+   " E",
+   "A",
+   " F",
+   " M",
+   " C",
+   " S",
+   " B",
+   " G",
+   ",A",
+   "(A",
+   " D"
+  ],
+  "peak_z": 9.961359024047852
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

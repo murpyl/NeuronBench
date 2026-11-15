@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1986,
+ "down_norm": 0.8477187752723694,
+ "logit_lens": {
+  "up": [
+   "ulate",
+   " Heath",
+   "=@\"",
+   " `%",
+   " alterations",
+   " hài",
+   " dispersion",
+   "沆",
+   " assembling",
+   "attachments",
+   "ConnectionString",
+   "групп"
+  ],
+  "down": [
+   "itative",
+   "romise",
+   "ittal",
+   "overnment",
+   "o",
+   "anst",
+   "oo",
+   "iction",
+   "纷纷",
+   "ox",
+   " ende",
+   "iche"
+  ],
+  "peak_z": 5.747001647949219
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

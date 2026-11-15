@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2210,
+ "down_norm": 1.1230263710021973,
+ "logit_lens": {
+  "up": [
+   " Num",
+   "NSE",
+   "Num",
+   "N",
+   "ложений",
+   "p",
+   "Nd",
+   "num",
+   "*N",
+   " N",
+   "n",
+   ".Num"
+  ],
+  "down": [
+   "oler",
+   "tics",
+   "esson",
+   "igrate",
+   "犊",
+   " Stall",
+   "INC",
+   "olini",
+   "olin",
+   " Meaning",
+   "硐",
+   "yah"
+  ],
+  "peak_z": 5.92773962020874
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

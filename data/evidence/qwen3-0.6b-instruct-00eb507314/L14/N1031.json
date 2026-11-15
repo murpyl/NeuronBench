@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1031,
+ "down_norm": 0.6692163944244385,
+ "logit_lens": {
+  "up": [
+   " dart",
+   " Fer",
+   "oger",
+   ".begin",
+   "eras",
+   "ughter",
+   "osh",
+   " bet",
+   "&E",
+   " Sag",
+   "(Long",
+   "即可"
+  ],
+  "down": [
+   "怪物",
+   "TimeString",
+   "可靠的",
+   " \"<?",
+   "陵",
+   "typeName",
+   " hurricanes",
+   "illegal",
+   "会议精神",
+   " cuales",
+   "_reason",
+   "abilia"
+  ],
+  "peak_z": 4.516847133636475
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2159,
+ "down_norm": 1.0575499534606934,
+ "logit_lens": {
+  "up": [
+   "ics",
+   "oded",
+   "溜",
+   "bal",
+   "网讯",
+   "uss",
+   "ucceed",
+   "upp",
+   "uck",
+   "ICS",
+   "uez",
+   "ammen"
+  ],
+  "down": [
+   "ř",
+   "易",
+   "graded",
+   "rix",
+   " agents",
+   "ắn",
+   "ştir",
+   "deaux",
+   "立案",
+   "rà",
+   "ienda",
+   "_Pl"
+  ],
+  "peak_z": 5.111200332641602
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

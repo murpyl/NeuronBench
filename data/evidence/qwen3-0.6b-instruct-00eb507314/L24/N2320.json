@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2320,
+ "down_norm": 1.0856741666793823,
+ "logit_lens": {
+  "up": [
+   " a",
+   "raries",
+   "CESS",
+   "ächst",
+   "ings",
+   "<tbody",
+   "');\"",
+   "')\");\n",
+   "orrow",
+   "')==",
+   "这些都是",
+   "gers"
+  ],
+  "down": [
+   " lives",
+   " voices",
+   " Lives",
+   " heads",
+   " personalities",
+   " bodies",
+   " backs",
+   " hearts",
+   " minds",
+   " careers",
+   " souls",
+   "infeld"
+  ],
+  "peak_z": 10.315300941467285
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 3064,
+ "down_norm": 1.0289421081542969,
+ "logit_lens": {
+  "up": [
+   "ductor",
+   " conduct",
+   "bul",
+   " Conduct",
+   " rough",
+   "ティブ",
+   " physical",
+   " coarse",
+   "uale",
+   "hum",
+   " conducts",
+   "utch"
+  ],
+  "down": [
+   "writeln",
+   " dispensaries",
+   "aidu",
+   "%X",
+   "ERGE",
+   "theon",
+   "enez",
+   ".nasa",
+   "rz",
+   "apses",
+   "developers",
+   "astr"
+  ],
+  "peak_z": 5.336512088775635
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

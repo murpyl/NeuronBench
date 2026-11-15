@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2522,
+ "down_norm": 1.02649986743927,
+ "logit_lens": {
+  "up": [
+   "也能",
+   "ffield",
+   "也将",
+   " |_",
+   "BREAK",
+   "issen",
+   "rcode",
+   " tới",
+   ":id",
+   "也可以",
+   "すると",
+   "Nam"
+  ],
+  "down": [
+   "ed",
+   "ized",
+   "ated",
+   "edBy",
+   "ED",
+   "IZED",
+   "ured",
+   "enticated",
+   "ged",
+   "edb",
+   "ified",
+   "ened"
+  ],
+  "peak_z": 17.04749298095703
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1051,
+ "down_norm": 0.727760910987854,
+ "logit_lens": {
+  "up": [
+   " (£",
+   " £",
+   " realised",
+   "ём",
+   " Initialise",
+   " Brexit",
+   " initialised",
+   "£",
+   "isable",
+   " ITV",
+   "BBC",
+   " UEFA"
+  ],
+  "down": [
+   " Jr",
+   "在美国",
+   " Kansas",
+   "中美",
+   "美国",
+   " الأمريكية",
+   " Pennsylvania",
+   "Arizona",
+   " Midwest",
+   " federal",
+   "加州",
+   " 미국"
+  ],
+  "peak_z": 6.945389270782471
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

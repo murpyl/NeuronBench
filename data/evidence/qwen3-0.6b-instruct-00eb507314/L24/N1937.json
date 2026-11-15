@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1937,
+ "down_norm": 1.021593451499939,
+ "logit_lens": {
+  "up": [
+   " legalize",
+   "ollection",
+   " men",
+   "ython",
+   "び",
+   " Familie",
+   "oplast",
+   "olut",
+   " MEN",
+   "Edition",
+   "quis",
+   " whatsoever"
+  ],
+  "down": [
+   "共",
+   "共有",
+   " common",
+   "(common",
+   "common",
+   " Common",
+   "\tcommon",
+   "Common",
+   "共计",
+   "/common",
+   "_common",
+   "(Common"
+  ],
+  "peak_z": 21.774965286254883
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

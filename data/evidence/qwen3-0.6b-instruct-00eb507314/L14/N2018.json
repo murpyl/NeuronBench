@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2018,
+ "down_norm": 0.614822506904602,
+ "logit_lens": {
+  "up": [
+   "每个",
+   "各行",
+   "每個",
+   "多个",
+   " each",
+   "每一个",
+   "各个",
+   "各",
+   "各有",
+   " multiple",
+   "each",
+   "每一"
+  ],
+  "down": [
+   "日正式",
+   " basics",
+   "rese",
+   ".Basic",
+   "Basic",
+   "ICS",
+   "istics",
+   "us",
+   " style",
+   "鲈",
+   "械",
+   " Basic"
+  ],
+  "peak_z": 8.594169616699219
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

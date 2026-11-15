@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 946,
+ "down_norm": 0.8814747333526611,
+ "logit_lens": {
+  "up": [
+   "要不要",
+   " vX",
+   "cern",
+   "之夜",
+   "(\"\");\n\n",
+   "处",
+   "(\"\");\r\n",
+   ".bd",
+   "第二次",
+   "        \t\t\t\t",
+   " })();\n",
+   "--*/\n"
+  ],
+  "down": [
+   "uctor",
+   " backs",
+   "אות",
+   " hydr",
+   "ouro",
+   "IDI",
+   "HEL",
+   "ła",
+   "emics",
+   "AILS",
+   "ictured",
+   "isors"
+  ],
+  "peak_z": 4.9605183601379395
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

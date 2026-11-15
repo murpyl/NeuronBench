@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1641,
+ "down_norm": 1.074300765991211,
+ "logit_lens": {
+  "up": [
+   "_),",
+   "agli",
+   "elah",
+   "got",
+   "olly",
+   "_)\r\n",
+   "ndl",
+   "(&_",
+   "もらい",
+   "ehler",
+   "(ht",
+   "僚"
+  ],
+  "down": [
+   "quette",
+   "UpEdit",
+   "#End",
+   "趵",
+   "unix",
+   ".OneToOne",
+   ".ColumnHeader",
+   " runApp",
+   ".END",
+   "entialAction",
+   " Brill",
+   "ış"
+  ],
+  "peak_z": 4.907464981079102
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

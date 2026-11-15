@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1639,
+ "down_norm": 1.1041419506072998,
+ "logit_lens": {
+  "up": [
+   "idente",
+   "press",
+   "ificate",
+   "嗝",
+   "ewise",
+   "forge",
+   "iedad",
+   "лез",
+   "本报讯",
+   "ateg",
+   "auc",
+   ".Percent"
+  ],
+  "down": [
+   " know",
+   "知",
+   " known",
+   "know",
+   " knew",
+   "known",
+   " Know",
+   " Known",
+   " knows",
+   "Known",
+   "知道",
+   "Know"
+  ],
+  "peak_z": 12.698953628540039
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2971,
+ "down_norm": 1.248727798461914,
+ "logit_lens": {
+  "up": [
+   "不了",
+   "ighbor",
+   "amental",
+   "Imports",
+   "&action",
+   ".SuspendLayout",
+   "cimiento",
+   "##",
+   "рист",
+   "ivant",
+   "&t",
+   "哳"
+  ],
+  "down": [
+   " :",
+   ":",
+   ":(",
+   "：",
+   ":D",
+   ":T",
+   ":[",
+   ":y",
+   ":s",
+   ":h",
+   ":B",
+   ":c"
+  ],
+  "peak_z": 15.627971649169922
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 202,
+ "down_norm": 0.8729291558265686,
+ "logit_lens": {
+  "up": [
+   "ױ",
+   "onest",
+   "ליך",
+   " unw",
+   "LENGTH",
+   "registro",
+   "ivamente",
+   "urgy",
+   "-years",
+   "ở",
+   "ств",
+   "ustria"
+  ],
+  "down": [
+   " une",
+   " dés",
+   " pour",
+   " aussi",
+   " sous",
+   " moins",
+   " avec",
+   " ainsi",
+   " ajout",
+   " tout",
+   " peu",
+   " nouveau"
+  ],
+  "peak_z": 5.971889019012451
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

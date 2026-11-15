@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2676,
+ "down_norm": 1.0045596361160278,
+ "logit_lens": {
+  "up": [
+   "包括",
+   " include",
+   " includes",
+   " including",
+   " Include",
+   "including",
+   " Including",
+   "还包括",
+   " Includes",
+   "主要包括",
+   "其中包括",
+   "includes"
+  ],
+  "down": [
+   "odesk",
+   "odia",
+   "胜负",
+   "owan",
+   "[np",
+   "难怪",
+   " odpowied",
+   "owego",
+   "找个",
+   "个多",
+   "干什么",
+   "seau"
+  ],
+  "peak_z": 22.26422691345215
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

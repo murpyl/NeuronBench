@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2365,
+ "down_norm": 1.04059636592865,
+ "logit_lens": {
+  "up": [
+   " based",
+   "based",
+   " Based",
+   "Based",
+   "_based",
+   "基于",
+   "根据",
+   "-based",
+   "-Based",
+   "依据",
+   "根據",
+   "基"
+  ],
+  "down": [
+   "utom",
+   "tas",
+   "spm",
+   "kB",
+   "_Block",
+   "uD",
+   "ypo",
+   "oks",
+   " quy",
+   "bris",
+   " kB",
+   "干净"
+  ],
+  "peak_z": 19.94904327392578
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

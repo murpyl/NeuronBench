@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2930,
+ "down_norm": 1.0897477865219116,
+ "logit_lens": {
+  "up": [
+   "aining",
+   "osten",
+   "изации",
+   "iaz",
+   "requency",
+   "ília",
+   "clarations",
+   "tingham",
+   "rolling",
+   "azing",
+   "jiang",
+   "ape"
+  ],
+  "down": [
+   "ьер",
+   "ря",
+   "ителей",
+   "atoire",
+   "ôt",
+   "\\Message",
+   "uated",
+   " fortunes",
+   "�",
+   "佗",
+   "芎",
+   "veled"
+  ],
+  "peak_z": 4.70291805267334
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

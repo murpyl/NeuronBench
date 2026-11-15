@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1008,
+ "down_norm": 0.5324080586433411,
+ "logit_lens": {
+  "up": [
+   "undi",
+   "croll",
+   "lob",
+   "تعل",
+   " asiat",
+   "abo",
+   "に基づ",
+   "ign",
+   "分別",
+   "maal",
+   "ポート",
+   "都很"
+  ],
+  "down": [
+   "ividad",
+   "这点",
+   "uated",
+   "有一位",
+   "这一点",
+   "父亲",
+   "ested",
+   ".descriptor",
+   "trap",
+   "bable",
+   "ricular",
+   "imately"
+  ],
+  "peak_z": 5.5305328369140625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

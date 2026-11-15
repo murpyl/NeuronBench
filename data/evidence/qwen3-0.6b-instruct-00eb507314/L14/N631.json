@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 631,
+ "down_norm": 0.6483747959136963,
+ "logit_lens": {
+  "up": [
+   "ress",
+   "auf",
+   "pha",
+   "taire",
+   "quo",
+   "דה",
+   "quest",
+   "cka",
+   "acht",
+   "ows",
+   "emme",
+   "arna"
+  ],
+  "down": [
+   " {}),\n",
+   "(isolate",
+   "任何一个",
+   "nonatomic",
+   " []),\n",
+   "omitempty",
+   "不经",
+   "tableFuture",
+   " \"\"},\n",
+   ":]:\n",
+   " UIB",
+   "iley"
+  ],
+  "peak_z": 4.9849114418029785
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

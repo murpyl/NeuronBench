@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2666,
+ "down_norm": 1.0696258544921875,
+ "logit_lens": {
+  "up": [
+   "붙",
+   "ductory",
+   "emony",
+   "ener",
+   "ReturnValue",
+   "west",
+   "u",
+   "toDouble",
+   " Rück",
+   " som",
+   "(back",
+   ".ts"
+  ],
+  "down": [
+   "घ",
+   "iams",
+   "alytics",
+   " heapq",
+   "ocrin",
+   "lke",
+   "Handles",
+   "curity",
+   " INSTANCE",
+   "HEME",
+   "@api",
+   "rightness"
+  ],
+  "peak_z": 4.815718650817871
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

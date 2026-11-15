@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 817,
+ "down_norm": 1.0762717723846436,
+ "logit_lens": {
+  "up": [
+   " getSize",
+   "utions",
+   "estone",
+   " sizes",
+   " bq",
+   "kle",
+   ".\"&",
+   " size",
+   ".'&",
+   " QE",
+   " Gear",
+   "Globals"
+  ],
+  "down": [
+   "äm",
+   "inth",
+   ".addMouseListener",
+   "可见",
+   "aling",
+   "InSection",
+   "ضاف",
+   "думал",
+   "ylene",
+   "favor",
+   ".metamodel",
+   "аться"
+  ],
+  "peak_z": 5.0037994384765625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

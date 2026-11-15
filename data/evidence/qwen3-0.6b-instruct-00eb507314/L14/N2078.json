@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2078,
+ "down_norm": 0.7422406077384949,
+ "logit_lens": {
+  "up": [
+   " manner",
+   "lep",
+   " ly",
+   "によ",
+   " tử",
+   " verfüg",
+   "又能",
+   "成功",
+   " %>",
+   " afirm",
+   "系",
+   "的能力"
+  ],
+  "down": [
+   "roat",
+   ".Clock",
+   "chants",
+   "entina",
+   "nant",
+   "ignant",
+   "哿",
+   "涯",
+   " douche",
+   "ickers",
+   "contract",
+   "antwort"
+  ],
+  "peak_z": 4.687312126159668
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

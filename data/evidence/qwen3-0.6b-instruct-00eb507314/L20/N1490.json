@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1490,
+ "down_norm": 0.9341158866882324,
+ "logit_lens": {
+  "up": [
+   "rible",
+   " setFrame",
+   "umbing",
+   "ampo",
+   "roleum",
+   "indow",
+   "úde",
+   "PGA",
+   "stakes",
+   "ValidationError",
+   " sust",
+   "icer"
+  ],
+  "down": [
+   "alia",
+   "ger",
+   "plen",
+   "alias",
+   "ities",
+   "_attempts",
+   "但她",
+   "alous",
+   "هر",
+   "haft",
+   "ACL",
+   "افي"
+  ],
+  "peak_z": 6.228650093078613
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

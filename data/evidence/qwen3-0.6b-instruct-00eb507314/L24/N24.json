@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 24,
+ "down_norm": 0.9256445169448853,
+ "logit_lens": {
+  "up": [
+   "__(/*!",
+   " challenging",
+   "geber",
+   "jpeg",
+   "uggling",
+   "복",
+   "lsen",
+   "iena",
+   "告",
+   " kell",
+   "atoire",
+   "rophy"
+  ],
+  "down": [
+   "wash",
+   "-cur",
+   "cover",
+   " iii",
+   ".Cor",
+   " cover",
+   "味",
+   " Taste",
+   "-Bar",
+   "urally",
+   "acked",
+   " ears"
+  ],
+  "peak_z": 5.172771453857422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

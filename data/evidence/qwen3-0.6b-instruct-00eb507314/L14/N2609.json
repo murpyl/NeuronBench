@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2609,
+ "down_norm": 0.7085503339767456,
+ "logit_lens": {
+  "up": [
+   "거리",
+   "!</",
+   "都已经",
+   " visually",
+   "!\n\n\n",
+   " interess",
+   " slippery",
+   "均已",
+   "都不知道",
+   " {}\n\n\n",
+   "!\"\n\n",
+   "이고"
+  ],
+  "down": [
+   "因为在",
+   "below",
+   "ян",
+   "prompt",
+   "ഴ",
+   "FIX",
+   "cision",
+   "_buffers",
+   "الية",
+   "cases",
+   "osoph",
+   "due"
+  ],
+  "peak_z": 5.214779376983643
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

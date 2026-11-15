@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1338,
+ "down_norm": 0.6055247783660889,
+ "logit_lens": {
+  "up": [
+   "lijke",
+   " experimentation",
+   "asti",
+   " freopen",
+   "给人",
+   " technological",
+   "argins",
+   "ALAR",
+   "닝",
+   "ury",
+   " experimental",
+   " curiosity"
+  ],
+  "down": [
+   "']=",
+   "imers",
+   "]=$",
+   " =\",",
+   "']=$",
+   "]=[",
+   "imes",
+   " =\r\n",
+   "Forever",
+   "一年一度",
+   "逃脱",
+   "immune"
+  ],
+  "peak_z": 5.172061443328857
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2609,
+ "down_norm": 1.068131685256958,
+ "logit_lens": {
+  "up": [
+   "�件",
+   "età",
+   "uncture",
+   " Horny",
+   " rated",
+   "olt",
+   "enate",
+   "成员单位",
+   "avo",
+   " Coil",
+   " sweaty",
+   "allenge"
+  ],
+  "down": [
+   "_As",
+   " `",
+   "'H",
+   " `'",
+   "'O",
+   "ts",
+   "'an",
+   "ồng",
+   "’an",
+   "'D",
+   "’a",
+   "ancements"
+  ],
+  "peak_z": 4.766485691070557
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

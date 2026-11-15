@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1605,
+ "down_norm": 0.9575272798538208,
+ "logit_lens": {
+  "up": [
+   "iverse",
+   "habi",
+   "del",
+   "Del",
+   "assic",
+   " del",
+   " Del",
+   "hurst",
+   " deliver",
+   "umper",
+   "itle",
+   "uggle"
+  ],
+  "down": [
+   " lo",
+   "elo",
+   " Railroad",
+   "chine",
+   " которых",
+   "ائز",
+   "anity",
+   " él",
+   "may",
+   "lob",
+   "edly",
+   "总觉得"
+  ],
+  "peak_z": 5.125013828277588
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

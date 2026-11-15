@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 195,
+ "down_norm": 0.6652397513389587,
+ "logit_lens": {
+  "up": [
+   "лок",
+   "人死亡",
+   "不同程度",
+   "aker",
+   " ill",
+   " estimate",
+   "enza",
+   "iant",
+   "eil",
+   "bron",
+   " irregular",
+   "函"
+  ],
+  "down": [
+   " vriend",
+   "newValue",
+   "aine",
+   "opensource",
+   " jobId",
+   "-resource",
+   "antan",
+   " Institutions",
+   " Telescope",
+   " País",
+   "gota",
+   "钵"
+  ],
+  "peak_z": 4.996665000915527
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

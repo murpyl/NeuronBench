@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2289,
+ "down_norm": 0.6256687641143799,
+ "logit_lens": {
+  "up": [
+   "包袱",
+   "erved",
+   "有色",
+   "iktig",
+   " Included",
+   "added",
+   "可想",
+   "-added",
+   " afterward",
+   "verständlich",
+   "argins",
+   "itized"
+  ],
+  "down": [
+   "程",
+   "GINE",
+   "egl",
+   "QL",
+   " exile",
+   "�",
+   " alone",
+   "hon",
+   " Alone",
+   "鞮",
+   "_DUMP",
+   "ठ"
+  ],
+  "peak_z": 5.473127841949463
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

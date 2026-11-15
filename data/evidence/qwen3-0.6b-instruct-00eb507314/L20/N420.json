@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 420,
+ "down_norm": 0.7530909776687622,
+ "logit_lens": {
+  "up": [
+   "な",
+   "otation",
+   "olding",
+   "rapped",
+   "assing",
+   "cision",
+   "urrence",
+   "ollow",
+   "ipient",
+   "yat",
+   "anteed",
+   "don"
+  ],
+  "down": [
+   " ciò",
+   ")localObject",
+   " besides",
+   "ensa",
+   " oltre",
+   " française",
+   "起码",
+   "emos",
+   " franca",
+   " defensively",
+   " yourselves",
+   " physically"
+  ],
+  "peak_z": 4.769073486328125
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 77,
+ "down_norm": 0.7911209464073181,
+ "logit_lens": {
+  "up": [
+   "\tflash",
+   "indr",
+   "ersen",
+   "tering",
+   " increased",
+   " flashing",
+   " Increased",
+   "/LICENSE",
+   "DY",
+   "ßen",
+   "MAND",
+   " EXPRESS"
+  ],
+  "down": [
+   "sources",
+   "输给",
+   "_sources",
+   "厩",
+   " sources",
+   " gốc",
+   "vironments",
+   ".sources",
+   " possessions",
+   " setInput",
+   " Owned",
+   " Portfolio"
+  ],
+  "peak_z": 5.363524436950684
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

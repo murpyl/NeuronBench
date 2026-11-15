@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1100,
+ "down_norm": 1.1024547815322876,
+ "logit_lens": {
+  "up": [
+   "third",
+   " ISC",
+   "')}}",
+   "ujący",
+   "tractive",
+   "Fourth",
+   "')}}\n",
+   "(levels",
+   "Lv",
+   "eway",
+   "зол",
+   " Fourth"
+  ],
+  "down": [
+   " quickly",
+   "迅速",
+   " quick",
+   "快速",
+   "立即",
+   "很快",
+   " immediate",
+   " rapid",
+   "立刻",
+   "quick",
+   " immediately",
+   " instantly"
+  ],
+  "peak_z": 14.517365455627441
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2718,
+ "down_norm": 0.942273736000061,
+ "logit_lens": {
+  "up": [
+   " such",
+   "such",
+   "Such",
+   " Such",
+   "这样的",
+   " SUCH",
+   "這樣的",
+   " таких",
+   " такие",
+   "如此",
+   " такой",
+   "此类"
+  ],
+  "down": [
+   "atio",
+   "elor",
+   "še",
+   "ereo",
+   "ness",
+   "Synopsis",
+   "amental",
+   "<<\"\\",
+   "Visible",
+   " \"\"))\n",
+   "atism",
+   "terior"
+  ],
+  "peak_z": 28.77450180053711
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

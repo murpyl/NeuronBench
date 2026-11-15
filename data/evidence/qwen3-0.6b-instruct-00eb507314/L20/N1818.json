@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1818,
+ "down_norm": 1.0979282855987549,
+ "logit_lens": {
+  "up": [
+   "'autres",
+   " đại",
+   "айн",
+   "ORY",
+   "jury",
+   "oise",
+   "anax",
+   "ccak",
+   "соб",
+   "iness",
+   "ssa",
+   "gether"
+  ],
+  "down": [
+   "得多",
+   " ten",
+   "许多",
+   "很多",
+   " many",
+   "十",
+   " five",
+   "倍",
+   "許多",
+   "多了",
+   " much",
+   " mucho"
+  ],
+  "peak_z": 9.125646591186523
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

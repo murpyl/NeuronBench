@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 222,
+ "down_norm": 0.7373532652854919,
+ "logit_lens": {
+  "up": [
+   "others",
+   " gain",
+   " others",
+   " change",
+   "gain",
+   " score",
+   " shift",
+   " numer",
+   " örnek",
+   "运算",
+   "增量",
+   "Strike"
+  ],
+  "down": [
+   "azen",
+   "ailed",
+   "itant",
+   "istan",
+   "appable",
+   " }*/\n",
+   "}@",
+   "earer",
+   "冒着",
+   "acular",
+   " TBranch",
+   "ertura"
+  ],
+  "peak_z": 5.1103644371032715
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

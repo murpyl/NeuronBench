@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 329,
+ "down_norm": 0.9610249400138855,
+ "logit_lens": {
+  "up": [
+   "ubar",
+   "enders",
+   "inks",
+   "ender",
+   "unger",
+   "ruits",
+   "veys",
+   "ataloader",
+   "薨",
+   "eros",
+   "iper",
+   "idd"
+  ],
+  "down": [
+   "#=",
+   "wich",
+   "=#",
+   "#__",
+   "#",
+   "โปรแ",
+   "lessly",
+   "=label",
+   "返回",
+   "ان",
+   " #",
+   "щит"
+  ],
+  "peak_z": 5.563385009765625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

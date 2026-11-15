@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 7,
+ "down_norm": 0.6485217809677124,
+ "logit_lens": {
+  "up": [
+   "(PHP",
+   "NAL",
+   "'',",
+   "绩",
+   "@update",
+   "(ext",
+   "��",
+   ":''",
+   "(IC",
+   "parator",
+   "��",
+   "(\"$."
+  ],
+  "down": [
+   "画像",
+   "杆菌",
+   "絕對",
+   "Constant",
+   "leetcode",
+   "連結",
+   "アプリ",
+   "_constant",
+   " Rentals",
+   "angelo",
+   "危險",
+   "UNICATION"
+  ],
+  "peak_z": 4.698980808258057
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

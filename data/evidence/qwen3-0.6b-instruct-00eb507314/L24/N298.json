@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 298,
+ "down_norm": 0.6572337746620178,
+ "logit_lens": {
+  "up": [
+   " have",
+   " vary",
+   " involve",
+   " satisfy",
+   " occur",
+   " operate",
+   " require",
+   " remind",
+   " resemble",
+   " relate",
+   " become",
+   " consume"
+  ],
+  "down": [
+   "来了",
+   "给了我",
+   "打开了",
+   "给了",
+   "发现了",
+   "开了",
+   "选择了",
+   "多了",
+   "Didn",
+   "会会长",
+   "接受了",
+   "起了"
+  ],
+  "peak_z": 8.025753021240234
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

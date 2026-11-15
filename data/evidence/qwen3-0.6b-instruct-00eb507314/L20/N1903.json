@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1903,
+ "down_norm": 1.0581178665161133,
+ "logit_lens": {
+  "up": [
+   "下",
+   "下的",
+   "之下",
+   " 下",
+   "下了",
+   " down",
+   "下来",
+   "底下",
+   "下面",
+   "down",
+   "背景下",
+   "条件下"
+  ],
+  "down": [
+   "inium",
+   "\tOn",
+   "inerary",
+   "�인",
+   "erged",
+   " *,\n",
+   "ôt",
+   " mooie",
+   " &\n",
+   "ions",
+   "?\",\n",
+   "śmy"
+  ],
+  "peak_z": 19.94353485107422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

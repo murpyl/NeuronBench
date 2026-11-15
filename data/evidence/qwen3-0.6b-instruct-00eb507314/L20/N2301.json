@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2301,
+ "down_norm": 1.0083448886871338,
+ "logit_lens": {
+  "up": [
+   "undra",
+   "[np",
+   "dict",
+   "decess",
+   " {{",
+   "身躯",
+   " Peninsula",
+   "$$$",
+   "alus",
+   "................................",
+   "',{\n",
+   "await"
+  ],
+  "down": [
+   "ppe",
+   "OLUMN",
+   "NET",
+   "орт",
+   "杼",
+   "antz",
+   "schlie",
+   "ANGER",
+   "riority",
+   "不死",
+   "Uploaded",
+   "раг"
+  ],
+  "peak_z": 4.940803527832031
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

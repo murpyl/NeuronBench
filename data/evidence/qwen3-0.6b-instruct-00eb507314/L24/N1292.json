@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1292,
+ "down_norm": 1.1641265153884888,
+ "logit_lens": {
+  "up": [
+   "文化的",
+   "ái",
+   "INGTON",
+   "евич",
+   "ismatic",
+   " textStyle",
+   "ozy",
+   "一股",
+   "ứ",
+   "ately",
+   "精神",
+   " mainBundle"
+  ],
+  "down": [
+   " set",
+   "set",
+   " sets",
+   " Set",
+   "Set",
+   "_set",
+   "-set",
+   "sets",
+   "(set",
+   "\tset",
+   " Sets",
+   " SET"
+  ],
+  "peak_z": 24.372507095336914
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

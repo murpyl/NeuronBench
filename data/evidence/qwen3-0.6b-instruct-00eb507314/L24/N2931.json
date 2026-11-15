@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2931,
+ "down_norm": 1.0872656106948853,
+ "logit_lens": {
+  "up": [
+   "ControlItem",
+   "-scenes",
+   "=com",
+   " character",
+   "character",
+   "versation",
+   "ansi",
+   "/span",
+   "_character",
+   "-mon",
+   "issance",
+   "cz"
+  ],
+  "down": [
+   " Jury",
+   "燚",
+   "rike",
+   " jury",
+   "uristic",
+   "司法",
+   "anke",
+   "rikes",
+   " Calories",
+   " isot",
+   " Lawyers",
+   "捺"
+  ],
+  "peak_z": 5.000674724578857
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

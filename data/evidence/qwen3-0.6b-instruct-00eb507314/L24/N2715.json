@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2715,
+ "down_norm": 1.3006203174591064,
+ "logit_lens": {
+  "up": [
+   "ость",
+   "цов",
+   "uration",
+   "孵化器",
+   "Polit",
+   "argins",
+   "ца",
+   "OUGH",
+   "paces",
+   "andbox",
+   " Publié",
+   "igrations"
+  ],
+  "down": [
+   " order",
+   "order",
+   " Order",
+   "Order",
+   "_order",
+   " orders",
+   " ORDER",
+   "(order",
+   "\torder",
+   "-order",
+   ".order",
+   "ORDER"
+  ],
+  "peak_z": 26.175376892089844
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 705,
+ "down_norm": 0.710905909538269,
+ "logit_lens": {
+  "up": [
+   "酬",
+   "等各种",
+   "cury",
+   "会上",
+   " Searches",
+   "箔",
+   "Failed",
+   "都会",
+   "msgs",
+   "Advertisement",
+   "iores",
+   "anvas"
+  ],
+  "down": [
+   "�建",
+   "osopher",
+   "从小",
+   "jon",
+   "ятия",
+   ".TabStop",
+   "athed",
+   ".AnchorStyles",
+   "createForm",
+   "邠",
+   " Jonah",
+   ".from"
+  ],
+  "peak_z": 5.447670936584473
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

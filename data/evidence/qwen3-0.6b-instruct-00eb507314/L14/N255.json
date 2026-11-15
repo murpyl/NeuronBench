@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 255,
+ "down_norm": 0.4985921084880829,
+ "logit_lens": {
+  "up": [
+   "コー",
+   "삭",
+   "imator",
+   " chassis",
+   "犍",
+   "lsx",
+   "节",
+   "ischer",
+   "coach",
+   "ügen",
+   "惰",
+   "phon"
+  ],
+  "down": [
+   "cape",
+   "hausen",
+   "CAPE",
+   " CP",
+   "羽毛",
+   "feit",
+   "妹子",
+   " pie",
+   "WARDS",
+   "culo",
+   "素食",
+   "enge"
+  ],
+  "peak_z": 5.454204559326172
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

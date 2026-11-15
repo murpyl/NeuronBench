@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2786,
+ "down_norm": 0.8079606890678406,
+ "logit_lens": {
+  "up": [
+   " combination",
+   "组合",
+   " combinations",
+   "combination",
+   " Combination",
+   "Comb",
+   " combining",
+   " combine",
+   " combo",
+   " combin",
+   " Comb",
+   " combines"
+  ],
+  "down": [
+   "ilent",
+   "にく",
+   "คล",
+   "kowski",
+   "ãn",
+   "uele",
+   "ilos",
+   "чен",
+   "чив",
+   "pek",
+   "Ụ",
+   "ppe"
+  ],
+  "peak_z": 18.856597900390625
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

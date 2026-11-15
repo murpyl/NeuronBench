@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 146,
+ "down_norm": 0.6038904190063477,
+ "logit_lens": {
+  "up": [
+   "#\r\n",
+   " ve",
+   "%\r\n",
+   "asis",
+   "莱",
+   "E",
+   "#",
+   "EP",
+   "Lex",
+   "лет",
+   " 같다",
+   " light"
+  ],
+  "down": [
+   "的因素",
+   "istically",
+   "sonian",
+   "-hero",
+   "的地位",
+   "ize",
+   "itarian",
+   "iani",
+   "edly",
+   "iano",
+   "fried",
+   "uality"
+  ],
+  "peak_z": 5.266895294189453
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

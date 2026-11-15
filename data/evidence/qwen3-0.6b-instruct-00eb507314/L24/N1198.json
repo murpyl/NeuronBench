@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1198,
+ "down_norm": 1.046288013458252,
+ "logit_lens": {
+  "up": [
+   "atas",
+   "ní",
+   ".chars",
+   "oration",
+   "ูก",
+   "ape",
+   "imax",
+   "ocese",
+   "ITES",
+   "tré",
+   "arians",
+   "brane"
+  ],
+  "down": [
+   "eland",
+   " gap",
+   "自来",
+   "лот",
+   "给了",
+   "志强",
+   " ES",
+   " esi",
+   " Gap",
+   " anomal",
+   "命",
+   "合一"
+  ],
+  "peak_z": 4.953771591186523
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -45,7 +45,14 @@ dataset/metric.py  Harbor dataset metric: accuracy and Brier score with bootstra
 scripts/export_evidence.py   run next to gne to dump per-neuron evidence
 modal/serve_vllm.py          open-weight models as OpenAI-compatible endpoints on Modal
 tests/             pytest on a synthetic sweep
+data/raw/          the gne sweeps (slimmed), data/evidence/ the per-neuron static evidence: inputs to `neuronbench build`
+data/items*.jsonl  every item with its hidden answer, one file per tier
+tasks/             the benchmark as Harbor tasks (255, static tier); tasks-prompts-l{14,20,24}/ the 900 more-prompts tasks
 ```
+
+**Quick start.** The built tasks are committed, so `harbor run -p tasks ...` (section 3) works on a fresh clone. To
+rebuild them, skip section 1 (its outputs are committed in `data/raw/` and `data/evidence/`) and run section 2:
+the commands there reproduce `data/items*.jsonl` and `tasks*/` byte for byte.
 
 ## 1. Ground truth (on the machine with gne and the model)
 
@@ -64,19 +71,25 @@ python scripts/export_evidence.py --model $GNE_MODEL --run ~/.gne/runs/<model_id
 ```
 
 Copy `~/.gne/runs/<model_id>/L*-main_rel.{jsonl,meta.json,units.jsonl}` (and any `.part-*.jsonl`) to `data/raw/`.
+The files for the results below (layers 14, 20, 24; slimmed as described in [`data/raw/README.md`](data/raw/README.md))
+and the matching `data/evidence/` are committed, so this section is only needed for a new model or layer.
 
 ## 2. Build tasks
 
 ```bash
 uv venv -p 3.12 && uv pip install -e '.[dev,plots]'
 neuronbench build --run data/raw/L*-main_rel.jsonl --evidence data/evidence \
-    --n-choice 30 --n-null 20 --items data/items.jsonl --out tasks
+    --n-choice 50 --n-null 35 --items data/items.jsonl --out tasks
+for T in oracle transfer shuffled trace trace-shuffled; do   # the control and ceiling tiers below
+  neuronbench build --run data/raw/L*-main_rel.jsonl --evidence data/evidence --n-choice 50 --n-null 35 \
+      --tier $T --items data/items-$T.jsonl --out tasks-$T
+done
 neuronbench baselines --items data/items.jsonl
 harbor lint tasks/*/
 harbor run -p tasks -a oracle                # every reward should be 1
 ```
 
-`--n-choice` / `--n-null` are per layer, so 4 layers × (30 + 20) = 200 items. `data/items.jsonl` holds the hidden
+`--n-choice` / `--n-null` are per layer, so 3 layers × (50 + 35) = 255 items (150 choice, 105 null). `data/items.jsonl` holds the hidden
 answer and diagnostics for every item and is what the baselines and report read. Each item's `meta.selection` says
 whether its neuron came from gne's seeded `random:384` draw or was hand-picked (extras), so results can be split.
 
@@ -194,6 +207,16 @@ Harbor's own end-of-run table averages each reward key over all trials, includin
 which halves both numbers. Use `neuronbench report`, or the dataset `metric.py`, for the real figures.
 
 ## Results
+
+![headline](results/headline.png)
+
+**Headline.** Left: "Which output is it?" on the 900 more-prompts items (finding 8). All four models beat the
+logit-lens lookup (41%), and the paired 95% intervals clear 0: Opus 5.5 55% (+14 [+10, +18]), Sonnet 5.5 51%
+(+10 [+6, +14]), Haiku 5.5 47% (+6 [+2, +9]), GPT-5.6-luna 47% (+5 [+2, +9]). Right: the 150 original items with
+different evidence. With wrong evidence every system is at chance. With the per-token trace or the neuron's measured
+sweep words, models reach 59–75%, but simple agent-free baselines on the same evidence (mean `lens_z` 82%, word
+lookup 61%) do about as well. Numbers: [`results/headline.md`](results/headline.md), from
+`python scripts/headline_plot.py`. The tables below are the original 255-item run.
 
 Qwen3-0.6B Q8_0, layers 14, 20 and 24: 255 tasks (150 "Which output is it?", 105 "Real or null?" with 54 real).
 Seven models ran as mini-SWE-agent on Valkyrie (five API models, plus Qwen3-32B and Qwen3-0.6B self-hosted on Modal

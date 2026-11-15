@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 137,
+ "down_norm": 0.6223399639129639,
+ "logit_lens": {
+  "up": [
+   "acobian",
+   "ewhere",
+   "itud",
+   "unction",
+   "aram",
+   "��作",
+   "EGIN",
+   "aran",
+   "artic",
+   "years",
+   "ORMAT",
+   "ect"
+  ],
+  "down": [
+   " giản",
+   "VES",
+   "命",
+   " foot",
+   "ISH",
+   "utters",
+   ".ReadFile",
+   " overwhelm",
+   ".sh",
+   "LOTS",
+   " fy",
+   "ÓN"
+  ],
+  "peak_z": 5.050950050354004
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

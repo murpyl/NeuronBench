@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 774,
+ "down_norm": 0.7461966276168823,
+ "logit_lens": {
+  "up": [
+   "xious",
+   "agan",
+   "ucer",
+   " Generating",
+   " Generated",
+   "aba",
+   " Seconds",
+   " Lantern",
+   " aggressive",
+   "Generated",
+   " replacing",
+   "润滑"
+  ],
+  "down": [
+   "]+\\",
+   "+]",
+   "ност",
+   "不开",
+   "akedown",
+   "IFEST",
+   " أجل",
+   "也不能",
+   "кт",
+   "AYOUT",
+   " setDefaultCloseOperation",
+   "shr"
+  ],
+  "peak_z": 4.7450337409973145
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

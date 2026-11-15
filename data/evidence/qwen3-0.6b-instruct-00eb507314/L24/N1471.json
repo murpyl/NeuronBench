@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1471,
+ "down_norm": 1.054824948310852,
+ "logit_lens": {
+  "up": [
+   " dec",
+   "解",
+   "dec",
+   "Dec",
+   " Dec",
+   "(dec",
+   "_dec",
+   "_Dec",
+   ".Dec",
+   ".dec",
+   " decom",
+   "-de"
+  ],
+  "down": [
+   "lingen",
+   "laden",
+   "auses",
+   "ilig",
+   "nahme",
+   "ilden",
+   "amen",
+   " sliders",
+   "ControlItem",
+   "ACITY",
+   "ilha",
+   "\\Active"
+  ],
+  "peak_z": 12.106330871582031
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

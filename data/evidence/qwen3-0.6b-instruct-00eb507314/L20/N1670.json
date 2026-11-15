@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1670,
+ "down_norm": 0.861198902130127,
+ "logit_lens": {
+  "up": [
+   " or",
+   "或",
+   "或者",
+   " или",
+   "或是",
+   "或多",
+   "或其他",
+   " 或",
+   "或者其他",
+   "或者是",
+   " atau",
+   " oder"
+  ],
+  "down": [
+   " nonetheless",
+   "ackages",
+   "doch",
+   "ogens",
+   " nevertheless",
+   "&t",
+   "⎞",
+   "&q",
+   "обходим",
+   "}while",
+   "finger",
+   "uste"
+  ],
+  "peak_z": 25.508432388305664
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

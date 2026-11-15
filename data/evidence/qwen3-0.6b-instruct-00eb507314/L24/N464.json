@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 464,
+ "down_norm": 0.9829046130180359,
+ "logit_lens": {
+  "up": [
+   " my",
+   "我的",
+   "我",
+   " myself",
+   "(my",
+   "my",
+   "我会",
+   "了我的",
+   "我在",
+   "/my",
+   "\tmy",
+   "我也"
+  ],
+  "down": [
+   "imates",
+   "ronics",
+   "oundation",
+   "reeNode",
+   "igsaw",
+   "ivic",
+   "ourcing",
+   "递给",
+   "azine",
+   "ignon",
+   " TMPro",
+   "익"
+  ],
+  "peak_z": 22.001615524291992
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

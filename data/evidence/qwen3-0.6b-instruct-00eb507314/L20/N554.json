@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 554,
+ "down_norm": 0.7189701199531555,
+ "logit_lens": {
+  "up": [
+   "IDER",
+   "yper",
+   "扉",
+   "exampleModalLabel",
+   "在内的",
+   "ider",
+   "reur",
+   "才发现",
+   "selectors",
+   "��",
+   " nghiệp",
+   "indic"
+  ],
+  "down": [
+   " has",
+   "有自己的",
+   " have",
+   "\thas",
+   " имеет",
+   " contain",
+   ".has",
+   " heeft",
+   " Has",
+   " contains",
+   " memiliki",
+   "Has"
+  ],
+  "peak_z": 7.084038734436035
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

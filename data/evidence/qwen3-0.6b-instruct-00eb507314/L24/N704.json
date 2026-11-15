@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 704,
+ "down_norm": 1.0343917608261108,
+ "logit_lens": {
+  "up": [
+   " Actual",
+   "actual",
+   " actual",
+   "Actual",
+   "_Internal",
+   "_internal",
+   " Practical",
+   "\tactual",
+   " Physical",
+   "personal",
+   " Divine",
+   "实际"
+  ],
+  "down": [
+   "东西",
+   "LayoutPanel",
+   "zia",
+   "出会",
+   "rb",
+   "śl",
+   "cciones",
+   " Airways",
+   "rol",
+   "一块",
+   "饹",
+   "/effects"
+  ],
+  "peak_z": 5.254462718963623
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1261,
+ "down_norm": 0.7248888611793518,
+ "logit_lens": {
+  "up": [
+   "gement",
+   "atings",
+   "uper",
+   " Series",
+   " route",
+   "agements",
+   ")arg",
+   "ems",
+   "quals",
+   ")(__",
+   "ully",
+   " Blacks"
+  ],
+  "down": [
+   "ворот",
+   "ophon",
+   "规程",
+   "љ",
+   "äch",
+   "вор",
+   " opendir",
+   "无穷",
+   "woord",
+   "ophile",
+   " стало",
+   "墉"
+  ],
+  "peak_z": 5.107402801513672
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

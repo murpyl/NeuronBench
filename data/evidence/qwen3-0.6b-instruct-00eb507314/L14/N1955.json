@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1955,
+ "down_norm": 0.8498600125312805,
+ "logit_lens": {
+  "up": [
+   " TORT",
+   "eways",
+   " OSP",
+   "enes",
+   " tid",
+   "米尔",
+   " estr",
+   " Bid",
+   "-release",
+   "坚韧",
+   " BS",
+   ".os"
+  ],
+  "down": [
+   "шка",
+   " duplication",
+   "缀",
+   "ursal",
+   "unft",
+   "ificate",
+   "袖",
+   "vement",
+   " sạn",
+   "apped",
+   "stüt",
+   "zelf"
+  ],
+  "peak_z": 4.608255863189697
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

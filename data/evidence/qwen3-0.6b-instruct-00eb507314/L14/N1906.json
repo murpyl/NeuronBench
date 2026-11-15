@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1906,
+ "down_norm": 0.7865923047065735,
+ "logit_lens": {
+  "up": [
+   " lời",
+   "ArgsConstructor",
+   "aled",
+   " oczy",
+   "hon",
+   "#\",",
+   "agon",
+   "thern",
+   "报酬",
+   "agan",
+   "尽头",
+   " Gors"
+  ],
+  "down": [
+   " interact",
+   " reference",
+   " statistically",
+   "dbuf",
+   " interactions",
+   " domestically",
+   "orca",
+   "参考",
+   " ABS",
+   " either",
+   " record",
+   "acman"
+  ],
+  "peak_z": 4.851777076721191
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

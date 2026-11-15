@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1051,
+ "down_norm": 0.5496914386749268,
+ "logit_lens": {
+  "up": [
+   "不同的",
+   "different",
+   "不同",
+   " unterschied",
+   " different",
+   "不一样的",
+   " différentes",
+   " Different",
+   " différents",
+   "\",[",
+   " differently",
+   "不同类型"
+  ],
+  "down": [
+   "obuf",
+   "W",
+   "ORN",
+   "odb",
+   "二字",
+   "Corp",
+   " DP",
+   "obe",
+   "اما",
+   "Dyn",
+   "obel",
+   "abb"
+  ],
+  "peak_z": 5.824149131774902
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

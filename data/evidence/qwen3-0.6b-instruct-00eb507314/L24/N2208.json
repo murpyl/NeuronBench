@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2208,
+ "down_norm": 1.1165258884429932,
+ "logit_lens": {
+  "up": [
+   " language",
+   " languages",
+   " lang",
+   "-language",
+   " Language",
+   " normal",
+   "语言",
+   "Language",
+   " язык",
+   " regular",
+   "lang",
+   "cal"
+  ],
+  "down": [
+   ".stderr",
+   "入园",
+   "issent",
+   "stands",
+   "сты",
+   "篷",
+   "_SUR",
+   "entar",
+   "선",
+   "ROC",
+   "_DC",
+   " sinking"
+  ],
+  "peak_z": 6.04534912109375
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 672,
+ "down_norm": 1.0766942501068115,
+ "logit_lens": {
+  "up": [
+   "aget",
+   "AGER",
+   "aged",
+   "icot",
+   "AGE",
+   "icle",
+   "AGING",
+   "AGO",
+   " Agencies",
+   "itung",
+   "ager",
+   "agi"
+  ],
+  "down": [
+   "ระว",
+   "ellation",
+   "mons",
+   "enville",
+   " tomorrow",
+   "ď",
+   "ender",
+   " resourceName",
+   "emm",
+   "(resourceName",
+   "因地",
+   "razione"
+  ],
+  "peak_z": 6.1019392013549805
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

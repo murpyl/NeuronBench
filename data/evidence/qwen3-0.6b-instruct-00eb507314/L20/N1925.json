@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1925,
+ "down_norm": 0.86777663230896,
+ "logit_lens": {
+  "up": [
+   "olah",
+   "概念",
+   "ooter",
+   " mesa",
+   " друзья",
+   "promise",
+   "庠",
+   "腱",
+   "抢占",
+   " Separator",
+   " pouch",
+   " chưa"
+  ],
+  "down": [
+   "itez",
+   "ifr",
+   " Corbyn",
+   "isten",
+   "ucht",
+   "ugs",
+   "iga",
+   "iza",
+   "Convertible",
+   "低成本",
+   "ساس",
+   " Astr"
+  ],
+  "peak_z": 5.026960849761963
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

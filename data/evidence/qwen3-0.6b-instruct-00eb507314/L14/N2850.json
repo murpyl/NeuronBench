@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2850,
+ "down_norm": 0.7526164650917053,
+ "logit_lens": {
+  "up": [
+   "autorelease",
+   "不间断",
+   "加倍",
+   "ottle",
+   "bart",
+   "yps",
+   ".bp",
+   "+y",
+   " currentItem",
+   "阅读全文",
+   "trait",
+   "蝉"
+  ],
+  "down": [
+   " specific",
+   "%%\n",
+   "cribed",
+   " Mandal",
+   "egration",
+   "#\n",
+   "#\n\n",
+   " dẫn",
+   "كتب",
+   "!\n",
+   "cribing",
+   "än"
+  ],
+  "peak_z": 4.517493724822998
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

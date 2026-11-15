@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1601,
+ "down_norm": 0.6352514028549194,
+ "logit_lens": {
+  "up": [
+   "Stick",
+   "elves",
+   "iaux",
+   " Discussions",
+   " Cheat",
+   "elan",
+   "patrick",
+   " Stick",
+   " permalink",
+   ".bulk",
+   "storybook",
+   " sharedInstance"
+  ],
+  "down": [
+   "层",
+   "阶段",
+   "项",
+   "时期",
+   "部门",
+   "層",
+   "部部长",
+   "回合",
+   "类型的",
+   "世纪",
+   "阶",
+   "股"
+  ],
+  "peak_z": 5.711283206939697
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

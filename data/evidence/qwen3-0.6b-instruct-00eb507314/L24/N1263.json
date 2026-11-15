@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1263,
+ "down_norm": 1.1254037618637085,
+ "logit_lens": {
+  "up": [
+   "omen",
+   "еб",
+   "dit",
+   "]\")",
+   "ategorie",
+   "rise",
+   "est",
+   "ollection",
+   "SCO",
+   "げる",
+   "esc",
+   "eat"
+  ],
+  "down": [
+   "有",
+   " have",
+   " has",
+   " có",
+   "有一个",
+   "有的",
+   "has",
+   " Have",
+   "有这样的",
+   "(has",
+   "have",
+   "有过"
+  ],
+  "peak_z": 16.45658302307129
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

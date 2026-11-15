@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2834,
+ "down_norm": 1.0688632726669312,
+ "logit_lens": {
+  "up": [
+   "board",
+   "boards",
+   " board",
+   "-board",
+   " boards",
+   "Board",
+   " Boards",
+   ".board",
+   "_board",
+   "/board",
+   "\tboard",
+   "BOARD"
+  ],
+  "down": [
+   "umes",
+   "ARS",
+   "ades",
+   "ื",
+   "bid",
+   " indefinite",
+   " pien",
+   "ge",
+   "оз",
+   "gles",
+   "uate",
+   "pike"
+  ],
+  "peak_z": 7.032874584197998
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

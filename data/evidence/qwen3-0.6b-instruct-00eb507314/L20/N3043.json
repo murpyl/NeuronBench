@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 3043,
+ "down_norm": 0.9800054430961609,
+ "logit_lens": {
+  "up": [
+   "elsif",
+   "ILING",
+   "itia",
+   " scramble",
+   "ICIAL",
+   "ungs",
+   "ypse",
+   " Penguins",
+   "nP",
+   " registrazione",
+   "ver",
+   "깡"
+  ],
+  "down": [
+   "icut",
+   "age",
+   "AGE",
+   "ages",
+   "娘",
+   "墩",
+   "onents",
+   "احتجاج",
+   "aget",
+   "玛丽",
+   "ﬀ",
+   "liness"
+  ],
+  "peak_z": 5.030472278594971
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

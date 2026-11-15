@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1069,
+ "down_norm": 0.5841626524925232,
+ "logit_lens": {
+  "up": [
+   "linky",
+   "EFR",
+   "روف",
+   "лик",
+   "urge",
+   "icans",
+   "ansas",
+   "HasKey",
+   "Fly",
+   "inder",
+   "BaseContext",
+   " glasses"
+  ],
+  "down": [
+   "later",
+   " later",
+   " Later",
+   "olis",
+   "后来",
+   "pet",
+   " später",
+   "以后",
+   "HELL",
+   " CST",
+   "ね",
+   "acle"
+  ],
+  "peak_z": 6.120896816253662
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

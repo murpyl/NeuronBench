@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 219,
+ "down_norm": 0.6304479837417603,
+ "logit_lens": {
+  "up": [
+   "好的",
+   " own",
+   " same",
+   "该",
+   "該",
+   "自己",
+   "same",
+   "oretical",
+   "平",
+   " Crow",
+   "不需要",
+   "他们"
+  ],
+  "down": [
+   "кра",
+   "EndInit",
+   "очно",
+   "ıy",
+   " téc",
+   "lijk",
+   "(errno",
+   "ело",
+   "سوء",
+   "ела",
+   ".GetKey",
+   "ёт"
+  ],
+  "peak_z": 5.6735053062438965
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

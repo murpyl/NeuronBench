@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2106,
+ "down_norm": 1.107620358467102,
+ "logit_lens": {
+  "up": [
+   " slow",
+   "Grad",
+   " slowly",
+   " Grad",
+   "slow",
+   " Slow",
+   "缓慢",
+   "慢慢",
+   "Slow",
+   "渐",
+   "grad",
+   "逐渐"
+  ],
+  "down": [
+   "foil",
+   "toa",
+   "buster",
+   "qrstuvwxyz",
+   "crow",
+   "minating",
+   " sez",
+   " Fortress",
+   "encode",
+   "ersen",
+   "美联",
+   "enterprise"
+  ],
+  "peak_z": 9.126336097717285
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

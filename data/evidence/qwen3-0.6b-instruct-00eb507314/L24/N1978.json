@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1978,
+ "down_norm": 1.1073071956634521,
+ "logit_lens": {
+  "up": [
+   "об",
+   "prestashop",
+   "벌",
+   "centre",
+   "olib",
+   "leh",
+   "릭",
+   "_best",
+   "isoft",
+   "p",
+   "avit",
+   "lights"
+  ],
+  "down": [
+   " man",
+   "(",
+   "man",
+   " woman",
+   "人的",
+   " Man",
+   "dings",
+   "人在",
+   "人",
+   "חים",
+   "_man",
+   "ystems"
+  ],
+  "peak_z": 5.9365620613098145
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

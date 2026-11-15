@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2599,
+ "down_norm": 1.1433225870132446,
+ "logit_lens": {
+  "up": [
+   " of",
+   "of",
+   "_of",
+   "Of",
+   "\tof",
+   " Of",
+   "-of",
+   "_Of",
+   " của",
+   "_OF",
+   "OfFile",
+   "ของ"
+  ],
+  "down": [
+   "знания",
+   "ilate",
+   "ест",
+   "并与",
+   "upiter",
+   "érica",
+   "TRL",
+   "acular",
+   "ushman",
+   "orno",
+   "ведущ",
+   "在内的"
+  ],
+  "peak_z": 17.127260208129883
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

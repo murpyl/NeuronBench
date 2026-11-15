@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1931,
+ "down_norm": 0.7493125796318054,
+ "logit_lens": {
+  "up": [
+   "那是",
+   " --\n\n",
+   "总会",
+   "工作报告",
+   "QQ",
+   " */\n\n\n\n",
+   "护照",
+   " */\n\n\n",
+   "zburg",
+   "enced",
+   "肯定是",
+   "很正常"
+  ],
+  "down": [
+   "机构",
+   "-an",
+   " Institution",
+   "ぁ",
+   "椅",
+   "[](",
+   " objet",
+   "แขน",
+   "IFF",
+   "ajs",
+   "anism",
+   "(mock"
+  ],
+  "peak_z": 4.732565402984619
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

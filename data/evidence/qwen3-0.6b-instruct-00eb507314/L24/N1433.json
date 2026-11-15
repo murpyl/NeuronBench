@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1433,
+ "down_norm": 1.1558609008789062,
+ "logit_lens": {
+  "up": [
+   "iais",
+   " miejs",
+   "haps",
+   ".xaml",
+   " IDD",
+   "زال",
+   "CES",
+   "ство",
+   " resil",
+   "ält",
+   "()\")\n",
+   "ଆ"
+  ],
+  "down": [
+   " fine",
+   "fine",
+   " Fine",
+   "Fine",
+   "ok",
+   " OK",
+   " ok",
+   " Ok",
+   "Ok",
+   "OK",
+   " okay",
+   "FINE"
+  ],
+  "peak_z": 16.256494522094727
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

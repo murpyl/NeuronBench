@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1650,
+ "down_norm": 0.514146625995636,
+ "logit_lens": {
+  "up": [
+   " ?\";\n",
+   "|=\n",
+   "gebn",
+   "oothing",
+   "()\"\n",
+   "'+\n",
+   " péri",
+   " özelli",
+   "?\"\n",
+   "оцен",
+   " !=\n",
+   "ắp"
+  ],
+  "down": [
+   " yes",
+   "agrams",
+   ".",
+   " because",
+   " indeed",
+   ";",
+   "。",
+   " Yes",
+   " Archives",
+   "FA",
+   "agram",
+   "vin"
+  ],
+  "peak_z": 5.398177623748779
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

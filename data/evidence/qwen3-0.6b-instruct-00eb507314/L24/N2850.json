@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2850,
+ "down_norm": 1.144163727760315,
+ "logit_lens": {
+  "up": [
+   "省政府",
+   "let",
+   "ضة",
+   "lia",
+   "LET",
+   "日讯",
+   " let",
+   " state",
+   "\tlet",
+   " Lessons",
+   "ullah",
+   " scattering"
+  ],
+  "down": [
+   "urgical",
+   ".PREFERRED",
+   "acement",
+   "(turn",
+   "abric",
+   "nost",
+   " içerisinde",
+   " capitals",
+   "ventory",
+   "aries",
+   "stände",
+   "сет"
+  ],
+  "peak_z": 5.264313220977783
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

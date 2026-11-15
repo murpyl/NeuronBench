@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2685,
+ "down_norm": 0.8430264592170715,
+ "logit_lens": {
+  "up": [
+   "ibo",
+   "bei",
+   "öße",
+   " teil",
+   "ibu",
+   " khoản",
+   "setAttribute",
+   ".getClass",
+   ".setViewportView",
+   "setId",
+   "appId",
+   "ół"
+  ],
+  "down": [
+   "怪",
+   "不起",
+   " minded",
+   "第三个",
+   "tures",
+   "-your",
+   "第二个",
+   "军",
+   "_DEFIN",
+   "意义上的",
+   "国情",
+   "r"
+  ],
+  "peak_z": 5.250509262084961
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

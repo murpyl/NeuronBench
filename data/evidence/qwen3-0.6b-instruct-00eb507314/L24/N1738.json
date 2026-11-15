@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1738,
+ "down_norm": 1.1925550699234009,
+ "logit_lens": {
+  "up": [
+   "卮",
+   " makeStyles",
+   "Press",
+   "<Map",
+   "sprintf",
+   "andise",
+   "isiert",
+   "isti",
+   "oralType",
+   "ありました",
+   " sclerosis",
+   "ért"
+  ],
+  "down": [
+   " so",
+   "so",
+   " So",
+   "所以",
+   "So",
+   "(so",
+   "-so",
+   "\tSo",
+   "所以在",
+   "所以他",
+   "_so",
+   ".So"
+  ],
+  "peak_z": 21.81853675842285
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1120,
+ "down_norm": 0.8730899095535278,
+ "logit_lens": {
+  "up": [
+   " goal",
+   " goals",
+   "goal",
+   " Goal",
+   "目标",
+   "goals",
+   "_goal",
+   "Goal",
+   " Goals",
+   " aims",
+   "(goal",
+   "Goals"
+  ],
+  "down": [
+   " Booker",
+   "witch",
+   "nier",
+   "リアル",
+   "NEY",
+   "emailer",
+   "[++",
+   "ouse",
+   "eus",
+   "ipel",
+   "KHTML",
+   "ISCO"
+  ],
+  "peak_z": 7.725477695465088
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

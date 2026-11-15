@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1634,
+ "down_norm": 1.0966452360153198,
+ "logit_lens": {
+  "up": [
+   "xia",
+   "天",
+   "天下",
+   "go",
+   "GLOBALS",
+   "畴",
+   " веч",
+   "而去",
+   "厕",
+   "$GLOBALS",
+   "执意",
+   "maf"
+  ],
+  "down": [
+   "oods",
+   "edriver",
+   "-basic",
+   "rap",
+   "kart",
+   "eb",
+   "образ",
+   "ech",
+   "ANG",
+   "eed",
+   "ushing",
+   "OUNTER"
+  ],
+  "peak_z": 4.963057518005371
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

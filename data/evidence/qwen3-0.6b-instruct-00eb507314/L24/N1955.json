@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1955,
+ "down_norm": 1.1410224437713623,
+ "logit_lens": {
+  "up": [
+   "•",
+   " •",
+   ".•",
+   "•\n\n",
+   "▪",
+   "➢",
+   "ev",
+   "ав",
+   "lo",
+   "ines",
+   "```",
+   " Specifications"
+  ],
+  "down": [
+   "　",
+   " ",
+   "\",__",
+   "&nbsp",
+   "：</",
+   "=\"_",
+   "htub",
+   "igung",
+   " tumblr",
+   ":',",
+   "  ",
+   "�"
+  ],
+  "peak_z": 15.007259368896484
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

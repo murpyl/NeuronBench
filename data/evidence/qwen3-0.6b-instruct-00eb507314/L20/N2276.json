@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2276,
+ "down_norm": 1.056026577949524,
+ "logit_lens": {
+  "up": [
+   "ificance",
+   "\"].",
+   "cgi",
+   "]\r\n",
+   "\\param",
+   " /.",
+   "uts",
+   "ishi",
+   "].",
+   "虛",
+   "]\\",
+   "volent"
+  ],
+  "down": [
+   "直接",
+   " directly",
+   " direct",
+   " Direct",
+   "direct",
+   "Direct",
+   " DIRECT",
+   "直",
+   "可以直接",
+   " diret",
+   "DIRECT",
+   "_direct"
+  ],
+  "peak_z": 20.891666412353516
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

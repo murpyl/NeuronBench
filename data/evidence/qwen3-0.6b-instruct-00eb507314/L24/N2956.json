@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2956,
+ "down_norm": 1.067347526550293,
+ "logit_lens": {
+  "up": [
+   " Class",
+   " class",
+   "kl",
+   "\tclass",
+   "-Class",
+   " Classe",
+   " KC",
+   "\tClass",
+   " Kl",
+   " CB",
+   " CLASS",
+   "Class"
+  ],
+  "down": [
+   "ogs",
+   "ług",
+   "iveness",
+   "调剂",
+   "isons",
+   "cohol",
+   " experimenting",
+   "avor",
+   "ison",
+   "諮詢",
+   "\tendif",
+   " повер"
+  ],
+  "peak_z": 5.753297805786133
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 672,
+ "down_norm": 0.6875223517417908,
+ "logit_lens": {
+  "up": [
+   "icro",
+   "pé",
+   "��",
+   "istent",
+   "best",
+   "ië",
+   "ibrate",
+   ".best",
+   "cripts",
+   "ción",
+   "cí",
+   "iams"
+  ],
+  "down": [
+   "ostringstream",
+   " Critics",
+   "soever",
+   " Everywhere",
+   "招股书",
+   "国民经济",
+   "OrNil",
+   "HSV",
+   "道歉",
+   " httpResponse",
+   "advertisement",
+   ".DrawString"
+  ],
+  "peak_z": 4.7416157722473145
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

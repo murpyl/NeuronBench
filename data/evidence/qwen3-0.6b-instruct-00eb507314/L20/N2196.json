@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2196,
+ "down_norm": 1.042237401008606,
+ "logit_lens": {
+  "up": [
+   " eval",
+   "\teval",
+   "(eval",
+   "eval",
+   ".eval",
+   "\texec",
+   " exec",
+   " getattr",
+   " Eval",
+   "_eval",
+   " Evalu",
+   "Reflect"
+  ],
+  "down": [
+   "LPARAM",
+   " qint",
+   " ListView",
+   " TextInput",
+   "lsi",
+   "rud",
+   "edList",
+   " HttpResponseMessage",
+   "latest",
+   "mutable",
+   " masse",
+   "过剩"
+  ],
+  "peak_z": 7.469137668609619
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

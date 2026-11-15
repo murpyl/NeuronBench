@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1240,
+ "down_norm": 1.0604984760284424,
+ "logit_lens": {
+  "up": [
+   "uhan",
+   "匙",
+   "olutely",
+   "pons",
+   "OSH",
+   "WithType",
+   "omal",
+   " [/",
+   "many",
+   "nero",
+   "chner",
+   " [<"
+  ],
+  "down": [
+   "ENSE",
+   "唢",
+   "yb",
+   " lui",
+   " serge",
+   "usta",
+   "mage",
+   ".espresso",
+   "notif",
+   "lider",
+   "stry",
+   "lead"
+  ],
+  "peak_z": 4.876978397369385
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

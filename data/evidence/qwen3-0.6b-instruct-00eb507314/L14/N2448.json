@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2448,
+ "down_norm": 0.6316630244255066,
+ "logit_lens": {
+  "up": [
+   "'al",
+   "icable",
+   "stück",
+   "thè",
+   "iability",
+   "ernels",
+   ".UP",
+   " seçim",
+   "隍",
+   " Câm",
+   "ancellation",
+   "eses"
+  ],
+  "down": [
+   "和",
+   " and",
+   "或",
+   " or",
+   "性和",
+   "and",
+   "与",
+   "和技术",
+   "或者",
+   "したり",
+   "And",
+   " 和"
+  ],
+  "peak_z": 6.660532474517822
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

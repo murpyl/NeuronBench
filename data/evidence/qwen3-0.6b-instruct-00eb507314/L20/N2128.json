@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2128,
+ "down_norm": 0.8645513653755188,
+ "logit_lens": {
+  "up": [
+   " manh",
+   "maid",
+   ".Metro",
+   "ismet",
+   "iator",
+   "()][",
+   "idon",
+   "ibaba",
+   "SSION",
+   " \"),\n",
+   "resse",
+   " yaygın"
+  ],
+  "down": [
+   "<?",
+   "#!/",
+   "#!",
+   " <?",
+   "<!",
+   "#/",
+   "><?",
+   "#",
+   "-<?",
+   "﻿#",
+   "﻿//",
+   "('<?"
+  ],
+  "peak_z": 7.860506534576416
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

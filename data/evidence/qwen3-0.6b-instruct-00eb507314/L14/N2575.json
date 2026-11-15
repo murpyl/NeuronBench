@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 2575,
+ "down_norm": 0.8393031358718872,
+ "logit_lens": {
+  "up": [
+   "ponsors",
+   "的人来说",
+   "ivol",
+   "وخ",
+   "orial",
+   "emsp",
+   "edList",
+   "ores",
+   "edImage",
+   "orst",
+   " szczeg",
+   "蜻"
+  ],
+  "down": [
+   "相同",
+   "相同的",
+   " differing",
+   " identical",
+   " different",
+   "不同",
+   "不同的",
+   "共同",
+   "同一个",
+   " same",
+   " unterschied",
+   "同一"
+  ],
+  "peak_z": 8.124399185180664
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

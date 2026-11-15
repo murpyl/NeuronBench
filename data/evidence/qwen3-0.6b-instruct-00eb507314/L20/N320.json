@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 320,
+ "down_norm": 0.6203436255455017,
+ "logit_lens": {
+  "up": [
+   " ,\n\n",
+   ",...\n\n",
+   ",...\n",
+   " ,",
+   ",...",
+   " ...)",
+   "\n",
+   " ...\n",
+   " ...",
+   " ,\n",
+   " ;\n",
+   ",\n\n"
+  ],
+  "down": [
+   "enance",
+   "sville",
+   "urname",
+   "部副",
+   "部副部长",
+   "ILI",
+   "IED",
+   "lei",
+   "뛰",
+   "allen",
+   " Sahara",
+   " strugg"
+  ],
+  "peak_z": 5.523322105407715
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 892,
+ "down_norm": 1.0780411958694458,
+ "logit_lens": {
+  "up": [
+   " pay",
+   "缴费",
+   " Payment",
+   "pay",
+   "缴",
+   " payment",
+   "rent",
+   "交",
+   " pays",
+   "payment",
+   " paying",
+   "付"
+  ],
+  "down": [
+   "(blocks",
+   " compress",
+   "-neck",
+   " bloc",
+   " Cupertino",
+   "$table",
+   "(horizontal",
+   " versch",
+   " compressed",
+   "(block",
+   " screws",
+   "']]['"
+  ],
+  "peak_z": 6.369098663330078
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

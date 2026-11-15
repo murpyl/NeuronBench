@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2660,
+ "down_norm": 1.0250322818756104,
+ "logit_lens": {
+  "up": [
+   " beating",
+   " beaten",
+   "BagConstraints",
+   "HeaderView",
+   " trails",
+   "igel",
+   "咔",
+   "讲课",
+   " Hearts",
+   ">Main",
+   " pied",
+   "鹌"
+  ],
+  "down": [
+   "词汇",
+   " vocabulary",
+   " vocab",
+   "ronym",
+   "词",
+   "ictionary",
+   "vocab",
+   "词语",
+   "ocabulary",
+   "单词",
+   "术语",
+   "辞"
+  ],
+  "peak_z": 8.023582458496094
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

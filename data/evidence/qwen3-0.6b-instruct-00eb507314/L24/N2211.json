@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2211,
+ "down_norm": 1.0351250171661377,
+ "logit_lens": {
+  "up": [
+   "Scr",
+   " Scr",
+   " Klopp",
+   " functionName",
+   "enticator",
+   "тро",
+   "andalone",
+   "classpath",
+   "科技大学",
+   "发生",
+   "Appearance",
+   "CLLocation"
+  ],
+  "down": [
+   " operator",
+   "erez",
+   " operators",
+   "wi",
+   "rolls",
+   " licensee",
+   "leitung",
+   "пров",
+   "OTT",
+   "winner",
+   " Turner",
+   "operators"
+  ],
+  "peak_z": 5.175457000732422
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

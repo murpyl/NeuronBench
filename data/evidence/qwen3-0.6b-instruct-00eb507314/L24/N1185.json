@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 1185,
+ "down_norm": 1.0780326128005981,
+ "logit_lens": {
+  "up": [
+   "峤",
+   "bars",
+   ".cli",
+   "不及",
+   "urious",
+   "儆",
+   "臊",
+   "ément",
+   "ič",
+   "LookAndFeel",
+   "(strict",
+   "ensem"
+  ],
+  "down": [
+   "hex",
+   "hx",
+   "ho",
+   "oct",
+   "esper",
+   "hs",
+   "hos",
+   "holder",
+   "hy",
+   "groupName",
+   " Sept",
+   "ournée"
+  ],
+  "peak_z": 5.118037700653076
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

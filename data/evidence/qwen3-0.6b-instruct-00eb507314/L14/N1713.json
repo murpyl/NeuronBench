@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1713,
+ "down_norm": 0.8678779602050781,
+ "logit_lens": {
+  "up": [
+   "SBATCH",
+   " operated",
+   "orrect",
+   "opic",
+   "олос",
+   " başlat",
+   "reater",
+   " ).\n",
+   "#SBATCH",
+   "Greater",
+   "oper",
+   "orn"
+  ],
+  "down": [
+   " ден",
+   " cambio",
+   "惯例",
+   "amente",
+   " perplex",
+   "enco",
+   " accommodation",
+   "cba",
+   "arie",
+   "穷",
+   " nack",
+   "建设工程"
+  ],
+  "peak_z": 4.844455242156982
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

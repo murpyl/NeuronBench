@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 1780,
+ "down_norm": 0.5803011655807495,
+ "logit_lens": {
+  "up": [
+   "))*(",
+   ".isConnected",
+   ".newInstance",
+   ".toCharArray",
+   "/****************************************************************************\n",
+   "一事",
+   " UnsupportedOperationException",
+   "uits",
+   "Statics",
+   "aining",
+   " Aws",
+   "/*******************************************************************************\n"
+  ],
+  "down": [
+   "ội",
+   "chemy",
+   "VIDIA",
+   "벨",
+   "ress",
+   "거",
+   "щения",
+   "كن",
+   "ESC",
+   "虢",
+   "URN",
+   "\tdata"
+  ],
+  "peak_z": 5.438180446624756
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

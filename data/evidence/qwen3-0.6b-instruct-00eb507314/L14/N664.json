@@ -1,0 +1,40 @@
+{
+ "layer": 14,
+ "neuron": 664,
+ "down_norm": 0.703948974609375,
+ "logit_lens": {
+  "up": [
+   "istan",
+   " substance",
+   "��",
+   "ropa",
+   " matters",
+   " bip",
+   "earn",
+   "الية",
+   "aterial",
+   "urv",
+   "coni",
+   "文体"
+  ],
+  "down": [
+   "herited",
+   "库里",
+   " released",
+   "verified",
+   "_checked",
+   "ammed",
+   "-checked",
+   " Mitchell",
+   "release",
+   " saw",
+   "nton",
+   " Checked"
+  ],
+  "peak_z": 5.06091833114624
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

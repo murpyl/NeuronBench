@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 2568,
+ "down_norm": 1.0480270385742188,
+ "logit_lens": {
+  "up": [
+   "亂",
+   "alous",
+   "乱",
+   "慢",
+   "细",
+   "滥",
+   "DisplayStyle",
+   "巧",
+   " hot",
+   "emons",
+   "ense",
+   "硬"
+  ],
+  "down": [
+   "前者",
+   " footing",
+   " sesso",
+   "AGE",
+   "后者",
+   " hưởng",
+   " pedestal",
+   "IENTATION",
+   ">>>(",
+   "垓",
+   "郓",
+   "ettel"
+  ],
+  "peak_z": 5.565696716308594
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

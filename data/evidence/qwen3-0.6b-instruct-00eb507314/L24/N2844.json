@@ -1,0 +1,40 @@
+{
+ "layer": 24,
+ "neuron": 2844,
+ "down_norm": 1.088369369506836,
+ "logit_lens": {
+  "up": [
+   "ten",
+   "CRYPT",
+   " explodes",
+   "ctors",
+   "redd",
+   " Splash",
+   ".Security",
+   "word",
+   "ewise",
+   "(words",
+   " word",
+   ".cut"
+  ],
+  "down": [
+   " competition",
+   " competit",
+   " Competitive",
+   " competitions",
+   "拮",
+   "competitive",
+   "競爭",
+   " antagonist",
+   " antagon",
+   " compete",
+   "[block",
+   " competitive"
+  ],
+  "peak_z": 5.81045389175415
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}

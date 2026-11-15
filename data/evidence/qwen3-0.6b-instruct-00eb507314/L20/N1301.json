@@ -1,0 +1,40 @@
+{
+ "layer": 20,
+ "neuron": 1301,
+ "down_norm": 1.047603726387024,
+ "logit_lens": {
+  "up": [
+   "heel",
+   "<article",
+   "dater",
+   "olecules",
+   "pees",
+   " heel",
+   "ーン",
+   "旬",
+   "却被",
+   "的一些",
+   "ifetime",
+   "ESSAGES"
+  ],
+  "down": [
+   " above",
+   "above",
+   " Above",
+   "以上",
+   "上述",
+   "Above",
+   "上面",
+   "以上的",
+   " ABOVE",
+   " выше",
+   " foregoing",
+   " aforementioned"
+  ],
+  "peak_z": 27.724246978759766
+ },
+ "available": [
+  "down_norm",
+  "logit_lens"
+ ]
+}
