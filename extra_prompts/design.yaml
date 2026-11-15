@@ -1,0 +1,14 @@
+# Ten extra task prompts (on top of who / snake / orange), merged into gne's configs by scripts/prompts_configs.py.
+# Two doses per prompt match the extremes of main_rel; each dose is one batch of 10 prompts.
+prompts:
+  photo: "Explain how photosynthesis works."
+  poem: "Write a short poem about the ocean."
+  recipe: "Give me a recipe for pancakes."
+  ww1: "What were the main causes of World War I?"
+  sql: "Write a SQL query that finds the top 5 customers by total spend."
+  french: "Translate 'Good morning, how are you?' into French and Spanish."
+  stress: "I feel stressed about my exams. Any advice?"
+  desert: "List ten animals that live in the desert."
+  math: "What is 17 times 23? Show your work."
+  robot: "Tell me a story about a robot who learns to paint."
+doses: [-0.7, 0.8]
