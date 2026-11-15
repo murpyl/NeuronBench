@@ -152,8 +152,8 @@ which halves both numbers. Use `neuronbench report`, or the dataset `metric.py`,
 ## Results
 
 Qwen3-0.6B (Q8_0), layers 14, 20 and 24; 255 tasks: 150 "Which output is it?" (chance 25%) and 105 "Real or null?"
-(54 real at the 95% cutoff). Every model ran as mini-SWE-agent on Valkyrie (`jobs/valkyrie/*.json`, 0 agent
-failures), scored offline with `neuronbench report --items data/items.jsonl --jobs jobs/valkyrie/*.json --out results`.
+(54 real at the 95% cutoff). Every model ran as mini-SWE-agent on Valkyrie (`jobs/valkyrie/*.json`; no API-model
+task failed, Qwen timeouts below), scored offline with `neuronbench report --items data/items.jsonl --jobs jobs/valkyrie/*.json --out results`.
 Full tables: `results/results.md`, split by random-draw vs hand-picked neurons in `results/results_by_selection.md`.
 
 | system | Which output is it? (accuracy, 95% CI) | Real or null? (Brier, lower is better) |
@@ -174,8 +174,34 @@ until the 600 s agent limit, and are graded on the file at that point. Timeouts:
 8/105 null tasks, Qwen3-0.6B 63/150 and 43/105. In 5 of 17 Qwen3-32B trajectories checked, the final letter differed
 from the first one written. Every API-model task submitted normally.
 
+Intervals are 95% percentile bootstraps over items (2,000 resamples, seed 0; `neuronbench/results.py`). Each model ran
+each task once, so they cover item sampling, not run-to-run variation, and items sharing a neuron are treated as
+independent. With every system on the same 150 choice items, the choice intervals are all about ±7–8 points wide.
+The null-task intervals vary with answer style: hedging near 0.5 earns about 0.75 reward on every item (narrow
+interval), confident answers earn near 0 or 1 (wide). Use the paired comparisons below for head-to-head claims.
+
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
+![choice accuracy by effect size](results/choice_by_effect_size.png)
+
+Choice accuracy by quartile of gne vocabulary mass. There are about 37 items per quartile, so each point is only
+good to about ±15 points. Every model dips in Q2, and most rise again in Q4.
+
+**Random-draw vs hand-picked neurons** (`results/results_by_selection.md`). The hand-picked neurons were chosen for
+a sharp logit lens, so the lookup does better on them. There are only 16 picked choice items and 20 picked null
+items (intervals about ±25 points on choice), so no model's picked-vs-random gap is significant:
+
+| system | choice, picked (n = 16) | choice, random (n = 134) | null Brier, picked (n = 20) | null Brier, random (n = 85) |
+|---|---|---|---|---|
+| Claude Haiku 5.5 | 0.31 | **0.50** | 0.246 | 0.257 |
+| Claude Opus 5.5 | 0.44 | 0.45 | **0.220** | 0.250 |
+| Claude Sonnet 5.5 | 0.38 | 0.43 | 0.245 | **0.247** |
+| GPT-5.6-luna | 0.44 | 0.39 | 0.282 | 0.314 |
+| Claude Haiku 4.5 | **0.56** | 0.37 | 0.263 | 0.301 |
+| Qwen3-32B* | 0.50 | 0.38 | 0.354 | 0.401 |
+| Qwen3-0.6B* | 0.31 | 0.22 | 0.340 | 0.395 |
+| logit-lens lookup | **0.56** | 0.39 | | |
+| base rate | | | 0.252 | 0.255 |
 
 **"Which output is it?", split by whether the answer can be read off the text.** In 50 of the 150 items a logit-lens
 token (≥ 3 letters) literally occurs in a candidate reply; there, the logit-lens lookup already scores 64%. The other
@@ -237,7 +263,7 @@ Headline findings (full analysis with failure modes in `results/analysis.md`; nu
 ### Valkyrie runs
 
 Datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and `neuronbench/l24@1` (layer 24, 85 tasks), agent
-`mini_swe_agent`, sandboxes on Modal, concurrency 8. Exports are in `jobs/valkyrie/`.
+`mini_swe_agent`, sandboxes on Modal, concurrency 8 (Opus 5.5: 16). Exports are in `jobs/valkyrie/`.
 
 | model | `l14-l20@1` run ID | `l24@1` run ID |
 |---|---|---|

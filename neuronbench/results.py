@@ -147,8 +147,10 @@ def plot(rows: list[dict], strata: dict[str, dict[int, float]], out_dir: str | P
         plt.close(fig)
         paths.append(p)
     if strata:
-        fig, ax = plt.subplots(figsize=(6, 4))
+        fig, ax = plt.subplots(figsize=(8, 4))
         for system, accs in strata.items():
+            if system in baselines and system != "baseline:logit_lens":
+                continue
             ax.plot(list(accs), list(accs.values()), marker="o", label=system,
                     ls=":" if system in baselines else "-")
         ax.axhline(0.25, ls="--", c="k", lw=1)
@@ -156,7 +158,7 @@ def plot(rows: list[dict], strata: dict[str, dict[int, float]], out_dir: str | P
         ax.set_xlabel("effect size quartile (gne vocabulary mass)")
         ax.set_ylabel("accuracy")
         ax.set_title("Which output is it? by effect size")
-        ax.legend(fontsize=7)
+        ax.legend(fontsize=7, loc="center left", bbox_to_anchor=(1.01, 0.5))
         fig.tight_layout()
         p = out_dir / "choice_by_effect_size.png"
         fig.savefig(p, dpi=150)
