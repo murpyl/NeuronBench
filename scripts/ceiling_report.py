@@ -7,11 +7,12 @@ python scripts/ceiling_report.py --model anthropic/claude-haiku-5-5 \
 """
 
 import argparse
-import math
+import json
 
 import numpy as np
 
 from neuronbench.baselines import run_baselines, tie_seed
+from neuronbench.harbor_tasks import safe_name
 from neuronbench.results import collect_jobs, load_items
 
 LOOKUP = {"static": "logit_lens", "transfer": "transfer_words", "oracle": "sweep_words"}
@@ -27,13 +28,28 @@ def boot(x, n=10000):
 def auc(p, y):
     pos = [a for a, b in zip(p, y) if b]
     neg = [a for a, b in zip(p, y) if not b]
+    if not pos or not neg:
+        return float("nan")
     return sum((a > b) + 0.5 * (a == b) for a in pos for b in neg) / (len(pos) * len(neg))
 
 
-def prob(reward, y):
-    """The probability the agent reported, recovered from the Brier reward 1 - (p - y)^2."""
-    d = math.sqrt(max(0.0, 1 - reward))
-    return 1 - d if y else d
+def reported(jobs, items, model):
+    """{item_id: parsed answer} from Valkyrie exports' verifier output."""
+    byname = {safe_name(it["id"]): it["id"] for it in items}
+    out = {}
+    for f in jobs:
+        with open(f) as fh:
+            d = json.load(fh)
+        if d["benchmark_arguments"]["contract"]["model"] != model:
+            continue
+        for k, v in d["evaluation_results"].items():
+            try:
+                parsed = json.loads(v["metadata"]["verifier_output"]).get("parsed")
+            except (KeyError, TypeError, ValueError):
+                continue
+            if k.split("/")[-1] in byname and parsed is not None:
+                out[byname[k.split("/")[-1]]] = parsed
+    return out
 
 
 def main():
@@ -56,10 +72,12 @@ def main():
             rows.append(f"| {name} | - | - | - | {lookups} |")
             continue
         acc[name] = {tie_seed(it): scores[it["id"]] for it in ch if it["id"] in scores}
-        m, lo, hi = boot(list(acc[name].values()))
+        m, lo, hi = boot(list(acc[name].values())) if acc[name] else (float("nan"),) * 3
         nu_ok = [it for it in nu if it["id"] in scores]
-        brier = 1 - np.mean([scores[it["id"]] for it in nu_ok])
-        a_m = auc([prob(scores[it["id"]], it["answer"]["real"]) for it in nu_ok], [it["answer"]["real"] for it in nu_ok])
+        brier = 1 - np.mean([scores[it["id"]] for it in nu_ok]) if nu_ok else float("nan")
+        said = reported(jobs, items, a.model)
+        nu_p = [it for it in nu_ok if it["id"] in said]
+        a_m = auc([float(said[it["id"]]) for it in nu_p], [bool(it["answer"]["real"]) for it in nu_p])
         rows.append(f"| {name} | {m:.2f} [{lo:.2f}, {hi:.2f}] ({len(acc[name])}/{len(ch)}) | {brier:.3f} | {a_m:.2f} "
                     f"| {lookups} |")
     print(f"model: {a.model}\n")
