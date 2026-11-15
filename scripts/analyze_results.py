@@ -23,16 +23,18 @@ SHORT = {
 
 
 def load(items_path, job_paths):
-    items = {json.loads(l)["id"]: json.loads(l) for l in open(items_path)}
+    with open(items_path) as fh:
+        items = {json.loads(line)["id"]: json.loads(line) for line in fh}
     byname = {safe_name(i): i for i in items}
     ans = {}
     for f in job_paths:
-        d = json.load(open(f))
+        with open(f) as fh:
+            d = json.load(fh)
         m = d["benchmark_arguments"]["contract"]["model"]
         for k, v in d["evaluation_results"].items():
             try:
                 vo = json.loads(v["metadata"]["verifier_output"])
-            except Exception:
+            except (KeyError, TypeError, ValueError):
                 vo = {}
             ans.setdefault(SHORT.get(m, m), {})[items[byname[k]]["id"]] = (
                 vo.get("parsed"),
@@ -88,7 +90,7 @@ def main():
     split("layer", lambda it: it["layer"])
     split("dose", lambda it: it["payload"]["dose"])
     split("prompt", lambda it: it["payload"]["prompt"][:12])
-    split("effect-size quartile", lambda it: "Q%d" % (1 + sum(it["meta"]["mass"] >= c for c in cuts)))
+    split("effect-size quartile", lambda it: f"Q{1 + sum(it['meta']['mass'] >= c for c in cuts)}")
     split(
         "change from unsteered",
         lambda it: "<0.5" if it["meta"]["change"] < 0.5 else ("<0.8" if it["meta"]["change"] < 0.8 else ">=0.8"),
