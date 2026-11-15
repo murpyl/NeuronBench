@@ -166,7 +166,8 @@ What the numbers say:
   they commit to confident guesses that the sweep does not bear out.
 - **Easy at the ends, hard in the middle.** Split by the neuron's measured effect size (`gne rank` vocabulary mass),
   models score 50–60% on the weakest and strongest quartiles and ~chance on the middle two
-  (`results/choice_by_effect_size.png`). Shortcut baselines stay flat, so this is model skill, not a leak.
+  (`results/choice_by_effect_size.png`). No shortcut baseline shows that pattern (the best reaches 38% on one quartile),
+  so this is model skill, not a leak.
 - **Layer 24 is easiest** for every model (46–52% vs 34–48% on layers 14 and 20): late-layer neurons' logit-lens
   tokens are closer to what shows up in the text.
 - Hand-picked (sharp logit-lens) neurons are 16 of the 150 choice items; too few to separate from the random draw.
