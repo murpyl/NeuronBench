@@ -1,0 +1,25 @@
+
+== anthropic/claude-haiku-5-5
+  choice (n=150 paired): v1 0.480  ablated 0.407  diff -0.073 [-0.147, +0.000]  wrong->right 10, right->wrong 21, same letter 0.60
+  null Brier (n=105 paired, lower is better): v1 0.255  ablated 0.265  diff +0.011 [-0.017, +0.038]  (0 unparseable answers)
+  null AUC: v1 0.559  ablated 0.518  diff -0.041 [-0.131, +0.049]
+  null mean prob: v1 0.595  ablated 0.502  (base rate 0.514);  share in [0.4, 0.6]: v1 0.71  ablated 0.60;  Brier if constant at own mean: v1 0.256  ablated 0.250
+  null answers v1: {0.45: 7, 0.5: 5, 0.55: 18, 0.57: 1, 0.58: 2, 0.6: 42, 0.62: 10, 0.63: 1, 0.65: 7, 0.7: 7, 0.72: 2, 0.75: 3}
+  null answers ablated: {0.2: 1, 0.25: 1, 0.3: 8, 0.35: 17, 0.4: 12, 0.45: 5, 0.5: 2, 0.55: 15, 0.57: 1, 0.6: 28, 0.62: 1, 0.65: 7, 0.7: 2, 0.72: 2, 0.75: 3}
+  dose folklore (v1): 13 of 150 choice trajectories, 77% wrong
+  dose folklore (ablated): 12 of 150 choice trajectories, 83% wrong
+
+== anthropic/claude-sonnet-5-5
+  choice (n=150 paired): v1 0.420  ablated 0.373  diff -0.047 [-0.113, +0.013]  wrong->right 8, right->wrong 15, same letter 0.71
+  null Brier (n=105 paired, lower is better): v1 0.247  ablated 0.279  diff +0.032 [+0.001, +0.064]  (0 unparseable answers)
+  null AUC: v1 0.570  ablated 0.547  diff -0.023 [-0.115, +0.067]
+  null mean prob: v1 0.491  ablated 0.342  (base rate 0.514);  share in [0.4, 0.6]: v1 0.93  ablated 0.24;  Brier if constant at own mean: v1 0.250  ablated 0.280
+  null answers v1: {0.4: 19, 0.42: 7, 0.45: 29, 0.5: 14, 0.55: 18, 0.6: 11, 0.62: 5, 0.65: 1, 0.7: 1}
+  null answers ablated: {0.2: 4, 0.25: 15, 0.27: 2, 0.3: 41, 0.35: 17, 0.4: 10, 0.45: 4, 0.5: 5, 0.6: 6, 0.62: 1}
+  dose folklore (v1): 0 of 150 choice trajectories
+  dose folklore (ablated): 0 of 150 choice trajectories
+
+| model | choice acc v1 → ablated | diff [95% paired CI] | null Brier v1 → ablated | diff [CI] | null AUC v1 → ablated | mean P(real) v1 → ablated | share in 0.4–0.6 v1 → ablated | dose folklore v1 → ablated |
+|---|---|---|---|---|---|---|---|---|
+| anthropic/claude-haiku-5-5 | 0.480 → 0.407 | -0.073 [-0.147, +0.000] | 0.255 → 0.265 | +0.011 [-0.017, +0.038] | 0.56 → 0.52 | 0.59 → 0.50 | 0.71 → 0.60 | 13 → 12 |
+| anthropic/claude-sonnet-5-5 | 0.420 → 0.373 | -0.047 [-0.113, +0.013] | 0.247 → 0.279 | +0.032 [+0.001, +0.064] | 0.57 → 0.55 | 0.49 → 0.34 | 0.93 → 0.24 | 0 → 0 |

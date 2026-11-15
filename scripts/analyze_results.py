@@ -32,6 +32,8 @@ def load(items_path, job_paths):
         with open(f) as fh:
             d = json.load(fh)
         m = d["benchmark_arguments"]["contract"]["model"]
+        if d["benchmark_arguments"].get("dataset", "").endswith("-ablated"):
+            continue  # instruction ablation: scripts/ablation.py
         for k, v in d["evaluation_results"].items():
             if k not in byname:
                 continue

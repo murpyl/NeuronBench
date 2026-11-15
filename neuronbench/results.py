@@ -14,6 +14,15 @@ def load_items(path: str | Path) -> list[dict]:
     return [json.loads(line) for line in Path(path).read_text().splitlines() if line.strip()]
 
 
+def export_model(r: dict, default: str) -> str:
+    """System name of a Valkyrie export: the contract model, tagged " (ablated)" for `--instructions ablated` datasets
+    so the two instruction conditions on the same items are never averaged together."""
+    ba = r.get("benchmark_arguments") or {}
+    c = ba.get("contract") or {}
+    model = c.get("model") or c.get("name") or default
+    return f"{model} (ablated)" if str(ba.get("dataset", "")).endswith("-ablated") else model
+
+
 def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dict[str, float]]:
     """{model: {item_id: reward}} averaged over every trial found under job_dirs.
 
@@ -45,7 +54,7 @@ def collect_jobs(job_dirs: list[str | Path], items: list[dict]) -> dict[str, dic
                 model = mi.get("name") or r["agent_info"]["name"]
                 add(model, r["task_name"], (r.get("verifier_result") or {}).get("rewards") or {})
             elif "evaluation_results" in r:
-                model = ((r.get("benchmark_arguments") or {}).get("contract") or {}).get("model") or ((r.get("benchmark_arguments") or {}).get("contract") or {}).get("name") or p.stem
+                model = export_model(r, p.stem)
                 for task, res in r["evaluation_results"].items():
                     add(model, task, (res or {}).get("rewards") or {})
     return {m: {i: sum(v) / len(v) for i, v in per.items()} for m, per in trials.items()}

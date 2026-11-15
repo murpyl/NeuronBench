@@ -10,7 +10,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from .gne_io import load_run
-from .harbor_tasks import write_task
+from .harbor_tasks import INSTRUCTIONS, write_task
 from .items import TIERS, build_items
 from .results import by_selection, by_stratum, collect_jobs, load_items, markdown_table, plot, summarise
 
@@ -47,7 +47,7 @@ def cmd_build(a):
         shutil.rmtree(out)
     out.mkdir(parents=True)
     for it in items:
-        write_task(it, out, agent_timeout=a.agent_timeout, allowed_hosts=hosts)
+        write_task(it, out, agent_timeout=a.agent_timeout, allowed_hosts=hosts, instructions=a.instructions)
     print(f"wrote {len(items)} items to {a.items} and Harbor tasks to {out}/")
 
 
@@ -102,6 +102,9 @@ def main(argv=None):
     b.add_argument("--allowed-hosts", default="api.anthropic.com,api.openai.com",
                    help="comma-separated exact hostnames the agent container may reach (its model API); "
                         "empty string = unrestricted network")
+    b.add_argument("--instructions", choices=INSTRUCTIONS, default="v1",
+                   help="instruction text: v1, or ablated (no dose guide in choice tasks, no base-rate line in null "
+                        "tasks); items, evidence and answers are the same")
     b.set_defaults(fn=cmd_build)
     s = sub.add_parser("baselines", help="score agent-free baselines on items.jsonl")
     s.add_argument("--items", default="data/items.jsonl")
