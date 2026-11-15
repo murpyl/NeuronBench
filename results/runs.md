@@ -38,7 +38,16 @@ Wrong-evidence control (`neuronbench build --tier shuffled`, datasets `neuronben
 | anthropic/claude-opus-5-5 | shuffled | `5b7edca6-1c42-470f-8f76-043eac5029e5` | `bdcd0f8c-0a82-4f2e-b8fa-504bebd59baf` |
 
 Per-token trace tier (`neuronbench build --tier {trace,trace-shuffled}`, datasets
-`neuronbench/{l14-l20,l24}-{trace,trace-shuffled}@1`): not run yet. Push and run with the same settings as above:
+`neuronbench/{l14-l20,l24}-{trace,trace-shuffled}@1`):
+
+| model | tier | `l14-l20` | `l24` |
+|---|---|---|---|
+| anthropic/claude-haiku-5-5 | trace | `ca75cd75-2a82-4f16-a5fe-efa654a13d40` | `dd6df4ce-6d35-4c70-8baf-9ea1993583d9` |
+| anthropic/claude-opus-5-5 | trace | `b93b581f-56d6-4778-91d9-3d8b856dde6c` | `31715280-a9a7-479b-8bef-98a13cee5a0a` |
+| anthropic/claude-haiku-5-5 | trace-shuffled | `32e2cc35-7619-482d-92e3-aed64d8633f0` | `0c681979-8b3e-4dce-b2f7-918aec510e91` |
+| anthropic/claude-opus-5-5 | trace-shuffled | `9dab10c9-605b-469c-921a-1e9cbc50b327` | `057fc811-b714-4aba-877d-930813cbb694` |
+
+Pushed and run with the same settings as above (exports are `jobs/valkyrie/<label>.json`):
 
 ```bash
 for t in trace trace-shuffled; do
