@@ -27,3 +27,12 @@ not run, so there are no activation statistics, and nothing measured from pushin
 64 random controls, 4484 rollouts), snapshot taken when the sweep finished at 15:50 on 14 Nov. 105 of the 384
 neurons have `null_pct >= 0.95`; 44 beat every control. A later sweep on the same machine adds 64 hand-picked
 high-`peak_z` neurons to layers 14 and 20; those are **not** in these files.
+
+## Extra prompts (`L{14,20,24}-heldout_rel.*`)
+
+Top-up sweep for the "More prompts" choice items: 100 neurons per layer (lists in `extra_prompts/` on the code
+branch) plus the same 64 random controls, on ten extra prompts at doses -0.7 and +0.8 (design `heldout_rel`, 3290
+rollouts per layer). Run on a CPU VM with llama-cpp-python 0.3.36 and the same Qwen3-0.6B Q8_0 GGUF (gne gives the
+same `model_id`), `gne --n-seq-max 10 sweep ...` then `gne rank`. Slimmed like the files above. CPU and Metal
+greedy decoding can drift apart after a few tokens, so do not mix rollouts from these files with the main sweep
+within one comparison.
