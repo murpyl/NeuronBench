@@ -1,0 +1,46 @@
+Fallback audit of the v1 choice items (no rebuild, no reruns).
+
+Command (sweeps from origin/data/qwen3-0.6b-L14 @ 565b9af, checked out as a worktree at <data>):
+  python scripts/fallback_audit.py --items data/items.jsonl --jobs jobs/valkyrie/*.json \
+      --runs <data>/data/raw/L14-main_rel.jsonl <data>/data/raw/L20-main_rel.jsonl <data>/data/raw/L24-main_rel.jsonl
+
+Summary: 2 of the 150 choice items used the nearest-neighbour fallback (L14-N820-who+0.8, band of 2 controls; L24-N379-snake+0.5, band of 1); the flag rule matches len(band) < 3 on all 150 items when choice_candidates is replayed on the data-branch sweeps, and the replay reproduces every item's distractor controls and real change. The fallback did not leave the real reply in the middle of the ranking on either item: it is the least changed option on N820 and the most changed on N379, so the "pick the median" ranks (change_rank1/2) score 0/2, and change_rank0, change_rank3 and most_different each score 1/2 (0.50, 95% CI [0.00, 1.00]) - no different from chance on n = 2, and on the 148 non-flagged items every rank baseline sits at 0.24-0.26. All four models got N379 right (real = most changed reply) and N820 wrong, so each model scores 0.50 on the flagged pair vs 0.39-0.48 on the rest; the differences (+0.02 to +0.11) have CIs spanning about +/-0.55 and say nothing. The fallback affects 1.3% of items and is not exploitable on this data; dropping or disclosing the two items would move each model's overall choice accuracy by less than 0.1 point (each model scored 1/2 on them).
+
+== fallback (some distractor |option_change - change| > 0.15): 2/150 choice items
+  per layer: L14: 1/50, L20: 0/50, L24: 1/50
+  per dose: -0.7: 0/54, +0.5: 1/50, +0.8: 1/46
+  flagged ids:
+    choice-qwen3-0.6b-instruct-L14-N820-who+0.8  real-rank 0  max distractor gap 0.192
+    choice-qwen3-0.6b-instruct-L24-N379-snake+0.5  real-rank 3  max distractor gap 0.199
+
+== where the real reply sits in the change ranking (0 = least changed .. 3 = most changed)
+  flagged      n=  2  rank0: 1  rank1: 0  rank2: 0  rank3: 1
+  non-flagged  n=148  rank0: 37  rank1: 38  rank2: 36  rank3: 37
+
+== change-rank baselines, accuracy with 95% bootstrap CI (chance 0.25)
+  baseline        flagged (n=2)            non-flagged (n=148)      all (n=150)
+  change_rank0    0.500 [0.00, 1.00]       0.250 [0.18, 0.32]       0.253 [0.19, 0.32]
+  change_rank1    0.000 [0.00, 0.00]       0.257 [0.19, 0.33]       0.253 [0.19, 0.33]
+  change_rank2    0.000 [0.00, 0.00]       0.243 [0.18, 0.31]       0.240 [0.17, 0.31]
+  change_rank3    0.500 [0.00, 1.00]       0.250 [0.18, 0.32]       0.253 [0.19, 0.33]
+  most_different  0.500 [0.00, 1.00]       0.250 [0.18, 0.32]       0.253 [0.19, 0.33]
+
+== model accuracy, flagged vs non-flagged, 95% bootstrap CI
+  GPT   flagged 0.500 [0.00, 1.00]   non-flagged 0.392 [0.31, 0.47]   diff +0.108 [-0.45, +0.66]
+  H4.5  flagged 0.500 [0.00, 1.00]   non-flagged 0.392 [0.32, 0.47]   diff +0.108 [-0.45, +0.66]
+  H5.5  flagged 0.500 [0.00, 1.00]   non-flagged 0.480 [0.40, 0.56]   diff +0.020 [-0.53, +0.57]
+  S5.5  flagged 0.500 [0.00, 1.00]   non-flagged 0.419 [0.34, 0.50]   diff +0.081 [-0.47, +0.63]
+  per flagged item (1 = correct):
+    choice-qwen3-0.6b-instruct-L14-N820-who+0.8  GPT 0  H4.5 0  H5.5 0  S5.5 0
+    choice-qwen3-0.6b-instruct-L24-N379-snake+0.5  GPT 1  H4.5 1  H5.5 1  S5.5 1
+
+== cross-check: replay choice_candidates' band on the sweeps (2 flagged, 5 non-flagged; only 2 flagged exist)
+  choice-qwen3-0.6b-instruct-L24-N379-snake+0.5        flag=True  len(band)= 1 band<3=True  distractors reproduced=True change reproduced=True
+  choice-qwen3-0.6b-instruct-L14-N820-who+0.8          flag=True  len(band)= 2 band<3=True  distractors reproduced=True change reproduced=True
+  choice-qwen3-0.6b-instruct-L14-N1774-who+0.5         flag=False len(band)=30 band<3=False distractors reproduced=True change reproduced=True
+  choice-qwen3-0.6b-instruct-L20-N1882-who-0.7         flag=False len(band)=34 band<3=False distractors reproduced=True change reproduced=True
+  choice-qwen3-0.6b-instruct-L24-N2445-who+0.5         flag=False len(band)=42 band<3=False distractors reproduced=True change reproduced=True
+  choice-qwen3-0.6b-instruct-L24-N22-snake-0.7         flag=False len(band)=46 band<3=False distractors reproduced=True change reproduced=True
+  choice-qwen3-0.6b-instruct-L24-N1236-orange+0.8      flag=False len(band)=36 band<3=False distractors reproduced=True change reproduced=True
+  flag matches len(band) < 3 on 7/7
+  all 150 items: flag == (len(band) < 3) on 150; distractors reproduced on 150; real change reproduced on 150
