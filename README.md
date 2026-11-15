@@ -102,7 +102,7 @@ Seven models ran as mini-SWE-agent on Valkyrie, one attempt per task; datasets a
    open-ended text (ocean poem: Opus +28 over the lookup) and least on code and structured answers (SQL query −3 to
    +2). Resampling neurons instead of items leaves every interval within half a point.
 3. **Humans are at chance on the static evidence too.** Two people answered the same 20 static items blind
-   (`scripts/human_sheet.py make --n 20 --seed 0`; answers in [`human/`](human/)): 30% and 35%, 32.5% [15, 50]
+   (`scripts/human_sheet.py make --items data/items.jsonl --n 20 --seed 0`; answers in [`human/`](human/)): 30% and 35%, 32.5% [15, 50]
    pooled. On those 20 items the four newest API models score 35–40% and the lookup 40%, so 20 items can't separate humans from
    models. What is solvable is mostly readable off the text: in 50 of the 150 original items a lens token occurs in
    a candidate reply (lookup 64%, API models 52–62%); in the other 100 the lookup gets 29% and models 32–41%.
