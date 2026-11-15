@@ -12,7 +12,7 @@ from pathlib import Path
 from .gne_io import load_run
 from .harbor_tasks import write_task
 from .items import build_items
-from .results import by_stratum, collect_jobs, load_items, markdown_table, plot, summarise
+from .results import by_selection, by_stratum, collect_jobs, load_items, markdown_table, plot, summarise
 
 
 def load_evidence(root: Path, model_id: str, layer: int) -> dict[int, dict]:
@@ -71,8 +71,10 @@ def cmd_report(a):
     print(table)
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
+    sel_rows = by_selection(scores, items)
     (out / "results.md").write_text(table + "\n")
-    (out / "results.json").write_text(json.dumps({"rows": rows, "scores": scores}, indent=1))
+    (out / "results_by_selection.md").write_text(markdown_table(sel_rows) + "\n")
+    (out / "results.json").write_text(json.dumps({"rows": rows, "by_selection": sel_rows, "scores": scores}, indent=1))
     try:
         paths = plot(rows, by_stratum(scores, items), out, {k for k in scores if k.startswith("baseline:")})
         print("plots:", ", ".join(map(str, paths)))

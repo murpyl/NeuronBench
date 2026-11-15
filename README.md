@@ -125,7 +125,8 @@ exact hostname (wildcards are not accepted):
 neuronbench report --items data/items.jsonl --jobs jobs/* --out results
 ```
 
-This writes `results/results.md` (each system with a 95% bootstrap CI, baselines included), `results/results.json`,
+This writes `results/results.md` (each system with a 95% bootstrap CI, baselines included), `results/results_by_selection.md`
+(the same split by random-draw vs hand-picked neurons), `results/results.json`,
 and plots: `choice_accuracy.png`, `null_brier.png` and `choice_by_effect_size.png`. A model only beats the
 baselines if its interval clears the best baseline's.
 

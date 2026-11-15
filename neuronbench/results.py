@@ -78,6 +78,16 @@ def summarise(scores: dict[str, dict[str, float]], items: list[dict]) -> list[di
     return rows
 
 
+def by_selection(scores: dict[str, dict[str, float]], items: list[dict]) -> list[dict]:
+    """`summarise` split by how the item's neuron was chosen (`meta.selection`: random draw vs hand-picked)."""
+    rows = []
+    for sel in sorted({it["meta"].get("selection", "unknown") for it in items}):
+        sub = [it for it in items if it["meta"].get("selection", "unknown") == sel]
+        for r in summarise(scores, sub):
+            rows.append({**r, "selection": sel})
+    return rows
+
+
 def by_stratum(scores: dict[str, dict[str, float]], items: list[dict]) -> dict[str, dict[int, float]]:
     """Choice accuracy per effect-size quartile (gne rank mass) for each system."""
     ch = [it for it in items if it["kind"] == "choice" and it["meta"].get("mass") is not None]
@@ -97,10 +107,14 @@ def by_stratum(scores: dict[str, dict[str, float]], items: list[dict]) -> dict[s
 
 
 def markdown_table(rows: list[dict]) -> str:
-    lines = ["| system | task | metric | value | 95% CI | n |", "|---|---|---|---|---|---|"]
-    for r in sorted(rows, key=lambda r: (r["kind"], -r["value"] if r["metric"] == "accuracy" else r["value"])):
+    extra = ["selection"] if any("selection" in r for r in rows) else []
+    lines = ["| system | task | metric | value | 95% CI | n |" + "".join(f" {e} |" for e in extra),
+             "|---|---|---|---|---|---|" + "---|" * len(extra)]
+    for r in sorted(rows, key=lambda r: (r["kind"], r.get("selection", ""),
+                                         -r["value"] if r["metric"] == "accuracy" else r["value"])):
         lines.append(f"| {r['system']} | {r['kind']} | {r['metric']} | {r['value']:.3f} | "
-                     f"[{r['lo']:.3f}, {r['hi']:.3f}] | {r['n_answered']}/{r['n']} |")
+                     f"[{r['lo']:.3f}, {r['hi']:.3f}] | {r['n_answered']}/{r['n']} |"
+                     + "".join(f" {r.get(e, '')} |" for e in extra))
     return "\n".join(lines)
 
 
