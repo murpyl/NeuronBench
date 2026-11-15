@@ -36,6 +36,45 @@ its container: the verifier runs in a separate container and only receives `/app
   `scripts/ceiling_baselines.py` tries stronger variants (fuzzy subword matching, script matching, a cross-validated
   learned scorer over text features); none beats it by more than a point.
 
+## Two example tasks
+
+Both are "Which output is it?" items from the 900 more-prompts set, shown in brief. The agent sees the full replies;
+the full task is in `instruction.md` under the folder named in each heading. "Change" is each reply's distance from the
+unsteered reply.
+
+**1. The lens gives it away**
+([`tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N1344-math-0.7`](tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N1344-math-0.7/instruction.md)).
+Layer 24 neuron 1344, dose −0.7, prompt "What is 17 times 23? Show your work." Unsteered reply: `17 × 23 = 391`. The
+neuron's logit lens suppresses `increase`, `increasing`, `增加`, `Increase`, …, and a negative dose pushes toward those
+tokens.
+
+| | reply (start) | change |
+|---|---|---|
+| A | "To find **17 × 23**, follow these steps: … Multiply 17 by 2 … Add the products: 51 + 34 = 85" | 0.60 |
+| **B** ✓ | "To increase your knowledge of increasing and increasing by 2, you can increase each number by 2 and then increase each increase by 2." | 0.75 |
+| C | "17 × 23 = (10 + 1) × (20 + 3) = … = 226" | 0.68 |
+| D | "Add the numbers: 17 + 23 = 30. Multiply the sum by 23: 30 × 23 = 690" | 0.68 |
+
+All four models and the logit-lens lookup pick B. This is the easy case: a lens token appears in one reply only.
+
+**2. The strangest reply is a trap**
+([`tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N2714-french-0.7`](tasks-prompts-l24/choice-qwen3-0.6b-instruct-L24-N2714-french-0.7/instruction.md)).
+Layer 24 neuron 2714, dose −0.7, prompt "Translate 'Good morning, how are you?' into French and Spanish." Unsteered reply:
+`"Bonjour, comment ça va?" "Buenos días, ¿cómo estás?"`. The lens promotes `receive`, `receiving`, `receipt`, `接收`, …,
+and a negative dose pushes away from them. No lens token appears in any reply. The neuron's effect is real: it beats
+all 64 random controls on vocabulary mass.
+
+| | reply (start) | change |
+|---|---|---|
+| A | "翻译如下：**法语：Bonjour, bien bien？** **西班牙文：Buenas Toleraciones, cómo estas?** (注意：…)" | 0.70 |
+| B | "Bonjour, bien chy? (l'ouverti)" "¡Cómo te lomasi? (l'ouverti)" | 0.55 |
+| **C** ✓ | "**French:** Bonjour, comment vous êtes? **Spanish:** Buen día, cómo estás? 😊" | 0.57 |
+| D | "« Bon césuite, bien ça c'é요 ? » in French and « Buena mañana, ¿cómo está usted ? » in Spanish." | 0.57 |
+
+All four models pick A, the reply that changed most. Here the real push left a nearly normal translation, while a
+random direction of the same length switched the reply to Chinese. "Pick the most broken reply" scores at chance on
+this benchmark, and models still fall back on it on 28–34% of the original 150 items (see Failure modes below).
+
 ## Layout
 
 ```
@@ -137,7 +176,7 @@ cat data/items-prompts-L{14,20,24}.jsonl > data/items-prompts.jsonl     # 900 ch
 ```
 
 Valkyrie datasets `neuronbench/l{14,20,24}-prompts@v1` (one per layer); run IDs in
-[`results/runs.md`](results/runs.md), results in finding 8 below.
+[`results/runs.md`](results/runs.md), results in finding 4 below.
 
 ## 3. Run models
 
@@ -213,7 +252,7 @@ which halves both numbers. Use `neuronbench report`, or the dataset `metric.py`,
 
 ![headline](results/headline.png)
 
-**Headline.** Left: "Which output is it?" on the 900 more-prompts items (finding 8). All four models beat the
+**Headline.** Left: "Which output is it?" on the 900 more-prompts items (finding 4). All four models beat the
 logit-lens lookup (41%), and the paired 95% intervals clear 0: Opus 5.5 55% (+14 [+10, +18]), Sonnet 5.5 51%
 (+10 [+6, +14]), Haiku 5.5 47% (+6 [+2, +9]), GPT-5.6-luna 47% (+5 [+2, +9]). Right: the 150 original items with
 different evidence. With wrong evidence every system is at chance. With the per-token trace or the neuron's measured
@@ -268,9 +307,10 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
-**Eight findings.**
+**Four findings.** The evidence-tier controls (measured sweep words, wrong evidence, per-token traces) and
+how the models differ are in [`results/analysis.md`](results/analysis.md#evidence-tiers-and-model-differences).
 
-1. **No model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
+1. **On the original 150 items, no model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
    the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]) and Opus 5.5 +4; the other
    API models are at or below it. Accuracy is not ordered by model size. Open-weight Qwen3-32B ties GPT-5.6-luna and
    Haiku 4.5 (39%); Qwen3-0.6B, the steered model itself, is at chance on its own neurons (23%).
@@ -283,33 +323,7 @@ neurons were chosen for a sharp logit lens, and with 16 picked choice and 20 pic
    with its own mean changes its Brier by ≤ 0.03. They set their probability from the logit-lens peak z-score
    (Spearman 0.60–0.85), which has Spearman 0.13 with the truth. Opus 5.5 and Sonnet 5.5 "win" by staying near 0.5;
    Haiku 4.5 and GPT-5.6-luna lose by saying 0.7–0.9, and the Qwens by saying "real" to almost everything (mean 0.82–0.88).
-4. **The static evidence, not the task format, is the bottleneck.** Rebuilding the same items with the neuron's
-   measured over-used words in the evidence (`--tier oracle`) lifts Haiku 5.5 from 48% to 63% (paired +15
-   [+5, +25]) and Sonnet 5.5 from 42% to 71%; on the 82 items where those words point at one reply they score 87%
-   and 93%. Showing the neuron's steered replies on *other* prompts (`--tier transfer`) adds nothing on choice
-   (+0 [−8, +8]) but lifts null AUC from 0.56 to 0.69. The oracle null lookup (Brier 0.089) is not a ceiling: its one
-   feature, the summed top z-scores, is the vocabulary mass the label is computed from.
-5. **Thinking longer didn't help, and the models fail differently.** Haiku 4.5 (median 6 API calls, $10 run) tied for
-   last; Haiku 5.5 (≤ 2 calls on 70% of tasks, $0.27 run) came first. Among the first four API models, pairwise agreement is
-   39–65%, 44 items were missed by all four, and a plurality vote (40%) is worse than the best single model.
-6. **On choice the models do read the evidence; on null they don't.** Wrong-evidence control (`--tier shuffled`): the
-   same 255 items, with each showing another same-layer neuron's static evidence. Choice accuracy falls to chance:
-   Haiku 5.5 48% → 21% (paired −27 [−36, −19]) and Opus 5.5 45% → 23% (−22 [−32, −12]), with the lookup at 41% → 26%.
-   So the replies alone don't carry the above-chance scores, and wrong evidence misleads the models. The drop holds on
-   the 100 items with no lens token in any reply (Haiku 41% → 18%, Opus 39% → 21%), so it isn't only literal token
-   matching. Null doesn't move: Brier +0.001 / +0.011 and AUC −0.03 / −0.07, all CIs include 0. Their "Real or null?"
-   answers don't depend on which neuron's evidence they see.
-7. **Per-token traces lift choice, but no model beats averaging `lens_z`.** Trace tier (`--tier trace`): the same
-   items, with a per-token table under every reply showing the unsteered model's log-probs and the neuron's logit-lens
-   z-score (`lens_z`) for each token. Haiku 5.5 goes from 48% to 59% (paired +11 [+2, +19]) and Opus 5.5 from 45% to
-   75% (+30 [+21, +39]; 88% on the 50 items with a lens token in a reply). The agent-free `trace_lens_mean` (pick the
-   reply with the highest dose-signed mean `lens_z`) scores 82%, so Haiku is clearly below it (−23 [−32, −15]) and
-   Opus ties it (−7 [−15, +1]; +0 against `trace_lens_sum`). Both are well above the neuron-blind `trace_lp_high`
-   (37%), and the gain comes from this neuron's `lens_z`: with a donor neuron's evidence and `lens_z`
-   (`--tier trace-shuffled`) they fall to chance (23% / 21%, below the donor's own `trace_lens_mean` of 35%). Null
-   items are unchanged in this tier and so are their scores (Brier +0.003 / −0.002, AUC −0.01 / +0.01). Since `lens_z`
-   mostly mirrors the steering's direct effect, the bar for this tier is `trace_lens_mean`, not static.
-8. **With ten more prompts every model beats the lookup, and the models separate.** 900 choice items from the
+4. **With ten more prompts every model beats the lookup, and the models separate.** 900 choice items from the
    more-prompts sweep (`data/items-prompts.jsonl`, 300 per layer, same one-letter format; see "More prompts" above).
    The lookup scores 41% (L14 28%, L20 44%, L24 51%). Opus 5.5 scores 55% (paired +14 [+10, +18] over the lookup),
    Sonnet 5.5 51% (+10 [+6, +14]), Haiku 5.5 47% (+6 [+2, +10]) and GPT-5.6-luna 47% (+5 [+2, +9]): all four
