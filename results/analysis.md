@@ -1,6 +1,7 @@
 # NeuronBench v1: what the results say
 
-Qwen3-0.6B, layers 14/20/24, 255 tasks, four models as mini-SWE-agent on Valkyrie, 0 agent failures.
+Qwen3-0.6B, layers 14/20/24, 255 tasks, four models as mini-SWE-agent on Valkyrie, 0 agent failures. Opus 5.5 and
+the self-hosted Qwen3 models were added later; see the last section.
 Numbers come from `scripts/analyze_results.py` (`results/analysis.txt`) and from reading the 1020 agent trajectories.
 
 ## Headline results
@@ -111,3 +112,23 @@ happen.
 - Add static evidence that bears on effect size (activation statistics from `gne stats act`, `down_norm` relative to
   the layer); today "Real or null?" mostly measures calibration.
 - More prompts: three prompts × three doses means models see the same unsteered replies hundreds of times.
+
+## Added later: Opus 5.5 and open-weight Qwen3
+
+Same 255 tasks and agent. Opus 5.5 ran through the Anthropic API; Qwen3-32B and Qwen3-0.6B ran on vLLM endpoints on
+Modal (`modal/serve_vllm.py`, run IDs in `runs.md`). Numbers are in `analysis.txt`.
+
+- **Opus 5.5** is second on choice (45% [37, 53]; 56% with a lens token in a reply, 39% without, 37% where the lookup
+  is wrong) and the best on "Real or null?" (Brier 0.245, AUC 0.61, the highest of any model). Like the others it sets
+  its probability from peak_z (Spearman 0.85) and stays near the base rate (mean 0.56), so its Brier is only 0.006
+  below its own constant-mean score of 0.251.
+- **Qwen3-32B** ties GPT-5.6-luna and Haiku 4.5 on choice (39% [32, 47]; 54% / 32% with and without a lens token)
+  and agrees with the lookup's pick on 37% of items, the most of any model. On "Real or null?" it has no signal (AUC
+  0.46, Spearman −0.08 with the truth) and says "real" almost always (mean 0.88), so its Brier is 0.392.
+- **Qwen3-0.6B**, the model being steered, is at chance on its own neurons: 23% [17, 31] on choice, AUC 0.49 and
+  Brier 0.385 on "Real or null?" (mean 0.82). Self-knowledge does not help.
+- **Qwen3 rarely submits.** Both Qwen models write `answer.txt` within the first turns and then keep reconsidering
+  and rewriting it until the 600 s agent limit, so they are graded on whatever the file holds at the cutoff. Qwen3-32B
+  timed out on 139/150 choice and 8/105 null tasks, Qwen3-0.6B on 63/150 and 43/105. In 5 of 17 Qwen3-32B trajectories
+  checked by hand, the final letter differed from the first one written. The Qwen scores are therefore "answer at
+  the deadline", not a submitted final answer; every API-model task submitted normally.

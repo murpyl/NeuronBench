@@ -12,6 +12,15 @@ Static tier: datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and 
 | anthropic/claude-sonnet-5-5 | `8ceb64b0-2f28-4ca3-9ee5-7345b5dcfc49` | `4fe2a846-1f11-4e7b-8afa-7b1dfc1bdea9` |
 | openai/gpt-5.6-luna | `ed60a1ae-99a9-4214-a10b-df38cbff5dfb` | `a535e3ba-2e81-4494-a5b3-be3256774992` |
 | anthropic/claude-haiku-4-5 | `89db445d-8a72-409e-88ca-092cd2118f0c` | `a99707ce-0e94-40cd-82f0-8d919b497fae` |
+| anthropic/claude-opus-5-5 (concurrency 16) | `9cf322f4-9169-4c15-a97f-eb8546e34c84` | `8483ee1e-1d92-481b-9cc6-42712e85214e` |
+
+Self-hosted Qwen3 (`--model hosted_vllm/<HF id>`, served by `modal/serve_vllm.py`: Qwen3-32B on H200, Qwen3-0.6B on L4;
+concurrency 32). Datasets `neuronbench/{l14-l20,l24}@3`: the same tasks with the Modal vLLM hosts in `allowed_hosts`.
+
+| model | `l14-l20@3` | `l24@3` |
+|---|---|---|
+| hosted_vllm/Qwen/Qwen3-32B | `194565fb-b3bd-4dfd-95af-823d37a259b6` | `6d424a5f-4f5c-489c-b595-0731e13dd92d` |
+| hosted_vllm/Qwen/Qwen3-0.6B | `5d1dd7d4-97c7-4d13-9543-43c9c95df076` | `c57c04c5-6270-43d5-9d62-825a47d0f5e4` |
 
 Ceiling tiers (`neuronbench build --tier {oracle,transfer}`, datasets `neuronbench/{l14-l20,l24}-{oracle,transfer}@1`):
 
