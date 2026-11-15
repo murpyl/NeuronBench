@@ -216,6 +216,10 @@ Headline findings (full analysis with failure modes in `results/analysis.md`; nu
 - **Different models, different mistakes:** pairwise agreement 39–65%, 44 items missed by all four, plurality vote (40%)
   below the best single model.
 - Easier: layer 24, the "orange" prompt, and neurons that are actually real (56–62% vs 34–45% on null neurons).
+- **Instruction ablation** (`results/ablation.md`): removing the base-rate line moved Sonnet 5.5's null Brier from
+  0.247 to 0.279 (+0.032, paired 95% CI [+0.001, +0.064]; mean P(real) 0.49 → 0.34), so its null-task lead came from
+  our text, while removing the dose guide did not remove dose folklore (Haiku 5.5: 13 → 12 trajectories) and lowered
+  choice accuracy rather than raising it (Haiku 5.5 −7 points [−15, 0], Sonnet 5.5 −5 [−11, +1]).
 
 ### Valkyrie runs
 
@@ -228,6 +232,14 @@ Datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and `neuronbench/
 | anthropic/claude-sonnet-5-5 | `8ceb64b0-2f28-4ca3-9ee5-7345b5dcfc49` | `4fe2a846-1f11-4e7b-8afa-7b1dfc1bdea9` |
 | openai/gpt-5.6-luna | `ed60a1ae-99a9-4214-a10b-df38cbff5dfb` | `a535e3ba-2e81-4494-a5b3-be3256774992` |
 | anthropic/claude-haiku-4-5 | `89db445d-8a72-409e-88ca-092cd2118f0c` | `a99707ce-0e94-40cd-82f0-8d919b497fae` |
+
+Instruction ablation (`neuronbench build --instructions ablated`, same settings): datasets
+`neuronbench/l14-l20-ablated@v1` and `neuronbench/l24-ablated@v1`, exports `jobs/valkyrie/*-ablated.json`.
+
+| model | `l14-l20-ablated@v1` run ID | `l24-ablated@v1` run ID |
+|---|---|---|
+| anthropic/claude-haiku-5-5 | `6fca25f9-cbb0-4f5b-8758-b0ff41e06f2b` | `8dd8bb77-2234-44db-a4e3-28db956e68af` |
+| anthropic/claude-sonnet-5-5 | `e9df7e12-cbea-49b9-a307-2c3c8c02aad2` | `0a1f2464-a2a0-475d-a84e-b9665999628d` |
 
 Valkyrie's own summary score for these runs is not meaningful: it averages `choice_acc` and `null_brier` over every
 trial, including trials of the other task type. Use `neuronbench report` instead.

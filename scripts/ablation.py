@@ -1,9 +1,9 @@
 """Paired v1-vs-ablated comparison of the same model on the same items (instruction ablation).
 
-python scripts/ablation.py --items data/items.jsonl \
-    --v1 jobs/valkyrie/l14-l20-haiku-5-5.json jobs/valkyrie/l24-haiku-5-5.json \
-    --ablated jobs/valkyrie/l14-l20-haiku-5-5-ablated.json jobs/valkyrie/l24-haiku-5-5-ablated.json \
-    [--traj-v1 v1.jsonl.gz --traj-ablated ablated.jsonl.gz]
+J=jobs/valkyrie; python scripts/ablation.py --items data/items.jsonl --out results/ablation.json \
+    --v1 $J/l14-l20-{haiku,sonnet}-5-5.json $J/l24-{haiku,sonnet}-5-5.json \
+    --ablated $J/l14-l20-{haiku,sonnet}-5-5-ablated.json $J/l24-{haiku,sonnet}-5-5-ablated.json \
+    --traj-v1 $J/traj/traj-v1-*.jsonl.gz --traj-ablated $J/traj/traj-ab-*.jsonl.gz
 
 Exports are `valkyrie run results <id> --path x.json`; the model is read from each export. Trajectory files are
 JSONL (optionally gzipped) with one row per trial: {"model": <contract model>, "task": <task dir>, "msgs":
@@ -24,7 +24,8 @@ import numpy as np
 from neuronbench.harbor_tasks import safe_name
 
 # Over-reading the dose guide: "+0.5 should be subtle, so pick the gentlest / closest-to-baseline reply"
-# (the "least changed/subtle" tag behind the Dose folklore row of results/analysis.md).
+# (the "least changed/subtle" tag behind the Dose folklore row of results/analysis.md; on the v1 trajectories it
+# reproduces that row: Haiku 4.5 36 hits, 81% wrong; Haiku 5.5 13, 77%).
 DOSE_FOLKLORE = re.compile(
     r"(closest|closer|close) to (the )?(baseline|unsteered|original|unperturbed)|subtle|minimal(ly)? (change|perturb)"
     r"|least (changed|disrupted)|stays? close",
