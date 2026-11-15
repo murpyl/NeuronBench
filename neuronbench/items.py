@@ -7,6 +7,10 @@ Two item kinds, both about one neuron at a time:
   from the unsteered reply as the real one, so "pick the most broken reply" does not work.
 - null: does pushing this neuron change the vocabulary of the replies more than the random controls do
   (gne rank's null_pct >= threshold)? The agent answers with a probability.
+
+Every item is built at an evidence tier. "static" (the benchmark) shows only weight-derived evidence. "oracle" and
+"transfer" are positive controls that add measured outcomes of pushing the neuron, to test whether the task format is
+solvable when the evidence is decisive. They reuse the static items' seeds, so items match one-for-one.
 """
 
 from __future__ import annotations
@@ -16,10 +20,11 @@ from dataclasses import dataclass, field
 from difflib import SequenceMatcher
 from functools import cache
 
-from .gne_io import Run
+from .gne_io import Run, dose_key
 
 LETTERS = "ABCD"
 MAX_CHARS = 700
+TIERS = ("static", "oracle", "transfer")
 
 
 @dataclass
@@ -107,6 +112,44 @@ def _selection(run: Run, n: int) -> str:
     return "random" if n in drawn else "picked"
 
 
+def augment_evidence(evidence: dict, run: Run, n: int, cand: dict | None, tier: str) -> dict:
+    """Evidence for an item at `tier`. cand is the choice condition, or None for a null item.
+
+    oracle: the words the neuron's steered replies over-use (gne rank's `words`); with z-scores for null items.
+    transfer: the neuron's steered replies on other prompts (choice: the other prompts at the item's dose;
+    null: one prompt at its three |dose| <= 1.6 doses).
+    """
+    if tier == "static":
+        return evidence
+    if tier not in TIERS:
+        raise ValueError(f"unknown tier {tier!r}; expected one of {TIERS}")
+    ev = dict(evidence)
+    prompts = run.meta["prompts"]
+    if tier == "oracle":
+        words = (run.unit("neuron", n) or {}).get("words") or []
+        ev["sweep_words"] = ([w[0] for w in words] if cand is not None
+                             else [{"word": w[0], "z": round(float(w[2]), 2)} for w in words])
+    elif cand is not None:
+        ev["steered_elsewhere"] = {prompts[p]: clip(r["text"]) for p, d in run.conditions("neuron", n)
+                                   if p != cand["prompt"] and dose_key(d) == dose_key(cand["dose"])
+                                   and (r := run.rollout("neuron", n, p, d)) is not None}
+    else:
+        conds = [(p, d) for p, d in run.conditions("neuron", n) if abs(d) <= 1.6]
+        p = random.Random(f"transfer|{run.layer}|{n}").choice(sorted({p for p, _ in conds}))
+        ev["steered_replies"] = {"prompt": prompts[p],
+                                 "replies": {f"{d:+g}": clip(run.rollout("neuron", n, p, d)["text"])
+                                             for q, d in conds if q == p}}
+    ev["available"] = sorted(k for k in ev if k not in ("layer", "neuron", "available"))
+    return ev
+
+
+def _tier_id(item_id: str, tier: str) -> str:
+    if tier == "static":
+        return item_id
+    kind, rest = item_id.split("-", 1)
+    return f"{kind}-{tier}-{rest}"
+
+
 def make_choice_item(run: Run, n: int, cand: dict, evidence: dict, rng: random.Random) -> Item:
     options = [("neuron", n, cand["real"]["text"], cand["change"])]
     options += [("random", j, r["text"], c) for j, r, c in cand["distractors"]]
@@ -160,7 +203,8 @@ def _take_stratified(strata: list[list[int]], n: int, rng: random.Random) -> lis
 
 
 def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: int, seed: int = 0,
-                threshold: float = 0.95, real_share: float = 0.5, min_change: float = 0.1) -> list[Item]:
+                threshold: float = 0.95, real_share: float = 0.5, min_change: float = 0.1,
+                tier: str = "static") -> list[Item]:
     rng = random.Random(f"{seed}-{run.model_id}-{run.layer}")
     neurons = [n for n in run.neurons() if n in evidence and run.unit("neuron", n) is not None]
     items: list[Item] = []
@@ -169,7 +213,8 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
     usable = [n for n in neurons if cands[n]]
     strata = _bins([(run.unit("neuron", n)["mass"], n) for n in usable], 4) if usable else []
     for n in _take_stratified(strata, n_choice, rng):
-        items.append(make_choice_item(run, n, rng.choice(cands[n]), evidence[n], rng))
+        cand = rng.choice(cands[n])
+        items.append(make_choice_item(run, n, cand, augment_evidence(evidence[n], run, n, cand, tier), rng))
 
     real = [n for n in neurons if run.unit("neuron", n)["null_pct"] >= threshold]
     null = [n for n in neurons if run.unit("neuron", n)["null_pct"] < threshold]
@@ -178,5 +223,10 @@ def build_items(run: Run, evidence: dict[int, dict], *, n_choice: int, n_null: i
     near = [n for n in null if run.unit("neuron", n)["null_pct"] >= 0.5]
     far = [n for n in null if run.unit("neuron", n)["null_pct"] < 0.5]
     picked = rng.sample(real, n_real) + _take_stratified([near, far], n_nul, rng)
-    items += [make_null_item(run, n, evidence[n], threshold) for n in sorted(picked)]
+    items += [make_null_item(run, n, augment_evidence(evidence[n], run, n, None, tier), threshold)
+              for n in sorted(picked)]
+    if tier != "static":
+        for it in items:
+            it.id = _tier_id(it.id, tier)
+            it.meta["tier"] = tier
     return items
