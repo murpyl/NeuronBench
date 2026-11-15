@@ -20,6 +20,9 @@ SHORT = {
     "anthropic/claude-haiku-5-5": "H5.5",
     "anthropic/claude-sonnet-5-5": "S5.5",
     "openai/gpt-5.6-luna": "GPT",
+    "anthropic/claude-opus-5-5": "O5.5",
+    "hosted_vllm/Qwen/Qwen3-32B": "Q32B",
+    "hosted_vllm/Qwen/Qwen3-0.6B": "Q0.6B",
 }
 
 

@@ -159,12 +159,20 @@ Full tables: `results/results.md`, split by random-draw vs hand-picked neurons i
 | system | Which output is it? (accuracy, 95% CI) | Real or null? (Brier, lower is better) |
 |---|---|---|
 | Claude Haiku 5.5 | **0.48** [0.40, 0.56] | 0.255 [0.233, 0.276] |
-| Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | **0.247** [0.233, 0.261] |
+| Claude Opus 5.5 | 0.45 [0.37, 0.53] | **0.245** [0.223, 0.266] |
+| Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | 0.247 [0.233, 0.261] |
 | GPT-5.6-luna | 0.39 [0.31, 0.47] | 0.308 [0.256, 0.360] |
 | Claude Haiku 4.5 | 0.39 [0.31, 0.47] | 0.294 [0.244, 0.344] |
+| Qwen3-32B (self-hosted vLLM)* | 0.39 [0.32, 0.47] | 0.392 [0.315, 0.470] |
+| Qwen3-0.6B (self-hosted vLLM)* | 0.23 [0.17, 0.31] | 0.385 [0.311, 0.462] |
 | best shortcut: logit-lens lookup (dose-sign aware) | 0.41 [0.33, 0.49] | |
 | best shortcut: base rate / evidence logreg | | 0.255 / 0.255 |
 | random / always-real | 0.25 | 0.49 |
+
+\* The Qwen3 models rarely run the submit command. They write an answer early, then keep rewriting `answer.txt`
+until the 600 s agent limit, and are graded on the file at that point. Timeouts: Qwen3-32B 139/150 choice and
+8/105 null tasks, Qwen3-0.6B 63/150 and 43/105. In 5 of 17 Qwen3-32B trajectories checked, the final letter differed
+from the first one written. Every API-model task submitted normally.
 
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
@@ -176,45 +184,54 @@ token (≥ 3 letters) literally occurs in a candidate reply; there, the logit-le
 | system | lens token in a reply (n = 50) | no lens token in any reply (n = 100) |
 |---|---|---|
 | Claude Haiku 5.5 | 0.62 [0.48, 0.76] | **0.41** [0.32, 0.51] |
+| Claude Opus 5.5 | 0.56 [0.42, 0.70] | 0.39 [0.30, 0.48] |
 | Claude Sonnet 5.5 | 0.58 [0.44, 0.72] | 0.34 [0.25, 0.43] |
 | GPT-5.6-luna | 0.54 [0.40, 0.68] | 0.32 [0.23, 0.41] |
 | Claude Haiku 4.5 | 0.52 [0.38, 0.66] | 0.33 [0.24, 0.42] |
+| Qwen3-32B* | 0.54 [0.40, 0.68] | 0.32 [0.23, 0.41] |
+| Qwen3-0.6B* | 0.32 [0.20, 0.46] | 0.19 [0.12, 0.27] |
 | logit-lens lookup baseline | **0.64** | 0.29 |
 | random | 0.25 | 0.25 |
 
-Where the lookup works, it does as well as every model or better. Where it doesn't, only Haiku 5.5's interval clears
-chance.
+Where the lookup works, it does as well as every model or better. Where it doesn't, only Haiku 5.5's and Opus 5.5's
+intervals clear chance.
 
-**Models don't even apply the lookup consistently.** Each model picks the same reply as the lookup on only 31–35% of
-items, and solves only 51–52% of the 61 items the lookup gets right:
+**Models don't even apply the lookup consistently.** Each API model picks the same reply as the lookup on only 31–35%
+of items, and solves only 51–56% of the 61 items the lookup gets right:
 
 | system | same pick as the lookup | accuracy where the lookup is right (n = 61) | where it is wrong (n = 89) |
 |---|---|---|---|
 | Claude Haiku 5.5 | 0.31 | 0.52 | **0.45** |
+| Claude Opus 5.5 | 0.33 | 0.56 | 0.37 |
 | Claude Sonnet 5.5 | 0.33 | 0.52 | 0.35 |
 | GPT-5.6-luna | 0.35 | 0.52 | 0.30 |
 | Claude Haiku 4.5 | 0.35 | 0.51 | 0.31 |
+| Qwen3-32B* | 0.37 | 0.57 | 0.27 |
+| Qwen3-0.6B* | 0.24 | 0.31 | 0.18 |
 
 So the models solve a different set of items from the lookup rather than a superset of it. The evidence supports
 more than any single system extracts: "the model or the lookup is right" holds on 59–67% of items.
 
 Headline findings (full analysis with failure modes in `results/analysis.md`; numbers from `scripts/analyze_results.py`):
 
-- **Frontier agents do no better than a word lookup on "Which output is it?"** Models score 39–48% (chance 25%); a
+- **Frontier agents do no better than a word lookup on "Which output is it?"** API models score 39–48% (chance 25%); a
   dose-sign-aware logit-lens lookup scores 41% [33, 49]. GPT-5.6-luna and Haiku 4.5 (39%) are below it, Sonnet 5.5
-  (42%) ties it, and only Haiku 5.5 (48%) is ahead: +7 points, paired 95% CI [−3, +18]. Not in size order.
+  (42%) ties it, and Opus 5.5 (45%) and Haiku 5.5 (48%) are ahead, Haiku 5.5 by +7 points, paired 95% CI [−3, +18]. Not in size order.
 - **They also don't use the evidence consistently.** Models miss about half the items the lookup solves, and
   agree with it on only 31–35% of picks. On the 50 items where a logit-lens token literally occurs in a candidate
   reply, the lookup gets 64% and models 52–62%. On the other 100, the lookup gets 29% and models 32–41%. Large pushes (change ≥ 0.8
   from the unsteered reply) are solved 51–67%, smaller ones 31–40%.
-- **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.57 for all four; the Brier spread
-  (0.247–0.308) is calibration only. All models set their probability by the logit-lens peak z-score, which has
-  Spearman 0.13 with the truth. Sonnet 5.5 beats the base rate by hedging 0.4–0.6; Haiku 4.5 and GPT-5.6-luna lose by
+- **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.61 for the five API models (Opus 5.5
+  highest) and 0.46–0.49 for the Qwens; the Brier spread (0.245–0.308 for API models) is mostly calibration. All models set their probability by the logit-lens peak z-score, which has
+  Spearman 0.13 with the truth. Opus 5.5 and Sonnet 5.5 beat the base rate by staying near 0.5; Haiku 4.5 and GPT-5.6-luna lose by
   saying 0.7–0.9.
 - **Deliberation did not help:** Haiku 4.5 (median 6 API calls, $10 run) tied for last; Haiku 5.5 (≤2 calls on 70% of
   tasks, $0.27 run) came first.
-- **Different models, different mistakes:** pairwise agreement 39–65%, 44 items missed by all four, plurality vote (40%)
+- **Different models, different mistakes** (first four API models): pairwise agreement 39–65%, 44 items missed by all four, plurality vote (40%)
   below the best single model.
+- **Open-weight Qwen3:** Qwen3-32B ties GPT-5.6-luna and Haiku 4.5 on choice (39%) but says "real" to almost
+  everything (mean probability 0.88, Brier 0.392). Qwen3-0.6B, the steered model itself, is at chance on its own
+  neurons (23%).
 - Easier: layer 24, the "orange" prompt, and neurons that are actually real (56–62% vs 34–45% on null neurons).
 
 ### Valkyrie runs
@@ -228,6 +245,12 @@ Datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and `neuronbench/
 | anthropic/claude-sonnet-5-5 | `8ceb64b0-2f28-4ca3-9ee5-7345b5dcfc49` | `4fe2a846-1f11-4e7b-8afa-7b1dfc1bdea9` |
 | openai/gpt-5.6-luna | `ed60a1ae-99a9-4214-a10b-df38cbff5dfb` | `a535e3ba-2e81-4494-a5b3-be3256774992` |
 | anthropic/claude-haiku-4-5 | `89db445d-8a72-409e-88ca-092cd2118f0c` | `a99707ce-0e94-40cd-82f0-8d919b497fae` |
+| anthropic/claude-opus-5-5 | `9cf322f4-9169-4c15-a97f-eb8546e34c84` | `8483ee1e-1d92-481b-9cc6-42712e85214e` |
+| hosted_vllm/Qwen/Qwen3-32B | `194565fb-b3bd-4dfd-95af-823d37a259b6` | `6d424a5f-4f5c-489c-b595-0731e13dd92d` |
+| hosted_vllm/Qwen/Qwen3-0.6B | `5d1dd7d4-97c7-4d13-9543-43c9c95df076` | `c57c04c5-6270-43d5-9d62-825a47d0f5e4` |
+
+The Qwen runs used `@3` of both datasets (the same tasks, with the Modal vLLM hosts added to `allowed_hosts`),
+served by `modal/serve_vllm.py` (Qwen3-32B on H200, Qwen3-0.6B on L4) at concurrency 32.
 
 Valkyrie's own summary score for these runs is not meaningful: it averages `choice_acc` and `null_brier` over every
 trial, including trials of the other task type. Use `neuronbench report` instead.

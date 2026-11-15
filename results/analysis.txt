@@ -1,76 +1,106 @@
 
 == choice accuracy by layer
-  14         GPT 0.38 H4.5 0.34 H5.5 0.48 S5.5 0.40 n=50
-  20         GPT 0.34 H4.5 0.34 H5.5 0.44 S5.5 0.38 n=50
-  24         GPT 0.46 H4.5 0.50 H5.5 0.52 S5.5 0.48 n=50
+  14         O5.5 0.48 GPT 0.38 H4.5 0.34 H5.5 0.48 Q0.6B 0.18 Q32B 0.36 S5.5 0.40 n=50
+  20         O5.5 0.46 GPT 0.34 H4.5 0.34 H5.5 0.44 Q0.6B 0.24 Q32B 0.34 S5.5 0.38 n=50
+  24         O5.5 0.40 GPT 0.46 H4.5 0.50 H5.5 0.52 Q0.6B 0.28 Q32B 0.48 S5.5 0.48 n=50
 
 == choice accuracy by dose
-  -0.7       GPT 0.48 H4.5 0.46 H5.5 0.50 S5.5 0.44 n=54
-  0.5        GPT 0.36 H4.5 0.24 H5.5 0.52 S5.5 0.38 n=50
-  0.8        GPT 0.33 H4.5 0.48 H5.5 0.41 S5.5 0.43 n=46
+  -0.7       O5.5 0.46 GPT 0.48 H4.5 0.46 H5.5 0.50 Q0.6B 0.26 Q32B 0.35 S5.5 0.44 n=54
+  0.5        O5.5 0.40 GPT 0.36 H4.5 0.24 H5.5 0.52 Q0.6B 0.28 Q32B 0.42 S5.5 0.38 n=50
+  0.8        O5.5 0.48 GPT 0.33 H4.5 0.48 H5.5 0.41 Q0.6B 0.15 Q32B 0.41 S5.5 0.43 n=46
 
 == choice accuracy by prompt
-  Describe the GPT 0.46 H4.5 0.46 H5.5 0.54 S5.5 0.54 n=52
-  Who are you? GPT 0.35 H4.5 0.35 H5.5 0.46 S5.5 0.33 n=46
-  Write a snak GPT 0.37 H4.5 0.37 H5.5 0.44 S5.5 0.38 n=52
+  Describe the O5.5 0.62 GPT 0.46 H4.5 0.46 H5.5 0.54 Q0.6B 0.15 Q32B 0.40 S5.5 0.54 n=52
+  Who are you? O5.5 0.33 GPT 0.35 H4.5 0.35 H5.5 0.46 Q0.6B 0.24 Q32B 0.30 S5.5 0.33 n=46
+  Write a snak O5.5 0.38 GPT 0.37 H4.5 0.37 H5.5 0.44 Q0.6B 0.31 Q32B 0.46 S5.5 0.38 n=52
 
 == choice accuracy by effect-size quartile
-  Q1         GPT 0.51 H4.5 0.59 H5.5 0.57 S5.5 0.51 n=37
-  Q2         GPT 0.21 H4.5 0.26 H5.5 0.29 S5.5 0.29 n=38
-  Q3         GPT 0.32 H4.5 0.41 H5.5 0.43 S5.5 0.27 n=37
-  Q4         GPT 0.53 H4.5 0.32 H5.5 0.63 S5.5 0.61 n=38
+  Q1         O5.5 0.57 GPT 0.51 H4.5 0.59 H5.5 0.57 Q0.6B 0.32 Q32B 0.46 S5.5 0.51 n=37
+  Q2         O5.5 0.24 GPT 0.21 H4.5 0.26 H5.5 0.29 Q0.6B 0.11 Q32B 0.16 S5.5 0.29 n=38
+  Q3         O5.5 0.32 GPT 0.32 H4.5 0.41 H5.5 0.43 Q0.6B 0.24 Q32B 0.49 S5.5 0.27 n=37
+  Q4         O5.5 0.66 GPT 0.53 H4.5 0.32 H5.5 0.63 Q0.6B 0.26 Q32B 0.47 S5.5 0.61 n=38
 
 == choice accuracy by change from unsteered
-  <0.5       GPT 0.31 H4.5 0.31 H5.5 0.31 S5.5 0.23 n=13
-  <0.8       GPT 0.31 H4.5 0.34 H5.5 0.40 S5.5 0.34 n=88
-  >=0.8      GPT 0.57 H4.5 0.51 H5.5 0.67 S5.5 0.61 n=49
+  <0.5       O5.5 0.31 GPT 0.31 H4.5 0.31 H5.5 0.31 Q0.6B 0.23 Q32B 0.31 S5.5 0.23 n=13
+  <0.8       O5.5 0.36 GPT 0.31 H4.5 0.34 H5.5 0.40 Q0.6B 0.24 Q32B 0.32 S5.5 0.34 n=88
+  >=0.8      O5.5 0.63 GPT 0.57 H4.5 0.51 H5.5 0.67 Q0.6B 0.22 Q32B 0.55 S5.5 0.61 n=49
 
 == choice accuracy by neuron real (null_pct>=.95)
-  False      GPT 0.34 H4.5 0.41 H5.5 0.45 S5.5 0.36 n=116
-  True       GPT 0.56 H4.5 0.32 H5.5 0.59 S5.5 0.62 n=34
+  False      O5.5 0.39 GPT 0.34 H4.5 0.41 H5.5 0.45 Q0.6B 0.22 Q32B 0.36 S5.5 0.36 n=116
+  True       O5.5 0.65 GPT 0.56 H4.5 0.32 H5.5 0.59 Q0.6B 0.26 Q32B 0.50 S5.5 0.62 n=34
 
 == choice accuracy by selection
-  picked     GPT 0.44 H4.5 0.56 H5.5 0.31 S5.5 0.38 n=16
-  random     GPT 0.39 H4.5 0.37 H5.5 0.50 S5.5 0.43 n=134
+  picked     O5.5 0.44 GPT 0.44 H4.5 0.56 H5.5 0.31 Q0.6B 0.31 Q32B 0.50 S5.5 0.38 n=16
+  random     O5.5 0.45 GPT 0.39 H4.5 0.37 H5.5 0.50 Q0.6B 0.22 Q32B 0.38 S5.5 0.43 n=134
 
 == token overlap: a logit-lens token (>=3 letters) literally occurs in a candidate reply
   items with overlap 50/150; token-overlap baseline accuracy 0.346
+  O5.5: acc with overlap 0.56, without 0.39
   GPT: acc with overlap 0.54, without 0.32
   H4.5: acc with overlap 0.52, without 0.33
   H5.5: acc with overlap 0.62, without 0.41
+  Q0.6B: acc with overlap 0.32, without 0.19
+  Q32B: acc with overlap 0.54, without 0.32
   S5.5: acc with overlap 0.58, without 0.34
   with 95% bootstrap CIs (lens token in a reply / not):
+  O5.5: 0.56 [0.42, 0.70] 0.39 [0.30, 0.48]
   GPT: 0.54 [0.40, 0.68] 0.32 [0.23, 0.41]
   H4.5: 0.52 [0.38, 0.66] 0.33 [0.24, 0.42]
   H5.5: 0.62 [0.48, 0.76] 0.41 [0.32, 0.51]
+  Q0.6B: 0.32 [0.20, 0.46] 0.19 [0.12, 0.27]
+  Q32B: 0.54 [0.40, 0.68] 0.32 [0.23, 0.41]
   S5.5: 0.58 [0.44, 0.72] 0.34 [0.25, 0.43]
   logit_lens baseline (dose-sign aware): all 0.41, lens token in a reply 0.64, not 0.29
   model vs logit_lens: same pick | acc where the lookup is right (n=61) | where it is wrong (n=89) | either right
+  O5.5: 0.33 | 0.56 | 0.37 | 0.63
   GPT: 0.35 | 0.52 | 0.30 | 0.59
   H4.5: 0.35 | 0.51 | 0.31 | 0.59
   H5.5: 0.31 | 0.52 | 0.45 | 0.67
+  Q0.6B: 0.24 | 0.31 | 0.18 | 0.51
+  Q32B: 0.37 | 0.57 | 0.27 | 0.57
   S5.5: 0.33 | 0.52 | 0.35 | 0.61
 
 == rank of the chosen option by change from the unsteered reply (0 least .. 3 most)
+  O5.5: {0: 35, 1: 28, 2: 37, 3: 50}
   GPT: {0: 32, 1: 33, 2: 35, 3: 50}
   H4.5: {0: 31, 1: 45, 2: 32, 3: 42}
   H5.5: {0: 35, 1: 36, 2: 31, 3: 48}
+  Q0.6B: {'n/a': 2, 0: 39, 1: 42, 2: 30, 3: 37}
+  Q32B: {0: 28, 1: 44, 2: 33, 3: 45}
   S5.5: {0: 35, 1: 33, 2: 31, 3: 51}
   truth: {0: 38, 1: 38, 2: 36, 3: 38}
 
 == agreement
+  O5.5-GPT: same letter 0.61
+  O5.5-H4.5: same letter 0.37
+  O5.5-H5.5: same letter 0.64
+  O5.5-Q0.6B: same letter 0.26
+  O5.5-Q32B: same letter 0.43
+  O5.5-S5.5: same letter 0.65
   GPT-H4.5: same letter 0.45
   GPT-H5.5: same letter 0.59
+  GPT-Q0.6B: same letter 0.29
+  GPT-Q32B: same letter 0.44
   GPT-S5.5: same letter 0.59
   H4.5-H5.5: same letter 0.41
+  H4.5-Q0.6B: same letter 0.30
+  H4.5-Q32B: same letter 0.45
   H4.5-S5.5: same letter 0.39
+  H5.5-Q0.6B: same letter 0.28
+  H5.5-Q32B: same letter 0.43
   H5.5-S5.5: same letter 0.65
-  items by number of models right: {0: 44, 1: 34, 2: 24, 3: 21, 4: 27}
-  plurality vote accuracy (ties count as wrong) 0.400
+  Q0.6B-Q32B: same letter 0.35
+  Q0.6B-S5.5: same letter 0.27
+  Q32B-S5.5: same letter 0.39
+  items by number of models right: {0: 21, 1: 38, 2: 21, 3: 19, 4: 13, 5: 11, 6: 19, 7: 8}
+  plurality vote accuracy (ties count as wrong) 0.387
 
 == null: discrimination vs calibration
   spearman(truth null_pct, logit-lens peak_z) = 0.13
+  O5.5: AUC 0.61, mean prob 0.56 (base rate 0.51), Brier 0.245, Brier if constant at own mean 0.251, spearman(prob, peak_z) 0.85, spearman(prob, truth) 0.20
   GPT: AUC 0.54, mean prob 0.67 (base rate 0.51), Brier 0.308, Brier if constant at own mean 0.274, spearman(prob, peak_z) 0.76, spearman(prob, truth) 0.13
   H4.5: AUC 0.52, mean prob 0.71 (base rate 0.51), Brier 0.294, Brier if constant at own mean 0.288, spearman(prob, peak_z) 0.60, spearman(prob, truth) 0.00
   H5.5: AUC 0.56, mean prob 0.59 (base rate 0.51), Brier 0.255, Brier if constant at own mean 0.256, spearman(prob, peak_z) 0.71, spearman(prob, truth) 0.09
+  Q0.6B: AUC 0.49, mean prob 0.82 (base rate 0.51), Brier 0.385, Brier if constant at own mean 0.344, spearman(prob, peak_z) 0.04, spearman(prob, truth) -0.06
+  Q32B: AUC 0.46, mean prob 0.88 (base rate 0.51), Brier 0.392, Brier if constant at own mean 0.381, spearman(prob, peak_z) 0.13, spearman(prob, truth) -0.08
   S5.5: AUC 0.57, mean prob 0.49 (base rate 0.51), Brier 0.247, Brier if constant at own mean 0.250, spearman(prob, peak_z) 0.69, spearman(prob, truth) 0.07
