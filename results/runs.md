@@ -50,7 +50,14 @@ done; done
 valkyrie run results <run-id> --path jobs/valkyrie/l<L>-prompts-<model>.json   # then git add -f
 ```
 
+Sonnet 5.5 and GPT-5.6-luna ran with the same settings (`--model anthropic/claude-sonnet-5-5`, and
+`--model openai/gpt-5.6-luna -s OPENAI_API_KEY openai-api-key`; labels `l$L-prompts-sonnet-5-5` /
+`l$L-prompts-gpt-5.6-luna`). Opus 5.5's `l20-prompts` run had one Modal sandbox error
+(`L20-N1035-sqlp0.8`), retried in the same run with `valkyrie run retry`.
+
 | model | `l14-prompts@v1` | `l20-prompts@v1` | `l24-prompts@v1` |
 |---|---|---|---|
-| anthropic/claude-haiku-5-5 | | | |
-| anthropic/claude-opus-5-5 | | | |
+| anthropic/claude-haiku-5-5 | `1666594a-650e-4636-8edd-239baf34bf9d` | `9d295aae-f33a-4ce2-aa7b-5d4b0dcf0b7e` | `8021112a-4485-42d0-8d86-c73d0a2843bb` |
+| anthropic/claude-sonnet-5-5 | `88947c86-5dbd-463a-9c41-44ee48d59a7d` | `07aaba18-1b60-436f-9d23-c34f2d338bb9` | `aa27fb10-9765-47ae-877d-df07111c3e25` |
+| anthropic/claude-opus-5-5 | `cc45c554-65a0-46b0-b2b3-852974ae3044` | `f35b3adf-a9de-4f6f-8598-9eec59207a39` | `79c16a90-1b37-425e-a8ef-b627096ebb00` |
+| openai/gpt-5.6-luna | `b59407f2-d359-4868-a519-27270b1cdea1` | `cf6ca8d2-0072-41b4-a325-952db66d40e5` | `f477b3e0-06e4-4681-8d55-1540c2594e1b` |
