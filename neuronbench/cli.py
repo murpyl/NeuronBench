@@ -34,7 +34,8 @@ def cmd_build(a):
                           min_change=a.min_change)
         nc = sum(i.kind == "choice" for i in got)
         nr = sum(i.kind == "null" and i.answer["real"] for i in got)
-        print(f"{rp}: {nc} choice, {len(got) - nc} null ({nr} real)")
+        npick = sum(i.meta.get("selection") == "picked" for i in got)
+        print(f"{rp}: {nc} choice, {len(got) - nc} null ({nr} real); {npick} items on hand-picked neurons")
         items += got
     dupes = sorted({i.id for i in items if [j.id for j in items].count(i.id) > 1})
     if dupes:

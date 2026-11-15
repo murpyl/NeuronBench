@@ -156,3 +156,16 @@ def test_collect_valkyrie_export(tmp_path):
     assert collect_jobs([tmp_path / "haiku.json"], items) == want  # --jobs jobs/* passes files
     got = collect_jobs([tmp_path], items)
     assert got == {"anthropic/claude-haiku-4-5": {"m/L1/N1/choice": 1.0, "m/L1/N2/null": 0.75}}
+
+
+def test_selection_tags_hand_picked_neurons(tmp_path):
+    import numpy as np
+
+    from neuronbench.gne_io import Run
+
+    drawn = set(np.random.default_rng(0).choice(3072, size=384, replace=False).tolist())
+    extra = next(i for i in range(3072) if i not in drawn)
+    recs = [{"kind": "neuron", "neuron": n, "prompt": "who", "dose": 0.5, "text": ""} for n in sorted(drawn | {extra})]
+    run = Run(path=tmp_path, meta={"model_id": "m", "layer": 1, "seed": 0}, records=recs, units=[])
+    assert run.random_neurons() == drawn
+    assert extra not in run.random_neurons()

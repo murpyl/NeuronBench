@@ -58,6 +58,28 @@ class Run:
     def controls(self) -> list[int]:
         return sorted({int(r["neuron"]) for r in self.records if r["kind"] == "random"})
 
+    def random_neurons(self, k: int = 384) -> set[int]:
+        """The neurons gne drew for `random:k` (seeded), recovered by trying plausible layer widths.
+
+        Anything else in the sweep was hand-picked (e.g. the sharpest logit-lens neurons) and is tagged
+        `selection = "picked"` so results can be split by how the neuron was chosen.
+        """
+        import numpy as np
+
+        if "_random_neurons" in self.__dict__:
+            return self.__dict__["_random_neurons"]
+        have = set(self.neurons())
+        for n_ff in range(512, 65537, 256):
+            if n_ff < k:
+                continue
+            drawn = set(np.random.default_rng(int(self.meta.get("seed", 0))).choice(n_ff, size=k, replace=False).tolist())
+            if drawn <= have:
+                break
+        else:
+            drawn = have
+        self.__dict__["_random_neurons"] = drawn
+        return drawn
+
     def unit(self, kind: str, n: int) -> dict | None:
         return self._units.get((kind, n))
 

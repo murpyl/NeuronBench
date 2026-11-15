@@ -100,6 +100,10 @@ def choice_candidates(run: Run, n: int, *, min_change: float = 0.1, max_dose: fl
     return out
 
 
+def _selection(run: Run, n: int) -> str:
+    return "random" if n in run.random_neurons() else "picked"
+
+
 def make_choice_item(run: Run, n: int, cand: dict, evidence: dict, rng: random.Random) -> Item:
     options = [("neuron", n, cand["real"]["text"], cand["change"])]
     options += [("random", j, r["text"], c) for j, r, c in cand["distractors"]]
@@ -116,6 +120,7 @@ def make_choice_item(run: Run, n: int, cand: dict, evidence: dict, rng: random.R
                  "max_tokens": run.meta.get("max_tokens")},
         answer={"letter": LETTERS[correct]},
         meta={"null_pct": unit.get("null_pct"), "mass": unit.get("mass"), "change": round(cand["change"], 4),
+              "selection": _selection(run, n),
               "distractor_controls": [o[1] for o in options if o[0] == "random"],
               "option_change": {LETTERS[i]: round(o[3], 4) for i, o in enumerate(options)}},
     )
@@ -130,7 +135,8 @@ def make_null_item(run: Run, n: int, evidence: dict, threshold: float) -> Item:
         payload={"protocol": protocol(run), "threshold": threshold,
                  "baselines": {run.meta["prompts"][k]: clip(t) for k, t in run.baselines.items()}},
         answer={"real": int(real)},
-        meta={"null_pct": unit["null_pct"], "mass": unit["mass"], "rank": unit.get("rank")},
+        meta={"null_pct": unit["null_pct"], "mass": unit["mass"], "rank": unit.get("rank"),
+              "selection": _selection(run, n)},
     )
 
 
