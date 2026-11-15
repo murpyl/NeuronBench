@@ -151,140 +151,67 @@ which halves both numbers. Use `neuronbench report`, or the dataset `metric.py`,
 
 ## Results
 
-Qwen3-0.6B (Q8_0), layers 14, 20 and 24; 255 tasks: 150 "Which output is it?" (chance 25%) and 105 "Real or null?"
-(54 real at the 95% cutoff). Every model ran as mini-SWE-agent on Valkyrie (`jobs/valkyrie/*.json`, 0 agent
-failures), scored offline with `neuronbench report --items data/items.jsonl --jobs jobs/valkyrie/*.json --out results`.
-Full tables: `results/results.md`, split by random-draw vs hand-picked neurons in `results/results_by_selection.md`.
+Qwen3-0.6B Q8_0, layers 14, 20 and 24: 255 tasks (150 "Which output is it?", 105 "Real or null?" with 54 real).
+Four models ran as mini-SWE-agent on Valkyrie with no agent failures and were scored offline
+(`neuronbench report --items data/items.jsonl --jobs jobs/valkyrie/*.json --out results`). Long form with every
+number: [`results/analysis.md`](results/analysis.md); datasets and run IDs: [`results/runs.md`](results/runs.md).
 
-| system | Which output is it? (accuracy, 95% CI) | Real or null? (Brier, lower is better) |
+| system | Which output is it? accuracy [95% CI] | Real or null? Brier (AUC) |
 |---|---|---|
-| Claude Haiku 5.5 | **0.48** [0.40, 0.56] | 0.255 [0.233, 0.276] |
-| Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | **0.247** [0.233, 0.261] |
-| GPT-5.6-luna | 0.39 [0.31, 0.47] | 0.308 [0.256, 0.360] |
-| Claude Haiku 4.5 | 0.39 [0.31, 0.47] | 0.294 [0.244, 0.344] |
-| best shortcut: logit-lens lookup (dose-sign aware) | 0.41 [0.33, 0.49] | |
+| Claude Haiku 5.5 | **0.48** [0.40, 0.56] | 0.255 (0.56) |
+| Claude Sonnet 5.5 | 0.42 [0.34, 0.49] | **0.247** (0.57) |
+| GPT-5.6-luna | 0.39 [0.31, 0.47] | 0.308 (0.54) |
+| Claude Haiku 4.5 | 0.39 [0.31, 0.47] | 0.294 (0.52) |
+| best shortcut: logit-lens lookup, dose-sign aware | 0.41 [0.33, 0.49] | |
 | best shortcut: base rate / evidence logreg | | 0.255 / 0.255 |
-| random / always-real | 0.25 | 0.49 |
+| chance | 0.25 | 0.25 (0.50) |
+| *ceiling:* Haiku 5.5 given the neuron's measured sweep words | 0.63 [0.55, 0.71] | 0.210 (0.78) |
+| *ceiling:* Sonnet 5.5, same | 0.71 [0.64, 0.79] | 0.189 (0.83) |
 
 ![choice accuracy](results/choice_accuracy.png)
 ![null Brier](results/null_brier.png)
 
-**"Which output is it?", split by whether the answer can be read off the text.** In 50 of the 150 items a logit-lens
-token (≥ 3 letters) literally occurs in a candidate reply; there, the logit-lens lookup already scores 64%. The other
-100 items need an actual prediction from the evidence, and that is the harder test:
+**Five findings.**
 
-| system | lens token in a reply (n = 50) | no lens token in any reply (n = 100) |
-|---|---|---|
-| Claude Haiku 5.5 | 0.62 [0.48, 0.76] | **0.41** [0.32, 0.51] |
-| Claude Sonnet 5.5 | 0.58 [0.44, 0.72] | 0.34 [0.25, 0.43] |
-| GPT-5.6-luna | 0.54 [0.40, 0.68] | 0.32 [0.23, 0.41] |
-| Claude Haiku 4.5 | 0.52 [0.38, 0.66] | 0.33 [0.24, 0.42] |
-| logit-lens lookup baseline | **0.64** | 0.29 |
-| random | 0.25 | 0.25 |
+1. **No model clearly beats a word lookup.** Picking the reply that gained the most logit-lens tokens on the side
+   the dose pushes scores 41%. Haiku 5.5 is +7 points above it (paired 95% CI [−3, +18]); the other three are at or
+   below it. Accuracy is not ordered by model size.
+2. **The solvable half is the one you can read off the text.** In 50 of 150 items a lens token literally occurs in a
+   candidate reply: lookup 64%, models 52–62%. In the other 100: lookup 29%, models 32–41%, and only Haiku 5.5's
+   interval clears chance. Models don't even apply the lookup consistently: they agree with its pick on 31–35% of
+   items and solve only half of the 61 items it gets right, so "model or lookup right" reaches 59–67%.
+3. **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.57 for every model. The Brier spread is
+   calibration, not knowledge: replacing each model's answers with its own mean changes its Brier by ≤ 0.03. All
+   four set their probability from the logit-lens peak z-score (Spearman 0.60–0.76), which has Spearman 0.13 with
+   the truth. Sonnet 5.5 "wins" by hedging 0.4–0.6; Haiku 4.5 and GPT-5.6-luna lose by saying 0.7–0.9.
+4. **The static evidence, not the task format, is the bottleneck.** Rebuilding the same items with the neuron's
+   measured over-used words in the evidence (`--tier oracle`) lifts Haiku 5.5 from 48% to 63% (paired +15
+   [+5, +25]) and Sonnet 5.5 from 42% to 71%; on the 82 items where those words point at one reply they score 87%
+   and 93%. Showing the neuron's steered replies on *other* prompts (`--tier transfer`) adds nothing on choice
+   (+0 [−8, +8]) but lifts null AUC from 0.56 to 0.69. Even with oracle z-scores the models leave null signal unused:
+   a one-feature logistic regression gets Brier 0.089, Haiku 5.5 0.210.
+5. **Thinking longer didn't help, and the models fail differently.** Haiku 4.5 (median 6 API calls, $10 run) tied for
+   last; Haiku 5.5 (≤ 2 calls on 70% of tasks, $0.27 run) came first. Pairwise agreement is 39–65%, 44 items were
+   missed by all four, and a plurality vote (40%) is worse than the best single model.
 
-Where the lookup works, it does as well as every model or better. Where it doesn't, only Haiku 5.5's interval clears
-chance.
+**Failure modes**, from the 1020 trajectories (Sonnet 5.5 exposes no reasoning):
 
-**Models don't even apply the lookup consistently.** Each model picks the same reply as the lookup on only 31–35% of
-items, and solves only 51–52% of the 61 items the lookup gets right:
+- *Oddest reply:* "random directions cause mild drift, so the reply that departs most is the neuron" (Haiku 5.5).
+  The distractors are matched on change, so this is chance; every model does it on 28–34% of items.
+- *Dose folklore:* "+0.5 should be a subtle slip, so pick the gentlest reply". Haiku 4.5's single worst habit
+  (36 items, 81% wrong).
+- *Trait invention:* a token list becomes a personality: "this neuron helps the model escape loops" (36 items for
+  Haiku 4.5, 69% wrong). Trace below.
+- *Subword matching:* counting `-ing`, `e`, `s` across replies (GPT-5.6-luna).
+- *On "Real or null?":* logit-lens sharpness or a "coherent token family" taken as proof of causal effect, then either
+  overconfidence (Haiku 4.5, GPT) or anchoring on the stated base rate (Sonnet 5.5: 0.4–0.6 on 103 of 105 items).
 
-| system | same pick as the lookup | accuracy where the lookup is right (n = 61) | where it is wrong (n = 89) |
-|---|---|---|---|
-| Claude Haiku 5.5 | 0.31 | 0.52 | **0.45** |
-| Claude Sonnet 5.5 | 0.33 | 0.52 | 0.35 |
-| GPT-5.6-luna | 0.35 | 0.52 | 0.30 |
-| Claude Haiku 4.5 | 0.35 | 0.51 | 0.31 |
-
-So the models solve a different set of items from the lookup rather than a superset of it. The evidence supports
-more than any single system extracts: "the model or the lookup is right" holds on 59–67% of items.
-
-Headline findings (full analysis with failure modes in `results/analysis.md`; numbers from `scripts/analyze_results.py`):
-
-- **Frontier agents do no better than a word lookup on "Which output is it?"** Models score 39–48% (chance 25%); a
-  dose-sign-aware logit-lens lookup scores 41% [33, 49]. GPT-5.6-luna and Haiku 4.5 (39%) are below it, Sonnet 5.5
-  (42%) ties it, and only Haiku 5.5 (48%) is ahead: +7 points, paired 95% CI [−3, +18]. Not in size order.
-- **They also don't use the evidence consistently.** Models miss about half the items the lookup solves, and
-  agree with it on only 31–35% of picks. On the 50 items where a logit-lens token literally occurs in a candidate
-  reply, the lookup gets 64% and models 52–62%. On the other 100, the lookup gets 29% and models 32–41%. Large pushes (change ≥ 0.8
-  from the unsteered reply) are solved 51–67%, smaller ones 31–40%.
-- **Nobody can tell which neurons matter.** "Real or null?" AUC is 0.52–0.57 for all four; the Brier spread
-  (0.247–0.308) is calibration only. All models set their probability by the logit-lens peak z-score, which has
-  Spearman 0.13 with the truth. Sonnet 5.5 beats the base rate by hedging 0.4–0.6; Haiku 4.5 and GPT-5.6-luna lose by
-  saying 0.7–0.9.
-- **Deliberation did not help:** Haiku 4.5 (median 6 API calls, $10 run) tied for last; Haiku 5.5 (≤2 calls on 70% of
-  tasks, $0.27 run) came first.
-- **Different models, different mistakes:** pairwise agreement 39–65%, 44 items missed by all four, plurality vote (40%)
-  below the best single model.
-- Easier: layer 24, the "orange" prompt, and neurons that are actually real (56–62% vs 34–45% on null neurons).
-
-### Ceiling controls
-
-Can these items be solved when the evidence is decisive? `neuronbench build --tier {oracle,transfer}` rebuilds the same
-255 items (same candidates, shuffles, answers and grader; `data/items-{oracle,transfer}.jsonl`) and adds measured
-evidence to the evidence block. **oracle** adds `sweep_words`, the words this neuron's own steered replies over-use
-relative to the random controls (with z-scores on null items). **transfer** adds this neuron's steered replies to the
-*other* prompts (choice), or to one prompt at the normal doses (null). Run as datasets `neuronbench/{l14-l20,l24}-{oracle,transfer}@1`;
-table from `scripts/ceiling_report.py`.
-
-| tier (Haiku 5.5) | Which output is it? (accuracy, 95% CI) | Real or null? Brier / AUC | choice lookup | null lookup Brier |
-|---|---|---|---|---|
-| static (the benchmark) | 0.48 [0.41, 0.56] | 0.255 / 0.56 | 0.41 (logit-lens) | 0.255 (evidence logreg) |
-| transfer | 0.48 [0.40, 0.56] | 0.240 / 0.69 | 0.47 (words from other prompts) | 0.249 |
-| oracle | **0.63** [0.55, 0.71] | **0.210** / **0.78** | 0.61 (`sweep_words`) | **0.089** (z-score logreg) |
-| oracle, Sonnet 5.5 (static: 0.42, 0.247 / 0.57) | **0.71** [0.64, 0.79] | 0.189 / 0.83 | 0.61 | 0.089 |
-
-Paired over the same items: oracle − static +0.15 [+0.05, +0.25]; transfer − static +0.00 [−0.08, +0.08].
-Sonnet 5.5 (run because Haiku's oracle score was under 85%): oracle − static +0.29 [+0.19, +0.39], and it beats the
-oracle lookup (0.71 vs 0.61).
-
-- **The task format works; the static evidence is the bottleneck.** On the 82 items where the oracle words clearly point
-  at the true reply (it gains the most of them), Haiku 5.5 scores **0.87** (0.50 on the same items with static
-  evidence); Sonnet 5.5 scores 0.93. The oracle ceiling is 63–71%, not ~95%, because its words are pooled over all prompts and doses. On 31 items the
-  true reply contains none of them, and there Haiku drops to 0.23 (Sonnet 0.35), below its static 0.48. Clipping plays no part:
-  none of those 31 unclipped replies contains a sweep word either.
-- **Seeing the neuron act on other prompts doesn't help pick its reply here** (+0 points), though it lifts null AUC
-  from 0.56 to 0.69: effects of a single-neuron push mostly don't transfer across prompts as reusable words.
-- **On "Real or null?" the models leave most of the signal unused.** With oracle z-scores, a one-feature logistic
-  regression reaches Brier 0.089, while Haiku 5.5 gets 0.210 (AUC 0.78). So static-tier AUCs of 0.52–0.57 reflect missing
-  evidence, but even decisive evidence is only partly used.
-
-### Valkyrie runs
-
-Datasets `neuronbench/l14-l20@1` (layers 14 and 20, 170 tasks) and `neuronbench/l24@1` (layer 24, 85 tasks), agent
-`mini_swe_agent`, sandboxes on Modal, concurrency 8. Exports are in `jobs/valkyrie/`.
-
-| model | `l14-l20@1` run ID | `l24@1` run ID |
-|---|---|---|
-| anthropic/claude-haiku-5-5 | `5dd195b6-7266-438f-a727-d6ac977d94b2` | `5a71463e-5199-41a6-a54a-23d3fff7595a` |
-| anthropic/claude-sonnet-5-5 | `8ceb64b0-2f28-4ca3-9ee5-7345b5dcfc49` | `4fe2a846-1f11-4e7b-8afa-7b1dfc1bdea9` |
-| openai/gpt-5.6-luna | `ed60a1ae-99a9-4214-a10b-df38cbff5dfb` | `a535e3ba-2e81-4494-a5b3-be3256774992` |
-| anthropic/claude-haiku-4-5 | `89db445d-8a72-409e-88ca-092cd2118f0c` | `a99707ce-0e94-40cd-82f0-8d919b497fae` |
-
-Ceiling controls (Haiku 5.5): `l14-l20-oracle@1` `7b0d5db8-672b-4630-be60-417f3ca48ec0`, `l24-oracle@1`
-`2d588c84-a1ec-4c56-8297-a5892962806a`, `l14-l20-transfer@1` `d20eee82-ab29-4f74-990f-9ef5b81f5e89`, `l24-transfer@1`
-`43f31f60-4a9e-4fda-8838-1f7bb1df1919`; Sonnet 5.5: `l14-l20-oracle@1` `022891c7-f330-4de5-9abb-d734b598b78e`,
-`l24-oracle@1` `e817115f-b91c-4cce-b5e3-77040b71b184`.
-
-Valkyrie's own summary score for these runs is not meaningful: it averages `choice_acc` and `null_brier` over every
-trial, including trials of the other task type. Use `neuronbench report` instead.
-
-Failure modes, from the trajectories: picking the *oddest* reply although the controls are change-matched (chance,
-and the models do it 28–34% of the time); *dose folklore* ("+0.5 should be subtle, so the gentlest reply"; 81% wrong
-for Haiku 4.5); *inventing a trait* from a token list ("this neuron helps the model escape loops"); counting
-*subword fragments* (`-ing`, `s`) that occur in every reply; and on the null task, treating logit-lens sharpness or a
-"coherent token family" as proof of causal effect.
-
-### Failure trace: Haiku 4.5 on `choice-qwen3-0.6b-instruct-L14-N710-orange-0.7`
-
-Neuron 710 in layer 14, dose −0.7, prompt "Describe the color orange." The neuron is real (beats 64/64 controls);
-its logit lens promotes junk tokens (`onium`, `技术和`, `JKLMNOP`) and suppresses role-ish ones (`UserCode`,
-`Participant`, `compañ`); `peak_z` 4.9. The real reply was **D**, the two-word `The color orange?`; Haiku answered
-**B**, a reply that loops "the color orange in the color family of the color orange".
-
-Haiku's reasoning (7 API calls, $0.05; full transcript in `results/failure_trace_L14-N710.md`): it decided the
-down-tokens look "formal / structured", so a negative dose should make the reply "more organised, less weird", then
-contradicted itself and picked B because "the neuron normally helps the model escape loops; reversed, the model gets
-stuck". Neither step uses the evidence: the logit-lens tokens are vocabulary the neuron writes, not a behavioural
-trait, and nothing in them predicts a loop. The model told a story about the neuron and fitted a reply to the
-story. Every candidate was a same-magnitude push (changes 0.83–0.92 from the unsteered reply), so "the most broken
-one" was no help either, which is the point of the random-direction controls.
+**Failure trace** (`choice-qwen3-0.6b-instruct-L14-N710-orange-0.7`, Haiku 4.5; transcript in
+[`results/failure_trace_L14-N710.md`](results/failure_trace_L14-N710.md)). Layer 14 neuron 710 at dose −0.7 on
+"Describe the color orange" is real (beats 64/64 controls); its lens promotes junk tokens (`onium`, `技术和`) and
+suppresses role-ish ones (`UserCode`, `Participant`). The real reply was the two-word `The color orange?`. Haiku
+first decided the down-tokens look "formal", so a negative dose should make the reply "more organised", then
+reversed itself and chose a looping reply because "the neuron normally helps the model escape loops; reversed, it gets
+stuck". Nothing in the evidence supports either story; it fitted a reply to a narrative about the neuron. All four
+candidates had moved 0.83–0.92 from the unsteered reply, so "the most broken one" was no help, which is what the
+random-direction controls are for.

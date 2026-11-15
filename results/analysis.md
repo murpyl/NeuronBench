@@ -71,9 +71,8 @@ about the candidates. "Gain" is how many more times a reply uses those words tha
 - **On null, even decisive evidence is under-used.** A one-feature logistic regression on the oracle z-scores gets Brier 0.089;
   Haiku 5.5 gets 0.210 and Sonnet 5.5 0.189 (AUC 0.78 / 0.83). So the static-tier null result (AUC ≈ 0.55) is mostly missing evidence, and partly the model.
 
-So the 39–48% static scores are not a broken task. A model that is handed decisive evidence uses it, and the static
-evidence (logit lens + down-norm) usually isn't decisive. v2 should report the oracle tier alongside, and a
-condition-specific oracle (words for the item's prompt and dose sign) would give a tighter ceiling.
+So the 39–48% static scores are not a broken task: a model handed decisive evidence uses it, and the static evidence
+(logit lens + down-norm) usually isn't decisive.
 
 ## Failure modes on "Which output is it?"
 
@@ -107,8 +106,8 @@ happen.
 
 ## Implications for v2
 
-- Report the two halves of the choice task separately (lens token present in a reply / absent); the absent half is
-  the real test of mechanistic prediction and no model is above 41% on it.
-- Add evidence that *does* bear on effect size (activation statistics from `gne stats act`, `down_norm` relative to the
-  layer) so that "Real or null?" is answerable in principle; today it mostly measures calibration.
-- More prompts: three prompts × three doses means models see the same baseline replies hundreds of times.
+- Report the oracle tier next to the static one, and build a condition-specific oracle (words for the item's prompt
+  and dose sign) for a tighter ceiling.
+- Add static evidence that bears on effect size (activation statistics from `gne stats act`, `down_norm` relative to
+  the layer); today "Real or null?" mostly measures calibration.
+- More prompts: three prompts × three doses means models see the same unsteered replies hundreds of times.
